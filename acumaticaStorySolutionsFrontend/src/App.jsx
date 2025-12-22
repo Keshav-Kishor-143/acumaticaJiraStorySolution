@@ -26,14 +26,25 @@ const App = () => {
   const [solutionData, setSolutionData] = useState(null);
   const [error, setError] = useState(null);
   const [healthStatus, setHealthStatus] = useState('checking');
+  const [abortController, setAbortController] = useState(null);
+  const [currentRequestId, setCurrentRequestId] = useState(null);
 
   const handleSubmit = async (storyData) => {
     setIsLoading(true);
     setError(null);
     setSolutionData(null);
 
+    // Create new AbortController for this request
+    const controller = new AbortController();
+    setAbortController(controller);
+
     try {
-      const response = await processStory(storyData);
+      const response = await processStory(storyData, controller);
+      
+      // Store request_id immediately when received (for backend cancellation)
+      if (response.request_id) {
+        setCurrentRequestId(response.request_id);
+      }
       
       if (response.success) {
         setSolutionData(response);
@@ -42,12 +53,44 @@ const App = () => {
         handleApiError(new Error(response.error || 'Failed to generate solution'));
       }
     } catch (err) {
-      const errorMessage = err.message || 'An error occurred while processing the story';
-      setError(errorMessage);
-      handleApiError(err);
+      // Don't show error if it was cancelled
+      if (err.message === 'Request cancelled by user' || err.message === 'Processing cancelled') {
+        // Cancellation is handled gracefully
+        setError(null);
+        toast.info('Processing cancelled');
+      } else {
+        const errorMessage = err.message || 'An error occurred while processing the story';
+        setError(errorMessage);
+        handleApiError(err);
+      }
     } finally {
       setIsLoading(false);
+      setAbortController(null);
+      setCurrentRequestId(null);
     }
+  };
+
+  const handleCancel = async () => {
+    if (abortController) {
+      // Cancel the frontend request
+      abortController.abort();
+    }
+    
+    // Also cancel on backend if we have request_id
+    if (currentRequestId) {
+      try {
+        const { cancelStoryProcessing } = await import('./api/solutions');
+        await cancelStoryProcessing(currentRequestId);
+        toast.success('Processing cancelled');
+      } catch (err) {
+        // Backend cancellation may fail if request already completed - that's okay
+        console.log('Backend cancellation:', err.message);
+      }
+    }
+    
+    setIsLoading(false);
+    setAbortController(null);
+    setCurrentRequestId(null);
   };
 
   return (
@@ -182,8 +225,13 @@ const App = () => {
             minWidth: 0, // Prevents overflow
         }}
       >
-        {/* Story Form */}
-        <StoryForm onSubmit={handleSubmit} isLoading={isLoading} />
+                {/* Story Form */}
+                <StoryForm 
+                  onSubmit={handleSubmit} 
+                  onCancel={handleCancel}
+                  isLoading={isLoading} 
+                  canCancel={isLoading && (abortController !== null || currentRequestId !== null)}
+                />
 
         {/* Loading State */}
         {isLoading && (

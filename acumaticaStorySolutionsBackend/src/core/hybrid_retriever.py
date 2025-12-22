@@ -1599,18 +1599,21 @@ Extraction Guidelines:
                 
                 # CRITICAL FIX: Ensure combined_score is never 0 if document was found
                 # If a document was found through any strategy, it should have minimum confidence
-                if result.combined_score == 0.0 and result.relevance_signals:
+                if result.combined_score <= 0.0 and result.relevance_signals:
                     # Calculate minimum confidence based on best strategy score
                     best_strategy_score = max(result.relevance_signals.values()) if result.relevance_signals else 0.0
                     if best_strategy_score > 0:
                         # Use best strategy score as base, with minimum threshold
                         result.combined_score = max(0.05, best_strategy_score * 0.3)  # At least 5% or 30% of best score
-                        self.logger.debug("Applied minimum confidence threshold", extra={
-                            "pdf_name": result.pdf_name,
-                            "page": result.page_number,
-                            "best_strategy_score": best_strategy_score,
-                            "final_combined_score": result.combined_score
-                        })
+                    else:
+                        # Even if all strategy scores are 0, give minimum confidence for found document
+                        result.combined_score = 0.05
+                    self.logger.debug("Applied minimum confidence threshold", extra={
+                        "pdf_name": result.pdf_name,
+                        "page": result.page_number,
+                        "best_strategy_score": best_strategy_score,
+                        "final_combined_score": result.combined_score
+                    })
             
             # Normalize scores to [0, 1] range if needed
             if all_results:
@@ -1624,6 +1627,16 @@ Extraction Guidelines:
                             # But preserve the relative ranking
                             result.combined_score = result.combined_score / max_score * 0.5  # Scale to [0, 0.5] range
                         # If max_score >= 0.1, keep scores as-is (they're already meaningful)
+                
+                # FINAL CHECK: Ensure no score is 0.00 after all processing
+                for result in all_results.values():
+                    if result.combined_score <= 0.0:
+                        result.combined_score = 0.05  # Absolute minimum
+                        self.logger.debug("Applied final minimum confidence check", extra={
+                            "pdf_name": result.pdf_name,
+                            "page": result.page_number,
+                            "final_score": result.combined_score
+                        })
             
             # Sort by final combined score
             final_results = sorted(all_results.values(), 

@@ -52,9 +52,10 @@ api.interceptors.response.use(
  * @param {string} [storyData.story_id] - Optional JIRA story ID
  * @param {string} [storyData.title] - Optional story title
  * @param {string[]} [storyData.images] - Optional list of image URLs or base64 images
+ * @param {AbortController} [abortController] - Optional AbortController for cancellation
  * @returns {Promise<Object>} Solution response
  */
-export const processStory = async (storyData) => {
+export const processStory = async (storyData, abortController = null) => {
   try {
     // Create a separate axios instance for process endpoint with no timeout
     const processApi = axios.create({
@@ -67,6 +68,10 @@ export const processStory = async (storyData) => {
     processApi.interceptors.request.use(
       (config) => {
         console.log(`🚀 API Request: ${config.method?.toUpperCase()} ${config.url}`);
+        // Attach abort signal if provided
+        if (abortController) {
+          config.signal = abortController.signal;
+        }
         return config;
       },
       (error) => {
@@ -83,8 +88,17 @@ export const processStory = async (storyData) => {
       (error) => {
         console.error('❌ API Response Error:', error.response?.data || error.message);
         
+        // Handle cancellation
+        if (axios.isCancel(error) || error.code === 'ERR_CANCELED') {
+          toast.info('Request cancelled');
+          throw new Error('Request cancelled by user');
+        }
+        
         if (error.response?.status === 404) {
           toast.error('API endpoint not found. Please check if the backend is running.');
+        } else if (error.response?.status === 499) {
+          toast.info('Processing was cancelled');
+          throw new Error('Processing cancelled');
         } else if (error.response?.status >= 500) {
           toast.error('Server error. Please try again later.');
         } else if (error.code === 'ECONNABORTED') {
@@ -107,6 +121,21 @@ export const processStory = async (storyData) => {
     return response.data;
   } catch (error) {
     const errorMessage = error.response?.data?.detail || error.response?.data?.error || error.message || 'Failed to process story';
+    throw new Error(errorMessage);
+  }
+};
+
+/**
+ * Cancel an ongoing story processing request
+ * @param {string} requestId - Request ID to cancel
+ * @returns {Promise<Object>} Cancellation response
+ */
+export const cancelStoryProcessing = async (requestId) => {
+  try {
+    const response = await api.post(`${API_CONFIG.endpoints.solutions.cancel}/${requestId}`);
+    return response.data;
+  } catch (error) {
+    const errorMessage = error.response?.data?.detail || error.response?.data?.error || error.message || 'Failed to cancel request';
     throw new Error(errorMessage);
   }
 };

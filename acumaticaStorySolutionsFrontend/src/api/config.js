@@ -25,7 +25,8 @@ const API_CONFIG = {
     solutions: {
       process: '/solutions/process',
       health: '/solutions/health',
-      manuals: '/solutions/manuals'
+      manuals: '/solutions/manuals',
+      cancel: '/solutions/cancel' // Cancel endpoint
     }
   },
   defaultHeaders: {

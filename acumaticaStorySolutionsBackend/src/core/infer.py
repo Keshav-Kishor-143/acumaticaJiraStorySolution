@@ -1859,10 +1859,21 @@ Let me help you with that:
             
             normalized_score = self._normalize_confidence_score(raw_score, has_vision_content, was_analyzed)
             
+            # CRITICAL: Ensure we never have 0.00 scores - if document was found, it must have minimum confidence
+            if normalized_score <= 0.0:
+                self.logger.warning("Normalized score is still 0.00, applying minimum confidence", extra={
+                    "pdf_name": doc.get('pdf_name', 'Unknown'),
+                    "page": doc.get('page_number', 0),
+                    "raw_score": raw_score,
+                    "normalized_before": normalized_score
+                })
+                normalized_score = 0.05  # Absolute minimum for found documents
+            
             sources.append({
                 'document': doc['pdf_name'],
                 'page': doc['page_number'],
-                'similarity_score': normalized_score,  # Use normalized score
+                'similarity_score': normalized_score,  # Use normalized score (guaranteed > 0)
+                'confidence': normalized_score,  # Also add 'confidence' field for markdown formatter compatibility
                 'raw_score': raw_score,  # Keep original for reference
                 'image_path': doc.get('image_path'),
                 'image_exists': doc.get('image_exists', False),

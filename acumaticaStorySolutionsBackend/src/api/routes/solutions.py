@@ -3,9 +3,11 @@ Solutions API Routes - Process JIRA stories and generate solutions
 """
 
 import time
+import asyncio
+import uuid
 from datetime import datetime
 from typing import Dict, Any, Optional
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Request, Depends
 from fastapi.responses import JSONResponse
 
 from src.api.models.requests import JIRAStoryRequest
@@ -78,6 +80,24 @@ _markdown_formatter: Optional[MarkdownFormatter] = None
 _intent_layer: Optional[IntentUnderstandingLayer] = None
 _initialization_lock = None
 _initializing = False
+
+# Cancellation management
+_cancellation_tokens: Dict[str, bool] = {}
+_request_lock = None
+
+def _get_request_lock():
+    """Get asyncio lock for request management"""
+    global _request_lock
+    if _request_lock is None:
+        _request_lock = asyncio.Lock()
+    return _request_lock
+
+async def _check_cancellation(request_id: str) -> None:
+    """Check if request has been cancelled, raise exception if cancelled"""
+    async with _get_request_lock():
+        if _cancellation_tokens.get(request_id, False):
+            logger.info("Request cancelled", extra={"request_id": request_id})
+            raise asyncio.CancelledError(f"Request {request_id} was cancelled")
 
 def _get_lock():
     """Get thread lock for initialization (lazy initialization)"""
@@ -231,7 +251,7 @@ def get_components() -> tuple:
         }
     }
 )
-async def process_story(request: JIRAStoryRequest):
+async def process_story(request: JIRAStoryRequest, http_request: Request):
     """
     Process a JIRA story and generate markdown solution
     
@@ -240,20 +260,46 @@ async def process_story(request: JIRAStoryRequest):
     2. For each question: Search knowledge base and generate answer
     3. Generate narrative solution
     4. Format as markdown
+    
+    Supports cancellation via /solutions/cancel/{request_id} endpoint
     """
     start_time = time.time()
+    request_id = str(uuid.uuid4())
+    
+    # Register request for cancellation support
+    async with _get_request_lock():
+        _cancellation_tokens[request_id] = False
     
     try:
+        # Monitor client disconnect
+        async def check_disconnect():
+            while True:
+                await asyncio.sleep(0.5)
+                if await http_request.is_disconnected():
+                    logger.info("Client disconnected, cancelling request", extra={"request_id": request_id})
+                    async with _get_request_lock():
+                        _cancellation_tokens[request_id] = True
+                    break
+        
+        # Start disconnect checker
+        disconnect_task = asyncio.create_task(check_disconnect())
+        
         logger.info("Processing JIRA story", extra={
+            "request_id": request_id,
             "story_id": request.story_id,
             "description_length": len(request.description),
             "criteria_count": len(request.acceptance_criteria)
         })
         
+        # Check cancellation before starting
+        await _check_cancellation(request_id)
+        
         # Get components
         story_processor, rag_service, solution_generator, markdown_formatter, intent_layer = get_components()
         
         # Step 1: Extract key questions
+        await _check_cancellation(request_id)
+        
         story_json = {
             "description": request.description,
             "acceptance_criteria": request.acceptance_criteria,
@@ -263,6 +309,8 @@ async def process_story(request: JIRAStoryRequest):
         
         questions = story_processor.extract_key_questions(story_json)
         
+        await _check_cancellation(request_id)
+        
         if not questions:
             raise HTTPException(
                 status_code=400,
@@ -270,6 +318,7 @@ async def process_story(request: JIRAStoryRequest):
             )
         
         logger.info("Questions extracted", extra={
+            "request_id": request_id,
             "question_count": len(questions),
             "questions": questions
         })
@@ -278,6 +327,7 @@ async def process_story(request: JIRAStoryRequest):
         # This prevents hallucination by grounding everything in a single, comprehensive retrieval
         
         logger.info("Using unified retrieval approach", extra={
+            "request_id": request_id,
             "question_count": len(questions),
             "approach": "questions_as_context"
         })
@@ -290,13 +340,17 @@ async def process_story(request: JIRAStoryRequest):
             intent_analysis = await intent_layer.analyze_query(unified_context)
             unified_search_params = intent_layer.get_search_parameters(intent_analysis, original_query=unified_context)
             logger.info("Unified intent analysis completed", extra={
+                "request_id": request_id,
                 "relevant_docs": len(unified_search_params.get("target_directories", [])),
                 "primary_intent": unified_search_params.get("query_intent", {}).get("primary", "unknown")
             })
         except Exception as e:
             logger.warning("Unified intent analysis failed, using standard search", extra={
+                "request_id": request_id,
                 "error": str(e)
             })
+        
+        await _check_cancellation(request_id)
         
         # Step 3: Single comprehensive retrieval with all questions as context
         # Questions guide the retrieval but don't create separate queries
@@ -310,24 +364,32 @@ async def process_story(request: JIRAStoryRequest):
             search_params=unified_search_params
         )
         
+        await _check_cancellation(request_id)
+        
         # Extract sources from comprehensive result
         all_sources = comprehensive_result.get('sources', [])
         comprehensive_answer = comprehensive_result.get('answer', 'No answer found.')
         
         logger.info("Comprehensive retrieval completed", extra={
+            "request_id": request_id,
             "sources_found": len(all_sources),
             "answer_length": len(comprehensive_answer)
         })
         
         # Step 4: Generate focused narrative solution grounded in retrieved content
         # This is THE single comprehensive answer to the JIRA story task
+        await _check_cancellation(request_id)
+        
         narrative = solution_generator.generate_focused_narrative(
             story_context=story_json,
             retrieved_content=comprehensive_result,
             questions=questions  # Questions guide narrative structure internally
         )
         
+        await _check_cancellation(request_id)
+        
         logger.info("Focused narrative solution generated", extra={
+            "request_id": request_id,
             "narrative_length": len(narrative)
         })
         
@@ -350,6 +412,8 @@ async def process_story(request: JIRAStoryRequest):
             }
         )
         
+        await _check_cancellation(request_id)
+        
         processing_time = time.time() - start_time
         
         # Save markdown file if STORAGE_MODE is local
@@ -362,11 +426,13 @@ async def process_story(request: JIRAStoryRequest):
                     title=title
                 )
                 logger.info("Solution markdown saved to file", extra={
+                    "request_id": request_id,
                     "file_path": saved_file_path,
                     "story_id": request.story_id
                 })
             except Exception as e:
                 logger.warning("Failed to save solution markdown file", extra={
+                    "request_id": request_id,
                     "error": str(e),
                     "story_id": request.story_id
                 })
@@ -391,6 +457,7 @@ async def process_story(request: JIRAStoryRequest):
         )
         
         logger.info("Story processing completed", extra={
+            "request_id": request_id,
             "story_id": request.story_id,
             "processing_time": processing_time,
             "success": True,
@@ -399,10 +466,21 @@ async def process_story(request: JIRAStoryRequest):
         
         return response
         
+    except asyncio.CancelledError as e:
+        logger.warning("Story processing cancelled", extra={
+            "request_id": request_id,
+            "story_id": request.story_id,
+            "error": str(e)
+        })
+        raise HTTPException(
+            status_code=499,  # Client Closed Request
+            detail=f"Processing cancelled: {str(e)}"
+        )
     except HTTPException:
         raise
     except Exception as e:
         logger.error("Story processing failed", extra={
+            "request_id": request_id,
             "error": str(e),
             "error_type": type(e).__name__,
             "story_id": request.story_id
@@ -410,6 +488,7 @@ async def process_story(request: JIRAStoryRequest):
         
         return SolutionResponse(
             success=False,
+            request_id=request_id,
             story_id=request.story_id,
             solution_markdown="",
             sources=[],
@@ -417,6 +496,61 @@ async def process_story(request: JIRAStoryRequest):
             saved_file_path=None,
             error=str(e)
         )
+    finally:
+        # Cleanup: Remove request from tracking
+        async with _get_request_lock():
+            _cancellation_tokens.pop(request_id, None)
+        if 'disconnect_task' in locals():
+            disconnect_task.cancel()
+
+
+@router.post(
+    "/cancel/{request_id}",
+    summary="Cancel Story Processing",
+    description="Cancel an ongoing story processing request",
+    responses={
+        200: {
+            "description": "Cancellation request processed",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "success": True,
+                        "message": "Request cancelled successfully",
+                        "request_id": "uuid-here"
+                    }
+                }
+            }
+        },
+        404: {
+            "description": "Request not found or already completed",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "success": False,
+                        "message": "Request not found or already completed"
+                    }
+                }
+            }
+        }
+    }
+)
+async def cancel_story_processing(request_id: str):
+    """Cancel an ongoing story processing request"""
+    async with _get_request_lock():
+        if request_id in _cancellation_tokens:
+            _cancellation_tokens[request_id] = True
+            logger.info("Cancellation requested", extra={"request_id": request_id})
+            return {
+                "success": True,
+                "message": "Request cancelled successfully",
+                "request_id": request_id
+            }
+        else:
+            logger.warning("Cancellation requested for non-existent request", extra={"request_id": request_id})
+            raise HTTPException(
+                status_code=404,
+                detail="Request not found or already completed"
+            )
 
 
 @router.get(
