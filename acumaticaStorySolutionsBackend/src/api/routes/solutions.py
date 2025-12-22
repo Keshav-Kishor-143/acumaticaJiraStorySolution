@@ -76,51 +76,86 @@ _rag_service: Optional[RAGService] = None
 _solution_generator: Optional[SolutionGenerator] = None
 _markdown_formatter: Optional[MarkdownFormatter] = None
 _intent_layer: Optional[IntentUnderstandingLayer] = None
+_initialization_lock = None
+_initializing = False
+
+def _get_lock():
+    """Get thread lock for initialization (lazy initialization)"""
+    global _initialization_lock
+    if _initialization_lock is None:
+        import threading
+        _initialization_lock = threading.Lock()
+    return _initialization_lock
 
 
 def get_components() -> tuple:
-    """Lazy initialization of system components"""
-    global _story_processor, _rag_service, _solution_generator, _markdown_formatter, _intent_layer
+    """Lazy initialization of system components with thread safety"""
+    global _story_processor, _rag_service, _solution_generator, _markdown_formatter, _intent_layer, _initializing
     
-    try:
-        # Initialize Story Processor if needed
-        if _story_processor is None:
-            logger.debug("Creating new Story Processor instance")
-            _story_processor = JIRAStoryProcessor()
-            logger.debug("Story Processor instance created")
+    # Use lock to prevent concurrent initialization
+    lock = _get_lock()
+    
+    with lock:
+        # Double-check pattern: verify components are still None after acquiring lock
+        if _story_processor is not None and _rag_service is not None:
+            # Components already initialized, return immediately
+            return _story_processor, _rag_service, _solution_generator, _markdown_formatter, _intent_layer
         
-        # Initialize RAG Service if needed
-        if _rag_service is None:
-            logger.debug("Creating new RAG Service instance")
-            _rag_service = RAGService()
-            logger.debug("RAG Service instance created")
+        # Prevent recursive initialization
+        if _initializing:
+            logger.warning("Initialization already in progress, waiting...")
+            # Wait a bit and return existing components if available
+            import time
+            time.sleep(0.1)
+            if _story_processor is not None and _rag_service is not None:
+                return _story_processor, _rag_service, _solution_generator, _markdown_formatter, _intent_layer
         
-        # Initialize Solution Generator if needed
-        if _solution_generator is None:
-            logger.debug("Creating new Solution Generator instance")
-            _solution_generator = SolutionGenerator()
-            logger.debug("Solution Generator instance created")
+        _initializing = True
         
-        # Initialize Markdown Formatter if needed
-        if _markdown_formatter is None:
-            logger.debug("Creating new Markdown Formatter instance")
-            _markdown_formatter = MarkdownFormatter()
-            logger.debug("Markdown Formatter instance created")
-        
-        # Initialize Intent Understanding Layer if needed
-        if _intent_layer is None:
-            logger.debug("Creating new Intent Understanding Layer instance")
-            _intent_layer = IntentUnderstandingLayer()
-            logger.debug("Intent Understanding Layer instance created")
-        
-        return _story_processor, _rag_service, _solution_generator, _markdown_formatter, _intent_layer
-        
-    except Exception as e:
-        logger.error("Failed to initialize components", extra={
-            "error": str(e),
-            "error_type": type(e).__name__
-        })
-        raise
+        try:
+            # Initialize Story Processor if needed
+            if _story_processor is None:
+                logger.info("Initializing Story Processor...")
+                _story_processor = JIRAStoryProcessor()
+                logger.info("✅ Story Processor initialized")
+            
+            # Initialize RAG Service if needed
+            if _rag_service is None:
+                logger.info("Initializing RAG Service...")
+                _rag_service = RAGService()
+                logger.info("✅ RAG Service initialized")
+            
+            # Initialize Solution Generator if needed
+            if _solution_generator is None:
+                logger.info("Initializing Solution Generator...")
+                _solution_generator = SolutionGenerator()
+                logger.info("✅ Solution Generator initialized")
+            
+            # Initialize Markdown Formatter if needed
+            if _markdown_formatter is None:
+                logger.info("Initializing Markdown Formatter...")
+                _markdown_formatter = MarkdownFormatter()
+                logger.info("✅ Markdown Formatter initialized")
+            
+            # Initialize Intent Understanding Layer if needed
+            if _intent_layer is None:
+                logger.info("Initializing Intent Understanding Layer...")
+                _intent_layer = IntentUnderstandingLayer()
+                logger.info("✅ Intent Understanding Layer initialized")
+            
+            logger.info("✅ All components initialized successfully")
+            return _story_processor, _rag_service, _solution_generator, _markdown_formatter, _intent_layer
+            
+        except Exception as e:
+            logger.error("Failed to initialize components", extra={
+                "error": str(e),
+                "error_type": type(e).__name__
+            })
+            # Reset initialization flag on error
+            _initializing = False
+            raise
+        finally:
+            _initializing = False
 
 
 @router.post(

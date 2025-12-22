@@ -57,31 +57,10 @@ async def lifespan(app: FastAPI):
         except Exception as e:
             logger.warning(f"⚠️ Knowledge base check failed: {e}")
         
-        # Pre-warm components in background (optional - improves first request performance)
-        # Components will still initialize lazily on first request if this fails
-        try:
-            import asyncio
-            import concurrent.futures
-            
-            async def warm_up_components():
-                """Pre-initialize components in background"""
-                try:
-                    logger.info("🔥 Pre-warming components in background...")
-                    from src.api.routes.solutions import get_components
-                    # Run in thread pool to avoid blocking startup
-                    loop = asyncio.get_event_loop()
-                    with concurrent.futures.ThreadPoolExecutor() as executor:
-                        await loop.run_in_executor(executor, get_components)
-                    logger.info("✅ Components pre-warmed successfully")
-                except Exception as e:
-                    logger.warning(f"⚠️ Component pre-warm failed (will initialize on first request): {e}")
-            
-            # Start warm-up in background (non-blocking)
-            asyncio.create_task(warm_up_components())
-        except Exception as e:
-            logger.debug(f"Component warm-up not started: {e}")
-        
+        # Skip pre-warming components to avoid initialization issues on reload
+        # Components will initialize lazily on first request (better for stability)
         logger.info("📚 JIRA Story Solutions Service ready")
+        logger.info("💡 Components will initialize on first request (lazy loading)")
         yield
         
     except Exception as e:
