@@ -119,15 +119,8 @@ class MarkdownFormatter:
                 for source in list(unique_sources.values())[:10]:  # Limit to top 10 unique sources
                     doc_name = source.get('document', 'Unknown')
                     page = source.get('page', 'N/A')
-                    # Try both 'confidence' and 'similarity_score' fields
-                    confidence = source.get('confidence') or source.get('similarity_score', 0.0)
-                    
-                    # Only show confidence if it's meaningful (> 0.00)
-                    if confidence and confidence > 0.0:
-                        markdown_parts.append(f"- **{doc_name}** (Page {page}, Confidence: {confidence:.2f})\n")
-                    else:
-                        # Hide confidence if it's 0.00 or invalid
-                        markdown_parts.append(f"- **{doc_name}** (Page {page})\n")
+                    # Removed confidence score display for better UX
+                    markdown_parts.append(f"- **{doc_name}** (Page {page})\n")
                 markdown_parts.append("\n---\n")
             
             # Metadata section (if provided)

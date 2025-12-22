@@ -54,11 +54,6 @@ const SourceReferences = ({ sources = [] }) => {
                       size="small"
                       variant="outlined"
                     />
-                    <Chip
-                      label={`${((source.confidence || 0) * 100).toFixed(1)}% confidence`}
-                      size="small"
-                      color={source.confidence > 0.8 ? 'success' : source.confidence > 0.6 ? 'warning' : 'default'}
-                    />
                   </Box>
                 </Box>
               </Box>
