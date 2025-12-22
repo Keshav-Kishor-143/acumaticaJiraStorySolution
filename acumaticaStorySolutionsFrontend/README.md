@@ -37,11 +37,22 @@ npm install
 ```
 
 2. Start the development server:
-```bash
-npm run dev
-```
 
-3. Open your browser and navigate to `http://localhost:5173`
+   **For local access only:**
+   ```bash
+   npm run dev
+   ```
+   Then open `http://localhost:5173`
+
+   **For network access (accessible from other machines):**
+   ```bash
+   npm run dev:network
+   ```
+   Then access from:
+   - Your machine: `http://localhost:5173`
+   - Other machines: `http://192.168.0.42:5173` (replace with your machine's IP)
+   
+   **Note:** The frontend will automatically detect the backend URL based on the hostname. When accessed via network IP, it will connect to the backend on the same IP address.
 
 ### Building for Production
 
@@ -53,9 +64,16 @@ The production build will be in the `dist` directory.
 
 ### Preview Production Build
 
+**For local access:**
 ```bash
 npm run preview
 ```
+
+**For network access:**
+```bash
+npm run preview:network
+```
+Then access from `http://192.168.0.42:4173` (replace with your machine's IP)
 
 ## Project Structure
 
@@ -78,7 +96,31 @@ src/
 
 ## API Configuration
 
-The frontend connects to the backend API running on port 8001. You can modify the API base URL in `src/api/config.js`.
+The frontend automatically detects the backend URL based on the hostname:
+- **Local access** (`localhost` or `127.0.0.1`): Connects to `http://localhost:8001`
+- **Network access** (e.g., `192.168.0.42`): Connects to `http://192.168.0.42:8001`
+
+This ensures the frontend always connects to the backend on the same machine. You can modify the API configuration in `src/api/config.js` if needed.
+
+### Network Access Setup
+
+To allow other machines on your network to access the frontend:
+
+1. **Start backend with network access:**
+   - Ensure backend is running and accessible at `http://192.168.0.42:8001`
+   - Backend CORS should allow requests from your network (already configured)
+
+2. **Start frontend with network access:**
+   ```bash
+   npm run dev:network
+   ```
+
+3. **Access from other machines:**
+   - Open browser on another machine
+   - Navigate to `http://192.168.0.42:5173` (replace with your machine's IP)
+   - The frontend will automatically connect to the backend at `http://192.168.0.42:8001`
+
+**Security Note:** Network access exposes your dev server to your local network. Only use this in trusted network environments (home/office LAN). For production, use proper deployment with HTTPS and authentication.
 
 ## Usage
 

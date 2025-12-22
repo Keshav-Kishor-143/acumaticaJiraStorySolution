@@ -1,71 +1,5 @@
 {
     "document_summaries": {
-        "EU_ProjBillingChMgmt_2025R1": {
-            "summary": "Comprehensive project billing and change management system including labor rate configuration, cost tracking, billing rules, change orders, and revenue management.",
-            "core_topics": ["labor rates", "project billing", "cost tracking", "change orders", "billing rules", "rate tables", "time and material billing", "progress billing", "budget tracking", "project variations", "revenue recognition", "project profitability"],
-            "forms": ["PM209900", "PM301000", "PM302000", "PM304000", "PM305000"],
-            "key_operations": ["configure labor rates", "set up billing rules", "track project costs", "manage change orders", "process project billing", "monitor budgets", "handle project variations", "analyze project profitability"]
-        },
-        "EU_Service_Management_Implementation_and_Processing_2025R1": {
-            "summary": "Comprehensive service management system including service order processing, scheduling, resource allocation, and service delivery tracking.",
-            "core_topics": ["service orders", "appointments", "scheduling", "resource management", "service skills", "staff assignments", "service locations", "service routes", "service inventory", "service contracts", "service billing", "service performance"],
-            "forms": ["FS300100", "FS300300", "FS301000", "FS302000", "FS303000"],
-            "key_operations": ["create service orders", "schedule appointments", "manage service staff", "assign resources", "track service delivery", "monitor service performance", "process service billing", "manage service inventory"]
-        },
-        "EU_Service_Management_Extended_Scenarios_2025R1": {
-            "summary": "Advanced service management scenarios including contract management, equipment integration, warranty tracking, and preventive maintenance.",
-            "core_topics": ["service contracts", "equipment integration", "warranties", "preventive maintenance", "contract billing", "equipment tracking", "service schedules", "maintenance history", "warranty claims", "contract renewals", "service level agreements", "equipment warranties"],
-            "forms": ["FS305000", "FS300200", "FS304000", "FS306000"],
-            "key_operations": ["manage service contracts", "track equipment", "handle warranties", "schedule maintenance", "process contract billing", "monitor service levels", "manage warranty claims", "plan preventive maintenance"]
-        },
-        "EU_Self-Service_Portal_Administration_2025R1": {
-            "summary": "Comprehensive portal administration system including portal setup, user management, content customization, and security configuration.",
-            "core_topics": ["portal setup", "customer access", "self-service", "user management", "portal security", "content management", "portal customization", "access rights", "portal branding", "portal navigation", "portal widgets", "portal integration"],
-            "forms": ["SP201000", "SP205000", "SP206000", "SP207000"],
-            "key_operations": ["configure portal settings", "manage portal users", "customize portal content", "set up security", "manage access rights", "customize branding", "configure navigation", "integrate portal features"]
-        },
-        "EU_Purchase_Requisitions_2025R1": {
-            "summary": "Comprehensive purchase requisition system including requisition creation, approval workflow, vendor selection, and purchase order generation.",
-            "core_topics": ["requisitions", "approvals", "purchasing", "approval workflow", "vendor selection", "budget validation", "purchase orders", "item selection", "requisition bidding", "approval maps", "department budgets", "purchase order conversion"],
-            "forms": ["RQ301000", "RQ302000", "RQ303000", "RQ501000"],
-            "key_operations": ["create requisitions", "manage approval workflow", "select vendors", "validate budgets", "process approvals", "track requisition status", "convert to purchase orders", "manage bidding"]
-        },
-        "EU_Prices_and_Discounts_2025R1": {
-            "summary": "Comprehensive price and discount management system including price lists, promotional pricing, customer-specific pricing, and discount policies.",
-            "core_topics": ["pricing", "discounts", "price lists", "promotional pricing", "customer pricing", "quantity breaks", "group discounts", "price adjustments", "price schedules", "discount policies", "price calculations", "price overrides"],
-            "forms": ["AR202000", "AR209500", "AR201000", "AR204000"],
-            "key_operations": ["manage price lists", "configure discounts", "set up promotions", "define customer pricing", "apply quantity breaks", "handle group discounts", "schedule price changes", "calculate final prices"]
-        },
-        "EU_Inventory_Replenishment_2025R1": {
-            "summary": "Comprehensive inventory replenishment system including automated reordering, demand forecasting, safety stock management, and vendor lead time tracking.",
-            "core_topics": ["replenishment", "min/max levels", "reorder", "demand forecasting", "safety stock", "lead times", "reorder points", "seasonal demand", "vendor performance", "stock optimization", "order scheduling", "inventory planning"],
-            "forms": ["IN301000", "IN308000", "IN302000", "IN303000"],
-            "key_operations": ["configure replenishment", "manage safety stock", "forecast demand", "track lead times", "automate reordering", "optimize stock levels", "schedule orders", "monitor vendor performance"]
-        },
-        "EU_Inventory_2025R1": {
-            "summary": "Comprehensive inventory management system including stock item management, warehouse operations, inventory transactions, and cost tracking.",
-            "core_topics": ["inventory", "stock items", "warehouses", "item classes", "unit conversions", "lot/serial tracking", "physical inventory", "transfers", "receipts", "issues", "adjustments", "costing methods"],
-            "forms": ["IN202500", "IN301000", "IN303000", "IN304000"],
-            "key_operations": ["manage stock items", "track inventory", "process transactions", "handle transfers", "manage warehouses", "track lots/serials", "conduct physical counts", "calculate costs"]
-        },
-        "EU_Intercompany_Transactions_2025R1": {
-            "summary": "Comprehensive intercompany transaction management system including branch accounting, cross-company transfers, consolidation, and reconciliation.",
-            "core_topics": ["intercompany", "branches", "transfers", "branch accounting", "consolidation", "reconciliation", "due to/from accounts", "elimination entries", "cross-company transactions", "branch balances", "intercompany mapping", "branch reporting"],
-            "forms": ["GL301000", "GL304000", "GL305000", "GL306000"],
-            "key_operations": ["manage branch transactions", "process intercompany transfers", "handle consolidations", "perform reconciliations", "track branch balances", "configure mappings", "generate reports", "eliminate entries"]
-        },
-        "EU_FinancialBasic_2025R1": {
-            "summary": "Comprehensive financial management system including general ledger, accounts payable, accounts receivable, and financial reporting.",
-            "core_topics": ["GL", "AP", "AR", "accounting", "journal entries", "chart of accounts", "vendor management", "customer management", "payment processing", "cash management", "financial statements", "tax management", "period closing", "reconciliation"],
-            "forms": ["GL301000", "AP301000", "AR301000", "GL302000", "AP303000", "AR303000"],
-            "key_operations": ["manage ledger entries", "process payments", "handle invoices", "track receivables", "manage vendors", "manage customers", "generate reports", "close periods", "reconcile accounts"]
-        },
-        "EU_Equipment_Management_2025R1": {
-            "summary": "Comprehensive equipment management system including asset tracking, maintenance scheduling, service history, and performance monitoring.",
-            "core_topics": ["equipment", "maintenance", "service", "asset tracking", "preventive maintenance", "service schedules", "equipment history", "warranty tracking", "parts management", "maintenance costs", "service contracts", "equipment performance"],
-            "forms": ["FS205000", "FS206000", "FS207000", "FS208000"],
-            "key_operations": ["track equipment", "schedule maintenance", "manage service", "monitor performance", "track warranties", "manage parts", "track costs", "handle contracts", "record history"]
-        },
         "EU_Data_Retrieval_and_Analysis_2025R1": {
             "summary": "Comprehensive data analysis and reporting system including data retrieval, custom queries, data visualization, and advanced analytics.",
             "core_topics": ["reporting", "analysis", "data retrieval", "custom queries", "data visualization", "data filtering", "data grouping", "data export", "pivot tables", "aggregation", "parameters", "data relationships"],
@@ -78,49 +12,13 @@
             "forms": ["DB000000", "DB200000", "DB300000", "DB400000"],
             "key_operations": ["create dashboards", "configure widgets", "design layouts", "manage data sources", "customize visuals", "set parameters", "share dashboards", "manage preferences", "handle interactions"]
         },
-        "EU_CRM_Sales_2025R1": {
-            "summary": "Comprehensive sales CRM system including lead management, opportunity tracking, sales pipeline, and customer relationship management.",
-            "core_topics": ["sales", "leads", "opportunities", "pipeline management", "contact management", "sales forecasting", "activity tracking", "sales quotes", "territory management", "competitor tracking", "sales automation", "business accounts"],
-            "forms": ["CR301000", "CR304000", "CR302000", "CR303000"],
-            "key_operations": ["manage leads", "track opportunities", "monitor pipeline", "manage contacts", "create quotes", "track activities", "manage territories", "analyze sales", "track competitors", "automate processes"]
-        },
-        "EU_CRM_Marketing_2025R1": {
-            "summary": "Comprehensive marketing management system including campaign planning, lead generation, audience targeting, and marketing analytics.",
-            "core_topics": ["marketing", "campaigns", "leads", "audience targeting", "email marketing", "campaign tracking", "marketing lists", "lead scoring", "campaign budgets", "marketing automation", "campaign analytics", "response tracking"],
-            "forms": ["CR202000", "CR205000", "CR204000", "CR206000"],
-            "key_operations": ["plan campaigns", "generate leads", "manage lists", "track responses", "analyze results", "automate marketing", "manage budgets", "score leads", "segment audiences", "measure ROI"]
-        },
-        "EU_CRM_Support_2025R1": {
-            "summary": "Comprehensive customer support system including case management, service level agreements, escalation rules, and support team collaboration.",
-            "core_topics": ["support", "cases", "customer service", "case management", "SLA tracking", "escalation rules", "support teams", "case assignment", "resolution tracking", "knowledge base", "case categories", "support workflows"],
-            "forms": ["CR306000", "CR308000", "CR307000", "CR309000"],
-            "key_operations": ["manage cases", "track SLAs", "handle escalations", "assign cases", "track resolutions", "manage teams", "monitor performance", "categorize cases", "document solutions", "collaborate on cases"]
-        },
-        "EU_Automated_Warehouse_Operations_2025R1": {
-            "summary": "Comprehensive automated warehouse management system including picking automation, inventory movement, wave processing, and warehouse workflow optimization.",
-            "core_topics": ["warehouse", "automation", "picking", "wave processing", "inventory movement", "location management", "barcode scanning", "warehouse zones", "cart management", "picking strategies", "warehouse layout", "workflow optimization"],
-            "forms": ["WH201000", "WH301000", "WH202000", "WH303000"],
-            "key_operations": ["automate picking", "process waves", "manage inventory", "optimize layouts", "track movements", "manage locations", "scan barcodes", "configure zones", "manage carts", "optimize workflows"]
-        },
-        "EU_Analytical_Reports_2025R1": {
-            "summary": "Comprehensive business intelligence and analytical reporting system including data analysis, report design, visualization tools, and performance metrics.",
-            "core_topics": ["analytics", "reports", "BI", "data analysis", "report design", "data visualization", "performance metrics", "custom reporting", "data aggregation", "report scheduling", "report distribution", "data filtering"],
-            "forms": ["AR650000", "AR651000", "AR652000", "AR653000"],
-            "key_operations": ["analyze data", "design reports", "create visualizations", "track metrics", "customize reports", "aggregate data", "schedule reports", "distribute reports", "filter data", "export results"]
-        },
-        "S200_SysAdmAdvanced_2017R2": {
-            "summary": "Advanced system administration capabilities including user management, security configuration, system customization, integration management, and performance optimization.",
-            "core_topics": ["admin", "customization", "integration", "user management", "security configuration", "performance tuning", "system monitoring", "workflow automation", "data migration", "system maintenance", "audit logging", "access control"],
-            "forms": ["SM201010", "SM205020", "SM201510", "SM205510"],
-            "key_operations": ["manage users", "configure security", "customize system", "monitor performance", "automate workflows", "manage integrations", "migrate data", "maintain system", "track audits", "control access", "optimize settings", "handle upgrades"]
-        },
-        "S140_System_Maintenance_2025R1": {
+        "EU_System_Maintenance_2025R1": {
             "summary": "Comprehensive system maintenance and database management including backup operations, data recovery, system monitoring, and performance optimization.",
             "core_topics": ["maintenance", "database", "backups", "data recovery", "system monitoring", "performance tuning", "database optimization", "maintenance scheduling", "backup automation", "storage management", "system diagnostics", "data integrity"],
             "forms": ["SM201520", "SM202520", "SM201510", "SM202510"],
             "key_operations": ["manage backups", "recover data", "monitor system", "optimize performance", "schedule maintenance", "automate backups", "manage storage", "run diagnostics", "verify integrity", "configure settings", "handle failures", "maintain logs"]
         },
-        "S110_System_Security_2025R1": {
+        "EU_System_Security_2025R1": {
             "summary": "Comprehensive security management system including user administration, role-based access control, authentication policies, and security auditing.",
             "core_topics": ["security", "access control", "roles", "users", "permissions", "authentication", "authorization", "password policies", "security auditing", "user groups", "access rights", "security policies"],
             "forms": ["SM201020", "SM201060", "SM201040", "SM201050"],
@@ -132,41 +30,23 @@
             "forms": ["SM200520", "SM200540", "SM200510", "SM200530"],
             "key_operations": ["install system", "configure settings", "update components", "maintain system", "setup environment", "deploy instances", "manage databases", "monitor health", "tune performance", "troubleshoot issues", "schedule tasks", "verify setup"]
         },
-        "P200_Project_Accounting_Extended_Scenarios_2025R1": {
-            "summary": "Advanced project accounting scenarios including complex billing arrangements, revenue recognition, cost allocation, and project profitability tracking.",
-            "core_topics": ["project accounting", "billing", "revenue", "cost allocation", "project budgets", "change orders", "progress billing", "time and material", "revenue recognition", "project profitability", "project forecasting", "cost tracking"],
-            "forms": ["PM304000", "PM305000", "PM306000", "PM307000"],
-            "key_operations": ["manage billing", "track revenue", "allocate costs", "monitor budgets", "process changes", "bill progress", "recognize revenue", "track profitability", "forecast projects", "analyze costs", "generate reports", "handle exceptions"]
+        "S110_System_Security_2025R1": {
+            "summary": "Comprehensive security management system including user administration, role-based access control, authentication policies, and security auditing.",
+            "core_topics": ["security", "access control", "roles", "users", "permissions", "authentication", "authorization", "password policies", "security auditing", "user groups", "access rights", "security policies"],
+            "forms": ["SM201020", "SM201060", "SM201040", "SM201050"],
+            "key_operations": ["manage users", "configure roles", "set permissions", "define policies", "audit access", "control authentication", "manage groups", "assign rights", "monitor security", "enforce policies", "track changes", "review logs"]
         },
-        "P120_Project_Accounting_Basic_Scenarios_2025R1": {
-            "summary": "Fundamental project accounting processes including project setup, basic billing, cost tracking, and budget management.",
-            "core_topics": ["project setup", "basic billing", "costs", "project templates", "task management", "budget tracking", "time entry", "expense tracking", "project status", "resource allocation", "cost codes", "billing rules"],
-            "forms": ["PM301000", "PM302000", "PM303000", "PM304000"],
-            "key_operations": ["setup projects", "manage tasks", "track costs", "enter time", "track expenses", "monitor budgets", "allocate resources", "process billing", "update status", "generate reports", "manage templates", "configure rules"]
+        "S140_System_Maintenance_2025R1": {
+            "summary": "Comprehensive system maintenance and database management including backup operations, data recovery, system monitoring, and performance optimization.",
+            "core_topics": ["maintenance", "database", "backups", "data recovery", "system monitoring", "performance tuning", "database optimization", "maintenance scheduling", "backup automation", "storage management", "system diagnostics", "data integrity"],
+            "forms": ["SM201520", "SM202520", "SM201510", "SM202510"],
+            "key_operations": ["manage backups", "recover data", "monitor system", "optimize performance", "schedule maintenance", "automate backups", "manage storage", "run diagnostics", "verify integrity", "configure settings", "handle failures", "maintain logs"]
         },
-        "P100_Project_Implementation_and_Processing_2025R1": {
-            "summary": "Initial project implementation and processing including project configuration, task management, resource planning, and workflow setup.",
-            "core_topics": ["project setup", "tasks", "processing", "project configuration", "resource planning", "workflow setup", "project templates", "task dependencies", "project phases", "milestone tracking", "resource allocation", "project scheduling"],
-            "forms": ["PM208000", "PM209000", "PM207000", "PM208500"],
-            "key_operations": ["configure projects", "manage tasks", "plan resources", "setup workflows", "create templates", "define phases", "track milestones", "allocate resources", "schedule work", "monitor progress", "manage dependencies", "establish baselines"]
-        },
-        "EU_Sales_and_Purchases_2025R1": {
-            "summary": "Comprehensive sales and purchase order management system including order processing, fulfillment, inventory management, and invoicing.",
-            "core_topics": ["sales orders", "purchase orders", "order types", "fulfillment", "shipments", "receipts", "inventory", "invoicing", "vendor management", "customer management", "pricing", "discounts"],
-            "forms": ["SO301000", "PO301000", "SO302000", "PO302000", "AR301000", "AP301000"],
-            "key_operations": ["create sales orders", "process purchase orders", "manage order fulfillment", "handle shipments and receipts", "process invoices", "track inventory", "manage vendors and customers", "apply pricing and discounts"]
-        },
-        "EU_AccountingForProjects_2025R1": {
-            "summary": "Comprehensive project accounting system including project budgeting, cost tracking, billing rules, and revenue recognition.",
-            "core_topics": ["project accounting", "costs", "revenue", "project budgets", "billing rules", "rate tables", "progress billing", "change orders", "revenue recognition", "project allocations"],
-            "forms": ["PM303000", "PM304000", "PM301000", "PM208000"],
-            "key_operations": ["configure billing rules", "manage project budgets", "track project costs", "process project billing", "handle change orders", "recognize revenue", "monitor project profitability"]
-        },
-        "C110_Case_Management_2025R1": {
-            "summary": "Comprehensive customer support case management system including case creation, tracking, assignment, escalation, and resolution workflows.",
-            "core_topics": ["cases", "support", "tickets", "case classes", "SLAs", "assignment rules", "escalation", "resolution", "case monitoring", "customer communication"],
-            "forms": ["CR306000", "CR308000", "CR205000", "CR209000"],
-            "key_operations": ["create and manage cases", "configure case classes", "set up SLA rules", "manage assignments", "track case resolution", "monitor case metrics", "handle escalations"]
+        "S200_SysAdmAdvanced_2017R2": {
+            "summary": "Advanced system administration capabilities including user management, security configuration, system customization, integration management, and performance optimization.",
+            "core_topics": ["admin", "customization", "integration", "user management", "security configuration", "performance tuning", "system monitoring", "workflow automation", "data migration", "system maintenance", "audit logging", "access control"],
+            "forms": ["SM201010", "SM205020", "SM201510", "SM205510"],
+            "key_operations": ["manage users", "configure security", "customize system", "monitor performance", "automate workflows", "manage integrations", "migrate data", "maintain system", "track audits", "control access", "optimize settings", "handle upgrades"]
         },
         "T400_BasicCustomizationOfMobileApp_2025R1 (2)": {
             "summary": "Comprehensive guide for basic customization of Acumatica mobile applications including app configuration, screen customization, field modifications, navigation setup, and mobile-specific features. Covers Work Order and Ticket screen customization in mobile apps, adding custom fields, buttons, validation, and mobile-specific UI elements.",

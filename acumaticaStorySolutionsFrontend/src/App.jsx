@@ -18,6 +18,7 @@ import SolutionDisplay from './components/SolutionDisplay';
 import SourceReferences from './components/SourceReferences';
 import LoadingSpinner from './components/LoadingSpinner';
 import HealthStatus from './components/HealthStatus';
+import ManualsList from './components/ManualsList';
 import { processStory, handleApiError } from './api/solutions';
 
 const App = () => {
@@ -147,47 +148,75 @@ const App = () => {
 
       {/* Main Content */}
       <Container
-        maxWidth="lg"
+        maxWidth="xl"
         sx={{
           flex: 1,
           py: 4,
           display: 'flex',
-          flexDirection: 'column',
+          gap: 3,
+          overflow: 'hidden', // Prevent container overflow
+          minHeight: 0, // Allow flex children to shrink
         }}
       >
-        {/* Story Form */}
-        <StoryForm onSubmit={handleSubmit} isLoading={isLoading} />
+        {/* Left Sidebar - Manuals List */}
+        <Box
+          sx={{
+            width: { xs: '100%', md: 320 },
+            minWidth: { md: 280 },
+            maxWidth: { md: 320 },
+            display: { xs: 'none', md: 'flex' },
+            flexDirection: 'column',
+            height: '100%',
+            maxHeight: 'calc(100vh - 120px)', // Account for header and padding
+            minHeight: 0, // Allow flex shrinking
+          }}
+        >
+          <ManualsList />
+        </Box>
 
-        {/* Loading State */}
-        {isLoading && (
-          <Box sx={{ mt: 3 }}>
-            <LoadingSpinner message="Processing your story and generating solution..." />
-          </Box>
-        )}
+        {/* Main Content Area */}
+        <Box
+          sx={{
+            flex: 1,
+            display: 'flex',
+            flexDirection: 'column',
+            minWidth: 0, // Prevents overflow
+          }}
+        >
+          {/* Story Form */}
+          <StoryForm onSubmit={handleSubmit} isLoading={isLoading} />
 
-        {/* Error State */}
-        {error && !isLoading && (
-          <Alert severity="error" sx={{ mt: 3 }}>
-            {error}
-          </Alert>
-        )}
+          {/* Loading State */}
+          {isLoading && (
+            <Box sx={{ mt: 3 }}>
+              <LoadingSpinner message="Processing your story and generating solution..." />
+            </Box>
+          )}
 
-        {/* Solution Display */}
-        {solutionData && !isLoading && (
-          <>
-            <SolutionDisplay
-              solution={solutionData.solution_markdown}
-              storyId={solutionData.story_id}
-              processingTime={solutionData.processing_time}
-              savedFilePath={solutionData.saved_file_path}
-            />
+          {/* Error State */}
+          {error && !isLoading && (
+            <Alert severity="error" sx={{ mt: 3 }}>
+              {error}
+            </Alert>
+          )}
 
-            {/* Source References */}
-            {solutionData.sources && solutionData.sources.length > 0 && (
-              <SourceReferences sources={solutionData.sources} />
-            )}
-          </>
-        )}
+          {/* Solution Display */}
+          {solutionData && !isLoading && (
+            <>
+              <SolutionDisplay
+                solution={solutionData.solution_markdown}
+                storyId={solutionData.story_id}
+                processingTime={solutionData.processing_time}
+                savedFilePath={solutionData.saved_file_path}
+              />
+
+              {/* Source References */}
+              {solutionData.sources && solutionData.sources.length > 0 && (
+                <SourceReferences sources={solutionData.sources} />
+              )}
+            </>
+          )}
+        </Box>
       </Container>
     </Box>
   );

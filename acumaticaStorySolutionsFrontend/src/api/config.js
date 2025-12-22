@@ -1,26 +1,31 @@
 // API Configuration
 const API_CONFIG = {
   baseURL: (() => {
-    // Get the current hostname
+    // Get the current hostname from the browser
     const hostname = (typeof globalThis !== 'undefined' && globalThis.location?.hostname) 
       ? globalThis.location.hostname 
       : 'localhost';
     
-    // For local development, try multiple possible backend URLs
+    // Determine backend URL based on frontend hostname
+    // This ensures the frontend connects to the backend on the same machine
     if (hostname === 'localhost' || hostname === '127.0.0.1') {
-      // Story Solutions backend runs on port 8001
+      // Local development - backend on same machine
       return 'http://localhost:8001';
+    } else if (hostname.startsWith('192.168.') || hostname.startsWith('10.') || hostname.startsWith('172.')) {
+      // Network IP address (LAN) - backend on same machine IP
+      return `http://${hostname}:8001`;
+    } else {
+      // Production or other environments - use same hostname
+      return `http://${hostname}:8001`;
     }
-
-    // For non-local environments
-    return `http://${hostname}:8001`;
   })(),
 
   endpoints: {
     health: '/health',
     solutions: {
       process: '/solutions/process',
-      health: '/solutions/health'
+      health: '/solutions/health',
+      manuals: '/solutions/manuals'
     }
   },
   defaultHeaders: {

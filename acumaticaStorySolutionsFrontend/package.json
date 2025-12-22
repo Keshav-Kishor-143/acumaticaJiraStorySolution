@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:network": "vite --host 0.0.0.0",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "preview:network": "vite preview --host 0.0.0.0"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

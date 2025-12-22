@@ -9,7 +9,7 @@ from fastapi import APIRouter, HTTPException
 from fastapi.responses import JSONResponse
 
 from src.api.models.requests import JIRAStoryRequest
-from src.api.models.responses import SolutionResponse, SourceReference, HealthResponse
+from src.api.models.responses import SolutionResponse, SourceReference, HealthResponse, ManualsListResponse, ManualInfo
 from src.core.story_processor import JIRAStoryProcessor
 from src.core.rag_service import RAGService
 from src.core.solution_generator import SolutionGenerator
@@ -498,5 +498,87 @@ async def health_check():
             message=f"Health check failed: {str(e)}",
             timestamp=datetime.utcnow(),
             components={}
+        )
+
+
+@router.get(
+    "/manuals",
+    response_model=ManualsListResponse,
+    summary="List Available Manuals",
+    description="""
+    Get a list of all available manuals in the knowledge base.
+    
+    **Response:**
+    - List of manual names
+    - Total count of manuals
+    """,
+    responses={
+        200: {
+            "description": "Successfully retrieved manuals list",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "success": True,
+                        "manuals": [
+                            {"name": "EU_AccountingForProjects_2025R1", "display_name": "EU Accounting For Projects 2025R1"},
+                            {"name": "C110_Case_Management_2025R1", "display_name": "C110 Case Management 2025R1"}
+                        ],
+                        "count": 2
+                    }
+                }
+            }
+        }
+    }
+)
+async def list_manuals():
+    """List all available manuals in the knowledge base"""
+    try:
+        logger.info("Listing available manuals")
+        
+        # Get RAG service to access document list
+        _, rag_service, _, _, _ = get_components()
+        
+        # Get list of documents
+        documents = rag_service.list_available_documents()
+        
+        # Format manual names (remove underscores, add spaces, clean up)
+        manuals = []
+        for doc in documents:
+            doc_name = doc.get("document_name", "")
+            # Skip domain.json and other non-manual files
+            if doc_name.endswith(".json") or not doc_name:
+                continue
+            
+            # Format display name: replace underscores with spaces, remove version suffixes if desired
+            display_name = doc_name.replace("_", " ").replace(" (1)", "").replace(" (2)", "")
+            
+            manuals.append(ManualInfo(
+                name=doc_name,
+                display_name=display_name
+            ))
+        
+        # Sort manuals alphabetically by display name
+        manuals.sort(key=lambda x: x.display_name or x.name)
+        
+        logger.info("Manuals list retrieved", extra={
+            "manual_count": len(manuals)
+        })
+        
+        return ManualsListResponse(
+            success=True,
+            manuals=manuals,
+            count=len(manuals)
+        )
+        
+    except Exception as e:
+        logger.error("Failed to list manuals", extra={
+            "error": str(e),
+            "error_type": type(e).__name__
+        })
+        return ManualsListResponse(
+            success=False,
+            manuals=[],
+            count=0,
+            error=str(e)
         )
 

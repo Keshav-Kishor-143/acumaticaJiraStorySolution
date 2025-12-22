@@ -137,6 +137,20 @@ export const apiHealthCheck = async () => {
   }
 };
 
+/**
+ * Get list of available manuals from knowledge base
+ * @returns {Promise<Object>} Manuals list response
+ */
+export const getManualsList = async () => {
+  try {
+    const response = await api.get(API_CONFIG.endpoints.solutions.manuals);
+    return response.data;
+  } catch (error) {
+    const errorMessage = error.response?.data?.detail || error.response?.data?.error || error.message || 'Failed to fetch manuals list';
+    throw new Error(errorMessage);
+  }
+};
+
 // Utility functions for handling API responses
 export const handleApiError = (error, defaultMessage = 'An error occurred') => {
   console.error('API Error:', error);
