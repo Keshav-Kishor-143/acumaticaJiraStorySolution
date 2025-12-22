@@ -15,7 +15,6 @@ import {
 import { Toaster } from 'react-hot-toast';
 import StoryForm from './components/StoryForm';
 import SolutionDisplay from './components/SolutionDisplay';
-import SourceReferences from './components/SourceReferences';
 import LoadingSpinner from './components/LoadingSpinner';
 import HealthStatus from './components/HealthStatus';
 import ManualsList from './components/ManualsList';
@@ -165,7 +164,7 @@ const App = () => {
             minWidth: { md: 280 },
             maxWidth: { md: 320 },
             display: { xs: 'none', md: 'flex' },
-            flexDirection: 'column',
+          flexDirection: 'column',
             height: '100%',
             maxHeight: 'calc(100vh - 120px)', // Account for header and padding
             minHeight: 0, // Allow flex shrinking
@@ -181,41 +180,34 @@ const App = () => {
             display: 'flex',
             flexDirection: 'column',
             minWidth: 0, // Prevents overflow
-          }}
-        >
-          {/* Story Form */}
-          <StoryForm onSubmit={handleSubmit} isLoading={isLoading} />
+        }}
+      >
+        {/* Story Form */}
+        <StoryForm onSubmit={handleSubmit} isLoading={isLoading} />
 
-          {/* Loading State */}
-          {isLoading && (
-            <Box sx={{ mt: 3 }}>
-              <LoadingSpinner message="Processing your story and generating solution..." />
-            </Box>
-          )}
+        {/* Loading State */}
+        {isLoading && (
+          <Box sx={{ mt: 3 }}>
+            <LoadingSpinner message="Processing your story and generating solution..." />
+          </Box>
+        )}
 
-          {/* Error State */}
-          {error && !isLoading && (
-            <Alert severity="error" sx={{ mt: 3 }}>
-              {error}
-            </Alert>
-          )}
+        {/* Error State */}
+        {error && !isLoading && (
+          <Alert severity="error" sx={{ mt: 3 }}>
+            {error}
+          </Alert>
+        )}
 
-          {/* Solution Display */}
-          {solutionData && !isLoading && (
-            <>
-              <SolutionDisplay
-                solution={solutionData.solution_markdown}
-                storyId={solutionData.story_id}
-                processingTime={solutionData.processing_time}
-                savedFilePath={solutionData.saved_file_path}
-              />
-
-              {/* Source References */}
-              {solutionData.sources && solutionData.sources.length > 0 && (
-                <SourceReferences sources={solutionData.sources} />
-              )}
-            </>
-          )}
+        {/* Solution Display */}
+        {solutionData && !isLoading && (
+          <SolutionDisplay
+            solution={solutionData.solution_markdown}
+            storyId={solutionData.story_id}
+            processingTime={solutionData.processing_time}
+            savedFilePath={solutionData.saved_file_path}
+          />
+        )}
         </Box>
       </Container>
     </Box>

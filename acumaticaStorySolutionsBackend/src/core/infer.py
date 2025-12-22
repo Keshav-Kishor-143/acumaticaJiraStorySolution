@@ -853,6 +853,12 @@ Focus on accuracy and clarity for customer support."""
                 # Use combined_score if available, otherwise fall back to score
                 final_score = result.combined_score if hasattr(result, 'combined_score') and result.combined_score > 0 else result.score
                 
+                # Ensure score is never zero if result was found (minimum threshold)
+                if final_score == 0.0 and hasattr(result, 'relevance_signals') and result.relevance_signals:
+                    # If score is 0 but we have relevance signals, use a minimum score
+                    # This handles cases where semantic similarity is low but document was found
+                    final_score = 0.05  # Minimum confidence for found documents
+                
                 # Log score information for debugging
                 if final_score < 0.1:
                     self.logger.debug("Low score result", extra={
@@ -861,7 +867,8 @@ Focus on accuracy and clarity for customer support."""
                         "score": final_score,
                         "combined_score": getattr(result, 'combined_score', 'N/A'),
                         "base_score": result.score,
-                        "strategy": result.search_strategy
+                        "strategy": result.search_strategy,
+                        "has_vision_text": bool(getattr(result, 'vision_extracted_text', ''))
                     })
                 
                 doc = {
@@ -882,7 +889,8 @@ Focus on accuracy and clarity for customer support."""
                     'original_path': result.image_path,
                     'text_content': result.text_content,
                     'search_strategy': result.search_strategy,
-                    'relevance_signals': result.relevance_signals
+                    'relevance_signals': result.relevance_signals,
+                    'vision_extracted_text': getattr(result, 'vision_extracted_text', '')  # Pass vision-extracted text
                 }
                 documents.append(doc)
             
@@ -1072,66 +1080,101 @@ Focus on accuracy and clarity for customer support."""
             return "I apologize, but I ran into an unexpected issue while analyzing your documents. Could you try asking your question again? If the problem persists, you might want to try rephrasing your question or checking if your documents uploaded properly.", token_usage
 
     def _build_procedural_prompt(self, question: str, content_by_doc: Dict[str, List[Dict]]) -> str:
-        """Build prompt for procedural (how-to) questions with DAC/DLL awareness"""
+        """Build prompt for procedural (how-to) questions with explicit technical detail extraction"""
         return f"""QUESTION: {question}
 
-TASK: Provide a precise, step-by-step implementation guide based STRICTLY on the documentation below.
+TASK: Extract EXACT technical details FIRST, then provide a precise, step-by-step implementation guide based STRICTLY on the documentation below.
 
 DOCUMENT CONTENT:
 {self._format_document_content(content_by_doc)}
 
-CRITICAL REQUIREMENTS:
-1. Identify specific DACs (Data Access Classes), screens, and forms mentioned in the documentation
-2. Provide exact navigation paths (e.g., "System > Customization > [Screen Name]")
-3. Include specific form IDs, field names, and menu options ONLY if present in documentation
-4. Only use information present in the documentation - do not invent details
-5. If information is missing, clearly state what is not covered
+CRITICAL EXTRACTION REQUIREMENTS:
+
+1. **Extract Technical Components EXACTLY as written**:
+   - DAC names: Extract exact class names (e.g., `Customer`, `SOOrder`)
+   - Graph classes: Extract exact names (e.g., `CustomerMaint`, `SOOrderEntry`)
+   - Form IDs: Extract exact IDs (e.g., `SM201020`, `CR301000`)
+   - Field names: Extract exact names (e.g., `CustomerID`, `OrderNbr`)
+   - Event handlers: Extract exact names (e.g., `FieldUpdated`, `RowSelected`)
+   - Code elements: Extract exact code snippets, attributes, methods
+
+2. **Validation Rules**:
+   - If a technical detail is NOT in documentation, write: `[NOT FOUND IN DOCUMENTATION]`
+   - Do NOT infer, guess, or assume technical details
+   - Only include what is explicitly stated
+   - Use code formatting for all technical names: `Customer`, `SM201020`
+
+3. **Extraction Format**:
+   - Use backticks for technical names: `CustomerID`, `FieldUpdated`
+   - Extract code snippets exactly as written
+   - Preserve exact capitalization and spelling
 
 RESPONSE FORMAT:
-## Required Components
-- **DAC**: [Name if mentioned in docs, or "Not specified in documentation"]
-- **Screen/Form**: [Form ID and name if mentioned, or "Not specified in documentation"]
-- **Extension Point**: [Where to apply if mentioned, or "Not specified in documentation"]
+
+## Technical Components Extracted
+
+### DAC/Graph Classes
+- **DAC**: `[Extract exact name]` or `[NOT FOUND IN DOCUMENTATION]`
+- **Graph Class**: `[Extract exact name]` or `[NOT FOUND IN DOCUMENTATION]`
+- **Extension Class**: `[Extract exact name]` or `[NOT FOUND IN DOCUMENTATION]`
+
+### Forms and Screens
+- **Form ID**: `[Extract exact ID]` or `[NOT FOUND IN DOCUMENTATION]`
+- **Screen Name**: [Extract exact name] or `[NOT FOUND IN DOCUMENTATION]`
+- **Navigation Path**: [Extract exact path verbatim] or `[NOT FOUND IN DOCUMENTATION]`
+
+### Fields
+- **Field Names**: `[Extract exact names]` or `[NOT FOUND IN DOCUMENTATION]`
+- **Field Types**: [Extract types if mentioned] or `[NOT FOUND IN DOCUMENTATION]`
+- **Field Attributes**: `[Extract attributes]` or `[NOT FOUND IN DOCUMENTATION]`
+
+### Event Handlers
+- **Event Names**: `[Extract exact names]` or `[NOT FOUND IN DOCUMENTATION]`
+- **Method Signatures**: [Extract signatures if provided] or `[NOT FOUND IN DOCUMENTATION]`
+
+### Code Elements
+- **PXGraph Methods**: `[Extract methods]` or `[NOT FOUND IN DOCUMENTATION]`
+- **Attributes**: `[Extract attributes]` or `[NOT FOUND IN DOCUMENTATION]`
+- **Code Snippets**: 
+```csharp
+[Extract exact code if present]
+```
+OR `[NOT FOUND IN DOCUMENTATION]`
 
 ## Step-by-Step Implementation
 
-### Step 1: Navigate to [Exact Location]
-**Navigation Path**: [Specific menu path from documentation]
-**Screen/Form**: [Form ID and name]
+### Step 1: [Action Title]
+**Navigation Path**: [Extract EXACT path from documentation] or `[NOT FOUND IN DOCUMENTATION]`
+**Form ID**: `[Extract exact ID]` or `[NOT FOUND IN DOCUMENTATION]`
+**Screen Name**: [Extract exact name] or `[NOT FOUND IN DOCUMENTATION]`
 
-**Action**: [Specific action based on documentation]
-[Detailed instructions from documentation]
+**Actions Required**:
+1. Navigate to: [Exact menu path from docs]
+2. Open form: `[Form ID]` - [Screen name]
+3. Locate field: `[Field name]` (if mentioned)
+4. Configure: [Exact instructions from documentation]
+
+**Code Implementation** (if mentioned):
+```csharp
+[Extract exact code snippet]
+```
+OR `[NOT FOUND IN DOCUMENTATION]`
+
+**Event Handlers** (if mentioned):
+- Event: `[Event name]` | Method: `[Method name]`
+OR `[NOT FOUND IN DOCUMENTATION]`
 
 ### Step 2: [Next Step]
-[Continue with specific steps from documentation]
+[Continue with same structure, extracting exact details]
 
 ## Important Notes
-- This solution is based on the provided documentation
-- If specific details are missing, additional documentation may be required
-- Follow the exact steps and locations mentioned in the documentation
+- ✅ This solution is based STRICTLY on the provided documentation
+- ⚠️ Items marked `[NOT FOUND IN DOCUMENTATION]` require additional research
+- 📋 Follow the exact steps and locations mentioned in the documentation
+- 🔍 Verify each technical detail exists in the document content above
+- ❌ Do NOT add information not present in the documentation
 
-I'll help you with that process in Acumatica. Here's a step-by-step guide:
-
-## Prerequisites:
-- [List any required setup or conditions]
-
-## Steps:
-1. [First step with clear action]
-   - [Additional details if needed]
-   - [Navigation information if relevant]
-
-2. [Second step]
-   [Continue with all steps...]
-
-## Important Notes:
-- [Any warnings or best practices]
-- [Additional considerations]
-
-## Verification:
-- [How to verify success]
-- [Expected results]
-
-> 📚 Source: This information comes from [Document names]. Let me know if you need clarification on any step!"""
+> 📚 Source: This information comes from [Document names]. All technical details extracted exactly as written in documentation."""
 
     def _build_conceptual_prompt(self, question: str, content_by_doc: Dict[str, List[Dict]]) -> str:
         """Build prompt for conceptual (what-is) questions with DAC/DLL awareness"""
@@ -1465,9 +1508,47 @@ Let me help you with that:
                     self.logger.info("Processing document", extra={
                         "index": f"{i}/{len(docs_to_process)}",
                         "pdf_name": doc['pdf_name'],
-                        "page_number": doc['page_number']
+                        "page_number": doc['page_number'],
+                        "has_pre_extracted_vision": bool(doc.get('vision_extracted_text', ''))
                     })
                     
+                    # OPTIMIZATION: Check if vision text was already extracted by hybrid_retriever
+                    pre_extracted_vision_text = doc.get('vision_extracted_text', '')
+                    
+                    if pre_extracted_vision_text and len(pre_extracted_vision_text.strip()) > 50:
+                        # Use pre-extracted vision text - no need to call Vision API again
+                        self.logger.info("Using pre-extracted vision text from hybrid_retriever", extra={
+                            "pdf_name": doc['pdf_name'],
+                            "page_number": doc['page_number'],
+                            "text_length": len(pre_extracted_vision_text),
+                            "cost_saved": "Vision API call skipped"
+                        })
+                        
+                        successful_analyses += 1
+                        
+                        # No token usage for pre-extracted text (already counted in hybrid_retriever)
+                        document_analyses.append({
+                            'source': f"{doc['pdf_name']} - Page {doc['page_number']}",
+                            'vision_content': pre_extracted_vision_text,
+                            'score': doc['score'],
+                            'metadata': doc['metadata'],
+                            'analysis_success': True,
+                            'strategies_used': ['hybrid_retriever_vision'],  # Indicate source
+                            'token_usage': {
+                                'vision_tokens': 0,  # Already counted in hybrid_retriever
+                                'prompt_tokens': 0,
+                                'completion_tokens': 0
+                            },
+                            'pre_extracted': True  # Flag to indicate this was pre-extracted
+                        })
+                        
+                        self.logger.info("Document analysis successful (pre-extracted)", extra={
+                            "pdf_name": doc['pdf_name'],
+                            "page_number": doc['page_number']
+                        })
+                        continue  # Skip Vision API call
+                    
+                    # Fallback: Call Vision API if text wasn't pre-extracted
                     # Get image path
                     resolved_path = self.get_image_path(
                         doc['pdf_name'], 
@@ -1481,7 +1562,7 @@ Let me help you with that:
                         })
                         continue
                     
-                    # Enhanced analysis
+                    # Enhanced analysis (only if not pre-extracted)
                     context = f"Document: {doc['pdf_name']}, Page: {doc['page_number']}"
                     analysis_result = await self.analyze_document_image_enhanced(resolved_path, question, context)
                     
@@ -1500,10 +1581,11 @@ Let me help you with that:
                             'metadata': doc['metadata'],
                             'analysis_success': True,
                             'strategies_used': analysis_result["strategies_used"],
-                            'token_usage': analysis_result["token_usage"]
+                            'token_usage': analysis_result["token_usage"],
+                            'pre_extracted': False  # Flag to indicate Vision API was called
                         })
                         
-                        self.logger.info("Document analysis successful", extra={
+                        self.logger.info("Document analysis successful (Vision API)", extra={
                             "strategies": len(analysis_result["strategies_used"]),
                             "prompt_tokens": analysis_result["token_usage"]["prompt_tokens"],
                             "completion_tokens": analysis_result["token_usage"]["completion_tokens"]
@@ -1676,6 +1758,9 @@ Let me help you with that:
         """
         Normalize and enhance confidence scores for better accuracy.
         Handles edge cases where raw_score might be very low or zero.
+        
+        IMPROVED: Properly handles cosine similarity scores which are typically in [0, 1] range
+        for normalized embeddings, but can be very low for semantic matches.
         """
         # Log raw score for debugging
         if raw_score < 0.1:
@@ -1686,37 +1771,57 @@ Let me help you with that:
             })
         
         # Base normalization: ensure score is between 0 and 1
-        # Cosine similarity can be negative, so we normalize to [0, 1] range
-        # Formula: (similarity + 1) / 2 for cosine similarity range [-1, 1]
+        # Cosine similarity with normalized embeddings is typically [0, 1], but can be negative
         if raw_score < 0:
-            # If negative (rare but possible), normalize to [0, 1]
+            # If negative (rare but possible with unnormalized embeddings), normalize to [0, 1]
             normalized = (raw_score + 1) / 2
         else:
             normalized = max(0.0, min(1.0, raw_score))
         
-        # If score is extremely low (< 0.01), it might be a calculation error
-        # Don't boost it artificially, but ensure it's at least 0.01 for visibility
-        if normalized < 0.01 and raw_score > 0:
-            # Very low but non-zero score - keep minimal value for visibility
+        # CRITICAL FIX: If score is 0.0 but document was found, apply minimum confidence
+        # This handles cases where semantic similarity is very low but document is still relevant
+        if normalized == 0.0:
+            # If document was found through search, it should have minimum confidence
+            # This prevents 0.00 scores from appearing in results
+            normalized = 0.05  # Minimum 5% confidence for found documents
+            self.logger.debug("Applied minimum confidence for zero score", extra={
+                "raw_score": raw_score,
+                "normalized": normalized
+            })
+        elif normalized < 0.01 and raw_score > 0:
+            # Very low but non-zero score - ensure visibility
             normalized = max(0.01, normalized)
+        
+        # Apply non-linear scaling to better represent confidence levels
+        # Low scores (< 0.3) are common for semantic search - scale them appropriately
+        if normalized < 0.3:
+            # Low confidence range: apply gentle scaling to make differences visible
+            # Scale [0, 0.3] to [0.05, 0.4] to preserve relative differences
+            normalized = 0.05 + (normalized / 0.3) * 0.35
+        elif normalized < 0.7:
+            # Medium confidence: keep as-is (already meaningful)
+            pass
+        else:
+            # High confidence: slight boost
+            normalized = min(1.0, normalized * 1.05)
         
         # Boost confidence if vision extraction was successful
         if has_vision_content and analysis_success:
-            # Vision extraction adds credibility
+            # Vision extraction adds credibility - indicates document was actually analyzed
             normalized = min(1.0, normalized * 1.15)
         
-        # Boost confidence for higher raw scores (non-linear scaling)
-        if normalized > 0.7:
-            # High confidence gets slight boost
-            normalized = min(1.0, normalized * 1.05)
-        elif normalized < 0.3:
-            # Low confidence - don't reduce further, but log for analysis
-            if normalized < 0.1:
-                self.logger.warning("Low confidence score after normalization", extra={
-                    "normalized": normalized,
-                    "raw_score": raw_score,
-                    "note": "This may indicate semantic mismatch between query and document"
-                })
+        # Final validation: ensure score is never 0 if document was found
+        if normalized == 0.0:
+            normalized = 0.05  # Absolute minimum
+        
+        # Log low confidence for analysis
+        if normalized < 0.1:
+            self.logger.debug("Low confidence score after normalization", extra={
+                "normalized": normalized,
+                "raw_score": raw_score,
+                "has_vision": has_vision_content,
+                "note": "Low semantic similarity - document may still be relevant"
+            })
         
         return round(normalized, 4)  # More precision for low scores
     

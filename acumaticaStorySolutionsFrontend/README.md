@@ -39,9 +39,9 @@ npm install
 2. Start the development server:
 
    **For local access only:**
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
    Then open `http://localhost:5173`
 
    **For network access (accessible from other machines):**

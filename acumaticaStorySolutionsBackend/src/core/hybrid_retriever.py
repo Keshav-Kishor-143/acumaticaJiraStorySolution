@@ -1583,17 +1583,47 @@ Extraction Guidelines:
                     if page_key not in all_results:
                         # First time seeing this result
                         result.relevance_signals = {}
-                        result.combined_score = 0
+                        result.combined_score = 0.0
                         all_results[page_key] = result
                     
                     # Add this strategy's contribution
-                    all_results[page_key].relevance_signals[strategy] = result.score
-                    all_results[page_key].combined_score += result.score * weight
+                    # Ensure score is never negative (cosine similarity can be [-1, 1], but normalized embeddings give [0, 1])
+                    normalized_score = max(0.0, result.score)
+                    all_results[page_key].relevance_signals[strategy] = normalized_score
+                    all_results[page_key].combined_score += normalized_score * weight
             
-            # Apply query-specific boosting
+            # Apply query-specific boosting and ensure minimum confidence
             for result in all_results.values():
                 boost_factor = self._calculate_query_boost(result, query_analysis)
                 result.combined_score *= boost_factor
+                
+                # CRITICAL FIX: Ensure combined_score is never 0 if document was found
+                # If a document was found through any strategy, it should have minimum confidence
+                if result.combined_score == 0.0 and result.relevance_signals:
+                    # Calculate minimum confidence based on best strategy score
+                    best_strategy_score = max(result.relevance_signals.values()) if result.relevance_signals else 0.0
+                    if best_strategy_score > 0:
+                        # Use best strategy score as base, with minimum threshold
+                        result.combined_score = max(0.05, best_strategy_score * 0.3)  # At least 5% or 30% of best score
+                        self.logger.debug("Applied minimum confidence threshold", extra={
+                            "pdf_name": result.pdf_name,
+                            "page": result.page_number,
+                            "best_strategy_score": best_strategy_score,
+                            "final_combined_score": result.combined_score
+                        })
+            
+            # Normalize scores to [0, 1] range if needed
+            if all_results:
+                max_score = max(r.combined_score for r in all_results.values())
+                if max_score > 0:
+                    # Optional: Normalize all scores relative to max (but preserve relative differences)
+                    # This helps when scores are very low but still meaningful
+                    for result in all_results.values():
+                        if max_score < 0.1:
+                            # If max score is very low, apply scaling to make differences more visible
+                            # But preserve the relative ranking
+                            result.combined_score = result.combined_score / max_score * 0.5  # Scale to [0, 0.5] range
+                        # If max_score >= 0.1, keep scores as-is (they're already meaningful)
             
             # Sort by final combined score
             final_results = sorted(all_results.values(), 
@@ -1602,15 +1632,28 @@ Extraction Guidelines:
             
             # Update search strategy to show best contributing strategy
             for result in final_results:
-                best_strategy = max(result.relevance_signals.items(), 
-                                key=lambda x: x[1])[0]
-                result.search_strategy = f"hybrid_{best_strategy}"
+                if result.relevance_signals:
+                    best_strategy = max(result.relevance_signals.items(), 
+                                    key=lambda x: x[1])[0]
+                    result.search_strategy = f"hybrid_{best_strategy}"
+                else:
+                    result.search_strategy = "hybrid_unknown"
             
-            self.logger.info("Results merged and reranked", extra={
-                "total_results": len(all_results),
-                "strategies_used": len(strategy_results),
-                "top_k_returned": min(top_k, len(final_results))
-            })
+            # Log score distribution for debugging
+            if final_results:
+                score_range = (min(r.combined_score for r in final_results), 
+                             max(r.combined_score for r in final_results))
+                self.logger.info("Results merged and reranked", extra={
+                    "total_results": len(all_results),
+                    "strategies_used": len(strategy_results),
+                    "top_k_returned": min(top_k, len(final_results)),
+                    "score_range": f"{score_range[0]:.4f} - {score_range[1]:.4f}",
+                    "top_score": final_results[0].combined_score if final_results else 0.0
+                })
+            else:
+                self.logger.warning("No results after merging", extra={
+                    "strategies_used": len(strategy_results)
+                })
             
             return final_results[:top_k]
             

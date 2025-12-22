@@ -147,22 +147,59 @@ class SolutionGenerator:
                     messages=[
                         {
                             "role": "system",
-                            "content": """You are an expert Acumatica developer and technical writer. Your task is to create precise, actionable solutions based STRICTLY on the retrieved documentation.
+                            "content": """You are an expert Acumatica developer and technical writer. Your task is to extract EXACT technical details and create precise, actionable solutions based STRICTLY on the retrieved documentation.
+
+CRITICAL EXTRACTION REQUIREMENTS:
+
+1. **DAC/Graph Details** (Extract EXACTLY as written):
+   - Extract exact DAC class names (e.g., "Customer", "SOOrder", "CustomerExt")
+   - Extract Graph class names (e.g., "CustomerMaint", "SOOrderEntry", "CustomerMaintExt")
+   - Extract extension class names if mentioned
+   - Use code formatting: `Customer`, `SOOrderEntry`
+
+2. **Form/Screen Details** (Extract EXACTLY as written):
+   - Extract exact Form IDs (e.g., "SM201020", "CR301000", "SO301000")
+   - Extract screen names exactly as written
+   - Extract navigation paths verbatim from documentation
+   - Format: **Form ID**: `SM201020` | **Screen**: Customer Maintenance
+
+3. **Field Details** (Extract EXACTLY as written):
+   - Extract exact field names (e.g., "CustomerID", "OrderNbr", "Status")
+   - Extract field types if mentioned (e.g., "String", "Int", "Decimal")
+   - Extract field attributes if specified (e.g., "PXDBString", "PXUIFieldAttribute")
+   - Format: **Field**: `CustomerID` (String)
+
+4. **Event Handlers** (Extract EXACTLY as written):
+   - Extract event handler names (e.g., "FieldUpdated", "RowSelected", "RowPersisting")
+   - Extract method signatures if provided
+   - Extract event parameters if mentioned
+   - Format: **Event**: `FieldUpdated` | **Method**: `CustomerID_FieldUpdated`
+
+5. **Code Elements** (Extract EXACTLY as written):
+   - Extract PXGraph methods (e.g., "PXGraph", "PXCache", "PXSelect")
+   - Extract attribute names (e.g., "PXDBString", "PXUIFieldAttribute", "PXDefault")
+   - Extract code snippets exactly as written (use code blocks)
+   - Extract namespace/using statements if mentioned
+
+6. **Validation Rules**:
+   - If a technical detail is NOT in the documentation, write: "[NOT FOUND IN DOCUMENTATION]"
+   - Do NOT infer, guess, or assume technical details
+   - Only include what is explicitly stated in the retrieved content
+   - Verify each technical detail exists before including it
 
 CRITICAL RULES:
 1. **Grounding**: Only use information from the retrieved content. Do NOT add information not present in the sources.
-2. **DAC/DLL Identification**: Identify specific DACs (Data Access Classes), screens, forms, and extension points mentioned in the documentation.
-3. **Navigation Instructions**: Provide step-by-step navigation paths (e.g., "Navigate to: System > Customization > Customization Projects > [Project Name] > [Screen ID]").
-4. **Precision**: If the documentation doesn't mention a specific screen/DAC, state that clearly rather than guessing.
-5. **Focus**: Address ONLY what is asked in the story description and acceptance criteria. Do not add unrelated solutions.
-6. **Step-by-Step**: Break down implementation into numbered steps with specific navigation paths and form names.
+2. **Precision**: Extract technical details EXACTLY as written - no modifications, no assumptions.
+3. **Navigation Instructions**: Provide step-by-step navigation paths verbatim from documentation.
+4. **Focus**: Address ONLY what is asked in the story description and acceptance criteria.
+5. **Honesty**: Clearly mark missing information with "[NOT FOUND IN DOCUMENTATION]".
 
 Your solution must be:
 - Accurate (grounded in retrieved content)
-- Specific (with exact screen names, form IDs, DAC names when available)
-- Actionable (step-by-step navigation and instructions)
+- Specific (with exact technical names, IDs, and code elements)
+- Actionable (step-by-step navigation with exact form/field references)
 - Focused (only addresses the story requirements)
-- Honest (clearly state when information is missing from documentation)"""
+- Honest (clearly marks missing information)"""
                         },
                         {
                             "role": "user",
@@ -195,9 +232,9 @@ Your solution must be:
         acceptance_criteria: List[str],
         retrieved_answer: str,
         sources: List[Dict],
-        questions: List[str]
+        questions: List[str]  # Kept for compatibility, not used in concise format
     ) -> str:
-        """Build enhanced prompt with DAC/DLL awareness and strict grounding"""
+        """Build enhanced prompt with DAC/DLL awareness and strict grounding - CONCISE format"""
         
         # Format sources with confidence scores
         sources_text = []
@@ -212,9 +249,11 @@ Your solution must be:
             )
         
         criteria_text = "\n".join(f"- {criterion}" for criterion in acceptance_criteria)
-        questions_text = "\n".join(f"- {q}" for q in questions) if questions else "None specified"
         
-        prompt = f"""Create a precise, actionable solution for this Acumatica development story.
+        # Questions are used internally for structure but not explicitly shown in concise format
+        _ = questions  # Suppress unused parameter warning
+        
+        prompt = f"""Extract technical details and create a CONCISE, direct, actionable solution. Be brief - remove unnecessary repetition and verbose explanations.
 
 STORY DESCRIPTION:
 {description}
@@ -222,72 +261,64 @@ STORY DESCRIPTION:
 ACCEPTANCE CRITERIA:
 {criteria_text}
 
-KEY QUESTIONS TO ADDRESS (for narrative structure):
-{questions_text}
-
 RETRIEVED DOCUMENTATION CONTENT:
 {retrieved_answer}
 
 SOURCE REFERENCES:
 {chr(10).join(sources_text)}
 
-TASK: Create a solution that:
+CRITICAL REQUIREMENTS:
+1. **Be CONCISE**: Remove unnecessary words, repetition, and verbose explanations
+2. **Be DIRECT**: Get to the point quickly - no lengthy introductions
+3. **Be ACCURATE**: Extract technical details EXACTLY as written
+4. **Be ACTIONABLE**: Focus on what to do, not lengthy descriptions
 
-1. **Identifies Specific Components**:
-   - Which DAC (Data Access Class) needs to be extended or created? (if mentioned in docs)
-   - Which screen/form (with exact form ID) needs to be modified? (if mentioned in docs)
-   - Where exactly should the extension be applied? (if mentioned in docs)
-   - If not mentioned, clearly state: "Specific DAC/Screen not identified in available documentation"
+FORMAT YOUR RESPONSE:
 
-2. **Provides Step-by-Step Navigation**:
-   - Exact navigation path (e.g., "System > Customization > Customization Projects")
-   - Specific form IDs and screen names (only if present in documentation)
-   - Where to find each setting or option (based on retrieved content)
+## Technical Components
 
-3. **Gives Implementation Steps**:
-   - Numbered steps with specific actions from documentation
-   - Exact field names, menu options, and form locations (only if in docs)
-   - Code extension points if mentioned in documentation
+**Form ID**: `[Extract exact ID]` or `[NOT FOUND IN DOCUMENTATION]`
+**Screen Name**: [Extract exact name] or `[NOT FOUND IN DOCUMENTATION]`
+**Key Fields**: [Extract exact field names, comma-separated] or `[NOT FOUND IN DOCUMENTATION]`
+**DAC/Graph**: [Extract if found] or `[NOT FOUND IN DOCUMENTATION]`
+**Code/Events**: [Extract if found] or `[NOT FOUND IN DOCUMENTATION]`
 
-4. **Stays Focused**:
-   - Address ONLY what is in the story description
-   - Do NOT add solutions for unrelated features
-   - If documentation doesn't cover something, state: "This aspect is not covered in the available documentation"
+## Solution
 
-5. **Uses Retrieved Content Only**:
-   - Base your solution STRICTLY on the retrieved documentation above
-   - Do NOT invent or assume information not present in sources
-   - If information is missing, indicate what additional documentation might be needed
+[Brief 2-3 sentence overview - be direct]
 
-FORMAT YOUR RESPONSE AS:
+### Implementation Steps
 
-## Solution Overview
-[Brief overview based STRICTLY on retrieved content]
+**Step 1: [Action Title]**
+- **Form**: `[Form ID]` | **Screen**: [Screen Name]
+- Navigate to: [Exact path or `[NOT FOUND]`]
+- Actions:
+  1. [Direct action from docs]
+  2. [Next action]
+  3. [Continue...]
 
-## Required Components
-- **DAC**: [Specific DAC name if mentioned in documentation, or "Not specified in available documentation"]
-- **Screen/Form**: [Exact form ID and screen name if mentioned, or "Not specified in available documentation"]
-- **Extension Point**: [Where to apply the extension if mentioned, or "Not specified in available documentation"]
+**Step 2: [Next Action]**
+- **Form**: `[Form ID]` | **Screen**: [Screen Name]
+- Actions:
+  1. [Direct action]
+  2. [Next action]
 
-## Step-by-Step Implementation
+[Continue for remaining steps - be concise]
 
-### Step 1: Navigate to [Specific Location]
-**Navigation Path**: [Exact menu path from documentation, or "Navigation path not specified in documentation"]
-**Screen/Form**: [Form ID and name if mentioned]
+### Notes
+- ✅ Based on documentation: [Document names]
+- ⚠️ Missing: [List only critical missing items]
+- ❌ Do NOT add information not in documentation
 
-**Action**: [Specific action based on documentation]
-[Detailed instructions from documentation]
+CONCISENESS RULES:
+- Remove redundant phrases like "This solution is based STRICTLY on..."
+- Remove repetitive verification sections
+- Combine related steps when possible
+- Use bullet points, not paragraphs
+- Skip empty sections (Code/Events if not found)
+- No lengthy explanations - just facts and actions
 
-### Step 2: [Next Step]
-[Continue with specific steps ONLY from documentation]
-
-## Important Notes
-- This solution is based STRICTLY on the provided documentation
-- If specific details are missing, additional documentation may be required
-- Follow the exact steps and locations mentioned in the documentation
-- Do not add information not present in the retrieved sources
-
-Remember: Be precise, grounded, and focused. No hallucination. Only use information from the retrieved documentation."""
+Remember: CONCISE + ACCURATE. Extract exactly, write directly, remove fluff."""
         
         return prompt
     
@@ -342,7 +373,7 @@ Write the solution as a coherent narrative, not as a list of separate answers. M
         description = story_context.get('description', '')
         
         narrative_parts = [
-            f"## Solution Overview\n\n",
+            "## Solution Overview\n\n",
             f"Based on the story: {description}\n\n",
             "## Implementation Steps\n\n"
         ]
