@@ -1,0 +1,26 @@
+# Core dependencies for FastAPI service
+fastapi>=0.104.0,<1.0.0
+uvicorn[standard]>=0.24.0,<1.0.0
+pydantic>=2.0.0,<3.0.0
+gunicorn>=21.0.0,<22.0.0
+
+# OpenAI for LLM and vision
+openai>=1.0.0,<2.0.0
+numpy>=1.24.0,<2.0.0
+
+# Vector operations (lightweight)
+scikit-learn>=1.3.0,<2.0.0
+
+# HuggingFace embeddings (minimal)
+sentence-transformers>=2.2.0,<3.0.0
+torch>=2.1.0,<3.0.0 --extra-index-url https://download.pytorch.org/whl/cpu
+llama-index>=0.9.0,<1.0.0
+python-dotenv>=1.0.0,<2.0.0
+
+# PDF processing
+PyMuPDF>=1.23.0,<2.0.0
+Pillow>=10.0.0,<11.0.0
+
+# Markdown formatting
+markdown>=3.4.0,<4.0.0
+

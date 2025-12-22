@@ -1,0 +1,5548 @@
+[
+  {
+    "page_number": 1,
+    "section_id": "page_1",
+    "image_path": "images/page1.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 0,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 1,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 2,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 3,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_1"
+  },
+  {
+    "page_number": 2,
+    "section_id": "page_2",
+    "image_path": "images/page2.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 4,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 5,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 6,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 7,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_2"
+  },
+  {
+    "page_number": 3,
+    "section_id": "page_3",
+    "image_path": "images/page3.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 8,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 9,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 10,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 11,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_3"
+  },
+  {
+    "page_number": 4,
+    "section_id": "page_4",
+    "image_path": "images/page4.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 12,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 13,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 14,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 15,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_4"
+  },
+  {
+    "page_number": 5,
+    "section_id": "page_5",
+    "image_path": "images/page5.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 16,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 17,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 18,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 19,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_5"
+  },
+  {
+    "page_number": 6,
+    "section_id": "page_6",
+    "image_path": "images/page6.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 20,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 21,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 22,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 23,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_6"
+  },
+  {
+    "page_number": 7,
+    "section_id": "page_7",
+    "image_path": "images/page7.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 24,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 25,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 26,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 27,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_7"
+  },
+  {
+    "page_number": 8,
+    "section_id": "page_8",
+    "image_path": "images/page8.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 28,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 29,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 30,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 31,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_8"
+  },
+  {
+    "page_number": 9,
+    "section_id": "page_9",
+    "image_path": "images/page9.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 32,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 33,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 34,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 35,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_9"
+  },
+  {
+    "page_number": 10,
+    "section_id": "page_10",
+    "image_path": "images/page10.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 36,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 37,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 38,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 39,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_10"
+  },
+  {
+    "page_number": 11,
+    "section_id": "page_11",
+    "image_path": "images/page11.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 40,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 41,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 42,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 43,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_11"
+  },
+  {
+    "page_number": 12,
+    "section_id": "page_12",
+    "image_path": "images/page12.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 44,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 45,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 46,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 47,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_12"
+  },
+  {
+    "page_number": 13,
+    "section_id": "page_13",
+    "image_path": "images/page13.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 48,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 49,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 50,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 51,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_13"
+  },
+  {
+    "page_number": 14,
+    "section_id": "page_14",
+    "image_path": "images/page14.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 52,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 53,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 54,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 55,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_14"
+  },
+  {
+    "page_number": 15,
+    "section_id": "page_15",
+    "image_path": "images/page15.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 56,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 57,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 58,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 59,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_15"
+  },
+  {
+    "page_number": 16,
+    "section_id": "page_16",
+    "image_path": "images/page16.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 60,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 61,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 62,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 63,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_16"
+  },
+  {
+    "page_number": 17,
+    "section_id": "page_17",
+    "image_path": "images/page17.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 64,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 65,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 66,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 67,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_17"
+  },
+  {
+    "page_number": 18,
+    "section_id": "page_18",
+    "image_path": "images/page18.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 68,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 69,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 70,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 71,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_18"
+  },
+  {
+    "page_number": 19,
+    "section_id": "page_19",
+    "image_path": "images/page19.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 72,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 73,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 74,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 75,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_19"
+  },
+  {
+    "page_number": 20,
+    "section_id": "page_20",
+    "image_path": "images/page20.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 76,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 77,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 78,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 79,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_20"
+  },
+  {
+    "page_number": 21,
+    "section_id": "page_21",
+    "image_path": "images/page21.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 80,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 81,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 82,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 83,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_21"
+  },
+  {
+    "page_number": 22,
+    "section_id": "page_22",
+    "image_path": "images/page22.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 84,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 85,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 86,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 87,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_22"
+  },
+  {
+    "page_number": 23,
+    "section_id": "page_23",
+    "image_path": "images/page23.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 88,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 89,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 90,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 91,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_23"
+  },
+  {
+    "page_number": 24,
+    "section_id": "page_24",
+    "image_path": "images/page24.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 92,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 93,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 94,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 95,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_24"
+  },
+  {
+    "page_number": 25,
+    "section_id": "page_25",
+    "image_path": "images/page25.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 96,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 97,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 98,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 99,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_25"
+  },
+  {
+    "page_number": 26,
+    "section_id": "page_26",
+    "image_path": "images/page26.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 100,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 101,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 102,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 103,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_26"
+  },
+  {
+    "page_number": 27,
+    "section_id": "page_27",
+    "image_path": "images/page27.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 104,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 105,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 106,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 107,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_27"
+  },
+  {
+    "page_number": 28,
+    "section_id": "page_28",
+    "image_path": "images/page28.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 108,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 109,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 110,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 111,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_28"
+  },
+  {
+    "page_number": 29,
+    "section_id": "page_29",
+    "image_path": "images/page29.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 112,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 113,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 114,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 115,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_29"
+  },
+  {
+    "page_number": 30,
+    "section_id": "page_30",
+    "image_path": "images/page30.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 116,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 117,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 118,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 119,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_30"
+  },
+  {
+    "page_number": 31,
+    "section_id": "page_31",
+    "image_path": "images/page31.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 120,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 121,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 122,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 123,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_31"
+  },
+  {
+    "page_number": 32,
+    "section_id": "page_32",
+    "image_path": "images/page32.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 124,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 125,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 126,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 127,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_32"
+  },
+  {
+    "page_number": 33,
+    "section_id": "page_33",
+    "image_path": "images/page33.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 128,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 129,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 130,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 131,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_33"
+  },
+  {
+    "page_number": 34,
+    "section_id": "page_34",
+    "image_path": "images/page34.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 132,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 133,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 134,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 135,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_34"
+  },
+  {
+    "page_number": 35,
+    "section_id": "page_35",
+    "image_path": "images/page35.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 136,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 137,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 138,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 139,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_35"
+  },
+  {
+    "page_number": 36,
+    "section_id": "page_36",
+    "image_path": "images/page36.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 140,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 141,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 142,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 143,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_36"
+  },
+  {
+    "page_number": 37,
+    "section_id": "page_37",
+    "image_path": "images/page37.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 144,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 145,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 146,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 147,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_37"
+  },
+  {
+    "page_number": 38,
+    "section_id": "page_38",
+    "image_path": "images/page38.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 148,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 149,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 150,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 151,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_38"
+  },
+  {
+    "page_number": 39,
+    "section_id": "page_39",
+    "image_path": "images/page39.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 152,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 153,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 154,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 155,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_39"
+  },
+  {
+    "page_number": 40,
+    "section_id": "page_40",
+    "image_path": "images/page40.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 156,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 157,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 158,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 159,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_40"
+  },
+  {
+    "page_number": 41,
+    "section_id": "page_41",
+    "image_path": "images/page41.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 160,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 161,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 162,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 163,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_41"
+  },
+  {
+    "page_number": 42,
+    "section_id": "page_42",
+    "image_path": "images/page42.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 164,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 165,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 166,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 167,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_42"
+  },
+  {
+    "page_number": 43,
+    "section_id": "page_43",
+    "image_path": "images/page43.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 168,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 169,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 170,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 171,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_43"
+  },
+  {
+    "page_number": 44,
+    "section_id": "page_44",
+    "image_path": "images/page44.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 172,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 173,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 174,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 175,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_44"
+  },
+  {
+    "page_number": 45,
+    "section_id": "page_45",
+    "image_path": "images/page45.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 176,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 177,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 178,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 179,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_45"
+  },
+  {
+    "page_number": 46,
+    "section_id": "page_46",
+    "image_path": "images/page46.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 180,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 181,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 182,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 183,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_46"
+  },
+  {
+    "page_number": 47,
+    "section_id": "page_47",
+    "image_path": "images/page47.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 184,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 185,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 186,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 187,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_47"
+  },
+  {
+    "page_number": 48,
+    "section_id": "page_48",
+    "image_path": "images/page48.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 188,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 189,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 190,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 191,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_48"
+  },
+  {
+    "page_number": 49,
+    "section_id": "page_49",
+    "image_path": "images/page49.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 192,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 193,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 194,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 195,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_49"
+  },
+  {
+    "page_number": 50,
+    "section_id": "page_50",
+    "image_path": "images/page50.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 196,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 197,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 198,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 199,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_50"
+  },
+  {
+    "page_number": 51,
+    "section_id": "page_51",
+    "image_path": "images/page51.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 200,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 201,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 202,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 203,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_51"
+  },
+  {
+    "page_number": 52,
+    "section_id": "page_52",
+    "image_path": "images/page52.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 204,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 205,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 206,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 207,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_52"
+  },
+  {
+    "page_number": 53,
+    "section_id": "page_53",
+    "image_path": "images/page53.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 208,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 209,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 210,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 211,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_53"
+  },
+  {
+    "page_number": 54,
+    "section_id": "page_54",
+    "image_path": "images/page54.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 212,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 213,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 214,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 215,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_54"
+  },
+  {
+    "page_number": 55,
+    "section_id": "page_55",
+    "image_path": "images/page55.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 216,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 217,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 218,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 219,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_55"
+  },
+  {
+    "page_number": 56,
+    "section_id": "page_56",
+    "image_path": "images/page56.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 220,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 221,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 222,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 223,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_56"
+  },
+  {
+    "page_number": 57,
+    "section_id": "page_57",
+    "image_path": "images/page57.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 224,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 225,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 226,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 227,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_57"
+  },
+  {
+    "page_number": 58,
+    "section_id": "page_58",
+    "image_path": "images/page58.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 228,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 229,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 230,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 231,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_58"
+  },
+  {
+    "page_number": 59,
+    "section_id": "page_59",
+    "image_path": "images/page59.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 232,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 233,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 234,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 235,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_59"
+  },
+  {
+    "page_number": 60,
+    "section_id": "page_60",
+    "image_path": "images/page60.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 236,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 237,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 238,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 239,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_60"
+  },
+  {
+    "page_number": 61,
+    "section_id": "page_61",
+    "image_path": "images/page61.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 240,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 241,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 242,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 243,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_61"
+  },
+  {
+    "page_number": 62,
+    "section_id": "page_62",
+    "image_path": "images/page62.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 244,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 245,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 246,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 247,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_62"
+  },
+  {
+    "page_number": 63,
+    "section_id": "page_63",
+    "image_path": "images/page63.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 248,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 249,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 250,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 251,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_63"
+  },
+  {
+    "page_number": 64,
+    "section_id": "page_64",
+    "image_path": "images/page64.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 252,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 253,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 254,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 255,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_64"
+  },
+  {
+    "page_number": 65,
+    "section_id": "page_65",
+    "image_path": "images/page65.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 256,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 257,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 258,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 259,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_65"
+  },
+  {
+    "page_number": 66,
+    "section_id": "page_66",
+    "image_path": "images/page66.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 260,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 261,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 262,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 263,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_66"
+  },
+  {
+    "page_number": 67,
+    "section_id": "page_67",
+    "image_path": "images/page67.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 264,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 265,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 266,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 267,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_67"
+  },
+  {
+    "page_number": 68,
+    "section_id": "page_68",
+    "image_path": "images/page68.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 268,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 269,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 270,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 271,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_68"
+  },
+  {
+    "page_number": 69,
+    "section_id": "page_69",
+    "image_path": "images/page69.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 272,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 273,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 274,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 275,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_69"
+  },
+  {
+    "page_number": 70,
+    "section_id": "page_70",
+    "image_path": "images/page70.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 276,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 277,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 278,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 279,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_70"
+  },
+  {
+    "page_number": 71,
+    "section_id": "page_71",
+    "image_path": "images/page71.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 280,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 281,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 282,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 283,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_71"
+  },
+  {
+    "page_number": 72,
+    "section_id": "page_72",
+    "image_path": "images/page72.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 284,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 285,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 286,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 287,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_72"
+  },
+  {
+    "page_number": 73,
+    "section_id": "page_73",
+    "image_path": "images/page73.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 288,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 289,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 290,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 291,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_73"
+  },
+  {
+    "page_number": 74,
+    "section_id": "page_74",
+    "image_path": "images/page74.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 292,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 293,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 294,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 295,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_74"
+  },
+  {
+    "page_number": 75,
+    "section_id": "page_75",
+    "image_path": "images/page75.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 296,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 297,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 298,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 299,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_75"
+  },
+  {
+    "page_number": 76,
+    "section_id": "page_76",
+    "image_path": "images/page76.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 300,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 301,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 302,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 303,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_76"
+  },
+  {
+    "page_number": 77,
+    "section_id": "page_77",
+    "image_path": "images/page77.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 304,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 305,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 306,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 307,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_77"
+  },
+  {
+    "page_number": 78,
+    "section_id": "page_78",
+    "image_path": "images/page78.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 308,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 309,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 310,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 311,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_78"
+  },
+  {
+    "page_number": 79,
+    "section_id": "page_79",
+    "image_path": "images/page79.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 312,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 313,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 314,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 315,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_79"
+  },
+  {
+    "page_number": 80,
+    "section_id": "page_80",
+    "image_path": "images/page80.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 316,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 317,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 318,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 319,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_80"
+  },
+  {
+    "page_number": 81,
+    "section_id": "page_81",
+    "image_path": "images/page81.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 320,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 321,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 322,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 323,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_81"
+  },
+  {
+    "page_number": 82,
+    "section_id": "page_82",
+    "image_path": "images/page82.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 324,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 325,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 326,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 327,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_82"
+  },
+  {
+    "page_number": 83,
+    "section_id": "page_83",
+    "image_path": "images/page83.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 328,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 329,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 330,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 331,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_83"
+  },
+  {
+    "page_number": 84,
+    "section_id": "page_84",
+    "image_path": "images/page84.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 332,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 333,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 334,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 335,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_84"
+  },
+  {
+    "page_number": 85,
+    "section_id": "page_85",
+    "image_path": "images/page85.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 336,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 337,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 338,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 339,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_85"
+  },
+  {
+    "page_number": 86,
+    "section_id": "page_86",
+    "image_path": "images/page86.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 340,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 341,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 342,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 343,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_86"
+  },
+  {
+    "page_number": 87,
+    "section_id": "page_87",
+    "image_path": "images/page87.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 344,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 345,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 346,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 347,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_87"
+  },
+  {
+    "page_number": 88,
+    "section_id": "page_88",
+    "image_path": "images/page88.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 348,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 349,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 350,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 351,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_88"
+  },
+  {
+    "page_number": 89,
+    "section_id": "page_89",
+    "image_path": "images/page89.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 352,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 353,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 354,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 355,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_89"
+  },
+  {
+    "page_number": 90,
+    "section_id": "page_90",
+    "image_path": "images/page90.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 356,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 357,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 358,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 359,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_90"
+  },
+  {
+    "page_number": 91,
+    "section_id": "page_91",
+    "image_path": "images/page91.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 360,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 361,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 362,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 363,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_91"
+  },
+  {
+    "page_number": 92,
+    "section_id": "page_92",
+    "image_path": "images/page92.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 364,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 365,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 366,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 367,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_92"
+  },
+  {
+    "page_number": 93,
+    "section_id": "page_93",
+    "image_path": "images/page93.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 368,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 369,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 370,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 371,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_93"
+  },
+  {
+    "page_number": 94,
+    "section_id": "page_94",
+    "image_path": "images/page94.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 372,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 373,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 374,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 375,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_94"
+  },
+  {
+    "page_number": 95,
+    "section_id": "page_95",
+    "image_path": "images/page95.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 376,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 377,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 378,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 379,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_95"
+  },
+  {
+    "page_number": 96,
+    "section_id": "page_96",
+    "image_path": "images/page96.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 380,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 381,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 382,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 383,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_96"
+  },
+  {
+    "page_number": 97,
+    "section_id": "page_97",
+    "image_path": "images/page97.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 384,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 385,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 386,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 387,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_97"
+  },
+  {
+    "page_number": 98,
+    "section_id": "page_98",
+    "image_path": "images/page98.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 388,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 389,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 390,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 391,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_98"
+  },
+  {
+    "page_number": 99,
+    "section_id": "page_99",
+    "image_path": "images/page99.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 392,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 393,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 394,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 395,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_99"
+  },
+  {
+    "page_number": 100,
+    "section_id": "page_100",
+    "image_path": "images/page100.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 396,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 397,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 398,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 399,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_100"
+  },
+  {
+    "page_number": 101,
+    "section_id": "page_101",
+    "image_path": "images/page101.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 400,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 401,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 402,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 403,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_101"
+  },
+  {
+    "page_number": 102,
+    "section_id": "page_102",
+    "image_path": "images/page102.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 404,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 405,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 406,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 407,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_102"
+  },
+  {
+    "page_number": 103,
+    "section_id": "page_103",
+    "image_path": "images/page103.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 408,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 409,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 410,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 411,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_103"
+  },
+  {
+    "page_number": 104,
+    "section_id": "page_104",
+    "image_path": "images/page104.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 412,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 413,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 414,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 415,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_104"
+  },
+  {
+    "page_number": 105,
+    "section_id": "page_105",
+    "image_path": "images/page105.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 416,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 417,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 418,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 419,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_105"
+  },
+  {
+    "page_number": 106,
+    "section_id": "page_106",
+    "image_path": "images/page106.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 420,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 421,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 422,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 423,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_106"
+  },
+  {
+    "page_number": 107,
+    "section_id": "page_107",
+    "image_path": "images/page107.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 424,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 425,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 426,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 427,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_107"
+  },
+  {
+    "page_number": 108,
+    "section_id": "page_108",
+    "image_path": "images/page108.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 428,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 429,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 430,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 431,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_108"
+  },
+  {
+    "page_number": 109,
+    "section_id": "page_109",
+    "image_path": "images/page109.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 432,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 433,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 434,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 435,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_109"
+  },
+  {
+    "page_number": 110,
+    "section_id": "page_110",
+    "image_path": "images/page110.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 436,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 437,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 438,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 439,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_110"
+  },
+  {
+    "page_number": 111,
+    "section_id": "page_111",
+    "image_path": "images/page111.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 440,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 441,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 442,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 443,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_111"
+  },
+  {
+    "page_number": 112,
+    "section_id": "page_112",
+    "image_path": "images/page112.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 444,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 445,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 446,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 447,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_112"
+  },
+  {
+    "page_number": 113,
+    "section_id": "page_113",
+    "image_path": "images/page113.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 448,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 449,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 450,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 451,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_113"
+  },
+  {
+    "page_number": 114,
+    "section_id": "page_114",
+    "image_path": "images/page114.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 452,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 453,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 454,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 455,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_114"
+  },
+  {
+    "page_number": 115,
+    "section_id": "page_115",
+    "image_path": "images/page115.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 456,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 457,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 458,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 459,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_115"
+  },
+  {
+    "page_number": 116,
+    "section_id": "page_116",
+    "image_path": "images/page116.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 460,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 461,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 462,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 463,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_116"
+  },
+  {
+    "page_number": 117,
+    "section_id": "page_117",
+    "image_path": "images/page117.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 464,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 465,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 466,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 467,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_117"
+  },
+  {
+    "page_number": 118,
+    "section_id": "page_118",
+    "image_path": "images/page118.jpg",
+    "pdf_name": "EU_Automated_Warehouse_Operations_2025R1",
+    "chunks": [
+      {
+        "vector_index": 468,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 296,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 469,
+        "coordinates": {
+          "x1": 296,
+          "y1": 0,
+          "x2": 592,
+          "y2": 384
+        }
+      },
+      {
+        "vector_index": 470,
+        "coordinates": {
+          "x1": 0,
+          "y1": 384,
+          "x2": 296,
+          "y2": 768
+        }
+      },
+      {
+        "vector_index": 471,
+        "coordinates": {
+          "x1": 296,
+          "y1": 384,
+          "x2": 592,
+          "y2": 768
+        }
+      }
+    ],
+    "section_type": "page",
+    "timestamp": "",
+    "id": "EU_Automated_Warehouse_Operations_2025R1_page_118"
+  }
+]
