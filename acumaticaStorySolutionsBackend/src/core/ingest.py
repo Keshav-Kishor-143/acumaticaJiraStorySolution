@@ -30,14 +30,41 @@ def _get_huggingface_embedding(model_name: str, device: str = "cpu", logger=None
             return HuggingFaceEmbedding(model_name=model_name, device=device, normalize=True)
         except ImportError:
             from sentence_transformers import SentenceTransformer
+            import os
             if logger:
                 logger.info("Using sentence-transformers directly (HuggingFace embeddings)")
+            
+            # Fix for meta tensor issue: explicitly disable device_map and use trust_remote_code
+            # Set environment variable to prevent meta tensor issues
+            import os
+            os.environ.setdefault("TRANSFORMERS_NO_ADVISORY_WARNINGS", "1")
+            
+            # Load model without device_map to avoid meta tensor issues
+            # Use device parameter directly instead of moving after loading
+            try:
+                model = SentenceTransformer(
+                    model_name, 
+                    device=device,
+                    trust_remote_code=True
+                )
+            except Exception as e:
+                # Fallback: load without device parameter and move manually
+                if "meta tensor" in str(e).lower() or "to_empty" in str(e).lower():
+                    if logger:
+                        logger.warning(f"Meta tensor issue detected, using fallback loading method: {e}")
+                    model = SentenceTransformer(model_name, trust_remote_code=True)
+                    # Only move if not already on correct device
+                    if next(model.parameters()).device.type != device:
+                        model = model.to(device)
+                else:
+                    raise
+            
             class EmbeddingWrapper:
                 def __init__(self, model):
                     self.model = model
                 def get_text_embedding(self, text: str):
                     return self.model.encode(text, normalize_embeddings=True).tolist()
-            return EmbeddingWrapper(SentenceTransformer(model_name, device=device))
+            return EmbeddingWrapper(model)
 
 class VDRIngestor:
     """
@@ -239,10 +266,15 @@ class VDRIngestor:
             embeddings_data = []
             
             for metadata in image_metadata:
-                # Create visual context
-                context = f"Document: {metadata['pdf_name']} Page: {metadata['page_number']} - Visual document content"
+                # Create visual context - support both pdf_name and dll_name
+                doc_name = metadata.get('pdf_name') or metadata.get('dll_name', 'Unknown')
+                page_num = metadata.get('page_number', 0)
+                image_type = metadata.get('image_type', 'document')
+                context = f"Document: {doc_name} Page: {page_num} Type: {image_type} - Visual content"
                 self.logger.debug("Using visual context for HuggingFace embedding", extra={
-                    "context": context
+                    "context": context,
+                    "doc_name": doc_name,
+                    "image_type": image_type
                 })
                 
                 # Generate embedding

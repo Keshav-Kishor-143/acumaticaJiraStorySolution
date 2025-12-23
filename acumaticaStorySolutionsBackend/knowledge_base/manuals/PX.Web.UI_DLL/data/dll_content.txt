@@ -1,0 +1,1058 @@
+# Assembly: PX.Web.UI
+Version: 1.0.0.0
+DLL: PX.Web.UI
+
+## Namespaces and Classes
+
+### Namespace: Global
+
+**Class: <>f__AnonymousType0`2**
+- Full Name: `<>f__AnonymousType0`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType1`2**
+- Full Name: `<>f__AnonymousType1`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType2`6**
+- Full Name: `<>f__AnonymousType2`6`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType3`1**
+- Full Name: `<>f__AnonymousType3`1`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType4`3**
+- Full Name: `<>f__AnonymousType4`3`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType5`1**
+- Full Name: `<>f__AnonymousType5`1`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType6`3**
+- Full Name: `<>f__AnonymousType6`3`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType7`2**
+- Full Name: `<>f__AnonymousType7`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <PrivateImplementationDetails>**
+- Full Name: `<PrivateImplementationDetails>`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: __StaticArrayInitTypeSize=6**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=6`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=10**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=10`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=28**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=28`
+- Inherits from: `System.ValueType`
+
+### Namespace: Microsoft.CodeAnalysis
+
+**Class: EmbeddedAttribute**
+- Full Name: `Microsoft.CodeAnalysis.EmbeddedAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute
+
+### Namespace: PX.Web.UI
+
+**Class: ContainerBuilderExtensions**
+- Full Name: `PX.Web.UI.ContainerBuilderExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: BaseMasterPage**
+- Full Name: `PX.Web.UI.BaseMasterPage`
+- Inherits from: `System.Web.UI.MasterPage`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+**Class: SimpleWorkerRequestEx**
+- Full Name: `PX.Web.UI.SimpleWorkerRequestEx`
+- Inherits from: `System.Web.Hosting.SimpleWorkerRequest`
+
+**Class: PXPage**
+- Full Name: `PX.Web.UI.PXPage`
+- Inherits from: `System.Web.UI.Page`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+**Class: PXPageCache**
+- Full Name: `PX.Web.UI.PXPageCache`
+- Inherits from: `System.Object`
+
+**Class: SMPageCache**
+- Full Name: `PX.Web.UI.SMPageCache`
+- Inherits from: `PX.Data.PXBqlTable`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Data.IBqlTable`
+
+**Class: PXBoundControl**
+- Full Name: `PX.Web.UI.PXBoundControl`
+- Inherits from: `System.Web.UI.WebControls.DataBoundControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+**Class: PXCompositeBoundControl**
+- Full Name: `PX.Web.UI.PXCompositeBoundControl`
+- Inherits from: `PX.Web.UI.PXBoundControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+**Class: PXButton**
+- Full Name: `PX.Web.UI.PXButton`
+- Inherits from: `PX.Web.UI.PXCompositeControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: DefaultPropertyAttribute, DefaultEventAttribute, ToolboxDataAttribute, PXDesignerPropertyFilter
+
+**Class: PXButtonImages**
+- Full Name: `PX.Web.UI.PXButtonImages`
+- Inherits from: `PX.Web.UI.PXStateImages`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXButtonStyles**
+- Full Name: `PX.Web.UI.PXButtonStyles`
+- Inherits from: `PX.Web.UI.PXStateStyles`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: QPCalendar**
+- Full Name: `PX.Web.UI.QPCalendar`
+- Inherits from: `PX.Web.UI.PXWebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: DesignerAttribute
+
+**Class: PXCalendar**
+- Full Name: `PX.Web.UI.PXCalendar`
+- Inherits from: `System.Web.UI.WebControls.WebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: DesignerAttribute, ToolboxDataAttribute
+
+**Class: StringHelper**
+- Full Name: `PX.Web.UI.StringHelper`
+- Inherits from: `System.Object`
+
+**Class: PXCalendarEvents**
+- Full Name: `PX.Web.UI.PXCalendarEvents`
+- Inherits from: `PX.Web.UI.PXBaseEvents`1[[PX.Web.UI.PXCalendarEvents, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXCalendarFormat**
+- Full Name: `PX.Web.UI.PXCalendarFormat`
+- Inherits from: `PX.Web.UI.PXWebObject`1[[PX.Web.UI.PXCalendarFormat, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+- Attributes: TypeConverterAttribute
+
+**Class: PXCalendarStyles**
+- Full Name: `PX.Web.UI.PXCalendarStyles`
+- Inherits from: `PX.Web.UI.PXWebObject`1[[PX.Web.UI.PXCalendarStyles, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+- Attributes: TypeConverterAttribute
+
+**Class: PXCheckBox**
+- Full Name: `PX.Web.UI.PXCheckBox`
+- Inherits from: `PX.Web.UI.PXWebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: DefaultPropertyAttribute, ControlValuePropertyAttribute, DefaultEventAttribute, DesignerAttribute, ToolboxDataAttribute, PXDesignerPropertyFilter
+
+**Class: DropFileHandler**
+- Full Name: `PX.Web.UI.DropFileHandler`
+- Inherits from: `System.Object`
+
+**Class: PXExternalViewer**
+- Full Name: `PX.Web.UI.PXExternalViewer`
+- Inherits from: `PX.Web.UI.PXTextEdit`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: ToolboxDataAttribute, DesignerAttribute, PXDesignerPropertyFilter
+
+**Class: PXLabel**
+- Full Name: `PX.Web.UI.PXLabel`
+- Inherits from: `PX.Web.UI.PXWebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: ControlValuePropertyAttribute, DefaultPropertyAttribute, DesignerAttribute, ParseChildrenAttribute, ControlBuilderAttribute, ToolboxDataAttribute, PXDesignerPropertyFilter
+
+**Class: PXCell**
+- Full Name: `PX.Web.UI.PXCell`
+- Inherits from: `System.Web.UI.WebControls.WebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: ParseChildrenAttribute, PersistChildrenAttribute, ThemeableAttribute
+
+**Class: PXLiteral**
+- Full Name: `PX.Web.UI.PXLiteral`
+- Inherits from: `System.Web.UI.WebControls.Label`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+**Class: PXJavaScript**
+- Full Name: `PX.Web.UI.PXJavaScript`
+- Inherits from: `PX.Web.UI.PXWebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: ControlValuePropertyAttribute, DefaultPropertyAttribute, ParseChildrenAttribute, ToolboxDataAttribute
+
+**Class: PXPluginService**
+- Full Name: `PX.Web.UI.PXPluginService`
+- Inherits from: `PX.Web.UI.PXWebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: DesignerAttribute, DefaultPropertyAttribute, DefaultEventAttribute
+
+**Class: PXHtmlView**
+- Full Name: `PX.Web.UI.PXHtmlView`
+- Inherits from: `PX.Web.UI.PXWebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+**Class: PXRadioButton**
+- Full Name: `PX.Web.UI.PXRadioButton`
+- Inherits from: `System.Web.UI.WebControls.WebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: DefaultPropertyAttribute, ControlValuePropertyAttribute, ToolboxDataAttribute, PXDesignerPropertyFilter
+
+**Class: PXScreenTitle**
+- Full Name: `PX.Web.UI.PXScreenTitle`
+- Inherits from: `PX.Web.UI.PXWebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: DesignerAttribute, DefaultPropertyAttribute, DefaultEventAttribute
+
+**Class: PXSplitter**
+- Full Name: `PX.Web.UI.PXSplitter`
+- Inherits from: `System.Web.UI.WebControls.CompositeControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: ToolboxDataAttribute, PXDesignerPropertyFilter
+
+**Class: PXSplitterStyles**
+- Full Name: `PX.Web.UI.PXSplitterStyles`
+- Inherits from: `PX.Web.UI.PXWebObject`1[[PX.Web.UI.PXSplitterStyles, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXStatusBar**
+- Full Name: `PX.Web.UI.PXStatusBar`
+- Inherits from: `PX.Web.UI.PXCompositeControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: ToolboxDataAttribute
+
+**Class: PXTree**
+- Full Name: `PX.Web.UI.PXTree`
+- Inherits from: `PX.Web.UI.PXWebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: DesignerAttribute, DefaultPropertyAttribute, DefaultEventAttribute
+
+**Class: ExtraColumn**
+- Full Name: `PX.Web.UI.ExtraColumn`
+- Inherits from: `PX.Web.UI.PXWebObject`1[[PX.Web.UI.ExtraColumn, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: ExtraColumnDto**
+- Full Name: `PX.Web.UI.ExtraColumnDto`
+- Inherits from: `System.Object`
+
+**Class: PXWebControl**
+- Full Name: `PX.Web.UI.PXWebControl`
+- Inherits from: `System.Web.UI.WebControls.WebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+- Attributes: DesignerAttribute
+
+**Class: PXCategory**
+- Full Name: `PX.Web.UI.PXCategory`
+- Inherits from: `System.Object`
+
+**Class: PXCompositeControl**
+- Full Name: `PX.Web.UI.PXCompositeControl`
+- Inherits from: `PX.Web.UI.PXWebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+**Class: PXCompositeControlDesigner**
+- Full Name: `PX.Web.UI.PXCompositeControlDesigner`
+- Inherits from: `System.Web.UI.Design.WebControls.CompositeControlDesigner`
+- Implements: `System.ComponentModel.Design.ITreeDesigner`, `System.ComponentModel.Design.IDesigner`, `System.IDisposable`, `System.ComponentModel.Design.IDesignerFilter`, `System.ComponentModel.Design.IComponentInitializer`
+- Attributes: SupportsPreviewControlAttribute
+
+**Class: ClientScript**
+- Full Name: `PX.Web.UI.ClientScript`
+- Inherits from: `System.Web.UI.WebControls.Label`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+**Class: PXBaseEvents`1**
+- Full Name: `PX.Web.UI.PXBaseEvents`1`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+- Attributes: TypeConverterAttribute, PersistenceModeAttribute
+
+**Class: PXMouseEvents`1**
+- Full Name: `PX.Web.UI.PXMouseEvents`1`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXFormEvents**
+- Full Name: `PX.Web.UI.PXFormEvents`
+- Inherits from: `PX.Web.UI.PXMouseEvents`1[[PX.Web.UI.PXFormEvents, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXValControlEvents**
+- Full Name: `PX.Web.UI.PXValControlEvents`
+- Inherits from: `PX.Web.UI.PXFormEvents`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXDataSourceEvents**
+- Full Name: `PX.Web.UI.PXDataSourceEvents`
+- Inherits from: `PX.Web.UI.PXToolBarEvents`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXDropDownEvents**
+- Full Name: `PX.Web.UI.PXDropDownEvents`
+- Inherits from: `PX.Web.UI.PXValControlEvents`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXSelectorEvents**
+- Full Name: `PX.Web.UI.PXSelectorEvents`
+- Inherits from: `PX.Web.UI.PXValControlEvents`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXGridEvents**
+- Full Name: `PX.Web.UI.PXGridEvents`
+- Inherits from: `PX.Web.UI.PXBaseEvents`1[[PX.Web.UI.PXGridEvents, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXGroupBoxEvents**
+- Full Name: `PX.Web.UI.PXGroupBoxEvents`
+- Inherits from: `PX.Web.UI.PXBaseEvents`1[[PX.Web.UI.PXGroupBoxEvents, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXMenuEvents**
+- Full Name: `PX.Web.UI.PXMenuEvents`
+- Inherits from: `PX.Web.UI.PXBaseEvents`1[[PX.Web.UI.PXMenuEvents, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+**Class: PXPanelEvents**
+- Full Name: `PX.Web.UI.PXPanelEvents`
+- Inherits from: `PX.Web.UI.PXBaseEvents`1[[PX.Web.UI.PXPanelEvents, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Web.UI.IWebObject`, `System.Web.UI.IStateManager`
+
+### Namespace: PX.Web.UI.Controls.Base
+
+**Class: PXLastUpdate**
+- Full Name: `PX.Web.UI.Controls.Base.PXLastUpdate`
+- Inherits from: `System.Web.UI.WebControls.WebControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+### Namespace: PX.Web.UI.Controls.Dashboards
+
+**Interface: IResizableWidget**
+- Full Name: `PX.Web.UI.Controls.Dashboards.IResizableWidget`
+
+### Namespace: PX.Web.UI.Controls.Export
+
+**Class: GridExcelHelper**
+- Full Name: `PX.Web.UI.Controls.Export.GridExcelHelper`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Web.UI.Controls.Panels
+
+**Class: ImportDITAPanel**
+- Full Name: `PX.Web.UI.Controls.Panels.ImportDITAPanel`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Web.UI.Controls.RichTextEdit
+
+**Class: ImageSearch**
+- Full Name: `PX.Web.UI.Controls.RichTextEdit.ImageSearch`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Web.UI.Metadata
+
+**Class: AspxScreenInfoCollector**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector`
+- Inherits from: `PX.Metadata.BaseScreenInfoCollector`
+- Implements: `PX.Metadata.ILegacyScreenInfoCollector`, `PX.Metadata.IScreenInfoCollector`1[[PX.Metadata.ScreenId, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Class: CachingScreenInfoCollectorDecorator`1**
+- Full Name: `PX.Web.UI.Metadata.CachingScreenInfoCollectorDecorator`1`
+- Inherits from: `System.Object`
+- Implements: `None`
+
+**Class: DashboardContainerReloadFrameOptions**
+- Full Name: `PX.Web.UI.Metadata.DashboardContainerReloadFrameOptions`
+- Inherits from: `System.Object`
+
+**Class: ReportScreenInfoBuilder**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ReportScreenInfoBuilder`
+- Inherits from: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ScreenInfoBuilder`
+
+**Class: ScreenInfoBuilder**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ScreenInfoBuilder`
+- Inherits from: `System.Object`
+
+**Class: <>c**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: <>c__DisplayClass14_0**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass14_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass14_1**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass14_1`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass15_0**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass15_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass15_1**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass15_1`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass15_2**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass15_2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass18_0**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass18_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass18_1**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass18_1`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass20_0**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass20_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass8_0**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass8_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass8_1**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass8_1`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass8_2**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+<>c__DisplayClass8_2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ReportScreenInfoBuilder+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: <>c**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ScreenInfoBuilder+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: <>c__DisplayClass21_0**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ScreenInfoBuilder+<>c__DisplayClass21_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass24_0**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ScreenInfoBuilder+<>c__DisplayClass24_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass33_0**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ScreenInfoBuilder+<>c__DisplayClass33_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass33_1**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ScreenInfoBuilder+<>c__DisplayClass33_1`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass34_0**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ScreenInfoBuilder+<>c__DisplayClass34_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <BuildAction>d__33**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ScreenInfoBuilder+<BuildAction>d__33`
+- Inherits from: `System.Object`
+- Implements: `System.Collections.Generic.IEnumerable`1[[PX.Data.PXSiteMap+ScreenInfo+Action, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.IEnumerable`, `System.Collections.Generic.IEnumerator`1[[PX.Data.PXSiteMap+ScreenInfo+Action, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.IDisposable`, `System.Collections.IEnumerator`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <GetCallbacks>d__32**
+- Full Name: `PX.Web.UI.Metadata.AspxScreenInfoCollector+ScreenInfoBuilder+<GetCallbacks>d__32`
+- Inherits from: `System.Object`
+- Implements: `System.Collections.Generic.IEnumerable`1[[PX.Web.UI.PXCallbackCommand, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.IEnumerable`, `System.Collections.Generic.IEnumerator`1[[PX.Web.UI.PXCallbackCommand, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.IDisposable`, `System.Collections.IEnumerator`
+- Attributes: CompilerGeneratedAttribute
+
+### Namespace: PX.Web.UI.TestGen
+
+**Class: Tab**
+- Full Name: `PX.Web.UI.TestGen.Tab`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: Screen**
+- Full Name: `PX.Web.UI.TestGen.Screen`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: Button**
+- Full Name: `PX.Web.UI.TestGen.Button`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: Container**
+- Full Name: `PX.Web.UI.TestGen.Container`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: Grid**
+- Full Name: `PX.Web.UI.TestGen.Grid`
+- Inherits from: `PX.Web.UI.TestGen.Container`
+- Attributes: SerializableAttribute
+
+**Class: Field**
+- Full Name: `PX.Web.UI.TestGen.Field`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: Tree**
+- Full Name: `PX.Web.UI.TestGen.Tree`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: Proxy**
+- Full Name: `PX.Web.UI.TestGen.Proxy`
+- Inherits from: `System.MarshalByRefObject`
+
+### Namespace: PX.Web.UI.TitleModules
+
+**Class: DashboardPageTitleModule**
+- Full Name: `PX.Web.UI.TitleModules.DashboardPageTitleModule`
+- Inherits from: `PX.Web.UI.TitleModules.TitleModule`
+- Implements: `PX.Web.UI.ITitleModule`
+
+**Class: TitleModule**
+- Full Name: `PX.Web.UI.TitleModules.TitleModule`
+- Inherits from: `System.Object`
+- Implements: `PX.Web.UI.ITitleModule`
+
+**Class: <>c__DisplayClass0_0**
+- Full Name: `PX.Web.UI.TitleModules.DashboardPageTitleModule+<>c__DisplayClass0_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+### Namespace: PX.Web.UI.Tools
+
+**Class: GraphUtils**
+- Full Name: `PX.Web.UI.Tools.GraphUtils`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+### Namespace: PX.Web.UI.UserControls
+
+**Class: PXImportWizardPanel**
+- Full Name: `PX.Web.UI.UserControls.PXImportWizardPanel`
+- Inherits from: `System.Web.UI.UserControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+**Class: PXUploadFilePanel**
+- Full Name: `PX.Web.UI.UserControls.PXUploadFilePanel`
+- Inherits from: `System.Web.UI.UserControl`
+- Implements: `System.ComponentModel.IComponent`, `System.IDisposable`, `System.Web.UI.IParserAccessor`, `System.Web.UI.IUrlResolutionService`, `System.Web.UI.IDataBindingsAccessor`
+
+**Class: UpLoadFileDelegate**
+- Full Name: `PX.Web.UI.UserControls.PXUploadFilePanel+UpLoadFileDelegate`
+- Inherits from: `System.MulticastDelegate`
+- Implements: `System.ICloneable`, `System.Runtime.Serialization.ISerializable`
+
+**Class: PXFileUploadedEventArgs**
+- Full Name: `PX.Web.UI.UserControls.PXUploadFilePanel+PXFileUploadedEventArgs`
+- Inherits from: `System.Object`
+
+**Class: PXUploadFilePanelProperties**
+- Full Name: `PX.Web.UI.UserControls.PXUploadFilePanel+PXUploadFilePanelProperties`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Web.UI.WebApi.Models
+
+**Class: ScreenHelpInfo**
+- Full Name: `PX.Web.UI.WebApi.Models.ScreenHelpInfo`
+- Inherits from: `System.Object`
+
+**Class: WikiInfo**
+- Full Name: `PX.Web.UI.WebApi.Models.WikiInfo`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Web.UI.WebApi.Services
+
+**Class: HelpProvider**
+- Full Name: `PX.Web.UI.WebApi.Services.HelpProvider`
+- Inherits from: `System.Object`
+- Implements: `PX.Web.UI.WebApi.Services.IHelpProvider`
+
+**Interface: IWikiProvider**
+- Full Name: `PX.Web.UI.WebApi.Services.IWikiProvider`
+
+**Interface: IHelpProvider**
+- Full Name: `PX.Web.UI.WebApi.Services.IHelpProvider`
+
+**Interface: IQPToolBarDataProvider**
+- Full Name: `PX.Web.UI.WebApi.Services.IQPToolBarDataProvider`
+
+**Interface: IScreenCommandsCustomInfo**
+- Full Name: `PX.Web.UI.WebApi.Services.IScreenCommandsCustomInfo`
+
+**Class: UrlHelper**
+- Full Name: `PX.Web.UI.WebApi.Services.UrlHelper`
+- Inherits from: `System.Object`
+- Implements: `PX.Web.UI.WebApi.Services.IUrlHelper`
+
+**Interface: IUrlHelper**
+- Full Name: `PX.Web.UI.WebApi.Services.IUrlHelper`
+
+**Class: WikiProvider**
+- Full Name: `PX.Web.UI.WebApi.Services.WikiProvider`
+- Inherits from: `System.Object`
+- Implements: `PX.Web.UI.WebApi.Services.IWikiProvider`
+
+**Class: <>c**
+- Full Name: `PX.Web.UI.WebApi.Services.HelpProvider+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+### Namespace: PX.Web.UI.Wiki
+
+**Class: DiffList_BinaryFile**
+- Full Name: `PX.Web.UI.Wiki.DiffList_BinaryFile`
+- Inherits from: `System.Object`
+- Implements: `PX.Web.UI.Wiki.IDiffList`
+
+**Class: DiffList_CharData**
+- Full Name: `PX.Web.UI.Wiki.DiffList_CharData`
+- Inherits from: `System.Object`
+- Implements: `PX.Web.UI.Wiki.IDiffList`
+
+**Class: DiffEngineLevel**
+- Full Name: `PX.Web.UI.Wiki.DiffEngineLevel`
+- Inherits from: `System.Enum`
+- Implements: `System.IComparable`, `System.IFormattable`, `System.IConvertible`
+
+**Class: DiffEngine**
+- Full Name: `PX.Web.UI.Wiki.DiffEngine`
+- Inherits from: `System.Object`
+
+**Class: MimeTypes**
+- Full Name: `PX.Web.UI.Wiki.MimeTypes`
+- Inherits from: `System.Object`
+
+**Interface: IDiffList**
+- Full Name: `PX.Web.UI.Wiki.IDiffList`
+
+**Class: DiffStatus**
+- Full Name: `PX.Web.UI.Wiki.DiffStatus`
+- Inherits from: `System.Enum`
+- Implements: `System.IComparable`, `System.IFormattable`, `System.IConvertible`
+
+**Class: DiffState**
+- Full Name: `PX.Web.UI.Wiki.DiffState`
+- Inherits from: `System.Object`
+
+**Class: DiffStateList**
+- Full Name: `PX.Web.UI.Wiki.DiffStateList`
+- Inherits from: `System.Object`
+
+**Class: DiffResultSpanStatus**
+- Full Name: `PX.Web.UI.Wiki.DiffResultSpanStatus`
+- Inherits from: `System.Enum`
+- Implements: `System.IComparable`, `System.IFormattable`, `System.IConvertible`
+
+**Class: DiffResultSpan**
+- Full Name: `PX.Web.UI.Wiki.DiffResultSpan`
+- Inherits from: `System.Object`
+- Implements: `System.IComparable`
+
+**Class: TextLine**
+- Full Name: `PX.Web.UI.Wiki.TextLine`
+- Inherits from: `System.Object`
+- Implements: `System.IComparable`
+
+**Class: DiffList_TextFile**
+- Full Name: `PX.Web.UI.Wiki.DiffList_TextFile`
+- Inherits from: `System.Object`
+- Implements: `PX.Web.UI.Wiki.IDiffList`
+
+**Class: DiffList_StringData**
+- Full Name: `PX.Web.UI.Wiki.DiffList_StringData`
+- Inherits from: `System.Object`
+- Implements: `PX.Web.UI.Wiki.IDiffList`
+
+**Interface: ICustomWikiTile**
+- Full Name: `PX.Web.UI.Wiki.ICustomWikiTile`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Class: StyleBuilder**
+- Full Name: `PX.Web.UI.Wiki.StyleBuilder`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Web.UI.Wiki.Render.Html
+
+**Class: PXFileList2TagRenderer**
+- Full Name: `PX.Web.UI.Wiki.Render.Html.PXFileList2TagRenderer`
+- Inherits from: `PX.Data.Wiki.Parser.Html.PXHtmlRenderer`
+- Attributes: PXElementRendererAttribute
+
+### Namespace: System.Runtime.CompilerServices
+
+**Class: NullableAttribute**
+- Full Name: `System.Runtime.CompilerServices.NullableAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute, AttributeUsageAttribute
+
+**Class: NullableContextAttribute**
+- Full Name: `System.Runtime.CompilerServices.NullableContextAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute, AttributeUsageAttribute
+
+## Key Methods
+
+- `public virtual <>f__AnonymousType0`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType0`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType0`2.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType1`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType1`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType1`2.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType2`6.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType2`6.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType2`6.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType3`1.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType3`1.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType3`1.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType4`3.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType4`3.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType4`3.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType5`1.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType5`1.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType5`1.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType6`3.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType6`3.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType6`3.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType7`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType7`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType7`2.ToString()` → `System.String`
+- `virtual PX.Web.UI.BaseMasterPage.OnPreRender(System.EventArgs e)` → `System.Void`
+- `public PX.Web.UI.BaseMasterPage.GetDocumentsForm()` → `PX.Web.UI.PXBoundPanel`
+- `public PX.Web.UI.BaseMasterPage.GetDocumentsTab()` → `PX.Web.UI.PXTab`
+- `public virtual PX.Web.UI.SimpleWorkerRequestEx.GetUnknownRequestHeaders()` → `System.String[][]`
+- `public virtual PX.Web.UI.SimpleWorkerRequestEx.GetUnknownRequestHeader(System.String name)` → `System.String`
+- `virtual PX.Web.UI.PXPage.OnPreInit(System.EventArgs e)` → `System.Void`
+- `PX.Web.UI.PXPage.ClearSessionData()` → `System.Void`
+- `virtual PX.Web.UI.PXPage.OnInit(System.EventArgs e)` → `System.Void`
+- `PX.Web.UI.PXPage.Page_InitComplete(System.Object sender, System.EventArgs e)` → `System.Void`
+- `PX.Web.UI.PXPage.PXPage_Load(System.Object sender, System.EventArgs e)` → `System.Void`
+- `PX.Web.UI.PXPage.L10nEditor_LoadContent(System.Object sender, System.EventArgs e)` → `System.Void`
+- `PX.Web.UI.PXPage.L10nEditor_SaveContent()` → `System.Void`
+- `virtual PX.Web.UI.PXPage.OnError(System.EventArgs e)` → `System.Void`
+- `virtual PX.Web.UI.PXPage.OnPreRenderComplete(System.EventArgs e)` → `System.Void`
+- `virtual PX.Web.UI.PXPage.OnPreRender(System.EventArgs e)` → `System.Void`
+- `virtual PX.Web.UI.PXPage.OnPreProcessRequest(System.Web.HttpContext context)` → `System.Void`
+- `public virtual PX.Web.UI.PXPage.ProcessRequest(System.Web.HttpContext context)` → `System.Void`
+- `static PX.Web.UI.PXPage.GetUIType(System.String query)` → `System.String`
+- `PX.Web.UI.PXPage.GetSyncScriptVariables(System.String& nodePath, System.String& nodeGuid, System.String& listUrl...)` → `System.Void`
+- `PX.Web.UI.PXPage.FindSiteMapKey(PX.Data.PXSiteMapNode node, PX.Data.PXSiteMapNode owner)` → `System.String`
+- `static PX.Web.UI.PXPage.GetPageValidation()` → `System.Nullable`1[System.Boolean]`
+- `PX.Web.UI.PXPage.CreateInputBox()` → `PX.Web.UI.PXInputBox`
+- `PX.Web.UI.PXPage.CreateMessageBox()` → `PX.Web.UI.PXMessage`
+- `PX.Web.UI.PXPage.NeedRefresh(System.Web.HttpContext context, System.Boolean iscallback)` → `System.Boolean`
+- `public PX.Web.UI.PXPage.ResetCurrentUser(System.Web.HttpContext context)` → `System.Void`
+- `public static PX.Web.UI.PXPage.GetDefaultDataSource(System.Web.UI.Page p)` → `PX.Web.UI.PXDataSource`
+- `public static PX.Web.UI.PXPage.IsDeclaredInAspx(System.Web.UI.Control c)` → `System.Boolean`
+- `public static PX.Web.UI.PXPage.GetDataSourceID(System.Web.UI.Control control)` → `System.String`
+- `static PX.Web.UI.PXPage.CompileAllPages()` → `System.Void`
+- `public static PX.Web.UI.PXPage.CompileAllPagesAsync()` → `System.Void`
+- `public PX.Web.UI.PXPage.RegisterRequiresLoadState(PX.Web.UI.IControlStateLoader control)` → `System.Void`
+- `virtual PX.Web.UI.PXPage.SavePageStateToPersistenceMedium(System.Object state)` → `System.Void`
+- `virtual PX.Web.UI.PXPage.LoadPageStateFromPersistenceMedium()` → `System.Object`
+- `virtual PX.Web.UI.PXPage.OnPreLoad(System.EventArgs e)` → `System.Void`
+- `PX.Web.UI.PXPage.LoadPostDataRecursive(System.Web.UI.ControlCollection controls, System.Collections.Specialized.NameValueCollection values, System.Collections.ArrayList changed)` → `System.Void`
+- `PX.Web.UI.PXPage.OnPage_PreLoad(System.Object sender, System.EventArgs e)` → `System.Void`
+- `PX.Web.UI.PXPage.EnableAttributes()` → `System.Void`
+- `PX.Web.UI.PXPage.PreGetCallbackResultHandler(PX.Web.UI.PXCallbackManager sender, System.Xml.XmlWriter writer)` → `System.Void`
+- `PX.Web.UI.PXPage.SetAttributesFound(System.Boolean attrFound)` → `System.Void`
+- `PX.Web.UI.PXPage.GetAttributesFound()` → `System.Boolean`
+- `PX.Web.UI.PXPage.PXPage_LoadAttributesContent(PX.Web.UI.PXSmartPanel smart, System.String containerId, System.Int32 tabIndex...)` → `System.Collections.Generic.List`1[System.Web.UI.Control]`
+- `public static PX.Web.UI.PXPageCache.FixPageUrl(System.String url)` → `System.String`
+- `public static PX.Web.UI.PXPageCache.InvalidateCachedPages()` → `System.Void`
+- `public static PX.Web.UI.PXPageCache.WriteCacheHeaders(System.Web.HttpContext context, PX.Web.UI.PXPage page)` → `System.Void`
+- `static PX.Web.UI.PXPageCache.EnsureAppId()` → `System.Void`
+- `static PX.Web.UI.PXPageCache.GetTimeStamp()` → `System.String`
+- `public static PX.Web.UI.PXPageCache.SetCookie(System.Web.HttpContext context)` → `System.Void`
+- `static PX.Web.UI.PXPageCache.GetValueForTimeStampCookie()` → `System.String`
+- `public static PX.Web.UI.PXPageCache.SetCookie(System.Web.HttpContextBase context)` → `System.Void`
+- `static PX.Web.UI.PXPageCache.InvalidateAppId()` → `System.Void`
+- `static PX.Web.UI.PXPageCache.GetCodeBase()` → `System.String`
+- `static PX.Web.UI.PXPageCache.GetPagesHash()` → `System.Int32`
+- `static PX.Web.UI.PXPageCache.GetDirectoryFilesDateHash(System.String folder)` → `System.Int32`
+- `static PX.Web.UI.PXPageCache.IsUserCustomizator()` → `System.Boolean`
+- `static PX.Web.UI.PXPageCache.GetUserFlags()` → `System.String`
+- `public static PX.Web.UI.PXPageCache.IsEnabledForPage(System.Web.UI.Page page)` → `System.Boolean`
+- `public static PX.Web.UI.PXPageCache.IsPageGeneratorRequest(System.Web.UI.Page page, System.Boolean ignorePageValidation)` → `System.Boolean`
+- `public static PX.Web.UI.PXPageCache.IsPageGeneratorRequest()` → `System.Boolean`
+- `public static PX.Web.UI.PXPageCache.RegisterRequiredReloadPage(PX.Web.UI.PXPage page, System.Boolean ignorePageValidation)` → `System.Void`
+- `static PX.Web.UI.PXBoundControl.GetChildControls(System.Web.UI.Control ths)` → `System.Collections.Generic.List`1[PX.Web.UI.IFieldEditor]`
+- `public virtual PX.Web.UI.PXBoundControl.ToString()` → `System.String`
+- `virtual PX.Web.UI.PXBoundControl.OnPreRender(System.EventArgs e)` → `System.Void`
+- `virtual PX.Web.UI.PXBoundControl.CreateControlStyle()` → `System.Web.UI.WebControls.Style`
+- `virtual PX.Web.UI.PXBoundControl.AddAttributesToRender(System.Web.UI.HtmlTextWriter writer)` → `System.Void`
+- `static PX.Web.UI.PXBoundControl.AddRenderProperty(System.Collections.Generic.Dictionary`2[System.String,System.Object] dic, System.String name, T value...)` → `System.Void`
+- `virtual PX.Web.UI.PXBoundControl.RenderClientBeginTag(System.Web.UI.HtmlTextWriter writer)` → `System.Void`
+- `virtual PX.Web.UI.PXBoundControl.RenderClientEndTag(System.Web.UI.HtmlTextWriter writer)` → `System.Void`
+- `virtual PX.Web.UI.PXBoundControl.GetRenderSettings()` → `System.Collections.Generic.Dictionary`2[System.String,System.Object]`
+- `virtual PX.Web.UI.PXBoundControl.RegisterScriptModules(PX.Web.UI.JSManager sm)` → `System.Void`
+- `virtual PX.Web.UI.PXBoundControl.RegisterScriptProperties(PX.Web.UI.JSObject obj)` → `System.Void`
+- `virtual PX.Web.UI.PXBoundControl.RegisterScriptVariables(PX.Web.UI.JSManager sm)` → `System.Void`
+- `virtual PX.Web.UI.PXBoundControl.PX.Web.UI.IPXScriptControl.RegisterModules(PX.Web.UI.JSManager sm)` → `System.Void`
+- `virtual PX.Web.UI.PXBoundControl.PX.Web.UI.IPXScriptControl.RegisterProperties(PX.Web.UI.JSObject obj)` → `System.Void`
+- `virtual PX.Web.UI.PXBoundControl.PX.Web.UI.IPXScriptControl.RegisterVariables(PX.Web.UI.JSManager sm)` → `System.Void`
+- `virtual PX.Web.UI.PXCompositeBoundControl.CreateChildControls(System.Collections.IEnumerable dataSource, System.Boolean dataBinding)` → `System.Int32`
+- `virtual PX.Web.UI.PXCompositeBoundControl.CreateChildControls()` → `System.Void`
+## Key Properties
+
+- `<>f__AnonymousType0`2.FieldName`: `<FieldName>j__TPar` (read-only)
+- `<>f__AnonymousType0`2.Value`: `<Value>j__TPar` (read-only)
+- `<>f__AnonymousType1`2.cols`: `<cols>j__TPar` (read-only)
+- `<>f__AnonymousType1`2.src`: `<src>j__TPar` (read-only)
+- `<>f__AnonymousType2`6.id`: `<id>j__TPar` (read-only)
+- `<>f__AnonymousType2`6.selectorTabTitle`: `<selectorTabTitle>j__TPar` (read-only)
+- `<>f__AnonymousType2`6.treeTabTitle`: `<treeTabTitle>j__TPar` (read-only)
+- `<>f__AnonymousType2`6.separator`: `<separator>j__TPar` (read-only)
+- `<>f__AnonymousType2`6.treeConfig`: `<treeConfig>j__TPar` (read-only)
+- `<>f__AnonymousType2`6.selectorConfig`: `<selectorConfig>j__TPar` (read-only)
+- `<>f__AnonymousType3`1.ReportResults`: `<ReportResults>j__TPar` (read-only)
+- `<>f__AnonymousType4`3.PdfContent`: `<PdfContent>j__TPar` (read-only)
+- `<>f__AnonymousType4`3.HtmlContent`: `<HtmlContent>j__TPar` (read-only)
+- `<>f__AnonymousType4`3.PreProcess`: `<PreProcess>j__TPar` (read-only)
+- `<>f__AnonymousType5`1.Template`: `<Template>j__TPar` (read-only)
+- `<>f__AnonymousType6`3.Name`: `<Name>j__TPar` (read-only)
+- `<>f__AnonymousType6`3.IsDefault`: `<IsDefault>j__TPar` (read-only)
+- `<>f__AnonymousType6`3.IsShared`: `<IsShared>j__TPar` (read-only)
+- `<>f__AnonymousType7`2.key`: `<key>j__TPar` (read-only)
+- `<>f__AnonymousType7`2.value`: `<value>j__TPar` (read-only)
+- `Microsoft.CodeAnalysis.EmbeddedAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.NullableAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.NullableContextAttribute.TypeId`: `System.Object` (read-only)
+- `PX.Web.UI.BaseMasterPage.PopupHeight`: `System.Int32` (read-write)
+- `PX.Web.UI.BaseMasterPage.PopupWidth`: `System.Int32` (read-write)
+- `PX.Web.UI.BaseMasterPage.IsEnableSiteMapSwitchUI`: `System.Nullable`1[System.Boolean]` (read-only)
+- `PX.Web.UI.BaseMasterPage.Master`: `System.Web.UI.MasterPage` (read-only)
+- `PX.Web.UI.BaseMasterPage.MasterPageFile`: `System.String` (read-write)
+- `PX.Web.UI.BaseMasterPage.Attributes`: `System.Web.UI.AttributeCollection` (read-only)
+- `PX.Web.UI.BaseMasterPage.Application`: `System.Web.HttpApplicationState` (read-only)
+- `PX.Web.UI.BaseMasterPage.Trace`: `System.Web.TraceContext` (read-only)
+- `PX.Web.UI.BaseMasterPage.Request`: `System.Web.HttpRequest` (read-only)
+- `PX.Web.UI.BaseMasterPage.Response`: `System.Web.HttpResponse` (read-only)
+- `PX.Web.UI.BaseMasterPage.Server`: `System.Web.HttpServerUtility` (read-only)
+- `PX.Web.UI.BaseMasterPage.Cache`: `System.Web.Caching.Cache` (read-only)
+- `PX.Web.UI.BaseMasterPage.CachePolicy`: `System.Web.UI.ControlCachePolicy` (read-only)
+- `PX.Web.UI.BaseMasterPage.IsPostBack`: `System.Boolean` (read-only)
+- `PX.Web.UI.BaseMasterPage.Session`: `System.Web.SessionState.HttpSessionState` (read-only)
+- `PX.Web.UI.BaseMasterPage.EnableTheming`: `System.Boolean` (read-write)
+- `PX.Web.UI.BaseMasterPage.AppRelativeVirtualPath`: `System.String` (read-write)
+- `PX.Web.UI.BaseMasterPage.ClientIDMode`: `System.Web.UI.ClientIDMode` (read-write)
+- `PX.Web.UI.BaseMasterPage.ClientID`: `System.String` (read-only)
+- `PX.Web.UI.BaseMasterPage.ID`: `System.String` (read-write)
+- `PX.Web.UI.BaseMasterPage.SkinID`: `System.String` (read-write)
+- `PX.Web.UI.BaseMasterPage.EnableViewState`: `System.Boolean` (read-write)
+- `PX.Web.UI.BaseMasterPage.ViewStateMode`: `System.Web.UI.ViewStateMode` (read-write)
+- `PX.Web.UI.BaseMasterPage.NamingContainer`: `System.Web.UI.Control` (read-only)
+- `PX.Web.UI.BaseMasterPage.BindingContainer`: `System.Web.UI.Control` (read-only)
+- `PX.Web.UI.BaseMasterPage.DataItemContainer`: `System.Web.UI.Control` (read-only)
+- `PX.Web.UI.BaseMasterPage.DataKeysContainer`: `System.Web.UI.Control` (read-only)
+- `PX.Web.UI.BaseMasterPage.Page`: `System.Web.UI.Page` (read-write)
+- `PX.Web.UI.BaseMasterPage.RenderingCompatibility`: `System.Version` (read-write)
+- `PX.Web.UI.BaseMasterPage.TemplateControl`: `System.Web.UI.TemplateControl` (read-write)
+- `PX.Web.UI.BaseMasterPage.Parent`: `System.Web.UI.Control` (read-only)
+- `PX.Web.UI.BaseMasterPage.TemplateSourceDirectory`: `System.String` (read-only)
+- `PX.Web.UI.BaseMasterPage.AppRelativeTemplateSourceDirectory`: `System.String` (read-write)
+- `PX.Web.UI.BaseMasterPage.Site`: `System.ComponentModel.ISite` (read-write)
+- `PX.Web.UI.BaseMasterPage.Visible`: `System.Boolean` (read-write)
+- `PX.Web.UI.BaseMasterPage.UniqueID`: `System.String` (read-only)
+- `PX.Web.UI.BaseMasterPage.Controls`: `System.Web.UI.ControlCollection` (read-only)
+- `PX.Web.UI.BaseMasterPage.ValidateRequestMode`: `System.Web.UI.ValidateRequestMode` (read-write)
+- `PX.Web.UI.SimpleWorkerRequestEx.MachineConfigPath`: `System.String` (read-only)
+- `PX.Web.UI.SimpleWorkerRequestEx.RootWebConfigPath`: `System.String` (read-only)
+- `PX.Web.UI.SimpleWorkerRequestEx.MachineInstallDirectory`: `System.String` (read-only)
+- `PX.Web.UI.SimpleWorkerRequestEx.SupportsAsyncFlush`: `System.Boolean` (read-only)
+- `PX.Web.UI.SimpleWorkerRequestEx.SupportsAsyncRead`: `System.Boolean` (read-only)
+- `PX.Web.UI.SimpleWorkerRequestEx.RequestTraceIdentifier`: `System.Guid` (read-only)
+- `PX.Web.UI.PXPage.StyleSheetTheme`: `System.String` (read-write)
+- `PX.Web.UI.PXPage.SupressMainRedirect`: `System.Boolean` (read-write)
+- `PX.Web.UI.PXPage.IsPageCustomized`: `System.Boolean` (read-only)
+- `PX.Web.UI.PXPage.QueryString`: `System.Collections.Specialized.NameValueCollection` (read-write)
+- `PX.Web.UI.PXPage.ModelState`: `System.Web.ModelBinding.ModelStateDictionary` (read-only)
+- `PX.Web.UI.PXPage.ModelBindingExecutionContext`: `System.Web.ModelBinding.ModelBindingExecutionContext` (read-only)
+- `PX.Web.UI.PXPage.UnobtrusiveValidationMode`: `System.Web.UI.UnobtrusiveValidationMode` (read-write)
+- `PX.Web.UI.PXPage.Application`: `System.Web.HttpApplicationState` (read-only)
+- `PX.Web.UI.PXPage.ClientScript`: `System.Web.UI.ClientScriptManager` (read-only)
+- `PX.Web.UI.PXPage.ClientTarget`: `System.String` (read-write)
+- `PX.Web.UI.PXPage.ClientQueryString`: `System.String` (read-only)
+- `PX.Web.UI.PXPage.ErrorPage`: `System.String` (read-write)
+- `PX.Web.UI.PXPage.IsCallback`: `System.Boolean` (read-only)
+- `PX.Web.UI.PXPage.IsReusable`: `System.Boolean` (read-only)
+- `PX.Web.UI.PXPage.AutoPostBackControl`: `System.Web.UI.Control` (read-write)
+- `PX.Web.UI.PXPage.Header`: `System.Web.UI.HtmlControls.HtmlHead` (read-only)
+- `PX.Web.UI.PXPage.IdSeparator`: `System.Char` (read-only)
+- `PX.Web.UI.PXPage.MaintainScrollPositionOnPostBack`: `System.Boolean` (read-write)
+- `PX.Web.UI.PXPage.Master`: `System.Web.UI.MasterPage` (read-only)
+- `PX.Web.UI.PXPage.MasterPageFile`: `System.String` (read-write)
+- `PX.Web.UI.PXPage.MaxPageStateFieldLength`: `System.Int32` (read-write)
+- `PX.Web.UI.PXPage.Trace`: `System.Web.TraceContext` (read-only)
+- `PX.Web.UI.PXPage.Request`: `System.Web.HttpRequest` (read-only)
+- `PX.Web.UI.PXPage.Response`: `System.Web.HttpResponse` (read-only)
+- `PX.Web.UI.PXPage.RouteData`: `System.Web.Routing.RouteData` (read-only)
+- `PX.Web.UI.PXPage.Server`: `System.Web.HttpServerUtility` (read-only)
+- `PX.Web.UI.PXPage.Cache`: `System.Web.Caching.Cache` (read-only)
+- `PX.Web.UI.PXPage.Session`: `System.Web.SessionState.HttpSessionState` (read-only)
+- `PX.Web.UI.PXPage.Title`: `System.String` (read-write)
+- `PX.Web.UI.PXPage.MetaDescription`: `System.String` (read-write)
+- `PX.Web.UI.PXPage.MetaKeywords`: `System.String` (read-write)
+- `PX.Web.UI.PXPage.Theme`: `System.String` (read-write)
+- `PX.Web.UI.PXPage.User`: `System.Security.Principal.IPrincipal` (read-only)
+## Inheritance Hierarchies
+
+**Base: `System.Object`**
+  - `<>f__AnonymousType0`2`
+  - `<>f__AnonymousType1`2`
+  - `<>f__AnonymousType2`6`
+  - `<>f__AnonymousType3`1`
+  - `<>f__AnonymousType4`3`
+  - `<>f__AnonymousType5`1`
+  - `<>f__AnonymousType6`3`
+  - `<>f__AnonymousType7`2`
+  - `PX.Web.UI.ContainerBuilderExtensions`
+  - `PX.Web.UI.PXPageCache`
+
+**Base: `System.Attribute`**
+  - `Microsoft.CodeAnalysis.EmbeddedAttribute`
+  - `System.Runtime.CompilerServices.NullableAttribute`
+  - `System.Runtime.CompilerServices.NullableContextAttribute`
+  - `PX.Web.UI.PXDesignerPropertyFilter`
+  - `PX.Web.UI.PXScriptBatchAttribute`
+  - `PX.Web.UI.ScriptBrowsableAttribute`
+  - `PX.Web.UI.PXBaseDataSource+PXDataSourceCommandsAttribute`
+
+**Base: `System.Web.UI.MasterPage`**
+  - `PX.Web.UI.BaseMasterPage`
+
+**Base: `System.Web.Hosting.SimpleWorkerRequest`**
+  - `PX.Web.UI.SimpleWorkerRequestEx`
+
+**Base: `System.Web.UI.Page`**
+  - `PX.Web.UI.PXPage`
+
+**Base: `PX.Data.PXBqlTable`**
+  - `PX.Web.UI.SMPageCache`
+  - `PX.Web.UI.SharedColumnSettings+Users`
+  - `PX.Web.UI.SharedColumnSettings+Grids`
+  - `PX.Web.UI.SharedColumnSettings+Roles`
+  - `PX.Web.UI.SharedColumnSettings+Params`
+  - `PX.Web.UI.SharedColumnSettings+GridPreferences`
+  - `PX.Web.UI.SharedColumnSettings+SiteMap`
+
+**Base: `System.Web.UI.WebControls.DataBoundControl`**
+  - `PX.Web.UI.PXBoundControl`
+
+**Base: `PX.Web.UI.PXBoundControl`**
+  - `PX.Web.UI.PXCompositeBoundControl`
+  - `PX.Web.UI.PXComparer`
+  - `PX.Web.UI.PXBranchSelector`
+  - `PX.Web.UI.PXDropDown`
+  - `PX.Web.UI.PXManufacturingDiagram`
+  - `PX.Web.UI.PXSelectorBase`
+  - `PX.Web.UI.PXWorkflowDiagram`
+  - `PX.Web.UI.PXResPanelBase`
+  - `PX.Web.UI.PXPanelBase`
+
+**Base: `PX.Web.UI.PXCompositeControl`**
+  - `PX.Web.UI.PXButton`
+  - `PX.Web.UI.PXStatusBar`
+  - `PX.Web.UI.PXSplitContainer`
+  - `PX.Web.UI.PXFileUpload`
+  - `PX.Web.UI.PXFileUploader`
+  - `PX.Web.UI.PXImageUploader`
+  - `PX.Web.UI.PXSearchBox`
+  - `PX.Web.UI.PXWikiTree`
+  - `PX.Web.UI.PXActivityBox`
+  - `PX.Web.UI.PXReportViewer`
+
+**Base: `PX.Web.UI.PXStateImages`**
+  - `PX.Web.UI.PXButtonImages`
+
+**Base: `PX.Web.UI.PXStateStyles`**
+  - `PX.Web.UI.PXButtonStyles`
+
+**Base: `PX.Web.UI.PXWebControl`**
+  - `PX.Web.UI.QPCalendar`
+  - `PX.Web.UI.PXCheckBox`
+  - `PX.Web.UI.PXLabel`
+  - `PX.Web.UI.PXJavaScript`
+  - `PX.Web.UI.PXPluginService`
+  - `PX.Web.UI.PXHtmlView`
+  - `PX.Web.UI.PXScreenTitle`
+  - `PX.Web.UI.PXTree`
+  - `PX.Web.UI.PXCompositeControl`
+  - `PX.Web.UI.PXFieldset`
+
+**Base: `System.Web.UI.WebControls.WebControl`**
+  - `PX.Web.UI.PXCalendar`
+  - `PX.Web.UI.PXCell`
+  - `PX.Web.UI.PXRadioButton`
+  - `PX.Web.UI.PXWebControl`
+  - `PX.Web.UI.PXSmartPanel`
+  - `PX.Web.UI.PXGridCellContainer`
+  - `PX.Web.UI.PXLayoutGenerator`
+  - `PX.Web.UI.PXSpan`
+  - `PX.Web.UI.PXColGroup`
+  - `PX.Web.UI.PXTableCol`
+
+**Base: `PX.Web.UI.PXBaseEvents`1[[PX.Web.UI.PXCalendarEvents, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Web.UI.PXCalendarEvents`
+
+**Base: `PX.Web.UI.PXWebObject`1[[PX.Web.UI.PXCalendarFormat, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Web.UI.PXCalendarFormat`
+
+**Base: `PX.Web.UI.PXWebObject`1[[PX.Web.UI.PXCalendarStyles, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Web.UI.PXCalendarStyles`
+
+**Base: `PX.Web.UI.PXTextEdit`**
+  - `PX.Web.UI.PXExternalViewer`
+  - `PX.Web.UI.PXButtonEdit`
+  - `PX.Web.UI.PXMaskEdit`
+  - `PX.Web.UI.PXNumberEdit`
+  - `PX.Web.UI.PXTextEditAutoComplete`
+  - `PX.Web.UI.PXTimeEdit`
+
+**Base: `System.Web.UI.WebControls.Label`**
+  - `PX.Web.UI.PXLiteral`
+  - `PX.Web.UI.ClientScript`
+  - `PX.Web.UI.PXRuler`
+
+**Base: `System.Web.UI.WebControls.CompositeControl`**
+  - `PX.Web.UI.PXSplitter`
+
+**Base: `PX.Web.UI.PXWebObject`1[[PX.Web.UI.PXSplitterStyles, PX.Web.UI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Web.UI.PXSplitterStyles`

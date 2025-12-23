@@ -1,0 +1,711 @@
+# Assembly: PX.Common
+Version: 1.0.0.0
+DLL: PX.Common
+
+## Namespaces and Classes
+
+### Namespace: Global
+
+**Class: <>f__AnonymousType0`2**
+- Full Name: `<>f__AnonymousType0`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType1`2**
+- Full Name: `<>f__AnonymousType1`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: HttpRequestEx**
+- Full Name: `HttpRequestEx`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, NullableContextAttribute, NullableAttribute
+
+**Class: **
+- Full Name: `HttpRequestEx+`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: **
+- Full Name: `HttpRequestEx+`
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `HttpRequestEx+`
+- Inherits from: `System.Object`
+
+### Namespace: Microsoft.CodeAnalysis
+
+**Class: EmbeddedAttribute**
+- Full Name: `Microsoft.CodeAnalysis.EmbeddedAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute
+
+### Namespace: Microsoft.Extensions.Configuration
+
+**Class: ConfigurationBuilderExtensions**
+- Full Name: `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: **
+- Full Name: `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: **
+- Full Name: `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+`
+- Inherits from: `System.Object`
+
+### Namespace: PX.AspNetCore
+
+**Class: HttpContextTranslation**
+- Full Name: `PX.AspNetCore.HttpContextTranslation`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+### Namespace: PX.AspNetCore.Owin
+
+**Class: OwinContextExtensions**
+- Full Name: `PX.AspNetCore.Owin.OwinContextExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+### Namespace: PX.Common
+
+**Class: Async**
+- Full Name: `PX.Common.Async`
+- Inherits from: `System.Object`
+- Attributes: NullableContextAttribute, NullableAttribute
+
+**Class: AtomicLazy`1**
+- Full Name: `PX.Common.AtomicLazy`1`
+- Inherits from: `System.Object`
+- Attributes: PXInternalUseOnlyAttribute, NullableContextAttribute, NullableAttribute
+
+**Class: BinaryReaderEx**
+- Full Name: `PX.Common.BinaryReaderEx`
+- Inherits from: `System.IO.BinaryReader`
+- Implements: `System.IDisposable`
+
+**Class: CommonSurrogate**
+- Full Name: `PX.Common.CommonSurrogate`
+- Inherits from: `System.Object`
+- Implements: `System.Runtime.Serialization.ISerializationSurrogate`
+
+**Class: CurrentLocalization**
+- Full Name: `PX.Common.CurrentLocalization`
+- Inherits from: `System.Object`
+
+**Class: DaylightSavingTime**
+- Full Name: `PX.Common.DaylightSavingTime`
+- Inherits from: `System.Object`
+
+**Class: Func**
+- Full Name: `PX.Common.Func`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, NullableContextAttribute, NullableAttribute
+
+**Class: **
+- Full Name: `PX.Common.Func+`
+- Inherits from: `System.Object`
+
+**Class:  **
+- Full Name: `PX.Common.Func+ `
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `PX.Common.Func+`
+- Inherits from: `System.Object`
+
+**Class:  **
+- Full Name: `PX.Common.Func+ `
+- Inherits from: `System.Object`
+- Attributes: NullableAttribute
+
+**Class: **
+- Full Name: `PX.Common.Func+ +`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: **
+- Full Name: `PX.Common.Func+`
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `PX.Common.Func+`
+- Inherits from: `System.Object`
+
+**Class:  **
+- Full Name: `PX.Common.Func+ `
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `PX.Common.Func+`
+- Inherits from: `System.Object`
+
+**Class:  **
+- Full Name: `PX.Common.Func+ `
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `PX.Common.Func+`
+- Inherits from: `System.Object`
+
+**Class:  **
+- Full Name: `PX.Common.Func+ `
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `PX.Common.Func+`
+- Inherits from: `System.Object`
+
+**Class: HttpContextExtensions**
+- Full Name: `PX.Common.HttpContextExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: **
+- Full Name: `PX.Common.HttpContextExtensions+`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Interface: IExtends`1**
+- Full Name: `PX.Common.IExtends`1`
+- Attributes: NullableContextAttribute
+
+**Interface: IImplement`1**
+- Full Name: `PX.Common.IImplement`1`
+- Attributes: NullableContextAttribute
+
+**Interface: IPXCompanyDependent**
+- Full Name: `PX.Common.IPXCompanyDependent`
+
+**Interface: IPXIdentity**
+- Full Name: `PX.Common.IPXIdentity`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Interface: IPXIdentityAccessor**
+- Full Name: `PX.Common.IPXIdentityAccessor`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Interface: ISessionContextFactory**
+- Full Name: `PX.Common.ISessionContextFactory`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Interface: ISessionContextFactory`1**
+- Full Name: `PX.Common.ISessionContextFactory`1`
+
+**Interface: ISourceControlPlugin**
+- Full Name: `PX.Common.ISourceControlPlugin`
+- Attributes: NullableContextAttribute
+
+**Interface: ITimeRegion**
+- Full Name: `PX.Common.ITimeRegion`
+
+**Interface: ITimeRegionProvider**
+- Full Name: `PX.Common.ITimeRegionProvider`
+
+**Class: IndexerExtensions**
+- Full Name: `PX.Common.IndexerExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, PXInternalUseOnlyAttribute
+
+**Class: LocaleInfo**
+- Full Name: `PX.Common.LocaleInfo`
+- Inherits from: `System.Object`
+
+**Class: PXBufferedResponse**
+- Full Name: `PX.Common.PXBufferedResponse`
+- Inherits from: `System.Object`
+
+**Class: PXContext**
+- Full Name: `PX.Common.PXContext`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: **
+- Full Name: `PX.Common.PXContext+`
+- Inherits from: `System.ValueType`
+- Implements: `System.Runtime.CompilerServices.IAsyncStateMachine`
+
+**Class: MobileOfflineMode**
+- Full Name: `PX.Common.PXContext+MobileOfflineMode`
+- Inherits from: `System.Enum`
+- Implements: `System.IComparable`, `System.IFormattable`, `System.IConvertible`
+
+**Class: PXCultureScope**
+- Full Name: `PX.Common.PXCultureScope`
+- Inherits from: `System.Object`
+- Implements: `System.IDisposable`
+
+**Class: PXExecutionContext**
+- Full Name: `PX.Common.PXExecutionContext`
+- Inherits from: `System.Object`
+
+**Class: RequestInfo**
+- Full Name: `PX.Common.PXExecutionContext+RequestInfo`
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `PX.Common.PXExecutionContext+RequestInfo+`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: Scope**
+- Full Name: `PX.Common.PXExecutionContext+Scope`
+- Inherits from: `System.Object`
+- Implements: `System.IDisposable`
+
+**Class: PXHostingEnvironment**
+- Full Name: `PX.Common.PXHostingEnvironment`
+- Inherits from: `System.Object`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Class: PXInvariantCultureScope**
+- Full Name: `PX.Common.PXInvariantCultureScope`
+- Inherits from: `PX.Common.PXCultureScope`
+- Implements: `System.IDisposable`
+
+**Class: PXInvariantScope**
+- Full Name: `PX.Common.PXInvariantScope`
+- Inherits from: `PX.Common.PXInvariantCultureScope`
+- Implements: `System.IDisposable`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Class: PXObjectComparer**
+- Full Name: `PX.Common.PXObjectComparer`
+- Inherits from: `System.Object`
+
+**Class: StackFrame**
+- Full Name: `PX.Common.PXObjectComparer+StackFrame`
+- Inherits from: `System.Object`
+
+**Class: PXPageCacheUtils**
+- Full Name: `PX.Common.PXPageCacheUtils`
+- Inherits from: `System.Object`
+- Attributes: ObsoleteAttribute
+
+**Class: **
+- Full Name: `PX.Common.PXPageCacheUtils+`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+### Namespace: PX.Common.Config
+
+**Class: TSScreenInfoOptions**
+- Full Name: `PX.Common.Config.TSScreenInfoOptions`
+- Inherits from: `System.Object`
+- Attributes: PXInternalUseOnlyAttribute
+
+### Namespace: PX.Common.Configuration
+
+**Class: ConfigurationExtensions**
+- Full Name: `PX.Common.Configuration.ConfigurationExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, PXInternalUseOnlyAttribute
+
+### Namespace: PX.Common.Context
+
+**Class: AsyncLocalSlotStorageProvider**
+- Full Name: `PX.Common.Context.AsyncLocalSlotStorageProvider`
+- Inherits from: `PX.Common.Context.SlotStorageProviderBase`
+- Implements: `PX.Common.Context.ISlotStorageProvider`, `PX.Common.Context.ISlotStore`, `PX.Common.Context.IDisposableSlotStorageProvider`, `System.IDisposable`
+
+**Class: CallContextSlotStorageProvider**
+- Full Name: `PX.Common.Context.CallContextSlotStorageProvider`
+- Inherits from: `PX.Common.Context.SlotStorageProviderBase`
+- Implements: `PX.Common.Context.ISlotStorageProvider`, `PX.Common.Context.ISlotStore`
+
+**Class: HttpContextSlotStorageProvider**
+- Full Name: `PX.Common.Context.HttpContextSlotStorageProvider`
+- Inherits from: `PX.Common.Context.SlotStorageProviderBase`
+- Implements: `PX.Common.Context.ISlotStorageProvider`, `PX.Common.Context.ISlotStore`
+
+**Interface: IDisposableSlotStorageProvider**
+- Full Name: `PX.Common.Context.IDisposableSlotStorageProvider`
+- Implements: `PX.Common.Context.ISlotStorageProvider`, `PX.Common.Context.ISlotStore`, `System.IDisposable`
+
+**Interface: ISlotStorageProvider**
+- Full Name: `PX.Common.Context.ISlotStorageProvider`
+- Implements: `PX.Common.Context.ISlotStore`
+
+**Class: SlotStorageProviderBase**
+- Full Name: `PX.Common.Context.SlotStorageProviderBase`
+- Inherits from: `System.Object`
+- Implements: `PX.Common.Context.ISlotStorageProvider`, `PX.Common.Context.ISlotStore`
+
+**Class: **
+- Full Name: `PX.Common.Context.SlotStorageProviderBase+`
+- Inherits from: `System.Object`
+
+**Class: SlotStorageProviderExtensions**
+- Full Name: `PX.Common.Context.SlotStorageProviderExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: **
+- Full Name: `PX.Common.Context.SlotStorageProviderExtensions+`
+- Inherits from: `System.Object`
+
+**Class: SlotStore**
+- Full Name: `PX.Common.Context.SlotStore`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, PXInternalUseOnlyAttribute
+
+### Namespace: PX.Common.Extensions
+
+**Class: GuidExtensions**
+- Full Name: `PX.Common.Extensions.GuidExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: HttpResponseExtensions**
+- Full Name: `PX.Common.Extensions.HttpResponseExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: **
+- Full Name: `PX.Common.Extensions.HttpResponseExtensions+`
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `PX.Common.Extensions.HttpResponseExtensions+`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Common.Mail
+
+**Class: SmtpClientDefinition**
+- Full Name: `PX.Common.Mail.SmtpClientDefinition`
+- Inherits from: `System.Object`
+- Implements: `System.IDisposable`
+
+### Namespace: PX.Common.PdfPrinter
+
+**Class: PdfPrinterConfigurationManager**
+- Full Name: `PX.Common.PdfPrinter.PdfPrinterConfigurationManager`
+- Inherits from: `System.Object`
+
+**Class: PrinterWinApiCommands**
+- Full Name: `PX.Common.PdfPrinter.PrinterWinApiCommands`
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `PX.Common.PdfPrinter.PrinterWinApiCommands+`
+- Inherits from: `System.ValueType`
+
+**Class: **
+- Full Name: `PX.Common.PdfPrinter.PrinterWinApiCommands+`
+- Inherits from: `System.Object`
+
+**Class: DEVMODE**
+- Full Name: `PX.Common.PdfPrinter.PrinterWinApiCommands+DEVMODE`
+- Inherits from: `System.ValueType`
+
+### Namespace: PX.Logging
+
+**Class: RequestTraceIdentifierExtensions**
+- Full Name: `PX.Logging.RequestTraceIdentifierExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, PXInternalUseOnlyAttribute
+
+### Namespace: System.Runtime.CompilerServices
+
+**Class: NullableAttribute**
+- Full Name: `System.Runtime.CompilerServices.NullableAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, AttributeUsageAttribute, EmbeddedAttribute
+
+**Class: NullableContextAttribute**
+- Full Name: `System.Runtime.CompilerServices.NullableContextAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, AttributeUsageAttribute, EmbeddedAttribute
+
+**Class: RefSafetyRulesAttribute**
+- Full Name: `System.Runtime.CompilerServices.RefSafetyRulesAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, AttributeUsageAttribute, EmbeddedAttribute
+
+### Namespace: System.Web.Compilation
+
+**Class: PXBuildManager**
+- Full Name: `System.Web.Compilation.PXBuildManager`
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `System.Web.Compilation.PXBuildManager+`
+- Inherits from: `System.Object`
+
+**Class: TypeParser**
+- Full Name: `System.Web.Compilation.PXBuildManager+TypeParser`
+- Inherits from: `System.Object`
+
+**Class: **
+- Full Name: `System.Web.Compilation.PXBuildManager+TypeParser+`
+- Inherits from: `System.Object`
+- Attributes: SerializableAttribute
+
+**Class: **
+- Full Name: `System.Web.Compilation.PXBuildManager+TypeParser+`
+- Inherits from: `System.Object`
+
+**Class: ArrayDimension**
+- Full Name: `System.Web.Compilation.PXBuildManager+TypeParser+ArrayDimension`
+- Inherits from: `System.Object`
+
+## Key Methods
+
+- `public virtual <>f__AnonymousType0`2.Equals(System.Object )` → `System.Boolean`
+- `public virtual <>f__AnonymousType0`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType0`2.ToString()` → `System.String`
+- `public <>f__AnonymousType0`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType1`2.Equals(System.Object )` → `System.Boolean`
+- `public virtual <>f__AnonymousType1`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType1`2.ToString()` → `System.String`
+- `public <>f__AnonymousType1`2.GetType()` → `System.Type`
+- `public static HttpRequestEx.GetWebsiteUrl(System.Web.HttpRequest request)` → `System.String`
+- `public static HttpRequestEx.GetWebsiteAuthority(System.Web.HttpRequest request)` → `System.Uri`
+- `public static HttpRequestEx.GetExternalUrl(System.Web.HttpRequest request)` → `System.Uri`
+- `public static HttpRequestEx.FixAuthority(System.Uri uri, System.Web.HttpRequest request)` → `System.Uri`
+- `public static HttpRequestEx.GetUserHostAddress(System.Web.HttpRequestBase request)` → `System.String`
+- `public static HttpRequestEx.GetUserHostAddress(System.Web.HttpRequest request)` → `System.String`
+- `public static HttpRequestEx.GetUserHostsChain(System.Web.HttpRequest request)` → `System.Collections.Generic.IEnumerable`1[System.String]`
+- `public static HttpRequestEx.GetUserHostsChain(System.Web.HttpRequestBase request)` → `System.Collections.Generic.IEnumerable`1[System.String]`
+- `public virtual HttpRequestEx.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual HttpRequestEx.GetHashCode()` → `System.Int32`
+- `public HttpRequestEx.GetType()` → `System.Type`
+- `public virtual HttpRequestEx.ToString()` → `System.String`
+- `public virtual HttpRequestEx+.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual HttpRequestEx+.GetHashCode()` → `System.Int32`
+- `public HttpRequestEx+.GetType()` → `System.Type`
+- `public virtual HttpRequestEx+.ToString()` → `System.String`
+- `public virtual HttpRequestEx+.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual HttpRequestEx+.GetHashCode()` → `System.Int32`
+- `public HttpRequestEx+.GetType()` → `System.Type`
+- `public virtual HttpRequestEx+.ToString()` → `System.String`
+- `public virtual HttpRequestEx+.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual HttpRequestEx+.GetHashCode()` → `System.Int32`
+- `public HttpRequestEx+.GetType()` → `System.Type`
+- `public virtual HttpRequestEx+.ToString()` → `System.String`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.GetHashCode()` → `System.Int32`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public Microsoft.CodeAnalysis.EmbeddedAttribute.GetType()` → `System.Type`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.ToString()` → `System.String`
+- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.GetHashCode()` → `System.Int32`
+- `public Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.GetType()` → `System.Type`
+- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.ToString()` → `System.String`
+- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.GetHashCode()` → `System.Int32`
+- `public Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.GetType()` → `System.Type`
+- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.ToString()` → `System.String`
+- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.GetHashCode()` → `System.Int32`
+- `public Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.GetType()` → `System.Type`
+- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.ToString()` → `System.String`
+- `public virtual PX.AspNetCore.HttpContextTranslation.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual PX.AspNetCore.HttpContextTranslation.GetHashCode()` → `System.Int32`
+- `public PX.AspNetCore.HttpContextTranslation.GetType()` → `System.Type`
+- `public virtual PX.AspNetCore.HttpContextTranslation.ToString()` → `System.String`
+- `public virtual PX.AspNetCore.Owin.OwinContextExtensions.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual PX.AspNetCore.Owin.OwinContextExtensions.GetHashCode()` → `System.Int32`
+- `public PX.AspNetCore.Owin.OwinContextExtensions.GetType()` → `System.Type`
+- `public virtual PX.AspNetCore.Owin.OwinContextExtensions.ToString()` → `System.String`
+- `public virtual PX.Common.Async.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual PX.Common.Async.GetHashCode()` → `System.Int32`
+- `public PX.Common.Async.GetType()` → `System.Type`
+- `public virtual PX.Common.Async.ToString()` → `System.String`
+- `public virtual PX.Common.AtomicLazy`1.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual PX.Common.AtomicLazy`1.GetHashCode()` → `System.Int32`
+- `public PX.Common.AtomicLazy`1.GetType()` → `System.Type`
+- `public virtual PX.Common.AtomicLazy`1.ToString()` → `System.String`
+- `public PX.Common.BinaryReaderEx.GetStream()` → `System.IO.Stream`
+- `public PX.Common.BinaryReaderEx.ReadTypeString()` → `System.Type`
+- `public PX.Common.BinaryReaderEx.ReadDateTime()` → `System.DateTime`
+- `public PX.Common.BinaryReaderEx.ReadGuid()` → `System.Guid`
+- `public PX.Common.BinaryReaderEx.ReadInt16Nullable()` → `System.Nullable`1[System.Int16]`
+- `public PX.Common.BinaryReaderEx.ReadInt32Nullable()` → `System.Nullable`1[System.Int32]`
+- `public PX.Common.BinaryReaderEx.ReadInt64Nullable()` → `System.Nullable`1[System.Int64]`
+- `public PX.Common.BinaryReaderEx.ReadDecimalNullable()` → `System.Nullable`1[System.Decimal]`
+- `public PX.Common.BinaryReaderEx.ReadGuidNullable()` → `System.Nullable`1[System.Guid]`
+- `public PX.Common.BinaryReaderEx.ReadDateTimeNullable()` → `System.Nullable`1[System.DateTime]`
+- `public PX.Common.BinaryReaderEx.ReadBooleanNullable()` → `System.Nullable`1[System.Boolean]`
+- `public PX.Common.BinaryReaderEx.ReadByteArray()` → `System.Byte[]`
+- `public virtual PX.Common.BinaryReaderEx.ReadBoolean()` → `System.Boolean`
+- `public virtual PX.Common.BinaryReaderEx.Close()` → `System.Void`
+- `public virtual PX.Common.BinaryReaderEx.Dispose()` → `System.Void`
+- `public virtual PX.Common.BinaryReaderEx.PeekChar()` → `System.Int32`
+- `public virtual PX.Common.BinaryReaderEx.Read()` → `System.Int32`
+- `public virtual PX.Common.BinaryReaderEx.ReadByte()` → `System.Byte`
+- `public virtual PX.Common.BinaryReaderEx.ReadSByte()` → `System.SByte`
+- `public virtual PX.Common.BinaryReaderEx.ReadChar()` → `System.Char`
+- `public virtual PX.Common.BinaryReaderEx.ReadInt16()` → `System.Int16`
+- `public virtual PX.Common.BinaryReaderEx.ReadUInt16()` → `System.UInt16`
+- `public virtual PX.Common.BinaryReaderEx.ReadInt32()` → `System.Int32`
+- `public virtual PX.Common.BinaryReaderEx.ReadUInt32()` → `System.UInt32`
+- `public virtual PX.Common.BinaryReaderEx.ReadInt64()` → `System.Int64`
+- `public virtual PX.Common.BinaryReaderEx.ReadUInt64()` → `System.UInt64`
+- `public virtual PX.Common.BinaryReaderEx.ReadSingle()` → `System.Single`
+- `public virtual PX.Common.BinaryReaderEx.ReadDouble()` → `System.Double`
+- `public virtual PX.Common.BinaryReaderEx.ReadDecimal()` → `System.Decimal`
+- `public virtual PX.Common.BinaryReaderEx.ReadString()` → `System.String`
+- `public virtual PX.Common.BinaryReaderEx.Read(System.Char[] buffer, System.Int32 index, System.Int32 count)` → `System.Int32`
+- `public virtual PX.Common.BinaryReaderEx.ReadChars(System.Int32 count)` → `System.Char[]`
+- `public virtual PX.Common.BinaryReaderEx.Read(System.Byte[] buffer, System.Int32 index, System.Int32 count)` → `System.Int32`
+- `public virtual PX.Common.BinaryReaderEx.ReadBytes(System.Int32 count)` → `System.Byte[]`
+## Key Properties
+
+- `<>f__AnonymousType0`2.Type`: `<Type>j__TPar` (read-only)
+- `<>f__AnonymousType0`2.Args`: `<Args>j__TPar` (read-only)
+- `<>f__AnonymousType1`2.sp`: `<sp>j__TPar` (read-only)
+- `<>f__AnonymousType1`2.tp`: `<tp>j__TPar` (read-only)
+- `Microsoft.CodeAnalysis.EmbeddedAttribute.TypeId`: `System.Object` (read-only)
+- `PX.Common.AtomicLazy`1.Value`: `T` (read-only)
+- `PX.Common.BinaryReaderEx.BaseStream`: `System.IO.Stream` (read-only)
+- `PX.Common.Config.TSScreenInfoOptions.ScreenInfoPath`: `System.String` (read-write)
+- `PX.Common.Config.TSScreenInfoOptions.WrappersInfoPath`: `System.String` (read-write)
+- `PX.Common.DaylightSavingTime.IsActive`: `System.Boolean` (read-only)
+- `PX.Common.DaylightSavingTime.Start`: `System.DateTime` (read-only)
+- `PX.Common.DaylightSavingTime.End`: `System.DateTime` (read-only)
+- `PX.Common.DaylightSavingTime.DaylightOffset`: `System.TimeSpan` (read-only)
+- `PX.Common.DaylightSavingTime.BaseOffset`: `System.TimeSpan` (read-only)
+- `PX.Common.IPXIdentity.Username`: `System.String` (read-only)
+- `PX.Common.IPXIdentity.TenantId`: `System.String` (read-only)
+- `PX.Common.IPXIdentity.BranchId`: `System.Nullable`1[System.Int32]` (read-only)
+- `PX.Common.IPXIdentity.Culture`: `System.Globalization.CultureInfo` (read-only)
+- `PX.Common.IPXIdentity.BusinessDate`: `System.DateTime` (read-only)
+- `PX.Common.IPXIdentity.TimeZone`: `PX.Common.PXTimeZoneInfo` (read-only)
+- `PX.Common.IPXIdentity.User`: `System.Security.Principal.IPrincipal` (read-only)
+- `PX.Common.IPXIdentityAccessor.Identity`: `PX.Common.IPXIdentity` (read-only)
+- `PX.Common.ITimeRegion.SupportsDaylightSavingTime`: `System.Boolean` (read-only)
+- `PX.Common.PXContext.SitemapTimeStamp`: `System.DateTime` (read-write)
+- `PX.Common.PXContext.PXIdentity`: `PX.Common.PXSessionContext` (read-only)
+- `PX.Common.PXExecutionContext.Current`: `PX.Common.PXExecutionContext` (read-write)
+- `PX.Common.PXExecutionContext.Request`: `PX.Common.PXExecutionContext+RequestInfo` (read-write)
+- `PX.Common.PXExecutionContext.Time`: `PX.Common.PXTimeInfo` (read-write)
+- `PX.Common.PXExecutionContext.Bag`: `System.Collections.Generic.IDictionary`2[System.String,System.Object]` (read-only)
+- `PX.Common.PXExecutionContext+RequestInfo.ApplicationPath`: `System.String` (read-only)
+- `PX.Common.PXExecutionContext+RequestInfo.Scheme`: `System.String` (read-only)
+- `PX.Common.PXExecutionContext+RequestInfo.Authority`: `System.String` (read-only)
+- `PX.Common.PXHostingEnvironment.IsHosted`: `System.Boolean` (read-only)
+- `PX.Common.PXObjectComparer+StackFrame.Line`: `System.String` (read-only)
+- `PX.Common.PXObjectComparer+StackFrame.Stack`: `System.String` (read-only)
+- `PX.Common.PXReflectionSerializer+.CanRead`: `System.Boolean` (read-only)
+- `PX.Common.PXReflectionSerializer+.CanSeek`: `System.Boolean` (read-only)
+- `PX.Common.PXReflectionSerializer+.CanWrite`: `System.Boolean` (read-only)
+- `PX.Common.PXReflectionSerializer+.Length`: `System.Int64` (read-only)
+- `PX.Common.PXReflectionSerializer+.Position`: `System.Int64` (read-write)
+- `PX.Common.PXReflectionSerializer+.Capacity`: `System.Int32` (read-write)
+- `PX.Common.PXReflectionSerializer+.CanTimeout`: `System.Boolean` (read-only)
+- `PX.Common.PXReflectionSerializer+.ReadTimeout`: `System.Int32` (read-write)
+- `PX.Common.PXReflectionSerializer+.WriteTimeout`: `System.Int32` (read-write)
+- `PX.Common.PXSerializationSurrogateAttribute.TypeId`: `System.Object` (read-only)
+- `PX.Common.PXSessionContext.BranchID`: `System.Nullable`1[System.Int32]` (read-write)
+- `PX.Common.PXSessionContext.Culture`: `System.Globalization.CultureInfo` (read-write)
+- `PX.Common.PXSessionContext.UICulture`: `System.Globalization.CultureInfo` (read-write)
+- `PX.Common.PXSessionContext.TimeZone`: `PX.Common.PXTimeZoneInfo` (read-write)
+- `PX.Common.PXSessionContext.BusinessDate`: `System.Nullable`1[System.DateTime]` (read-write)
+- `PX.Common.PXSessionContext.User`: `System.Security.Principal.IPrincipal` (read-only)
+- `PX.Common.PXSessionContext.AuthUser`: `System.Security.Principal.IPrincipal` (read-only)
+- `PX.Common.PXSessionContext.Authenticated`: `System.Boolean` (read-only)
+- `PX.Common.PXSessionContext.IdentityName`: `System.String` (read-only)
+- `PX.Common.PXSessionContextFactory.SessionContext`: `PX.Common.PXSessionContext` (read-only)
+- `PX.Common.PXSessionState.IsSessionEnabled`: `System.Boolean` (read-only)
+- `PX.Common.PXSessionState.Item`: `System.Object` (read-write)
+- `PX.Common.PXSessionState+AlteredKeyIndexerBase`1.Item`: `T` (read-write)
+- `PX.Common.PXSessionState+Indexer`1.Item`: `T` (read-write)
+- `PX.Common.PXSessionState+PrefixedIndexer`1.Item`: `T` (read-write)
+- `PX.Common.PXTimeInfo.Now`: `System.DateTime` (read-only)
+- `PX.Common.PXTimeInfo.UtcNow`: `System.DateTime` (read-only)
+- `PX.Common.PXTimeInfo.Info`: `PX.Common.PXTimeZoneInfo` (read-only)
+- `PX.Common.PXTimeZoneInfo.Local`: `PX.Common.PXTimeZoneInfo` (read-only)
+- `PX.Common.PXTimeZoneInfo.UtcOffset`: `System.TimeSpan` (read-only)
+- `PX.Common.PXTimeZoneInfo.BaseUtcOffset`: `System.TimeSpan` (read-only)
+- `PX.Common.PXTimeZoneInfo.DisplayName`: `System.String` (read-only)
+- `PX.Common.PXTimeZoneInfo.ShortName`: `System.String` (read-only)
+- `PX.Common.PXTimeZoneInfo.RegionId`: `System.String` (read-only)
+- `PX.Common.PXTimeZoneInfo.Id`: `System.String` (read-only)
+- `PX.Common.PXTimeZoneInfo.Now`: `System.DateTime` (read-only)
+- `PX.Common.PXTimeZoneInfo.NowWithoutDST`: `System.DateTime` (read-only)
+- `PX.Common.PXTimeZoneInfo.UtcNow`: `System.DateTime` (read-only)
+- `PX.Common.PXTimeZoneInfo.Today`: `System.DateTime` (read-only)
+- `PX.Common.PXTimeZoneInfo.UtcToday`: `System.DateTime` (read-only)
+- `PX.Common.PdfPrinter.PdfPrinterConfigurationManager.IsMicrosoftPdfEnabled`: `System.Boolean` (read-only)
+- `PX.Common.RequiredTypesAttribute.Types`: `System.Type[]` (read-only)
+- `PX.Common.RequiredTypesAttribute.TypeId`: `System.Object` (read-only)
+- `PX.Common.SerializableDictionary`2.Comparer`: `System.Collections.Generic.IEqualityComparer`1[TKey]` (read-only)
+- `PX.Common.SerializableDictionary`2.Count`: `System.Int32` (read-only)
+- `PX.Common.SerializableDictionary`2.Keys`: `System.Collections.Generic.Dictionary`2+KeyCollection[TKey,TValue]` (read-only)
+- `PX.Common.SerializableDictionary`2.Values`: `System.Collections.Generic.Dictionary`2+ValueCollection[TKey,TValue]` (read-only)
+- `PX.Common.SerializableDictionary`2.Item`: `TValue` (read-write)
+- `PX.Common.SlotIndexer`2.Item`: `TValue` (read-write)
+- `PX.Common.SystemTimeRegion.SupportsDaylightSavingTime`: `System.Boolean` (read-only)
+- `PX.Common.ThreadCop.TimeOut`: `System.Int32` (read-write)
+- `PX.Common.WebConfig.DesignMode`: `System.Boolean` (read-only)
+- `PX.Common.WebConfig.UseRuntimeCompilation`: `System.Boolean` (read-only)
+- `PX.Common.WebConfig.CustomizationTempFilesPath`: `System.String` (read-only)
+- `PX.Common.WebConfig.CompilationInDebugMode`: `System.Boolean` (read-only)
+- `PX.Common.WebsiteID.Key`: `System.String` (read-only)
+- `System.Runtime.CompilerServices.NullableAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.NullableContextAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.RefSafetyRulesAttribute.TypeId`: `System.Object` (read-only)
+## Inheritance Hierarchies
+
+**Base: `System.Object`**
+  - `<>f__AnonymousType0`2`
+  - `<>f__AnonymousType1`2`
+  - `HttpRequestEx`
+  - `HttpRequestEx+`
+  - `HttpRequestEx+`
+  - `HttpRequestEx+`
+  - `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions`
+  - `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+`
+  - `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+`
+  - `PX.AspNetCore.HttpContextTranslation`
+
+**Base: `System.Attribute`**
+  - `Microsoft.CodeAnalysis.EmbeddedAttribute`
+  - `PX.Common.PXSerializationSurrogateAttribute`
+  - `PX.Common.RequiredTypesAttribute`
+  - `System.Runtime.CompilerServices.NullableAttribute`
+  - `System.Runtime.CompilerServices.NullableContextAttribute`
+  - `System.Runtime.CompilerServices.RefSafetyRulesAttribute`
+
+**Base: `System.IO.BinaryReader`**
+  - `PX.Common.BinaryReaderEx`
+
+**Base: `PX.Common.Context.SlotStorageProviderBase`**
+  - `PX.Common.Context.AsyncLocalSlotStorageProvider`
+  - `PX.Common.Context.CallContextSlotStorageProvider`
+  - `PX.Common.Context.HttpContextSlotStorageProvider`
+
+**Base: `System.ValueType`**
+  - `PX.Common.PXContext+`
+  - `PX.Common.PdfPrinter.PrinterWinApiCommands+`
+  - `PX.Common.PdfPrinter.PrinterWinApiCommands+DEVMODE`
+
+**Base: `System.Enum`**
+  - `PX.Common.PXContext+MobileOfflineMode`
+
+**Base: `PX.Common.PXCultureScope`**
+  - `PX.Common.PXInvariantCultureScope`
+
+**Base: `PX.Common.PXInvariantCultureScope`**
+  - `PX.Common.PXInvariantScope`
+
+**Base: `PX.Common.ReflectionSerializer`**
+  - `PX.Common.PXReflectionSerializer`
+
+**Base: `System.IO.MemoryStream`**
+  - `PX.Common.PXReflectionSerializer+`
+
+**Base: `None`**
+  - `PX.Common.PXSessionState+AlteredKeyIndexerBase`1`
+  - `PX.Common.PXSessionState+PrefixedIndexer`1`
+  - `PX.Common.SerializableDictionary`2`

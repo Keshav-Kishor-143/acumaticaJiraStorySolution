@@ -1,0 +1,1276 @@
+# Assembly: PX.Objects.FS
+Version: 1.0.0.0
+DLL: PX.Objects.FS
+
+## Namespaces and Classes
+
+### Namespace: Global
+
+**Class: <>f__AnonymousType0`2**
+- Full Name: `<>f__AnonymousType0`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType1`2**
+- Full Name: `<>f__AnonymousType1`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType2`1**
+- Full Name: `<>f__AnonymousType2`1`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType3`3**
+- Full Name: `<>f__AnonymousType3`3`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType4`2**
+- Full Name: `<>f__AnonymousType4`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType5`2**
+- Full Name: `<>f__AnonymousType5`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType6`3**
+- Full Name: `<>f__AnonymousType6`3`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType7`6**
+- Full Name: `<>f__AnonymousType7`6`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType8`10**
+- Full Name: `<>f__AnonymousType8`10`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType9`2**
+- Full Name: `<>f__AnonymousType9`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType10`2**
+- Full Name: `<>f__AnonymousType10`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType11`2**
+- Full Name: `<>f__AnonymousType11`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType12`2**
+- Full Name: `<>f__AnonymousType12`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType13`5**
+- Full Name: `<>f__AnonymousType13`5`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType14`16**
+- Full Name: `<>f__AnonymousType14`16`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType15`2**
+- Full Name: `<>f__AnonymousType15`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType16`9**
+- Full Name: `<>f__AnonymousType16`9`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType17`2**
+- Full Name: `<>f__AnonymousType17`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType18`2**
+- Full Name: `<>f__AnonymousType18`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType19`1**
+- Full Name: `<>f__AnonymousType19`1`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType20`2**
+- Full Name: `<>f__AnonymousType20`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType21`2**
+- Full Name: `<>f__AnonymousType21`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType22`42**
+- Full Name: `<>f__AnonymousType22`42`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>f__AnonymousType23`27**
+- Full Name: `<>f__AnonymousType23`27`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <PrivateImplementationDetails>**
+- Full Name: `<PrivateImplementationDetails>`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: __StaticArrayInitTypeSize=16**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=16`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=24**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=24`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=28**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=28`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=32**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=32`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=40**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=40`
+- Inherits from: `System.ValueType`
+
+### Namespace: Microsoft.CodeAnalysis
+
+**Class: EmbeddedAttribute**
+- Full Name: `Microsoft.CodeAnalysis.EmbeddedAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute
+
+### Namespace: PX.Data
+
+**Class: GoogleMapLatLongRedirector**
+- Full Name: `PX.Data.GoogleMapLatLongRedirector`
+- Inherits from: `PX.Data.GoogleMapRedirector`
+
+### Namespace: PX.Objects.AR
+
+**Class: FSModule**
+- Full Name: `PX.Objects.AR.FSModule`
+- Inherits from: `PX.Objects.CA.PXModule`
+
+**Class: FSNotificationSource**
+- Full Name: `PX.Objects.AR.FSNotificationSource`
+- Inherits from: `System.Object`
+
+**Class: fs**
+- Full Name: `PX.Objects.AR.FSModule+fs`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSModule+fs, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSModule+fs, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: fs_**
+- Full Name: `PX.Objects.AR.FSModule+fs_`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSModule+fs_, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSModule+fs_, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: PK**
+- Full Name: `PX.Objects.AR.FSNotification+PK`
+- Inherits from: `PX.Data.ReferentialIntegrity.Attributes.PrimaryKeyOf`1+By`1[[PX.Objects.AR.FSNotification, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.AR.FSNotification+setupID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.TypeArrayOf`1+IFilledWith`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.AR.FSNotification+setupID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.TypeArray+IsNotEmpty`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKeyOf`1[[PX.Objects.AR.FSNotification, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKey`
+
+**Class: setupID**
+- Full Name: `PX.Objects.AR.FSNotification+setupID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSNotification+setupID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSNotification+setupID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: module**
+- Full Name: `PX.Objects.AR.FSNotification+module`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSNotification+module, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSNotification+module, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: sourceCD**
+- Full Name: `PX.Objects.AR.FSNotification+sourceCD`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSNotification+sourceCD, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSNotification+sourceCD, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: notificationCD**
+- Full Name: `PX.Objects.AR.FSNotification+notificationCD`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSNotification+notificationCD, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSNotification+notificationCD, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: reportID**
+- Full Name: `PX.Objects.AR.FSNotification+reportID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSNotification+reportID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSNotification+reportID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: templateID**
+- Full Name: `PX.Objects.AR.FSNotification+templateID`
+- Inherits from: `System.Object`
+- Implements: `PX.Data.IBqlField`, `PX.Data.IBqlOperand`
+
+**Class: active**
+- Full Name: `PX.Objects.AR.FSNotification+active`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSNotification+active, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSNotification+active, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: PK**
+- Full Name: `PX.Objects.AR.FSCTNotification+PK`
+- Inherits from: `PX.Data.ReferentialIntegrity.Attributes.PrimaryKeyOf`1+By`1[[PX.Objects.AR.FSNotification, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.AR.FSCTNotification+setupID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.TypeArrayOf`1+IFilledWith`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.AR.FSCTNotification+setupID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.TypeArray+IsNotEmpty`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKeyOf`1[[PX.Objects.AR.FSNotification, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKey`
+
+**Class: setupID**
+- Full Name: `PX.Objects.AR.FSCTNotification+setupID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSCTNotification+setupID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSCTNotification+setupID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: module**
+- Full Name: `PX.Objects.AR.FSCTNotification+module`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSCTNotification+module, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSCTNotification+module, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: sourceCD**
+- Full Name: `PX.Objects.AR.FSCTNotification+sourceCD`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSCTNotification+sourceCD, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSCTNotification+sourceCD, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: notificationCD**
+- Full Name: `PX.Objects.AR.FSCTNotification+notificationCD`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSCTNotification+notificationCD, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSCTNotification+notificationCD, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: reportID**
+- Full Name: `PX.Objects.AR.FSCTNotification+reportID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSCTNotification+reportID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSCTNotification+reportID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: templateID**
+- Full Name: `PX.Objects.AR.FSCTNotification+templateID`
+- Inherits from: `System.Object`
+- Implements: `PX.Data.IBqlField`, `PX.Data.IBqlOperand`
+
+**Class: active**
+- Full Name: `PX.Objects.AR.FSCTNotification+active`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSCTNotification+active, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSCTNotification+active, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: appointment**
+- Full Name: `PX.Objects.AR.FSNotificationSource+appointment`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSNotificationSource+appointment, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSNotificationSource+appointment, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: contract**
+- Full Name: `PX.Objects.AR.FSNotificationSource+contract`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.AR.FSNotificationSource+contract, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.AR.FSNotificationSource+contract, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+### Namespace: PX.Objects.FS
+
+**Class: ActivateContractPeriodProcess**
+- Full Name: `PX.Objects.FS.ActivateContractPeriodProcess`
+- Inherits from: `PX.Data.PXGraph`1[[PX.Objects.FS.ActivateContractPeriodProcess, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: AppointmentClosingMaint**
+- Full Name: `PX.Objects.FS.AppointmentClosingMaint`
+- Inherits from: `PX.Objects.FS.AppointmentEntry`
+- Implements: `PX.Objects.FS.SiteStatusLookup.ISiteStatusLookupCompatible`, `PX.Data.DependencyInjection.IGraphWithInitialization`
+
+**Class: AppointmentEntry**
+- Full Name: `PX.Objects.FS.AppointmentEntry`
+- Inherits from: `PX.Objects.FS.ServiceOrderBase`2[[PX.Objects.FS.AppointmentEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSAppointment, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Objects.FS.SiteStatusLookup.ISiteStatusLookupCompatible`, `PX.Data.DependencyInjection.IGraphWithInitialization`
+
+**Class: AppointmentExternalTaxCalc**
+- Full Name: `PX.Objects.FS.AppointmentExternalTaxCalc`
+- Inherits from: `PX.Data.PXGraph`1[[PX.Objects.FS.AppointmentExternalTaxCalc, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: AppointmentInq**
+- Full Name: `PX.Objects.FS.AppointmentInq`
+- Inherits from: `PX.Data.PXGraph`1[[PX.Objects.FS.AppointmentInq, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Attributes: TableAndChartDashboardTypeAttribute
+
+**Class: FSContactAttribute**
+- Full Name: `PX.Objects.FS.FSContactAttribute`
+- Inherits from: `PX.Objects.CS.ContactAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXRowInsertedSubscriber`, `PX.Data.IPXRowPersistingSubscriber`, `PX.Data.IPXRowPersistedSubscriber`, `PX.Data.IPXRowSelectedSubscriber`
+
+**Class: FSDocumentContactAttribute**
+- Full Name: `PX.Objects.FS.FSDocumentContactAttribute`
+- Inherits from: `PX.Objects.FS.FSContactAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXRowInsertedSubscriber`, `PX.Data.IPXRowPersistingSubscriber`, `PX.Data.IPXRowPersistedSubscriber`, `PX.Data.IPXRowSelectedSubscriber`
+
+**Class: FSSrvOrdContactAttribute**
+- Full Name: `PX.Objects.FS.FSSrvOrdContactAttribute`
+- Inherits from: `PX.Objects.FS.FSDocumentContactAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXRowInsertedSubscriber`, `PX.Data.IPXRowPersistingSubscriber`, `PX.Data.IPXRowPersistedSubscriber`, `PX.Data.IPXRowSelectedSubscriber`
+
+**Class: FSAttributeGroupList`4**
+- Full Name: `PX.Objects.FS.FSAttributeGroupList`4`
+- Implements: `PX.Data.IPXRowInsertedSubscriber`, `PX.Data.IPXRowDeletedSubscriber`, `PX.Data.IPXRowUpdatedSubscriber`
+
+**Class: FSAttributeList`1**
+- Full Name: `PX.Objects.FS.FSAttributeList`1`
+
+**Class: ViewLinkedDoc`2**
+- Full Name: `PX.Objects.FS.ViewLinkedDoc`2`
+
+**Class: ViewPostBatch`1**
+- Full Name: `PX.Objects.FS.ViewPostBatch`1`
+
+**Class: FSEntityIDSelectorAttribute**
+- Full Name: `PX.Objects.FS.FSEntityIDSelectorAttribute`
+- Inherits from: `PX.Objects.CR.EntityIDSelectorAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldSelectingSubscriber`, `PX.Data.IPXFieldUpdatingSubscriber`, `PX.Data.IPXDependsOnFields`
+
+**Class: FSEntityIDExpenseSelectorAttribute**
+- Full Name: `PX.Objects.FS.FSEntityIDExpenseSelectorAttribute`
+- Inherits from: `PX.Objects.FS.FSEntityIDSelectorAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldSelectingSubscriber`, `PX.Data.IPXFieldUpdatingSubscriber`, `PX.Data.IPXDependsOnFields`
+
+**Class: FSEntityIDAPInvoiceSelectorAttribute**
+- Full Name: `PX.Objects.FS.FSEntityIDAPInvoiceSelectorAttribute`
+- Inherits from: `PX.Objects.FS.FSEntityIDSelectorAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldSelectingSubscriber`, `PX.Data.IPXFieldUpdatingSubscriber`, `PX.Data.IPXDependsOnFields`
+
+**Class: FSApptLotSerialNbrAttribute**
+- Full Name: `PX.Objects.FS.FSApptLotSerialNbrAttribute`
+- Inherits from: `PX.Objects.SO.SOShipLotSerialNbrAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXInterfaceField`, `PX.Data.IPXCommandPreparingSubscriber`, `PX.Data.IPXRowSelectingSubscriber`, `PX.Data.IPXFieldVerifyingSubscriber`
+
+**Class: FSDBLineRefAttribute**
+- Full Name: `PX.Objects.FS.FSDBLineRefAttribute`
+- Inherits from: `PX.Data.PXEventSubscriberAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXRowInsertingSubscriber`
+
+**Class: FSDBTimeSpanLongAttribute**
+- Full Name: `PX.Objects.FS.FSDBTimeSpanLongAttribute`
+- Inherits from: `PX.Data.PXDBTimeSpanLongAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXRowSelectingSubscriber`, `PX.Data.IPXCommandPreparingSubscriber`, `PX.Data.IPXFieldUpdatingSubscriber`, `PX.Data.IPXFieldSelectingSubscriber`
+
+**Class: FSDBTimeSpanLongAllowNegativeAttribute**
+- Full Name: `PX.Objects.FS.FSDBTimeSpanLongAllowNegativeAttribute`
+- Inherits from: `PX.Objects.FS.FSDBTimeSpanLongAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXRowSelectingSubscriber`, `PX.Data.IPXCommandPreparingSubscriber`, `PX.Data.IPXFieldUpdatingSubscriber`, `PX.Data.IPXFieldSelectingSubscriber`
+
+**Class: FSEntityType**
+- Full Name: `PX.Objects.FS.FSEntityType`
+- Inherits from: `System.Object`
+
+**Class: FSLineType**
+- Full Name: `PX.Objects.FS.FSLineType`
+- Inherits from: `System.Object`
+
+**Class: FSLocationActiveAttribute**
+- Full Name: `PX.Objects.FS.FSLocationActiveAttribute`
+- Inherits from: `PX.Objects.CS.LocationActiveAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXInterfaceField`, `PX.Data.IPXCommandPreparingSubscriber`, `PX.Data.IPXRowSelectingSubscriber`
+
+**Class: FSLogTypeAction**
+- Full Name: `PX.Objects.FS.FSLogTypeAction`
+- Inherits from: `System.Object`
+
+**Class: FSPostTo**
+- Full Name: `PX.Objects.FS.FSPostTo`
+- Inherits from: `System.Object`
+
+**Class: FSRelatedDocumentAttribute**
+- Full Name: `PX.Objects.FS.FSRelatedDocumentAttribute`
+- Inherits from: `PX.Data.PXStringAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldUpdatingSubscriber`, `PX.Data.IPXFieldSelectingSubscriber`, `PX.Data.IPXCommandPreparingSubscriber`
+
+**Class: FSDBQuantityAttribute**
+- Full Name: `PX.Objects.FS.FSDBQuantityAttribute`
+- Inherits from: `PX.Objects.IN.PXDBQuantityAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXRowSelectingSubscriber`, `PX.Data.IPXCommandPreparingSubscriber`, `PX.Data.IPXFieldUpdatingSubscriber`, `PX.Data.IPXFieldSelectingSubscriber`
+
+**Class: FSQuantityAttribute**
+- Full Name: `PX.Objects.FS.FSQuantityAttribute`
+- Inherits from: `PX.Objects.IN.PXQuantityAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldUpdatingSubscriber`, `PX.Data.IPXFieldSelectingSubscriber`, `PX.Data.IPXCommandPreparingSubscriber`, `PX.Data.IPXFieldVerifyingSubscriber`
+
+**Class: NormalizeWhiteSpace**
+- Full Name: `PX.Objects.FS.NormalizeWhiteSpace`
+- Inherits from: `PX.Data.PXEventSubscriberAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldUpdatingSubscriber`
+- Attributes: AttributeUsageAttribute
+
+**Class: SMCostCodeAttribute**
+- Full Name: `PX.Objects.FS.SMCostCodeAttribute`
+- Inherits from: `PX.Objects.PM.CostCodeAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXInterfaceField`, `PX.Data.IPXCommandPreparingSubscriber`, `PX.Data.IPXRowSelectingSubscriber`, `PX.Data.IPXRowPersistingSubscriber`
+
+**Class: SMOpenPeriodAttribute**
+- Full Name: `PX.Objects.FS.SMOpenPeriodAttribute`
+- Inherits from: `PX.Objects.GL.OpenPeriodAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXCommandPreparingSubscriber`, `PX.Data.IPXRowSelectingSubscriber`, `PX.Data.IPXFieldDefaultingSubscriber`, `PX.Data.IPXFieldVerifyingSubscriber`
+
+**Class: ContractGenerationEnqBase`4**
+- Full Name: `PX.Objects.FS.ContractGenerationEnqBase`4`
+
+**Class: AllocationHelper**
+- Full Name: `PX.Objects.FS.AllocationHelper`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: FSAllocationProcess**
+- Full Name: `PX.Objects.FS.FSAllocationProcess`
+- Inherits from: `PX.Data.PXGraph`1[[PX.Objects.FS.FSAllocationProcess, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: FSPOReceiptProcess**
+- Full Name: `PX.Objects.FS.FSPOReceiptProcess`
+- Inherits from: `PX.Data.PXGraph`1[[PX.Objects.FS.FSPOReceiptProcess, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: FSPostingBase`1**
+- Full Name: `PX.Objects.FS.FSPostingBase`1`
+- Implements: `None`, `PX.Objects.FS.IInvoiceGraph`
+
+**Class: SalesPriceSet**
+- Full Name: `PX.Objects.FS.SalesPriceSet`
+- Inherits from: `System.Object`
+
+**Class: FSPriceManagement**
+- Full Name: `PX.Objects.FS.FSPriceManagement`
+- Inherits from: `PX.Data.PXGraph`1[[PX.Objects.FS.FSPriceManagement, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: ServiceContractEntryBase`3**
+- Full Name: `PX.Objects.FS.ServiceContractEntryBase`3`
+
+**Class: ServiceContractScheduleEntryBase`5**
+- Full Name: `PX.Objects.FS.ServiceContractScheduleEntryBase`5`
+- Implements: `PX.Objects.FS.SiteStatusLookup.ISiteStatusLookupCompatible`
+
+**Class: ServiceOrderBase`2**
+- Full Name: `PX.Objects.FS.ServiceOrderBase`2`
+- Implements: `PX.Objects.FS.SiteStatusLookup.ISiteStatusLookupCompatible`
+
+**Class: BillHistoryInq**
+- Full Name: `PX.Objects.FS.BillHistoryInq`
+- Inherits from: `PX.Data.PXGraph`1[[PX.Objects.FS.BillHistoryInq, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: BillingCycleMaint**
+- Full Name: `PX.Objects.FS.BillingCycleMaint`
+- Inherits from: `PX.Data.PXGraph`2[[PX.Objects.FS.BillingCycleMaint, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSBillingCycle, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: BranchLocationMaint**
+- Full Name: `PX.Objects.FS.BranchLocationMaint`
+- Inherits from: `PX.Data.PXGraph`2[[PX.Objects.FS.BranchLocationMaint, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSBranchLocation, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: CustomerMaintBridge**
+- Full Name: `PX.Objects.FS.CustomerMaintBridge`
+- Inherits from: `PX.Data.PXGraph`2[[PX.Objects.FS.CustomerMaintBridge, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSCustomer, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: EPEmployeeMaintBridge**
+- Full Name: `PX.Objects.FS.EPEmployeeMaintBridge`
+- Inherits from: `PX.Data.PXGraph`2[[PX.Objects.FS.EPEmployeeMaintBridge, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.EPEmployeeFSRouteEmployee, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: VehicleMaintBridge**
+- Full Name: `PX.Objects.FS.VehicleMaintBridge`
+- Inherits from: `PX.Data.PXGraph`2[[PX.Objects.FS.VehicleMaintBridge, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSVehicle, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: WrkProcess**
+- Full Name: `PX.Objects.FS.WrkProcess`
+- Inherits from: `PX.Data.PXGraph`2[[PX.Objects.FS.WrkProcess, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSWrkProcess, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: CalendarComponentSetupMaint**
+- Full Name: `PX.Objects.FS.CalendarComponentSetupMaint`
+- Inherits from: `PX.Data.PXGraph`1[[PX.Objects.FS.CalendarComponentSetupMaint, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: CalendarWeekCodeMaint**
+- Full Name: `PX.Objects.FS.CalendarWeekCodeMaint`
+- Inherits from: `PX.Data.PXGraph`1[[PX.Objects.FS.CalendarWeekCodeMaint, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: CloneAppointmentProcess**
+- Full Name: `PX.Objects.FS.CloneAppointmentProcess`
+- Inherits from: `PX.Data.PXGraph`1[[PX.Objects.FS.CloneAppointmentProcess, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+### Namespace: PX.Objects.FS.Attributes
+
+**Class: FSDBEarningTypeDefaultAttribute**
+- Full Name: `PX.Objects.FS.Attributes.FSDBEarningTypeDefaultAttribute`
+- Inherits from: `PX.Data.PXDefaultAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldDefaultingSubscriber`, `PX.Data.IPXRowPersistingSubscriber`, `PX.Data.IPXFieldSelectingSubscriber`
+
+### Namespace: PX.Objects.FS.CustomBLC
+
+**Class: SM_SOOrderTypeMaint**
+- Full Name: `PX.Objects.FS.CustomBLC.SM_SOOrderTypeMaint`
+- Inherits from: `PX.Data.PXGraphExtension`1[[PX.Objects.SO.SOOrderTypeMaint, PX.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.IExtends`1[[PX.Objects.SO.SOOrderTypeMaint, PX.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+### Namespace: PX.Objects.FS.DAC
+
+**Class: FSxARTran**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran`
+- Inherits from: `PX.Data.PXCacheExtension`1[[PX.Objects.AR.ARTran, PX.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Common.IExtends`1[[PX.Objects.AR.ARTran, PX.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Objects.FS.IFSRelatedDoc`
+
+**Class: FSxARTranForDirectInvoice**
+- Full Name: `PX.Objects.FS.DAC.FSxARTranForDirectInvoice`
+- Inherits from: `PX.Data.PXCacheExtension`1[[PX.Objects.SO.DAC.Projections.ARTranForDirectInvoice, PX.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Common.IExtends`1[[PX.Objects.SO.DAC.Projections.ARTranForDirectInvoice, PX.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Objects.FS.IFSRelatedDoc`
+
+**Class: srvOrdType**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+srvOrdType`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+srvOrdType, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+srvOrdType, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: appointmentRefNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+appointmentRefNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+appointmentRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+appointmentRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: appointmentLineNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+appointmentLineNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+appointmentLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+appointmentLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: serviceOrderRefNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+serviceOrderRefNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+serviceOrderRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+serviceOrderRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: serviceOrderLineNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+serviceOrderLineNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+serviceOrderLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+serviceOrderLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: serviceContractRefNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+serviceContractRefNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+serviceContractRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+serviceContractRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: serviceContractPeriodID**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+serviceContractPeriodID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+serviceContractPeriodID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+serviceContractPeriodID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: equipmentAction**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+equipmentAction`
+- Inherits from: `PX.Objects.FS.ListField_EquipmentAction`
+- Implements: `PX.Data.IBqlField`, `PX.Data.IBqlOperand`
+
+**Class: replaceSMEquipmentID**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+replaceSMEquipmentID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+replaceSMEquipmentID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+replaceSMEquipmentID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: sMEquipmentID**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+sMEquipmentID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+sMEquipmentID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+sMEquipmentID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: newEquipmentLineNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+newEquipmentLineNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+newEquipmentLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+newEquipmentLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: componentID**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+componentID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+componentID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+componentID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: equipmentComponentLineNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+equipmentComponentLineNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+equipmentComponentLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+equipmentComponentLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: comment**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+comment`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+comment, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+comment, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: relatedDocument**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+relatedDocument`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+relatedDocument, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+relatedDocument, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: isFSRelated**
+- Full Name: `PX.Objects.FS.DAC.FSxARTran+isFSRelated`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTran+isFSRelated, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTran+isFSRelated, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: relatedDocument**
+- Full Name: `PX.Objects.FS.DAC.FSxARTranForDirectInvoice+relatedDocument`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+relatedDocument, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+relatedDocument, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: srvOrdType**
+- Full Name: `PX.Objects.FS.DAC.FSxARTranForDirectInvoice+srvOrdType`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+srvOrdType, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+srvOrdType, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: serviceOrderRefNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceOrderRefNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceOrderRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceOrderRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: serviceOrderLineNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceOrderLineNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceOrderLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceOrderLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: appointmentRefNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTranForDirectInvoice+appointmentRefNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+appointmentRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+appointmentRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: appointmentLineNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTranForDirectInvoice+appointmentLineNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+appointmentLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+appointmentLineNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: serviceContractRefNbr**
+- Full Name: `PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceContractRefNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceContractRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceContractRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: serviceContractPeriodID**
+- Full Name: `PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceContractPeriodID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceContractPeriodID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.FSxARTranForDirectInvoice+serviceContractPeriodID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+### Namespace: PX.Objects.FS.DAC.ReportParameters
+
+**Class: FSStaffMemberReportParameters**
+- Full Name: `PX.Objects.FS.DAC.ReportParameters.FSStaffMemberReportParameters`
+- Inherits from: `PX.Data.PXBqlTable`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Data.IBqlTable`
+
+**Class: employeeID**
+- Full Name: `PX.Objects.FS.DAC.ReportParameters.FSStaffMemberReportParameters+employeeID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.DAC.ReportParameters.FSStaffMemberReportParameters+employeeID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.DAC.ReportParameters.FSStaffMemberReportParameters+employeeID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+### Namespace: PX.Objects.FS.Interfaces
+
+**Interface: ISchedulerDataHandler**
+- Full Name: `PX.Objects.FS.Interfaces.ISchedulerDataHandler`
+
+### Namespace: PX.Objects.FS.Opportunity
+
+**Class: FSxCROpportunity**
+- Full Name: `PX.Objects.FS.Opportunity.FSxCROpportunity`
+- Inherits from: `PX.Data.PXCacheExtension`1[[PX.Objects.CR.Standalone.CROpportunity, PX.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Common.IExtends`1[[PX.Objects.CR.Standalone.CROpportunity, PX.Objects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: branchLocationID**
+- Full Name: `PX.Objects.FS.Opportunity.FSxCROpportunity+branchLocationID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.Opportunity.FSxCROpportunity+branchLocationID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.Opportunity.FSxCROpportunity+branchLocationID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: srvOrdType**
+- Full Name: `PX.Objects.FS.Opportunity.FSxCROpportunity+srvOrdType`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.Opportunity.FSxCROpportunity+srvOrdType, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.Opportunity.FSxCROpportunity+srvOrdType, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: serviceOrderRefNbr**
+- Full Name: `PX.Objects.FS.Opportunity.FSxCROpportunity+serviceOrderRefNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.Opportunity.FSxCROpportunity+serviceOrderRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.Opportunity.FSxCROpportunity+serviceOrderRefNbr, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: sDEnabled**
+- Full Name: `PX.Objects.FS.Opportunity.FSxCROpportunity+sDEnabled`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.Opportunity.FSxCROpportunity+sDEnabled, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.Opportunity.FSxCROpportunity+sDEnabled, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: ChkServiceManagement**
+- Full Name: `PX.Objects.FS.Opportunity.FSxCROpportunity+ChkServiceManagement`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[PX.Objects.FS.Opportunity.FSxCROpportunity+ChkServiceManagement, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[PX.Objects.FS.Opportunity.FSxCROpportunity+ChkServiceManagement, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+### Namespace: PX.Objects.FS.RouteOtimizer
+
+**Class: Break**
+- Full Name: `PX.Objects.FS.RouteOtimizer.Break`
+- Inherits from: `System.Object`
+
+**Class: Capacity**
+- Full Name: `PX.Objects.FS.RouteOtimizer.Capacity`
+- Inherits from: `System.Object`
+
+**Class: Error**
+- Full Name: `PX.Objects.FS.RouteOtimizer.Error`
+- Inherits from: `System.Object`
+
+**Class: OuputVehicle**
+- Full Name: `PX.Objects.FS.RouteOtimizer.OuputVehicle`
+- Inherits from: `System.Object`
+
+**Class: OutputWaypoint**
+- Full Name: `PX.Objects.FS.RouteOtimizer.OutputWaypoint`
+- Inherits from: `System.Object`
+
+**Class: Route**
+- Full Name: `PX.Objects.FS.RouteOtimizer.Route`
+- Inherits from: `System.Object`
+
+**Class: RouteLocation**
+- Full Name: `PX.Objects.FS.RouteOtimizer.RouteLocation`
+- Inherits from: `System.Object`
+
+**Class: RouteOptimizerClient**
+- Full Name: `PX.Objects.FS.RouteOtimizer.RouteOptimizerClient`
+- Inherits from: `System.Object`
+
+**Class: RouteStats**
+- Full Name: `PX.Objects.FS.RouteOtimizer.RouteStats`
+- Inherits from: `System.Object`
+
+**Class: RouteStep**
+- Full Name: `PX.Objects.FS.RouteOtimizer.RouteStep`
+- Inherits from: `System.Object`
+
+**Class: RouteStepBreak**
+- Full Name: `PX.Objects.FS.RouteOtimizer.RouteStepBreak`
+- Inherits from: `System.Object`
+
+**Class: SingleDayOptimizationInput**
+- Full Name: `PX.Objects.FS.RouteOtimizer.SingleDayOptimizationInput`
+- Inherits from: `System.Object`
+
+**Class: SingleDayOptimizationOutput**
+- Full Name: `PX.Objects.FS.RouteOtimizer.SingleDayOptimizationOutput`
+- Inherits from: `System.Object`
+
+**Class: TimeWindow**
+- Full Name: `PX.Objects.FS.RouteOtimizer.TimeWindow`
+- Inherits from: `System.Object`
+
+**Class: Vehicle**
+- Full Name: `PX.Objects.FS.RouteOtimizer.Vehicle`
+- Inherits from: `System.Object`
+
+**Class: Waypoint**
+- Full Name: `PX.Objects.FS.RouteOtimizer.Waypoint`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Objects.FS.Scheduler
+
+**Class: AnnualSchedule**
+- Full Name: `PX.Objects.FS.Scheduler.AnnualSchedule`
+- Inherits from: `PX.Objects.FS.Scheduler.RepeatingSchedule`
+
+**Class: AnnualScheduleSpecificDay**
+- Full Name: `PX.Objects.FS.Scheduler.AnnualScheduleSpecificDay`
+- Inherits from: `PX.Objects.FS.Scheduler.AnnualSchedule`
+
+**Class: AnnualScheduleWeekDay**
+- Full Name: `PX.Objects.FS.Scheduler.AnnualScheduleWeekDay`
+- Inherits from: `PX.Objects.FS.Scheduler.AnnualSchedule`
+
+**Class: DailySchedule**
+- Full Name: `PX.Objects.FS.Scheduler.DailySchedule`
+- Inherits from: `PX.Objects.FS.Scheduler.RepeatingSchedule`
+
+**Class: MapFSScheduleToSchedule**
+- Full Name: `PX.Objects.FS.Scheduler.MapFSScheduleToSchedule`
+- Inherits from: `System.Object`
+
+**Class: MapFSServiceContractToSchedule**
+- Full Name: `PX.Objects.FS.Scheduler.MapFSServiceContractToSchedule`
+- Inherits from: `System.Object`
+
+**Class: MonthlySchedule**
+- Full Name: `PX.Objects.FS.Scheduler.MonthlySchedule`
+- Inherits from: `PX.Objects.FS.Scheduler.RepeatingSchedule`
+
+**Class: MonthlyScheduleSpecificDay**
+- Full Name: `PX.Objects.FS.Scheduler.MonthlyScheduleSpecificDay`
+- Inherits from: `PX.Objects.FS.Scheduler.MonthlySchedule`
+
+**Class: MonthlyScheduleWeekDay**
+- Full Name: `PX.Objects.FS.Scheduler.MonthlyScheduleWeekDay`
+- Inherits from: `PX.Objects.FS.Scheduler.MonthlySchedule`
+
+**Class: Period**
+- Full Name: `PX.Objects.FS.Scheduler.Period`
+- Inherits from: `System.Object`
+
+**Class: RepeatingSchedule**
+- Full Name: `PX.Objects.FS.Scheduler.RepeatingSchedule`
+- Inherits from: `PX.Objects.FS.Scheduler.Schedule`
+
+**Class: RouteInfo**
+- Full Name: `PX.Objects.FS.Scheduler.RouteInfo`
+- Inherits from: `System.Object`
+
+**Class: Schedule**
+- Full Name: `PX.Objects.FS.Scheduler.Schedule`
+- Inherits from: `System.Object`
+
+**Class: SingleSchedule**
+- Full Name: `PX.Objects.FS.Scheduler.SingleSchedule`
+- Inherits from: `PX.Objects.FS.Scheduler.Schedule`
+
+**Class: Slot**
+- Full Name: `PX.Objects.FS.Scheduler.Slot`
+- Inherits from: `System.Object`
+
+**Class: TimeSlot**
+- Full Name: `PX.Objects.FS.Scheduler.TimeSlot`
+- Inherits from: `PX.Objects.FS.Scheduler.Slot`
+
+**Class: TimeSlotGenerator**
+- Full Name: `PX.Objects.FS.Scheduler.TimeSlotGenerator`
+- Inherits from: `System.Object`
+
+**Class: WeeklySchedule**
+- Full Name: `PX.Objects.FS.Scheduler.WeeklySchedule`
+- Inherits from: `PX.Objects.FS.Scheduler.RepeatingSchedule`
+
+**Class: SubScheduleType**
+- Full Name: `PX.Objects.FS.Scheduler.MapFSScheduleToSchedule+SubScheduleType`
+- Inherits from: `System.Object`
+
+**Class: ScheduleGenerationPriority**
+- Full Name: `PX.Objects.FS.Scheduler.Schedule+ScheduleGenerationPriority`
+- Inherits from: `System.Enum`
+- Implements: `System.IComparable`, `System.IFormattable`, `System.IConvertible`
+
+**Class: <>c**
+- Full Name: `PX.Objects.FS.Scheduler.TimeSlotGenerator+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+### Namespace: PX.Objects.FS.Services
+
+**Class: SchedulerDataHandler**
+- Full Name: `PX.Objects.FS.Services.SchedulerDataHandler`
+- Inherits from: `System.Object`
+- Implements: `PX.Objects.FS.Interfaces.ISchedulerDataHandler`
+
+**Class: SchedulerSession**
+- Full Name: `PX.Objects.FS.Services.SchedulerSession`
+- Inherits from: `PX.Common.PXSessionState`
+
+### Namespace: PX.Objects.FS.SiteStatusLookup
+
+**Class: AppointmentSiteStatusLookupExt**
+- Full Name: `PX.Objects.FS.SiteStatusLookup.AppointmentSiteStatusLookupExt`
+- Inherits from: `PX.Objects.FS.SiteStatusLookup.FSSiteStatusLookupExt`3[[PX.Objects.FS.AppointmentEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSAppointment, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSAppointmentDet, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.IExtends`1[[PX.Objects.FS.AppointmentEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: FSSiteStatusLookupExt`3**
+- Full Name: `PX.Objects.FS.SiteStatusLookup.FSSiteStatusLookupExt`3`
+- Implements: `None`
+
+**Interface: ISiteStatusLookupCompatible**
+- Full Name: `PX.Objects.FS.SiteStatusLookup.ISiteStatusLookupCompatible`
+
+**Class: RouteServiceContractScheduleSiteStatusLookupExt**
+- Full Name: `PX.Objects.FS.SiteStatusLookup.RouteServiceContractScheduleSiteStatusLookupExt`
+- Inherits from: `PX.Objects.FS.SiteStatusLookup.ServiceContractScheduleBaseSiteStatusLookupExt`5[[PX.Objects.FS.RouteServiceContractScheduleEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSRouteContractSchedule, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSchedule+scheduleID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSRouteContractSchedule+entityID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSRouteContractSchedule+customerID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.IExtends`1[[PX.Objects.FS.RouteServiceContractScheduleEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: ServiceContractScheduleBaseSiteStatusLookupExt`5**
+- Full Name: `PX.Objects.FS.SiteStatusLookup.ServiceContractScheduleBaseSiteStatusLookupExt`5`
+- Implements: `None`
+
+**Class: ServiceContractScheduleSiteStatusLookupExt**
+- Full Name: `PX.Objects.FS.SiteStatusLookup.ServiceContractScheduleSiteStatusLookupExt`
+- Inherits from: `PX.Objects.FS.SiteStatusLookup.ServiceContractScheduleBaseSiteStatusLookupExt`5[[PX.Objects.FS.ServiceContractScheduleEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSContractSchedule, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSchedule+scheduleID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSContractSchedule+entityID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSContractSchedule+customerID, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.IExtends`1[[PX.Objects.FS.ServiceContractScheduleEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: ServiceOrderSiteStatusLookupExt**
+- Full Name: `PX.Objects.FS.SiteStatusLookup.ServiceOrderSiteStatusLookupExt`
+- Inherits from: `PX.Objects.FS.SiteStatusLookup.FSSiteStatusLookupExt`3[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSServiceOrder, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSODet, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.IExtends`1[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+### Namespace: PX.Objects.FS.VisibilityRestriction
+
+**Class: FSStaffMemberVisibilityRestriction**
+- Full Name: `PX.Objects.FS.VisibilityRestriction.FSStaffMemberVisibilityRestriction`
+- Inherits from: `PX.Data.PXCacheExtension`1[[PX.Objects.FS.DAC.ReportParameters.FSStaffMemberReportParameters, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Common.IExtends`1[[PX.Objects.FS.DAC.ReportParameters.FSStaffMemberReportParameters, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+### Namespace: PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability
+
+**Class: FSAppointmentItemAvailabilityProjectExtension**
+- Full Name: `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSAppointmentItemAvailabilityProjectExtension`
+- Inherits from: `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.ItemAvailabilityProjectExtension`4[[PX.Objects.FS.AppointmentEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSAppointmentItemAvailabilityExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSAppointmentDet, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSApptLineSplit, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.IExtends`1[[PX.Objects.FS.AppointmentEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IExtends`1[[PX.Objects.FS.FSAppointmentItemAvailabilityExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Attributes: PXProtectedAccessAttribute
+
+**Class: FSServiceOrderItemAvailabilityProjectExtension**
+- Full Name: `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSServiceOrderItemAvailabilityProjectExtension`
+- Inherits from: `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.ItemAvailabilityProjectExtension`4[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSServiceOrderItemAvailabilityExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSODet, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSODetSplit, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.IExtends`1[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IExtends`1[[PX.Objects.FS.FSServiceOrderItemAvailabilityExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Attributes: PXProtectedAccessAttribute
+
+### Namespace: PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated
+
+**Class: FSServiceOrderItemAvailabilityAllocatedProjectExtension**
+- Full Name: `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated.FSServiceOrderItemAvailabilityAllocatedProjectExtension`
+- Inherits from: `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated.ItemAvailabilityAllocatedProjectExtension`6[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSServiceOrderItemAvailabilityExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSServiceOrderItemAvailabilityAllocatedExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSServiceOrderItemAvailabilityProjectExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSODet, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSODetSplit, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.IExtends`1[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IExtends`1[[PX.Objects.FS.FSServiceOrderItemAvailabilityExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IExtends`1[[PX.Objects.FS.FSServiceOrderItemAvailabilityAllocatedExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IExtends`1[[PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSServiceOrderItemAvailabilityProjectExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Attributes: PXProtectedAccessAttribute
+
+### Namespace: PX.Objects.PM.TaxZoneExtension
+
+**Class: AppointmentEntryExt**
+- Full Name: `PX.Objects.PM.TaxZoneExtension.AppointmentEntryExt`
+- Inherits from: `PX.Objects.PM.TaxZoneExtension.ProjectRevenueTaxZoneExtension`1[[PX.Objects.FS.AppointmentEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.IExtends`1[[PX.Objects.FS.AppointmentEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: ServiceOrderEntryExt**
+- Full Name: `PX.Objects.PM.TaxZoneExtension.ServiceOrderEntryExt`
+- Inherits from: `PX.Objects.PM.TaxZoneExtension.ProjectRevenueTaxZoneExtension`1[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.IExtends`1[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+### Namespace: System.Runtime.CompilerServices
+
+**Class: NullableAttribute**
+- Full Name: `System.Runtime.CompilerServices.NullableAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute, AttributeUsageAttribute
+
+**Class: NullableContextAttribute**
+- Full Name: `System.Runtime.CompilerServices.NullableContextAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute, AttributeUsageAttribute
+
+## Key Methods
+
+- `public virtual <>f__AnonymousType0`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType0`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType0`2.ToString()` → `System.String`
+- `public <>f__AnonymousType0`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType1`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType1`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType1`2.ToString()` → `System.String`
+- `public <>f__AnonymousType1`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType2`1.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType2`1.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType2`1.ToString()` → `System.String`
+- `public <>f__AnonymousType2`1.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType3`3.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType3`3.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType3`3.ToString()` → `System.String`
+- `public <>f__AnonymousType3`3.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType4`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType4`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType4`2.ToString()` → `System.String`
+- `public <>f__AnonymousType4`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType5`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType5`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType5`2.ToString()` → `System.String`
+- `public <>f__AnonymousType5`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType6`3.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType6`3.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType6`3.ToString()` → `System.String`
+- `public <>f__AnonymousType6`3.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType7`6.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType7`6.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType7`6.ToString()` → `System.String`
+- `public <>f__AnonymousType7`6.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType8`10.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType8`10.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType8`10.ToString()` → `System.String`
+- `public <>f__AnonymousType8`10.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType9`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType9`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType9`2.ToString()` → `System.String`
+- `public <>f__AnonymousType9`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType10`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType10`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType10`2.ToString()` → `System.String`
+- `public <>f__AnonymousType10`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType11`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType11`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType11`2.ToString()` → `System.String`
+- `public <>f__AnonymousType11`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType12`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType12`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType12`2.ToString()` → `System.String`
+- `public <>f__AnonymousType12`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType13`5.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType13`5.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType13`5.ToString()` → `System.String`
+- `public <>f__AnonymousType13`5.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType14`16.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType14`16.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType14`16.ToString()` → `System.String`
+- `public <>f__AnonymousType14`16.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType15`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType15`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType15`2.ToString()` → `System.String`
+- `public <>f__AnonymousType15`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType16`9.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType16`9.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType16`9.ToString()` → `System.String`
+- `public <>f__AnonymousType16`9.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType17`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType17`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType17`2.ToString()` → `System.String`
+- `public <>f__AnonymousType17`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType18`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType18`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType18`2.ToString()` → `System.String`
+- `public <>f__AnonymousType18`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType19`1.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType19`1.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType19`1.ToString()` → `System.String`
+- `public <>f__AnonymousType19`1.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType20`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType20`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType20`2.ToString()` → `System.String`
+- `public <>f__AnonymousType20`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType21`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType21`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType21`2.ToString()` → `System.String`
+- `public <>f__AnonymousType21`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType22`42.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType22`42.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType22`42.ToString()` → `System.String`
+- `public <>f__AnonymousType22`42.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType23`27.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType23`27.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType23`27.ToString()` → `System.String`
+- `public <>f__AnonymousType23`27.GetType()` → `System.Type`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.GetHashCode()` → `System.Int32`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.IsDefaultAttribute()` → `System.Boolean`
+## Key Properties
+
+- `<>f__AnonymousType0`2.ApptDet`: `<ApptDet>j__TPar` (read-only)
+- `<>f__AnonymousType0`2.LogCount`: `<LogCount>j__TPar` (read-only)
+- `<>f__AnonymousType1`2.BAccountID`: `<BAccountID>j__TPar` (read-only)
+- `<>f__AnonymousType1`2.DetLineRef`: `<DetLineRef>j__TPar` (read-only)
+- `<>f__AnonymousType2`1.Group`: `<Group>j__TPar` (read-only)
+- `<>f__AnonymousType3`3.FSSODet`: `<FSSODet>j__TPar` (read-only)
+- `<>f__AnonymousType3`3.POLine`: `<POLine>j__TPar` (read-only)
+- `<>f__AnonymousType3`3.AppointmentLines`: `<AppointmentLines>j__TPar` (read-only)
+- `<>f__AnonymousType4`2.arTran`: `<arTran>j__TPar` (read-only)
+- `<>f__AnonymousType4`2.fsxARTran`: `<fsxARTran>j__TPar` (read-only)
+- `<>f__AnonymousType5`2.Value`: `<Value>j__TPar` (read-only)
+- `<>f__AnonymousType5`2.Index`: `<Index>j__TPar` (read-only)
+- `<>f__AnonymousType6`3.DocType`: `<DocType>j__TPar` (read-only)
+- `<>f__AnonymousType6`3.InvoiceRefNbr`: `<InvoiceRefNbr>j__TPar` (read-only)
+- `<>f__AnonymousType6`3.InvoiceLineNbr`: `<InvoiceLineNbr>j__TPar` (read-only)
+- `<>f__AnonymousType7`6.BillingRule`: `<BillingRule>j__TPar` (read-only)
+- `<>f__AnonymousType7`6.InventoryID`: `<InventoryID>j__TPar` (read-only)
+- `<>f__AnonymousType7`6.UOM`: `<UOM>j__TPar` (read-only)
+- `<>f__AnonymousType7`6.SMEquipmentID`: `<SMEquipmentID>j__TPar` (read-only)
+- `<>f__AnonymousType7`6.CuryUnitPrice`: `<CuryUnitPrice>j__TPar` (read-only)
+- `<>f__AnonymousType7`6.ContractRelated`: `<ContractRelated>j__TPar` (read-only)
+- `<>f__AnonymousType8`10.BillingRule`: `<BillingRule>j__TPar` (read-only)
+- `<>f__AnonymousType8`10.InventoryID`: `<InventoryID>j__TPar` (read-only)
+- `<>f__AnonymousType8`10.UOM`: `<UOM>j__TPar` (read-only)
+- `<>f__AnonymousType8`10.SMEquipmentID`: `<SMEquipmentID>j__TPar` (read-only)
+- `<>f__AnonymousType8`10.CuryUnitPrice`: `<CuryUnitPrice>j__TPar` (read-only)
+- `<>f__AnonymousType8`10.ContractRelated`: `<ContractRelated>j__TPar` (read-only)
+- `<>f__AnonymousType8`10.SubItemID`: `<SubItemID>j__TPar` (read-only)
+- `<>f__AnonymousType8`10.SiteID`: `<SiteID>j__TPar` (read-only)
+- `<>f__AnonymousType8`10.SiteLocationID`: `<SiteLocationID>j__TPar` (read-only)
+- `<>f__AnonymousType8`10.IsFree`: `<IsFree>j__TPar` (read-only)
+- `<>f__AnonymousType9`2.POVendorID`: `<POVendorID>j__TPar` (read-only)
+- `<>f__AnonymousType9`2.POVendorLocationID`: `<POVendorLocationID>j__TPar` (read-only)
+- `<>f__AnonymousType10`2.IsOpenMultipleStaffMemberBoardDisabled`: `<IsOpenMultipleStaffMemberBoardDisabled>j__TPar` (read-only)
+- `<>f__AnonymousType10`2.IsOpenSingleStaffMemberBoardDisabled`: `<IsOpenSingleStaffMemberBoardDisabled>j__TPar` (read-only)
+- `<>f__AnonymousType11`2.LineType`: `<LineType>j__TPar` (read-only)
+- `<>f__AnonymousType11`2.Line`: `<Line>j__TPar` (read-only)
+- `<>f__AnonymousType12`2.DisplayName`: `<DisplayName>j__TPar` (read-only)
+- `<>f__AnonymousType12`2.Icon`: `<Icon>j__TPar` (read-only)
+- `<>f__AnonymousType13`5.SODetID`: `<SODetID>j__TPar` (read-only)
+- `<>f__AnonymousType13`5.InventoryID`: `<InventoryID>j__TPar` (read-only)
+- `<>f__AnonymousType13`5.Text`: `<Text>j__TPar` (read-only)
+- `<>f__AnonymousType13`5.Leaf`: `<Leaf>j__TPar` (read-only)
+- `<>f__AnonymousType13`5.EstimatedDuration`: `<EstimatedDuration>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.NodeID`: `<NodeID>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.Text`: `<Text>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.CustomerName`: `<CustomerName>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.Duration`: `<Duration>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.ScheduledDateTimeBegin`: `<ScheduledDateTimeBegin>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.ScheduledDateTimeEnd`: `<ScheduledDateTimeEnd>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.AutoDocDesc`: `<AutoDocDesc>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.Address`: `<Address>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.CustomerLocation`: `<CustomerLocation>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.PostalCode`: `<PostalCode>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.SrvOrdType`: `<SrvOrdType>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.SrvOrdTypeDescr`: `<SrvOrdTypeDescr>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.Leaf`: `<Leaf>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.Checked`: `<Checked>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.Latitude`: `<Latitude>j__TPar` (read-only)
+- `<>f__AnonymousType14`16.Longitude`: `<Longitude>j__TPar` (read-only)
+- `<>f__AnonymousType15`2.EmployeeID`: `<EmployeeID>j__TPar` (read-only)
+- `<>f__AnonymousType15`2.SkillCD`: `<SkillCD>j__TPar` (read-only)
+- `<>f__AnonymousType16`9.CuryBillableLineTotal`: `<CuryBillableLineTotal>j__TPar` (read-only)
+- `<>f__AnonymousType16`9.CuryTaxTotal`: `<CuryTaxTotal>j__TPar` (read-only)
+- `<>f__AnonymousType16`9.CuryDocTotal`: `<CuryDocTotal>j__TPar` (read-only)
+- `<>f__AnonymousType16`9.CuryCostTotal`: `<CuryCostTotal>j__TPar` (read-only)
+- `<>f__AnonymousType16`9.CuryLogBillableTranAmountTotal`: `<CuryLogBillableTranAmountTotal>j__TPar` (read-only)
+- `<>f__AnonymousType16`9.InProcess`: `<InProcess>j__TPar` (read-only)
+- `<>f__AnonymousType16`9.Completed`: `<Completed>j__TPar` (read-only)
+- `<>f__AnonymousType16`9.Closed`: `<Closed>j__TPar` (read-only)
+- `<>f__AnonymousType16`9.Paused`: `<Paused>j__TPar` (read-only)
+- `<>f__AnonymousType17`2.BranchLocationID`: `<BranchLocationID>j__TPar` (read-only)
+- `<>f__AnonymousType17`2.FSTimeSlots`: `<FSTimeSlots>j__TPar` (read-only)
+- `<>f__AnonymousType18`2.BranchLocationID`: `<BranchLocationID>j__TPar` (read-only)
+- `<>f__AnonymousType18`2.FSTimeSlot`: `<FSTimeSlot>j__TPar` (read-only)
+- `<>f__AnonymousType19`1.ServiceType`: `<ServiceType>j__TPar` (read-only)
+- `<>f__AnonymousType20`2.Key`: `<Key>j__TPar` (read-only)
+- `<>f__AnonymousType20`2.Group`: `<Group>j__TPar` (read-only)
+- `<>f__AnonymousType21`2.AppointmentID`: `<AppointmentID>j__TPar` (read-only)
+- `<>f__AnonymousType21`2.ServiceType`: `<ServiceType>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsOnHold`: `<IsOnHold>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.allowEdit`: `<allowEdit>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsNotOnHold`: `<IsNotOnHold>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsNotStarted`: `<IsNotStarted>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsCompleted`: `<IsCompleted>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsCanceled`: `<IsCanceled>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsCLosed`: `<IsCLosed>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsBilled`: `<IsBilled>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsInProcess`: `<IsInProcess>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsPaused`: `<IsPaused>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsConfirmed`: `<IsConfirmed>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsClosed`: `<IsClosed>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsSigned`: `<IsSigned>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsWaitingForContractPeriod`: `<IsWaitingForContractPeriod>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsInternalBehavior`: `<IsInternalBehavior>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.PostToSOSIPM`: `<PostToSOSIPM>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.PostToProjects`: `<PostToProjects>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.CustomerIsSpecified`: `<CustomerIsSpecified>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.IsTravelInProcess`: `<IsTravelInProcess>j__TPar` (read-only)
+- `<>f__AnonymousType22`42.UserConfirmedUnclosing`: `<UserConfirmedUnclosing>j__TPar` (read-only)
+## Inheritance Hierarchies
+
+**Base: `System.Object`**
+  - `<>f__AnonymousType0`2`
+  - `<>f__AnonymousType1`2`
+  - `<>f__AnonymousType2`1`
+  - `<>f__AnonymousType3`3`
+  - `<>f__AnonymousType4`2`
+  - `<>f__AnonymousType5`2`
+  - `<>f__AnonymousType6`3`
+  - `<>f__AnonymousType7`6`
+  - `<>f__AnonymousType8`10`
+  - `<>f__AnonymousType9`2`
+
+**Base: `System.Attribute`**
+  - `Microsoft.CodeAnalysis.EmbeddedAttribute`
+  - `System.Runtime.CompilerServices.NullableAttribute`
+  - `System.Runtime.CompilerServices.NullableContextAttribute`
+  - `PX.Objects.FS.SkipSetExtensionVisibleInvisibleAttribute`
+
+**Base: `PX.Data.GoogleMapRedirector`**
+  - `PX.Data.GoogleMapLatLongRedirector`
+
+**Base: `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.ItemAvailabilityProjectExtension`4[[PX.Objects.FS.AppointmentEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSAppointmentItemAvailabilityExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSAppointmentDet, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSApptLineSplit, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSAppointmentItemAvailabilityProjectExtension`
+
+**Base: `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.ItemAvailabilityProjectExtension`4[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSServiceOrderItemAvailabilityExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSODet, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSODetSplit, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSServiceOrderItemAvailabilityProjectExtension`
+
+**Base: `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated.ItemAvailabilityAllocatedProjectExtension`6[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSServiceOrderItemAvailabilityExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSServiceOrderItemAvailabilityAllocatedExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSServiceOrderItemAvailabilityProjectExtension, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSODet, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSSODetSplit, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated.FSServiceOrderItemAvailabilityAllocatedProjectExtension`
+
+**Base: `PX.Objects.PM.TaxZoneExtension.ProjectRevenueTaxZoneExtension`1[[PX.Objects.FS.AppointmentEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Objects.PM.TaxZoneExtension.AppointmentEntryExt`
+
+**Base: `PX.Objects.PM.TaxZoneExtension.ProjectRevenueTaxZoneExtension`1[[PX.Objects.FS.ServiceOrderEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Objects.PM.TaxZoneExtension.ServiceOrderEntryExt`
+
+**Base: `PX.Objects.CA.PXModule`**
+  - `PX.Objects.AR.FSModule`
+
+**Base: `PX.Data.PXGraph`1[[PX.Objects.FS.ActivateContractPeriodProcess, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Objects.FS.ActivateContractPeriodProcess`
+
+**Base: `PX.Objects.FS.AppointmentEntry`**
+  - `PX.Objects.FS.AppointmentClosingMaint`
+
+**Base: `PX.Objects.FS.ServiceOrderBase`2[[PX.Objects.FS.AppointmentEntry, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[PX.Objects.FS.FSAppointment, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Objects.FS.AppointmentEntry`
+
+**Base: `PX.Data.PXGraph`1[[PX.Objects.FS.AppointmentExternalTaxCalc, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Objects.FS.AppointmentExternalTaxCalc`
+
+**Base: `PX.Data.PXGraph`1[[PX.Objects.FS.AppointmentInq, PX.Objects.FS, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Objects.FS.AppointmentInq`
+
+**Base: `PX.Objects.CS.ContactAttribute`**
+  - `PX.Objects.FS.FSContactAttribute`
+
+**Base: `PX.Objects.FS.FSContactAttribute`**
+  - `PX.Objects.FS.FSDocumentContactAttribute`
+
+**Base: `PX.Objects.FS.FSDocumentContactAttribute`**
+  - `PX.Objects.FS.FSSrvOrdContactAttribute`
+
+**Base: `None`**
+  - `PX.Objects.FS.FSAttributeGroupList`4`
+  - `PX.Objects.FS.FSAttributeList`1`
+  - `PX.Objects.FS.ViewLinkedDoc`2`
+  - `PX.Objects.FS.ViewPostBatch`1`
+  - `PX.Objects.FS.ContractGenerationEnqBase`4`
+  - `PX.Objects.FS.FSPostingBase`1`
+  - `PX.Objects.FS.ServiceContractEntryBase`3`
+  - `PX.Objects.FS.ServiceContractScheduleEntryBase`5`
+  - `PX.Objects.FS.ServiceOrderBase`2`
+  - `PX.Objects.FS.FSSiteStatusLookup`2`
+
+**Base: `PX.Objects.CR.EntityIDSelectorAttribute`**
+  - `PX.Objects.FS.FSEntityIDSelectorAttribute`
+
+**Base: `PX.Objects.FS.FSEntityIDSelectorAttribute`**
+  - `PX.Objects.FS.FSEntityIDExpenseSelectorAttribute`
+  - `PX.Objects.FS.FSEntityIDAPInvoiceSelectorAttribute`

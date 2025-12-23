@@ -57,6 +57,7 @@ def _get_huggingface_embedding(model_name: str, device: str = "cpu", logger=None
             # Use sentence-transformers directly (preferred method)
             try:
                 from sentence_transformers import SentenceTransformer
+                import os
                 if logger:
                     logger.info("Using sentence-transformers directly (HuggingFace embeddings)")
                 
@@ -68,7 +69,31 @@ def _get_huggingface_embedding(model_name: str, device: str = "cpu", logger=None
                     def get_text_embedding(self, text: str):
                         return self.model.encode(text, normalize_embeddings=True).tolist()
                 
-                return EmbeddingWrapper(SentenceTransformer(model_name, device=device))
+                # Fix for meta tensor issue: explicitly disable device_map and use trust_remote_code
+                # Set environment variable to prevent meta tensor issues
+                os.environ.setdefault("TRANSFORMERS_NO_ADVISORY_WARNINGS", "1")
+                
+                # Load model without device_map to avoid meta tensor issues
+                # Use device parameter directly instead of moving after loading
+                try:
+                    model = SentenceTransformer(
+                        model_name, 
+                        device=device,
+                        trust_remote_code=True
+                    )
+                except Exception as e:
+                    # Fallback: load without device parameter and move manually
+                    if "meta tensor" in str(e).lower() or "to_empty" in str(e).lower():
+                        if logger:
+                            logger.warning(f"Meta tensor issue detected, using fallback loading method: {e}")
+                        model = SentenceTransformer(model_name, trust_remote_code=True)
+                        # Only move if not already on correct device
+                        if next(model.parameters()).device.type != device:
+                            model = model.to(device)
+                    else:
+                        raise
+                
+                return EmbeddingWrapper(model)
             except ImportError as e:
                 raise ImportError(
                     f"Failed to import HuggingFace embeddings. "
@@ -89,11 +114,47 @@ class SearchResult:
     content: str = ""
     image_path: str = ""
     vision_extracted_text: str = ""
+    section_type: str = ""  # DLL-specific: 'dll_diagram', 'dll_text', or 'page'
+    image_type: str = ""  # DLL-specific: 'class_diagram', 'code_structure', etc.
+    dll_name: str = ""  # DLL name if this is a DLL result
 
     def get_image_path(self) -> str:
         """Get standardized image path"""
         from pathlib import Path
         from src.config.config import config
+        
+        # Check if this is a DLL content with custom image names
+        if '_DLL' in self.pdf_name or hasattr(self, 'section_type'):
+            section_type = getattr(self, 'section_type', None) or self.metadata.get('section_type', '')
+            image_type = self.metadata.get('image_type', '')
+            
+            # Determine DLL image filename based on section/page number
+            if section_type == 'dll_diagram' or image_type == 'class_diagram':
+                if self.page_number == 1:
+                    filename = 'class_diagram.png'
+                else:
+                    filename = 'code_structure.png'
+            elif section_type == 'dll_text':
+                # Text chunks don't have images, but check if there's an image_filename
+                image_filename = self.metadata.get('image_filename', '')
+                if image_filename:
+                    filename = Path(image_filename).name
+                else:
+                    # Default to class diagram for text entries
+                    filename = 'class_diagram.png'
+            else:
+                # Try to get image filename from metadata
+                image_filename = self.metadata.get('image_filename') or self.metadata.get('image_path', '')
+                if image_filename and Path(image_filename).suffix:
+                    # Extract just the filename if full path provided
+                    filename = Path(image_filename).name
+                else:
+                    # Default DLL images
+                    filename = 'class_diagram.png' if self.page_number == 1 else 'code_structure.png'
+            
+            return str(Path(config.LOCAL_BASE_PATH) / self.pdf_name / "images" / filename)
+        
+        # Default: PDF page image
         return str(Path(config.LOCAL_BASE_PATH) / self.pdf_name / "images" / f"page{self.page_number}.jpg")
 
 class HybridRetriever:
@@ -415,15 +476,33 @@ class HybridRetriever:
                 for entry in metadata:
                     if isinstance(entry, dict):
                         page_num = entry.get('page_number', 0)
-                        doc_name = entry.get('document_name', 'unknown')
-                        page_id = f"{doc_name}_page_{page_num}"
+                        doc_name = entry.get('document_name') or entry.get('dll_name') or entry.get('pdf_name', 'unknown')
+                        section_type = entry.get('section_type', 'page')
+                        
+                        # Create appropriate page_id based on section type
+                        if section_type in ['dll_diagram', 'dll_text']:
+                            section_id = entry.get('section_id', f'diagram_{page_num}')
+                            page_id = f"{doc_name}_{section_id}"
+                        else:
+                            page_id = f"{doc_name}_page_{page_num}"
+                        
+                        # Get text content from various possible fields
+                        text_content = (
+                            entry.get('text_content') or 
+                            entry.get('text') or 
+                            entry.get('raw_text') or 
+                            ''
+                        )
                         
                         if page_id not in self.text_index:
                             self.text_index[page_id] = {
                                 'pdf_name': doc_name,
                                 'page_number': page_num,
-                                'raw_text': entry.get('text', ''),
-                                'structured_text': {'titles': [], 'content': entry.get('text', '')}
+                                'raw_text': text_content,
+                                'structured_text': {'titles': [], 'content': text_content},
+                                'section_type': section_type,
+                                'image_type': entry.get('image_type'),
+                                'dll_name': entry.get('dll_name')
                             }
             
             self.logger.debug("Indexed metadata content", extra={
@@ -555,17 +634,30 @@ class HybridRetriever:
                         break
                 
                 if matching_metadata:
+                    # Find full metadata entry to get DLL-specific fields
+                    full_metadata_entry = None
+                    for page_metadata in metadata_list:
+                        if page_metadata.get('page_number') == matching_metadata['page_number']:
+                            full_metadata_entry = page_metadata
+                            break
+                    
+                    # Use full metadata if available, otherwise use matching_metadata
+                    result_metadata = full_metadata_entry or matching_metadata
+                    
                     result = SearchResult(
                         pdf_name=document_id,
                         page_number=matching_metadata['page_number'],
                         score=float(similarities[idx]),
                         text_content='',  # Will be filled by Vision API
-                        metadata=matching_metadata,
+                        metadata=result_metadata,
                         relevance_signals={'vector_similarity': float(similarities[idx])},
                         search_strategy='vector_semantic',
                         combined_score=float(similarities[idx]),
                         content='',  # Will be filled by Vision API
-                        image_path=matching_metadata['image_path']
+                        image_path=result_metadata.get('image_path', matching_metadata.get('image_path', '')),
+                        section_type=result_metadata.get('section_type', 'page'),
+                        image_type=result_metadata.get('image_type', ''),
+                        dll_name=result_metadata.get('dll_name', '')
                     )
                     results.append(result)
             
@@ -587,6 +679,17 @@ class HybridRetriever:
     def _create_context_aware_vision_prompt(self, result: SearchResult, query: str) -> str:
         """Create context-aware vision prompt based on query and result metadata"""
         query_lower = query.lower()
+        
+        # Check if this is a DLL diagram/image
+        is_dll_content = (
+            '_DLL' in result.pdf_name or 
+            result.pdf_name.endswith('_DLL') or
+            hasattr(result, 'section_type') and result.section_type in ['dll_diagram', 'dll_text']
+        )
+        
+        if is_dll_content:
+            # Specialized prompt for DLL diagrams and code structures
+            return self._create_dll_vision_prompt(result, query)
         
         # Detect query type for better extraction
         if any(keyword in query_lower for keyword in ['how to', 'steps', 'procedure', 'process', 'configure', 'setup']):
@@ -644,6 +747,83 @@ Extraction Guidelines:
         base_prompt += "\n\nReturn ONLY the extracted text without any commentary or interpretation."
         
         return base_prompt
+    
+    def _create_dll_vision_prompt(self, result: SearchResult, query: str) -> str:
+        """Create specialized vision prompt for DLL diagrams and code structures"""
+        query_lower = query.lower()
+        
+        # Detect what type of DLL information is needed
+        if any(keyword in query_lower for keyword in ['class', 'type', 'namespace', 'inheritance', 'hierarchy']):
+            focus = "class_structure"
+        elif any(keyword in query_lower for keyword in ['method', 'function', 'signature', 'parameter']):
+            focus = "methods"
+        elif any(keyword in query_lower for keyword in ['property', 'attribute', 'field']):
+            focus = "properties"
+        else:
+            focus = "comprehensive"
+        
+        prompt = f"""Extract all technical information from this Acumatica DLL structure diagram or code visualization.
+
+Context:
+- DLL Assembly: {result.pdf_name.replace('_DLL', '')}
+- Page/Section: {result.page_number}
+- Query: {query}
+
+This image contains class diagrams, code structures, or inheritance hierarchies from Acumatica framework DLLs.
+
+Extraction Guidelines:
+1. Extract ALL visible information:
+   - Class names and full namespaces (e.g., PX.Objects.SO.SOOrder)
+   - Inheritance relationships (base classes, derived classes)
+   - Method signatures with return types and parameters
+   - Property names and types
+   - Interface implementations
+   - Attributes and decorators
+   - Namespace groupings
+
+2. Preserve structure:
+   - Maintain class hierarchies and relationships
+   - Keep method signatures complete with types
+   - Preserve namespace organization
+   - Document inheritance chains
+
+3. Focus on:
+"""
+        
+        if focus == "class_structure":
+            prompt += """   - Class names and namespaces
+   - Inheritance hierarchies (base → derived)
+   - Interface implementations
+   - Class relationships and dependencies"""
+        elif focus == "methods":
+            prompt += """   - Method names and signatures
+   - Return types
+   - Parameter types and names
+   - Method visibility (public, protected, etc.)
+   - Virtual/override indicators"""
+        elif focus == "properties":
+            prompt += """   - Property names
+   - Property types
+   - Read/write access indicators
+   - Attributes applied to properties"""
+        else:
+            prompt += """   - Complete class structures
+   - All methods and their signatures
+   - All properties and their types
+   - Inheritance relationships
+   - Namespace organization"""
+        
+        prompt += """
+
+4. Format output clearly:
+   - Use structured format: ClassName.MethodName(parameters) → ReturnType
+   - Show inheritance: DerivedClass extends BaseClass
+   - Group by namespace when visible
+   - Include all visible technical details
+
+Return ONLY the extracted technical information without commentary. Preserve all class names, method signatures, and relationships exactly as shown."""
+        
+        return prompt
     
     def _extract_from_metadata_fallback(self, result: SearchResult, query: str) -> str:
         """Fallback to metadata-based text extraction when vision fails"""

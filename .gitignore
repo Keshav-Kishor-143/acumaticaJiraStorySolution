@@ -257,6 +257,10 @@ acumaticaStorySolutionsBackend/output/
 # acumaticaStorySolutionsBackend/knowledge_base/manuals/**/images/*.jpg
 # acumaticaStorySolutionsBackend/knowledge_base/manuals/**/vectors/*.json
 
+# DLL processing: Generated extraction files (can be regenerated)
+acumaticaStorySolutionsBackend/knowledge_base/manuals/**/metadata/dll_extraction.json
+acumaticaStorySolutionsBackend/knowledge_base/manuals/**/data/*.dll
+
 # Temporary files
 tmp/
 temp/

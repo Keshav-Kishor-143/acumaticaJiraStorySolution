@@ -1,0 +1,1200 @@
+[
+  {
+    "page_number": 1,
+    "section_id": "diagram_1",
+    "image_path": "images/class_diagram.png",
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "image_type": "class_diagram",
+    "chunks": [
+      {
+        "vector_index": 0,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1200,
+          "y2": 1600
+        }
+      },
+      {
+        "vector_index": 1,
+        "coordinates": {
+          "x1": 1200,
+          "y1": 0,
+          "x2": 2400,
+          "y2": 1600
+        }
+      },
+      {
+        "vector_index": 2,
+        "coordinates": {
+          "x1": 0,
+          "y1": 1600,
+          "x2": 1200,
+          "y2": 3200
+        }
+      },
+      {
+        "vector_index": 3,
+        "coordinates": {
+          "x1": 1200,
+          "y1": 1600,
+          "x2": 2400,
+          "y2": 3200
+        }
+      }
+    ],
+    "section_type": "dll_diagram",
+    "timestamp": "",
+    "id": "PX.Common_diagram_1"
+  },
+  {
+    "page_number": 2,
+    "section_id": "diagram_2",
+    "image_path": "images/code_structure.png",
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "image_type": "code_structure",
+    "chunks": [
+      {
+        "vector_index": 4,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1200,
+          "y2": 1600
+        }
+      },
+      {
+        "vector_index": 5,
+        "coordinates": {
+          "x1": 1200,
+          "y1": 0,
+          "x2": 2400,
+          "y2": 1600
+        }
+      },
+      {
+        "vector_index": 6,
+        "coordinates": {
+          "x1": 0,
+          "y1": 1600,
+          "x2": 1200,
+          "y2": 3200
+        }
+      },
+      {
+        "vector_index": 7,
+        "coordinates": {
+          "x1": 1200,
+          "y1": 1600,
+          "x2": 2400,
+          "y2": 3200
+        }
+      }
+    ],
+    "section_type": "dll_diagram",
+    "timestamp": "",
+    "id": "PX.Common_diagram_2"
+  },
+  {
+    "page_number": 3,
+    "section_id": "text_chunk_0",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "# Assembly: PX.Common\nVersion: 1.0.0.0\nDLL: PX.Common",
+    "chunks": [
+      {
+        "vector_index": 8,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_0"
+  },
+  {
+    "page_number": 4,
+    "section_id": "text_chunk_1",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "## Namespaces and Classes",
+    "chunks": [
+      {
+        "vector_index": 9,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_1"
+  },
+  {
+    "page_number": 5,
+    "section_id": "text_chunk_2",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "### Namespace: Global",
+    "chunks": [
+      {
+        "vector_index": 10,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_2"
+  },
+  {
+    "page_number": 6,
+    "section_id": "text_chunk_3",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: <>f__AnonymousType0`2**\n- Full Name: `<>f__AnonymousType0`2`\n- Inherits from: `System.Object`\n- Attributes: CompilerGeneratedAttribute",
+    "chunks": [
+      {
+        "vector_index": 11,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_3"
+  },
+  {
+    "page_number": 7,
+    "section_id": "text_chunk_4",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: <>f__AnonymousType1`2**\n- Full Name: `<>f__AnonymousType1`2`\n- Inherits from: `System.Object`\n- Attributes: CompilerGeneratedAttribute",
+    "chunks": [
+      {
+        "vector_index": 12,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_4"
+  },
+  {
+    "page_number": 8,
+    "section_id": "text_chunk_5",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: HttpRequestEx**\n- Full Name: `HttpRequestEx`\n- Inherits from: `System.Object`\n- Attributes: ExtensionAttribute, NullableContextAttribute, NullableAttribute",
+    "chunks": [
+      {
+        "vector_index": 13,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_5"
+  },
+  {
+    "page_number": 9,
+    "section_id": "text_chunk_6",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0002**\n- Full Name: `HttpRequestEx+\u0002`\n- Inherits from: `System.Object`\n- Attributes: SerializableAttribute",
+    "chunks": [
+      {
+        "vector_index": 14,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_6"
+  },
+  {
+    "page_number": 10,
+    "section_id": "text_chunk_7",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0006**\n- Full Name: `HttpRequestEx+\u0006`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 15,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_7"
+  },
+  {
+    "page_number": 11,
+    "section_id": "text_chunk_8",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u000e**\n- Full Name: `HttpRequestEx+\u000e`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 16,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_8"
+  },
+  {
+    "page_number": 12,
+    "section_id": "text_chunk_9",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "### Namespace: Microsoft.CodeAnalysis",
+    "chunks": [
+      {
+        "vector_index": 17,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_9"
+  },
+  {
+    "page_number": 13,
+    "section_id": "text_chunk_10",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: EmbeddedAttribute**\n- Full Name: `Microsoft.CodeAnalysis.EmbeddedAttribute`\n- Inherits from: `System.Attribute`\n- Implements: `System.Runtime.InteropServices._Attribute`\n- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute",
+    "chunks": [
+      {
+        "vector_index": 18,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_10"
+  },
+  {
+    "page_number": 14,
+    "section_id": "text_chunk_11",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "### Namespace: Microsoft.Extensions.Configuration",
+    "chunks": [
+      {
+        "vector_index": 19,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_11"
+  },
+  {
+    "page_number": 15,
+    "section_id": "text_chunk_12",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: ConfigurationBuilderExtensions**\n- Full Name: `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions`\n- Inherits from: `System.Object`\n- Attributes: ExtensionAttribute",
+    "chunks": [
+      {
+        "vector_index": 20,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_12"
+  },
+  {
+    "page_number": 16,
+    "section_id": "text_chunk_13",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0002**\n- Full Name: `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+\u0002`\n- Inherits from: `System.Object`\n- Attributes: SerializableAttribute",
+    "chunks": [
+      {
+        "vector_index": 21,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_13"
+  },
+  {
+    "page_number": 17,
+    "section_id": "text_chunk_14",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u000e**\n- Full Name: `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+\u000e`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 22,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_14"
+  },
+  {
+    "page_number": 18,
+    "section_id": "text_chunk_15",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "### Namespace: PX.AspNetCore",
+    "chunks": [
+      {
+        "vector_index": 23,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_15"
+  },
+  {
+    "page_number": 19,
+    "section_id": "text_chunk_16",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: HttpContextTranslation**\n- Full Name: `PX.AspNetCore.HttpContextTranslation`\n- Inherits from: `System.Object`\n- Attributes: ExtensionAttribute",
+    "chunks": [
+      {
+        "vector_index": 24,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_16"
+  },
+  {
+    "page_number": 20,
+    "section_id": "text_chunk_17",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "### Namespace: PX.AspNetCore.Owin",
+    "chunks": [
+      {
+        "vector_index": 25,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_17"
+  },
+  {
+    "page_number": 21,
+    "section_id": "text_chunk_18",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: OwinContextExtensions**\n- Full Name: `PX.AspNetCore.Owin.OwinContextExtensions`\n- Inherits from: `System.Object`\n- Attributes: ExtensionAttribute",
+    "chunks": [
+      {
+        "vector_index": 26,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_18"
+  },
+  {
+    "page_number": 22,
+    "section_id": "text_chunk_19",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "### Namespace: PX.Common",
+    "chunks": [
+      {
+        "vector_index": 27,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_19"
+  },
+  {
+    "page_number": 23,
+    "section_id": "text_chunk_20",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: Async**\n- Full Name: `PX.Common.Async`\n- Inherits from: `System.Object`\n- Attributes: NullableContextAttribute, NullableAttribute",
+    "chunks": [
+      {
+        "vector_index": 28,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_20"
+  },
+  {
+    "page_number": 24,
+    "section_id": "text_chunk_21",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: AtomicLazy`1**\n- Full Name: `PX.Common.AtomicLazy`1`\n- Inherits from: `System.Object`\n- Attributes: PXInternalUseOnlyAttribute, NullableContextAttribute, NullableAttribute",
+    "chunks": [
+      {
+        "vector_index": 29,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_21"
+  },
+  {
+    "page_number": 25,
+    "section_id": "text_chunk_22",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: BinaryReaderEx**\n- Full Name: `PX.Common.BinaryReaderEx`\n- Inherits from: `System.IO.BinaryReader`\n- Implements: `System.IDisposable`",
+    "chunks": [
+      {
+        "vector_index": 30,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_22"
+  },
+  {
+    "page_number": 26,
+    "section_id": "text_chunk_23",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: CommonSurrogate**\n- Full Name: `PX.Common.CommonSurrogate`\n- Inherits from: `System.Object`\n- Implements: `System.Runtime.Serialization.ISerializationSurrogate`",
+    "chunks": [
+      {
+        "vector_index": 31,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_23"
+  },
+  {
+    "page_number": 27,
+    "section_id": "text_chunk_24",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: CurrentLocalization**\n- Full Name: `PX.Common.CurrentLocalization`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 32,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_24"
+  },
+  {
+    "page_number": 28,
+    "section_id": "text_chunk_25",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: DaylightSavingTime**\n- Full Name: `PX.Common.DaylightSavingTime`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 33,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_25"
+  },
+  {
+    "page_number": 29,
+    "section_id": "text_chunk_26",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: Func**\n- Full Name: `PX.Common.Func`\n- Inherits from: `System.Object`\n- Attributes: ExtensionAttribute, NullableContextAttribute, NullableAttribute",
+    "chunks": [
+      {
+        "vector_index": 34,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_26"
+  },
+  {
+    "page_number": 30,
+    "section_id": "text_chunk_27",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0002**\n- Full Name: `PX.Common.Func+\u0002`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 35,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_27"
+  },
+  {
+    "page_number": 31,
+    "section_id": "text_chunk_28",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0002\u2009**\n- Full Name: `PX.Common.Func+\u0002\u2009`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 36,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_28"
+  },
+  {
+    "page_number": 32,
+    "section_id": "text_chunk_29",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0003**\n- Full Name: `PX.Common.Func+\u0003`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 37,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_29"
+  },
+  {
+    "page_number": 33,
+    "section_id": "text_chunk_30",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0003\u2009**\n- Full Name: `PX.Common.Func+\u0003\u2009`\n- Inherits from: `System.Object`\n- Attributes: NullableAttribute",
+    "chunks": [
+      {
+        "vector_index": 38,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_30"
+  },
+  {
+    "page_number": 34,
+    "section_id": "text_chunk_31",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0002**\n- Full Name: `PX.Common.Func+\u0003\u2009+\u0002`\n- Inherits from: `System.Object`\n- Attributes: SerializableAttribute",
+    "chunks": [
+      {
+        "vector_index": 39,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_31"
+  },
+  {
+    "page_number": 35,
+    "section_id": "text_chunk_32",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0005**\n- Full Name: `PX.Common.Func+\u0005`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 40,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_32"
+  },
+  {
+    "page_number": 36,
+    "section_id": "text_chunk_33",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0006**\n- Full Name: `PX.Common.Func+\u0006`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 41,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_33"
+  },
+  {
+    "page_number": 37,
+    "section_id": "text_chunk_34",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0006\u2009**\n- Full Name: `PX.Common.Func+\u0006\u2009`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 42,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_34"
+  },
+  {
+    "page_number": 38,
+    "section_id": "text_chunk_35",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \b**\n- Full Name: `PX.Common.Func+\b`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 43,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_35"
+  },
+  {
+    "page_number": 39,
+    "section_id": "text_chunk_36",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \b\u2009**\n- Full Name: `PX.Common.Func+\b\u2009`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 44,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_36"
+  },
+  {
+    "page_number": 40,
+    "section_id": "text_chunk_37",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u000e**\n- Full Name: `PX.Common.Func+\u000e`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 45,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_37"
+  },
+  {
+    "page_number": 41,
+    "section_id": "text_chunk_38",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u000e\u2009**\n- Full Name: `PX.Common.Func+\u000e\u2009`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 46,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_38"
+  },
+  {
+    "page_number": 42,
+    "section_id": "text_chunk_39",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u000f**\n- Full Name: `PX.Common.Func+\u000f`\n- Inherits from: `System.Object`",
+    "chunks": [
+      {
+        "vector_index": 47,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_39"
+  },
+  {
+    "page_number": 43,
+    "section_id": "text_chunk_40",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: HttpContextExtensions**\n- Full Name: `PX.Common.HttpContextExtensions`\n- Inherits from: `System.Object`\n- Attributes: ExtensionAttribute",
+    "chunks": [
+      {
+        "vector_index": 48,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_40"
+  },
+  {
+    "page_number": 44,
+    "section_id": "text_chunk_41",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Class: \u0002**\n- Full Name: `PX.Common.HttpContextExtensions+\u0002`\n- Inherits from: `System.Object`\n- Attributes: SerializableAttribute",
+    "chunks": [
+      {
+        "vector_index": 49,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_41"
+  },
+  {
+    "page_number": 45,
+    "section_id": "text_chunk_42",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Interface: IExtends`1**\n- Full Name: `PX.Common.IExtends`1`\n- Attributes: NullableContextAttribute",
+    "chunks": [
+      {
+        "vector_index": 50,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_42"
+  },
+  {
+    "page_number": 46,
+    "section_id": "text_chunk_43",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Interface: IImplement`1**\n- Full Name: `PX.Common.IImplement`1`\n- Attributes: NullableContextAttribute",
+    "chunks": [
+      {
+        "vector_index": 51,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_43"
+  },
+  {
+    "page_number": 47,
+    "section_id": "text_chunk_44",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Interface: IPXCompanyDependent**\n- Full Name: `PX.Common.IPXCompanyDependent`",
+    "chunks": [
+      {
+        "vector_index": 52,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_44"
+  },
+  {
+    "page_number": 48,
+    "section_id": "text_chunk_45",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Interface: IPXIdentity**\n- Full Name: `PX.Common.IPXIdentity`\n- Attributes: PXInternalUseOnlyAttribute",
+    "chunks": [
+      {
+        "vector_index": 53,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_45"
+  },
+  {
+    "page_number": 49,
+    "section_id": "text_chunk_46",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Interface: IPXIdentityAccessor**\n- Full Name: `PX.Common.IPXIdentityAccessor`\n- Attributes: PXInternalUseOnlyAttribute",
+    "chunks": [
+      {
+        "vector_index": 54,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_46"
+  },
+  {
+    "page_number": 50,
+    "section_id": "text_chunk_47",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Interface: ISessionContextFactory**\n- Full Name: `PX.Common.ISessionContextFactory`\n- Attributes: PXInternalUseOnlyAttribute",
+    "chunks": [
+      {
+        "vector_index": 55,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_47"
+  },
+  {
+    "page_number": 51,
+    "section_id": "text_chunk_48",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Interface: ISessionContextFactory`1**\n- Full Name: `PX.Common.ISessionContextFactory`1`",
+    "chunks": [
+      {
+        "vector_index": 56,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_48"
+  },
+  {
+    "page_number": 52,
+    "section_id": "text_chunk_49",
+    "image_path": null,
+    "pdf_name": "PX.Common",
+    "dll_name": "PX.Common",
+    "text_content": "**Interface: ISourceControlPlugin**\n- Full Name: `PX.Common.ISourceControlPlugin`\n- Attributes: NullableContextAttribute",
+    "chunks": [
+      {
+        "vector_index": 57,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 0,
+          "y2": 0
+        }
+      }
+    ],
+    "section_type": "dll_text",
+    "timestamp": "",
+    "id": "PX.Common_text_49"
+  }
+]

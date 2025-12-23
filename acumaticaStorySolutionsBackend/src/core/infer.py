@@ -69,6 +69,7 @@ def _get_huggingface_embedding(model_name: str, logger=None):
             try:
                 from sentence_transformers import SentenceTransformer
                 import torch
+                import os
                 device = "cuda" if torch.cuda.is_available() else "cpu"
                 if logger:
                     logger.info("Using sentence-transformers directly (HuggingFace embeddings)")
@@ -81,7 +82,30 @@ def _get_huggingface_embedding(model_name: str, logger=None):
                     def get_text_embedding(self, text: str):
                         return self.model.encode(text, normalize_embeddings=True).tolist()
                 
-                return EmbeddingWrapper(SentenceTransformer(model_name, device=device))
+                # Fix for meta tensor issue: explicitly disable device_map and use trust_remote_code
+                # Set environment variable to prevent meta tensor issues
+                os.environ.setdefault("TRANSFORMERS_NO_ADVISORY_WARNINGS", "1")
+                
+                # Load model without device_map to avoid meta tensor issues
+                # Use device parameter directly instead of moving after loading
+                try:
+                    model = SentenceTransformer(
+                        model_name, 
+                        device=device,
+                        trust_remote_code=True
+                    )
+                except Exception as e:
+                    # Fallback: load without device parameter and move manually
+                    if "meta tensor" in str(e).lower() or "to_empty" in str(e).lower():
+                        logger.warning(f"Meta tensor issue detected, using fallback loading method: {e}")
+                        model = SentenceTransformer(model_name, trust_remote_code=True)
+                        # Only move if not already on correct device
+                        if next(model.parameters()).device.type != device:
+                            model = model.to(device)
+                    else:
+                        raise
+                
+                return EmbeddingWrapper(model)
             except ImportError as e:
                 raise ImportError(
                     f"Failed to import HuggingFace embeddings. "
@@ -182,7 +206,17 @@ class VDRInferencer:
         try:
             # Get image path from local storage
             from pathlib import Path
-            image_path = Path(config.LOCAL_BASE_PATH) / pdf_name / "images" / f"page{page_number}.jpg"
+            
+            # Check if this is a DLL document
+            if '_DLL' in pdf_name:
+                # DLL documents use class_diagram.png and code_structure.png
+                if page_number == 1:
+                    image_path = Path(config.LOCAL_BASE_PATH) / pdf_name / "images" / "class_diagram.png"
+                else:
+                    image_path = Path(config.LOCAL_BASE_PATH) / pdf_name / "images" / "code_structure.png"
+            else:
+                # PDF documents use page{number}.jpg
+                image_path = Path(config.LOCAL_BASE_PATH) / pdf_name / "images" / f"page{page_number}.jpg"
             
             if not image_path.exists():
                 self.logger.warning("Image not found", extra={
@@ -890,7 +924,8 @@ Focus on accuracy and clarity for customer support."""
                     'text_content': result.text_content,
                     'search_strategy': result.search_strategy,
                     'relevance_signals': result.relevance_signals,
-                    'vision_extracted_text': getattr(result, 'vision_extracted_text', '')  # Pass vision-extracted text
+                    'vision_extracted_text': getattr(result, 'vision_extracted_text', ''),  # Pass vision-extracted text
+                    'document_id': result.pdf_name  # Include document_id for DLL detection
                 }
                 documents.append(doc)
             
@@ -1221,10 +1256,11 @@ Let me explain this concept in Acumatica:
     def _load_domain_metadata(self) -> Dict[str, Any]:
         """Load domain.json metadata for enhanced context"""
         try:
-            domain_path = Path(config.LOCAL_BASE_PATH).parent / "domain.json"
+            # domain.json is located in knowledge_base/manuals/domain.json
+            domain_path = Path(config.LOCAL_BASE_PATH) / "domain.json"
             if domain_path.exists():
                 import json
-                with open(domain_path) as f:
+                with open(domain_path, encoding='utf-8') as f:
                     return json.load(f)
             return {}
         except Exception as e:
@@ -1232,38 +1268,72 @@ Let me explain this concept in Acumatica:
             return {}
     
     def _get_domain_context(self, doc_name: str) -> str:
-        """Get domain-specific context for a document"""
+        """Get domain-specific context for a document (supports both PDF and DLL documents)"""
         domain_metadata = self._load_domain_metadata()
         summaries = domain_metadata.get("document_summaries", {})
         
+        # Try exact match first
         if doc_name in summaries:
             doc_info = summaries[doc_name]
-            context_parts = []
-            
-            if doc_info.get("summary"):
-                context_parts.append(f"Summary: {doc_info['summary']}")
-            
-            if doc_info.get("core_topics"):
-                topics = ", ".join(doc_info["core_topics"][:5])  # Limit to top 5
-                context_parts.append(f"Key Topics: {topics}")
-            
-            if doc_info.get("forms"):
-                forms = ", ".join(doc_info["forms"][:3])  # Limit to top 3
-                context_parts.append(f"Relevant Forms: {forms}")
-            
-            return "\n".join(context_parts)
+        # Try with _DLL suffix if not found (for DLL documents)
+        elif doc_name.endswith('_DLL') and doc_name[:-4] in summaries:
+            doc_info = summaries[doc_name[:-4]]
+        # Try without _DLL suffix if doc_name has it (for DLL documents stored with suffix)
+        elif '_DLL' in doc_name:
+            base_name = doc_name.replace('_DLL', '')
+            if base_name in summaries:
+                doc_info = summaries[base_name]
+            else:
+                return ""
+        else:
+            return ""
         
-        return ""
+        context_parts = []
+        
+        if doc_info.get("summary"):
+            context_parts.append(f"Summary: {doc_info['summary']}")
+        
+        if doc_info.get("core_topics"):
+            topics = ", ".join(doc_info["core_topics"][:5])  # Limit to top 5
+            context_parts.append(f"Key Topics: {topics}")
+        
+        if doc_info.get("forms"):
+            forms = ", ".join(doc_info["forms"][:3])  # Limit to top 3
+            context_parts.append(f"Relevant Forms: {forms}")
+        
+        if doc_info.get("key_operations"):
+            operations = ", ".join(doc_info["key_operations"][:3])  # Limit to top 3
+            context_parts.append(f"Key Operations: {operations}")
+        
+        return "\n".join(context_parts)
     
     def _format_document_content(self, content_by_doc: Dict[str, List[Dict]]) -> str:
         """Format content from multiple documents for the prompt with domain context"""
         formatted_content = []
         
         for doc_name, analyses in content_by_doc.items():
-            doc_content = [f"=== {doc_name} ==="]
+            # Format document name - use DLL suffix if it's a DLL document
+            display_name = doc_name
+            if '_DLL' not in doc_name:
+                # Check if this is a DLL by looking at metadata
+                if analyses and isinstance(analyses[0], dict):
+                    metadata = analyses[0].get('metadata', {})
+                    if metadata.get('section_type') in ['dll_diagram', 'dll_text']:
+                        dll_name = metadata.get('dll_name', '')
+                        if dll_name:
+                            display_name = f"{dll_name}_DLL"
             
-            # Add domain context if available
+            doc_content = [f"=== {display_name} ==="]
+            
+            # Add domain context if available (try both with and without _DLL suffix)
             domain_context = self._get_domain_context(doc_name)
+            if not domain_context and '_DLL' not in doc_name:
+                # Try with _DLL suffix for DLL documents
+                domain_context = self._get_domain_context(f"{doc_name}_DLL")
+            elif not domain_context and '_DLL' in doc_name:
+                # Try without _DLL suffix
+                domain_context = self._get_domain_context(doc_name.replace('_DLL', ''))
+            
             if domain_context:
                 doc_content.append(f"Document Context:\n{domain_context}\n")
             
@@ -1527,8 +1597,31 @@ Let me help you with that:
                         successful_analyses += 1
                         
                         # No token usage for pre-extracted text (already counted in hybrid_retriever)
+                        # Format source name - include DLL suffix if it's a DLL document
+                        pdf_name = doc['pdf_name']
+                        doc_id = doc.get('document_id', '')
+                        if '_DLL' in doc_id and '_DLL' not in pdf_name:
+                            source_name = f"{pdf_name}_DLL"
+                        else:
+                            source_name = pdf_name
+                        
+                        # For DLL documents, use more descriptive source format
+                        if '_DLL' in doc_id or '_DLL' in pdf_name:
+                            section_type = doc.get('metadata', {}).get('section_type', 'page')
+                            if section_type == 'dll_diagram':
+                                source_label = f"{source_name} - Class Diagram"
+                            elif section_type == 'dll_text':
+                                source_label = f"{source_name} - Text Content"
+                            else:
+                                source_label = f"{source_name} - Page {doc['page_number']}"
+                        else:
+                            source_label = f"{source_name} - Page {doc['page_number']}"
+                        
                         document_analyses.append({
-                            'source': f"{doc['pdf_name']} - Page {doc['page_number']}",
+                            'source': source_label,
+                            'document_name': source_name,
+                            'pdf_name': pdf_name,
+                            'dll_name': doc.get('metadata', {}).get('dll_name', ''),
                             'vision_content': pre_extracted_vision_text,
                             'score': doc['score'],
                             'metadata': doc['metadata'],
@@ -1574,8 +1667,31 @@ Let me help you with that:
                         total_prompt_tokens += analysis_result["token_usage"]["prompt_tokens"]
                         total_completion_tokens += analysis_result["token_usage"]["completion_tokens"]
                         
+                        # Format source name - include DLL suffix if it's a DLL document
+                        pdf_name = doc['pdf_name']
+                        doc_id = doc.get('document_id', '')
+                        if '_DLL' in doc_id and '_DLL' not in pdf_name:
+                            source_name = f"{pdf_name}_DLL"
+                        else:
+                            source_name = pdf_name
+                        
+                        # For DLL documents, use more descriptive source format
+                        if '_DLL' in doc_id or '_DLL' in pdf_name:
+                            section_type = doc.get('metadata', {}).get('section_type', 'page')
+                            if section_type == 'dll_diagram':
+                                source_label = f"{source_name} - Class Diagram"
+                            elif section_type == 'dll_text':
+                                source_label = f"{source_name} - Text Content"
+                            else:
+                                source_label = f"{source_name} - Page {doc['page_number']}"
+                        else:
+                            source_label = f"{source_name} - Page {doc['page_number']}"
+                        
                         document_analyses.append({
-                            'source': f"{doc['pdf_name']} - Page {doc['page_number']}",
+                            'source': source_label,
+                            'document_name': source_name,
+                            'pdf_name': pdf_name,
+                            'dll_name': doc.get('metadata', {}).get('dll_name', ''),
                             'vision_content': analysis_result["vision_analysis"],
                             'score': doc['score'],
                             'metadata': doc['metadata'],
@@ -1869,8 +1985,24 @@ Let me help you with that:
                 })
                 normalized_score = 0.05  # Absolute minimum for found documents
             
+            # Include DLL information if available
+            pdf_name = doc['pdf_name']
+            doc_id = doc.get('document_id', '')
+            doc_metadata = doc.get('metadata', {})
+            
+            # Determine document name - use DLL suffix if it's a DLL document
+            if '_DLL' in doc_id and '_DLL' not in pdf_name:
+                document_name = f"{pdf_name}_DLL"
+            elif '_DLL' in pdf_name:
+                document_name = pdf_name
+            else:
+                document_name = pdf_name
+            
             sources.append({
-                'document': doc['pdf_name'],
+                'document': document_name,
+                'document_name': document_name,  # Add explicit document_name field
+                'pdf_name': pdf_name,  # Keep original pdf_name
+                'dll_name': doc_metadata.get('dll_name', ''),
                 'page': doc['page_number'],
                 'similarity_score': normalized_score,  # Use normalized score (guaranteed > 0)
                 'confidence': normalized_score,  # Also add 'confidence' field for markdown formatter compatibility

@@ -59,6 +59,126 @@
             "core_topics": ["customization", "DAC", "Data Access Classes", "Graph extensions", "screen customization", "form customization", "field customization", "business logic", "event handlers", "validations", "API customization", "web services", "integration", "report customization", "workflow customization", "code extensions", "PXGraph", "PXCache", "PXSelect", "custom attributes", "UI customization", "database extensions"],
             "forms": ["SM201510", "SM205510", "SM201010", "SM205020"],
             "key_operations": ["create DAC extensions", "extend Graph classes", "customize screens and forms", "add custom fields", "implement business logic", "create event handlers", "add validations", "customize API endpoints", "develop integrations", "create custom reports", "implement workflows", "extend database tables", "modify UI elements", "add custom attributes", "implement PXGraph extensions"]
+        },
+        "PX.Objects": {
+            "summary": "Core Acumatica business objects library containing DACs (Data Access Classes), business logic, and data models for standard Acumatica modules including Sales Orders, Purchase Orders, Inventory, AR, AP, and other core business entities.",
+            "core_topics": ["DAC", "Data Access Classes", "business objects", "PX.Objects", "Sales Orders", "Purchase Orders", "Inventory", "AR", "AP", "business logic", "data models", "entities", "customization", "extensions", "PXGraph", "PXCache", "PXSelect", "field attributes", "validation", "event handlers"],
+            "forms": [],
+            "key_operations": ["extend DAC classes", "implement business logic", "create custom fields", "add validations", "override methods", "implement event handlers", "extend Graph classes", "customize data models", "implement business rules", "create custom attributes"]
+        },
+        "PX.Objects_DLL": {
+            "summary": "Core Acumatica business objects library containing DACs (Data Access Classes), business logic, and data models for standard Acumatica modules including Sales Orders, Purchase Orders, Inventory, AR, AP, and other core business entities.",
+            "core_topics": ["DAC", "Data Access Classes", "business objects", "PX.Objects", "Sales Orders", "Purchase Orders", "Inventory", "AR", "AP", "business logic", "data models", "entities", "customization", "extensions", "PXGraph", "PXCache", "PXSelect", "field attributes", "validation", "event handlers"],
+            "forms": [],
+            "key_operations": ["extend DAC classes", "implement business logic", "create custom fields", "add validations", "override methods", "implement event handlers", "extend Graph classes", "customize data models", "implement business rules", "create custom attributes"]
+        },
+        "PX.Data": {
+            "summary": "Acumatica data access and persistence framework providing database operations, BQL (Business Query Language), caching mechanisms, and data manipulation utilities for Acumatica applications.",
+            "core_topics": ["data access", "PX.Data", "BQL", "Business Query Language", "database operations", "caching", "PXCache", "PXSelect", "data persistence", "query building", "data manipulation", "LINQ", "SQL", "transactions", "data validation"],
+            "forms": [],
+            "key_operations": ["query data", "build BQL queries", "manipulate cache", "persist data", "validate data", "execute database operations", "manage transactions", "cache operations", "data retrieval", "data updates"]
+        },
+        "PX.Data_DLL": {
+            "summary": "Acumatica data access and persistence framework providing database operations, BQL (Business Query Language), caching mechanisms, and data manipulation utilities for Acumatica applications.",
+            "core_topics": ["data access", "PX.Data", "BQL", "Business Query Language", "database operations", "caching", "PXCache", "PXSelect", "data persistence", "query building", "data manipulation", "LINQ", "SQL", "transactions", "data validation"],
+            "forms": [],
+            "key_operations": ["query data", "build BQL queries", "manipulate cache", "persist data", "validate data", "execute database operations", "manage transactions", "cache operations", "data retrieval", "data updates"]
+        },
+        "PX.Web.UI": {
+            "summary": "Acumatica web UI framework providing ASP.NET controls, page rendering, user interface components, and web-based screen customization capabilities for Acumatica web applications.",
+            "core_topics": ["web UI", "PX.Web.UI", "ASP.NET", "controls", "page rendering", "user interface", "screen customization", "web forms", "UI components", "customization", "web controls", "page customization", "UI extensions"],
+            "forms": [],
+            "key_operations": ["customize web UI", "create custom controls", "modify page rendering", "extend UI components", "customize screens", "implement web forms", "add UI elements", "modify page layouts"]
+        },
+        "PX.Web.UI_DLL": {
+            "summary": "Acumatica web UI framework providing ASP.NET controls, page rendering, user interface components, and web-based screen customization capabilities for Acumatica web applications.",
+            "core_topics": ["web UI", "PX.Web.UI", "ASP.NET", "controls", "page rendering", "user interface", "screen customization", "web forms", "UI components", "customization", "web controls", "page customization", "UI extensions"],
+            "forms": [],
+            "key_operations": ["customize web UI", "create custom controls", "modify page rendering", "extend UI components", "customize screens", "implement web forms", "add UI elements", "modify page layouts"]
+        },
+        "PX.Common": {
+            "summary": "Common Acumatica framework utilities and shared components including base classes, helper methods, common attributes, and shared functionality used across Acumatica modules.",
+            "core_topics": ["common utilities", "PX.Common", "base classes", "helper methods", "shared components", "common attributes", "framework utilities", "shared functionality", "base functionality"],
+            "forms": [],
+            "key_operations": ["use common utilities", "extend base classes", "utilize helper methods", "apply common attributes", "leverage shared functionality"]
+        },
+        "PX.Common_DLL": {
+            "summary": "Common Acumatica framework utilities and shared components including base classes, helper methods, common attributes, and shared functionality used across Acumatica modules.",
+            "core_topics": ["common utilities", "PX.Common", "base classes", "helper methods", "shared components", "common attributes", "framework utilities", "shared functionality", "base functionality"],
+            "forms": [],
+            "key_operations": ["use common utilities", "extend base classes", "utilize helper methods", "apply common attributes", "leverage shared functionality"]
+        },
+        "PX.Common.Std": {
+            "summary": "Standard common utilities and components for Acumatica framework, providing standardized implementations and shared standard functionality.",
+            "core_topics": ["standard utilities", "PX.Common.Std", "standard components", "standard implementations", "shared standard functionality"],
+            "forms": [],
+            "key_operations": ["use standard utilities", "leverage standard components", "apply standard implementations"]
+        },
+        "PX.Common.Std_DLL": {
+            "summary": "Standard common utilities and components for Acumatica framework, providing standardized implementations and shared standard functionality.",
+            "core_topics": ["standard utilities", "PX.Common.Std", "standard components", "standard implementations", "shared standard functionality"],
+            "forms": [],
+            "key_operations": ["use standard utilities", "leverage standard components", "apply standard implementations"]
+        },
+        "PX.Data.BQL.Fluent": {
+            "summary": "Fluent API for building BQL (Business Query Language) queries in Acumatica, providing a type-safe and intuitive way to construct database queries.",
+            "core_topics": ["BQL", "Business Query Language", "fluent API", "PX.Data.BQL.Fluent", "query building", "type-safe queries", "database queries", "query construction"],
+            "forms": [],
+            "key_operations": ["build BQL queries", "construct queries", "use fluent API", "create type-safe queries", "build database queries"]
+        },
+        "PX.Data.BQL.Fluent_DLL": {
+            "summary": "Fluent API for building BQL (Business Query Language) queries in Acumatica, providing a type-safe and intuitive way to construct database queries.",
+            "core_topics": ["BQL", "Business Query Language", "fluent API", "PX.Data.BQL.Fluent", "query building", "type-safe queries", "database queries", "query construction"],
+            "forms": [],
+            "key_operations": ["build BQL queries", "construct queries", "use fluent API", "create type-safe queries", "build database queries"]
+        },
+        "PX.Objects.FS": {
+            "summary": "Field Service module for Acumatica, providing DACs, business logic, and functionality for field service operations, service orders, appointments, and field service management.",
+            "core_topics": ["Field Service", "PX.Objects.FS", "service orders", "appointments", "field service operations", "service management", "FS module"],
+            "forms": [],
+            "key_operations": ["manage service orders", "handle appointments", "process field service operations", "extend FS functionality", "customize field service"]
+        },
+        "PX.Objects.FS_DLL": {
+            "summary": "Field Service module for Acumatica, providing DACs, business logic, and functionality for field service operations, service orders, appointments, and field service management.",
+            "core_topics": ["Field Service", "PX.Objects.FS", "service orders", "appointments", "field service operations", "service management", "FS module"],
+            "forms": [],
+            "key_operations": ["manage service orders", "handle appointments", "process field service operations", "extend FS functionality", "customize field service"]
+        },
+        "System": {
+            "summary": "Core .NET System library providing fundamental types, base classes, and system-level functionality used throughout Acumatica and .NET applications.",
+            "core_topics": [".NET", "System", "base types", "fundamental types", "system classes", "core functionality", "base classes", "system utilities"],
+            "forms": [],
+            "key_operations": ["use system types", "leverage base classes", "utilize system functionality", "work with fundamental types"]
+        },
+        "System_DLL": {
+            "summary": "Core .NET System library providing fundamental types, base classes, and system-level functionality used throughout Acumatica and .NET applications.",
+            "core_topics": [".NET", "System", "base types", "fundamental types", "system classes", "core functionality", "base classes", "system utilities"],
+            "forms": [],
+            "key_operations": ["use system types", "leverage base classes", "utilize system functionality", "work with fundamental types"]
+        },
+        "NV.Rental360": {
+            "summary": "Rental360 module for Acumatica, providing rental management functionality, rental orders, equipment management, and rental-specific business logic.",
+            "core_topics": ["Rental360", "NV.Rental360", "rental management", "rental orders", "equipment management", "rental functionality"],
+            "forms": [],
+            "key_operations": ["manage rentals", "process rental orders", "handle equipment", "extend rental functionality", "customize rental operations"]
+        },
+        "NV.Rental360_DLL": {
+            "summary": "Rental360 module for Acumatica, providing rental management functionality, rental orders, equipment management, and rental-specific business logic.",
+            "core_topics": ["Rental360", "NV.Rental360", "rental management", "rental orders", "equipment management", "rental functionality"],
+            "forms": [],
+            "key_operations": ["manage rentals", "process rental orders", "handle equipment", "extend rental functionality", "customize rental operations"]
+        },
+        "NAWUnitedSiteServices": {
+            "summary": "United Site Services module for Acumatica, providing site services management, service operations, and site-specific business logic.",
+            "core_topics": ["United Site Services", "NAWUnitedSiteServices", "site services", "service management", "site operations"],
+            "forms": [],
+            "key_operations": ["manage site services", "process service operations", "extend site services functionality", "customize site operations"]
+        },
+        "NAWUnitedSiteServices_DLL": {
+            "summary": "United Site Services module for Acumatica, providing site services management, service operations, and site-specific business logic.",
+            "core_topics": ["United Site Services", "NAWUnitedSiteServices", "site services", "service management", "site operations"],
+            "forms": [],
+            "key_operations": ["manage site services", "process service operations", "extend site services functionality", "customize site operations"]
         }
     }
 }

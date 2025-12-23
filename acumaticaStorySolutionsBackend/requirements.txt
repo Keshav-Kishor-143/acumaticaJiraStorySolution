@@ -24,3 +24,5 @@ Pillow>=10.0.0,<11.0.0
 # Markdown formatting
 markdown>=3.4.0,<4.0.0
 
+# For .NET interop
+pythonnet>=3.0.0  

@@ -1,0 +1,869 @@
+# Assembly: NAWUnitedSiteServices
+Version: 1.0.0.0
+DLL: NAWUnitedSiteServices
+
+## Namespaces and Classes
+
+### Namespace: Microsoft.CodeAnalysis
+
+**Class: EmbeddedAttribute**
+- Full Name: `Microsoft.CodeAnalysis.EmbeddedAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute
+
+### Namespace: NAWUnitedSiteServices
+
+**Class: NAWAutoPay**
+- Full Name: `NAWUnitedSiteServices.NAWAutoPay`
+- Inherits from: `System.Object`
+- Implements: `PX.Data.IBqlField`, `PX.Data.IBqlOperand`
+
+**Class: USSFinanceProjectCodeMaint**
+- Full Name: `NAWUnitedSiteServices.USSFinanceProjectCodeMaint`
+- Inherits from: `PX.Data.PXGraph`1[[NAWUnitedSiteServices.USSFinanceProjectCodeMaint, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: NAWListAttribute**
+- Full Name: `NAWUnitedSiteServices.NAWAutoPay+NAWListAttribute`
+- Inherits from: `PX.Data.PXIntListAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldSelectingSubscriber`, `PX.Data.IPXLocalizableList`
+
+**Class: yesUSSRequired**
+- Full Name: `NAWUnitedSiteServices.NAWAutoPay+yesUSSRequired`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.NAWAutoPay+yesUSSRequired, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.NAWAutoPay+yesUSSRequired, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: yesCustomerRequired**
+- Full Name: `NAWUnitedSiteServices.NAWAutoPay+yesCustomerRequired`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.NAWAutoPay+yesCustomerRequired, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.NAWAutoPay+yesCustomerRequired, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: nA**
+- Full Name: `NAWUnitedSiteServices.NAWAutoPay+nA`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.NAWAutoPay+nA, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.NAWAutoPay+nA, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+### Namespace: NAWUnitedSiteServices.Descr
+
+**Class: NAWUSSSOAdditionalItems**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems`
+- Inherits from: `System.Object`
+- Implements: `PX.Data.IBqlField`, `PX.Data.IBqlOperand`
+
+**Class: NAWUSSFenceQuoteType**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSFenceQuoteType`
+- Inherits from: `System.Object`
+- Implements: `PX.Data.IBqlField`, `PX.Data.IBqlOperand`
+
+**Class: NAWUSSInvoiceStage**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage`
+- Inherits from: `System.Object`
+- Implements: `PX.Data.IBqlField`, `PX.Data.IBqlOperand`
+
+**Class: NAWUSSMessages**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSMessages`
+- Inherits from: `System.Object`
+- Attributes: PXLocalizableAttribute
+
+**Class: NAWUSSListAttribute**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+NAWUSSListAttribute`
+- Inherits from: `PX.Data.PXStringListAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldSelectingSubscriber`, `PX.Data.IPXLocalizableList`
+
+**Class: blank**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+blank`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+blank, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+blank, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: inProcess**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+inProcess`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+inProcess, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+inProcess, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: pendingInvoice**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+pendingInvoice`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+pendingInvoice, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+pendingInvoice, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: NAWUSSListAttribute**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSFenceQuoteType+NAWUSSListAttribute`
+- Inherits from: `PX.Data.PXStringListAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldSelectingSubscriber`, `PX.Data.IPXLocalizableList`
+
+**Class: summary**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSFenceQuoteType+summary`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSFenceQuoteType+summary, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSFenceQuoteType+summary, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: detail**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSFenceQuoteType+detail`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSFenceQuoteType+detail, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSFenceQuoteType+detail, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: NAWUSSListAttribute**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+NAWUSSListAttribute`
+- Inherits from: `PX.Data.PXIntListAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldSelectingSubscriber`, `PX.Data.IPXLocalizableList`
+
+**Class: initialTermPending**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+initialTermPending`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+initialTermPending, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+initialTermPending, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: initialTermPendingInvoice**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+initialTermPendingInvoice`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+initialTermPendingInvoice, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+initialTermPendingInvoice, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: initialTermInvoiced**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+initialTermInvoiced`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+initialTermInvoiced, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+initialTermInvoiced, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: contractNotExtended**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+contractNotExtended`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+contractNotExtended, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+contractNotExtended, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: contractExtendedNotInvoiced**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+contractExtendedNotInvoiced`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+contractExtendedNotInvoiced, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+contractExtendedNotInvoiced, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: renewalInCycleBilling**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+renewalInCycleBilling`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+renewalInCycleBilling, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+renewalInCycleBilling, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: extensionQuotePending**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+extensionQuotePending`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+extensionQuotePending, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+extensionQuotePending, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: extensionApproved**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+extensionApproved`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+extensionApproved, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage+extensionApproved, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: eventInvoiceType**
+- Full Name: `NAWUnitedSiteServices.Descr.NAWUSSMessages+eventInvoiceType`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Descr.NAWUSSMessages+eventInvoiceType, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Descr.NAWUSSMessages+eventInvoiceType, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+### Namespace: NAWUnitedSiteServices.Prototype.Attributes
+
+**Class: NAWNetSuiteProductAttribute**
+- Full Name: `NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute`
+- Inherits from: `PX.Data.PXStringListAttribute`
+- Implements: `System.Runtime.InteropServices._Attribute`, `PX.Data.IPXFieldSelectingSubscriber`, `PX.Data.IPXLocalizableList`
+- Attributes: AttributeUsageAttribute
+
+**Class: asset**
+- Full Name: `NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+asset`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+asset, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+asset, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: service**
+- Full Name: `NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+service`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+service, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+service, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: pnD**
+- Full Name: `NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+pnD`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+pnD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+pnD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: ancillary**
+- Full Name: `NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+ancillary`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+ancillary, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute+ancillary, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+### Namespace: NAWUnitedSiteServices.Prototype.Graph
+
+**Class: NAWUSSChangeOrderProcessing**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSChangeOrderProcessing`
+- Inherits from: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractProcessingBase`
+- Attributes: SerializableAttribute
+
+**Class: MinusOneDay**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.MinusOneDay`
+- Inherits from: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Prototype.Graph.MinusOneDay, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Prototype.Graph.MinusOneDay, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IConstant`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Attributes: NullableAttribute
+
+**Class: NAWUSSContractProcessingBase**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractProcessingBase`
+- Inherits from: `PX.Data.PXGraph`1[[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractProcessingBase, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Attributes: SerializableAttribute
+
+**Class: NAWUSSContractFilter**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter`
+- Inherits from: `PX.Data.PXBqlTable`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Data.IBqlTable`
+- Attributes: PXCacheNameAttribute, PXHiddenAttribute, SerializableAttribute
+
+**Class: NAWUSSCreateExtensionContractProcessing**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSCreateExtensionContractProcessing`
+- Inherits from: `PX.Data.PXGraph`1[[NAWUnitedSiteServices.Prototype.Graph.NAWUSSCreateExtensionContractProcessing, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Attributes: SerializableAttribute
+
+**Class: NAWUSSExtensionContractProcessing**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSExtensionContractProcessing`
+- Inherits from: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractProcessingBase`
+- Attributes: SerializableAttribute
+
+**Class: NAWUSSInitialContractProcessing**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSInitialContractProcessing`
+- Inherits from: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractProcessingBase`
+- Attributes: SerializableAttribute
+
+**Class: <>c**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSChangeOrderProcessing+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: onRentDate**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+onRentDate`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+onRentDate, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+onRentDate, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: branchID**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+branchID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+branchID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+branchID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: territoryCD**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+territoryCD`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+territoryCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+territoryCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: quoteWithOrder**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+quoteWithOrder`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+quoteWithOrder, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlBool, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+quoteWithOrder, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: <>c**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSCreateExtensionContractProcessing+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: <>c**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSExtensionContractProcessing+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: <>c**
+- Full Name: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSInitialContractProcessing+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+### Namespace: NV.UnitedSiteServices
+
+**Class: NVBOMStatus**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus`
+- Inherits from: `PX.Data.PXBqlTable`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Data.IBqlTable`
+- Attributes: PXCacheNameAttribute, SerializableAttribute
+
+**Class: NVInvoiceType**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType`
+- Inherits from: `PX.Data.PXBqlTable`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Data.IBqlTable`
+- Attributes: PXCacheNameAttribute, SerializableAttribute
+
+**Class: NVInvoiceTypeMaint**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceTypeMaint`
+- Inherits from: `PX.Data.PXGraph`1[[NV.UnitedSiteServices.NVInvoiceTypeMaint, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Attributes: SerializableAttribute
+
+**Class: NAWUSSZipCode**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode`
+- Inherits from: `PX.Data.PXBqlTable`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Data.IBqlTable`
+- Attributes: PXCacheNameAttribute, PXPrimaryGraphAttribute, SerializableAttribute
+
+**Class: UsrFinanceProjectCode**
+- Full Name: `NV.UnitedSiteServices.UsrFinanceProjectCode`
+- Inherits from: `PX.Data.PXBqlTable`
+- Implements: `PX.Data.IBqlTableSystemDataStorage`, `PX.Data.IBqlTable`
+- Attributes: PXCacheNameAttribute, PXPrimaryGraphAttribute, SerializableAttribute
+
+**Class: NAWUSSZipCodeMaint**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCodeMaint`
+- Inherits from: `PX.Data.PXGraph`1[[NV.UnitedSiteServices.NAWUSSZipCodeMaint, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: PK**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+PK`
+- Inherits from: `PX.Data.ReferentialIntegrity.Attributes.PrimaryKeyOf`1+By`1[[NV.UnitedSiteServices.NVBOMStatus, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[NV.UnitedSiteServices.NVBOMStatus+bOMStatusID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.TypeArrayOf`1+IFilledWith`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[NV.UnitedSiteServices.NVBOMStatus+bOMStatusID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.TypeArray+IsNotEmpty`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKeyOf`1[[NV.UnitedSiteServices.NVBOMStatus, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKey`
+
+**Class: bOMStatusID**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+bOMStatusID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+bOMStatusID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+bOMStatusID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: bOMStatusCD**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+bOMStatusCD`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+bOMStatusCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+bOMStatusCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: descr**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+descr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+descr, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+descr, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: noteID**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+noteID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+noteID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+noteID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: createdByID**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+createdByID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+createdByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+createdByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: createdByScreenID**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+createdByScreenID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+createdByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+createdByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: createdDateTime**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+createdDateTime`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+createdDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+createdDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: lastModifiedByID**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+lastModifiedByID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+lastModifiedByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+lastModifiedByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: lastModifiedByScreenID**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+lastModifiedByScreenID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+lastModifiedByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+lastModifiedByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: lastModifiedDateTime**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+lastModifiedDateTime`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+lastModifiedDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+lastModifiedDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: Tstamp**
+- Full Name: `NV.UnitedSiteServices.NVBOMStatus+Tstamp`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlByteArray, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+Tstamp, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlByteArray, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlByteArray, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVBOMStatus+Tstamp, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: PK**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+PK`
+- Inherits from: `PX.Data.ReferentialIntegrity.Attributes.PrimaryKeyOf`1+By`1[[NV.UnitedSiteServices.NVInvoiceType, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[NV.UnitedSiteServices.NVInvoiceType+invoiceTypeID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.TypeArrayOf`1+IFilledWith`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[NV.UnitedSiteServices.NVInvoiceType+invoiceTypeID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.TypeArray+IsNotEmpty`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKeyOf`1[[NV.UnitedSiteServices.NVInvoiceType, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKey`
+
+**Class: invoiceTypeID**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+invoiceTypeID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+invoiceTypeID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+invoiceTypeID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: invoiceTypeCD**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+invoiceTypeCD`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+invoiceTypeCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+invoiceTypeCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: descr**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+descr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+descr, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+descr, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: noteID**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+noteID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+noteID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+noteID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: createdByID**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+createdByID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+createdByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+createdByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: createdByScreenID**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+createdByScreenID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+createdByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+createdByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: createdDateTime**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+createdDateTime`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+createdDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+createdDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: lastModifiedByID**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+lastModifiedByID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+lastModifiedByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+lastModifiedByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: lastModifiedByScreenID**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+lastModifiedByScreenID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+lastModifiedByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+lastModifiedByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: lastModifiedDateTime**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+lastModifiedDateTime`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+lastModifiedDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+lastModifiedDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: Tstamp**
+- Full Name: `NV.UnitedSiteServices.NVInvoiceType+Tstamp`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlByteArray, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVInvoiceType+Tstamp, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlByteArray, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlByteArray, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVInvoiceType+Tstamp, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: docType**
+- Full Name: `NV.UnitedSiteServices.NVSalesOrderBOM+docType`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVSalesOrderBOM+docType, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVSalesOrderBOM+docType, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: refNbr**
+- Full Name: `NV.UnitedSiteServices.NVSalesOrderBOM+refNbr`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVSalesOrderBOM+refNbr, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVSalesOrderBOM+refNbr, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: inventoryID**
+- Full Name: `NV.UnitedSiteServices.NVSalesOrderBOM+inventoryID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVSalesOrderBOM+inventoryID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVSalesOrderBOM+inventoryID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: scheduledDate**
+- Full Name: `NV.UnitedSiteServices.NVSalesOrderBOM+scheduledDate`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVSalesOrderBOM+scheduledDate, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVSalesOrderBOM+scheduledDate, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: completedDate**
+- Full Name: `NV.UnitedSiteServices.NVSalesOrderBOM+completedDate`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVSalesOrderBOM+completedDate, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVSalesOrderBOM+completedDate, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: productionStatus**
+- Full Name: `NV.UnitedSiteServices.NVSalesOrderBOM+productionStatus`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVSalesOrderBOM+productionStatus, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NVSalesOrderBOM+productionStatus, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: PK**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+PK`
+- Inherits from: `PX.Data.ReferentialIntegrity.Attributes.PrimaryKeyOf`1+By`1[[NV.UnitedSiteServices.NAWUSSZipCode, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[NV.UnitedSiteServices.NAWUSSZipCode+zipCodeCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.TypeArrayOf`1+IFilledWith`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[NV.UnitedSiteServices.NAWUSSZipCode+zipCodeCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.TypeArray+IsNotEmpty`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKeyOf`1[[NV.UnitedSiteServices.NAWUSSZipCode, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKey`
+
+**Class: zipCodeCD**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+zipCodeCD`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NAWUSSZipCode+zipCodeCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NAWUSSZipCode+zipCodeCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: territory**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+territory`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NAWUSSZipCode+territory, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NAWUSSZipCode+territory, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: noteID**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+noteID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NAWUSSZipCode+noteID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NAWUSSZipCode+noteID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: createdByID**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+createdByID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NAWUSSZipCode+createdByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NAWUSSZipCode+createdByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: createdByScreenID**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+createdByScreenID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NAWUSSZipCode+createdByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NAWUSSZipCode+createdByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: createdDateTime**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+createdDateTime`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NAWUSSZipCode+createdDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NAWUSSZipCode+createdDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: lastModifiedByID**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+lastModifiedByID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NAWUSSZipCode+lastModifiedByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NAWUSSZipCode+lastModifiedByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: lastModifiedByScreenID**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+lastModifiedByScreenID`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NAWUSSZipCode+lastModifiedByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NAWUSSZipCode+lastModifiedByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: lastModifiedDateTime**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+lastModifiedDateTime`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NAWUSSZipCode+lastModifiedDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NAWUSSZipCode+lastModifiedDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: Tstamp**
+- Full Name: `NV.UnitedSiteServices.NAWUSSZipCode+Tstamp`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlByteArray, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NAWUSSZipCode+Tstamp, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlByteArray, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlByteArray, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.NAWUSSZipCode+Tstamp, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: PK**
+- Full Name: `NV.UnitedSiteServices.UsrFinanceProjectCode+PK`
+- Inherits from: `PX.Data.ReferentialIntegrity.Attributes.PrimaryKeyOf`1+By`1[[NV.UnitedSiteServices.UsrFinanceProjectCode, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[NV.UnitedSiteServices.UsrFinanceProjectCode+projectCode, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.TypeArrayOf`1+IFilledWith`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[NV.UnitedSiteServices.UsrFinanceProjectCode+projectCode, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlField, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.TypeArray+IsNotEmpty`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKeyOf`1[[NV.UnitedSiteServices.UsrFinanceProjectCode, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.ReferentialIntegrity.Attributes.IPrimaryKey`
+
+**Class: projectCode**
+- Full Name: `NV.UnitedSiteServices.UsrFinanceProjectCode+projectCode`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.UsrFinanceProjectCode+projectCode, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.UsrFinanceProjectCode+projectCode, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+**Class: description**
+- Full Name: `NV.UnitedSiteServices.UsrFinanceProjectCode+description`
+- Inherits from: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.UsrFinanceProjectCode+description, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Data.IBqlOperand`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Common.IImplement`1[[PX.Data.BQL.IBqlCastableTo`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.BQL.IShouldBeReplacedWith`1[[NV.UnitedSiteServices.UsrFinanceProjectCode+description, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `PX.Data.IBqlField`
+- Attributes: NullableAttribute
+
+### Namespace: System.Runtime.CompilerServices
+
+**Class: NullableAttribute**
+- Full Name: `System.Runtime.CompilerServices.NullableAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute, AttributeUsageAttribute
+
+## Key Methods
+
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.GetHashCode()` → `System.Int32`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public Microsoft.CodeAnalysis.EmbeddedAttribute.GetType()` → `System.Type`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.NullableAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.NullableAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.NullableAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.NullableAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.NullableAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.NullableAttribute.ToString()` → `System.String`
+- `public virtual NV.UnitedSiteServices.NVBOMStatus.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVBOMStatus.GetHashCode()` → `System.Int32`
+- `public NV.UnitedSiteServices.NVBOMStatus.GetType()` → `System.Type`
+- `public virtual NV.UnitedSiteServices.NVBOMStatus.ToString()` → `System.String`
+- `public virtual NV.UnitedSiteServices.NVInvoiceType.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceType.GetHashCode()` → `System.Int32`
+- `public NV.UnitedSiteServices.NVInvoiceType.GetType()` → `System.Type`
+- `public virtual NV.UnitedSiteServices.NVInvoiceType.ToString()` → `System.String`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.Persist()` → `System.Void`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.Persist(System.Type cacheType, PX.Data.PXDBOperation operation)` → `System.Int32`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.AllowSelect(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.AllowUpdate(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.UpdateRights(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.AllowInsert(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.AllowDelete(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.GetUpdatable(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.GetKeyNames(System.String viewName)` → `System.String[]`
+- `public NV.UnitedSiteServices.NVInvoiceTypeMaint.HasException()` → `System.Boolean`
+- `public NV.UnitedSiteServices.NVInvoiceTypeMaint.GetParameterNames(System.String viewName)` → `System.String[]`
+- `public NV.UnitedSiteServices.NVInvoiceTypeMaint.SetDataConsistencyIssue(System.String name, System.String diagnosticDetails, System.Boolean dumpAllCaches)` → `System.Void`
+- `public NV.UnitedSiteServices.NVInvoiceTypeMaint.GetDacDescriptor(PX.Data.IBqlTable dac, PX.Data.DacDescriptorGeneration.DacDescriptorCreationOptions customDescriptorCreationOptions)` → `PX.Data.DacDescriptorGeneration.DacDescriptor`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderSelect(PX.Data.BqlCommand command, System.Int32 topCount, PX.Data.PXDataValue[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderSelectSingle(PX.Data.PXDataField[] pars)` → `PX.Data.PXDataRecord`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderSelectMulti(PX.Data.PXDataField[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderInsert(PX.Data.PXDataFieldAssign[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderUpdate(PX.Data.PXDataFieldParam[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderDelete(PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderArchive(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderExtract(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderSelectSingle(System.Type table, PX.Data.PXDataField[] pars)` → `PX.Data.PXDataRecord`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderSelectMulti(System.Type table, PX.Data.PXDataField[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderInsert(System.Type table, PX.Data.PXDataFieldAssign[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderUpdate(System.Type table, PX.Data.PXDataFieldParam[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderDelete(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderEnsure(System.Type table, PX.Data.PXDataFieldAssign[] values, PX.Data.PXDataField[] pars)` → `System.Boolean`
+- `public NV.UnitedSiteServices.NVInvoiceTypeMaint.RaisePXGraphViewChanged(System.String viewName)` → `System.Void`
+- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.CanClipboardCopyPaste()` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCode.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCode.GetHashCode()` → `System.Int32`
+- `public NV.UnitedSiteServices.NAWUSSZipCode.GetType()` → `System.Type`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCode.ToString()` → `System.String`
+- `public virtual NV.UnitedSiteServices.UsrFinanceProjectCode.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.UsrFinanceProjectCode.GetHashCode()` → `System.Int32`
+- `public NV.UnitedSiteServices.UsrFinanceProjectCode.GetType()` → `System.Type`
+- `public virtual NV.UnitedSiteServices.UsrFinanceProjectCode.ToString()` → `System.String`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.Persist()` → `System.Void`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.Persist(System.Type cacheType, PX.Data.PXDBOperation operation)` → `System.Int32`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.AllowSelect(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.AllowUpdate(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.UpdateRights(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.AllowInsert(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.AllowDelete(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.GetUpdatable(System.String viewName)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.GetKeyNames(System.String viewName)` → `System.String[]`
+- `public NV.UnitedSiteServices.NAWUSSZipCodeMaint.HasException()` → `System.Boolean`
+- `public NV.UnitedSiteServices.NAWUSSZipCodeMaint.GetParameterNames(System.String viewName)` → `System.String[]`
+- `public NV.UnitedSiteServices.NAWUSSZipCodeMaint.SetDataConsistencyIssue(System.String name, System.String diagnosticDetails, System.Boolean dumpAllCaches)` → `System.Void`
+- `public NV.UnitedSiteServices.NAWUSSZipCodeMaint.GetDacDescriptor(PX.Data.IBqlTable dac, PX.Data.DacDescriptorGeneration.DacDescriptorCreationOptions customDescriptorCreationOptions)` → `PX.Data.DacDescriptorGeneration.DacDescriptor`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderSelect(PX.Data.BqlCommand command, System.Int32 topCount, PX.Data.PXDataValue[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderSelectSingle(PX.Data.PXDataField[] pars)` → `PX.Data.PXDataRecord`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderSelectMulti(PX.Data.PXDataField[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderInsert(PX.Data.PXDataFieldAssign[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderUpdate(PX.Data.PXDataFieldParam[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderDelete(PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderArchive(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderExtract(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderSelectSingle(System.Type table, PX.Data.PXDataField[] pars)` → `PX.Data.PXDataRecord`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderSelectMulti(System.Type table, PX.Data.PXDataField[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderInsert(System.Type table, PX.Data.PXDataFieldAssign[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderUpdate(System.Type table, PX.Data.PXDataFieldParam[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderDelete(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderEnsure(System.Type table, PX.Data.PXDataFieldAssign[] values, PX.Data.PXDataField[] pars)` → `System.Boolean`
+- `public NV.UnitedSiteServices.NAWUSSZipCodeMaint.RaisePXGraphViewChanged(System.String viewName)` → `System.Void`
+- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.CanClipboardCopyPaste()` → `System.Boolean`
+- `public virtual NAWUnitedSiteServices.NAWAutoPay.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual NAWUnitedSiteServices.NAWAutoPay.GetHashCode()` → `System.Int32`
+- `public NAWUnitedSiteServices.NAWAutoPay.GetType()` → `System.Type`
+- `public virtual NAWUnitedSiteServices.NAWAutoPay.ToString()` → `System.String`
+- `public static NAWUnitedSiteServices.USSFinanceProjectCodeMaint.IsActive()` → `System.Boolean`
+- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.Persist()` → `System.Void`
+- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.Persist(System.Type cacheType, PX.Data.PXDBOperation operation)` → `System.Int32`
+- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.AllowSelect(System.String viewName)` → `System.Boolean`
+- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.AllowUpdate(System.String viewName)` → `System.Boolean`
+- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.UpdateRights(System.String viewName)` → `System.Boolean`
+- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.AllowInsert(System.String viewName)` → `System.Boolean`
+- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.AllowDelete(System.String viewName)` → `System.Boolean`
+- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.GetUpdatable(System.String viewName)` → `System.Boolean`
+- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.GetKeyNames(System.String viewName)` → `System.String[]`
+## Key Properties
+
+- `Microsoft.CodeAnalysis.EmbeddedAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.NullableAttribute.TypeId`: `System.Object` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.StatePrefix`: `System.String` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.PreserveErrorInfo`: `System.Boolean` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.NonUIErrors`: `PX.Data.PXErrorInfo[]` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.IsMobile`: `System.Boolean` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.IsImportFromExcel`: `System.Boolean` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.IsArchiveContext`: `System.Nullable`1[System.Boolean]` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.Accessinfo`: `PX.Data.AccessInfo` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.UID`: `System.Object` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.Culture`: `System.Globalization.CultureInfo` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.TimeStamp`: `System.Byte[]` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.IsProcessing`: `System.Boolean` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.LongOperationManager`: `PX.Async.IGraphLongOperationManager` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.IsInitializing`: `System.Boolean` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.PrimaryView`: `System.String` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.PrimaryItemType`: `System.Type` (read-write)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.IsDirty`: `System.Boolean` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.RowSelecting`: `PX.Data.PXGraph+RowSelectingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.RowSelected`: `PX.Data.PXGraph+RowSelectedEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.RowInserting`: `PX.Data.PXGraph+RowInsertingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.RowInserted`: `PX.Data.PXGraph+RowInsertedEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.RowUpdating`: `PX.Data.PXGraph+RowUpdatingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.RowUpdated`: `PX.Data.PXGraph+RowUpdatedEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.RowDeleting`: `PX.Data.PXGraph+RowDeletingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.RowDeleted`: `PX.Data.PXGraph+RowDeletedEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.RowPersisting`: `PX.Data.PXGraph+RowPersistingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.RowPersisted`: `PX.Data.PXGraph+RowPersistedEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.CommandPreparing`: `PX.Data.PXGraph+CommandPreparingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.FieldDefaulting`: `PX.Data.PXGraph+FieldDefaultingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.FieldUpdating`: `PX.Data.PXGraph+FieldUpdatingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.FieldVerifying`: `PX.Data.PXGraph+FieldVerifyingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.FieldUpdated`: `PX.Data.PXGraph+FieldUpdatedEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.FieldSelecting`: `PX.Data.PXGraph+FieldSelectingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.ExceptionHandling`: `PX.Data.PXGraph+ExceptionHandlingEvents` (read-only)
+- `NV.UnitedSiteServices.NVInvoiceTypeMaint.SqlDialect`: `PX.Data.ISqlDialect` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.StatePrefix`: `System.String` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.PreserveErrorInfo`: `System.Boolean` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.NonUIErrors`: `PX.Data.PXErrorInfo[]` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.IsMobile`: `System.Boolean` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.IsImportFromExcel`: `System.Boolean` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.IsArchiveContext`: `System.Nullable`1[System.Boolean]` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.Accessinfo`: `PX.Data.AccessInfo` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.UID`: `System.Object` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.Culture`: `System.Globalization.CultureInfo` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.TimeStamp`: `System.Byte[]` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.IsProcessing`: `System.Boolean` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.LongOperationManager`: `PX.Async.IGraphLongOperationManager` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.IsInitializing`: `System.Boolean` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.PrimaryView`: `System.String` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.PrimaryItemType`: `System.Type` (read-write)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.IsDirty`: `System.Boolean` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.RowSelecting`: `PX.Data.PXGraph+RowSelectingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.RowSelected`: `PX.Data.PXGraph+RowSelectedEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.RowInserting`: `PX.Data.PXGraph+RowInsertingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.RowInserted`: `PX.Data.PXGraph+RowInsertedEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.RowUpdating`: `PX.Data.PXGraph+RowUpdatingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.RowUpdated`: `PX.Data.PXGraph+RowUpdatedEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.RowDeleting`: `PX.Data.PXGraph+RowDeletingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.RowDeleted`: `PX.Data.PXGraph+RowDeletedEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.RowPersisting`: `PX.Data.PXGraph+RowPersistingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.RowPersisted`: `PX.Data.PXGraph+RowPersistedEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.CommandPreparing`: `PX.Data.PXGraph+CommandPreparingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.FieldDefaulting`: `PX.Data.PXGraph+FieldDefaultingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.FieldUpdating`: `PX.Data.PXGraph+FieldUpdatingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.FieldVerifying`: `PX.Data.PXGraph+FieldVerifyingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.FieldUpdated`: `PX.Data.PXGraph+FieldUpdatedEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.FieldSelecting`: `PX.Data.PXGraph+FieldSelectingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.ExceptionHandling`: `PX.Data.PXGraph+ExceptionHandlingEvents` (read-only)
+- `NV.UnitedSiteServices.NAWUSSZipCodeMaint.SqlDialect`: `PX.Data.ISqlDialect` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.StatePrefix`: `System.String` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.PreserveErrorInfo`: `System.Boolean` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.NonUIErrors`: `PX.Data.PXErrorInfo[]` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.IsMobile`: `System.Boolean` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.IsImportFromExcel`: `System.Boolean` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.IsArchiveContext`: `System.Nullable`1[System.Boolean]` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.Accessinfo`: `PX.Data.AccessInfo` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.UID`: `System.Object` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.Culture`: `System.Globalization.CultureInfo` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.TimeStamp`: `System.Byte[]` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.IsProcessing`: `System.Boolean` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.LongOperationManager`: `PX.Async.IGraphLongOperationManager` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.IsInitializing`: `System.Boolean` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.PrimaryView`: `System.String` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.PrimaryItemType`: `System.Type` (read-write)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.IsDirty`: `System.Boolean` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.RowSelecting`: `PX.Data.PXGraph+RowSelectingEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.RowSelected`: `PX.Data.PXGraph+RowSelectedEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.RowInserting`: `PX.Data.PXGraph+RowInsertingEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.RowInserted`: `PX.Data.PXGraph+RowInsertedEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.RowUpdating`: `PX.Data.PXGraph+RowUpdatingEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.RowUpdated`: `PX.Data.PXGraph+RowUpdatedEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.RowDeleting`: `PX.Data.PXGraph+RowDeletingEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.RowDeleted`: `PX.Data.PXGraph+RowDeletedEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.RowPersisting`: `PX.Data.PXGraph+RowPersistingEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.RowPersisted`: `PX.Data.PXGraph+RowPersistedEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.CommandPreparing`: `PX.Data.PXGraph+CommandPreparingEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.FieldDefaulting`: `PX.Data.PXGraph+FieldDefaultingEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.FieldUpdating`: `PX.Data.PXGraph+FieldUpdatingEvents` (read-only)
+- `NAWUnitedSiteServices.USSFinanceProjectCodeMaint.FieldVerifying`: `PX.Data.PXGraph+FieldVerifyingEvents` (read-only)
+## Inheritance Hierarchies
+
+**Base: `System.Attribute`**
+  - `Microsoft.CodeAnalysis.EmbeddedAttribute`
+  - `System.Runtime.CompilerServices.NullableAttribute`
+
+**Base: `PX.Data.PXBqlTable`**
+  - `NV.UnitedSiteServices.NVBOMStatus`
+  - `NV.UnitedSiteServices.NVInvoiceType`
+  - `NV.UnitedSiteServices.NAWUSSZipCode`
+  - `NV.UnitedSiteServices.UsrFinanceProjectCode`
+  - `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter`
+
+**Base: `PX.Data.PXGraph`1[[NV.UnitedSiteServices.NVInvoiceTypeMaint, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NVInvoiceTypeMaint`
+
+**Base: `PX.Data.PXGraph`1[[NV.UnitedSiteServices.NAWUSSZipCodeMaint, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NAWUSSZipCodeMaint`
+
+**Base: `System.Object`**
+  - `NAWUnitedSiteServices.NAWAutoPay`
+  - `NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems`
+  - `NAWUnitedSiteServices.Descr.NAWUSSFenceQuoteType`
+  - `NAWUnitedSiteServices.Descr.NAWUSSInvoiceStage`
+  - `NAWUnitedSiteServices.Descr.NAWUSSMessages`
+  - `NAWUnitedSiteServices.Prototype.Graph.NAWUSSChangeOrderProcessing+<>c`
+  - `NAWUnitedSiteServices.Prototype.Graph.NAWUSSCreateExtensionContractProcessing+<>c`
+  - `NAWUnitedSiteServices.Prototype.Graph.NAWUSSExtensionContractProcessing+<>c`
+  - `NAWUnitedSiteServices.Prototype.Graph.NAWUSSInitialContractProcessing+<>c`
+
+**Base: `PX.Data.PXGraph`1[[NAWUnitedSiteServices.USSFinanceProjectCodeMaint, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NAWUnitedSiteServices.USSFinanceProjectCodeMaint`
+
+**Base: `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractProcessingBase`**
+  - `NAWUnitedSiteServices.Prototype.Graph.NAWUSSChangeOrderProcessing`
+  - `NAWUnitedSiteServices.Prototype.Graph.NAWUSSExtensionContractProcessing`
+  - `NAWUnitedSiteServices.Prototype.Graph.NAWUSSInitialContractProcessing`
+
+**Base: `PX.Data.BQL.BqlType`2+Constant`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NAWUnitedSiteServices.Prototype.Graph.MinusOneDay, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NAWUnitedSiteServices.Prototype.Graph.MinusOneDay`
+
+**Base: `PX.Data.PXGraph`1[[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractProcessingBase, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractProcessingBase`
+
+**Base: `PX.Data.PXGraph`1[[NAWUnitedSiteServices.Prototype.Graph.NAWUSSCreateExtensionContractProcessing, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NAWUnitedSiteServices.Prototype.Graph.NAWUSSCreateExtensionContractProcessing`
+
+**Base: `PX.Data.PXStringListAttribute`**
+  - `NAWUnitedSiteServices.Prototype.Attributes.NAWNetSuiteProductAttribute`
+  - `NAWUnitedSiteServices.Descr.NAWUSSSOAdditionalItems+NAWUSSListAttribute`
+  - `NAWUnitedSiteServices.Descr.NAWUSSFenceQuoteType+NAWUSSListAttribute`
+
+**Base: `PX.Data.ReferentialIntegrity.Attributes.PrimaryKeyOf`1+By`1[[NV.UnitedSiteServices.NVBOMStatus, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[NV.UnitedSiteServices.NVBOMStatus+bOMStatusID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NVBOMStatus+PK`
+
+**Base: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlInt, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+bOMStatusID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NVBOMStatus+bOMStatusID`
+
+**Base: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+bOMStatusCD, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NVBOMStatus+bOMStatusCD`
+
+**Base: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+descr, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NVBOMStatus+descr`
+
+**Base: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+noteID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NVBOMStatus+noteID`
+
+**Base: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+createdByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NVBOMStatus+createdByID`
+
+**Base: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlString, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+createdByScreenID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NVBOMStatus+createdByScreenID`
+
+**Base: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlDateTime, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+createdDateTime, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NVBOMStatus+createdDateTime`
+
+**Base: `PX.Data.BQL.BqlType`2+Field`1[[PX.Data.BQL.IBqlGuid, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[NV.UnitedSiteServices.NVBOMStatus+lastModifiedByID, NAWUnitedSiteServices, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `NV.UnitedSiteServices.NVBOMStatus+lastModifiedByID`

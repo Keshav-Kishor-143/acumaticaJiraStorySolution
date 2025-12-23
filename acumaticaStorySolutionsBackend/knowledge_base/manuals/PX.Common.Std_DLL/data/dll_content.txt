@@ -1,0 +1,1678 @@
+# Assembly: PX.Common.Std
+Version: 1.0.0.0
+DLL: PX.Common.Std
+
+## Namespaces and Classes
+
+### Namespace: Global
+
+**Class: <>f__AnonymousType0`2**
+- Full Name: `<>f__AnonymousType0`2`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <PrivateImplementationDetails>**
+- Full Name: `<PrivateImplementationDetails>`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: __StaticArrayInitTypeSize=3**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=3`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=5**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=5`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=20**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=20`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=26**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=26`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=28**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=28`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=64**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=64`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=96**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=96`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=128**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=128`
+- Inherits from: `System.ValueType`
+
+**Class: __StaticArrayInitTypeSize=256**
+- Full Name: `<PrivateImplementationDetails>+__StaticArrayInitTypeSize=256`
+- Inherits from: `System.ValueType`
+
+### Namespace: Microsoft.CodeAnalysis
+
+**Class: EmbeddedAttribute**
+- Full Name: `Microsoft.CodeAnalysis.EmbeddedAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute
+
+### Namespace: Microsoft.Extensions.Logging
+
+**Class: LoggerExtensions**
+- Full Name: `Microsoft.Extensions.Logging.LoggerExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, PXInternalUseOnlyAttribute
+
+**Class: PropertyHolder**
+- Full Name: `Microsoft.Extensions.Logging.LoggerExtensions+PropertyHolder`
+- Inherits from: `System.ValueType`
+- Implements: `System.Collections.Generic.IReadOnlyList`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.Generic.IReadOnlyCollection`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.Generic.IEnumerable`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEnumerable`
+- Attributes: IsReadOnlyAttribute
+
+**Class: <GetEnumerator>d__2**
+- Full Name: `Microsoft.Extensions.Logging.LoggerExtensions+PropertyHolder+<GetEnumerator>d__2`
+- Inherits from: `System.Object`
+- Implements: `System.Collections.Generic.IEnumerator`1[[System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.IDisposable`, `System.Collections.IEnumerator`
+- Attributes: CompilerGeneratedAttribute
+
+### Namespace: PX.Common
+
+**Class: Anonymous**
+- Full Name: `PX.Common.Anonymous`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, PXInternalUseOnlyAttribute
+
+**Class: ArrayDeconstruct**
+- Full Name: `PX.Common.ArrayDeconstruct`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: AsyncOP**
+- Full Name: `PX.Common.AsyncOP`
+- Inherits from: `System.Object`
+
+**Class: AsyncOP_State**
+- Full Name: `PX.Common.AsyncOP_State`
+- Inherits from: `System.Enum`
+- Implements: `System.IComparable`, `System.IFormattable`, `System.IConvertible`
+
+**Class: AsyncResultState**
+- Full Name: `PX.Common.AsyncResultState`
+- Inherits from: `System.Object`
+- Implements: `System.IAsyncResult`
+
+**Class: BindInfoProtocol**
+- Full Name: `PX.Common.BindInfoProtocol`
+- Inherits from: `System.Enum`
+- Implements: `System.IComparable`, `System.IFormattable`, `System.IConvertible`
+
+**Class: ChainEventArgs`1**
+- Full Name: `PX.Common.ChainEventArgs`1`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Class: ChainEventArgs**
+- Full Name: `PX.Common.ChainEventArgs`
+- Inherits from: `System.Object`
+
+**Class: ArrayComparer`1**
+- Full Name: `PX.Common.ArrayComparer`1`
+- Inherits from: `System.Object`
+- Implements: `None`
+
+**Class: ArrayComparer**
+- Full Name: `PX.Common.ArrayComparer`
+- Inherits from: `PX.Common.ArrayComparer`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Implements: `System.Collections.Generic.IEqualityComparer`1[[System.Object[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+
+**Interface: IReadOnlySet`1**
+- Full Name: `PX.Common.IReadOnlySet`1`
+- Implements: `None`, `None`, `System.Collections.IEnumerable`
+
+**Interface: IMap`2**
+- Full Name: `PX.Common.IMap`2`
+- Implements: `None`, `None`, `System.Collections.IEnumerable`
+- Attributes: DefaultMemberAttribute
+
+**Class: Map`2**
+- Full Name: `PX.Common.Map`2`
+- Inherits from: `System.Object`
+- Implements: `None`, `None`, `None`, `System.Collections.IEnumerable`
+- Attributes: DefaultMemberAttribute
+
+**Class: MultiValueDictionary`2**
+- Full Name: `PX.Common.MultiValueDictionary`2`
+- Inherits from: `System.Object`
+- Implements: `None`, `None`, `None`, `System.Collections.IEnumerable`
+- Attributes: DefaultMemberAttribute
+
+**Class: NestedDictionary`3**
+- Full Name: `PX.Common.NestedDictionary`3`
+- Implements: `None`, `None`, `None`, `System.Collections.IEnumerable`, `System.Collections.IDictionary`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Class: NestedDictionary`4**
+- Full Name: `PX.Common.NestedDictionary`4`
+- Implements: `None`, `None`, `None`, `System.Collections.IEnumerable`, `System.Collections.IDictionary`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Class: NestedDictionary`5**
+- Full Name: `PX.Common.NestedDictionary`5`
+- Implements: `None`, `None`, `None`, `System.Collections.IEnumerable`, `System.Collections.IDictionary`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Class: NestedDictionary`6**
+- Full Name: `PX.Common.NestedDictionary`6`
+- Implements: `None`, `None`, `None`, `System.Collections.IEnumerable`, `System.Collections.IDictionary`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Class: NullableDictionary`2**
+- Full Name: `PX.Common.NullableDictionary`2`
+- Inherits from: `System.Object`
+- Implements: `None`, `None`, `None`, `System.Collections.IEnumerable`
+- Attributes: DefaultMemberAttribute
+
+**Class: OrderedHashSet`1**
+- Full Name: `PX.Common.OrderedHashSet`1`
+- Inherits from: `System.Object`
+- Implements: `None`, `None`, `System.Collections.IEnumerable`, `None`
+- Attributes: DefaultMemberAttribute
+
+**Class: PreEnumeratedEnumerable`1**
+- Full Name: `PX.Common.PreEnumeratedEnumerable`1`
+- Inherits from: `System.Object`
+- Implements: `None`, `System.Collections.IEnumerable`
+
+**Class: PXKeyedCollection`2**
+- Full Name: `PX.Common.PXKeyedCollection`2`
+- Inherits from: `System.Object`
+- Implements: `None`, `System.Collections.IEnumerable`, `None`, `System.Collections.ICollection`, `None`
+- Attributes: DefaultMemberAttribute
+
+**Class: Trie**
+- Full Name: `PX.Common.Trie`
+- Inherits from: `System.Object`
+
+**Class: Composite**
+- Full Name: `PX.Common.Composite`
+- Inherits from: `System.Object`
+- Implements: `System.IEquatable`1[[PX.Common.Composite, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEnumerable`
+- Attributes: DefaultMemberAttribute, ImmutableObjectAttribute
+
+**Class: Composite`1**
+- Full Name: `PX.Common.Composite`1`
+- Inherits from: `PX.Common.Composite`
+- Implements: `System.IEquatable`1[[PX.Common.Composite, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEnumerable`
+
+**Class: Composite`2**
+- Full Name: `PX.Common.Composite`2`
+- Inherits from: `PX.Common.Composite`
+- Implements: `System.IEquatable`1[[PX.Common.Composite, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEnumerable`
+
+**Class: Composite`3**
+- Full Name: `PX.Common.Composite`3`
+- Inherits from: `PX.Common.Composite`
+- Implements: `System.IEquatable`1[[PX.Common.Composite, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEnumerable`
+
+**Class: Composite`4**
+- Full Name: `PX.Common.Composite`4`
+- Inherits from: `PX.Common.Composite`
+- Implements: `System.IEquatable`1[[PX.Common.Composite, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEnumerable`
+
+**Class: Composite`5**
+- Full Name: `PX.Common.Composite`5`
+- Inherits from: `PX.Common.Composite`
+- Implements: `System.IEquatable`1[[PX.Common.Composite, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEnumerable`
+
+**Class: Composite`6**
+- Full Name: `PX.Common.Composite`6`
+- Inherits from: `PX.Common.Composite`
+- Implements: `System.IEquatable`1[[PX.Common.Composite, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEnumerable`
+
+**Class: Composite`7**
+- Full Name: `PX.Common.Composite`7`
+- Inherits from: `PX.Common.Composite`
+- Implements: `System.IEquatable`1[[PX.Common.Composite, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEnumerable`
+
+**Class: Composite`8**
+- Full Name: `PX.Common.Composite`8`
+- Inherits from: `PX.Common.Composite`
+- Implements: `System.IEquatable`1[[PX.Common.Composite, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.Generic.IEnumerable`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEnumerable`
+
+**Class: ConcurrentDictionaryExtensions**
+- Full Name: `PX.Common.ConcurrentDictionaryExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: DataSourceConstants**
+- Full Name: `PX.Common.DataSourceConstants`
+- Inherits from: `System.Object`
+
+**Class: DateTimeExtensions**
+- Full Name: `PX.Common.DateTimeExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: Drawing**
+- Full Name: `PX.Common.Drawing`
+- Inherits from: `System.Object`
+
+**Class: FontFamilyEx**
+- Full Name: `PX.Common.FontFamilyEx`
+- Inherits from: `System.Object`
+
+**Class: EnumerableExtensions**
+- Full Name: `PX.Common.EnumerableExtensions`
+- Inherits from: `System.Object`
+- Attributes: NullableContextAttribute, NullableAttribute, ExtensionAttribute
+
+**Class: EventArgs`1**
+- Full Name: `PX.Common.EventArgs`1`
+- Inherits from: `System.EventArgs`
+
+**Class: ExceptionEventArgs**
+- Full Name: `PX.Common.ExceptionEventArgs`
+- Inherits from: `System.EventArgs`
+
+**Class: ExceptionExtensions**
+- Full Name: `PX.Common.ExceptionExtensions`
+- Inherits from: `System.Object`
+- Attributes: NullableContextAttribute, NullableAttribute, ExtensionAttribute
+
+**Class: ServiceLocatorExtensions**
+- Full Name: `PX.Common.ServiceLocatorExtensions`
+- Inherits from: `System.Object`
+- Attributes: NullableContextAttribute, NullableAttribute, ExtensionAttribute
+
+**Class: FormatHelper`1**
+- Full Name: `PX.Common.FormatHelper`1`
+- Inherits from: `System.Object`
+
+**Class: GCHelper**
+- Full Name: `PX.Common.GCHelper`
+- Inherits from: `System.Object`
+
+**Class: GenericCall**
+- Full Name: `PX.Common.GenericCall`
+- Inherits from: `System.Object`
+- Attributes: DebuggerStepThroughAttribute
+
+**Class: GetComparer**
+- Full Name: `PX.Common.GetComparer`
+- Inherits from: `System.Object`
+
+**Class: GUID**
+- Full Name: `PX.Common.GUID`
+- Inherits from: `System.Object`
+- Attributes: NullableContextAttribute, NullableAttribute
+
+**Interface: IAsyncOP**
+- Full Name: `PX.Common.IAsyncOP`
+
+**Class: StringStream**
+- Full Name: `PX.Common.StringStream`
+- Inherits from: `System.IO.Stream`
+- Implements: `System.IDisposable`
+
+**Class: PXPath**
+- Full Name: `PX.Common.PXPath`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Common.Authentication
+
+**Class: HttpDigest**
+- Full Name: `PX.Common.Authentication.HttpDigest`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Common.Collection
+
+**Class: DList`2**
+- Full Name: `PX.Common.Collection.DList`2`
+- Implements: `None`, `None`, `System.Collections.IEnumerable`
+- Attributes: DefaultMemberAttribute
+
+**Class: KList`2**
+- Full Name: `PX.Common.Collection.KList`2`
+- Inherits from: `System.Object`
+- Implements: `None`, `None`, `System.Collections.IEnumerable`
+- Attributes: DefaultMemberAttribute
+
+**Class: LinkEntry**
+- Full Name: `PX.Common.Collection.LinkEntry`
+- Inherits from: `System.Object`
+
+**Class: LinkEntry`2**
+- Full Name: `PX.Common.Collection.LinkEntry`2`
+- Inherits from: `System.ValueType`
+
+**Class: Lookup`2**
+- Full Name: `PX.Common.Collection.Lookup`2`
+- Inherits from: `System.Object`
+- Implements: `None`, `None`, `System.Collections.IEnumerable`, `None`, `None`
+- Attributes: DefaultMemberAttribute
+
+**Class: TwoWayLookup`2**
+- Full Name: `PX.Common.Collection.TwoWayLookup`2`
+- Inherits from: `System.Object`
+
+**Class: ReadOnlyBiDictionary`2**
+- Full Name: `PX.Common.Collection.ReadOnlyBiDictionary`2`
+- Inherits from: `System.Object`
+- Implements: `None`, `None`, `None`, `System.Collections.IEnumerable`
+- Attributes: DefaultMemberAttribute
+
+**Class: ReadOnlyBiDictionaryExt**
+- Full Name: `PX.Common.Collection.ReadOnlyBiDictionaryExt`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: RTree**
+- Full Name: `PX.Common.Collection.RTree`
+- Inherits from: `System.Object`
+
+**Class: Rect**
+- Full Name: `PX.Common.Collection.Rect`
+- Inherits from: `System.Object`
+
+**Class: RLeaf**
+- Full Name: `PX.Common.Collection.RLeaf`
+- Inherits from: `PX.Common.Collection.RNode`
+
+**Class: RBranch**
+- Full Name: `PX.Common.Collection.RBranch`
+- Inherits from: `PX.Common.Collection.RNode`
+
+**Class: RNode**
+- Full Name: `PX.Common.Collection.RNode`
+- Inherits from: `PX.Common.Collection.Rect`
+
+**Class: Set`1**
+- Full Name: `PX.Common.Collection.Set`1`
+- Implements: `None`, `None`, `System.Collections.IEnumerable`
+
+**Class: WeakSet`1**
+- Full Name: `PX.Common.Collection.WeakSet`1`
+- Inherits from: `System.Object`
+
+**Class: LinkComparer`2**
+- Full Name: `PX.Common.Collection.LinkEntry+LinkComparer`2`
+- Inherits from: `System.Object`
+- Implements: `None`
+
+**Class: HashGroup**
+- Full Name: `PX.Common.Collection.Lookup`2+HashGroup`
+- Implements: `None`, `None`, `System.Collections.IEnumerable`, `System.Runtime.Serialization.ISerializable`, `System.Runtime.Serialization.IDeserializationCallback`
+
+**Class: <>c**
+- Full Name: `PX.Common.Collection.Lookup`2+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: <>c__DisplayClass12_0**
+- Full Name: `PX.Common.Collection.Lookup`2+<>c__DisplayClass12_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass16_0**
+- Full Name: `PX.Common.Collection.Lookup`2+<>c__DisplayClass16_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass15_0**
+- Full Name: `PX.Common.Collection.TwoWayLookup`2+<>c__DisplayClass15_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass16_0**
+- Full Name: `PX.Common.Collection.TwoWayLookup`2+<>c__DisplayClass16_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c**
+- Full Name: `PX.Common.Collection.ReadOnlyBiDictionary`2+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: <>c__DisplayClass3_0**
+- Full Name: `PX.Common.Collection.RLeaf+<>c__DisplayClass3_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass4_0**
+- Full Name: `PX.Common.Collection.RLeaf+<>c__DisplayClass4_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <GetRectangles>d__2**
+- Full Name: `PX.Common.Collection.RLeaf+<GetRectangles>d__2`
+- Inherits from: `System.Object`
+- Implements: `System.Collections.Generic.IEnumerable`1[[PX.Common.Collection.Rect, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.IEnumerable`, `System.Collections.Generic.IEnumerator`1[[PX.Common.Collection.Rect, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.IDisposable`, `System.Collections.IEnumerator`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass4_0**
+- Full Name: `PX.Common.Collection.RBranch+<>c__DisplayClass4_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c**
+- Full Name: `PX.Common.Collection.RNode+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: <GetRectangles>d__14**
+- Full Name: `PX.Common.Collection.RNode+<GetRectangles>d__14`
+- Inherits from: `System.Object`
+- Implements: `System.Collections.Generic.IEnumerable`1[[PX.Common.Collection.Rect, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.IEnumerable`, `System.Collections.Generic.IEnumerator`1[[PX.Common.Collection.Rect, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.IDisposable`, `System.Collections.IEnumerator`
+- Attributes: CompilerGeneratedAttribute
+
+### Namespace: PX.Common.Context
+
+**Interface: ISlotStore**
+- Full Name: `PX.Common.Context.ISlotStore`
+- Attributes: PXInternalUseOnlyAttribute
+
+**Class: TypeKeyedOperationExtensions**
+- Full Name: `PX.Common.Context.TypeKeyedOperationExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, PXInternalUseOnlyAttribute
+
+### Namespace: PX.Common.Cryptography
+
+**Class: CryptoProvider**
+- Full Name: `PX.Common.Cryptography.CryptoProvider`
+- Inherits from: `System.Object`
+
+**Class: RSACryptoProvider**
+- Full Name: `PX.Common.Cryptography.RSACryptoProvider`
+- Inherits from: `PX.Common.Cryptography.CryptoProvider`
+
+**Class: SymmetricCryptoProvider**
+- Full Name: `PX.Common.Cryptography.SymmetricCryptoProvider`
+- Inherits from: `PX.Common.Cryptography.CryptoProvider`
+
+### Namespace: PX.Common.DictionaryExtensions
+
+**Class: DictionaryExtensions**
+- Full Name: `PX.Common.DictionaryExtensions.DictionaryExtensions`
+- Inherits from: `System.Object`
+- Attributes: NullableContextAttribute, NullableAttribute, ExtensionAttribute
+
+### Namespace: PX.Common.Encoders
+
+**Class: RawEncoding**
+- Full Name: `PX.Common.Encoders.RawEncoding`
+- Inherits from: `System.Text.Encoding`
+- Implements: `System.ICloneable`
+
+**Class: UnicodeEncoding**
+- Full Name: `PX.Common.Encoders.UnicodeEncoding`
+- Inherits from: `System.Text.Encoding`
+- Implements: `System.ICloneable`
+
+### Namespace: PX.Common.Extensions
+
+**Class: AdjustmentRuleExtensions**
+- Full Name: `PX.Common.Extensions.AdjustmentRuleExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: AsyncEnumerableExtensions**
+- Full Name: `PX.Common.Extensions.AsyncEnumerableExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, PXInternalUseOnlyAttribute
+
+**Class: ObjectEx**
+- Full Name: `PX.Common.Extensions.ObjectEx`
+- Inherits from: `System.Object`
+- Attributes: NullableContextAttribute, NullableAttribute, ExtensionAttribute
+
+**Class: StringExtensions**
+- Full Name: `PX.Common.Extensions.StringExtensions`
+- Inherits from: `System.Object`
+- Attributes: NullableContextAttribute, NullableAttribute, ExtensionAttribute
+
+**Class: <>c__DisplayClass0_0**
+- Full Name: `PX.Common.Extensions.AdjustmentRuleExtensions+<>c__DisplayClass0_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+### Namespace: PX.Common.GS1
+
+**Class: AI**
+- Full Name: `PX.Common.GS1.AI`
+- Inherits from: `System.Object`
+
+**Class: DataType**
+- Full Name: `PX.Common.GS1.DataType`
+- Inherits from: `System.Enum`
+- Implements: `System.IComparable`, `System.IFormattable`, `System.IConvertible`
+
+**Class: StringData**
+- Full Name: `PX.Common.GS1.StringData`
+- Inherits from: `System.Object`
+
+**Class: DecimalData**
+- Full Name: `PX.Common.GS1.DecimalData`
+- Inherits from: `PX.Common.GS1.StringData`
+
+**Class: CurrencyData**
+- Full Name: `PX.Common.GS1.CurrencyData`
+- Inherits from: `PX.Common.GS1.DecimalData`
+
+**Class: DateTimeData**
+- Full Name: `PX.Common.GS1.DateTimeData`
+- Inherits from: `PX.Common.GS1.StringData`
+
+**Class: ListData**
+- Full Name: `PX.Common.GS1.ListData`
+- Inherits from: `PX.Common.GS1.StringData`
+
+**Class: Parser**
+- Full Name: `PX.Common.GS1.Parser`
+- Inherits from: `System.Object`
+
+**Class: StartCodes**
+- Full Name: `PX.Common.GS1.StartCodes`
+- Inherits from: `System.Object`
+
+**Class: Codes**
+- Full Name: `PX.Common.GS1.Codes`
+- Inherits from: `System.Object`
+
+**Class: <>c**
+- Full Name: `PX.Common.GS1.ListData+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: <>c**
+- Full Name: `PX.Common.GS1.Parser+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+**Class: <>c__DisplayClass19_0**
+- Full Name: `PX.Common.GS1.Parser+<>c__DisplayClass19_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: Length**
+- Full Name: `PX.Common.GS1.Codes+Length`
+- Inherits from: `System.Object`
+
+**Class: Width**
+- Full Name: `PX.Common.GS1.Codes+Width`
+- Inherits from: `System.Object`
+
+**Class: Height**
+- Full Name: `PX.Common.GS1.Codes+Height`
+- Inherits from: `System.Object`
+
+**Class: Weight**
+- Full Name: `PX.Common.GS1.Codes+Weight`
+- Inherits from: `System.Object`
+
+**Class: Area**
+- Full Name: `PX.Common.GS1.Codes+Area`
+- Inherits from: `System.Object`
+
+**Class: Volume**
+- Full Name: `PX.Common.GS1.Codes+Volume`
+- Inherits from: `System.Object`
+
+**Class: CountryOf**
+- Full Name: `PX.Common.GS1.Codes+CountryOf`
+- Inherits from: `System.Object`
+
+**Class: NHRN**
+- Full Name: `PX.Common.GS1.Codes+NHRN`
+- Inherits from: `System.Object`
+
+**Class: CompanyInternal**
+- Full Name: `PX.Common.GS1.Codes+CompanyInternal`
+- Inherits from: `System.Object`
+
+**Class: Logistic**
+- Full Name: `PX.Common.GS1.Codes+Length+Logistic`
+- Inherits from: `System.Object`
+
+**Class: Logistic**
+- Full Name: `PX.Common.GS1.Codes+Width+Logistic`
+- Inherits from: `System.Object`
+
+**Class: Logistic**
+- Full Name: `PX.Common.GS1.Codes+Height+Logistic`
+- Inherits from: `System.Object`
+
+**Class: Net**
+- Full Name: `PX.Common.GS1.Codes+Weight+Net`
+- Inherits from: `System.Object`
+
+**Class: Gross**
+- Full Name: `PX.Common.GS1.Codes+Weight+Gross`
+- Inherits from: `System.Object`
+
+**Class: Logistic**
+- Full Name: `PX.Common.GS1.Codes+Area+Logistic`
+- Inherits from: `System.Object`
+
+**Class: Net**
+- Full Name: `PX.Common.GS1.Codes+Volume+Net`
+- Inherits from: `System.Object`
+
+**Class: Logistic**
+- Full Name: `PX.Common.GS1.Codes+Volume+Logistic`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Common.IO
+
+**Class: Base64**
+- Full Name: `PX.Common.IO.Base64`
+- Inherits from: `System.Object`
+
+**Class: Base64Stream**
+- Full Name: `PX.Common.IO.Base64Stream`
+- Inherits from: `System.IO.Stream`
+- Implements: `System.IDisposable`
+
+**Class: DataSizeExceededException**
+- Full Name: `PX.Common.IO.DataSizeExceededException`
+- Inherits from: `System.Exception`
+- Implements: `System.Runtime.Serialization.ISerializable`, `System.Runtime.InteropServices._Exception`
+
+**Class: FilenameValidator**
+- Full Name: `PX.Common.IO.FilenameValidator`
+- Inherits from: `System.Object`
+
+**Class: IncompleteDataException**
+- Full Name: `PX.Common.IO.IncompleteDataException`
+- Inherits from: `System.Exception`
+- Implements: `System.Runtime.Serialization.ISerializable`, `System.Runtime.InteropServices._Exception`
+
+**Class: JunkingStream**
+- Full Name: `PX.Common.IO.JunkingStream`
+- Inherits from: `System.IO.Stream`
+- Implements: `System.IDisposable`
+
+**Class: LineSizeExceededException**
+- Full Name: `PX.Common.IO.LineSizeExceededException`
+- Inherits from: `System.Exception`
+- Implements: `System.Runtime.Serialization.ISerializable`, `System.Runtime.InteropServices._Exception`
+
+**Class: QuotedPrintableStream**
+- Full Name: `PX.Common.IO.QuotedPrintableStream`
+- Inherits from: `System.IO.Stream`
+- Implements: `System.IDisposable`
+
+**Class: ReadWriteControlledStream**
+- Full Name: `PX.Common.IO.ReadWriteControlledStream`
+- Inherits from: `System.IO.Stream`
+- Implements: `System.IDisposable`
+
+**Class: SizeExceededAction**
+- Full Name: `PX.Common.IO.SizeExceededAction`
+- Inherits from: `System.Enum`
+- Implements: `System.IComparable`, `System.IFormattable`, `System.IConvertible`
+
+**Class: SmartStream**
+- Full Name: `PX.Common.IO.SmartStream`
+- Inherits from: `System.IO.Stream`
+- Implements: `System.IDisposable`
+
+**Class: BufferCallback**
+- Full Name: `PX.Common.IO.SmartStream+BufferCallback`
+- Inherits from: `System.MulticastDelegate`
+- Implements: `System.ICloneable`, `System.Runtime.Serialization.ISerializable`
+
+**Class: ReadLineAsyncOperation**
+- Full Name: `PX.Common.IO.SmartStream+ReadLineAsyncOperation`
+- Inherits from: `System.Object`
+- Implements: `System.IAsyncResult`
+
+**Class: ReadToTerminatorAsyncOperation**
+- Full Name: `PX.Common.IO.SmartStream+ReadToTerminatorAsyncOperation`
+- Inherits from: `System.Object`
+- Implements: `System.IAsyncResult`
+
+**Class: ReadToStreamAsyncOperation**
+- Full Name: `PX.Common.IO.SmartStream+ReadToStreamAsyncOperation`
+- Inherits from: `System.Object`
+- Implements: `System.IAsyncResult`
+
+**Class: ReadAsyncOperation**
+- Full Name: `PX.Common.IO.SmartStream+ReadAsyncOperation`
+- Inherits from: `System.Object`
+- Implements: `System.IAsyncResult`
+
+**Class: ReadLineAsyncOP**
+- Full Name: `PX.Common.IO.SmartStream+ReadLineAsyncOP`
+- Inherits from: `PX.Common.AsyncOP`
+- Implements: `System.IDisposable`
+
+**Class: ReadPeriodTerminatedAsyncOP**
+- Full Name: `PX.Common.IO.SmartStream+ReadPeriodTerminatedAsyncOP`
+- Inherits from: `PX.Common.AsyncOP`
+- Implements: `System.IDisposable`
+
+**Class: BufferReadAsyncOP**
+- Full Name: `PX.Common.IO.SmartStream+BufferReadAsyncOP`
+- Inherits from: `PX.Common.AsyncOP`
+- Implements: `System.IDisposable`
+
+**Class: WritePeriodTerminatedAsyncOP**
+- Full Name: `PX.Common.IO.SmartStream+WritePeriodTerminatedAsyncOP`
+- Inherits from: `System.Object`
+- Implements: `System.IDisposable`, `PX.Common.IAsyncOP`
+
+**Class: <>c__DisplayClass48_0**
+- Full Name: `PX.Common.IO.SmartStream+<>c__DisplayClass48_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c__DisplayClass61_0**
+- Full Name: `PX.Common.IO.SmartStream+<>c__DisplayClass61_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+### Namespace: PX.Common.Serialization
+
+**Class: PXSerializableAttribute**
+- Full Name: `PX.Common.Serialization.PXSerializableAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute
+
+**Class: SerializationTypeProxyAttribute**
+- Full Name: `PX.Common.Serialization.SerializationTypeProxyAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute
+
+**Class: MemberInfo**
+- Full Name: `PX.Common.Serialization.MemberInfo`
+- Inherits from: `System.Object`
+
+**Class: MemberDescriptor**
+- Full Name: `PX.Common.Serialization.MemberDescriptor`
+- Inherits from: `System.Object`
+
+**Interface: IMemberHandler**
+- Full Name: `PX.Common.Serialization.IMemberHandler`
+
+**Interface: IMemberSerializer**
+- Full Name: `PX.Common.Serialization.IMemberSerializer`
+
+**Interface: IFormatWriter**
+- Full Name: `PX.Common.Serialization.IFormatWriter`
+
+**Interface: IPXWeakCollection**
+- Full Name: `PX.Common.Serialization.IPXWeakCollection`
+
+**Class: PropertyHandler**
+- Full Name: `PX.Common.Serialization.PropertyHandler`
+- Inherits from: `System.Object`
+- Implements: `PX.Common.Serialization.IMemberHandler`
+
+**Class: FieldHandler**
+- Full Name: `PX.Common.Serialization.FieldHandler`
+- Inherits from: `System.Object`
+- Implements: `PX.Common.Serialization.IMemberHandler`
+
+**Class: CollectionHandlers`1**
+- Full Name: `PX.Common.Serialization.CollectionHandlers`1`
+- Inherits from: `System.Object`
+- Implements: `PX.Common.Serialization.IMemberHandler`
+
+**Class: ListHandler**
+- Full Name: `PX.Common.Serialization.ListHandler`
+- Inherits from: `PX.Common.Serialization.CollectionHandlers`1[[System.Collections.IList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Implements: `PX.Common.Serialization.IMemberHandler`
+
+**Class: ArrayHandler**
+- Full Name: `PX.Common.Serialization.ArrayHandler`
+- Inherits from: `PX.Common.Serialization.CollectionHandlers`1[[System.Array, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Implements: `PX.Common.Serialization.IMemberHandler`
+
+**Class: SimpleTypeSerializer**
+- Full Name: `PX.Common.Serialization.SimpleTypeSerializer`
+- Inherits from: `System.Object`
+- Implements: `PX.Common.Serialization.IMemberSerializer`
+
+**Class: NullableTypeSerializer**
+- Full Name: `PX.Common.Serialization.NullableTypeSerializer`
+- Inherits from: `System.Object`
+- Implements: `PX.Common.Serialization.IMemberSerializer`
+
+**Class: CollectionSerializer`1**
+- Full Name: `PX.Common.Serialization.CollectionSerializer`1`
+- Inherits from: `System.Object`
+- Implements: `PX.Common.Serialization.IMemberSerializer`
+
+**Class: ArraySerializer**
+- Full Name: `PX.Common.Serialization.ArraySerializer`
+- Inherits from: `PX.Common.Serialization.CollectionSerializer`1[[System.Array, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Implements: `PX.Common.Serialization.IMemberSerializer`
+
+**Class: ListSerializer**
+- Full Name: `PX.Common.Serialization.ListSerializer`
+- Inherits from: `PX.Common.Serialization.CollectionSerializer`1[[System.Collections.IList, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`
+- Implements: `PX.Common.Serialization.IMemberSerializer`
+
+**Class: TypeProxySerializer**
+- Full Name: `PX.Common.Serialization.TypeProxySerializer`
+- Inherits from: `System.Object`
+- Implements: `PX.Common.Serialization.IMemberSerializer`
+
+**Class: PXHashCode**
+- Full Name: `PX.Common.Serialization.PXHashCode`
+- Inherits from: `System.Object`
+
+**Class: TypeSerializer**
+- Full Name: `PX.Common.Serialization.TypeSerializer`
+- Inherits from: `System.Object`
+- Implements: `PX.Common.Serialization.IMemberSerializer`
+
+**Class: Schema**
+- Full Name: `PX.Common.Serialization.TypeSerializer+Schema`
+- Inherits from: `System.Object`
+
+**Class: <GetMembers>d__7**
+- Full Name: `PX.Common.Serialization.TypeSerializer+<GetMembers>d__7`
+- Inherits from: `System.Object`
+- Implements: `System.Collections.Generic.IEnumerable`1[[PX.Common.Serialization.MemberDescriptor, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.Collections.IEnumerable`, `System.Collections.Generic.IEnumerator`1[[PX.Common.Serialization.MemberDescriptor, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `System.IDisposable`, `System.Collections.IEnumerator`
+- Attributes: CompilerGeneratedAttribute
+
+### Namespace: PX.Common.Service
+
+**Class: Version**
+- Full Name: `PX.Common.Service.Version`
+- Inherits from: `System.ValueType`
+- Attributes: ObsoleteAttribute
+
+**Interface: IVersionService**
+- Full Name: `PX.Common.Service.IVersionService`
+
+### Namespace: PX.Common.Services
+
+**Interface: IExecutionLargeResultProvider**
+- Full Name: `PX.Common.Services.IExecutionLargeResultProvider`
+
+**Interface: ILicenseService**
+- Full Name: `PX.Common.Services.ILicenseService`
+
+**Interface: IUrlService**
+- Full Name: `PX.Common.Services.IUrlService`
+
+**Class: ServiceCollectionExtensions**
+- Full Name: `PX.Common.Services.ServiceCollectionExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, PXInternalUseOnlyAttribute
+
+**Class: LicenseServiceStub**
+- Full Name: `PX.Common.Services.LicenseServiceStub`
+- Inherits from: `System.Object`
+- Implements: `PX.Common.Services.ILicenseService`
+
+### Namespace: PX.Data
+
+**Interface: ITodayUtc**
+- Full Name: `PX.Data.ITodayUtc`
+
+**Interface: IRelativeDatesManager**
+- Full Name: `PX.Data.IRelativeDatesManager`
+
+**Class: RelativeDatesManager**
+- Full Name: `PX.Data.RelativeDatesManager`
+- Inherits from: `System.Object`
+- Implements: `PX.Data.IRelativeDatesManager`
+
+**Class: RelativeDatesServiceCollectionExtensions**
+- Full Name: `PX.Data.RelativeDatesServiceCollectionExtensions`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute, PXInternalUseOnlyAttribute
+
+**Class: <>c__DisplayClass14_0**
+- Full Name: `PX.Data.RelativeDatesManager+<>c__DisplayClass14_0`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute
+
+**Class: <>c**
+- Full Name: `PX.Data.RelativeDatesServiceCollectionExtensions+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+### Namespace: PX.Data.RelativeDates
+
+**Class: Function**
+- Full Name: `PX.Data.RelativeDates.Function`
+- Inherits from: `PX.Data.RelativeDates.Token`
+
+**Class: InfixParser**
+- Full Name: `PX.Data.RelativeDates.InfixParser`
+- Inherits from: `System.Object`
+
+**Class: Add**
+- Full Name: `PX.Data.RelativeDates.Add`
+- Inherits from: `PX.Data.RelativeDates.LeftAssociativeOperator`
+
+**Class: Associativity**
+- Full Name: `PX.Data.RelativeDates.Associativity`
+- Inherits from: `System.Enum`
+- Implements: `System.IComparable`, `System.IFormattable`, `System.IConvertible`
+
+**Class: Operator**
+- Full Name: `PX.Data.RelativeDates.Operator`
+- Inherits from: `PX.Data.RelativeDates.Token`
+
+**Class: LeftAssociativeOperator**
+- Full Name: `PX.Data.RelativeDates.LeftAssociativeOperator`
+- Inherits from: `PX.Data.RelativeDates.Operator`
+
+**Class: Substract**
+- Full Name: `PX.Data.RelativeDates.Substract`
+- Inherits from: `PX.Data.RelativeDates.LeftAssociativeOperator`
+
+**Class: RPNCalculator**
+- Full Name: `PX.Data.RelativeDates.RPNCalculator`
+- Inherits from: `System.Object`
+
+**Class: ShuntingYardParser**
+- Full Name: `PX.Data.RelativeDates.ShuntingYardParser`
+- Inherits from: `System.Object`
+
+**Class: Token**
+- Full Name: `PX.Data.RelativeDates.Token`
+- Inherits from: `System.Object`
+
+**Class: TokenFactory**
+- Full Name: `PX.Data.RelativeDates.TokenFactory`
+- Inherits from: `System.Object`
+
+**Class: DateValue**
+- Full Name: `PX.Data.RelativeDates.DateValue`
+- Inherits from: `PX.Data.RelativeDates.Value`
+
+**Interface: IFinancialPeriodManager**
+- Full Name: `PX.Data.RelativeDates.IFinancialPeriodManager`
+
+**Class: FinancialPeriodManagerStub**
+- Full Name: `PX.Data.RelativeDates.FinancialPeriodManagerStub`
+- Inherits from: `System.Object`
+- Implements: `PX.Data.RelativeDates.IFinancialPeriodManager`
+
+**Class: FinancialPeriodStart**
+- Full Name: `PX.Data.RelativeDates.FinancialPeriodStart`
+- Inherits from: `PX.Data.RelativeDates.Today`
+
+**Class: FinancialPeriodEnd**
+- Full Name: `PX.Data.RelativeDates.FinancialPeriodEnd`
+- Inherits from: `PX.Data.RelativeDates.FinancialPeriodStart`
+
+**Class: MonthStart**
+- Full Name: `PX.Data.RelativeDates.MonthStart`
+- Inherits from: `PX.Data.RelativeDates.Today`
+
+**Class: MonthEnd**
+- Full Name: `PX.Data.RelativeDates.MonthEnd`
+- Inherits from: `PX.Data.RelativeDates.MonthStart`
+
+**Class: QuarterStart**
+- Full Name: `PX.Data.RelativeDates.QuarterStart`
+- Inherits from: `PX.Data.RelativeDates.Today`
+
+**Class: QuarterEnd**
+- Full Name: `PX.Data.RelativeDates.QuarterEnd`
+- Inherits from: `PX.Data.RelativeDates.QuarterStart`
+
+**Class: TodayConstant**
+- Full Name: `PX.Data.RelativeDates.TodayConstant`
+- Inherits from: `System.Object`
+- Implements: `PX.Data.ITodayUtc`
+
+**Class: TodayUTC**
+- Full Name: `PX.Data.RelativeDates.TodayUTC`
+- Inherits from: `System.Object`
+- Implements: `PX.Data.ITodayUtc`
+
+**Class: Today**
+- Full Name: `PX.Data.RelativeDates.Today`
+- Inherits from: `PX.Data.RelativeDates.DateValue`
+
+**Class: WeekStart**
+- Full Name: `PX.Data.RelativeDates.WeekStart`
+- Inherits from: `PX.Data.RelativeDates.Today`
+
+**Class: WeekEnd**
+- Full Name: `PX.Data.RelativeDates.WeekEnd`
+- Inherits from: `PX.Data.RelativeDates.WeekStart`
+
+**Class: YearStart**
+- Full Name: `PX.Data.RelativeDates.YearStart`
+- Inherits from: `PX.Data.RelativeDates.MonthStart`
+
+**Class: YearEnd**
+- Full Name: `PX.Data.RelativeDates.YearEnd`
+- Inherits from: `PX.Data.RelativeDates.YearStart`
+
+**Class: Value**
+- Full Name: `PX.Data.RelativeDates.Value`
+- Inherits from: `PX.Data.RelativeDates.Token`
+
+**Class: NumberValue**
+- Full Name: `PX.Data.RelativeDates.NumberValue`
+- Inherits from: `PX.Data.RelativeDates.Value`
+
+**Class: <>c**
+- Full Name: `PX.Data.RelativeDates.Add+<>c`
+- Inherits from: `System.Object`
+- Attributes: CompilerGeneratedAttribute, SerializableAttribute
+
+### Namespace: PX.Diagnostics
+
+**Class: InstrumentationOptions**
+- Full Name: `PX.Diagnostics.InstrumentationOptions`
+- Inherits from: `System.Object`
+- Attributes: NullableContextAttribute, NullableAttribute
+
+### Namespace: PX.Distributed
+
+**Class: RedisConfigurationHelper**
+- Full Name: `PX.Distributed.RedisConfigurationHelper`
+- Inherits from: `System.Object`
+
+### Namespace: PX.Security
+
+**Class: ConstantTimeStringComparer**
+- Full Name: `PX.Security.ConstantTimeStringComparer`
+- Inherits from: `System.Object`
+- Implements: `System.Collections.Generic.IEqualityComparer`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`, `System.Collections.IEqualityComparer`
+- Attributes: NullableContextAttribute, NullableAttribute
+
+**Interface: IRoleManagementService**
+- Full Name: `PX.Security.IRoleManagementService`
+- Attributes: PXInternalUseOnlyAttribute
+
+### Namespace: PX.Web.UI
+
+**Class: PXIcons**
+- Full Name: `PX.Web.UI.PXIcons`
+- Inherits from: `System.Object`
+
+**Class: Sprite**
+- Full Name: `PX.Web.UI.Sprite`
+- Inherits from: `System.Object`
+
+**Class: Main**
+- Full Name: `PX.Web.UI.Sprite+Main`
+- Inherits from: `System.Object`
+
+**Class: Control**
+- Full Name: `PX.Web.UI.Sprite+Control`
+- Inherits from: `System.Object`
+
+**Class: Tree**
+- Full Name: `PX.Web.UI.Sprite+Tree`
+- Inherits from: `System.Object`
+
+**Class: Text**
+- Full Name: `PX.Web.UI.Sprite+Text`
+- Inherits from: `System.Object`
+
+**Class: Ac**
+- Full Name: `PX.Web.UI.Sprite+Ac`
+- Inherits from: `System.Object`
+
+### Namespace: System
+
+**Class: Index**
+- Full Name: `System.Index`
+- Inherits from: `System.ValueType`
+- Implements: `System.IEquatable`1[[System.Index, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Attributes: IsReadOnlyAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: Range**
+- Full Name: `System.Range`
+- Inherits from: `System.ValueType`
+- Implements: `System.IEquatable`1[[System.Range, PX.Common.Std, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Attributes: IsReadOnlyAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: ThrowHelper**
+- Full Name: `System.Index+ThrowHelper`
+- Inherits from: `System.Object`
+
+**Class: HashHelpers**
+- Full Name: `System.Range+HashHelpers`
+- Inherits from: `System.Object`
+
+**Class: ThrowHelper**
+- Full Name: `System.Range+ThrowHelper`
+- Inherits from: `System.Object`
+
+### Namespace: System.Diagnostics.CodeAnalysis
+
+**Class: AllowNullAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.AllowNullAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: DisallowNullAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.DisallowNullAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: DoesNotReturnAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: DoesNotReturnIfAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: ExperimentalAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.ExperimentalAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: NullableContextAttribute, NullableAttribute, AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: MaybeNullAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.MaybeNullAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: MaybeNullWhenAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: MemberNotNullAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.MemberNotNullAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: NullableContextAttribute, NullableAttribute, AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: MemberNotNullWhenAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: NullableContextAttribute, NullableAttribute, AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: NotNullAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.NotNullAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: NotNullIfNotNullAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: NullableContextAttribute, NullableAttribute, AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: NotNullWhenAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.NotNullWhenAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: SetsRequiredMembersAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: StringSyntaxAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.StringSyntaxAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: NullableContextAttribute, NullableAttribute, AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: UnscopedRefAttribute**
+- Full Name: `System.Diagnostics.CodeAnalysis.UnscopedRefAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+### Namespace: System.Linq
+
+**Class: JoinToDictionary**
+- Full Name: `System.Linq.JoinToDictionary`
+- Inherits from: `System.Object`
+- Attributes: ExtensionAttribute
+
+**Class: <Join>d__0`3**
+- Full Name: `System.Linq.JoinToDictionary+<Join>d__0`3`
+- Inherits from: `System.Object`
+- Implements: `None`, `System.Collections.IEnumerable`, `None`, `System.IDisposable`, `System.Collections.IEnumerator`
+- Attributes: CompilerGeneratedAttribute
+
+### Namespace: System.Runtime.CompilerServices
+
+**Class: IsReadOnlyAttribute**
+- Full Name: `System.Runtime.CompilerServices.IsReadOnlyAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute
+
+**Class: NullableAttribute**
+- Full Name: `System.Runtime.CompilerServices.NullableAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute, AttributeUsageAttribute
+
+**Class: NullableContextAttribute**
+- Full Name: `System.Runtime.CompilerServices.NullableContextAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute, AttributeUsageAttribute
+
+**Class: RefSafetyRulesAttribute**
+- Full Name: `System.Runtime.CompilerServices.RefSafetyRulesAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: CompilerGeneratedAttribute, EmbeddedAttribute, AttributeUsageAttribute
+
+**Class: CallerArgumentExpressionAttribute**
+- Full Name: `System.Runtime.CompilerServices.CallerArgumentExpressionAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: NullableContextAttribute, NullableAttribute, AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: CollectionBuilderAttribute**
+- Full Name: `System.Runtime.CompilerServices.CollectionBuilderAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: NullableContextAttribute, NullableAttribute, AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: CompilerFeatureRequiredAttribute**
+- Full Name: `System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: NullableContextAttribute, NullableAttribute, AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: InterpolatedStringHandlerArgumentAttribute**
+- Full Name: `System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: NullableContextAttribute, NullableAttribute, AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: InterpolatedStringHandlerAttribute**
+- Full Name: `System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: IsExternalInit**
+- Full Name: `System.Runtime.CompilerServices.IsExternalInit`
+- Inherits from: `System.Object`
+- Attributes: EditorBrowsableAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: ModuleInitializerAttribute**
+- Full Name: `System.Runtime.CompilerServices.ModuleInitializerAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: RequiredMemberAttribute**
+- Full Name: `System.Runtime.CompilerServices.RequiredMemberAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: RequiresLocationAttribute**
+- Full Name: `System.Runtime.CompilerServices.RequiresLocationAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, EditorBrowsableAttribute, ExcludeFromCodeCoverageAttribute
+
+**Class: SkipLocalsInitAttribute**
+- Full Name: `System.Runtime.CompilerServices.SkipLocalsInitAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+### Namespace: System.Runtime.Versioning
+
+**Class: RequiresPreviewFeaturesAttribute**
+- Full Name: `System.Runtime.Versioning.RequiresPreviewFeaturesAttribute`
+- Inherits from: `System.Attribute`
+- Implements: `System.Runtime.InteropServices._Attribute`
+- Attributes: NullableContextAttribute, NullableAttribute, AttributeUsageAttribute, ExcludeFromCodeCoverageAttribute
+
+## Key Methods
+
+- `public virtual <>f__AnonymousType0`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType0`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType0`2.ToString()` → `System.String`
+- `public <>f__AnonymousType0`2.GetType()` → `System.Type`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.GetHashCode()` → `System.Int32`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public Microsoft.CodeAnalysis.EmbeddedAttribute.GetType()` → `System.Type`
+- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.IsReadOnlyAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.IsReadOnlyAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.IsReadOnlyAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.IsReadOnlyAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.IsReadOnlyAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.IsReadOnlyAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.NullableAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.NullableAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.NullableAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.NullableAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.NullableAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.NullableAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.NullableContextAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.NullableContextAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.NullableContextAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.NullableContextAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.NullableContextAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.NullableContextAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.RefSafetyRulesAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.RefSafetyRulesAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.RefSafetyRulesAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.RefSafetyRulesAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.RefSafetyRulesAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.RefSafetyRulesAttribute.ToString()` → `System.String`
+- `public static System.Index.FromStart(System.Int32 value)` → `System.Index`
+- `public static System.Index.FromEnd(System.Int32 value)` → `System.Index`
+- `public System.Index.GetOffset(System.Int32 length)` → `System.Int32`
+- `public virtual System.Index.Equals(System.Object value)` → `System.Boolean`
+- `public virtual System.Index.Equals(System.Index other)` → `System.Boolean`
+- `public virtual System.Index.GetHashCode()` → `System.Int32`
+- `public virtual System.Index.ToString()` → `System.String`
+- `public System.Index.GetType()` → `System.Type`
+- `public virtual System.Range.Equals(System.Object value)` → `System.Boolean`
+- `public virtual System.Range.Equals(System.Range other)` → `System.Boolean`
+- `public virtual System.Range.GetHashCode()` → `System.Int32`
+- `public virtual System.Range.ToString()` → `System.String`
+- `public static System.Range.StartAt(System.Index start)` → `System.Range`
+- `public static System.Range.EndAt(System.Index end)` → `System.Range`
+- `public System.Range.GetOffsetAndLength(System.Int32 length)` → `System.ValueTuple`2[System.Int32,System.Int32]`
+- `public System.Range.GetType()` → `System.Type`
+- `public virtual System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.CollectionBuilderAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.CollectionBuilderAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.CollectionBuilderAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.CollectionBuilderAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.CollectionBuilderAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.CollectionBuilderAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.IsExternalInit.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.IsExternalInit.GetHashCode()` → `System.Int32`
+- `public System.Runtime.CompilerServices.IsExternalInit.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.IsExternalInit.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.ModuleInitializerAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.ModuleInitializerAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.ModuleInitializerAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.ModuleInitializerAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public System.Runtime.CompilerServices.ModuleInitializerAttribute.GetType()` → `System.Type`
+- `public virtual System.Runtime.CompilerServices.ModuleInitializerAttribute.ToString()` → `System.String`
+- `public virtual System.Runtime.CompilerServices.RequiredMemberAttribute.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.RequiredMemberAttribute.GetHashCode()` → `System.Int32`
+- `public virtual System.Runtime.CompilerServices.RequiredMemberAttribute.Match(System.Object obj)` → `System.Boolean`
+- `public virtual System.Runtime.CompilerServices.RequiredMemberAttribute.IsDefaultAttribute()` → `System.Boolean`
+## Key Properties
+
+- `<>f__AnonymousType0`2.Lefts`: `<Lefts>j__TPar` (read-only)
+- `<>f__AnonymousType0`2.Rights`: `<Rights>j__TPar` (read-only)
+- `Microsoft.CodeAnalysis.EmbeddedAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.IsReadOnlyAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.NullableAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.NullableContextAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.RefSafetyRulesAttribute.TypeId`: `System.Object` (read-only)
+- `System.Index.Start`: `System.Index` (read-only)
+- `System.Index.End`: `System.Index` (read-only)
+- `System.Index.Value`: `System.Int32` (read-only)
+- `System.Index.IsFromEnd`: `System.Boolean` (read-only)
+- `System.Range.Start`: `System.Index` (read-only)
+- `System.Range.End`: `System.Index` (read-only)
+- `System.Range.All`: `System.Range` (read-only)
+- `System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.Message`: `System.String` (read-only)
+- `System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.Url`: `System.String` (read-write)
+- `System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.ParameterName`: `System.String` (read-only)
+- `System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.CollectionBuilderAttribute.BuilderType`: `System.Type` (read-only)
+- `System.Runtime.CompilerServices.CollectionBuilderAttribute.MethodName`: `System.String` (read-only)
+- `System.Runtime.CompilerServices.CollectionBuilderAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.FeatureName`: `System.String` (read-only)
+- `System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.IsOptional`: `System.Boolean` (read-write)
+- `System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Arguments`: `System.String[]` (read-only)
+- `System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.ModuleInitializerAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.RequiredMemberAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.RequiresLocationAttribute.TypeId`: `System.Object` (read-only)
+- `System.Runtime.CompilerServices.SkipLocalsInitAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.AllowNullAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.DisallowNullAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.DoesNotReturnAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute.ParameterValue`: `System.Boolean` (read-only)
+- `System.Diagnostics.CodeAnalysis.DoesNotReturnIfAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.ExperimentalAttribute.DiagnosticId`: `System.String` (read-only)
+- `System.Diagnostics.CodeAnalysis.ExperimentalAttribute.UrlFormat`: `System.String` (read-write)
+- `System.Diagnostics.CodeAnalysis.ExperimentalAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.MaybeNullAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.ReturnValue`: `System.Boolean` (read-only)
+- `System.Diagnostics.CodeAnalysis.MaybeNullWhenAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.Members`: `System.String[]` (read-only)
+- `System.Diagnostics.CodeAnalysis.MemberNotNullAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.ReturnValue`: `System.Boolean` (read-only)
+- `System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.Members`: `System.String[]` (read-only)
+- `System.Diagnostics.CodeAnalysis.MemberNotNullWhenAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.NotNullAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute.ParameterName`: `System.String` (read-only)
+- `System.Diagnostics.CodeAnalysis.NotNullIfNotNullAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.ReturnValue`: `System.Boolean` (read-only)
+- `System.Diagnostics.CodeAnalysis.NotNullWhenAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.SetsRequiredMembersAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.Syntax`: `System.String` (read-only)
+- `System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.Arguments`: `System.Object[]` (read-only)
+- `System.Diagnostics.CodeAnalysis.StringSyntaxAttribute.TypeId`: `System.Object` (read-only)
+- `System.Diagnostics.CodeAnalysis.UnscopedRefAttribute.TypeId`: `System.Object` (read-only)
+- `PX.Security.ConstantTimeStringComparer.HashCodeSize50`: `PX.Security.ConstantTimeStringComparer` (read-only)
+- `PX.Security.ConstantTimeStringComparer.HashCodeSize100`: `PX.Security.ConstantTimeStringComparer` (read-only)
+- `PX.Security.ConstantTimeStringComparer.HashCodeSize`: `System.Int32` (read-only)
+- `PX.Data.ITodayUtc.TodayUtc`: `System.DateTime` (read-only)
+- `PX.Data.IRelativeDatesManager.Today`: `System.DateTime` (read-only)
+- `PX.Data.RelativeDatesManager.AllVariables`: `System.String[]` (read-only)
+- `PX.Data.RelativeDates.Add.ArgumentCount`: `System.Int32` (read-only)
+- `PX.Data.RelativeDates.Add.Precedence`: `System.Int32` (read-only)
+- `PX.Data.RelativeDates.Add.Associativity`: `PX.Data.RelativeDates.Associativity` (read-only)
+- `PX.Data.RelativeDates.Operator.ArgumentCount`: `System.Int32` (read-only)
+- `PX.Data.RelativeDates.Operator.Precedence`: `System.Int32` (read-only)
+- `PX.Data.RelativeDates.Operator.Associativity`: `PX.Data.RelativeDates.Associativity` (read-only)
+- `PX.Data.RelativeDates.LeftAssociativeOperator.Associativity`: `PX.Data.RelativeDates.Associativity` (read-only)
+- `PX.Data.RelativeDates.LeftAssociativeOperator.ArgumentCount`: `System.Int32` (read-only)
+- `PX.Data.RelativeDates.LeftAssociativeOperator.Precedence`: `System.Int32` (read-only)
+- `PX.Data.RelativeDates.Substract.Precedence`: `System.Int32` (read-only)
+- `PX.Data.RelativeDates.Substract.ArgumentCount`: `System.Int32` (read-only)
+- `PX.Data.RelativeDates.Substract.Associativity`: `PX.Data.RelativeDates.Associativity` (read-only)
+- `PX.Data.RelativeDates.DateValue.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.FinancialPeriodStart.Todayer`: `PX.Data.ITodayUtc` (read-write)
+- `PX.Data.RelativeDates.FinancialPeriodStart.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.FinancialPeriodEnd.Todayer`: `PX.Data.ITodayUtc` (read-write)
+- `PX.Data.RelativeDates.FinancialPeriodEnd.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.MonthStart.Todayer`: `PX.Data.ITodayUtc` (read-write)
+- `PX.Data.RelativeDates.MonthStart.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.MonthEnd.Todayer`: `PX.Data.ITodayUtc` (read-write)
+- `PX.Data.RelativeDates.MonthEnd.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.QuarterStart.Todayer`: `PX.Data.ITodayUtc` (read-write)
+- `PX.Data.RelativeDates.QuarterStart.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.QuarterEnd.Todayer`: `PX.Data.ITodayUtc` (read-write)
+- `PX.Data.RelativeDates.QuarterEnd.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.TodayConstant.TodayUtc`: `System.DateTime` (read-only)
+- `PX.Data.RelativeDates.TodayUTC.TodayUtc`: `System.DateTime` (read-only)
+- `PX.Data.RelativeDates.Today.Todayer`: `PX.Data.ITodayUtc` (read-write)
+- `PX.Data.RelativeDates.Today.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.WeekStart.Todayer`: `PX.Data.ITodayUtc` (read-write)
+- `PX.Data.RelativeDates.WeekStart.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.WeekEnd.Todayer`: `PX.Data.ITodayUtc` (read-write)
+- `PX.Data.RelativeDates.WeekEnd.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.YearStart.Todayer`: `PX.Data.ITodayUtc` (read-write)
+- `PX.Data.RelativeDates.YearStart.Value`: `System.DateTime` (read-write)
+- `PX.Data.RelativeDates.YearEnd.Todayer`: `PX.Data.ITodayUtc` (read-write)
+## Inheritance Hierarchies
+
+**Base: `System.Object`**
+  - `<>f__AnonymousType0`2`
+  - `System.Runtime.CompilerServices.IsExternalInit`
+  - `System.Linq.JoinToDictionary`
+  - `Microsoft.Extensions.Logging.LoggerExtensions`
+  - `PX.Security.ConstantTimeStringComparer`
+  - `PX.Data.RelativeDatesManager`
+  - `PX.Data.RelativeDatesServiceCollectionExtensions`
+  - `PX.Data.RelativeDates.InfixParser`
+  - `PX.Data.RelativeDates.RPNCalculator`
+  - `PX.Data.RelativeDates.ShuntingYardParser`
+
+**Base: `System.Attribute`**
+  - `Microsoft.CodeAnalysis.EmbeddedAttribute`
+  - `System.Runtime.CompilerServices.IsReadOnlyAttribute`
+  - `System.Runtime.CompilerServices.NullableAttribute`
+  - `System.Runtime.CompilerServices.NullableContextAttribute`
+  - `System.Runtime.CompilerServices.RefSafetyRulesAttribute`
+  - `System.Runtime.Versioning.RequiresPreviewFeaturesAttribute`
+  - `System.Runtime.CompilerServices.CallerArgumentExpressionAttribute`
+  - `System.Runtime.CompilerServices.CollectionBuilderAttribute`
+  - `System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute`
+  - `System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute`
+
+**Base: `System.ValueType`**
+  - `System.Index`
+  - `System.Range`
+  - `PX.Common.MemProfilerTypeInfo`
+  - `PX.Common.PXReaderWriterScope`
+  - `PX.Common.Sign`
+  - `PX.Common.Service.Version`
+  - `PX.Common.Collection.LinkEntry`2`
+  - `Microsoft.Extensions.Logging.LoggerExtensions+PropertyHolder`
+  - `PX.Common.Trie+Bucket`
+  - `PX.Common.FastDictionary`2+DictionaryEntry`
+
+**Base: `PX.Data.RelativeDates.Token`**
+  - `PX.Data.RelativeDates.Function`
+  - `PX.Data.RelativeDates.Operator`
+  - `PX.Data.RelativeDates.Value`
+
+**Base: `PX.Data.RelativeDates.LeftAssociativeOperator`**
+  - `PX.Data.RelativeDates.Add`
+  - `PX.Data.RelativeDates.Substract`
+
+**Base: `System.Enum`**
+  - `PX.Data.RelativeDates.Associativity`
+  - `PX.Common.AsyncOP_State`
+  - `PX.Common.BindInfoProtocol`
+  - `PX.Common.IO.SizeExceededAction`
+  - `PX.Common.GS1.DataType`
+  - `PX.Common.MultiValueDictionary`2+EnumerationState`
+  - `PX.Common.PXReaderWriterScope+LockState`
+
+**Base: `PX.Data.RelativeDates.Operator`**
+  - `PX.Data.RelativeDates.LeftAssociativeOperator`
+
+**Base: `PX.Data.RelativeDates.Value`**
+  - `PX.Data.RelativeDates.DateValue`
+  - `PX.Data.RelativeDates.NumberValue`
+
+**Base: `PX.Data.RelativeDates.Today`**
+  - `PX.Data.RelativeDates.FinancialPeriodStart`
+  - `PX.Data.RelativeDates.MonthStart`
+  - `PX.Data.RelativeDates.QuarterStart`
+  - `PX.Data.RelativeDates.WeekStart`
+
+**Base: `PX.Data.RelativeDates.FinancialPeriodStart`**
+  - `PX.Data.RelativeDates.FinancialPeriodEnd`
+
+**Base: `PX.Data.RelativeDates.MonthStart`**
+  - `PX.Data.RelativeDates.MonthEnd`
+  - `PX.Data.RelativeDates.YearStart`
+
+**Base: `PX.Data.RelativeDates.QuarterStart`**
+  - `PX.Data.RelativeDates.QuarterEnd`
+
+**Base: `PX.Data.RelativeDates.DateValue`**
+  - `PX.Data.RelativeDates.Today`
+
+**Base: `PX.Data.RelativeDates.WeekStart`**
+  - `PX.Data.RelativeDates.WeekEnd`
+
+**Base: `PX.Data.RelativeDates.YearStart`**
+  - `PX.Data.RelativeDates.YearEnd`
+
+**Base: `None`**
+  - `PX.Common.ChainEventArgs`1`
+  - `PX.Common.NestedDictionary`3`
+  - `PX.Common.NestedDictionary`4`
+  - `PX.Common.NestedDictionary`5`
+  - `PX.Common.NestedDictionary`6`
+  - `PX.Common.Collection.DList`2`
+  - `PX.Common.Collection.Set`1`
+  - `PX.Common.TypeArrayOf`1+Empty`
+  - `PX.Common.TypeArrayOf`1+FilledWith`1`
+  - `PX.Common.TypeArrayOf`1+FilledWith`2`
+
+**Base: `PX.Common.ArrayComparer`1[[System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`**
+  - `PX.Common.ArrayComparer`
+
+**Base: `PX.Common.Composite`**
+  - `PX.Common.Composite`1`
+  - `PX.Common.Composite`2`
+  - `PX.Common.Composite`3`
+  - `PX.Common.Composite`4`
+  - `PX.Common.Composite`5`
+  - `PX.Common.Composite`6`
+  - `PX.Common.Composite`7`
+  - `PX.Common.Composite`8`
+
+**Base: `System.EventArgs`**
+  - `PX.Common.EventArgs`1`
+  - `PX.Common.ExceptionEventArgs`
+
+**Base: `System.IO.Stream`**
+  - `PX.Common.StringStream`
+  - `PX.Common.SparseMemoryStream`
+  - `PX.Common.IO.Base64Stream`
+  - `PX.Common.IO.JunkingStream`
+  - `PX.Common.IO.QuotedPrintableStream`
+  - `PX.Common.IO.ReadWriteControlledStream`
+  - `PX.Common.IO.SmartStream`

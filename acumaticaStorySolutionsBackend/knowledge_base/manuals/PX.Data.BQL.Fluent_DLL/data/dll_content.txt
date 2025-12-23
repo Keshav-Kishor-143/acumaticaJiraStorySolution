@@ -1,0 +1,457 @@
+# Assembly: PX.Data.BQL.Fluent
+Version: 1.0.0.0
+DLL: PX.Data.BQL.Fluent
+
+## Namespaces and Classes
+
+### Namespace: PX.Data.BQL.Fluent
+
+**Class: FbqlCommand**
+- Full Name: `PX.Data.BQL.Fluent.FbqlCommand`
+- Inherits from: `PX.Data.BQL.BqlCommandDecorator`
+- Implements: `PX.Data.IBqlCreator`, `PX.Data.IBqlVerifier`, `PX.Data.IHasBqlWhere`
+
+**Class: FbqlCommandParser**
+- Full Name: `PX.Data.BQL.Fluent.FbqlCommandParser`
+- Inherits from: `System.Object`
+
+**Class: FbqlParseResult**
+- Full Name: `PX.Data.BQL.Fluent.FbqlParseResult`
+- Inherits from: `System.ValueType`
+
+**Interface: IFbqlJoin**
+- Full Name: `PX.Data.BQL.Fluent.IFbqlJoin`
+
+**Class: FbqlJoins**
+- Full Name: `PX.Data.BQL.Fluent.FbqlJoins`
+- Inherits from: `System.Object`
+
+**Class: PXProcessingViewOf`1**
+- Full Name: `PX.Data.BQL.Fluent.PXProcessingViewOf`1`
+- Implements: `PX.Data.IPXProcessing`, `PX.Data.IPXProcessingWithCustomDelegate`, `PX.Data.IPXProcessingWithOuterViewCache`
+
+**Class: PXViewOf`1**
+- Full Name: `PX.Data.BQL.Fluent.PXViewOf`1`
+
+**Class: By**
+- Full Name: `PX.Data.BQL.Fluent.By`
+- Inherits from: `PX.Common.TypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: By`1**
+- Full Name: `PX.Data.BQL.Fluent.By`1`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`2**
+- Full Name: `PX.Data.BQL.Fluent.By`2`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`3**
+- Full Name: `PX.Data.BQL.Fluent.By`3`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`4**
+- Full Name: `PX.Data.BQL.Fluent.By`4`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`5**
+- Full Name: `PX.Data.BQL.Fluent.By`5`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`6**
+- Full Name: `PX.Data.BQL.Fluent.By`6`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`7**
+- Full Name: `PX.Data.BQL.Fluent.By`7`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`8**
+- Full Name: `PX.Data.BQL.Fluent.By`8`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`9**
+- Full Name: `PX.Data.BQL.Fluent.By`9`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`10**
+- Full Name: `PX.Data.BQL.Fluent.By`10`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`11**
+- Full Name: `PX.Data.BQL.Fluent.By`11`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`12**
+- Full Name: `PX.Data.BQL.Fluent.By`12`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`13**
+- Full Name: `PX.Data.BQL.Fluent.By`13`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`14**
+- Full Name: `PX.Data.BQL.Fluent.By`14`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`15**
+- Full Name: `PX.Data.BQL.Fluent.By`15`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`16**
+- Full Name: `PX.Data.BQL.Fluent.By`16`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`17**
+- Full Name: `PX.Data.BQL.Fluent.By`17`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`18**
+- Full Name: `PX.Data.BQL.Fluent.By`18`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`19**
+- Full Name: `PX.Data.BQL.Fluent.By`19`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`20**
+- Full Name: `PX.Data.BQL.Fluent.By`20`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`21**
+- Full Name: `PX.Data.BQL.Fluent.By`21`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`22**
+- Full Name: `PX.Data.BQL.Fluent.By`22`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`23**
+- Full Name: `PX.Data.BQL.Fluent.By`23`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`24**
+- Full Name: `PX.Data.BQL.Fluent.By`24`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`25**
+- Full Name: `PX.Data.BQL.Fluent.By`25`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`26**
+- Full Name: `PX.Data.BQL.Fluent.By`26`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`27**
+- Full Name: `PX.Data.BQL.Fluent.By`27`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`28**
+- Full Name: `PX.Data.BQL.Fluent.By`28`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`29**
+- Full Name: `PX.Data.BQL.Fluent.By`29`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`30**
+- Full Name: `PX.Data.BQL.Fluent.By`30`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`31**
+- Full Name: `PX.Data.BQL.Fluent.By`31`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: By`32**
+- Full Name: `PX.Data.BQL.Fluent.By`32`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: To**
+- Full Name: `PX.Data.BQL.Fluent.To`
+- Inherits from: `PX.Common.TypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`
+
+**Class: To`1**
+- Full Name: `PX.Data.BQL.Fluent.To`1`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: To`2**
+- Full Name: `PX.Data.BQL.Fluent.To`2`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: To`3**
+- Full Name: `PX.Data.BQL.Fluent.To`3`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: To`4**
+- Full Name: `PX.Data.BQL.Fluent.To`4`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: To`5**
+- Full Name: `PX.Data.BQL.Fluent.To`5`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: To`6**
+- Full Name: `PX.Data.BQL.Fluent.To`6`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: To`7**
+- Full Name: `PX.Data.BQL.Fluent.To`7`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: To`8**
+- Full Name: `PX.Data.BQL.Fluent.To`8`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+**Class: To`9**
+- Full Name: `PX.Data.BQL.Fluent.To`9`
+- Implements: `PX.Common.ITypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`, `None`, `PX.Common.TypeArray+IsNotEmpty`
+
+## Key Methods
+
+- `public static PX.Data.BQL.Fluent.FbqlCommand.UnwrapCommandType(System.Type bqlCommandType)` → `System.Type`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.GetWhere()` → `PX.Data.IBqlWhere`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.Verify(PX.Data.PXCache cache, System.Object item, System.Collections.Generic.List`1[System.Object] pars...)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.AppendExpression(PX.Data.SQLTree.SQLExpression& exp, PX.Data.PXGraph graph, PX.Data.BqlCommandInfo info...)` → `System.Boolean`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.GetQueryInternal(PX.Data.PXGraph graph, PX.Data.BqlCommandInfo info, PX.Data.BqlCommand+Selection selection)` → `PX.Data.SQLTree.Query`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.GetFirstTable()` → `System.Type`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.GetSelectType()` → `System.Type`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereNew()` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereNew(System.Type newWhere)` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereAnd()` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereAnd(System.Type where)` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereOr()` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereOr(System.Type where)` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereNot()` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.OrderByNew()` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.OrderByNew(System.Type newOrderBy)` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.AggregateNew()` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.AggregateNew(System.Type newAggregate)` → `PX.Data.BqlCommand`
+- `public PX.Data.BQL.Fluent.FbqlCommand.GetOriginalType()` → `System.Type`
+- `public PX.Data.BQL.Fluent.FbqlCommand.Unwrap()` → `PX.Data.BqlCommand`
+- `public PX.Data.BQL.Fluent.FbqlCommand.Meet(PX.Data.PXCache cache, System.Object item, System.Object[] parameters)` → `System.Boolean`
+- `public PX.Data.BQL.Fluent.FbqlCommand.GetQuery(PX.Data.PXGraph graph, PX.Data.PXView view)` → `PX.Data.SQLTree.Query`
+- `public PX.Data.BQL.Fluent.FbqlCommand.GetTables()` → `System.Type[]`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.ToString()` → `System.String`
+- `public PX.Data.BQL.Fluent.FbqlCommand.GetParameters()` → `PX.Data.IBqlParameter[]`
+- `public PX.Data.BQL.Fluent.FbqlCommand.GetParameterPairs()` → `System.Collections.Generic.List`1[System.Collections.Generic.KeyValuePair`2[System.Type,System.Type]]`
+- `public PX.Data.BQL.Fluent.FbqlCommand.GetParameterPairs(System.Type command)` → `System.Collections.Generic.List`1[System.Collections.Generic.KeyValuePair`2[System.Type,System.Type]]`
+- `public PX.Data.BQL.Fluent.FbqlCommand.GetReferencedFields(System.Boolean strictEquality)` → `System.Type[]`
+- `public PX.Data.BQL.Fluent.FbqlCommand.GetSortColumns()` → `PX.Data.IBqlSortColumn[]`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommand.GetHashCode()` → `System.Int32`
+- `public PX.Data.BQL.Fluent.FbqlCommand.GetType()` → `System.Type`
+- `public static PX.Data.BQL.Fluent.FbqlCommandParser.ConvertSelectToSearch(System.Type bqlSelectType)` → `PX.Data.BqlCommand`
+- `public static PX.Data.BQL.Fluent.FbqlCommandParser.CreateBqlCommand(System.Type queryPattern, System.Type table, System.Type joinArray...)` → `PX.Data.BQL.Fluent.FbqlParseResult`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommandParser.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommandParser.GetHashCode()` → `System.Int32`
+- `public PX.Data.BQL.Fluent.FbqlCommandParser.GetType()` → `System.Type`
+- `public virtual PX.Data.BQL.Fluent.FbqlCommandParser.ToString()` → `System.String`
+- `public virtual PX.Data.BQL.Fluent.FbqlParseResult.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual PX.Data.BQL.Fluent.FbqlParseResult.ToString()` → `System.String`
+- `public virtual PX.Data.BQL.Fluent.FbqlParseResult.GetHashCode()` → `System.Int32`
+- `public PX.Data.BQL.Fluent.FbqlParseResult.GetType()` → `System.Type`
+- `public virtual PX.Data.BQL.Fluent.FbqlJoins.Equals(System.Object obj)` → `System.Boolean`
+- `public virtual PX.Data.BQL.Fluent.FbqlJoins.GetHashCode()` → `System.Int32`
+- `public PX.Data.BQL.Fluent.FbqlJoins.GetType()` → `System.Type`
+- `public virtual PX.Data.BQL.Fluent.FbqlJoins.ToString()` → `System.String`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.TrySetRefIdGetter(System.Func`3[PX.Data.PXCache,System.Object,System.Nullable`1[System.Guid]] getter, System.String refIdBqlField)` → `System.Boolean`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessCaption(System.String caption)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessTooltip(System.String tooltip)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllCaption(System.String caption)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllTooltip(System.String tooltip)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessEnabled(System.Boolean enabled)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllEnabled(System.Boolean enabled)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessVisible(System.Boolean visible)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllVisible(System.Boolean visible)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDisplayOnMainToolbar(System.Boolean displayOnMainToolbar)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllDisplayOnMainToolbar(System.Boolean displayOnMainToolbar)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessIsLockedOnToolbar(System.Boolean isLockedOnToolbar)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllIsLockedOnToolbar(System.Boolean isLockedOnToolbar)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetAdditionalFilters(PX.Data.PXFilterRow[] addFilters)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetAutoPersist(System.Boolean autoPersist)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetSelected()` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetParametersDelegate(PX.Data.PXProcessingBase`1+ParametersDelegate[TTable] handler)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.OrderByNew()` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.Join()` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessTarget(System.String graphType, System.String stepID, System.String action...)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessTarget(System.String graphType, System.String stepID, System.String action...)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessWorkflowAction(System.String action)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessWorkflowAction(System.String action, System.Object[] parameters)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessWorkflowAction(System.String action, System.Collections.Generic.Dictionary`2[System.String,System.Object] parameters)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessWorkflowAction(System.String actionName)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessWorkflowAction(System.Linq.Expressions.Expression`1[System.Func`2[TGraph,PX.Data.PXAction]] actionSelector)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(System.Action`2[System.Collections.Generic.List`1[TTable],System.Threading.CancellationToken] handler)` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetAsyncProcessDelegate(System.Func`3[System.Collections.Generic.List`1[TTable],System.Threading.CancellationToken,System.Threading.Tasks.Task] handler)` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(PX.Data.PXProcessingBase`1+ProcessListDelegate[TTable] handler)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(System.Action`2[TTable,System.Threading.CancellationToken] handler)` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetAsyncProcessDelegate(System.Func`3[TTable,System.Threading.CancellationToken,System.Threading.Tasks.Task] handler)` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(PX.Data.PXProcessingBase`1+ProcessItemDelegate[TTable] handler)` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(System.Action`3[Graph,TTable,System.Threading.CancellationToken] handler)` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(PX.Data.PXProcessingBase`1+ProcessItemDelegate`1[TTable,Graph] handler)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(System.Action`3[Graph,TTable,System.Threading.CancellationToken] handler, System.Action`2[Graph,System.Threading.CancellationToken] handlerFinally)` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetAsyncProcessDelegate(System.Func`4[Graph,TTable,System.Threading.CancellationToken,System.Threading.Tasks.Task] handler, System.Func`3[Graph,System.Threading.CancellationToken,System.Threading.Tasks.Task] handlerFinally)` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(PX.Data.PXProcessingBase`1+ProcessItemDelegate`1[TTable,Graph] handler, PX.Data.PXProcessingBase`1+FinallyProcessDelegate`1[TTable,Graph] handlerFinally)` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.ClearDialog()` → `System.Void`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String header, System.String message, PX.Data.MessageButtons buttons...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String header, System.String message, PX.Data.MessageButtons buttons)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String message, PX.Data.MessageButtons buttons)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, TTable row, System.String header...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, TTable row, System.String header...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(TTable row, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(TTable row, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String header, System.String message, PX.Data.MessageButtons buttons...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String header, System.String message, PX.Data.MessageButtons buttons...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, TTable row, System.String header...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, TTable row, System.String header...)` → `PX.Data.WebDialogResult`
+- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(TTable row, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
+## Key Properties
+
+- `PX.Data.BQL.Fluent.FbqlParseResult.BqlCommand`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlParseResult.HasJoin`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlParseResult.HasWhere`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlParseResult.HasAggregate`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlParseResult.HasOrder`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.IFbqlJoin.ChainedJoin`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.IFbqlJoin.SimpleJoin`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.IFbqlJoin.Table`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.IFbqlJoin.Condition`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.GetRefIdDelegate`: `System.Func`3[PX.Data.PXCache,System.Object,System.Nullable`1[System.Guid]]` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.RefIdBqlField`: `System.String` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.SuppressMerge`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.SuppressUpdate`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.OuterViewCache`: `PX.Data.PXCache` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.CustomViewDelegate`: `System.Delegate` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.Current`: `TTable` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.Attributes`: `System.Collections.Generic.List`1[System.Attribute]` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.Cache`: `PX.Data.PXCache` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.AllowSelect`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.AllowInsert`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.AllowUpdate`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.AllowDelete`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1.Name`: `System.String` (read-only)
+- `PX.Data.BQL.Fluent.PXViewOf`1.Current`: `TTable` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1.Attributes`: `System.Collections.Generic.List`1[System.Attribute]` (read-only)
+- `PX.Data.BQL.Fluent.PXViewOf`1.Cache`: `PX.Data.PXCache` (read-only)
+- `PX.Data.BQL.Fluent.PXViewOf`1.AllowSelect`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1.AllowInsert`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1.AllowUpdate`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1.AllowDelete`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1.Name`: `System.String` (read-only)
+- `PX.Data.BQL.Fluent.FbqlSelect`2.HasJoinBlock`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlSelect`2.HasWhereBlock`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlSelect`2.HasAggregateBlock`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlSelect`2.HasOrderBlock`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlSelect`7.HasJoinBlock`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlSelect`7.HasWhereBlock`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlSelect`7.HasAggregateBlock`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlSelect`7.HasOrderBlock`: `System.Boolean` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.QueryPattern`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.Table`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.JoinArray`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.Condition`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.GroupByArray`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.GroupCondition`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.OrderByArray`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.Item1`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.Item2`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.Item3`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.Item4`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.Item5`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.Item6`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey.Item7`: `System.Type` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.ViewName`: `System.String` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.ProcessAllActionKey`: `System.String` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.ShowSelectedOnly`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.GetRefIdDelegate`: `System.Func`3[PX.Data.PXCache,System.Object,System.Nullable`1[System.Guid]]` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.RefIdBqlField`: `System.String` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.SuppressMerge`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.SuppressUpdate`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.OuterViewCache`: `PX.Data.PXCache` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.CustomViewDelegate`: `System.Delegate` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.Current`: `TTable` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.Attributes`: `System.Collections.Generic.List`1[System.Attribute]` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.Cache`: `PX.Data.PXCache` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.AllowSelect`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.AllowInsert`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.AllowUpdate`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.AllowDelete`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+FilteredBy`1.Name`: `System.String` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.GetRefIdDelegate`: `System.Func`3[PX.Data.PXCache,System.Object,System.Nullable`1[System.Guid]]` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.RefIdBqlField`: `System.String` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.SuppressMerge`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.SuppressUpdate`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.OuterViewCache`: `PX.Data.PXCache` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.CustomViewDelegate`: `System.Delegate` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.Current`: `TTable` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.Attributes`: `System.Collections.Generic.List`1[System.Attribute]` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.Cache`: `PX.Data.PXCache` (read-only)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.AllowSelect`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.AllowInsert`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.AllowUpdate`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.AllowDelete`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.Name`: `System.String` (read-only)
+- `PX.Data.BQL.Fluent.PXViewOf`1+Readonly.Current`: `TTable` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1+Readonly.Attributes`: `System.Collections.Generic.List`1[System.Attribute]` (read-only)
+- `PX.Data.BQL.Fluent.PXViewOf`1+Readonly.Cache`: `PX.Data.PXCache` (read-only)
+- `PX.Data.BQL.Fluent.PXViewOf`1+Readonly.AllowSelect`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1+Readonly.AllowInsert`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1+Readonly.AllowUpdate`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1+Readonly.AllowDelete`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1+Readonly.Name`: `System.String` (read-only)
+- `PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1.Current`: `TTable` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1.Attributes`: `System.Collections.Generic.List`1[System.Attribute]` (read-only)
+- `PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1.Cache`: `PX.Data.PXCache` (read-only)
+- `PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1.AllowSelect`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1.AllowInsert`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1.AllowUpdate`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1.AllowDelete`: `System.Boolean` (read-write)
+- `PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1.Name`: `System.String` (read-only)
+## Inheritance Hierarchies
+
+**Base: `PX.Data.BQL.BqlCommandDecorator`**
+  - `PX.Data.BQL.Fluent.FbqlCommand`
+
+**Base: `System.Object`**
+  - `PX.Data.BQL.Fluent.FbqlCommandParser`
+  - `PX.Data.BQL.Fluent.FbqlJoins`
+  - `PX.Data.BQL.Fluent.FbqlUpdateBase`6`
+  - `PX.Data.BQL.Fluent.Update`1`
+  - `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlToBqlSelectCommandTypesMap`
+  - `PX.Data.BQL.Fluent.FbqlCommandParser+<>c`
+  - `PX.Data.BQL.Fluent.FbqlCommandParser+<>c__DisplayClass13_0`
+  - `PX.Data.BQL.Fluent.FbqlJoins+Inner`1`
+  - `PX.Data.BQL.Fluent.FbqlJoins+Left`1`
+  - `PX.Data.BQL.Fluent.FbqlJoins+Right`1`
+
+**Base: `System.ValueType`**
+  - `PX.Data.BQL.Fluent.FbqlParseResult`
+
+**Base: `None`**
+  - `PX.Data.BQL.Fluent.PXProcessingViewOf`1`
+  - `PX.Data.BQL.Fluent.PXViewOf`1`
+  - `PX.Data.BQL.Fluent.By`1`
+  - `PX.Data.BQL.Fluent.By`2`
+  - `PX.Data.BQL.Fluent.By`3`
+  - `PX.Data.BQL.Fluent.By`4`
+  - `PX.Data.BQL.Fluent.By`5`
+  - `PX.Data.BQL.Fluent.By`6`
+  - `PX.Data.BQL.Fluent.By`7`
+  - `PX.Data.BQL.Fluent.By`8`
+
+**Base: `PX.Common.TypeArrayOf`1[[PX.Data.IBqlSortColumn, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Data.BQL.Fluent.By`
+
+**Base: `PX.Common.TypeArrayOf`1[[PX.Data.IBqlFunction, PX.Data, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]`**
+  - `PX.Data.BQL.Fluent.To`
+
+**Base: `PX.Data.BQL.Fluent.FbqlCommand`**
+  - `PX.Data.BQL.Fluent.FbqlSearch`1`
+  - `PX.Data.BQL.Fluent.FbqlSelect`2`
+
+**Base: `System.Tuple`7[[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089],[System.Type, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]`**
+  - `PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey`
