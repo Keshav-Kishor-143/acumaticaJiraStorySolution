@@ -126,6 +126,90 @@ export const processStory = async (storyData, abortController = null) => {
 };
 
 /**
+ * Process a JIRA story with streaming (Server-Sent Events)
+ * @param {Object} storyData - Story data object
+ * @param {Function} onChunk - Callback for each content chunk
+ * @param {Function} onProgress - Callback for progress updates
+ * @param {Function} onComplete - Callback when complete
+ * @param {Function} onError - Callback for errors
+ * @param {AbortController} abortController - Optional AbortController for cancellation
+ */
+export const processStoryStream = async (
+  storyData,
+  onChunk,
+  onProgress,
+  onComplete,
+  onError,
+  abortController = null
+) => {
+  try {
+    const response = await fetch(`${API_CONFIG.baseURL}${API_CONFIG.endpoints.solutions.processStream}`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        ...API_CONFIG.defaultHeaders
+      },
+      body: JSON.stringify({
+        description: storyData.description,
+        acceptance_criteria: storyData.acceptance_criteria,
+        story_id: storyData.story_id || null,
+        title: storyData.title || null,
+        images: storyData.images || []
+      }),
+      signal: abortController?.signal
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const reader = response.body.getReader();
+    const decoder = new TextDecoder();
+    let buffer = '';
+
+    while (true) {
+      const { done, value } = await reader.read();
+      if (done) break;
+
+      buffer += decoder.decode(value, { stream: true });
+      const lines = buffer.split('\n\n');
+      buffer = lines.pop(); // Keep incomplete line in buffer
+
+      for (const line of lines) {
+        if (line.startsWith('data: ')) {
+          try {
+            const data = JSON.parse(line.slice(6));
+            
+            switch (data.type) {
+              case 'progress':
+                onProgress?.(data);
+                break;
+              case 'content':
+                onChunk?.(data.chunk);
+                break;
+              case 'complete':
+                onComplete?.(data);
+                break;
+              case 'error':
+                onError?.(new Error(data.message));
+                break;
+            }
+          } catch (e) {
+            console.error('Failed to parse SSE data:', e);
+          }
+        }
+      }
+    }
+  } catch (error) {
+    if (error.name === 'AbortError') {
+      onError?.(new Error('Request cancelled by user'));
+    } else {
+      onError?.(error);
+    }
+  }
+};
+
+/**
  * Cancel an ongoing story processing request
  * @param {string} requestId - Request ID to cancel
  * @returns {Promise<Object>} Cancellation response

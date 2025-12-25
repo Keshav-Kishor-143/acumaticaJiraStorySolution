@@ -8,7 +8,8 @@ import uuid
 from datetime import datetime
 from typing import Dict, Any, Optional
 from fastapi import APIRouter, HTTPException, Request, Depends
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, StreamingResponse
+import json
 
 from src.api.models.requests import JIRAStoryRequest
 from src.api.models.responses import SolutionResponse, SourceReference, HealthResponse, ManualsListResponse, ManualInfo
@@ -354,14 +355,19 @@ async def process_story(request: JIRAStoryRequest, http_request: Request):
         
         # Step 3: Single comprehensive retrieval with all questions as context
         # Questions guide the retrieval but don't create separate queries
+        # OPTIMIZATION: Use config.TOP_K_RESULTS with reasonable cap for performance
+        # Cap at 8 to balance quality and speed (was TOP_K_RESULTS * 2 which could be 10)
+        optimized_top_k = min(config.TOP_K_RESULTS + 2, 8)  # Max 8 results for faster processing
+        
         comprehensive_result = await rag_service.generate_comprehensive_answer(
             story_context={
                 "description": request.description,
                 "acceptance_criteria": request.acceptance_criteria,
                 "questions": questions  # Pass questions as context, not separate queries
             },
-            top_k=config.TOP_K_RESULTS * 2,  # Get more context for comprehensive answer
-            search_params=unified_search_params
+            top_k=optimized_top_k,  # Optimized: Use config value with cap
+            search_params=unified_search_params,
+            request_id=request_id
         )
         
         await _check_cancellation(request_id)
@@ -502,6 +508,157 @@ async def process_story(request: JIRAStoryRequest, http_request: Request):
             _cancellation_tokens.pop(request_id, None)
         if 'disconnect_task' in locals():
             disconnect_task.cancel()
+
+
+@router.post(
+    "/process-stream",
+    summary="Process JIRA Story (Streaming)",
+    description="Process a JIRA story and stream solution generation in real-time using Server-Sent Events (SSE)",
+    response_class=StreamingResponse
+)
+async def process_story_stream(request: JIRAStoryRequest, http_request: Request):
+    """
+    Stream solution generation in real-time using Server-Sent Events (SSE).
+    This endpoint provides line-by-line solution updates similar to ChatGPT.
+    """
+    request_id = str(uuid.uuid4())
+    start_time = time.time()
+    
+    async def generate_stream():
+        try:
+            # Register request for cancellation
+            async with _get_request_lock():
+                _cancellation_tokens[request_id] = False
+            
+            # Step 1: Extract questions (send progress)
+            yield f"data: {json.dumps({'type': 'progress', 'step': 'extracting_questions', 'message': 'Analyzing story...'})}\n\n"
+            
+            await _check_cancellation(request_id)
+            
+            story_processor, rag_service, solution_generator, markdown_formatter, intent_layer = get_components()
+            
+            # Acceptance criteria is already parsed by frontend, use as-is
+            # IMPORTANT: Do NOT call parse_acceptance_criteria - it doesn't exist!
+            # Frontend sends acceptance_criteria as a list already
+            parsed_criteria = request.acceptance_criteria
+            if isinstance(parsed_criteria, str):
+                # If it's a string, split by newlines (fallback)
+                parsed_criteria = [c.strip() for c in parsed_criteria.split('\n') if c.strip()]
+            elif not isinstance(parsed_criteria, list):
+                parsed_criteria = []
+            
+            # Validate parsed_criteria is a list
+            if not isinstance(parsed_criteria, list):
+                logger.warning("Acceptance criteria is not a list, converting", extra={
+                    "type": type(parsed_criteria).__name__,
+                    "request_id": request_id
+                })
+                parsed_criteria = []
+            
+            questions = story_processor.extract_key_questions({
+                "description": request.description,
+                "acceptance_criteria": parsed_criteria
+            })
+            
+            yield f"data: {json.dumps({'type': 'progress', 'step': 'questions_extracted', 'count': len(questions)})}\n\n"
+            
+            await _check_cancellation(request_id)
+            
+            # Step 2: Intent analysis
+            yield f"data: {json.dumps({'type': 'progress', 'step': 'analyzing_intent', 'message': 'Understanding story intent...'})}\n\n"
+            
+            # Create unified query context for intent analysis (same as regular endpoint)
+            unified_context = f"{request.description}\n\nAcceptance Criteria: {', '.join(parsed_criteria)}"
+            try:
+                intent_analysis = await intent_layer.analyze_query(unified_context)
+                unified_search_params = intent_layer.get_search_parameters(intent_analysis, original_query=unified_context)
+            except Exception as e:
+                logger.warning("Intent analysis failed in streaming endpoint, using standard search", extra={
+                    "request_id": request_id,
+                    "error": str(e)
+                })
+                unified_search_params = None
+            
+            await _check_cancellation(request_id)
+            
+            # Step 3: Retrieval (send progress)
+            yield f"data: {json.dumps({'type': 'progress', 'step': 'searching_knowledge_base', 'message': 'Searching knowledge base...'})}\n\n"
+            
+            optimized_top_k = min(config.TOP_K_RESULTS + 2, 8)
+            
+            comprehensive_result = await rag_service.generate_comprehensive_answer(
+                story_context={
+                    "description": request.description,
+                    "acceptance_criteria": parsed_criteria,
+                    "questions": questions
+                },
+                top_k=optimized_top_k,
+                search_params=unified_search_params,
+                request_id=request_id
+            )
+            
+            await _check_cancellation(request_id)
+            
+            yield f"data: {json.dumps({'type': 'progress', 'step': 'retrieval_complete', 'sources': len(comprehensive_result.get('sources', []))})}\n\n"
+            
+            # Step 4: Stream solution generation
+            yield f"data: {json.dumps({'type': 'progress', 'step': 'generating_solution', 'message': 'Generating solution...'})}\n\n"
+            
+            accumulated_text = ""
+            async for chunk in solution_generator.generate_focused_narrative_stream(
+                story_context={
+                    "description": request.description,
+                    "acceptance_criteria": parsed_criteria
+                },
+                retrieved_content=comprehensive_result,
+                questions=questions
+            ):
+                await _check_cancellation(request_id)
+                if chunk:
+                    accumulated_text += chunk
+                    yield f"data: {json.dumps({'type': 'content', 'chunk': chunk})}\n\n"
+            
+            # Step 5: Format final solution
+            title = request.title or f"Story {request.story_id or 'Solution'}"
+            
+            solution_markdown = markdown_formatter.format_solution(
+                title=title,
+                story_id=request.story_id,
+                questions=questions,
+                answers=[comprehensive_result.get('answer', '')],
+                narrative=accumulated_text,
+                acceptance_criteria=parsed_criteria,
+                sources=comprehensive_result.get('sources', []),
+                metadata={
+                    "processing_time": time.time() - start_time,
+                    "model": config.LLM_MODEL,
+                    "top_k": optimized_top_k
+                }
+            )
+            
+            # Save solution
+            saved_path = save_solution_markdown(solution_markdown, request.story_id, title)
+            
+            # Send complete solution
+            yield f"data: {json.dumps({'type': 'complete', 'solution': solution_markdown, 'saved_file_path': saved_path, 'processing_time': time.time() - start_time})}\n\n"
+            
+        except Exception as e:
+            logger.error("Streaming error", extra={"error": str(e), "request_id": request_id})
+            yield f"data: {json.dumps({'type': 'error', 'message': str(e)})}\n\n"
+        finally:
+            # Cleanup
+            async with _get_request_lock():
+                _cancellation_tokens.pop(request_id, None)
+    
+    return StreamingResponse(
+        generate_stream(),
+        media_type="text/event-stream",
+        headers={
+            "Cache-Control": "no-cache",
+            "Connection": "keep-alive",
+            "X-Accel-Buffering": "no"  # Disable nginx buffering
+        }
+    )
 
 
 @router.post(

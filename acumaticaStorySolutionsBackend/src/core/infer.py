@@ -864,7 +864,7 @@ Focus on accuracy and clarity for customer support."""
             # Re-raise the exception to stop the retry loop
             raise Exception(f"Lightweight vector search failed: {str(e)}")
     
-    def hybrid_search_documents(self, question: str, top_k: int = 3, search_params: Optional[Dict[str, Any]] = None) -> List[Dict[str, Any]]:
+    def hybrid_search_documents(self, question: str, top_k: int = 3, search_params: Optional[Dict[str, Any]] = None, request_id: Optional[str] = None) -> List[Dict[str, Any]]:
         """Enhanced document search using hybrid multi-strategy retrieval"""
         try:
             if not self.use_hybrid_search or not self.hybrid_retriever:
@@ -1531,7 +1531,7 @@ Let me help you with that:
 
 > 📚 Source: This information comes from [Document names]."""
     
-    async def ask_question(self, question: str, top_k: int = 3, max_retries: int = 0, search_params: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
+    async def ask_question(self, question: str, top_k: int = 3, max_retries: int = 0, search_params: Optional[Dict[str, Any]] = None, request_id: Optional[str] = None) -> Dict[str, Any]:
         """ENHANCED QUESTION ANSWERING PIPELINE with Pure Dynamic Intelligence and Cost Tracking"""
         for attempt in range(max_retries + 1):
             try:
@@ -1546,8 +1546,16 @@ Let me help you with that:
                 total_prompt_tokens = 0
                 total_completion_tokens = 0
                 
+                # Check cancellation
+                if request_id:
+                    try:
+                        from src.api.routes.solutions import _check_cancellation
+                        await _check_cancellation(request_id)
+                    except ImportError:
+                        pass  # Cancellation check not available
+                
                 # Step 1: Enhanced multi-strategy document search with intent parameters
-                similar_docs = self.hybrid_search_documents(question, top_k, search_params=search_params)
+                similar_docs = self.hybrid_search_documents(question, top_k, search_params=search_params, request_id=request_id)
                 if search_params:
                     self.logger.info("Using intent-based search parameters", extra={
                         "target_docs": search_params.get("target_directories", []),

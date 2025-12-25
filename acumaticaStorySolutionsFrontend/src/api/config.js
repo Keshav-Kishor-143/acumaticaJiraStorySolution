@@ -24,6 +24,7 @@ const API_CONFIG = {
     health: '/health',
     solutions: {
       process: '/solutions/process',
+      processStream: '/solutions/process-stream', // Streaming endpoint
       health: '/solutions/health',
       manuals: '/solutions/manuals',
       cancel: '/solutions/cancel' // Cancel endpoint

@@ -866,8 +866,159 @@ Return ONLY the extracted technical information without commentary. Preserve all
             })
             return ""
     
+    async def _enhance_with_vision_async(self, search_results: List[SearchResult], query: str = "") -> List[SearchResult]:
+        """Parallel Vision API processing for faster performance"""
+        MAX_RETRIES = 3
+        RETRY_DELAY = 1  # seconds
+        MAX_CONCURRENT = 5  # Limit concurrent Vision API calls
+        
+        import asyncio
+        import time
+        import base64
+        from pathlib import Path
+        
+        async def process_single_result(result: SearchResult, semaphore: asyncio.Semaphore):
+            """Process a single result with Vision API"""
+            async with semaphore:
+                # Skip if no image path or already has vision text
+                if not result.image_path:
+                    return result
+                
+                # Check if vision text already extracted (from hybrid retriever)
+                if hasattr(result, 'vision_extracted_text') and result.vision_extracted_text:
+                    if len(result.vision_extracted_text) > 50:  # Substantial content
+                        self.logger.debug("Using pre-extracted vision text", extra={
+                            "pdf_name": result.pdf_name,
+                            "page_number": result.page_number,
+                            "text_length": len(result.vision_extracted_text)
+                        })
+                        return result
+                
+                # Use standardized image path
+                try:
+                    image_path = result.get_image_path()
+                    if not Path(image_path).exists():
+                        return result
+                except Exception as e:
+                    self.logger.debug("Image path error", extra={"error": str(e)})
+                    return result
+                
+                # Multiple retry attempts
+                for attempt in range(MAX_RETRIES):
+                    try:
+                        # Read image as base64
+                        with open(image_path, "rb") as image_file:
+                            image_data = image_file.read()
+                            image_size = len(image_data)
+                            base64_image = base64.b64encode(image_data).decode('utf-8')
+                        
+                        # Check image size (OpenAI limit is 20MB)
+                        MAX_IMAGE_SIZE_BYTES = 20 * 1024 * 1024
+                        if image_size > MAX_IMAGE_SIZE_BYTES:
+                            self.logger.warning("Image too large", extra={"size": image_size})
+                            return result
+                        
+                        # Enhanced vision prompt
+                        vision_prompt = self._create_context_aware_vision_prompt(result, query)
+                        
+                        # Parallel Vision API call using asyncio.to_thread
+                        response = await asyncio.to_thread(
+                            lambda: self.openai_client.chat.completions.create(
+                                model=config.VISION_MODEL,
+                                messages=[{
+                                    "role": "system",
+                                    "content": "You are an expert at extracting technical documentation from images. Extract text accurately and completely, preserving formatting and technical details."
+                                }, {
+                                    "role": "user",
+                                    "content": [
+                                        {"type": "text", "text": vision_prompt},
+                                        {
+                                            "type": "image_url",
+                                            "image_url": {"url": f"data:image/jpeg;base64,{base64_image}"}
+                                        }
+                                    ]
+                                }],
+                                max_tokens=config.VISION_MAX_TOKENS,
+                                temperature=0.1
+                            )
+                        )
+                        
+                        extracted_text = response.choices[0].message.content.strip()
+                        
+                        # Check for generic responses
+                        generic_indicators = [
+                            "i'm unable to extract", "i cannot extract",
+                            "unable to extract specific information", "cannot see",
+                            "image quality", "unclear"
+                        ]
+                        is_generic = any(indicator in extracted_text.lower() for indicator in generic_indicators)
+                        
+                        if not extracted_text or is_generic:
+                            extracted_text = self._extract_from_metadata_fallback(result, query)
+                        
+                        if extracted_text:
+                            result.vision_extracted_text = extracted_text
+                            self.logger.info("Vision extraction successful", extra={
+                                "pdf_name": result.pdf_name,
+                                "page_number": result.page_number,
+                                "text_length": len(extracted_text),
+                                "attempt": attempt + 1
+                            })
+                            return result
+                        
+                    except Exception as e:
+                        if attempt < MAX_RETRIES - 1:
+                            await asyncio.sleep(RETRY_DELAY)
+                        else:
+                            self.logger.warning("Vision extraction failed, using fallback", extra={
+                                "pdf_name": result.pdf_name,
+                                "error": str(e)
+                            })
+                            result.vision_extracted_text = self._extract_from_metadata_fallback(result, query) or ""
+                            return result
+                
+                return result
+        
+        # Process results in parallel with semaphore limit
+        semaphore = asyncio.Semaphore(MAX_CONCURRENT)
+        # Limit to top results to avoid too many Vision calls
+        results_to_process = search_results[:min(len(search_results), config.TOP_K_RESULTS + 2)]
+        
+        tasks = [process_single_result(result, semaphore) for result in results_to_process]
+        processed_results = await asyncio.gather(*tasks, return_exceptions=True)
+        
+        # Filter out exceptions and combine with unprocessed results
+        valid_results = []
+        for i, pr in enumerate(processed_results):
+            if isinstance(pr, SearchResult):
+                valid_results.append(pr)
+            elif isinstance(pr, Exception):
+                self.logger.error("Vision processing exception", extra={"error": str(pr)})
+                # Keep original result
+                if i < len(results_to_process):
+                    valid_results.append(results_to_process[i])
+        
+        # Add remaining unprocessed results
+        valid_results.extend(search_results[len(results_to_process):])
+        
+        return valid_results
+    
     def _enhance_with_vision_sync(self, search_results: List[SearchResult], query: str = "") -> List[SearchResult]:
-        """Enhance results with OpenAI Vision API text extraction with retries and metadata fallback"""
+        """Synchronous wrapper for async Vision processing (for backward compatibility)"""
+        import asyncio
+        try:
+            loop = asyncio.get_event_loop()
+            if loop.is_running():
+                # If loop is running, use sync version (fallback)
+                return self._enhance_with_vision_sync_sequential(search_results, query)
+            else:
+                return loop.run_until_complete(self._enhance_with_vision_async(search_results, query))
+        except RuntimeError:
+            # No event loop, use sync version
+            return self._enhance_with_vision_sync_sequential(search_results, query)
+    
+    def _enhance_with_vision_sync_sequential(self, search_results: List[SearchResult], query: str = "") -> List[SearchResult]:
+        """Sequential Vision processing (fallback when async not available)"""
         MAX_RETRIES = 3
         RETRY_DELAY = 1  # seconds
         

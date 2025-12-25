@@ -2,7 +2,7 @@
 Solution Generator - Creates narrative solutions from questions and answers
 """
 
-from typing import List, Dict, Any
+from typing import List, Dict, Any, AsyncIterator
 from openai import OpenAI
 
 from src.config.config import config
@@ -142,6 +142,9 @@ class SolutionGenerator:
                     questions=questions
                 )
                 
+                # OPTIMIZATION: Reduce max_tokens and lower temperature for faster, more focused responses
+                max_tokens_optimized = min(config.SOLUTION_MAX_TOKENS, 2500)  # Cap at 2500 for faster generation
+                
                 response = self.openai_client.chat.completions.create(
                     model=config.LLM_MODEL,
                     messages=[
@@ -207,7 +210,7 @@ Your solution must be:
                         }
                     ],
                     temperature=0.2,  # Lower temperature for more focused, less hallucinatory output
-                    max_tokens=config.SOLUTION_MAX_TOKENS
+                    max_tokens=max_tokens_optimized  # Use optimized token limit
                 )
                 
                 narrative = response.choices[0].message.content.strip()
@@ -225,6 +228,130 @@ Your solution must be:
             })
             # Return retrieved answer as fallback
             return retrieved_content.get('answer', 'Unable to generate narrative solution.')
+    
+    async def generate_focused_narrative_stream(
+        self,
+        story_context: Dict[str, Any],
+        retrieved_content: Dict[str, Any],
+        questions: List[str]
+    ) -> AsyncIterator[str]:
+        """
+        Stream narrative solution token by token for real-time display.
+        
+        Args:
+            story_context: Original story context (description, acceptance_criteria)
+            retrieved_content: Comprehensive retrieval result with answer and sources
+            questions: List of questions (used to guide narrative structure)
+            
+        Yields:
+            Text chunks as they are generated
+        """
+        try:
+            description = story_context.get('description', '')
+            acceptance_criteria = story_context.get('acceptance_criteria', [])
+            sources = retrieved_content.get('sources', [])
+            answer = retrieved_content.get('answer', '')
+            
+            self.logger.info("Streaming focused narrative solution", extra={
+                "question_count": len(questions),
+                "sources_count": len(sources),
+                "answer_length": len(answer)
+            })
+            
+            # Build enhanced prompt
+            prompt = self._build_enhanced_narrative_prompt(
+                description=description,
+                acceptance_criteria=acceptance_criteria,
+                retrieved_answer=answer,
+                sources=sources,
+                questions=questions
+            )
+            
+            # OPTIMIZATION: Reduce max_tokens for faster streaming
+            max_tokens_optimized = min(config.SOLUTION_MAX_TOKENS, 2500)
+            
+            # Stream LLM response
+            stream = self.openai_client.chat.completions.create(
+                model=config.LLM_MODEL,
+                messages=[
+                    {
+                        "role": "system",
+                        "content": """You are an expert Acumatica developer and technical writer. Your task is to extract EXACT technical details and create precise, actionable solutions based STRICTLY on the retrieved documentation.
+
+CRITICAL EXTRACTION REQUIREMENTS:
+
+1. **DAC/Graph Details** (Extract EXACTLY as written):
+   - Extract exact DAC class names (e.g., "Customer", "SOOrder", "CustomerExt")
+   - Extract Graph class names (e.g., "CustomerMaint", "SOOrderEntry", "CustomerMaintExt")
+   - Extract extension class names if mentioned
+   - Use code formatting: `Customer`, `SOOrderEntry`
+
+2. **Form/Screen Details** (Extract EXACTLY as written):
+   - Extract exact Form IDs (e.g., "SM201020", "CR301000", "SO301000")
+   - Extract screen names exactly as written
+   - Extract navigation paths verbatim from documentation
+   - Format: **Form ID**: `SM201020` | **Screen**: Customer Maintenance
+
+3. **Field Details** (Extract EXACTLY as written):
+   - Extract exact field names (e.g., "CustomerID", "OrderNbr", "Status")
+   - Extract field types if mentioned (e.g., "String", "Int", "Decimal")
+   - Extract field attributes if specified (e.g., "PXDBString", "PXUIFieldAttribute")
+   - Format: **Field**: `CustomerID` (String)
+
+4. **Event Handlers** (Extract EXACTLY as written):
+   - Extract event handler names (e.g., "FieldUpdated", "RowSelected", "RowPersisting")
+   - Extract method signatures if provided
+   - Extract event parameters if mentioned
+   - Format: **Event**: `FieldUpdated` | **Method**: `CustomerID_FieldUpdated`
+
+5. **Code Elements** (Extract EXACTLY as written):
+   - Extract PXGraph methods (e.g., "PXGraph", "PXCache", "PXSelect")
+   - Extract attribute names (e.g., "PXDBString", "PXUIFieldAttribute", "PXDefault")
+   - Extract code snippets exactly as written (use code blocks)
+   - Extract namespace/using statements if mentioned
+
+6. **Validation Rules**:
+   - If a technical detail is NOT in the documentation, write: "[NOT FOUND IN DOCUMENTATION]"
+   - Do NOT infer, guess, or assume technical details
+   - Only include what is explicitly stated in the retrieved content
+   - Verify each technical detail exists before including it
+
+CRITICAL RULES:
+1. **Grounding**: Only use information from the retrieved content. Do NOT add information not present in the sources.
+2. **Precision**: Extract technical details EXACTLY as written - no modifications, no assumptions.
+3. **Navigation Instructions**: Provide step-by-step navigation paths verbatim from documentation.
+4. **Focus**: Address ONLY what is asked in the story description and acceptance criteria.
+5. **Honesty**: Clearly mark missing information with "[NOT FOUND IN DOCUMENTATION]".
+
+Your solution must be:
+- Accurate (grounded in retrieved content)
+- Specific (with exact technical names, IDs, and code elements)
+- Actionable (step-by-step navigation with exact form/field references)
+- Focused (only addresses the story requirements)
+- Honest (clearly marks missing information)"""
+                    },
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                temperature=0.2,
+                max_tokens=max_tokens_optimized,
+                stream=True  # Enable streaming
+            )
+            
+            # Yield tokens as they arrive
+            for chunk in stream:
+                if chunk.choices[0].delta.content:
+                    yield chunk.choices[0].delta.content
+                    
+        except Exception as e:
+            self.logger.error("Failed to stream narrative solution", extra={
+                "error": str(e),
+                "error_type": type(e).__name__
+            })
+            # Yield fallback message
+            yield retrieved_content.get('answer', 'Unable to generate narrative solution.')
     
     def _build_enhanced_narrative_prompt(
         self,

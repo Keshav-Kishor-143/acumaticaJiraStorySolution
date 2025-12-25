@@ -12,6 +12,9 @@ import {
   List,
   ListItem,
   ListItemText,
+  CircularProgress,
+  useTheme,
+  alpha,
 } from '@mui/material';
 import {
   Add as AddIcon,
@@ -89,6 +92,7 @@ const parseAcceptanceCriteria = (text) => {
 };
 
 const StoryForm = ({ onSubmit, onCancel, isLoading, canCancel }) => {
+  const theme = useTheme();
   const [formData, setFormData] = useState({
     story_id: '',
     title: '',
@@ -149,15 +153,74 @@ const StoryForm = ({ onSubmit, onCancel, isLoading, canCancel }) => {
     <Paper
       elevation={2}
       sx={{
-        p: 3,
+        height: '100%',
+        display: 'flex',
+        flexDirection: 'column',
         borderRadius: 2,
+        transition: 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)',
+        overflow: 'hidden',
       }}
     >
-      <Typography variant="h5" gutterBottom sx={{ mb: 3, fontWeight: 600 }}>
-        Process JIRA Story
-      </Typography>
+      <Box
+        sx={{
+          p: { xs: 2, sm: 2.5 },
+          pb: { xs: 1.5, sm: 2 },
+          borderBottom: `1px solid ${theme.palette.divider}`,
+          flexShrink: 0,
+        }}
+      >
+        <Typography 
+          variant="h5" 
+          sx={{ 
+            fontWeight: 600,
+            fontSize: { xs: '1.25rem', sm: '1.5rem' },
+          }}
+        >
+          Add Story Details
+        </Typography>
+      </Box>
 
-      <Box component="form" onSubmit={handleSubmit} sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+      <Box 
+        component="form" 
+        onSubmit={handleSubmit} 
+        sx={{ 
+          flex: 1,
+          display: 'flex', 
+          flexDirection: 'column',
+          overflow: 'hidden',
+          minHeight: 0,
+        }}
+      >
+        {/* Scrollable Content Area */}
+        <Box
+          sx={{
+            flex: 1,
+            overflowY: 'auto',
+            overflowX: 'hidden',
+            p: { xs: 2, sm: 2.5 },
+            gap: { xs: 2, sm: 2.5 },
+            display: 'flex',
+            flexDirection: 'column',
+            minHeight: 0,
+            '&::-webkit-scrollbar': {
+              width: '8px',
+            },
+            '&::-webkit-scrollbar-track': {
+              background: 'transparent',
+            },
+            '&::-webkit-scrollbar-thumb': {
+              background: theme.palette.mode === 'dark' 
+                ? 'rgba(255, 255, 255, 0.2)' 
+                : 'rgba(0, 0, 0, 0.2)',
+              borderRadius: '4px',
+              '&:hover': {
+                background: theme.palette.mode === 'dark' 
+                  ? 'rgba(255, 255, 255, 0.3)' 
+                  : 'rgba(0, 0, 0, 0.3)',
+              },
+            },
+          }}
+        >
         {/* Story ID */}
         <TextField
           label="Story ID (Optional)"
@@ -166,6 +229,7 @@ const StoryForm = ({ onSubmit, onCancel, isLoading, canCancel }) => {
           onChange={(e) => handleFieldChange('story_id', e.target.value)}
           fullWidth
           disabled={isLoading}
+          size="small"
         />
 
         {/* Title */}
@@ -176,6 +240,7 @@ const StoryForm = ({ onSubmit, onCancel, isLoading, canCancel }) => {
           onChange={(e) => handleFieldChange('title', e.target.value)}
           fullWidth
           disabled={isLoading}
+          size="small"
         />
 
         {/* Description */}
@@ -187,11 +252,12 @@ const StoryForm = ({ onSubmit, onCancel, isLoading, canCancel }) => {
           fullWidth
           multiline
           minRows={3}
-          maxRows={15}
+          maxRows={10}
           required
           error={!!errors.description}
           helperText={errors.description || 'Enter the detailed description of the JIRA story'}
           disabled={isLoading}
+          size="small"
           sx={{
             '& .MuiOutlinedInput-root': {
               transition: 'all 0.2s ease-in-out',
@@ -209,8 +275,8 @@ const StoryForm = ({ onSubmit, onCancel, isLoading, canCancel }) => {
 
         {/* Acceptance Criteria */}
         <Box>
-          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 2 }}>
-            <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+          <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', mb: 1.5 }}>
+            <Typography variant="subtitle2" sx={{ fontWeight: 600, fontSize: { xs: '0.875rem', sm: '0.9375rem' } }}>
               Acceptance Criteria *
             </Typography>
             {parsedCriteria.length > 0 && (
@@ -223,8 +289,8 @@ const StoryForm = ({ onSubmit, onCancel, isLoading, canCancel }) => {
             )}
           </Box>
 
-          <Alert severity="info" sx={{ mb: 2 }}>
-            <Typography variant="body2" component="div">
+          <Alert severity="info" sx={{ mb: 1.5, py: { xs: 0.75, sm: 1 } }}>
+            <Typography variant="body2" component="div" sx={{ fontSize: { xs: '0.8rem', sm: '0.875rem' } }}>
               <strong>💡 Tip:</strong> Copy acceptance criteria directly from JIRA and paste here. Supports:
               <Box component="ul" sx={{ mt: 0.5, mb: 0, pl: 2 }}>
                 <li>Bullet points (-, *, •)</li>
@@ -235,7 +301,7 @@ const StoryForm = ({ onSubmit, onCancel, isLoading, canCancel }) => {
           </Alert>
 
           {errors.acceptance_criteria && (
-            <Alert severity="error" sx={{ mb: 2 }}>
+            <Alert severity="error" sx={{ mb: 1.5, py: { xs: 0.75, sm: 1 } }}>
               {errors.acceptance_criteria}
             </Alert>
           )}
@@ -254,12 +320,13 @@ const StoryForm = ({ onSubmit, onCancel, isLoading, canCancel }) => {
             }}
             fullWidth
             multiline
-            minRows={4}
-            maxRows={12}
+            minRows={3}
+            maxRows={8}
             required
             error={!!errors.acceptance_criteria}
             helperText={errors.acceptance_criteria || `Enter acceptance criteria (${parsedCriteria.length} detected)`}
             disabled={isLoading}
+            size="small"
             sx={{
               '& .MuiOutlinedInput-root': {
                 transition: 'all 0.2s ease-in-out',
@@ -338,30 +405,70 @@ const StoryForm = ({ onSubmit, onCancel, isLoading, canCancel }) => {
           )}
         </Box>
 
-        {/* Action Buttons */}
-        <Box sx={{ display: 'flex', gap: 2, mt: 2 }}>
+        </Box>
+
+        {/* Action Buttons - Fixed at Bottom */}
+        <Box 
+          sx={{ 
+            display: 'flex', 
+            gap: { xs: 1.5, sm: 2 }, 
+            bgcolor: 'background.paper',
+            borderTop: `1px solid ${theme.palette.divider}`,
+            p: { xs: 1.5, sm: 2 },
+            flexShrink: 0,
+          }}
+        >
           <Button
             type="submit"
             variant="contained"
-            color="primary"
-            size="large"
-            startIcon={<SendIcon />}
+            size="medium"
+            startIcon={isLoading ? <CircularProgress size={14} color="inherit" /> : <SendIcon />}
             disabled={isLoading}
-            sx={{ flex: 1, py: 1.5 }}
+            sx={{ 
+              flex: 1, 
+              py: { xs: 0.875, sm: 1 },
+              px: { xs: 2, sm: 2.5 },
+              borderRadius: 2,
+              background: `linear-gradient(135deg, ${theme.palette.primary.main}, ${theme.palette.secondary?.main || theme.palette.primary.dark})`,
+              boxShadow: `0 4px 12px ${alpha(theme.palette.primary.main, 0.4)}`,
+              fontWeight: 600,
+              fontSize: { xs: '0.875rem', sm: '0.9375rem' },
+              textTransform: 'none',
+              transition: 'all 0.3s ease',
+              '&:hover': {
+                transform: 'translateY(-2px)',
+                boxShadow: `0 6px 16px ${alpha(theme.palette.primary.main, 0.5)}`,
+              },
+              '&:disabled': {
+                background: theme.palette.action.disabledBackground,
+              },
+            }}
           >
-            {isLoading ? 'Processing...' : 'Generate Solution'}
+            {isLoading ? 'Generating...' : 'Generate Solution'}
           </Button>
           
           {canCancel && (
             <Button
               variant="outlined"
               color="error"
-              size="large"
+              size="medium"
               startIcon={<StopIcon />}
               onClick={onCancel}
-              sx={{ py: 1.5 }}
+              sx={{ 
+                py: { xs: 0.875, sm: 1 },
+                px: { xs: 1.5, sm: 2 },
+                borderRadius: 2,
+                borderWidth: 2,
+                fontWeight: 600,
+                fontSize: { xs: '0.875rem', sm: '0.9375rem' },
+                textTransform: 'none',
+                '&:hover': {
+                  borderWidth: 2,
+                  transform: 'translateY(-2px)',
+                },
+              }}
             >
-              Cancel
+              Stop
             </Button>
           )}
         </Box>

@@ -122,7 +122,8 @@ class RAGService:
         self, 
         story_context: Dict[str, Any],
         top_k: int = 16,  # Increased for comprehensive context
-        search_params: Optional[Dict[str, Any]] = None
+        search_params: Optional[Dict[str, Any]] = None,
+        request_id: Optional[str] = None
     ) -> Dict[str, Any]:
         """
         Generate comprehensive answer using unified retrieval with all questions as context.
@@ -160,7 +161,8 @@ class RAGService:
                 question=unified_query,
                 top_k=top_k,
                 max_retries=1,
-                search_params=search_params
+                search_params=search_params,
+                request_id=request_id
             )
             
             self.logger.info("Comprehensive answer generated", extra={
