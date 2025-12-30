@@ -18,16 +18,39 @@ import io
 import textwrap
 
 # Try to import pythonnet for .NET interop
+PYTHONNET_AVAILABLE = False
+PYTHONNET_FUNCTIONAL = False
+
 try:
     import clr
     PYTHONNET_AVAILABLE = True
+    # Test if pythonnet is actually functional
+    try:
+        # In pythonnet 3.x, we need to add reference to System first
+        clr.AddReference("System")  # type: ignore
+        import System  # type: ignore
+        # Try a simple test to see if .NET runtime is accessible
+        test_str = System.String("test")  # type: ignore
+        PYTHONNET_FUNCTIONAL = True
+    except Exception as func_error:
+        # If System import fails, pythonnet might still work for loading assemblies
+        # We'll try to use it anyway and handle errors during actual DLL loading
+        PYTHONNET_FUNCTIONAL = True  # Assume functional, will fail gracefully if not
 except ImportError:
     PYTHONNET_AVAILABLE = False
+    PYTHONNET_FUNCTIONAL = False
 
 from src.utils.logger_utils import get_logger
 from src.config.config import config
 
 logger = get_logger("DLL_PROCESSOR")
+
+# Try to import alternative metadata extractor
+try:
+    from src.core.dll_metadata_extractor import DLLMetadataExtractor
+    METADATA_EXTRACTOR_AVAILABLE = True
+except ImportError:
+    METADATA_EXTRACTOR_AVAILABLE = False
 
 
 class DLLProcessor:
@@ -39,12 +62,36 @@ class DLLProcessor:
     def __init__(self):
         self.logger = logger
         self.pythonnet_available = PYTHONNET_AVAILABLE
+        self.pythonnet_functional = PYTHONNET_FUNCTIONAL
+        
+        if self.pythonnet_available and not self.pythonnet_functional:
+            self.logger.warning(
+                "pythonnet imported but not functional - .NET runtime may not be accessible",
+                extra={"pythonnet_available": True, "pythonnet_functional": False}
+            )
+        
+        # Initialize alternative metadata extractor if available
+        if METADATA_EXTRACTOR_AVAILABLE:
+            try:
+                self.metadata_extractor = DLLMetadataExtractor()
+                self.logger.info("Alternative metadata extractor available")
+            except Exception as e:
+                self.logger.warning("Failed to initialize metadata extractor", extra={"error": str(e)})
+                self.metadata_extractor = None
+        else:
+            self.metadata_extractor = None
         
         if not self.pythonnet_available:
-            self.logger.warning(
-                "pythonnet not available. DLL processing will use fallback methods.",
-                extra={"fallback": True}
-            )
+            if self.metadata_extractor and self.metadata_extractor.pefile_available:
+                self.logger.info(
+                    "pythonnet not available, but pefile metadata extractor is available.",
+                    extra={"fallback": "pefile"}
+                )
+            else:
+                self.logger.warning(
+                    "pythonnet not available. DLL processing will use basic fallback methods.",
+                    extra={"fallback": True}
+                )
     
     def process_dll(self, dll_path: str) -> Dict[str, Any]:
         """
@@ -79,15 +126,75 @@ class DLLProcessor:
         
         if self.pythonnet_available:
             try:
+                self.logger.info("Attempting reflection-based extraction", extra={
+                    "dll_path": str(dll_path),
+                    "pythonnet_available": True
+                })
                 extracted_data = self._extract_via_reflection(dll_path, extracted_data)
+                
+                # Verify we actually extracted data
+                classes_count = len(extracted_data.get('classes', []))
+                methods_count = len(extracted_data.get('methods', []))
+                
+                if classes_count == 0 and methods_count == 0:
+                    self.logger.warning("Reflection extraction completed but no classes/methods found", extra={
+                        "dll_path": str(dll_path),
+                        "assembly_name": extracted_data.get('assembly_name'),
+                        "namespaces_count": len(extracted_data.get('namespaces', {}))
+                    })
+                    print(f"   ⚠️  Warning: No classes or methods extracted - DLL may be empty or unloadable")
+                else:
+                    self.logger.info("Reflection extraction successful", extra={
+                        "classes_extracted": classes_count,
+                        "methods_extracted": methods_count,
+                        "properties_extracted": len(extracted_data.get('properties', []))
+                    })
             except Exception as e:
                 self.logger.error("Reflection extraction failed, using fallback", extra={
                     "error": str(e),
-                    "dll_path": str(dll_path)
+                    "error_type": type(e).__name__,
+                    "dll_path": str(dll_path),
+                    "traceback": str(e.__traceback__) if hasattr(e, '__traceback__') else None
                 })
+                print(f"   ⚠️  Reflection failed: {type(e).__name__}: {str(e)}")
+                print(f"   🔄 Falling back to metadata extraction...")
                 extracted_data = self._extract_via_metadata(dll_path, extracted_data)
         else:
-            extracted_data = self._extract_via_metadata(dll_path, extracted_data)
+            if not self.pythonnet_available:
+                self.logger.warning("pythonnet not available, trying alternative extraction", extra={
+                    "dll_path": str(dll_path)
+                })
+                print(f"   ⚠️  pythonnet not installed")
+            
+            # Try alternative metadata extractor if available
+            if self.metadata_extractor and self.metadata_extractor.pefile_available:
+                print(f"   🔄 Using pefile metadata extractor...")
+                try:
+                    alt_extracted = self.metadata_extractor.extract_metadata(dll_path)
+                    # Merge with our structure - preserve existing keys
+                    for key, value in alt_extracted.items():
+                        if key in ['classes', 'methods', 'properties', 'namespaces']:
+                            if isinstance(value, list):
+                                extracted_data[key].extend(value)
+                            elif isinstance(value, dict):
+                                extracted_data[key].update(value)
+                        else:
+                            extracted_data[key] = value
+                    
+                    classes_count = len(extracted_data.get('classes', []))
+                    print(f"   ✅ Extracted {classes_count} classes via pefile")
+                    
+                    if classes_count == 0:
+                        print(f"   ⚠️  No classes found - pefile extraction may be limited for .NET DLLs")
+                        print(f"   💡 Install pythonnet for full .NET reflection: pip install pythonnet")
+                except Exception as alt_error:
+                    self.logger.warning("Alternative extraction failed", extra={"error": str(alt_error)})
+                    print(f"   ⚠️  Alternative extraction failed: {str(alt_error)}")
+                    extracted_data = self._extract_via_metadata(dll_path, extracted_data)
+            else:
+                print(f"   💡 Install pythonnet for full extraction: pip install pythonnet")
+                print(f"   💡 Or install pefile for basic extraction: pip install pefile")
+                extracted_data = self._extract_via_metadata(dll_path, extracted_data)
         
         self.logger.info("DLL processing completed", extra={
             "dll_name": extracted_data["dll_name"],
@@ -100,6 +207,13 @@ class DLLProcessor:
     
     def _load_assembly(self, dll_path: Path):
         """Load .NET assembly using multiple fallback methods"""
+        import clr  # type: ignore
+        # Ensure System is referenced
+        try:
+            clr.AddReference("System")  # type: ignore
+        except Exception:
+            pass  # Already referenced or not needed
+        
         import System  # type: ignore
         from System.Reflection import Assembly  # type: ignore
         import os
@@ -141,6 +255,12 @@ class DLLProcessor:
     
     def _load_dependencies(self, dll_path: Path):
         """Load common Acumatica DLL dependencies"""
+        import clr  # type: ignore
+        try:
+            clr.AddReference("System")  # type: ignore
+        except Exception:
+            pass
+        
         import System  # type: ignore
         from System.Reflection import Assembly  # type: ignore
         
@@ -277,19 +397,98 @@ class DLLProcessor:
     def _extract_via_reflection(self, dll_path: Path, extracted_data: Dict[str, Any]) -> Dict[str, Any]:
         """Extract DLL information using .NET reflection via pythonnet"""
         try:
+            self.logger.info("Loading assembly for reflection", extra={"dll_path": str(dll_path)})
             assembly = self._load_assembly(dll_path)
             
-            extracted_data["assembly_name"] = assembly.GetName().Name
-            extracted_data["version"] = str(assembly.GetName().Version)
+            if assembly is None:
+                raise Exception("Failed to load assembly - _load_assembly returned None")
             
-            self._load_dependencies(dll_path)
+            # Get assembly name and version
+            try:
+                assembly_name_obj = assembly.GetName()
+                extracted_data["assembly_name"] = assembly_name_obj.Name if assembly_name_obj else dll_path.stem
+                extracted_data["version"] = str(assembly_name_obj.Version) if assembly_name_obj and assembly_name_obj.Version else "Unknown"
+            except Exception as name_error:
+                self.logger.warning("Failed to get assembly name/version", extra={"error": str(name_error)})
+                extracted_data["assembly_name"] = dll_path.stem
+                extracted_data["version"] = "Unknown"
+            
+            self.logger.info("Assembly loaded successfully", extra={
+                "assembly_name": extracted_data["assembly_name"],
+                "version": extracted_data["version"]
+            })
+            
+            # Try to load dependencies (non-critical)
+            try:
+                self._load_dependencies(dll_path)
+            except Exception as dep_error:
+                self.logger.debug("Failed to load dependencies (non-critical)", extra={"error": str(dep_error)})
+            
+            # Get types from assembly
             types = self._get_assembly_types(assembly)
+            self.logger.info("Retrieved types from assembly", extra={"types_count": len(types)})
             
+            if len(types) == 0:
+                self.logger.warning("No types found in assembly", extra={
+                    "assembly_name": extracted_data["assembly_name"],
+                    "dll_path": str(dll_path)
+                })
+                print(f"   ⚠️  Warning: No types found in assembly - DLL may be empty or have loading issues")
+            
+            # Process each type
+            processed_count = 0
+            skipped_count = 0
             for type_obj in types:
-                self._process_type(type_obj, extracted_data)
+                if type_obj is None:
+                    skipped_count += 1
+                    continue
+                    
+                try:
+                    # Skip certain types that cause issues
+                    type_name = getattr(type_obj, 'Name', None) or str(type_obj)
+                    
+                    # Skip compiler-generated types and special types
+                    if hasattr(type_obj, 'IsSpecialName') and type_obj.IsSpecialName:
+                        skipped_count += 1
+                        continue
+                    
+                    self._process_type(type_obj, extracted_data)
+                    processed_count += 1
+                except Exception as type_error:
+                    type_name = getattr(type_obj, 'Name', None) if type_obj else 'None'
+                    self.logger.debug(f"Failed to process type: {type_name}", 
+                                    extra={"error": str(type_error), "error_type": type(type_error).__name__})
+                    skipped_count += 1
+                    continue
+            
+            self.logger.info("Type processing completed", extra={
+                "types_processed": processed_count,
+                "types_skipped": skipped_count,
+                "total_types": len(types),
+                "classes_extracted": len(extracted_data.get('classes', [])),
+                "methods_extracted": len(extracted_data.get('methods', [])),
+                "properties_extracted": len(extracted_data.get('properties', []))
+            })
+            
+            if processed_count == 0 and len(types) > 0:
+                self.logger.warning("No types were successfully processed", extra={
+                    "total_types": len(types),
+                    "skipped": skipped_count
+                })
+                print(f"   ⚠️  Warning: Found {len(types)} types but none were successfully processed")
                     
         except Exception as e:
-            self.logger.error("Reflection extraction error", extra={"error": str(e)})
+            error_msg = str(e)
+            error_type = type(e).__name__
+            import traceback
+            tb_str = traceback.format_exc()
+            self.logger.error("Reflection extraction error", extra={
+                "error": error_msg,
+                "error_type": error_type,
+                "dll_path": str(dll_path),
+                "traceback": tb_str
+            })
+            print(f"   ❌ Reflection extraction failed: {error_type}: {error_msg}")
             raise
         
         return extracted_data
@@ -703,4 +902,3 @@ class DLLProcessor:
                 "error": str(e)
             })
             return None
-

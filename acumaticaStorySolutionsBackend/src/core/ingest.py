@@ -17,6 +17,7 @@ from openai import OpenAI
 import fitz
 from src.config.config import config
 from src.utils.logger_utils import get_logger, TimedOperation, performance_monitor
+from src.core.dll_processor import DLLProcessor
 
 # Helper function for HuggingFace embeddings with fallback
 def _get_huggingface_embedding(model_name: str, device: str = "cpu", logger=None):
@@ -94,6 +95,9 @@ class VDRIngestor:
         
         # Initialize OpenAI client (only for Vision)
         self._initialize_openai()
+        
+        # Initialize DLL processor for DLL content generation
+        self.dll_processor = DLLProcessor()
         
         self.logger.info("HuggingFace + OpenAI VDR Ingestor fully initialized and ready")
     
@@ -466,6 +470,217 @@ class VDRIngestor:
             
         except Exception as e:
             print(f"❌ Error in VDR batch ingestion: {str(e)}")
+            return {
+                "total_files": 0,
+                "successful": 0,
+                "failed": 1,
+                "error": str(e)
+            }
+    
+    def process_dll(self, dll_path: str) -> bool:
+        """
+        Process a DLL file and generate dll_content.txt for knowledge base
+        
+        This generates the text content file needed for DLL validation (Law 2 compliance)
+        
+        Args:
+            dll_path: Path to DLL file
+            
+        Returns:
+            True if successful, False otherwise
+        """
+        try:
+            dll_path_obj = Path(dll_path)
+            dll_name = dll_path_obj.stem
+            
+            print(f"\n🔧 Processing DLL: {dll_name}")
+            
+            # Step 1: Process DLL to extract structured data
+            self.logger.info(f"Extracting data from DLL: {dll_name}")
+            print(f"   📦 DLL Processor initialized: pythonnet_available={self.dll_processor.pythonnet_available}")
+            
+            extracted_data = self.dll_processor.process_dll(str(dll_path))
+            
+            # Log extraction results
+            classes_count = len(extracted_data.get('classes', []))
+            methods_count = len(extracted_data.get('methods', []))
+            properties_count = len(extracted_data.get('properties', []))
+            namespaces_count = len(extracted_data.get('namespaces', {}))
+            processing_method = extracted_data.get('processing_method', 'unknown')
+            
+            print(f"   📊 Extraction results:")
+            print(f"      - Processing method: {processing_method}")
+            print(f"      - Namespaces: {namespaces_count}")
+            print(f"      - Classes: {classes_count}")
+            print(f"      - Methods: {methods_count}")
+            print(f"      - Properties: {properties_count}")
+            
+            if processing_method == "metadata_only" and classes_count == 0:
+                print(f"   ⚠️  WARNING: Only metadata extraction available")
+                print(f"   💡 Check if pythonnet is properly configured and .NET runtime is accessible")
+            elif processing_method == "reflection" and classes_count == 0:
+                print(f"   ⚠️  WARNING: Reflection extraction completed but no classes found")
+                print(f"   💡 DLL may be empty, corrupted, or have loading issues")
+            
+            # Step 2: Convert to text format (for dll_content.txt)
+            self.logger.info(f"Converting DLL data to text format: {dll_name}")
+            dll_text_content = self.dll_processor.convert_to_text(extracted_data)
+            
+            # Step 3: Determine target directory (knowledge_base/manuals/{DLL_NAME}_DLL/data/)
+            # LOCAL_BASE_PATH is knowledge_base/manuals, so we use it directly
+            manuals_dir = Path(config.LOCAL_BASE_PATH)
+            dll_dir_name = f"{dll_name}_DLL"
+            target_dir = manuals_dir / dll_dir_name / "data"
+            target_dir.mkdir(parents=True, exist_ok=True)
+            
+            # Step 4: Save dll_content.txt
+            content_file = target_dir / "dll_content.txt"
+            with open(content_file, 'w', encoding='utf-8') as f:
+                f.write(dll_text_content)
+            
+            self.logger.info(f"Saved DLL content to: {content_file}", extra={
+                "dll_name": dll_name,
+                "content_size": len(dll_text_content),
+                "classes_count": len(extracted_data.get('classes', [])),
+                "methods_count": len(extracted_data.get('methods', []))
+            })
+            
+            # Step 5: Also copy DLL file to data directory (for reference)
+            target_dll = target_dir / dll_path_obj.name
+            if not target_dll.exists():
+                import shutil
+                shutil.copy2(dll_path, target_dll)
+                self.logger.info(f"Copied DLL file to: {target_dll}")
+            
+            # Step 6: Save extraction metadata (for reference)
+            metadata_file = target_dir.parent / "metadata" / "dll_extraction.json"
+            metadata_file.parent.mkdir(parents=True, exist_ok=True)
+            
+            import json
+            extraction_metadata = {
+                "dll_name": dll_name,
+                "dll_path": str(dll_path),
+                "extraction_date": str(Path(dll_path).stat().st_mtime),
+                "classes_count": len(extracted_data.get('classes', [])),
+                "methods_count": len(extracted_data.get('methods', [])),
+                "properties_count": len(extracted_data.get('properties', [])),
+                "namespaces_count": len(extracted_data.get('namespaces', {})),
+                "processing_method": extracted_data.get('processing_method', 'unknown')
+            }
+            
+            with open(metadata_file, 'w', encoding='utf-8') as f:
+                json.dump(extraction_metadata, f, indent=2)
+            
+            print(f"✅ Successfully processed DLL: {dll_name}")
+            print(f"   📄 Content file: {content_file}")
+            print(f"   📊 Classes: {extraction_metadata['classes_count']}")
+            print(f"   🔧 Methods: {extraction_metadata['methods_count']}")
+            
+            return True
+            
+        except Exception as e:
+            self.logger.error(f"Failed to process DLL: {dll_path}", extra={"error": str(e)})
+            print(f"❌ Error processing DLL {dll_path}: {str(e)}")
+            return False
+    
+    def process_all_dlls(self) -> Dict[str, Any]:
+        """
+        Process all DLL files from knowledge_base/Dll's/ directory
+        
+        Generates dll_content.txt files in knowledge_base/manuals/*_DLL/data/ directories
+        for DLL validation (Law 2 compliance)
+        """
+        try:
+            print("\n🔍 Scanning for DLL files...")
+            
+            # Find DLL directory
+            # LOCAL_BASE_PATH is knowledge_base/manuals, so DLL directory is knowledge_base/Dll's
+            dlls_dir = Path(config.LOCAL_BASE_PATH).parent / "Dll's"
+            if not dlls_dir.exists():
+                # Try alternative path (if running from different location)
+                dlls_dir = Path(config.LOCAL_BASE_PATH).parent / "Dlls"
+            if not dlls_dir.exists():
+                # Try with different case
+                dlls_dir = Path(config.LOCAL_BASE_PATH).parent / "dlls"
+            
+            if not dlls_dir.exists():
+                print(f"❌ DLL directory not found: {dlls_dir}")
+                print("💡 Expected location: knowledge_base/Dll's/")
+                return {
+                    "total_files": 0,
+                    "successful": 0,
+                    "failed": 0,
+                    "files_processed": []
+                }
+            
+            # Get all DLL files
+            dll_files = list(dlls_dir.glob("*.dll"))
+            
+            if not dll_files:
+                print(f"❌ No DLL files found in {dlls_dir}")
+                return {
+                    "total_files": 0,
+                    "successful": 0,
+                    "failed": 0,
+                    "files_processed": []
+                }
+            
+            print(f"📚 Found {len(dll_files)} DLL file(s)")
+            
+            # Process each DLL
+            successful = 0
+            failed = 0
+            files_processed = []
+            
+            start_time = time.time()
+            
+            for i, dll_path in enumerate(dll_files, 1):
+                print(f"\n📖 Processing DLL {i}/{len(dll_files)}: {dll_path.name}")
+                
+                success = self.process_dll(str(dll_path))
+                file_size_mb = round(dll_path.stat().st_size / (1024 * 1024), 2)
+                
+                file_result = {
+                    "filename": dll_path.name,
+                    "path": str(dll_path),
+                    "success": success,
+                    "size_mb": file_size_mb
+                }
+                
+                files_processed.append(file_result)
+                
+                if success:
+                    successful += 1
+                else:
+                    failed += 1
+                
+                print(f"📊 Progress: {i}/{len(dll_files)} DLLs processed")
+            
+            end_time = time.time()
+            processing_time = round(end_time - start_time, 2)
+            
+            # Print summary
+            print(f"\n{'='*60}")
+            print(f"🚀 DLL PROCESSING COMPLETE")
+            print(f"{'='*60}")
+            print(f"📁 Total DLLs: {len(dll_files)}")
+            print(f"✅ Successful: {successful}")
+            print(f"❌ Failed: {failed}")
+            print(f"⏱️  Total time: {processing_time}s")
+            print(f"🎯 DLL content files generated in: knowledge_base/manuals/*_DLL/data/")
+            print(f"{'='*60}")
+            
+            return {
+                "total_files": len(dll_files),
+                "successful": successful,
+                "failed": failed,
+                "processing_time": processing_time,
+                "files_processed": files_processed
+            }
+            
+        except Exception as e:
+            print(f"❌ Error in DLL batch processing: {str(e)}")
+            self.logger.error("DLL batch processing failed", extra={"error": str(e)})
             return {
                 "total_files": 0,
                 "successful": 0,

@@ -4845,36 +4845,15 @@ DLL: NV.Rental360
 - `public virtual <>f__AnonymousType0`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType0`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType0`2.ToString()` → `System.String`
-- `public <>f__AnonymousType0`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType1`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType1`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType1`2.ToString()` → `System.String`
-- `public <>f__AnonymousType1`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType2`3.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType2`3.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType2`3.ToString()` → `System.String`
-- `public <>f__AnonymousType2`3.GetType()` → `System.Type`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.GetHashCode()` → `System.Int32`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public Microsoft.CodeAnalysis.EmbeddedAttribute.GetType()` → `System.Type`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.NullableAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.ToString()` → `System.String`
-- `public virtual NV.Common.NVRTSetup.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetup.GetHashCode()` → `System.Int32`
-- `public NV.Common.NVRTSetup.GetType()` → `System.Type`
-- `public virtual NV.Common.NVRTSetup.ToString()` → `System.String`
 - `public static NV.Common.NVRTSetupGraphExtension.IsActive()` → `System.Boolean`
-- `public virtual NV.Common.NVRTRentalCommand.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual NV.Common.NVRTRentalCommand.GetHashCode()` → `System.Int32`
-- `public NV.Common.NVRTRentalCommand.GetType()` → `System.Type`
-- `public virtual NV.Common.NVRTRentalCommand.ToString()` → `System.String`
+- `virtual NV.Common.NVRTSetupGraphExtension._(PX.Data.Events+RowSelected`1[NV.Common.NVRTRentalCommand] e)` → `System.Void`
+- `public static NV.Common.NVRTSetupGraphExtension.executeSql(System.String command)` → `System.Void`
 - `public static NV.Common.NVRTSetupMaint.isInitializationMode()` → `System.Boolean`
 - `public static NV.Common.NVRTSetupMaint.isRental360Enabled()` → `System.Boolean`
 - `public static NV.Common.NVRTSetupMaint.isRentalWorkOrdersEnabled()` → `System.Boolean`
@@ -4899,49 +4878,70 @@ DLL: NV.Rental360
 - `public static NV.Common.NVRTSetupMaint.enableMeterBilling()` → `System.Boolean`
 - `public static NV.Common.NVRTSetupMaint.enableChangeOrders()` → `System.Boolean`
 - `public static NV.Common.NVRTSetupMaint.getRentalExtensionOrderType()` → `System.String`
-- `public virtual NV.Common.NVRTSetupMaint.Persist()` → `System.Void`
-- `public virtual NV.Common.NVRTSetupMaint.Persist(System.Type cacheType, PX.Data.PXDBOperation operation)` → `System.Int32`
-- `public virtual NV.Common.NVRTSetupMaint.AllowSelect(System.String viewName)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.AllowUpdate(System.String viewName)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.UpdateRights(System.String viewName)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.AllowInsert(System.String viewName)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.AllowDelete(System.String viewName)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.GetUpdatable(System.String viewName)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.GetKeyNames(System.String viewName)` → `System.String[]`
-- `public NV.Common.NVRTSetupMaint.HasException()` → `System.Boolean`
-- `public NV.Common.NVRTSetupMaint.GetParameterNames(System.String viewName)` → `System.String[]`
-- `public NV.Common.NVRTSetupMaint.SetDataConsistencyIssue(System.String name, System.String diagnosticDetails, System.Boolean dumpAllCaches)` → `System.Void`
-- `public NV.Common.NVRTSetupMaint.GetDacDescriptor(PX.Data.IBqlTable dac, PX.Data.DacDescriptorGeneration.DacDescriptorCreationOptions customDescriptorCreationOptions)` → `PX.Data.DacDescriptorGeneration.DacDescriptor`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderSelect(PX.Data.BqlCommand command, System.Int32 topCount, PX.Data.PXDataValue[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderSelectSingle(PX.Data.PXDataField[] pars)` → `PX.Data.PXDataRecord`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderSelectMulti(PX.Data.PXDataField[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderInsert(PX.Data.PXDataFieldAssign[] pars)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderUpdate(PX.Data.PXDataFieldParam[] pars)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderDelete(PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderArchive(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderExtract(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderSelectSingle(System.Type table, PX.Data.PXDataField[] pars)` → `PX.Data.PXDataRecord`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderSelectMulti(System.Type table, PX.Data.PXDataField[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderInsert(System.Type table, PX.Data.PXDataFieldAssign[] pars)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderUpdate(System.Type table, PX.Data.PXDataFieldParam[] pars)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderDelete(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.Common.NVRTSetupMaint.ProviderEnsure(System.Type table, PX.Data.PXDataFieldAssign[] values, PX.Data.PXDataField[] pars)` → `System.Boolean`
-- `public NV.Common.NVRTSetupMaint.RaisePXGraphViewChanged(System.String viewName)` → `System.Void`
-- `public virtual NV.Common.NVRTSetupMaint.CanClipboardCopyPaste()` → `System.Boolean`
+- `virtual NV.Common.NVRTSetupMaint._(PX.Data.Events+RowPersisting`1[NV.Common.NVRTSetup] e)` → `System.Void`
 - `public static NV.Common.NVRTUnitConversion.ConvertUnit(PX.Data.PXCache cache, System.Nullable`1[System.Int32] InventoryID, System.String fromunit...)` → `System.Decimal`
-- `public virtual NV.Common.NVRTUnitConversion.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual NV.Common.NVRTUnitConversion.GetHashCode()` → `System.Int32`
-- `public NV.Common.NVRTUnitConversion.GetType()` → `System.Type`
-- `public virtual NV.Common.NVRTUnitConversion.ToString()` → `System.String`
-- `public virtual NV.Rental360.NVRTSetupPricingOptions.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual NV.Rental360.NVRTSetupPricingOptions.GetHashCode()` → `System.Int32`
-- `public NV.Rental360.NVRTSetupPricingOptions.GetType()` → `System.Type`
-- `public virtual NV.Rental360.NVRTSetupPricingOptions.ToString()` → `System.String`
 - `public static NV.Rental360.NVRTReturnProcessing.Process(NV.Rental360.Projections.NVRTItemsAvailableForReturn doc)` → `System.Void`
 - `public static NV.Rental360.NVRTReturnProcessing.Process(System.Collections.Generic.List`1[NV.Rental360.Projections.NVRTItemsAvailableForReturn] list, System.Boolean isMassProcess)` → `System.Void`
 - `public static NV.Rental360.NVRTReturnProcessing.createRentalReceipt(NV.Rental360.NVRTRentalMaint graph, System.Collections.Generic.List`1[NV.Rental360.Projections.NVRTItemsAvailableForReturn] list)` → `System.Void`
 - `public static NV.Rental360.NVRTReturnProcessing.createWorkOrders(System.String workOrderType, System.Collections.Generic.Dictionary`2[System.String,System.Collections.Generic.List`1[NV.Rental360.Projections.NVRTItemsAvailableForReturn]] groupedList, System.Boolean groupBySalesOrder)` → `System.Void`
-- `public virtual NV.Rental360.NVRTReturnProcessing.Persist()` → `System.Void`
+- `virtual NV.Rental360.NVRTReturnProcessing._(PX.Data.Events+RowSelected`1[NV.Rental360.Projections.NVRTItemsAvailableForReturn] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTReturnProcessing._(PX.Data.Events+FieldUpdated`2[NV.Rental360.NVRTReturnProcFilter,NV.Rental360.NVRTReturnProcFilter+defaultReturnQty] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTReturnProcessing._(PX.Data.Events+FieldDefaulting`2[NV.Rental360.NVRTReturnProcFilter,NV.Rental360.NVRTReturnProcFilter+offRentDate] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTReturnProcessing._(PX.Data.Events+FieldUpdated`2[NV.Rental360.NVRTReturnProcFilter,NV.Rental360.NVRTReturnProcFilter+offRentDate] e)` → `System.Void`
+- `NV.Rental360.NVRTReturnProcessing.<.ctor>b__0_0(System.Collections.Generic.List`1[NV.Rental360.Projections.NVRTItemsAvailableForReturn] list)` → `System.Boolean`
+- `public virtual NV.Rental360.NVRTDefaultBillingQtyAttribute.CacheAttached(PX.Data.PXCache sender)` → `System.Void`
+- `public NV.Rental360.NVRTDefaultBillingQtyAttribute.CalcBillingQtyFieldUpdated(PX.Data.PXCache sender, PX.Data.PXFieldUpdatedEventArgs e)` → `System.Void`
+- `public virtual NV.Rental360.NVRTDefaultBillingQtyAttribute.FieldDefaulting(PX.Data.PXCache sender, PX.Data.PXFieldDefaultingEventArgs e)` → `System.Void`
+- `virtual NV.Rental360.NVRentalItemStatusAccumulator.PrepareInsert(PX.Data.PXCache sender, System.Object row, PX.Data.PXAccumulatorCollection columns)` → `System.Boolean`
+- `public virtual NV.Rental360.NVRentalItemStatusAccumulator.PersistInserted(PX.Data.PXCache sender, System.Object row)` → `System.Boolean`
+- `virtual NV.Rental360.NVRentalOpenAccumulator.PrepareInsert(PX.Data.PXCache sender, System.Object row, PX.Data.PXAccumulatorCollection columns)` → `System.Boolean`
+- `public virtual NV.Rental360.NVRentalOpenAccumulator.PersistInserted(PX.Data.PXCache sender, System.Object row)` → `System.Boolean`
+- `public static NV.Rental360.NVRTCyclePeriod.getCycleType(System.Int32 cycleDays)` → `System.String`
+- `public static NV.Rental360.NVRTCyclePeriod.getContractPeriod(System.String pricingUnit)` → `System.Int32`
+- `public static NV.Rental360.NVRTCyclePeriod.getRentalPricingUnit(System.Nullable`1[System.Decimal] daysOnRent)` → `System.String`
+- `public static NV.Rental360.NVRTCyclePeriod.getRentalPricingUnit(System.Int32 contractPeriod)` → `System.String`
+- `public static NV.Rental360.NVRTRentalMajorStatus.getRentalStatusItems()` → `System.Collections.Generic.List`1[NV.Rental360.NVRTRentalStatus]`
+- `public static NV.Rental360.NVRTRentalMajorStatus.setQtyMultiplier(System.Int32 status)` → `NV.Rental360.RentalSummary`
+- `public static NV.Rental360.NVRTRentalMinorStatus.findReserved(System.Nullable`1[System.Int32] majorStatus)` → `System.String`
+- `public static NV.Rental360.NVRTRentalEquipmentStatus.RentalMult(System.String TranType)` → `System.Nullable`1[System.Int16]`
+- `public static NV.Rental360.NVRTRentalEquipmentStatus.getStatusFromTrantype(System.String TranType)` → `System.String`
+- `public static NV.Rental360.NVRTRentalEquipmentStatus.setQtyMultiplier(System.String status)` → `NV.Rental360.RentalSummary`
+- `public static NV.Rental360.NVRTBillCycles.generateCycleDates(System.Nullable`1[System.Int32] cycleType, System.DateTime startDate, System.Nullable`1[System.DateTime] cycleStartDate...)` → `NV.Rental360.NVRTBillCycles+Cycle`
+- `public static NV.Rental360.NVRTBillCycles.FixedNumberOfDaysCalc(System.DateTime actualStartDate, System.Double day, System.Nullable`1[System.DateTime] CycleStartDate...)` → `NV.Rental360.NVRTBillCycles+Cycle`
+- `public static NV.Rental360.NVRTBillCycles.DayofMonthCalc(System.DateTime actualStartDate, System.Double day, System.Nullable`1[System.DateTime] CycleStartDate...)` → `NV.Rental360.NVRTBillCycles+Cycle`
+- `public static NV.Rental360.NVRTBillCycles.LastDayOfMonthCalc(System.DateTime actualStartDate, System.Nullable`1[System.DateTime] CycleStartDate, System.Nullable`1[System.DateTime] CycleEndDate)` → `NV.Rental360.NVRTBillCycles+Cycle`
+- `public static NV.Rental360.NVRTBillCycles.SemiMonthlyCalc(System.DateTime actualStartDate, System.Nullable`1[System.DateTime] CycleStartDate)` → `NV.Rental360.NVRTBillCycles+Cycle`
+- `public static NV.Rental360.NVRTBillCycles.MonthlyCalc(System.DateTime actualStartDate, System.Nullable`1[System.DateTime] CycleStartDate)` → `NV.Rental360.NVRTBillCycles+Cycle`
+- `public static NV.Rental360.NVRTBillCycles.SameDayNextMonthCalc(System.DateTime scheduleStartDate, System.Nullable`1[System.DateTime] cycleStartDate, System.Nullable`1[System.DateTime] cycleEndDate)` → `NV.Rental360.NVRTBillCycles+Cycle`
+- `public static NV.Rental360.NVRTBillCycles.OnDemandCalc(System.DateTime scheduleStartDate, System.Nullable`1[System.DateTime] cycleStartDate, System.Nullable`1[System.DateTime] cycleEndDate)` → `NV.Rental360.NVRTBillCycles+Cycle`
+- `public static NV.Rental360.NVRTBillCycles.IsDayValid(System.Int32 year, System.Int32 month, System.Int32 day)` → `System.Boolean`
+- `public static NV.Rental360.NVRTRentalDocType.getDocTypeFromINRegisterType(System.String RegisterType)` → `System.String`
+- `public static NV.Rental360.NVRTRentalMessages.ProcessingErrorMessage(System.Exception e)` → `System.String`
+- `public NV.Rental360.NVRTBillingUnitSelectorAttribute.GetRecords()` → `System.Collections.IEnumerable`
+- `public virtual NV.Rental360.NVRTDefaultWarrantyDateAttribute.CacheAttached(PX.Data.PXCache sender)` → `System.Void`
+- `public NV.Rental360.NVRTDefaultWarrantyDateAttribute.StartDateFieldUpdated(PX.Data.PXCache sender, PX.Data.PXFieldUpdatedEventArgs e)` → `System.Void`
+- `public virtual NV.Rental360.NVRTDefaultWarrantyDateAttribute.FieldDefaulting(PX.Data.PXCache sender, PX.Data.PXFieldDefaultingEventArgs e)` → `System.Void`
+- `virtual NV.Rental360.NVRTEquipmentSummaryInq.equipmentSummaryView()` → `System.Collections.IEnumerable`
+- `virtual NV.Rental360.NVRTEquipmentSummaryInq._(PX.Data.Events+FieldSelecting`2[NV.Rental360.NVRTFSEquipmentStatusFilter,NV.Rental360.NVRTFSEquipmentStatusFilter+siteID] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTEquipmentStatusDetailInq.equipmentView()` → `System.Collections.IEnumerable`
+- `virtual NV.Rental360.NVRTEquipmentStatusDetailInq._(PX.Data.Events+FieldSelecting`2[NV.Rental360.NVRTFSEquipmentStatusFilter,NV.Rental360.NVRTFSEquipmentStatusFilter+siteID] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTEquipmentDetailsInq.equipmentView()` → `System.Collections.IEnumerable`
+- `virtual NV.Rental360.NVRTEquipmentDetailsInq.equipmentRates()` → `System.Collections.IEnumerable`
+- `virtual NV.Rental360.NVRTEquipmentDetailsInq.FSEquipment_SourceRefNbr_CacheAttached(PX.Data.PXCache sender)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryIssueMaint._(PX.Data.Events+RowSelected`1[NV.Rental360.NVRTRentalRegister] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryIssueMaint._(PX.Data.Events+RowUpdated`1[NV.Rental360.NVRTRentalRegister] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryIssueMaint._(PX.Data.Events+FieldUpdated`2[NV.Rental360.NVRTRentalTran,NV.Rental360.NVRTRentalTran+rentalInventoryID] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryIssueMaint._(PX.Data.Events+FieldUpdated`2[NV.Rental360.NVRTRentalTran,NV.Rental360.NVRTRentalTran+equipmentID] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryIssueMaint._(PX.Data.Events+FieldUpdated`2[NV.Rental360.NVRTRentalTran,NV.Rental360.NVRTRentalTran+toMinorStatusCD] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryReceiptMaint._(PX.Data.Events+RowSelected`1[NV.Rental360.NVRTRentalRegister] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryReceiptMaint._(PX.Data.Events+FieldDefaulting`2[NV.Rental360.NVRTRentalRegister,NV.Rental360.NVRTRentalRegister+docType] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryReceiptMaint._(PX.Data.Events+RowUpdated`1[NV.Rental360.NVRTRentalRegister] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryReceiptMaint._(PX.Data.Events+RowSelected`1[NV.Rental360.NVRTRentalTran] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryReceiptMaint._(PX.Data.Events+FieldVerifying`2[NV.Rental360.NVRTRentalTran,NV.Rental360.NVRTRentalTran+rentalInventoryID] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryReceiptMaint._(PX.Data.Events+FieldUpdated`2[NV.Rental360.NVRTRentalTran,NV.Rental360.NVRTRentalTran+rentalInventoryID] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryReceiptMaint._(PX.Data.Events+FieldVerifying`2[NV.Rental360.NVRTRentalTran,NV.Rental360.NVRTRentalTran+lotSerialNbr] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryReceiptMaint._(PX.Data.Events+RowPersisting`1[NV.Rental360.NVRTRentalTran] e)` → `System.Void`
+- `virtual NV.Rental360.NVRTNonInventoryReceiptMaint._(PX.Data.Events+FieldVerifying`2[NV.Rental360.NVRTRentalTran,NV.Rental360.NVRTRentalTran+equipmentNbr] e)` → `System.Void`
 ## Key Properties
 
 - `<>f__AnonymousType0`2.key`: `<key>j__TPar` (read-only)

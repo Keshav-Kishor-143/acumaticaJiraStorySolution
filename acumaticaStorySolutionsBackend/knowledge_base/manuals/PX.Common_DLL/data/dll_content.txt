@@ -462,11 +462,9 @@ DLL: PX.Common
 - `public virtual <>f__AnonymousType0`2.Equals(System.Object )` → `System.Boolean`
 - `public virtual <>f__AnonymousType0`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType0`2.ToString()` → `System.String`
-- `public <>f__AnonymousType0`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType1`2.Equals(System.Object )` → `System.Boolean`
 - `public virtual <>f__AnonymousType1`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType1`2.ToString()` → `System.String`
-- `public <>f__AnonymousType1`2.GetType()` → `System.Type`
 - `public static HttpRequestEx.GetWebsiteUrl(System.Web.HttpRequest request)` → `System.String`
 - `public static HttpRequestEx.GetWebsiteAuthority(System.Web.HttpRequest request)` → `System.Uri`
 - `public static HttpRequestEx.GetExternalUrl(System.Web.HttpRequest request)` → `System.Uri`
@@ -475,56 +473,21 @@ DLL: PX.Common
 - `public static HttpRequestEx.GetUserHostAddress(System.Web.HttpRequest request)` → `System.String`
 - `public static HttpRequestEx.GetUserHostsChain(System.Web.HttpRequest request)` → `System.Collections.Generic.IEnumerable`1[System.String]`
 - `public static HttpRequestEx.GetUserHostsChain(System.Web.HttpRequestBase request)` → `System.Collections.Generic.IEnumerable`1[System.String]`
-- `public virtual HttpRequestEx.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual HttpRequestEx.GetHashCode()` → `System.Int32`
-- `public HttpRequestEx.GetType()` → `System.Type`
-- `public virtual HttpRequestEx.ToString()` → `System.String`
-- `public virtual HttpRequestEx+.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual HttpRequestEx+.GetHashCode()` → `System.Int32`
-- `public HttpRequestEx+.GetType()` → `System.Type`
-- `public virtual HttpRequestEx+.ToString()` → `System.String`
-- `public virtual HttpRequestEx+.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual HttpRequestEx+.GetHashCode()` → `System.Int32`
-- `public HttpRequestEx+.GetType()` → `System.Type`
-- `public virtual HttpRequestEx+.ToString()` → `System.String`
-- `public virtual HttpRequestEx+.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual HttpRequestEx+.GetHashCode()` → `System.Int32`
-- `public HttpRequestEx+.GetType()` → `System.Type`
-- `public virtual HttpRequestEx+.ToString()` → `System.String`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.GetHashCode()` → `System.Int32`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public Microsoft.CodeAnalysis.EmbeddedAttribute.GetType()` → `System.Type`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.ToString()` → `System.String`
-- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.GetHashCode()` → `System.Int32`
-- `public Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.GetType()` → `System.Type`
-- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions.ToString()` → `System.String`
-- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.GetHashCode()` → `System.Int32`
-- `public Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.GetType()` → `System.Type`
-- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.ToString()` → `System.String`
-- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.GetHashCode()` → `System.Int32`
-- `public Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.GetType()` → `System.Type`
-- `public virtual Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.ToString()` → `System.String`
-- `public virtual PX.AspNetCore.HttpContextTranslation.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual PX.AspNetCore.HttpContextTranslation.GetHashCode()` → `System.Int32`
-- `public PX.AspNetCore.HttpContextTranslation.GetType()` → `System.Type`
-- `public virtual PX.AspNetCore.HttpContextTranslation.ToString()` → `System.String`
-- `public virtual PX.AspNetCore.Owin.OwinContextExtensions.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual PX.AspNetCore.Owin.OwinContextExtensions.GetHashCode()` → `System.Int32`
-- `public PX.AspNetCore.Owin.OwinContextExtensions.GetType()` → `System.Type`
-- `public virtual PX.AspNetCore.Owin.OwinContextExtensions.ToString()` → `System.String`
-- `public virtual PX.Common.Async.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual PX.Common.Async.GetHashCode()` → `System.Int32`
-- `public PX.Common.Async.GetType()` → `System.Type`
-- `public virtual PX.Common.Async.ToString()` → `System.String`
-- `public virtual PX.Common.AtomicLazy`1.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual PX.Common.AtomicLazy`1.GetHashCode()` → `System.Int32`
-- `public PX.Common.AtomicLazy`1.GetType()` → `System.Type`
-- `public virtual PX.Common.AtomicLazy`1.ToString()` → `System.String`
+- `static HttpRequestEx.RemovePort(System.String )` → `System.String`
+- `static HttpRequestEx.(System.Web.HttpRequestBase )` → `System.Collections.Generic.IEnumerable`1[System.String]`
+- `static HttpRequestEx.SiteUrlWithPath(System.Web.HttpRequest )` → `System.String`
+- `static HttpRequestEx.GetContextBase(System.Web.HttpContext )` → `System.Web.HttpContextBase`
+- `static HttpRequestEx.GetRequestBase(System.Web.HttpContext )` → `System.Web.HttpRequestBase`
+- `HttpRequestEx+.(System.Char )` → `System.Boolean`
+- `HttpRequestEx+.(System.String )` → `System.String`
+- `HttpRequestEx+.(System.String )` → `System.String`
+- `HttpRequestEx+.(System.String )` → `System.String`
+- `HttpRequestEx+.(System.String )` → `System.String`
+- `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.(System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.String]] , System.Func`2[System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.String]],System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.String]]] )` → `System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.String]]`
+- `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.(System.Configuration.ConnectionStringSettings )` → `System.Collections.Generic.KeyValuePair`2[System.String,System.String]`
+- `Microsoft.Extensions.Configuration.ConfigurationBuilderExtensions+.(System.String )` → `System.Collections.Generic.KeyValuePair`2[System.String,System.String]`
+- `static PX.Common.Async.SetStatusSetter(System.Action`1[System.String] )` → `System.Void`
+- `static PX.Common.Async.SetStatus(System.String )` → `System.Void`
 - `public PX.Common.BinaryReaderEx.GetStream()` → `System.IO.Stream`
 - `public PX.Common.BinaryReaderEx.ReadTypeString()` → `System.Type`
 - `public PX.Common.BinaryReaderEx.ReadDateTime()` → `System.DateTime`
@@ -538,27 +501,64 @@ DLL: PX.Common
 - `public PX.Common.BinaryReaderEx.ReadBooleanNullable()` → `System.Nullable`1[System.Boolean]`
 - `public PX.Common.BinaryReaderEx.ReadByteArray()` → `System.Byte[]`
 - `public virtual PX.Common.BinaryReaderEx.ReadBoolean()` → `System.Boolean`
-- `public virtual PX.Common.BinaryReaderEx.Close()` → `System.Void`
-- `public virtual PX.Common.BinaryReaderEx.Dispose()` → `System.Void`
-- `public virtual PX.Common.BinaryReaderEx.PeekChar()` → `System.Int32`
-- `public virtual PX.Common.BinaryReaderEx.Read()` → `System.Int32`
-- `public virtual PX.Common.BinaryReaderEx.ReadByte()` → `System.Byte`
-- `public virtual PX.Common.BinaryReaderEx.ReadSByte()` → `System.SByte`
-- `public virtual PX.Common.BinaryReaderEx.ReadChar()` → `System.Char`
-- `public virtual PX.Common.BinaryReaderEx.ReadInt16()` → `System.Int16`
-- `public virtual PX.Common.BinaryReaderEx.ReadUInt16()` → `System.UInt16`
-- `public virtual PX.Common.BinaryReaderEx.ReadInt32()` → `System.Int32`
-- `public virtual PX.Common.BinaryReaderEx.ReadUInt32()` → `System.UInt32`
-- `public virtual PX.Common.BinaryReaderEx.ReadInt64()` → `System.Int64`
-- `public virtual PX.Common.BinaryReaderEx.ReadUInt64()` → `System.UInt64`
-- `public virtual PX.Common.BinaryReaderEx.ReadSingle()` → `System.Single`
-- `public virtual PX.Common.BinaryReaderEx.ReadDouble()` → `System.Double`
-- `public virtual PX.Common.BinaryReaderEx.ReadDecimal()` → `System.Decimal`
-- `public virtual PX.Common.BinaryReaderEx.ReadString()` → `System.String`
-- `public virtual PX.Common.BinaryReaderEx.Read(System.Char[] buffer, System.Int32 index, System.Int32 count)` → `System.Int32`
-- `public virtual PX.Common.BinaryReaderEx.ReadChars(System.Int32 count)` → `System.Char[]`
-- `public virtual PX.Common.BinaryReaderEx.Read(System.Byte[] buffer, System.Int32 index, System.Int32 count)` → `System.Int32`
-- `public virtual PX.Common.BinaryReaderEx.ReadBytes(System.Int32 count)` → `System.Byte[]`
+- `static PX.Common.CommonSurrogate.(System.Type )` → `System.Collections.Generic.List`1[System.Reflection.FieldInfo]`
+- `public virtual PX.Common.CommonSurrogate.GetObjectData(System.Object , System.Runtime.Serialization.SerializationInfo , System.Runtime.Serialization.StreamingContext )` → `System.Void`
+- `public virtual PX.Common.CommonSurrogate.SetObjectData(System.Object , System.Runtime.Serialization.SerializationInfo , System.Runtime.Serialization.StreamingContext ...)` → `System.Object`
+- `static PX.Common.Context.AsyncLocalSlotStorageProvider.TryGet()` → `PX.Common.Context.SlotStorageProviderBase`
+- `static PX.Common.Context.AsyncLocalSlotStorageProvider.Activate()` → `PX.Common.Context.IDisposableSlotStorageProvider`
+- `virtual PX.Common.Context.AsyncLocalSlotStorageProvider.Get(System.String )` → `System.Object`
+- `virtual PX.Common.Context.AsyncLocalSlotStorageProvider.Set(System.String , System.Object )` → `System.Void`
+- `virtual PX.Common.Context.AsyncLocalSlotStorageProvider.Remove(System.String )` → `System.Void`
+- `virtual PX.Common.Context.AsyncLocalSlotStorageProvider.Items()` → `System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]`
+- `virtual PX.Common.Context.AsyncLocalSlotStorageProvider.Clear()` → `System.Void`
+- `virtual PX.Common.Context.AsyncLocalSlotStorageProvider.zrql29uzws7uqlz22275xdn3q7flhvrd   ()` → `System.Void`
+- `static PX.Common.Context.CallContextSlotStorageProvider.Get()` → `PX.Common.Context.CallContextSlotStorageProvider`
+- `static PX.Common.Context.CallContextSlotStorageProvider.()` → `System.Collections.Generic.Dictionary`2[System.String,System.Object]`
+- `static PX.Common.Context.CallContextSlotStorageProvider.(System.Collections.Generic.Dictionary`2[System.String,System.Object] )` → `System.Void`
+- `virtual PX.Common.Context.CallContextSlotStorageProvider.Get(System.String )` → `System.Object`
+- `virtual PX.Common.Context.CallContextSlotStorageProvider.Set(System.String , System.Object )` → `System.Void`
+- `virtual PX.Common.Context.CallContextSlotStorageProvider.Remove(System.String )` → `System.Void`
+- `virtual PX.Common.Context.CallContextSlotStorageProvider.Items()` → `System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]`
+- `virtual PX.Common.Context.CallContextSlotStorageProvider.Clear()` → `System.Void`
+- `static PX.Common.Context.HttpContextSlotStorageProvider.(System.Collections.IDictionary )` → `PX.Common.Context.ISlotStorageProvider`
+- `static PX.Common.Context.HttpContextSlotStorageProvider.Get(System.Web.HttpContext )` → `PX.Common.Context.ISlotStorageProvider`
+- `static PX.Common.Context.HttpContextSlotStorageProvider.Get(System.Web.HttpContextBase )` → `PX.Common.Context.ISlotStorageProvider`
+- `PX.Common.Context.HttpContextSlotStorageProvider.()` → `System.Collections.Generic.Dictionary`2[System.String,System.Object]`
+- `virtual PX.Common.Context.HttpContextSlotStorageProvider.Get(System.String )` → `System.Object`
+- `virtual PX.Common.Context.HttpContextSlotStorageProvider.Set(System.String , System.Object )` → `System.Void`
+- `virtual PX.Common.Context.HttpContextSlotStorageProvider.Remove(System.String )` → `System.Void`
+- `virtual PX.Common.Context.HttpContextSlotStorageProvider.Items()` → `System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]`
+- `virtual PX.Common.Context.HttpContextSlotStorageProvider.Clear()` → `System.Void`
+- `public virtual PX.Common.Context.ISlotStorageProvider.Items()` → `System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]`
+- `public virtual PX.Common.Context.ISlotStorageProvider.Clear()` → `System.Void`
+- `virtual PX.Common.Context.SlotStorageProviderBase.Get(System.String )` → `System.Object`
+- `virtual PX.Common.Context.SlotStorageProviderBase.Set(System.String , System.Object )` → `System.Void`
+- `virtual PX.Common.Context.SlotStorageProviderBase.Remove(System.String )` → `System.Void`
+- `virtual PX.Common.Context.SlotStorageProviderBase.Items()` → `System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]`
+- `virtual PX.Common.Context.SlotStorageProviderBase.Clear()` → `System.Void`
+- `static PX.Common.Context.SlotStorageProviderBase.(System.Object )` → `TValue`
+- `virtual PX.Common.Context.SlotStorageProviderBase.ywb58c5syaqkkusa7megd3n9n4w2qaen   (System.String )` → `TValue`
+- `virtual PX.Common.Context.SlotStorageProviderBase.ywb58c5syaqkkusa7megd3n9n4w2qaen   (System.String , System.Object )` → `System.Void`
+- `virtual PX.Common.Context.SlotStorageProviderBase.ywb58c5syaqkkusa7megd3n9n4w2qaen   (System.String )` → `System.Void`
+- `virtual PX.Common.Context.SlotStorageProviderBase.ywb58c5syaqkkusa7megd3n9n4w2qaen   ()` → `System.Collections.Generic.IEnumerable`1[System.Collections.Generic.KeyValuePair`2[System.String,System.Object]]`
+- `virtual PX.Common.Context.SlotStorageProviderBase.ywb58c5syaqkkusa7megd3n9n4w2qaen   ()` → `System.Void`
+- `PX.Common.Context.SlotStorageProviderBase.(System.Object )` → `System.Object`
+- `PX.Common.Context.SlotStorageProviderBase.(System.Object )` → `System.Object`
+- `PX.Common.Context.SlotStorageProviderBase.()` → `System.Nullable`1[System.Int32]`
+- `static PX.Common.Context.SlotStorageProviderExtensions.Remove(PX.Common.Context.ISlotStorageProvider , System.Func`3[System.String,System.Object,System.Boolean] )` → `System.Void`
+- `PX.Common.Context.SlotStorageProviderExtensions+.(System.Collections.Generic.KeyValuePair`2[System.String,System.Object] )` → `System.Boolean`
+- `PX.Common.Context.SlotStorageProviderExtensions+.(System.Collections.Generic.KeyValuePair`2[System.String,System.Object] )` → `System.Void`
+- `static PX.Common.Context.SlotStore.()` → `PX.Common.Context.ISlotStorageProvider`
+- `static PX.Common.Context.SlotStore.AsyncLocal()` → `PX.Common.Context.IDisposableSlotStorageProvider`
+- `static PX.Common.Context.SlotStore.Slots(System.Web.HttpContext )` → `PX.Common.Context.ISlotStore`
+- `public static PX.Common.Context.SlotStore.Slots(System.Web.HttpContextBase context)` → `PX.Common.Context.ISlotStore`
+- `static PX.Common.Context.SlotStore.Remove(System.Func`3[System.String,System.Object,System.Boolean] )` → `System.Void`
+- `static PX.Common.Context.SlotStore.ClearAll()` → `System.Void`
+- `PX.Common.DaylightSavingTime.()` → `System.Void`
+- `PX.Common.DaylightSavingTime.(System.TimeZoneInfo+TransitionTime , System.Int32 )` → `System.DateTime`
+- `PX.Common.DaylightSavingTime.(System.Globalization.Calendar , System.Int32 , System.Int32 )` → `System.Int32`
+- `public static PX.Common.Extensions.GuidExtensions.IsNullOrEmpty(System.Nullable`1[System.Guid] value)` → `System.Boolean`
+- `public static PX.Common.Extensions.HttpResponseExtensions.AddOnSendingHeadersWhenContextPresent(System.Web.HttpResponse response, System.Action`1[System.Web.HttpContext] callback)` → `System.Web.ISubscriptionToken`
 ## Key Properties
 
 - `<>f__AnonymousType0`2.Type`: `<Type>j__TPar` (read-only)

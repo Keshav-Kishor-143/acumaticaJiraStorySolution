@@ -1352,37 +1352,6 @@ DLL: PX.Common.Std
 - `public virtual <>f__AnonymousType0`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType0`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType0`2.ToString()` → `System.String`
-- `public <>f__AnonymousType0`2.GetType()` → `System.Type`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.GetHashCode()` → `System.Int32`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public Microsoft.CodeAnalysis.EmbeddedAttribute.GetType()` → `System.Type`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.IsReadOnlyAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.IsReadOnlyAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.IsReadOnlyAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.IsReadOnlyAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.IsReadOnlyAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.IsReadOnlyAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.NullableAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.NullableContextAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.NullableContextAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.NullableContextAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.NullableContextAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.NullableContextAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.NullableContextAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.RefSafetyRulesAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.RefSafetyRulesAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.RefSafetyRulesAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.RefSafetyRulesAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.RefSafetyRulesAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.RefSafetyRulesAttribute.ToString()` → `System.String`
 - `public static System.Index.FromStart(System.Int32 value)` → `System.Index`
 - `public static System.Index.FromEnd(System.Int32 value)` → `System.Index`
 - `public System.Index.GetOffset(System.Int32 length)` → `System.Int32`
@@ -1390,7 +1359,7 @@ DLL: PX.Common.Std
 - `public virtual System.Index.Equals(System.Index other)` → `System.Boolean`
 - `public virtual System.Index.GetHashCode()` → `System.Int32`
 - `public virtual System.Index.ToString()` → `System.String`
-- `public System.Index.GetType()` → `System.Type`
+- `System.Index.ToStringFromEnd()` → `System.String`
 - `public virtual System.Range.Equals(System.Object value)` → `System.Boolean`
 - `public virtual System.Range.Equals(System.Range other)` → `System.Boolean`
 - `public virtual System.Range.GetHashCode()` → `System.Int32`
@@ -1398,57 +1367,88 @@ DLL: PX.Common.Std
 - `public static System.Range.StartAt(System.Index start)` → `System.Range`
 - `public static System.Range.EndAt(System.Index end)` → `System.Range`
 - `public System.Range.GetOffsetAndLength(System.Int32 length)` → `System.ValueTuple`2[System.Int32,System.Int32]`
-- `public System.Range.GetType()` → `System.Type`
-- `public virtual System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.Versioning.RequiresPreviewFeaturesAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.CallerArgumentExpressionAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.CollectionBuilderAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.CollectionBuilderAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.CollectionBuilderAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.CollectionBuilderAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.CollectionBuilderAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.CollectionBuilderAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.CompilerFeatureRequiredAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerArgumentAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.InterpolatedStringHandlerAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.IsExternalInit.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.IsExternalInit.GetHashCode()` → `System.Int32`
-- `public System.Runtime.CompilerServices.IsExternalInit.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.IsExternalInit.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.ModuleInitializerAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.ModuleInitializerAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.ModuleInitializerAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.ModuleInitializerAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.ModuleInitializerAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.ModuleInitializerAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.RequiredMemberAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.RequiredMemberAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.RequiredMemberAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.RequiredMemberAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public static System.Linq.JoinToDictionary.Join(System.Collections.Generic.IEnumerable`1[TKey] outer, System.Collections.Generic.IDictionary`2[TKey,TValue] inner, System.Func`3[TKey,TValue,TResult] resultSelector)` → `System.Collections.Generic.IEnumerable`1[TResult]`
+- `public virtual PX.Security.ConstantTimeStringComparer.Equals(System.Object x, System.Object y)` → `System.Boolean`
+- `public virtual PX.Security.ConstantTimeStringComparer.Equals(System.String x, System.String y)` → `System.Boolean`
+- `public static PX.Security.ConstantTimeStringComparer.AreEqual(System.String x, System.String y)` → `System.Boolean`
+- `public virtual PX.Security.ConstantTimeStringComparer.GetHashCode(System.Object obj)` → `System.Int32`
+- `public virtual PX.Security.ConstantTimeStringComparer.GetHashCode(System.String str)` → `System.Int32`
+- `public static PX.Security.ConstantTimeStringComparer.GetConstantTimeHashCode(System.String str, System.Int32 hashCodeSize)` → `System.Int32`
+- `static PX.Security.ConstantTimeStringComparer.GetConstantTimeHashCodeImpl(System.String str, System.Int32 hashCodeSize)` → `System.Int32`
+- `static PX.Security.ConstantTimeStringComparer.ValidateHashCodeSize(System.Int32 hashCodeSize)` → `System.Void`
+- `public virtual PX.Security.IRoleManagementService.GetRolesForUser(System.String username)` → `System.String[]`
+- `public virtual PX.Security.IRoleManagementService.RoleExists(System.String roleName)` → `System.Boolean`
+- `public virtual PX.Security.IRoleManagementService.GetUsersInRole(System.String roleName)` → `System.String[]`
+- `public virtual PX.Security.IRoleManagementService.GetAllRoles()` → `System.String[]`
+- `public virtual PX.Data.IRelativeDatesManager.EvaluateAsString(System.String relativeDatesExpression)` → `System.String`
+- `public virtual PX.Data.IRelativeDatesManager.EvaluateAsDateTime(System.String relativeDatesExpression)` → `System.Nullable`1[System.DateTime]`
+- `public static PX.Data.RelativeDatesManager.IsRelativeDatesString(System.String filterString)` → `System.Boolean`
+- `public static PX.Data.RelativeDatesManager.EvaluateAsString(System.String relativeDatesExpression)` → `System.String`
+- `public static PX.Data.RelativeDatesManager.EvaluateAsDateTime(System.String relativeDatesExpression)` → `System.Nullable`1[System.DateTime]`
+- `virtual PX.Data.RelativeDatesManager.PX.Data.IRelativeDatesManager.EvaluateAsString(System.String relativeDatesExpression)` → `System.String`
+- `virtual PX.Data.RelativeDatesManager.PX.Data.IRelativeDatesManager.EvaluateAsDateTime(System.String relativeDatesExpression)` → `System.Nullable`1[System.DateTime]`
+- `PX.Data.RelativeDatesManager.Evaluate(System.String relativeDatesExpression)` → `PX.Data.RelativeDates.Token`
+- `public static PX.Data.RelativeDates.InfixParser.SplitToTokens(System.String infixString, PX.Data.ITodayUtc today, PX.Data.RelativeDates.IFinancialPeriodManager financialPeriodManager)` → `System.Collections.Generic.IEnumerable`1[PX.Data.RelativeDates.Token]`
+- `public virtual PX.Data.RelativeDates.Add.Evaluate(PX.Data.RelativeDates.Token[] arguments)` → `PX.Data.RelativeDates.Token`
+- `PX.Data.RelativeDates.Add.SumFunctionAndNumber(PX.Data.RelativeDates.DateValue numberFunction, PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.Token`
+- `PX.Data.RelativeDates.Add.SumNumbers(PX.Data.RelativeDates.NumberValue n, PX.Data.RelativeDates.NumberValue m)` → `PX.Data.RelativeDates.Token`
+- `public virtual PX.Data.RelativeDates.Operator.Evaluate(PX.Data.RelativeDates.Token[] arguments)` → `PX.Data.RelativeDates.Token`
+- `public virtual PX.Data.RelativeDates.Substract.Evaluate(PX.Data.RelativeDates.Token[] arguments)` → `PX.Data.RelativeDates.Token`
+- `PX.Data.RelativeDates.Substract.SubstractFunctionAndNumber(PX.Data.RelativeDates.DateValue numberFunction, PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.Token`
+- `PX.Data.RelativeDates.Substract.SubstractNumbers(PX.Data.RelativeDates.NumberValue n, PX.Data.RelativeDates.NumberValue m)` → `PX.Data.RelativeDates.Token`
+- `public static PX.Data.RelativeDates.RPNCalculator.Calc(System.Collections.Generic.Queue`1[PX.Data.RelativeDates.Token] rpnQueue)` → `PX.Data.RelativeDates.Token`
+- `public static PX.Data.RelativeDates.ShuntingYardParser.MakeRPNQueue(System.Collections.Generic.IEnumerable`1[PX.Data.RelativeDates.Token] tokens)` → `System.Collections.Generic.Queue`1[PX.Data.RelativeDates.Token]`
+- `public static PX.Data.RelativeDates.TokenFactory.CreateInstance(System.String tokenString, PX.Data.ITodayUtc today, PX.Data.RelativeDates.IFinancialPeriodManager financialPeriodManager)` → `PX.Data.RelativeDates.Token`
+- `public virtual PX.Data.RelativeDates.DateValue.Add(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.DateValue.Substract(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.DateValue.ToString()` → `System.String`
+- `virtual PX.Data.RelativeDates.DateValue.CreateBinaryOperationResult()` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.IFinancialPeriodManager.GetCurrentFinancialPeriodStart(System.Int32 shift)` → `System.DateTime`
+- `public virtual PX.Data.RelativeDates.IFinancialPeriodManager.GetCurrentFinancialPeriodEnd(System.Int32 shift)` → `System.DateTime`
+- `public virtual PX.Data.RelativeDates.FinancialPeriodManagerStub.GetCurrentFinancialPeriodStart(System.Int32 shift)` → `System.DateTime`
+- `public virtual PX.Data.RelativeDates.FinancialPeriodManagerStub.GetCurrentFinancialPeriodEnd(System.Int32 shift)` → `System.DateTime`
+- `public virtual PX.Data.RelativeDates.FinancialPeriodStart.Add(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.FinancialPeriodStart.Substract(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.FinancialPeriodEnd.Add(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.FinancialPeriodEnd.Substract(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.MonthStart.Add(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.MonthStart.Substract(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `virtual PX.Data.RelativeDates.MonthStart.AddMonths(System.Int32 months)` → `PX.Data.RelativeDates.DateValue`
+- `virtual PX.Data.RelativeDates.MonthEnd.AddMonths(System.Int32 months)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.QuarterStart.Substract(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.QuarterStart.Add(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `PX.Data.RelativeDates.QuarterStart.SubstractQuarters(System.Int32 quarters, System.DateTime[] allQuarters)` → `PX.Data.RelativeDates.DateValue`
+- `PX.Data.RelativeDates.QuarterStart.AddQuarters(System.Int32 quarters, System.DateTime[] allQuarters)` → `PX.Data.RelativeDates.DateValue`
+- `PX.Data.RelativeDates.QuarterStart.CalculateQuartersStartDates()` → `System.Void`
+- `virtual PX.Data.RelativeDates.QuarterStart.CreateBinaryOperationResult()` → `PX.Data.RelativeDates.DateValue`
+- `PX.Data.RelativeDates.QuarterStart.<get_QuarterStartUtc>b__3_0(System.DateTime quarter)` → `System.Boolean`
+- `public virtual PX.Data.RelativeDates.QuarterEnd.Add(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.QuarterEnd.Substract(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `PX.Data.RelativeDates.QuarterEnd.CalculateQuartersEndDates()` → `System.Void`
+- `virtual PX.Data.RelativeDates.QuarterEnd.CreateBinaryOperationResult()` → `PX.Data.RelativeDates.DateValue`
+- `PX.Data.RelativeDates.QuarterEnd.<get_QuarterEndUtc>b__2_0(System.DateTime quarter)` → `System.Boolean`
+- `PX.Data.RelativeDates.Today.CheckNegativeArgument(PX.Data.RelativeDates.NumberValue numberValue)` → `System.Void`
+- `public virtual PX.Data.RelativeDates.Today.Add(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.Today.Substract(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `PX.Data.RelativeDates.Today.AddDays(System.Int32 days)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.WeekStart.Add(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.WeekStart.Substract(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `PX.Data.RelativeDates.WeekStart.AddWeeks(System.Int32 weeks)` → `PX.Data.RelativeDates.DateValue`
+- `virtual PX.Data.RelativeDates.WeekStart.CreateBinaryOperationResult()` → `PX.Data.RelativeDates.DateValue`
+- `virtual PX.Data.RelativeDates.WeekEnd.CreateBinaryOperationResult()` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.YearStart.Add(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.YearStart.Substract(PX.Data.RelativeDates.NumberValue numberValue)` → `PX.Data.RelativeDates.DateValue`
+- `virtual PX.Data.RelativeDates.YearStart.AddYears(System.Int32 years)` → `PX.Data.RelativeDates.DateValue`
+- `virtual PX.Data.RelativeDates.YearStart.CreateBinaryOperationResult()` → `PX.Data.RelativeDates.DateValue`
+- `virtual PX.Data.RelativeDates.YearEnd.CreateBinaryOperationResult()` → `PX.Data.RelativeDates.DateValue`
+- `public virtual PX.Data.RelativeDates.NumberValue.ToString()` → `System.String`
+- `PX.Diagnostics.InstrumentationOptions.AddSource(System.String source)` → `PX.Diagnostics.InstrumentationOptions`
+- `public static PX.Distributed.RedisConfigurationHelper.CreateConnectionString(System.String server, System.Int32 port, System.String password...)` → `System.String`
+- `public static PX.Common.Anonymous.IsAnonymous(System.String username)` → `System.Boolean`
+- `public static PX.Common.Anonymous.IsAnonymous(System.Security.Principal.IPrincipal principal)` → `System.Boolean`
+- `public static PX.Common.ArrayDeconstruct.Deconstruct(T[] array, T& element0)` → `System.Void`
+- `public static PX.Common.ArrayDeconstruct.Deconstruct(T[] array, T& element0, T& element1)` → `System.Void`
+- `public static PX.Common.ArrayDeconstruct.Deconstruct(T[] array, T& element0, T& element1...)` → `System.Void`
 ## Key Properties
 
 - `<>f__AnonymousType0`2.Lefts`: `<Lefts>j__TPar` (read-only)

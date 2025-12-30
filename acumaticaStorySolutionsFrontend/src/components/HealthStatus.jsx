@@ -9,10 +9,13 @@ const HealthStatus = () => {
   const [components, setComponents] = useState(null);
 
   useEffect(() => {
+    let intervalId = null;
+    let checkCount = 0;
+    
     const checkHealth = async () => {
       try {
         const response = await healthCheck();
-        console.log('Health check response:', response); // Debug log
+        checkCount++;
         
         // Store component details for tooltip
         if (response.components) {
@@ -24,8 +27,20 @@ const HealthStatus = () => {
         if (backendStatus === 'healthy') {
           setStatus('healthy');
           setMessage(response.message || 'Service available');
+          
+          // After initial checks, reduce frequency when healthy
+          // First 3 checks: every 30s, then every 2 minutes when healthy
+          if (checkCount >= 3 && intervalId) {
+            clearInterval(intervalId);
+            intervalId = setInterval(checkHealth, 120000); // 2 minutes when healthy
+          }
         } else if (backendStatus === 'degraded') {
           setStatus('degraded');
+          // Increase frequency when degraded (check every 30s)
+          if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = setInterval(checkHealth, 30000);
+          }
           // Build detailed message from components if available
           if (response.components) {
             const failedComponents = Object.entries(response.components)
@@ -43,6 +58,11 @@ const HealthStatus = () => {
         } else if (backendStatus === 'unhealthy') {
           setStatus('unhealthy');
           setMessage(response.message || 'Service unavailable');
+          // Increase frequency when unhealthy (check every 15s)
+          if (intervalId) {
+            clearInterval(intervalId);
+            intervalId = setInterval(checkHealth, 15000);
+          }
         } else {
           // If status is not recognized, check if response is successful
           // Some backends might return status in different format
@@ -51,16 +71,27 @@ const HealthStatus = () => {
           setMessage(response.message || 'Service available');
         }
       } catch (error) {
-        console.error('Health check error:', error); // Debug log
+        console.error('Health check error:', error);
         setStatus('unhealthy');
         setMessage('Service unavailable');
+        // Increase frequency on error (check every 15s)
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = setInterval(checkHealth, 15000);
+        }
       }
     };
 
+    // Initial check immediately
     checkHealth();
-    const interval = setInterval(checkHealth, 30000); // Check every 30 seconds
+    // Then check every 30 seconds initially
+    intervalId = setInterval(checkHealth, 30000);
 
-    return () => clearInterval(interval);
+    return () => {
+      if (intervalId) {
+        clearInterval(intervalId);
+      }
+    };
   }, []);
 
   const getStatusIcon = () => {

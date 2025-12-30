@@ -11,12 +11,11 @@ from fastapi import APIRouter, HTTPException, Request, Depends
 from fastapi.responses import JSONResponse, StreamingResponse
 import json
 
-from src.api.models.requests import JIRAStoryRequest
+from src.api.models.requests import JIRAStoryRequest, StoryNormalizationRequest, NormalizedStoryResponse
 from src.api.models.responses import SolutionResponse, SourceReference, HealthResponse, ManualsListResponse, ManualInfo
 from src.core.story_processor import JIRAStoryProcessor
-from src.core.rag_service import RAGService
 from src.core.solution_generator import SolutionGenerator
-from src.core.intent_layer import IntentUnderstandingLayer
+from src.core.pipeline_controller import PipelineController
 from src.utils.markdown_formatter import MarkdownFormatter
 from src.config.config import config
 from src.utils.logger_utils import get_logger
@@ -75,10 +74,9 @@ def save_solution_markdown(solution_markdown: str, story_id: Optional[str], titl
 
 # Global components for lifecycle management
 _story_processor: Optional[JIRAStoryProcessor] = None
-_rag_service: Optional[RAGService] = None
 _solution_generator: Optional[SolutionGenerator] = None
 _markdown_formatter: Optional[MarkdownFormatter] = None
-_intent_layer: Optional[IntentUnderstandingLayer] = None
+_pipeline_controller: Optional[PipelineController] = None
 _initialization_lock = None
 _initializing = False
 
@@ -111,16 +109,16 @@ def _get_lock():
 
 def get_components() -> tuple:
     """Lazy initialization of system components with thread safety"""
-    global _story_processor, _rag_service, _solution_generator, _markdown_formatter, _intent_layer, _initializing
+    global _story_processor, _solution_generator, _markdown_formatter, _pipeline_controller, _initializing
     
     # Use lock to prevent concurrent initialization
     lock = _get_lock()
     
     with lock:
         # Double-check pattern: verify components are still None after acquiring lock
-        if _story_processor is not None and _rag_service is not None:
+        if _story_processor is not None and _pipeline_controller is not None:
             # Components already initialized, return immediately
-            return _story_processor, _rag_service, _solution_generator, _markdown_formatter, _intent_layer
+            return _story_processor, _solution_generator, _markdown_formatter, _pipeline_controller
         
         # Prevent recursive initialization
         if _initializing:
@@ -128,8 +126,8 @@ def get_components() -> tuple:
             # Wait a bit and return existing components if available
             import time
             time.sleep(0.1)
-            if _story_processor is not None and _rag_service is not None:
-                return _story_processor, _rag_service, _solution_generator, _markdown_formatter, _intent_layer
+            if _story_processor is not None and _pipeline_controller is not None:
+                return _story_processor, _solution_generator, _markdown_formatter, _pipeline_controller
         
         _initializing = True
         
@@ -139,12 +137,6 @@ def get_components() -> tuple:
                 logger.info("Initializing Story Processor...")
                 _story_processor = JIRAStoryProcessor()
                 logger.info("✅ Story Processor initialized")
-            
-            # Initialize RAG Service if needed
-            if _rag_service is None:
-                logger.info("Initializing RAG Service...")
-                _rag_service = RAGService()
-                logger.info("✅ RAG Service initialized")
             
             # Initialize Solution Generator if needed
             if _solution_generator is None:
@@ -158,14 +150,14 @@ def get_components() -> tuple:
                 _markdown_formatter = MarkdownFormatter()
                 logger.info("✅ Markdown Formatter initialized")
             
-            # Initialize Intent Understanding Layer if needed
-            if _intent_layer is None:
-                logger.info("Initializing Intent Understanding Layer...")
-                _intent_layer = IntentUnderstandingLayer()
-                logger.info("✅ Intent Understanding Layer initialized")
+            # Initialize Pipeline Controller if needed
+            if _pipeline_controller is None:
+                logger.info("Initializing Pipeline Controller...")
+                _pipeline_controller = PipelineController()
+                logger.info("✅ Pipeline Controller initialized")
             
             logger.info("✅ All components initialized successfully")
-            return _story_processor, _rag_service, _solution_generator, _markdown_formatter, _intent_layer
+            return _story_processor, _solution_generator, _markdown_formatter, _pipeline_controller
             
         except Exception as e:
             logger.error("Failed to initialize components", extra={
@@ -177,6 +169,84 @@ def get_components() -> tuple:
             raise
         finally:
             _initializing = False
+
+
+@router.post(
+    "/normalize",
+    response_model=NormalizedStoryResponse,
+    summary="Normalize JIRA Story Input",
+    description="""
+    Normalize raw JIRA story text into clean, canonical JSON structure.
+    
+    **Purpose:**
+    Converts inconsistently formatted story text (with mixed indentation, bullets, subpoints)
+    into a structured format with separated Description, Requirements, and Acceptance Criteria.
+    
+    **Input:**
+    - Raw story text (may include Description, Requirements, AC sections in any format)
+    
+    **Output:**
+    - Normalized JSON with:
+      - story_title: Extracted title
+      - description: Clean narrative only
+      - requirements: List of business rules/constraints
+      - acceptance_criteria: Hierarchical structure with subpoints
+    
+    **Handles:**
+    - Email template stories (Story 1009)
+    - Billing logic stories with Gherkin (Story 916)
+    - Validation rule stories (Story 1171)
+    - Any mixed-format story
+    """,
+    responses={
+        200: {
+            "description": "Story normalized successfully",
+            "content": {
+                "application/json": {
+                    "example": {
+                        "success": True,
+                        "normalized_story": {
+                            "story_title": "Email Quote Template",
+                            "description": "As a sales user, I want the Email Quote template...",
+                            "requirements": [],
+                            "acceptance_criteria": [
+                                {
+                                    "id": "AC1",
+                                    "text": "The email subject must follow the format...",
+                                    "subpoints": []
+                                }
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+)
+async def normalize_story(request: StoryNormalizationRequest):
+    """
+    Normalize raw JIRA story text into structured format
+    """
+    try:
+        story_processor, _, _, _ = get_components()
+        
+        # Normalize the story
+        normalized = story_processor.normalize_story_input(request.raw_story_text)
+        
+        return NormalizedStoryResponse(
+            success=True,
+            normalized_story=normalized
+        )
+    except Exception as e:
+        logger.error("Story normalization failed", extra={
+            "error": str(e),
+            "error_type": type(e).__name__
+        })
+        return NormalizedStoryResponse(
+            success=False,
+            normalized_story={},
+            error=str(e)
+        )
 
 
 @router.post(
@@ -295,128 +365,115 @@ async def process_story(request: JIRAStoryRequest, http_request: Request):
         # Check cancellation before starting
         await _check_cancellation(request_id)
         
-        # Get components
-        story_processor, rag_service, solution_generator, markdown_formatter, intent_layer = get_components()
+        # Get components (including pipeline controller)
+        story_processor, solution_generator, markdown_formatter, pipeline_controller = get_components()
         
-        # Step 1: Extract key questions
-        await _check_cancellation(request_id)
+        # Use Pipeline Controller for complete multi-stage processing
+        logger.info("Using Pipeline Controller for complete processing", extra={
+            "request_id": request_id,
+            "story_id": request.story_id
+        })
         
-        story_json = {
+        # Extract title and story_id from normalized_story if not provided in request
+        title = request.title
+        story_id = request.story_id
+        if request.normalized_story:
+            # Use normalized_story title/story_title if not provided in request
+            if not title:
+                title = request.normalized_story.get('story_title')
+            if not story_id:
+                story_id = request.normalized_story.get('story_title')
+            # Use normalized_story requirements if not provided in request
+            requirements = request.requirements or request.normalized_story.get('requirements', [])
+        else:
+            requirements = request.requirements or []
+        
+        # Prepare story request for pipeline
+        story_request = {
             "description": request.description,
             "acceptance_criteria": request.acceptance_criteria,
+            "story_id": story_id,  # Use extracted story_id (from normalized_story if available)
+            "title": title,  # Use extracted title (from normalized_story if available)
             "images": request.images or [],
-            "story_id": request.story_id
+            "requirements": requirements,  # Use extracted requirements (from normalized_story if available)
+            "normalized_story": request.normalized_story,
+            "raw_story_text": getattr(request, 'raw_story_text', None)
         }
         
-        questions = story_processor.extract_key_questions(story_json)
-        
+        # Process through complete pipeline
         await _check_cancellation(request_id)
         
-        if not questions:
-            raise HTTPException(
-                status_code=400,
-                detail="Failed to extract questions from story"
-            )
-        
-        logger.info("Questions extracted", extra={
-            "request_id": request_id,
-            "question_count": len(questions),
-            "questions": questions
-        })
-        
-        # Step 2: Unified Retrieval Approach - Use all questions as context for comprehensive retrieval
-        # This prevents hallucination by grounding everything in a single, comprehensive retrieval
-        
-        logger.info("Using unified retrieval approach", extra={
-            "request_id": request_id,
-            "question_count": len(questions),
-            "approach": "questions_as_context"
-        })
-        
-        # Analyze unified story context (not individual questions)
-        unified_search_params = None
-        try:
-            # Create unified query context for intent analysis
-            unified_context = f"{request.description}\n\nKey aspects: {', '.join(questions)}"
-            intent_analysis = await intent_layer.analyze_query(unified_context)
-            unified_search_params = intent_layer.get_search_parameters(intent_analysis, original_query=unified_context)
-            logger.info("Unified intent analysis completed", extra={
-                "request_id": request_id,
-                "relevant_docs": len(unified_search_params.get("target_directories", [])),
-                "primary_intent": unified_search_params.get("query_intent", {}).get("primary", "unknown")
-            })
-        except Exception as e:
-            logger.warning("Unified intent analysis failed, using standard search", extra={
-                "request_id": request_id,
-                "error": str(e)
-            })
-        
-        await _check_cancellation(request_id)
-        
-        # Step 3: Single comprehensive retrieval with all questions as context
-        # Questions guide the retrieval but don't create separate queries
-        # OPTIMIZATION: Use config.TOP_K_RESULTS with reasonable cap for performance
-        # Cap at 8 to balance quality and speed (was TOP_K_RESULTS * 2 which could be 10)
-        optimized_top_k = min(config.TOP_K_RESULTS + 2, 8)  # Max 8 results for faster processing
-        
-        comprehensive_result = await rag_service.generate_comprehensive_answer(
-            story_context={
-                "description": request.description,
-                "acceptance_criteria": request.acceptance_criteria,
-                "questions": questions  # Pass questions as context, not separate queries
-            },
-            top_k=optimized_top_k,  # Optimized: Use config value with cap
-            search_params=unified_search_params,
+        pipeline_result = await pipeline_controller.process_story(
+            story_request=story_request,
             request_id=request_id
         )
         
         await _check_cancellation(request_id)
         
-        # Extract sources from comprehensive result
-        all_sources = comprehensive_result.get('sources', [])
-        comprehensive_answer = comprehensive_result.get('answer', 'No answer found.')
+        # Extract results from pipeline
+        normalized_story = pipeline_result.get('normalized_story', {})
+        technical_entities = pipeline_result.get('technical_entities', {})
+        validated_entities = pipeline_result.get('validated_entities', {})
+        fact_table = pipeline_result.get('fact_table', {})
+        ac_mappings = pipeline_result.get('ac_mappings', [])
+        solution_narrative = pipeline_result.get('solution_narrative', '')
+        all_sources = pipeline_result.get('sources', [])
+        vision_analysis = pipeline_result.get('vision_analysis', [])
         
-        logger.info("Comprehensive retrieval completed", extra={
+        logger.info("Pipeline processing completed", extra={
             "request_id": request_id,
-            "sources_found": len(all_sources),
-            "answer_length": len(comprehensive_answer)
+            "entities_extracted": pipeline_result.get('metadata', {}).get('entities_extracted', 0),
+            "entities_validated": pipeline_result.get('metadata', {}).get('entities_validated', 0),
+            "sources_found": len(all_sources)
         })
         
-        # Step 4: Generate focused narrative solution grounded in retrieved content
-        # This is THE single comprehensive answer to the JIRA story task
-        await _check_cancellation(request_id)
+        # Format as precision markdown with all new sections
+        title = request.title or normalized_story.get('story_title') or f"Solution for Story {request.story_id or 'Unknown'}"
         
-        narrative = solution_generator.generate_focused_narrative(
-            story_context=story_json,
-            retrieved_content=comprehensive_result,
-            questions=questions  # Questions guide narrative structure internally
-        )
+        # Get acceptance criteria for formatting
+        ac_for_formatting = []
+        for ac in normalized_story.get('acceptance_criteria', []):
+            if isinstance(ac, dict):
+                ac_for_formatting.append(ac.get('text', ''))
+            else:
+                ac_for_formatting.append(str(ac))
         
-        await _check_cancellation(request_id)
+        if not ac_for_formatting:
+            ac_for_formatting = request.acceptance_criteria
         
-        logger.info("Focused narrative solution generated", extra={
-            "request_id": request_id,
-            "narrative_length": len(narrative)
-        })
+        # Extract confidence and classification from pipeline result
+        confidence_score = pipeline_result.get('confidence_score')
+        confidence_details = pipeline_result.get('confidence_details', {})
+        story_classification = pipeline_result.get('story_classification')
+        pipeline_metadata = pipeline_result.get('metadata', {})
         
-        # Step 5: Format as markdown - this IS the solution answer
-        title = request.title or f"Solution for Story {request.story_id or 'Unknown'}"
-        
-        # Format the single comprehensive solution as markdown
-        solution_markdown = markdown_formatter.format_solution(
-            title=title,
-            story_id=request.story_id,
-            questions=questions,  # Keep questions for reference in markdown
-            answers=[],  # No separate Q&A pairs - narrative IS the answer
-            narrative=narrative,  # This is the single comprehensive solution
-            acceptance_criteria=request.acceptance_criteria,
-            sources=all_sources,
-            metadata={
-                "processing_time": time.time() - start_time,
-                "questions_extracted": len(questions),
-                "solution_type": "unified_comprehensive"
-            }
-        )
+        # Format markdown
+        # Use validated entities for consistent confidence reporting in markdown
+        # Default to FINAL (delivery) output; keep precision available by switching to format_precision_solution.
+        output_style = getattr(config, "OUTPUT_STYLE", None) or "final"
+        if str(output_style).lower() == "precision":
+            solution_markdown = markdown_formatter.format_precision_solution(
+                title=title,
+                story_id=request.story_id,
+                narrative=solution_narrative,
+                fact_table=fact_table,
+                ac_mappings=ac_mappings,
+                technical_entities=validated_entities or technical_entities,
+                acceptance_criteria=ac_for_formatting,
+                sources=all_sources,
+                metadata=pipeline_metadata,  # Use full pipeline metadata
+                confidence_score=confidence_score,
+                confidence_details=confidence_details,
+                story_classification=story_classification
+            )
+        else:
+            solution_markdown = markdown_formatter.format_final_solution(
+                title=title,
+                story_id=request.story_id,
+                narrative=solution_narrative,
+                acceptance_criteria=ac_for_formatting,
+                sources=all_sources,
+            )
         
         await _check_cancellation(request_id)
         
@@ -535,17 +592,43 @@ async def process_story_stream(request: JIRAStoryRequest, http_request: Request)
             
             await _check_cancellation(request_id)
             
-            story_processor, rag_service, solution_generator, markdown_formatter, intent_layer = get_components()
+            story_processor, solution_generator, markdown_formatter, pipeline_controller = get_components()
             
-            # Acceptance criteria is already parsed by frontend, use as-is
-            # IMPORTANT: Do NOT call parse_acceptance_criteria - it doesn't exist!
-            # Frontend sends acceptance_criteria as a list already
-            parsed_criteria = request.acceptance_criteria
-            if isinstance(parsed_criteria, str):
-                # If it's a string, split by newlines (fallback)
-                parsed_criteria = [c.strip() for c in parsed_criteria.split('\n') if c.strip()]
-            elif not isinstance(parsed_criteria, list):
+            # Use normalized story if provided, otherwise use request fields
+            if request.normalized_story:
+                # Extract from normalized structure
+                normalized = request.normalized_story
+                description = normalized.get('description', request.description)
+                
+                # Extract title and story_id from normalized_story if not provided in request
+                title = request.title or normalized.get('story_title') or None
+                story_id = request.story_id or normalized.get('story_title') or None
+                
+                # Convert AC structure to flat list for question extraction
                 parsed_criteria = []
+                for ac in normalized.get('acceptance_criteria', []):
+                    ac_text = ac.get('text', '')
+                    if ac_text:
+                        parsed_criteria.append(ac_text)
+                    # Add subpoints as separate AC items
+                    for subpoint in ac.get('subpoints', []):
+                        if subpoint:
+                            parsed_criteria.append(f"{ac_text} - {subpoint}")
+                # Fallback to request acceptance_criteria if normalized AC is empty
+                if not parsed_criteria:
+                    parsed_criteria = request.acceptance_criteria
+            else:
+                # Use request fields directly
+                description = request.description
+                title = request.title
+                story_id = request.story_id
+                # Acceptance criteria is already parsed by frontend, use as-is
+                parsed_criteria = request.acceptance_criteria
+                if isinstance(parsed_criteria, str):
+                    # If it's a string, split by newlines (fallback)
+                    parsed_criteria = [c.strip() for c in parsed_criteria.split('\n') if c.strip()]
+                elif not isinstance(parsed_criteria, list):
+                    parsed_criteria = []
             
             # Validate parsed_criteria is a list
             if not isinstance(parsed_criteria, list):
@@ -556,7 +639,7 @@ async def process_story_stream(request: JIRAStoryRequest, http_request: Request)
                 parsed_criteria = []
             
             questions = story_processor.extract_key_questions({
-                "description": request.description,
+                "description": description,
                 "acceptance_criteria": parsed_criteria
             })
             
@@ -564,38 +647,49 @@ async def process_story_stream(request: JIRAStoryRequest, http_request: Request)
             
             await _check_cancellation(request_id)
             
-            # Step 2: Intent analysis
-            yield f"data: {json.dumps({'type': 'progress', 'step': 'analyzing_intent', 'message': 'Understanding story intent...'})}\n\n"
-            
-            # Create unified query context for intent analysis (same as regular endpoint)
-            unified_context = f"{request.description}\n\nAcceptance Criteria: {', '.join(parsed_criteria)}"
-            try:
-                intent_analysis = await intent_layer.analyze_query(unified_context)
-                unified_search_params = intent_layer.get_search_parameters(intent_analysis, original_query=unified_context)
-            except Exception as e:
-                logger.warning("Intent analysis failed in streaming endpoint, using standard search", extra={
-                    "request_id": request_id,
-                    "error": str(e)
-                })
-                unified_search_params = None
+            # Step 2: Use Pipeline Controller for processing
+            yield f"data: {json.dumps({'type': 'progress', 'step': 'processing_story', 'message': 'Processing story through pipeline...'})}\n\n"
             
             await _check_cancellation(request_id)
             
-            # Step 3: Retrieval (send progress)
+            # Step 3: Use Pipeline Controller for complete processing
             yield f"data: {json.dumps({'type': 'progress', 'step': 'searching_knowledge_base', 'message': 'Searching knowledge base...'})}\n\n"
             
-            optimized_top_k = min(config.TOP_K_RESULTS + 2, 8)
+            # Build story request for pipeline
+            story_request = {
+                "description": description,
+                "acceptance_criteria": parsed_criteria,
+                "story_id": story_id,  # Use extracted story_id (from normalized_story if available)
+                "title": title,  # Use extracted title (from normalized_story if available)
+                "images": request.images if hasattr(request, 'images') else [],
+                "normalized_story": request.normalized_story,  # Include normalized_story so pipeline can use it
+                "requirements": request.requirements or (request.normalized_story.get('requirements', []) if request.normalized_story else [])
+            }
             
-            comprehensive_result = await rag_service.generate_comprehensive_answer(
-                story_context={
-                    "description": request.description,
-                    "acceptance_criteria": parsed_criteria,
-                    "questions": questions
-                },
-                top_k=optimized_top_k,
-                search_params=unified_search_params,
+            # Process through pipeline
+            pipeline_result = await pipeline_controller.process_story(
+                story_request=story_request,
                 request_id=request_id
             )
+            
+            # Extract results from pipeline (same as non-streaming endpoint)
+            comprehensive_result = {
+                "answer": pipeline_result.get('solution_narrative', ''),
+                "sources": pipeline_result.get('sources', []),
+                "retrieved_chunks": pipeline_result.get('retrieved_chunks', []),
+                "vision_analysis": pipeline_result.get('vision_analysis', [])
+            }
+            
+            # Extract precision formatting data (same as non-streaming endpoint)
+            fact_table = pipeline_result.get('fact_table', {})
+            ac_mappings = pipeline_result.get('ac_mappings', [])
+            technical_entities = pipeline_result.get('technical_entities', {})
+            validated_entities = pipeline_result.get('validated_entities', {})
+            solution_narrative = pipeline_result.get('solution_narrative', '')
+            confidence_score = pipeline_result.get('confidence_score')
+            confidence_details = pipeline_result.get('confidence_details', {})
+            story_classification = pipeline_result.get('story_classification')
+            pipeline_metadata = pipeline_result.get('metadata', {})
             
             await _check_cancellation(request_id)
             
@@ -607,7 +701,7 @@ async def process_story_stream(request: JIRAStoryRequest, http_request: Request)
             accumulated_text = ""
             async for chunk in solution_generator.generate_focused_narrative_stream(
                 story_context={
-                    "description": request.description,
+                    "description": description,
                     "acceptance_criteria": parsed_criteria
                 },
                 retrieved_content=comprehensive_result,
@@ -618,29 +712,75 @@ async def process_story_stream(request: JIRAStoryRequest, http_request: Request)
                     accumulated_text += chunk
                     yield f"data: {json.dumps({'type': 'content', 'chunk': chunk})}\n\n"
             
-            # Step 5: Format final solution
-            title = request.title or f"Story {request.story_id or 'Solution'}"
+            # Step 5: Format final solution using same logic as non-streaming endpoint
+            # Use extracted title (already extracted from normalized_story if available)
+            final_title = title or request.title or f"Story {story_id or request.story_id or 'Solution'}"
             
-            solution_markdown = markdown_formatter.format_solution(
-                title=title,
-                story_id=request.story_id,
-                questions=questions,
-                answers=[comprehensive_result.get('answer', '')],
-                narrative=accumulated_text,
-                acceptance_criteria=parsed_criteria,
-                sources=comprehensive_result.get('sources', []),
-                metadata={
-                    "processing_time": time.time() - start_time,
-                    "model": config.LLM_MODEL,
-                    "top_k": optimized_top_k
-                }
-            )
+            # Prepare acceptance criteria for formatting (same as non-streaming endpoint)
+            ac_for_formatting = []
+            if request.normalized_story and request.normalized_story.get('acceptance_criteria'):
+                for ac in request.normalized_story.get('acceptance_criteria', []):
+                    if isinstance(ac, dict):
+                        ac_for_formatting.append(ac.get('text', ''))
+                    else:
+                        ac_for_formatting.append(str(ac))
+            
+            if not ac_for_formatting:
+                ac_for_formatting = parsed_criteria
+            
+            # Use same OUTPUT_STYLE logic as non-streaming endpoint
+            output_style = getattr(config, "OUTPUT_STYLE", None) or "final"
+            if str(output_style).lower() == "precision":
+                # Use precision formatting with all detailed data
+                solution_markdown = markdown_formatter.format_precision_solution(
+                    title=final_title,
+                    story_id=story_id or request.story_id,
+                    narrative=accumulated_text or solution_narrative,
+                    fact_table=fact_table,
+                    ac_mappings=ac_mappings,
+                    technical_entities=validated_entities or technical_entities,
+                    acceptance_criteria=ac_for_formatting,
+                    sources=comprehensive_result.get('sources', []),
+                    metadata=pipeline_metadata,
+                    confidence_score=confidence_score,
+                    confidence_details=confidence_details,
+                    story_classification=story_classification
+                )
+            else:
+                # Use final formatting (simpler output)
+                solution_markdown = markdown_formatter.format_final_solution(
+                    title=final_title,
+                    story_id=story_id or request.story_id,
+                    narrative=accumulated_text or solution_narrative,
+                    acceptance_criteria=ac_for_formatting,
+                    sources=comprehensive_result.get('sources', []),
+                    generated_at=datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                )
             
             # Save solution
-            saved_path = save_solution_markdown(solution_markdown, request.story_id, title)
+            saved_path = save_solution_markdown(solution_markdown, story_id or request.story_id, final_title)
             
-            # Send complete solution
-            yield f"data: {json.dumps({'type': 'complete', 'solution': solution_markdown, 'saved_file_path': saved_path, 'processing_time': time.time() - start_time})}\n\n"
+            # Format sources for response (matching SolutionResponse format)
+            formatted_sources = [
+                {
+                    "document": s.get('document', 'Unknown'),
+                    "page": s.get('page', 0),
+                    "confidence": float(s.get('similarity_score', 0.0)),
+                    "text_snippet": s.get('content_preview', '')
+                }
+                for s in comprehensive_result.get('sources', [])[:15]  # Top 15 sources
+            ]
+            
+            # Send complete solution with all fields matching SolutionResponse
+            yield f"data: {json.dumps({
+                'type': 'complete', 
+                'solution': solution_markdown, 
+                'solution_markdown': solution_markdown,  # Alias for consistency
+                'story_id': story_id or request.story_id,  # Use extracted story_id
+                'saved_file_path': saved_path, 
+                'processing_time': time.time() - start_time,
+                'sources': formatted_sources
+            })}\n\n"
             
         except Exception as e:
             logger.error("Streaming error", extra={"error": str(e), "request_id": request_id})
@@ -764,7 +904,7 @@ async def health_check():
         
         # Check Story Processor
         try:
-            story_processor, _, _, _, _ = get_components()  # Fixed: unpack 5 values
+            story_processor, _, _, _ = get_components()
             components["story_processor"] = {
                 "status": "ok",
                 "message": "Story Processor ready"
@@ -777,13 +917,16 @@ async def health_check():
             overall_status = "degraded"
             logger.warning("Story Processor health check failed", extra={"error": str(e)})
         
-        # Check RAG Service
+        # Check RAG Service (now integrated into PipelineController)
         try:
-            _, rag_service, _, _, _ = get_components()  # Fixed: unpack 5 values
-            docs = rag_service.list_available_documents()
+            _, _, _, pipeline_controller = get_components()
+            # RAG service functionality now handled by pipeline_controller
+            doc_count = 0
+            if hasattr(pipeline_controller, 'hybrid_retriever'):
+                doc_count = len(pipeline_controller.hybrid_retriever.content_index)
             components["rag_service"] = {
                 "status": "ok",
-                "message": f"RAG Service ready ({len(docs)} documents available)"
+                "message": f"RAG functionality integrated into PipelineController ({doc_count} documents available)"
             }
         except Exception as e:
             components["rag_service"] = {
@@ -795,7 +938,7 @@ async def health_check():
         
         # Check Solution Generator
         try:
-            _, _, solution_generator, _, _ = get_components()  # Fixed: unpack 5 values
+            _, solution_generator, _, _ = get_components()
             components["solution_generator"] = {
                 "status": "ok",
                 "message": "Solution Generator ready"
@@ -807,6 +950,21 @@ async def health_check():
             }
             overall_status = "degraded"
             logger.warning("Solution Generator health check failed", extra={"error": str(e)})
+        
+        # Check Pipeline Controller
+        try:
+            _, _, _, pipeline_controller = get_components()
+            components["pipeline_controller"] = {
+                "status": "ok",
+                "message": "Pipeline Controller ready"
+            }
+        except Exception as e:
+            components["pipeline_controller"] = {
+                "status": "error",
+                "message": f"Pipeline Controller failed: {str(e)}"
+            }
+            overall_status = "degraded"
+            logger.warning("Pipeline Controller health check failed", extra={"error": str(e)})
         
         return HealthResponse(
             status=overall_status,
@@ -861,11 +1019,19 @@ async def list_manuals():
     try:
         logger.info("Listing available manuals")
         
-        # Get RAG service to access document list
-        _, rag_service, _, _, _ = get_components()
+        # Get pipeline controller to access document list
+        _, _, _, pipeline_controller = get_components()
         
-        # Get list of documents
-        documents = rag_service.list_available_documents()
+        # Get list of documents (via inferencer in pipeline controller)
+        # Access hybrid_retriever's content_index for document list
+        documents = []
+        if hasattr(pipeline_controller, 'hybrid_retriever'):
+            content_index = pipeline_controller.hybrid_retriever.content_index
+            for doc_id in content_index.keys():
+                documents.append({
+                    "document_name": doc_id,
+                    "document_id": doc_id
+                })
         
         # Format manual names (remove underscores, add spaces, clean up)
         manuals = []

@@ -2536,5 +2536,1604 @@
     "section_type": "page",
     "timestamp": "",
     "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_page_54"
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p1_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 1,
+    "section_type": "text_chunk",
+    "section_id": "p1_c001",
+    "image_path": "images/page1.jpg",
+    "text_content": "Developer Course\nCustomization\nT400 Basic Customization\nof the Mobile App\n2025 R1\nRevision: 4/9/2025",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 216,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p2_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 2,
+    "section_type": "text_chunk",
+    "section_id": "p2_c001",
+    "image_path": "images/page2.jpg",
+    "text_content": "Contents | 2\nContents\nCopyright...............................................................................................................................................3\nHow to Use This Course.......................................................................................................................... 4\nPreparing the Environment.....................................................................................................................6\nPart 1: Introduction to the Acumatica Mobile App.....................................................................................8\nLesson 1.1: Install the Acumatica Mobile App..................................................................................................8\nLesson 1.2: Sign In to the Acumatica Mobile App............................................................................................9\nPart 2: Tools and Languages.................................................................................................................. 11\nLesson 2.1: Explore a WSDL Schema..............................................................................................................11\nLesson 2.2: Add a Screen to the Mobile App..................................................................................................13\nStep 2.2.1: Open the Mobile Application Page......................................................................................13\nStep 2.2.2: Add a Screen........................................................................................................................ 14\nStep 2.2.3: Update the Mobile Site Map................................................................................................15\nStep 2.2.4: Add a Screen To a Workspace............................................................................................. 16\nStep 2.2.5: Test the Added Functionality in the Mobile App................................................................ 18\nLesson Summary.................................................................................................................................... 20\nPart 3: Configuration of Dashboards and Generic Inquiries...................................................................... 22\nLesson 3.1: Configure a Dashboard Screen....................................................................................................23\nLesson 3.2: Add a Generic Inquiry with Parameters...................................................................................... 26\nLesson 3.3: Map the Inquiry With Tabs...........................................................................................................29\nLesson 3.4: Add a Generic Inquiry Form by Using the Browser Version of Acumatica ERP..........................32\nLesson 3.5: Add a KPI Widget..........................................................................................................................35\nPart 4: Configuration of the Extended Functionality................................................................................ 37\nLesson 4.1: Update a Screen...........................................................................................................................37\nLesson 4.2: Configure the Attachment Capabilities of a Screen................................................................... 40\nLesson 4.3: Configure the Ability to Enhance and Attach Receipts...............................................................41\nLesson 4.4: Configure a Report.......................................................................................................................43\nLesson 4.5: Configure the Signature Capabilities.......................................................................................... 46\nLesson 4.6: Map an Action...............................................................................................................................48",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 217,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p3_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 3,
+    "section_type": "text_chunk",
+    "section_id": "p3_c001",
+    "image_path": "images/page3.jpg",
+    "text_content": "Copyright | 3\nCopyright\n\u00a9 2025 Acumatica, Inc.\nALL RIGHTS RESERVED.\nNo part of this document may be reproduced, copied, or transmitted without the express prior consent of\nAcumatica, Inc.\n3075 112th Avenue NE, Suite 200, Bellevue, WA 98004, USA\nRestricted Rights\nThe product is provided with restricted rights. Use, duplication, or disclosure by the United States Government is\nsubject to restrictions as set forth in the applicable License and Services Agreement and in subparagraph (c)(1)(ii)\nof the Rights in Technical Data and Computer So\ue000ware clause at DFARS 252.227-7013 or subparagraphs (c)(1) and\n(c)(2) of the Commercial Computer So\ue000ware-Restricted Rights at 48 CFR 52.227-19, as applicable.\nDisclaimer\nAcumatica, Inc. makes no representations or warranties with respect to the contents or use of this document, and\nspecifically disclaims any express or implied warranties of merchantability or fitness for any particular purpose.\nFurther, Acumatica, Inc. reserves the right to revise this document and make changes in its content at any time,\nwithout obligation to notify any person or entity of such revisions or changes.\nTrademarks\nAcumatica is a registered trademark of Acumatica, Inc. HubSpot is a registered trademark of HubSpot, Inc.\nMicroso\ue000 Exchange and Microso\ue000 Exchange Server are registered trademarks of Microso\ue000 Corporation. All other\nproduct names and services herein are trademarks or service marks of their respective companies.\nSo\ue000ware Version: 2025 R1\nLast Updated: 04/09/2025",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 218,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p4_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 4,
+    "section_type": "text_chunk",
+    "section_id": "p4_c001",
+    "image_path": "images/page4.jpg",
+    "text_content": "How to Use This Course | 4\nHow to Use This Course\nThe T400 Basic Customization of the Mobile App course introduces the basic functionality for customizing the\nAcumatica mobile app by using the Acumatica Customization Platform.\nThis course is intended for business and implementation consultants who are learning how to customize the\nAcumatica mobile app or other Acumatica Framework-based mobile apps.\nA\ue000er you complete the course, you will have an understanding of how to perform simple customization tasks of the\nAcumatica mobile app or other apps developed with Acumatica Framework. Upon completion of the course, you\nwill have learned how to perform the following types of customization activity:\n\u2022\nUsing the Customization Project Editor to customize the mobile app\n\u2022\nAdding general inquiries and dashboards to the mobile app\n\u2022\nConfiguring additional functionality of the mobile app screens to give users the ability to do the following:\n\u2022\nAdding signatures to a record\n\u2022\nScanning receipts\n\u2022\nGenerating reports\n\u2022\nAttach files to a record\n\u2022\nTesting the customized mobile app\nWe recommend that you complete the examples in the order in which they are provided in the course,\nbecause some examples use the results of previous ones.\nWhat the Course Prerequisites Are\nBefore you begin this course, we recommend that you work through the lessons of the S130 Reporting: Data\nRetrieval and Analysis course. To learn more about the functionality of the Acumatica Customization Platform, we\nrecommend that you complete the T190 Quick Start in Customization or W140 Customization Projects courses before\ncompleting the current course.\nWhat Is in a Part\nEach of the course parts introduces you to various ways to customize the Acumatica mobile app and consists of\nlessons you are to complete. Each part begins with an explanation of the subject area that you are going to use in\nthe lessons.\nWhat Is in a Lesson\nEach lesson consists of steps that outline the procedures you are completing and describe the related concepts you\nare learning.\nEach lesson ends with the Lesson Summary topic, which summarizes the concepts you have learned during the\nlesson.\nWhere the Source Code Is\nYou can find the source code of the customization described in this course and code snippets for the course in the\nMobileDevelopment\\T400 folder of the Help-and-Training-Examples repository in Acumatica GitHub.\nCode snippets with code on MSDL have the JSON extension only so that the syntax can be\nhighlighted.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 219,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p5_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 5,
+    "section_type": "text_chunk",
+    "section_id": "p5_c001",
+    "image_path": "images/page5.jpg",
+    "text_content": "How to Use This Course | 5\nWhat the Documentation Resources Are\nThe complete Acumatica ERP and Acumatica Framework documentation is available at https://help.acumatica.com/\nand is included in the Acumatica ERP instance. While viewing any form used in the course, you can click the Open\nHelp button in the top pane of the Acumatica ERP screen to bring up a form-specific Help menu; you can use the\nlinks on this menu to quickly access form-related information and activities and to open a reference topic with\ndetailed descriptions of the form elements.\nWhich License You Should Use\nFor the educational purposes of this course, you use Acumatica ERP under the trial license, which does not require\nactivation and provides all available features. For the production use of the Acumatica ERP functionality, an\nadministrator has to activate the license the organization has purchased. Each particular feature may be subject to\nadditional licensing; please consult the Acumatica ERP licensing policy for details.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 220,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p6_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 6,
+    "section_type": "text_chunk",
+    "section_id": "p6_c001",
+    "image_path": "images/page6.jpg",
+    "text_content": "Preparing the Environment | 6\nPreparing the Environment\nIn this training, you will learn how to customize the Acumatica mobile app. Before you start the practical steps of\nthe course, you need to prepare the development environment, as described in Preparation of the Development\nEnvironment below, and consider the recommendations described in Required Role for Users.\nPreparation of the Development Environment\nBefore you install Acumatica ERP, review System Requirements for the Acumatica ERP Installation, and prepare the\nenvironment, as described in Preparing for Installing Acumatica ERP in the same guide.\nYou need to deploy an instance of Acumatica ERP with a company that contains specific data that you will use for\nthe training.\nTo prepare the development environment, perform the following actions:\nYou can use the Acumatica ERP instance you used to pass the S130 training course.\n1. Install Acumatica ERP, as described in Acumatica ERP Installation On-Premises: To Install the Acumatica ERP\nConfiguration Wizard.\n2. In the Acumatica ERP Configuration wizard that appears a\ue000er the installation is complete, select Deploy\na New Acumatica ERP Instance to create a local instance of Acumatica ERP for the development\nenvironment.\n3. To fill in the database with the data needed for the training course, on the Tenant Setup page, specify the\nfollowing settings for the tenant:\n\u2022\nTenant Name: MyCompany\n\u2022\nNew: Selected\n\u2022\nInsert Data: SalesDemo\n\u2022\nParent Tenant ID: 1\n\u2022\nVisible: Selected\n4. On the Instance Configuration page, for the Local Path to the Instance, specify a path that is not in the C:\n\\Program Files (x86) and C:\\Program Files folders to avoid an issue with permission to work\nin these folders. For example, you can enter C:\\AcumaticaSites\\T400.\nThe system creates a new Acumatica ERP instance, adds a new company, and loads the selected data.\n5. Use the following initial credentials to sign in to the new company:\n\u2022\nUser Name: admin\n\u2022\nPassword: setup\nChange the password when the system prompts you to do so.\n6. Make sure your instance of Acumatica ERP can be accessed from other devices in your local network.\nTo do this, on a computer in your local network, try to open the following webpage: https://\n<COMPUTER_IP_ADDRESS>/<INSTANCE_NAME> or http://<COMPUTER_IP_ADDRESS>/\n<INSTANCE_NAME>, where <COMPUTER_IP_ADDRESS> is the IP address of the computer in your local\nnetwork that is running the Acumatica ERP instance and <INSTANCE_NAME> is the name of the Acumatica\nERP instance you have installed. For more information, see To Access an Acumatica ERP Instance Running\nLocally from the Acumatica Mobile App\n7. If the Sign-In page of Acumatica ERP opens, the instance is accessible in your local network.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 221,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p7_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 7,
+    "section_type": "text_chunk",
+    "section_id": "p7_c001",
+    "image_path": "images/page7.jpg",
+    "text_content": "Preparing the Environment | 7\nYou can run the ipconfig command in the Command Prompt program of the computer that is\nrunning the Acumatica ERP instance to find its IP address.\nCourse Materials on GitHub\nYou can clone or download the course materials from the Help-and-Training-Examples repository in Acumatica\nGitHub to a folder on your computer. The course materials include the following items:\n\u2022\nFiles that you will need to complete the course activities\n\u2022\nCode snippets\n\u2022\nThe customization project resulting from the course activities\nThe course materials are located in the MobileDevelopment\\T400 folder of the repository. By using these\nmaterials, you can copy code instead of entering it manually and compare your resulting project with the one\nlocated on GitHub.\nCode snippets with code on MSDL have the JSON extension only so that the syntax can be\nhighlighted.\nRequired Role for Users\nSpecialists who will work on customization projects should be assigned the Customizer role in the application\ninstance that is to be customized and tested, as well as in the production application that should be updated with\nthe customization project. With this role assigned, the specialists can use the customization tools and facilities of\nthe Acumatica Customization Platform, and upload and publish customization projects.\nA user with the Administrator role can assign the Customizer role to the needed users by using the Users (SM201010)\nform.\nThe admin account has already been assigned the Administrator role, so you do not need to assign the Customizer\nrole to this account. In a production environment, however, you need to assign the Customizer role to all\ndevelopers who will work on customization projects.\nRelated Links\n\u2022\nUsers\n\u2022\nTo Assign the Customizer Role to a User Account\n\u2022\nUser Access Rights for Customization",
+    "tags": {
+      "forms": [
+        "SM201010"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM201010"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 222,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p8_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 8,
+    "section_type": "text_chunk",
+    "section_id": "p8_c001",
+    "image_path": "images/page8.jpg",
+    "text_content": "Part 1: Introduction to the Acumatica Mobile App | 8\nPart 1: Introduction to the Acumatica Mobile App\nIn this part, you will become acquainted with the Acumatica mobile app. You will install it on your mobile device,\nsign in to a sample account, and explore the base functionality.\nLesson 1.1: Install the Acumatica Mobile App\nIn this lesson, you will install the Acumatica mobile app from an app store. The Acumatica mobile app is available\nfor the following operating systems:\n\u2022\nAndroid\n\u2022\niOS\nYou perform the step below that corresponds to your operating system.\nStep: Install Acumatica Mobile App for Android\nBefore installing the Acumatica mobile app on your mobile device running Android, make sure the device satisfies\nthe following requirements:\n\u2022\nAndroid 5.1 or later\n\u2022\nSu\ufb00icient free disk space (the amount depends on the particular device)\nAlso, you need to make sure that your mobile device is connected to the same local network as the computer\nhosting the development environment of your Acumatica ERP instance.\nTo install the Acumatica mobile app on an Android device, do the following:\n1. On your mobile device, open the Play Store app.\n2. Find the Acumatica mobile app.\n3. Tap Install.\nA\ue000er the app installation is finished, you can open it.\nStep: Install Acumatica Mobile App for iOS\nBefore installing the Acumatica mobile app on your mobile device running iOS, make sure the device satisfies the\nfollowing requirements:\n\u2022\niOS 15 or later\n\u2022\nSu\ufb00icient free disk space (the amount depends on the particular device)\nTo install the Acumatica mobile app on an iOS device, do the following:\n1. On your mobile device, open the App Store app.\n2. Find the Acumatica mobile app.\n3. Tap Get.\n4. Confirm the installation.\nA\ue000er the app installation is finished, you can open the app.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 223,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p9_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 9,
+    "section_type": "text_chunk",
+    "section_id": "p9_c001",
+    "image_path": "images/page9.jpg",
+    "text_content": "Part 1: Introduction to the Acumatica Mobile App | 9\nLesson Summary\nIn this lesson you learned what is required to installed the Acumatica mobile app, and you have downloaded and\ninstalled it.\nLesson 1.2: Sign In to the Acumatica Mobile App\nIn this lesson, you will sign in to the Acumatica mobile app.\nThe instructions in this guide are designed for the Acumatica mobile app for Android. Instructions for\nthe Acumatica mobile app for iOS may di\ufb00er.\nStep 1: Sign In to the Acumatica Mobile App\nTo use the Acumatica mobile app, you need to sign in to it by using the Acumatica instance URL and your\ncredentials. In this training course, you can use the URL and credentials for the instance you prepared as described\nin the Preparing the Environment topic.\nDo the following to sign in to the Acumatica mobile app:\n1. Open the Acumatica mobile app.\n2. In the Server URL section, select the version of the protocol and type address to the Acumatica ERP\ninstance deployed in your network.\nThe name of the account is displayed a\ue000er the server URL box.\n3. Click Next.\n4. In the Username box, enter admin.\n5. In the Password box, enter your password.\n6. Tap Sign In.\nThe app connects to your Acumatica instance and opens the Home screen of the app.\nBefore the mobile app is customized, it contains basic functionality and includes several screens of\nAcumatica ERP.\nConnection to the mobile app may be blocked if the computer with your Acumatica instance\nhas a firewall enabled.\nStep 2: Explore the Acumatica Mobile App\nWhen you sign in to the app, you see the Home screen of the app, which is one of the major parts of the app. The\nHome screen of the Acumatica mobile app includes the following (see the screenshot below):\n\u2022\nThe screen toolbar, which includes the name of the tenant (Item 1 in the following screenshot)\nTo select a company or a branch, tap the name of the tenant.\n\u2022\nThe KPI area where dashboards from Acumatica ERP can be added (Item 2)\n\u2022\nThe workspace menu (Item 3)\nIf you tap a workspace name in the menu, you can navigate to a workspace (which corresponds to an\nAcumatica ERP workspace).\n\u2022\nThe navigation bar (Item 4)",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 224,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p10_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 10,
+    "section_type": "text_chunk",
+    "section_id": "p10_c001",
+    "image_path": "images/page10.jpg",
+    "text_content": "Part 1: Introduction to the Acumatica Mobile App | 10\nFigure: The Acumatica mobile app Home screen\nThe contents of the Acumatica mobile app include only those screens that are available to your user\naccount, based on its assigned user roles.\nThe navigation bar (Item 4) contains access to the following:\n\u2022\nThe Home screen of the app\n\u2022\nSearch in the documents and mapped screens\n\u2022\nThe list of favorite workspaces and screens\n\u2022\nSettings of the app where you can sign out of the instance\nLesson Summary\nIn this lesson, you have learned how to sign in to the mobile app and explored the main parts of the app.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 225,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p11_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 11,
+    "section_type": "text_chunk",
+    "section_id": "p11_c001",
+    "image_path": "images/page11.jpg",
+    "text_content": "Part 2: Tools and Languages | 11\nPart 2: Tools and Languages\nIn this part, you will explore the tools and languages that are used to customize the Acumatica mobile app by using\nthe example of the DB Sales Activities (GI000023) generic inquiry form. You will use the Mobile Application page of\nthe Customization Project Editor and MSDL, a special language used for customizing the Acumatica mobile app.\nMobile Application Page of the Customization Project Editor\nYou use the Mobile Application page of the Customization Project Editor to manage the customization of screens\nin the Acumatica mobile app. On the page, you can add, update, or remove screens; you can also remove the\ncustomization for any tenants without removing the customization code.\nMSDL\nAn Acumatica mobile client application uses the Mobile API to access the data of the forms that are mapped to\nmobile apps in the Acumatica ERP instance. The metadata of the mobile site map is used to configure the user\ninterface of the mobile client app. You can expose any form of Acumatica ERP on your mobile device if the mobile\nsite map includes the metadata for the form.\nThe metadata of the form is described by using Mobile Site Map Definition Language (MSDL). Configuring the user\ninterface of the mobile app by using MSDL is called mapping.\nMSDL code is a set of predefined instructions. An instruction can have attributes and contain multiple nested\ninstructions within braces. An instruction can contain commands that assign values to the various attributes of the\ninstruction. For more information about the MSDL syntax, see MSDL.\nLesson 2.1: Explore a WSDL Schema\nIn this lesson, you will learn what the WSDL schema is and explore the WSDL schema of the DB Sales Activities\n(GI000023) generic inquiry form in Acumatica ERP.\nAbout the WSDL Schema\nThe WSDL schema of an Acumatica ERP webpage is an XML document that describes all possible functionality that\nthis webpage provides, including form and table toolbar buttons, record fields, and table columns. By reviewing the\nWSDL schema, you can learn what to map on the mobile screen that corresponds to an Acumatica ERP form.\nStep: Explore the WSDL Schema\nTo explore the WSDL schema, do the following:\n1. Open the DB Sales Activities (GI000023) generic inquiry:\na. In Acumatica ERP, open the Generic Inquiry (SM208000) form.\nb. In the Inquiry Title box, select DB-SalesActivities.\nc. On the form toolbar, click View Inquiry.\nThe DB Sales Activities (GI000023) generic inquiry form opens.\n2. On the title bar of the inquiry form, click Tools > Web Service.\n3. On the screen with the web service links, click Service Description.\nThe WSDL schema of the DB Sales Activities generic inquiry form opens (see the following screenshot).",
+    "tags": {
+      "forms": [
+        "GI000023",
+        "SM208000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "API",
+        "SM208000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 226,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p12_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 12,
+    "section_type": "text_chunk",
+    "section_id": "p12_c001",
+    "image_path": "images/page12.jpg",
+    "text_content": "Part 2: Tools and Languages | 12\nFigure: The WSDL Schema of the Sales Activities generic inquiry form\nYou map a generic inquiry form to a mobile app screen by adding the elements described in the complex\ntypes of the WSDL schema. This practice is also applied for other kinds of forms. To map a screen, you get\nthe WSDL schema for it, find elements you want to map, and map them by using MSDL in the Customization\nProject Editor.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 227,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p13_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 13,
+    "section_type": "text_chunk",
+    "section_id": "p13_c001",
+    "image_path": "images/page13.jpg",
+    "text_content": "Part 2: Tools and Languages | 13\nFigure: The Result complex type of the WSDL schema\n4. Find the Result complex type, and explore its contents.\nThe Result complex type of the generic inquiry's WSDL schema always corresponds to the grid with the\nresults of the generic inquiry. We will use this part of the schema later in Lesson 2.2: Add a Screen to the\nMobile App to add fields to the mobile app screen.\nLesson Summary\nIn this lesson, you have learned what a WSDL schema is, and how to view and explore it for an Acumatica ERP form.\nLesson 2.2: Add a Screen to the Mobile App\nIn this lesson, you will add to the mobile site map a new screen that corresponds to the DB Sales Activities\n(GI000023) generic inquiry form. Adding a new screen includes the following actions:\n1. Opening the Mobile Application Page of the Customization Project Editor. This page lists the added and\ncustomized screens.\nBecause the changes made on this page are saved as a part of a specific customization project, you\nneed to open the customization project to be used and then open this page. If needed, you create a new\ncustomization project and then open the page.\n2. Adding a new screen that corresponds to this generic inquiry to the mobile site map.\n3. Declaring this screen in the site map of the mobile app.\n4. Testing your changes in the mobile app.\nIn this lesson, you will add the customization project to be used and then perform these actions.\nStep 2.2.1: Open the Mobile Application Page\nYou perform the customization of the Acumatica mobile app on the Mobile Application page of the Customization\nProject Editor, so you should start the process of adding a screen by opening this page.\nAll changes made on this page are saved as a part of the customization project. Thus, to begin customizing a mobile\napp, you should first create a customization project or open an existing project.",
+    "tags": {
+      "forms": [
+        "GI000023"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 228,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p14_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 14,
+    "section_type": "text_chunk",
+    "section_id": "p14_c001",
+    "image_path": "images/page14.jpg",
+    "text_content": "Part 2: Tools and Languages | 14\nIn this lesson, you will create a new customization project and open the Mobile Application page to become familiar\nwith it.\nStep: Open the Mobile Application Page of the Customization Project Editor\nTo open the Mobile Application Page of the Customization Project Editor, do the following:\n1. Open the Customization Projects (SM204505) form, and on the form toolbar, click Add Row.\n2. In the Project Name column for the added row, enter SalesActivities.\n3. Save your changes.\n4. In the table, click the name of the project you created.\nThe system opens the project in the Customization Project Editor.\n5. In the navigation pane of the Customization Project Editor, click Mobile Application.\nThe Mobile Application page opens (see the following screenshot).\nFigure: The Mobile Application page\nNow you can explore the Mobile Application page, which includes the following parts:\n\u2022\nThe page toolbar\n\u2022\nThe table that will contain the list of added and customized screens\nWhen you add a new customization of a screen, the name of the screen will also appear in the navigation pane of\nthe Customization Project Editor, under the Mobile Application node.\nStep 2.2.2: Add a Screen\nOne of the ways to customize a mobile app is to add a new screen to it. In this step, you will add a screen\ncorresponding to the DB Sales Activities (GI000023) generic inquiry form.\nStep: Add a Screen to the Mobile App\n1. In the Customization Project Editor, open the Mobile Application page.",
+    "tags": {
+      "forms": [
+        "GI000023",
+        "SM204505"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM204505"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 229,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p15_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 15,
+    "section_type": "text_chunk",
+    "section_id": "p15_c001",
+    "image_path": "images/page15.jpg",
+    "text_content": "Part 2: Tools and Languages | 15\n2. On the page toolbar, click Add New Screen.\n3. In the Add New Screen dialog box, which opens, select GI000023, and click OK.\nThe Add: GI000023 DB Sales Activities page opens. It consists of the following areas:\n\u2022\nThe Commands area.\nYou add the new MSDL code in this area.\n\u2022\nThe Errors area.\nThe area shows any syntax errors a\ue000er you save your changes in the Commands area.\n\u2022\nThe Result Preview area.\nThe area shows the resulting MSDL code of the screen a\ue000er your changes have been applied successfully.\n4. In the Commands area, notice that the initial code of the Commands area includes the add instruction (see\nthe following code), which indicates that the GI000023 screen should be added to the mobile site map.\nadd screen GI000023 {\n}\n5. Specify the columns of the GI000023 screen that you want to see in the mobile app screen, as shown in the\nfollowing code.\nadd screen GI000023 {\n  add container \"Result\" {\n    add field \"Name\"\n    add field \"Subject\"\n    add field \"Status\"\n    add field \"Type\"\n  }\n}\nYou get the names of containers and fields from the WSDL schema of the DB Sales Activities (GI000023)\ngeneric inquiry form (see Lesson 2.1: Explore a WSDL Schema). The Result container always corresponds\nto the table with the results of the inquiry.\n6. On the page toolbar, click Save.\nIf your changes were saved without errors, you see the code you added in the Result Preview area of the\npage. The changes are not yet visible in the mobile app because the customization project has not been\npublished.\nRelated Links\n\u2022\nTo Add a Screen to the Mobile Site Map (Example)\n\u2022\nadd\n\u2022\nscreen\n\u2022\ncontainer\n\u2022\nfield\nStep 2.2.3: Update the Mobile Site Map\nFor a new screen to be displayed in the Acumatica mobile app, you need to add it to the site map of the app.\nIn this step, you will update the site map of the mobile app by adding information about the new screen from Step\n2.2.2: Add a Screen.",
+    "tags": {
+      "forms": [
+        "GI000023"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 230,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p16_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 16,
+    "section_type": "text_chunk",
+    "section_id": "p16_c001",
+    "image_path": "images/page16.jpg",
+    "text_content": "Part 2: Tools and Languages | 16\nStep: Update the Mobile Site Map\nTo update the mobile site map, do the following:\n1. In the Customization Project Editor, open the Mobile Application page.\n2. On the More menu (under Actions), click Update Main Menu.\nThe Update: MENU page opens.\n3. In the Result Preview area of this page, explore the original code of the site map.\n4. In the Commands area, insert the following code, which defines the new screen.\nupdate sitemap {\n  add item \"GI000023\" {\n    displayName = \"Sales Activities\"\n  }\n}\nIn the code above, you have updated the mobile site map by adding an item that corresponds to the\nscreen you have added in the previous step. You have specified the name on the Home screen tile (the\ndisplayName attribute) for this item.\n5. Save your changes.\n6. Publish your customization project.\nTo publish a customization project, on the Customization Project Editor menu, click Publish  > Publish\nCurrent Project.\nA\ue000er the customization project is published, you can close the Compilation pane which\nappears during the publication process.\nRelated Links\n\u2022\nupdate\n\u2022\nitem\nStep 2.2.4: Add a Screen To a Workspace\nYou can add a new screen to a workspace in the Acumatica mobile app. By default, a new screen is displayed in the\nOther workspace of the mobile app.\nYou can add a new screen to the mobile workspace only a\ue000er you have published the changes that\ninclude adding the new screen to the mobile site map.\nIn this step, you will add the GI000023 screen to the CRM workspace, which is predefined in the Acumatica mobile\napp.\nAdding a Screen to the Workspace\nTo add the GI000023 screen to the workspace, do the following:\n1. In the Customization Project Editor, open the Mobile Application page.\n2. On the page toolbar, click Manage Workspaces.",
+    "tags": {
+      "forms": [
+        "GI000023"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "CRM"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 231,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p17_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 17,
+    "section_type": "text_chunk",
+    "section_id": "p17_c001",
+    "image_path": "images/page17.jpg",
+    "text_content": "Part 2: Tools and Languages | 17\nThe Mobile Workspaces page of the Customization Project Editor opens.\n3. On the page toolbar, click Manage Workspaces.\nThe Mobile Workspaces (AU220012) form opens in a new window.\nYou can skip Instruction 2 and open the Mobile Workspaces (AU220012) form directly in\nAcumatica ERP.\n4. In the table, click the CRM workspace.\nThe Mobile Workspace (AU220013) form opens.\n5. On the Screens tab, click Add Row on the table toolbar, and specify the following settings in the added row:\n\u2022\nVisible: Selected\n\u2022\nItem Name: GI000023\nThe Display Name and Item Type columns are populated automatically.\n6. Save your changes.\n7. Save your changes in the customization project as follows:\na. Return to the Customization Project Editor.\nThe Mobile Workspaces page is opened, as shown in the following screenshot.\nFigure: The Mobile Workspaces page\nb. On the page toolbar, click Add New Record.\nc. In the Add Workspace dialog box, which opens, select the CRM workspace as shown in the following\nscreenshot, and click Save.\nThe workspace is saved to the customization project.",
+    "tags": {
+      "forms": [
+        "AU220012",
+        "AU220013",
+        "GI000023"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "CRM"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 232,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p18_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 18,
+    "section_type": "text_chunk",
+    "section_id": "p18_c001",
+    "image_path": "images/page18.jpg",
+    "text_content": "Part 2: Tools and Languages | 18\nFigure: The Add Workspace dialog box\nA screen will appear in the mobile app even if you do not perform Instruction 7. The actions in\nthis instruction are necessary if you need to apply these changes to another instance.\nRelated Links\n\u2022\nTo Manage the Workspaces of the Mobile App\nStep 2.2.5: Test the Added Functionality in the Mobile App\nA\ue000er you have updated the mobile site map and published your customization project, you can check your changes\nin the mobile app.\nStep: Check the Changes in the Mobile App\nTo check the changes in the mobile app, do the following:\n1. On your mobile device, open Acumatica mobile app and sign in.\nIf you were already signed in, you need to sign out and sign in again to view your changes to the mobile app.\n2. On the Home screen, tap CRM.\nThe CRM workspace is displayed as shown in the following screenshot. At the end of the list of screens of the\nworkspace, the link to the Sales Activities generic inquiry is displayed.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "CRM"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 233,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p19_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 19,
+    "section_type": "text_chunk",
+    "section_id": "p19_c001",
+    "image_path": "images/page19.jpg",
+    "text_content": "Part 2: Tools and Languages | 19\nFigure: The CRM workspace\n3. Tap Sales Activities.\nThe Sales Activities screen is opened as shown in the following screenshot.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "CRM"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 234,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p20_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 20,
+    "section_type": "text_chunk",
+    "section_id": "p20_c001",
+    "image_path": "images/page20.jpg",
+    "text_content": "Part 2: Tools and Languages | 20\nFigure: The Sales Activities screen\n4. Tap any record in the list.\nA screen appears with the same fields (along with the title of each field) as were shown for the selected\nrecord on the Sales Activities screen (see the following screenshot.)\nFigure: The screen with the details of a record\nLesson Summary\nIn this lesson, you have learned how to use the Customization Project Editor to customize the mobile app and\nadded a new screen to the mobile app. In particular, you have done the following:\n\u2022\nInstalled the Acumatica mobile app on your mobile device\n\u2022\nSigned in to the Acumatica mobile app by using the credentials of your Acumatica ERP instance",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 235,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p21_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 21,
+    "section_type": "text_chunk",
+    "section_id": "p21_c001",
+    "image_path": "images/page21.jpg",
+    "text_content": "Part 2: Tools and Languages | 21\n\u2022\nExplored the WSDL schema of the DB Sales Activities (GI000023) generic inquiry form\n\u2022\nCreated a new customization project in your instance of Acumatica ERP\n\u2022\nAdded a new screen corresponding to the DB Sales Activities (GI000023) generic inquiry form to the mobile\nsite map\n\u2022\nAdded the new screen to a mobile workspace\n\u2022\nTested the added screen in the mobile app",
+    "tags": {
+      "forms": [
+        "GI000023"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 236,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p22_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 22,
+    "section_type": "text_chunk",
+    "section_id": "p22_c001",
+    "image_path": "images/page22.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 22\nPart 3: Configuration of Dashboards and Generic Inquiries\nAcumatica Mobile Framework provides the ability to add generic inquiries and dashboards to the Acumatica\nmobile app. In this part, you will learn about di\ufb00erent ways to map generic inquiries to the mobile app and the way\nto map dashboards to the mobile app.\nGeneric Inquiries With and Without Parameters\nIn Acumatica ERP, a generic inquiry can be configured to have parameters, which correspond to elements in the\nSelection area of the resulting generic inquiry form (above the results grid). By using these elements, users can\nnarrow the results shown on the form. Whether or not the generic inquiry has parameters determines how it is\nmapped for the mobile app as follows:\n\u2022\nWithout parameters: This generic inquiry contains only the results grid, as shown in the following\nscreenshot.\nTo map such an inquiry for the mobile app, you declare only one container: Result. You have mapped this\ntype of generic inquiry in Lesson 2.2: Add a Screen to the Mobile App.\nFigure: A generic inquiry without parameters\n\u2022\nWith parameters: This generic inquiry contains the filtering area and the results grid, as shown in the\nfollowing screenshot.\nTo map such an inquiry, you declare two containers: Filter_ and Result. You will map this kind of\ngeneric inquiry in Lesson 3.2: Add a Generic Inquiry with Parameters.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 237,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p23_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 23,
+    "section_type": "text_chunk",
+    "section_id": "p23_c001",
+    "image_path": "images/page23.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 23\nFigure: A generic inquiry with parameters\nPreliminary Steps\nIn this part, you will use the Open Sales Orders by Customer (GI400001) generic inquiry form, which was\ncreated in the S130 Reporting: Data Retrieval and Analysis training course. If you do not have the inquiry in your\nAcumatica ERP instance, you need to import the SO-OpenByCustomer.xml file, which is included in the\nMobileDevelopment\\T400\\FilesForTraining folder of the GitHub repository that you downloaded in\nPreparing the Environment. To import this generic inquiry, do the following:\n1. Open the Generic Inquiry (SM208000) form.\n2. On the form toolbar, click Clipboard  >  Import from XML.\n3. In the Upload XML file dialog box, which opens, select the SO-OpenByCustomer.xml file provided with\nthe training course.\n4. Click Upload.\nThe SO-OpenByCustomer inquiry opens.\nLesson 3.1: Configure a Dashboard Screen\nIn this lesson, to configure a dashboard screen in the mobile app, you will add the Sales Operations dashboard\nscreen with its widgets to the mobile app. Each widget that can be used in a dashboard screen is based on a generic\ninquiry. For details on how to manage dashboards in a customization project, see Dashboards.\nA mobile screen of the Dashboard type can display the following types of dashboard widgets:\n\u2022\nChart\n\u2022\nData table\n\u2022\nScorecard KPI\n\u2022\nTrend card KPI\nWidgets of other types are not available in the mobile app.",
+    "tags": {
+      "forms": [
+        "GI400001",
+        "SM208000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 238,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p24_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 24,
+    "section_type": "text_chunk",
+    "section_id": "p24_c001",
+    "image_path": "images/page24.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 24\nStep: Configure a Dashboard Screen\n1. In the browser version of Acumatica ERP, open the Sales Operations dashboard.\nNotice that the form already contains several widgets.\n2. As a self-guided exercise, add a widget (of one of the supported types listed above) to the dashboard for\neach of the following generic inquiry forms:\n\u2022\nDB Sales Activities (GI000023)\n\u2022\nOpen Sales Orders by Customer (GI400001)\nTo learn how to add widgets, see Configuring Widgets.\nWhen you add a widget for the Open Sales Orders by Customer generic inquiry form, you may see a\nplaceholder with a grey lock icon instead of the widget on the dashboard. This means that you do not have\nthe appropriate access rights configured for this generic inquiry form; hence, you are not able to view its\ndata in the widget. To configure the necessary access rights for the Open Sales Orders by Customer generic\ninquiry form, do the following:\na. Open the Access Rights by Screen (SM201020) form. In the le\ue000 pane, expand the Data Views node; find\nthe Open Sales Orders by Customer node in the expanded list of items, and click it.\nb. With the Open Sales Orders by Customer node selected in the le\ue000 pane, in the table on the right pane,\nclick the row with Administrator in the Role column, and change the value in the Access Rights column\nfrom Revoked to Delete.\nc. Click the row with Customizer in the Role column, and change the value in the Access Rights column\nfrom Revoked to Delete.\nd. On the form toolbar, click Save\nRefresh your browser tab to ensure that the modified access rights have taken e\ufb00ect.\nThe following screenshot shows an example of the dashboard with the widgets added on the bottom of the\ndashboard.",
+    "tags": {
+      "forms": [
+        "GI000023",
+        "GI400001",
+        "SM201020"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM201020"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 239,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p25_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 25,
+    "section_type": "text_chunk",
+    "section_id": "p25_c001",
+    "image_path": "images/page25.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 25\nFigure: Added widgets on the Sales Operations dashboard\n3. Add the Sales Operations screen, which has the DB000012 screen ID, to the mobile site map, as described in\nStep 2.2.2: Add a Screen and Step 2.2.3: Update the Mobile Site Map. The code of the screen should look as\nfollows.\nadd screen DB000012 {\n  type = Dashboard\n}\nThe code for the mobile site map should look as follows.\n  add item \"DB000012\" {\n    displayName = \"Sales Operations\"\n  }\n4. Save your changes on the Add: DB000012 Sales Operations page and on the Update: MENU page.\n5. Publish your customization project.\n6. Add the Sales Operations (DB000012) dashboard to the CRM workspace, as described in Step 2.2.4: Add a\nScreen To a Workspace.\n7. Save changes made in the CRM workspace to the customization project by doing the following:\na. Open the Mobile Application page of the Customization Project Editor.\nb. On the page toolbar, click Manage Workspaces.\nThe Mobile Workspaces page opens.\nc. On the page toolbar, click Reload from Database.\nYou need to use the Reload from Database button because the CRM workspace is already\nadded to the customization project.\n8. Test the mapped dashboard by doing the following:\na. In the Acumatica mobile app, to open the instance with the published customization project, sign out\nand sign in again.",
+    "tags": {
+      "forms": [
+        "DB000012"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "CRM"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 240,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p26_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 26,
+    "section_type": "text_chunk",
+    "section_id": "p26_c001",
+    "image_path": "images/page26.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 26\nb. Navigate to the CRM workspace and open the Sales Operations dashboard screen. Scroll until you see\nthe widgets you have added. They should look as shown in the following screenshot.\nFigure: Opening the Sales Operations dashboard screen\nc. On the Sales Operations dashboard screen, tap the name of the Sales Activities widget, which shows data\nfrom the Sales Activities generic inquiry. The Sales Activities screen, which you added it in the previous\nlesson, opens.\nd. Return to the Sales Operations dashboard screen by tapping the back arrow.\ne. On the Sales Operations dashboard screen, tap the name of the Open SO by Customer widget, which\nshows data from the Open Sales Orders by Customer generic inquiry.\nThe app does not open a screen when you tap the name of the Open SO by Customer widget because\nyou did not add the screen corresponding to the Open Sales Orders by Customer generic inquiry to the\nmobile site map. You will do it in the next lesson.\nLesson Summary\nIn this lesson, you have learned how to configure a dashboard screen in the mobile app by using the type property\nof the screen object. You have added and configured the Sales Operations dashboard screen and learned how to\nopen generic inquiries from the dashboard in the mobile app.\nRelated Links\n\u2022\nDesigning Dashboard Contents\nLesson 3.2: Add a Generic Inquiry with Parameters\nIn this lesson, you will explore how to add to the mobile app a generic inquiry that has parameters, which give\nusers the ability to make selections and view the results that match the selection criteria. You will use a generic\ninquiry that is not included in the default data set, so make sure you uploaded it (see the Preliminary Steps section\nof Part 3: Configuration of Dashboards and Generic Inquiries).",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "CRM"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 241,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p27_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 27,
+    "section_type": "text_chunk",
+    "section_id": "p27_c001",
+    "image_path": "images/page27.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 27\nStep: Add a Generic Inquiry with Parameters\nTo add a generic inquiry with parameters, do the following:\n1. On the Generic Inquiry (SM208000) form, open the SO-OpenByCustomer generic inquiry.\n2. On the Parameters tab, review the parameters of the inquiry, which serve as selection criteria to filter the\nresults.\n3. Explore the WSDL schema of the inquiry, as described in Lesson 2.1: Explore a WSDL Schema.\n4. In the Customization Project Editor, open the Mobile Application page.\n5. Add the GI400001 screen by using the process described in Step 2.2.2: Add a Screen.\nBecause the inquiry has parameters, you have to define not only the Result container but also the\nFilter_ container, as shown in the code below. The Filter_ container has to include all required\nparameters of the inquiry.\nadd screen GI400001 {\n  type = FilterListScreen\n  add container \"Filter_\" {\n    add field \"DateFrom\"\n    add field \"DateTo\"\n    add field \"Customer\"\n    add field \"OpenOnly\"\n  }\n  add container \"Result\" {\n    add field \"CustomerID\"\n    add field \"OrderNbr\"\n    add field \"Quantity\"\n    add field \"SalesOrderTotal\"\n    add field \"Status\"\n  }\n}\nYou need to set the type attribute of the screen to FilterListScreen to indicate that the screen\nshould include the filtering functionality.\n6. Add the generic inquiry to the main menu of the mobile app, as described in Step 2.2.3: Update the Mobile\nSite Map.\nSpecify the displayName attribute value that is short enough to fit the mobile app tile and toolbar, such\nas Open SO by Customer.\n7. Publish your customization project.\n8. Add the Open Sales Orders by Customer (GI400001) inquiry to the Sales Orders workspace as described in\nStep 2.2.4: Add a Screen To a Workspace.\n9. Save changes made in the Sales Orders workspace to the customization project as described in instruction 7\nof Lesson 3.1: Configure a Dashboard Screen.\n10.Check the generic inquiry in the mobile app as follows:\na. On the main menu, open the Sales Orders workspace.\nb. In the Sales Order workspace, tap Open SO by Customer.\nThe Open Sales Orders by Customer generic inquiry opens.\nc. On the screen toolbar, tap the filter button (see the following screenshot).",
+    "tags": {
+      "forms": [
+        "GI400001",
+        "SM208000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 242,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p28_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 28,
+    "section_type": "text_chunk",
+    "section_id": "p28_c001",
+    "image_path": "images/page28.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 28\nFigure: The screen toolbar with the filtering button\nThe screen with fields corresponding to the inquiry parameters opens (see the following screenshot).\nFigure: The screen where users can filter the results\nd. In the Customer field, select the AACustomer value.\ne. On the Filter screen, click Update, as shown in the following screenshot.\nFigure: The changed Filter screen\nf.\nCheck the inquiry results (see the following screenshot).",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 243,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p29_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 29,
+    "section_type": "text_chunk",
+    "section_id": "p29_c001",
+    "image_path": "images/page29.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 29\nFigure: The inquiry results\n11.In the CRM workspace, tap Sales Operations to open the view with the dashboard screen you added in the\nprevious lesson, and tap the name of the Open SO by Customer widget.\nMake sure that you are now redirected to the Open SO by Customer screen.\nWhen you open the Open SO by Customer generic inquiry from the widget, the app opens it\nwith the filter data saved in Instruction 10e.\nLesson Summary\nIn this lesson, you have learned how to map a generic inquiry with parameters and tested it in the mobile app.\nLesson 3.3: Map the Inquiry With Tabs\nSometimes, a single generic inquiry can contain multiple tabs that show the same table but with built-in filtering. In\nthis lesson, you will learn how to map such generic inquiry.\nNow that you have completed Lessons 2.1 through 3.2, you know how to map a generic inquiry to the mobile site\nmap. As a practice exercise, you will now map the Invoiced Items (GI000008) generic inquiry form to the mobile site\nmap.\nThe Invoiced Items generic inquiry should be displayed in the Inventory workspace which does not exist in the\nmobile app. So, you will add this workspace first.",
+    "tags": {
+      "forms": [
+        "GI000008"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "CRM"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 244,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p30_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 30,
+    "section_type": "text_chunk",
+    "section_id": "p30_c001",
+    "image_path": "images/page30.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 30\nStep 1: Add a New Workspace\nTo add the Inventory workspace to the mobile app, do the following:\n1. In Acumatica ERP, open the Mobile Workspaces (AU220012) form.\n2. On the form toolbar, click Add Row and enter the following values:\n\u2022\nWorkspace ID: INVENTORY\n\u2022\nDisplay Name: Inventory\n\u2022\nVisible: Selected\n3. Save your changes.\n4. Configure the Inventory workspace:\na. Click the Inventory workspace ID to open settings for the workspace.\nThe Mobile Workspace (AU220013) form opens.\nb. In the Icon box, select local shipping.\nc. On the Screens tab, notice that several screens are already added. These screens have been copied\nautomatically from the Inventory workspace of the browser version of Acumatica ERP. Delete all these\nscreens because you do not need them.\nd. Save your changes.\n5. Add the new workspace to the customization project by doing the following:\na. In the Customization Project Editor, open the Mobile Application page.\nb. On the form toolbar, click Manage Workspaces.\nThe Mobile Workspace page opens.\nc. On the page toolbar, click Add New Record.\nd. In the Add Workspace dialog box which opens, select the Inventory workspace and click Save.\nThe Inventory workspace is saved to the customization project.\nStep 2: Map the Inquiry\nTo map the Invoiced Items (GI000008) generic inquiry form, do the following:\n1. In your Acumatica ERP instance, open the Invoiced Items (GI000008) generic inquiry form.\nExplore the WSDL schema of the form. Decide which fields you want to map.\n2. On the Mobile Application page of the Customization Project Editor, perform the following operations:\na. Add the GI000008 screen to the customization project, and map the fields you have chosen.\nb. Include the GI000008 screen on the site map of the mobile app.\nc. Publish your customization project.\n3. In the Acumatica mobile app, open the Other workspace.\nNotice that instead of one new line with the title of the generic inquiry, three new lines have been added.\nThese lines correspond to the tabs of the Invoiced Items generic inquiry as shown in the following\nscreenshot.",
+    "tags": {
+      "forms": [
+        "AU220012",
+        "AU220013",
+        "GI000008"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "INVENTORY"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 245,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p31_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 31,
+    "section_type": "text_chunk",
+    "section_id": "p31_c001",
+    "image_path": "images/page31.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 31\nFigure: Tiles of the added inquiry\n4. To avoid these lines being used to represent the generic inquiry, group the tabs as follows:\na. Return to the Customization Project Editor, and open the Update: MENU page.\nb. Replace the code that includes the inquiry in the mobile site map with the following code.\n  add folder \"InvoicedItems\" {\n    type = HubFolder\n    displayName = \"Invoiced Items\"\n    add item \"GI000008\" {\n    displayName = \"Invoiced Items\"\n    }\n  }\nThis code unites the tabs into one screen. Notice that the type of the folder should be set to HubFolder,\nwhich causes the tabs to be united into one screen.\n5. Publish your customization project again.\n6. Include the GI000008 screen to the Inventory workspace.\nYou should type InvoicedItems in the Item Name column of the Mobile Workspace form to add\nthe GI000008 screen to the Inventory workspace. This is because we added this screen inside\nthe InvoicedItems folder in the previous instruction.\n7. Save changes made to the Inventory workspace to the customization project.\n8. In the Acumatica mobile app, open the Inventory workspace.",
+    "tags": {
+      "forms": [
+        "GI000008"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 246,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p32_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 32,
+    "section_type": "text_chunk",
+    "section_id": "p32_c001",
+    "image_path": "images/page32.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 32\nYou can also notice that the three generic inquiries you have seen in instruction 3 are no longer\ndisplayed in the Other workspace.\n9. Verify that the Invoiced Items line appears, and tap it to view the Invoiced Items screen.\nThe Inventory workspace and the screen should look as shown in the following screenshot.\nFigure: The Invoiced Items tile and screen\nRelated Links\n\u2022\nfolder\nLesson 3.4: Add a Generic Inquiry Form by Using the Browser Version of Acumatica\nERP\nYou can map a generic inquiry form to the mobile app by using the browser version of Acumatica ERP without using\nthe Customization Project Editor. In this case, your changes will not be saved in the customization project and will\nstay in only your instance of Acumatica ERP. You won't be able to configure the resulting appearance of the generic\ninquiry screen, such as the tabs, filters, title, fields (if applicable) to be used for filtering, and the mobile workspace\nwhere the generic inquiry should be located.\nIn this lesson, you will map an existing generic inquiry form in the instance to the Acumatica mobile app.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 247,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p33_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 33,
+    "section_type": "text_chunk",
+    "section_id": "p33_c001",
+    "image_path": "images/page33.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 33\nStep: Map a Generic Inquiry Form by Using the Browser Version of Acumatica ERP\nTo map a generic inquiry form to the mobile app by using the browser version of Acumatica ERP, do the following:\n1. In Acumatica ERP, open the Generic Inquiry (SM208000) form.\n2. In the Inquiry Title box, select SalespersonSales.\n3. Select the Expose to the Mobile Application check box.\n4. Save your changes.\nThere are other ways to set the Expose to the Mobile Application state of a generic inquiry on\nthe Generic Inquiry form. First, the Expose to the Mobile Application state of a generic inquiry\nis included in a customization project if you export the generic inquiry into the project. Also,\nthe Expose to the Mobile Application state is imported when you import a generic inquiry in\nXML format.\n5. Save your changes to the generic inquiry in the customization project so that the changes are available on\nother instances where you publish the project:\na. In the Customization Project Editor, open the Generic Inquiries page.\nb. On the page toolbar, click Add New Record.\nc. In the Add Generic Inquiries dialog box, which opens, select the SalespersonSales generic inquiry and\nclick Save.\nThe line for the SalespersonSales generic inquiry appears on the Generic Inquiries page.\n6. In the Acumatica mobile app, notice the Data Views workspace that is shown in the following screenshot.\nThe Data Views workspace includes all generic inquiries mapped using the Expose to Mobile Application\ncheck box.",
+    "tags": {
+      "forms": [
+        "SM208000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 248,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p34_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 34,
+    "section_type": "text_chunk",
+    "section_id": "p34_c001",
+    "image_path": "images/page34.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 34\nFigure: The Data Views workspace on the Home screen\nIf you scroll down to the end of the main screen, you can see the Edit Main Screen button\nwhich allows you to organize order and visibility of sections on the main screen.\n7. Tap Data Views > Salesperson Sales.\nThe screen with the generic inquiry opens (see the following screenshot).",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 249,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p35_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 35,
+    "section_type": "text_chunk",
+    "section_id": "p35_c001",
+    "image_path": "images/page35.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 35\nFigure: The Salesperson Sales screen\nYou do not need to publish a customization project that contains this generic inquiry because the\nExpose to Mobile Application functionality is not related to a customization project.\nLesson Summary\nIn this lesson, you have learned how to add a generic inquiry form to the Acumatica mobile app without using a\ncustomization project.\nLesson 3.5: Add a KPI Widget\nOn the Home screen of the mobile app and in each of the workspaces, you can add KPI widgets of the following\ntypes:\n\u2022\nScorecard\n\u2022\nMeter\n\u2022\nTrend card\nBy default, no KPI widgets are displayed.\nIn this lesson, you will add the Orders to Ship KPI widget from the Warehouse Manager (IN3015DB) dashboard to the\nHome screen of the mobile app.\nStep: Add a KPI Widget to the Home Screen\nTo add the Orders to Ship KPI widget to the mobile app, do the following:",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "IN3015DB"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 250,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p36_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 36,
+    "section_type": "text_chunk",
+    "section_id": "p36_c001",
+    "image_path": "images/page36.jpg",
+    "text_content": "Part 3: Configuration of Dashboards and Generic Inquiries | 36\n1. In the Acumatica mobile app, open the Home screen.\n2. On the Home screen, tap Add KPI.\nIf the tenant already has added KPIs, in the menu of the KPIs section, tap Add KPI.\n3. In the Search box, enter My Opportunities.\n4. Tap the My Opportunities KPI widget (Item 1 in the first screenshot below) on the Salesperson dashboard.\nNotice that the mobile app marks it as a favorite.\n5. Click the back arrow icon (Item 2) to save your changes and return to the workspace.\nThe KPI widget is displayed on the Home screen, as you can see in the second screenshot.\nFigure: Adding a KPI widget\n6. Tap My Opportunities to view the list of records.\nThe My Opportunities generic inquiry is displayed.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 251,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p37_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 37,
+    "section_type": "text_chunk",
+    "section_id": "p37_c001",
+    "image_path": "images/page37.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 37\nPart 4: Configuration of the Extended Functionality\nIn this part, you will learn how to configure extended functionality on the screens that have already been defined\nfor the mobile app (that is, those that are included in the base functionality). Depending on the Acumatica ERP\nform that a screen is based on, you can add functionality to the screen so that users can do the following:\n\u2022\nAdd an attachment to a screen\n\u2022\nAdd a signature to a record\n\u2022\nScan and format paper receipts\n\u2022\nGenerate and download reports\nAlso, you will learn how to organize the layout of fields and map actions to an existing screen of the mobile app.\nIn the lessons of this part, you will customize the following screens:\n\u2022\nThe Sales Order screen, which corresponds to the Sales Orders (SO301000) form\n\u2022\nThe Projects screen, which corresponds to the Projects (PM301000) form\nLesson 4.1: Update a Screen\nIn this lesson, you will learn how to update the Sales Order screen, which already exists in the mobile site map. You\nwill add and remove some fields in di\ufb00erent parts of the screen.\nStep 1: Prepare to Update the Screen\nTo prepare for the screen update, do the following:\n1. Review the WSDL schema of the Sales Orders (SO301000) form, as described in Lesson 2.1: Explore a WSDL\nSchema.\n2. In the Customization Project Editor, open the Mobile Application page.\n3. On the page toolbar, click Update Existing Screen.\n4. In the Update Existing Screen dialog box, which opens, select SO301000.\n5. Click OK.\nThe Update: SO301000 Sales Orders page opens.\n6. In the Result Preview area of the page, explore the original code of the screen.\nNotice that the original add screen instruction includes containers that correspond to the complex types\nof the screen's WSDL schema and to parts of the mobile screen.\nStep 2: Update the Header Container\nThe header is a part of the screen that should contain the fields of the Summary area of the form that cannot be\nedited manually. The header of the Sales Order screen is shown in the following screenshot.",
+    "tags": {
+      "forms": [
+        "PM301000",
+        "SO301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "PM301000",
+        "SO301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 252,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p38_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 38,
+    "section_type": "text_chunk",
+    "section_id": "p38_c001",
+    "image_path": "images/page38.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 38\nFigure: The Sales Order screen header\nYou can organize the content of the header by using layout objects. In this step, you will add two new fields of the\nSales Orders (SO301000) form to the Sales Order screen header. Do the following:\n1. In the WSDL schema of the Sales Orders form, which you reviewed in the previous step, find the\nOrderSummary complex type, and the Date and RequestedOn fields.\n2. Open the Update: SO301000 Sales Orders page of the Customization Project Editor. In the Result Preview\narea, find the add layout \"OrderHeader\" instruction.\nNotice that each new row of the header corresponds to a layout object.\n3. In the Commands area of the page, insert the following code, which adds a row with two new fields.\nupdate screen SO301000 {\n  update container \"OrderSummary\" {\n    update layout \"OrderHeader\" {\n      add layout \"OrderHeaderDates\" {\n        displayName = \"OrderHeaderDateRow\"\n        layout = \"Inline\"\n        add field \"Date\"\n        add field \"RequestedOn\"\n      }\n    }\n  }\n}\nTo place two new fields in one row, you set the layout property of the layout object to Inline.",
+    "tags": {
+      "forms": [
+        "SO301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SO301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 253,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p39_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 39,
+    "section_type": "text_chunk",
+    "section_id": "p39_c001",
+    "image_path": "images/page39.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 39\nIf you need to add fields from a complex type that is di\ufb00erent from the one specified\nin the update container instruction, then in the add field instruction specify\nthe name of the complex type and the field name separated by the # sign, for example,\nTotalsVATTotals#VATExempt.\n4. Save your changes.\nYour commands are applied to the mobile site map. If any errors have occurred, you can see them in the\nErrors area of the page. If your changes have been applied successfully, you can see the updated site map of\nthe mobile app in the Result Preview area of the form.\n5. Publish the customization project.\n6. Check your changes in the mobile app.\nThe screen header should look as shown in the following screenshot.\nFigure: Fields added to the Sales Order screen header\nStep 3: Remove Fields from the Screen\nIn this step, you will remove some of the fields that are displayed in the Bill-To Info section of the Settings tab.\nBe cautious when removing fields from the original mobile site map. Do not remove fields that are\nmarked with an asterisk and thus are required for a record.\nDo the following:\n1. In the navigation pane of the Customization Project Editor, click Mobile Application > Update SO301000.\nThe Update: SO301000 Sales Orders page opens.\n2. In the Result Preview area of the page, find the add group \"BillToInfoGroup\" instruction.\nLearn in which objects the instruction is nested and what fields it contains. You will remove the\nAddressesBillToAddress#AddressLine2 field. Notice that the name of the field is composed of\ntwo parts separated with #: the name of the AddressesBillToAddress complex type, and the name of\nthe field itself. You can find the name of the complex type and the name of the field in the WSDL schema.\nFigure: Part of the WSDL schema of the Sales Orders form\n3. In the Commands area of the page, add the following code, which removes the AddressLine2 field.",
+    "tags": {
+      "forms": [
+        "SO301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SO301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 254,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p40_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 40,
+    "section_type": "text_chunk",
+    "section_id": "p40_c001",
+    "image_path": "images/page40.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 40\nupdate screen SO301000 {\n update container \"OrderSummary\" {\n    ...\n    update layout \"OrderSettingsTab\" {\n      update group \"BillToInfoGroup\" {\n        remove field \"AddressesBillToAddress#AddressLine2\"\n      }\n    }\n  }\n}\n4. Save your changes.\nYour commands are applied to the mobile site map. If any errors have occurred, you can see them in the\nErrors area of the page. If your changes have been applied successfully, you can see the updated site map of\nthe mobile app in the Result Preview area of the form.\n5. Publish your customization project.\n6. To check your changes in the mobile app, do the following:\na. In the Sales Orders workspace of the mobile app, open the Sales Orders screen.\nb. In the Sales Orders screen, open any sales order.\nThe Sales Order screen opens.\nc. On the Settings tab, find the Bill-To Info section.\nd. In the Bill-To Info section, make sure that the Address Line 2 field is not displayed.\nLesson Summary\nIn this lesson, you have learned how to add, update, and remove di\ufb00erent elements of a mobile app screen.\nRelated Links\n\u2022\nlayout\n\u2022\ngroup\n\u2022\nremove\nLesson 4.2: Configure the Attachment Capabilities of a Screen\nYou can configure a screen so that a user can attach a file to a record displayed on the screen. All screens that are\nincluded in the basic functionality of the mobile app have the instructions to allow the attachment capabilities\nadded to their screen code. This means that a user can attach any type of files specified on the File Upload\nPreferences (SM202550) form.\nIf you want to narrow the list of types that may be attached to the record, you need to configure the attachment\ntypes in the customization of the mobile app. In this lesson, you will modify the Sales Order screen to accept only\nfiles with the jpg and png extensions.\nStep: Configure the Attachment Capabilities of a Screen\nTo configure the attachment capabilities of a screen, do the following:\n1. In the navigation pane of the Customization Project Editor, click Mobile Application  > Update SO301000.\n2. Explore the Result Preview area of the page, and find the attachments instruction.\nThe screen code includes several attachments instructions, each corresponding to its container.",
+    "tags": {
+      "forms": [
+        "SM202550",
+        "SO301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM202550",
+        "SO301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 255,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p41_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 41,
+    "section_type": "text_chunk",
+    "section_id": "p41_c001",
+    "image_path": "images/page41.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 41\nYou need to modify the attachments instruction in the OrderSummary container, which corresponds to\nthe Summary view of the Sales Orders (SO301000) form. This container's Attachment button is displayed on\nthe screen toolbar, as shown in the following screenshot.\nFigure: The Attachment button on the Sales Order screen toolbar\n3. In the Commands area of the page, update the attachments instruction as shown in the following code.\nupdate screen SO301000 {\n  update container \"OrderSummary\" {\n    ...\n    attachments {\n      add type \"jpg\" {\n        extension = \"jpg\"\n      }\n      add type \"png\" {\n        extension = \"png\"\n      }\n    }\n  }\n}\n4. Save your changes.\nNotice that in the Result Preview area, the attachments instruction has changed.\n5. Publish your customization project.\n6. Open the mobile app, and navigate to the Sales Order screen.\n7. Try to attach files of di\ufb00erent types by tapping the Attachment button.\nIf you attempt to attach files of types other than jpg or png, you will get an error message.\nLesson Summary\nIn this lesson, you have learned how to configure the types of files that can be attached in the mobile app.\nRelated Links\n\u2022\nConfiguring Attachments\n\u2022\nattachments\nLesson 4.3: Configure the Ability to Enhance and Attach Receipts\nUsers o\ue000en need to attach to entities not only images or photos but also receipts. Photos of receipts taken from a\nmobile app camera, however, are usually hard to read, and not all details can be viewed. To address this problem,\nthe Acumatica mobile app provides image enhancement capabilities that are designed for documents with small\nprint, such as receipts. With these capabilities in use, the mobile app enhances images taken from the camera of a\nmobile device, making the images look clearer and more readable. You can configure particular screens to o\ufb00er this\nfunctionality.\nIn this lesson, you will configure the Sales Order screen to have the functionality that allows a user to enhance and\nattach receipts.",
+    "tags": {
+      "forms": [
+        "SO301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SO301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 256,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p42_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 42,
+    "section_type": "text_chunk",
+    "section_id": "p42_c001",
+    "image_path": "images/page42.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 42\nStep: Configure the Enhancing and Attaching of Receipts\nTo configure the enhancing and attaching of receipts, do the following:\n1. In the navigation pane of the Customization Project Editor, click Mobile Application >  Update SO301000.\nYou will modify the same attachments instruction of the OrderSummary container as was modified in\nthe previous lesson.\n2. In the Commands area of the page, update the attachments instructions as shown in the following code\nblock.\nupdate screen SO301000 {\n  update container \"OrderSummary\" {\n    ...\n    attachments {\n      imageAdjustmentPreset = Receipt\n    }\n  }\n}\nWhen the imageAdjustmentPreset attribute is set to Receipt for a screen, a special camera mode that\nenhances captured receipts is switched on in the Acumatica mobile app for the specified screen. In this\nmode, when the user captures a receipt, the mobile app automatically enhances the image as follows:\n\u2022\nThe image is cropped by the bounding box of the detected edges.\n\u2022\nAny image distortion is removed.\n\u2022\nThe image is converted into black and white.\n\u2022\nThe contrast of the image is maximized.\nThe user can make manual adjustments to the image, such as rotating and resizing. The automatic changes\ncannot be undone.\n3. Save your changes.\nNotice that in the Result Preview area, the attachments instruction has changed.\n4. Publish your customization project.\n5. Open the mobile app, and navigate to the Sales Order screen.\n6. Tap the Attachment button on the screen toolbar and then tap the Camera icon. Explore the enhancement\nfunctionality (see the screenshots below).\nThe first screenshot shows the preview of a receipt. If you click\n (the image capture button), the mobile\napp captures the image and improves it (as you can see in the second screenshot) by using the image\nenhancement functionality. You can manually adjust the size of the captured area by dragging the blue dots.\nBy clicking the palette icon (Item 1 in the second screenshot), you can open enhancement mode, which is\nshown in the third screenshot. By clicking the check mark icon (Item 2 in the second screenshot), you save\nyour changes.\nIn the third screenshot, you can see the final (black and white) version of the receipt.",
+    "tags": {
+      "forms": [
+        "SO301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SO301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 257,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p43_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 43,
+    "section_type": "text_chunk",
+    "section_id": "p43_c001",
+    "image_path": "images/page43.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 43\nFigure: The enhancement mode functionality\nA\ue000er you perform all the needed modifications to the image and click the Save button, the enhanced image\nis attached to the sales order.\nLesson Summary\nIn this lesson, you have learned what the enhanced mode of the Acumatica mobile app is and how to configure it in\nthe mobile app.\nLesson 4.4: Configure a Report\nIn this lesson, you will configure the viewing and downloading of the Sales Order report from the Sales Order\nscreen. Before you start customizing the mobile app, make sure that this report form already exists in Acumatica\nERP.\nUsers cannot use this functionality if they do not have appropriate access rights to the report.\nStep: Configure the Report in the Mobile App\nTo configure the report, do the following:\n1. On the Sales Orders (SO301000) form, select a sales order, and on the More menu (under Printing and\nEmailing), click Print Sales Order.",
+    "tags": {
+      "forms": [
+        "SO301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SO301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 258,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p44_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 44,
+    "section_type": "text_chunk",
+    "section_id": "p44_c001",
+    "image_path": "images/page44.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 44\nThe report that corresponds to the form is shown below, along with the menu command that causes the\nsystem to open the report. Make a note of the ID of the report: SO641010.\nFigure: The Sales Order report\n2. Go back to the Sales Orders form and open its WSDL schema.\n3. In the WSDL schema, find the action that generates the report, which is shown below.\nThis action is located in the Actions complex type of the WSDL schema.\nFigure: The Print Sales Order action in the WSDL schema\n4. In the navigation pane of the Customization Project Editor, click Mobile Application > Update SO301000.\nThe Update: SO301000 Sales Orders page opens.\n5. In the Commands area of the page, add the following code, which maps the action to generate the report.\nupdate screen SO301000 {\n  update container \"OrderSummary\" {\n    ...\n    add recordAction \"PrintSalesOrder\" {\n      redirect = True\n    }\n  }\n}\nBecause the action is performed on a record, the recordAction object is used.",
+    "tags": {
+      "forms": [
+        "SO301000",
+        "SO641010"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SO301000",
+        "SO641010"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 259,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p45_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 45,
+    "section_type": "text_chunk",
+    "section_id": "p45_c001",
+    "image_path": "images/page45.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 45\nIn the mobile app, this action will redirect the user to the page with the report itself, as it does in the\nbrowser version of Acumatica ERP. If you published your customization project now, you would see that\na context menu appears on the Sales Order screen with the Print Sales Order item. However, you will not\npublish the project yet, because the report screen has not been added to the mobile site map.\n6. Add the SO641010 report screen to the mobile site map, as described in Step 2.2.2: Add a Screen and Step\n2.2.3: Update the Mobile Site Map, taking the following recommendations into consideration:\n\u2022\nWhen adding the screen, specify the type attribute of the screen as Report, as shown below.\nadd screen SO641010 {\n  type = Report\n}\n\u2022\nWhen modifying the mobile site map, make the screen with the report invisible from the Home screen as\nshown below.\n  add item \"SO641010\" {\n     visible = False\n  }\n7. Publish your customization project.\n8. Open the mobile app, and navigate to the Sales Order screen.\nOn the screen menu, make sure that you can see the new menu command (Print Sales Order) as shown in\nthe screenshot below.\n9. Tap Print Sales Order.\nThe generated printed document opens as shown in the following screenshot.\nFigure: Opening the Sales Order report\n10.Download the report: Open the page menu and tap Open With.",
+    "tags": {
+      "forms": [
+        "SO641010"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SO641010"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 260,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p46_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 46,
+    "section_type": "text_chunk",
+    "section_id": "p46_c001",
+    "image_path": "images/page46.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 46\nThe PDF version of the report is downloaded to your mobile device and the PDF version is displayed on the\nscreen as shown in the following screenshot.\nFigure: The PDF version of the report\nLesson Summary\nIn this lesson, you have learned how to set up a report corresponding to a screen in the mobile app by mapping an\naction that generates a report, and mapping the page with the report.\nRelated Links\n\u2022\nrecordAction\nLesson 4.5: Configure the Signature Capabilities\nIn the Acumatica mobile app, you can add the signature functionality to any screen that supports attachments. In\nthis lesson, you will configure the Sales Order screen so that a user will be able to sign a sales order by using the\ntouch screen of the device.\nAdding a signature is an action performed on a record, so to add this functionality to the screen, you will add the\nrecordAction object to the OrderSummary container.\nStep: Configure the Signature Capabilities\nTo configure the signature capabilities, do the following:\n1. In the navigation pane of the Customization Project Editor, click Mobile Application >  Update SO301000.\nThe Update: SO301000 Sales Orders page opens.",
+    "tags": {
+      "forms": [
+        "SO301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SO301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 261,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p47_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 47,
+    "section_type": "text_chunk",
+    "section_id": "p47_c001",
+    "image_path": "images/page47.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 47\n2. Update the OrderSummary container to the code shown below.\nupdate screen SO301000 {\n  update container \"OrderSummary\" {\n    ...\n    add recordAction \"SignReport\" {\n      behavior = SignReport\n      displayName = \"Sign\"\n    }\n  }\n}\n3. Save your changes.\n4. Publish your customization project.\n5. Open the mobile app, and navigate to the Sales Order screen.\nOn the screen menu, you can see the new menu command (Sign), as shown in the following screenshot.\nFigure: The Sign menu command\n6. Tap Sign.\nThe app displays a blank pop-up with the Cancel and OK buttons and the words Sign here. The user then\nadds the signature, as shown in the following screenshot.",
+    "tags": {
+      "forms": [
+        "SO301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SO301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 262,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p48_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 48,
+    "section_type": "text_chunk",
+    "section_id": "p48_c001",
+    "image_path": "images/page48.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 48\nFigure: Creation of a signature\n7. Sign on the screen and tap OK.\nThe signature is added to the list of attached items and saved automatically. A user can add multiple\nsignatures to one record by attaching multiple signatures.\nLesson Summary\nIn this lesson, you have learned how to configure the signature functionality on a mobile screen and use this\nfunctionality.\nLesson 4.6: Map an Action\nYou can use the Actions page of the Customization Project Editor to map an action on a form to the mobile app\nscreen.\nIn this lesson, you will map the Lock Budget and Unlock Budget actions of the Projects (PM301000) form to the\nProjects screen of the mobile app.\nThe screen where you are mapping the action should also be mapped to the Acumatica mobile app. If\nthe screen has not already been mapped, you should map it, as described in Lesson 2.2: Add a Screen\nto the Mobile App. In this lesson, it is not necessary to map the Projects screen because it has already\nbeen mapped to the Acumatica mobile app by Acumatica developers.",
+    "tags": {
+      "forms": [
+        "PM301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "PM301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 263,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p49_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 49,
+    "section_type": "text_chunk",
+    "section_id": "p49_c001",
+    "image_path": "images/page49.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 49\nProcess of Mapping an Action to a Mobile Screen\nThe entire process of mapping an action to the mobile screen consists of the following actions:\n1. You make sure the screen is mapped to the mobile app. If not, you map it by using MSDL, as described in\nLesson 2.2: Add a Screen to the Mobile App.\nYou can find out whether the screen is already mapped by clicking Update Existing Screen on\nthe Mobile Application page. If a screen is present in the lookup table of the dialog box, then the\nmapping for the screen has been defined by Acumatica developers.\n2. If you need to see the results of the action in the mobile app, you make sure that all elements of the mobile\nscreen that may be a\ufb00ected by the action are also mapped to the mobile app screen. In the Customization\nProject Editor, you can do this by analyzing the mapping of the screen in the Result Preview area on the\nUpdate page, which is accessed from the Mobile Application page for the form.\n3. You learn the internal name of the action by using the Element Inspector on the Acumatica ERP form.\n4. In the Customization Project Editor, you select the Expose to Mobile check box for the action in the Actions\nProperties dialog box, which you open on the Actions page.\nIf the action is not displayed on the Actions page for the form, you can add it manually by clicking the Add\nExisting Action command on the More menu.\nYou can also create a new action on the Actions page and map it by using the Expose to Mobile\ncheck box. For details, see Configuring Actions.\n5. You publish the customization project.\nYou can also map an action using MSDL. For details, see Lesson 1.1 of the T410 Advanced\nCustomization of the Mobile App course.\nBefore You Proceed\nLocking and unlocking of a project budget a\ufb00ects ability to edit the Original Budgeted Quantity, Unit Rate, and\nOriginal Budgeted Amount columns on the Revenue Budget and Cost Budget tabs of the Projects (PM301000)\nform. So to be able to test the Lock Budget and Unlock Budget commands in the mobile app, you need at least\none of these tabs of the Projects form to be mapped in the mobile app. You can map the Revenue Budget tab by\nupdating the Projects screen, as described in Lesson 4.1: Update a Screen, and using the following code.\nupdate screen PM301000 {\n  add container \"RevenueBudget\" {\n    add field \"ProjectTask\"\n    add field \"AccountGroup\"\n    add field \"Description\"\n    add field \"OriginalBudgetedQuantity\"\n    add field \"UnitRate\"\n    add field \"OriginalBudgetedAmount\"\n  }\n}\nTo map a tab, you use the same container object as you use to map the Summary area of the form.\nThe object should be located at the same level as the object for the Summary area of the form.",
+    "tags": {
+      "forms": [
+        "PM301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "PM301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 264,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p50_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 50,
+    "section_type": "text_chunk",
+    "section_id": "p50_c001",
+    "image_path": "images/page50.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 50\nStep 1: Mapping the Lock Budget Action in the Customization Project Editor\nTo map the Lock Budget command of the Projects (PM301000) form to the Acumatica mobile app, do the following:\n1. Find out the internal name of action related to the Lock Budget command as follows:\na. Open the Projects form.\nb. On the More menu, locate the Lock Budget command, which is located in the Budget Operations\ncategory.\nc. To open the Element Inspector for the command, click Ctrl + Alt and then click the command name.\nThe Element Properties dialog box opens.\nd. In the dialog box, find the internal name of the Lock Budget command in the Action Name box:\nLockBudget.\n2. Add the form to the customization project as follows:\na. Open the SalesActivities customization project in the Customization Project Editor.\nb. In the navigation pane, click Screens.\nThe Customized Screens page opens.\nc. On the page toolbar, click Customize Existing Screen.\nThe Customizing Existing Screen dialog box opens.\nd. In the dialog box, select Projects. You can open the lookup table and search for the screen by its name or\nits ID (PM301000).\ne. Click OK.\nThe Screen Editor: PM301000 (Projects) page opens.\nTip: In the name that appears on the Screen Editor page, Screen Editor: is followed by the screen ID and\nthen the screen name in parentheses.\n3. Open the Actions page for the Projects form: In the Navigation pane, click Screens > PM301000 > Actions.\nThe PM301000 (Projects) Actions page opens.\nIn the name that appears on the page, Actions is preceded by the screen ID and then the screen\nname in parentheses.\n4. In the table, click the lockBudget link in the Action Name column.\nThe Action Properties dialog box opens.\n5. In the dialog box, select the Expose to Mobile check box, as shown in the following screenshot.",
+    "tags": {
+      "forms": [
+        "PM301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "PM301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 265,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p51_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 51,
+    "section_type": "text_chunk",
+    "section_id": "p51_c001",
+    "image_path": "images/page51.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 51\nFigure: The Actions Properties dialog box\n6. Click OK to save your changes and close the dialog box.\nThe action is mapped to the mobile screen.\n7. Publish the customization project.\nStep 2: Mapping the Unlock Budget Action in the Customization Project Editor (Self-Guided\nExercise)\nIn this step, you will map the Unlock Budget action to the Projects screen of the mobile app as a self-guided\nexercise by performing the same instructions you did to map the Lock Budget action.\nOn the More menu of the Projects (PM301000) form, the Unlock Budget command is located in the same category\nas the Lock Budget command is.\nThe Unlock Budget command appears in the screen menu only when the project budget is locked.\nStep 3: Testing the Mapped Actions\nTo test the Lock Budget and Unlock Budget commands in the mobile app, do the following:\n1. Open the mobile app, and tap Projects.\nThe Projects workspace opens.\n2. In the Projects workspace, tap Projects.\nThe Projects list view opens.\n3. Open the BUDGETBYM project.",
+    "tags": {
+      "forms": [
+        "PM301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "PM301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 266,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p52_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 52,
+    "section_type": "text_chunk",
+    "section_id": "p52_c001",
+    "image_path": "images/page52.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 52\nIn the form view, notice the Revenue Budget tab; also, on the screen menu, notice the new menu command\n(Lock Budget). (See the following screenshot.)\nThe Lock Budget command may not be visible for some projects because locking of the\nproject budget is not allowed, based on the project status. The Unlock Budget command is\nnot visible for this record because the project budget is not locked.\nFigure: The Projects screen menu\n4. Make sure the editing of the project budget is available as follows:\na. On the Projects screen, tap Revenue Budget.\nThe Revenue Budget screen opens with the list of balances.\nb. Tap a line.\nc. Make sure you can edit the Original Budgeted Quantity box, as shown in the following screenshot.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 267,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p53_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 53,
+    "section_type": "text_chunk",
+    "section_id": "p53_c001",
+    "image_path": "images/page53.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 53\nFigure: The Original Budgeted Quantity box, which can be edited\n5. In the Original Budgeted Quantity box, enter 7, and tap Update on the screen toolbar to save your\nchanges.\nThe Revenue Budget screen opens with all a\ufb00ected values updated, as shown in the following screenshot.\nFigure: The settings of the a\ufb00ected line\n6. Return to the Projects screen and tap Save on the screen toolbar.\n7. On the screen menu, tap Lock Budget.\n8. On the Revenue Budget screen, open the edited line.\n9. Make sure that the Original Budgeted Quantity, Unit Rate, and Original Budgeted Amount boxes are\nunavailable for editing, as shown in the following screenshot.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 268,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "T400_BasicCustomizationOfMobileApp_2025R1 (2)_p54_c001",
+    "pdf_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "document_name": "T400_BasicCustomizationOfMobileApp_2025R1 (2)",
+    "page_number": 54,
+    "section_type": "text_chunk",
+    "section_id": "p54_c001",
+    "image_path": "images/page54.jpg",
+    "text_content": "Part 4: Configuration of the Extended Functionality | 54\nFigure: The boxes that are unavailable for editing\n10.Return to the Projects screen, and, on the screen menu, tap the Unlock Budget command, which is now\navailable because the project budget has been locked.\n11.On the Revenue Budget screen, open a line.\n12.Make sure the editing of line details is available again.\nLesson Summary\nIn this lesson, you have learned how to use the Customization Project Editor to map an action to a mobile form.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 269,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
   }
 ]

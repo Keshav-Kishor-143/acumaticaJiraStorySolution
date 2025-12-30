@@ -106,8 +106,9 @@ const App = () => {
         (completeData) => {
           finalSolutionData = {
             success: true,
-            solution_markdown: completeData.solution || accumulatedSolution,
-            sources: [],
+            solution_markdown: completeData.solution || completeData.solution_markdown || accumulatedSolution,
+            story_id: completeData.story_id || null,
+            sources: completeData.sources || [],
             saved_file_path: completeData.saved_file_path,
             processing_time: completeData.processing_time
           };

@@ -59,14 +59,21 @@ acumaticaStorySolutions/
    API_KEY=your_api_key_for_authentication
    ```
 
-3. **Ingest Manuals**
-   ```bash
-   python ingest_cli.py path/to/manual.pdf
-   # Or process a directory:
-   python ingest_cli.py path/to/manuals_directory/
-   ```
+3. **Ingest Manuals (Text-first, chunked + tagged)**
 
-4. **Run the Service**
+```bash
+python ingest_cli.py path/to/manual.pdf
+# Or process a directory:
+python ingest_cli.py path/to/manuals_directory --recursive
+```
+
+4. **Inject Curated Pattern Library (Recommended)**
+
+```bash
+python scripts/inject_patterns.py
+```
+
+5. **Run the Service**
    ```bash
    python main.py
    ```
@@ -124,10 +131,10 @@ General health check.
 The service uses a dedicated knowledge base at `knowledge_base/manuals/`.
 
 To add manuals:
-1. Place PDF files in `knowledge_base/manuals/pdfs/` directory (or specify path)
-2. Run `python ingest_cli.py` (processes all PDFs in `knowledge_base/manuals/pdfs/`)
-   Or: `python ingest_cli.py path/to/manual.pdf` (processes specific PDF)
+1. Run `python ingest_cli.py path/to/manual.pdf` (processes a specific PDF)
+2. Or run `python ingest_cli.py path/to/folder --recursive`
 3. Manuals are processed and stored in `knowledge_base/manuals/[document_name]/`
+4. (Recommended) Run `python scripts/inject_patterns.py` to add a curated pattern library to retrieval
 
 ## Architecture Details
 

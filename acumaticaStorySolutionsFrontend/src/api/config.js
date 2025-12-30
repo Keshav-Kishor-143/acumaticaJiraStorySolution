@@ -25,6 +25,7 @@ const API_CONFIG = {
     solutions: {
       process: '/solutions/process',
       processStream: '/solutions/process-stream', // Streaming endpoint
+      normalize: '/solutions/normalize', // Story normalization endpoint
       health: '/solutions/health',
       manuals: '/solutions/manuals',
       cancel: '/solutions/cancel' // Cancel endpoint

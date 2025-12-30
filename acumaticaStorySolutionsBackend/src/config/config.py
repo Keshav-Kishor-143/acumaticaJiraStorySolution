@@ -43,6 +43,11 @@ class Config:
     
     # Output directory for saving solution markdown files
     OUTPUT_DIR = os.path.join(_app_dir, "output")
+
+    # Output formatting:
+    # - "final": delivery-ready markdown (solution + AC + minimal refs)
+    # - "precision" (default): full diagnostic markdown (fact tables, confidence, detailed implementation steps, code snippets, etc.)
+    OUTPUT_STYLE = os.getenv("OUTPUT_STYLE", "precision")
     
     # Add direct path verification
     if not os.path.exists(LOCAL_BASE_PATH):
@@ -100,8 +105,9 @@ class Config:
     
     # AI Model Configuration - Using FREE HuggingFace embeddings!
     EMBEDDING_MODEL = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
-    LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o-mini")
-    VISION_MODEL = os.getenv("VISION_MODEL", "gpt-4o-mini")
+    # Defaults tuned for accuracy. Override via env (LLM_MODEL / VISION_MODEL).
+    LLM_MODEL = os.getenv("LLM_MODEL", "gpt-4o")
+    VISION_MODEL = os.getenv("VISION_MODEL", "gpt-4o")
     
     # Image Processing Configuration (Cost Optimized)
     DPI = int(os.getenv("DPI", "200"))
@@ -144,11 +150,12 @@ class Config:
             warnings.append(f"VISION_MODEL '{cls.VISION_MODEL}' is deprecated - switching to 'gpt-4o-mini'")
             cls.VISION_MODEL = "gpt-4o-mini"
 
-        # Guard against unsupported/unknown LLM models
-        unsupported_llm_models = {"gpt-5-nano", "gpt-5-mini", "gpt-4-turbo", "gpt-4-turbo-preview"}
-        if cls.LLM_MODEL in unsupported_llm_models:
-            warnings.append(f"LLM_MODEL '{cls.LLM_MODEL}' is unsupported - switching to 'gpt-4o-mini'")
-            cls.LLM_MODEL = "gpt-4o-mini"
+        # Guard against deprecated/retired LLM models (keep allow-list broad; OpenAI model
+        # availability varies by account). We only block known-retired identifiers.
+        deprecated_llm_models = {"gpt-4-turbo", "gpt-4-turbo-preview"}
+        if cls.LLM_MODEL in deprecated_llm_models:
+            warnings.append(f"LLM_MODEL '{cls.LLM_MODEL}' is deprecated - switching to 'gpt-4o'")
+            cls.LLM_MODEL = "gpt-4o"
         
         # Log warnings but don't fail
         if warnings:
@@ -163,13 +170,24 @@ class Config:
     def calculate_cost_inr(cls, input_tokens=0, output_tokens=0, vision_tokens=0):
         """Calculate cost in Indian Rupees for OpenAI API usage"""
         # OpenAI pricing for GPT-4o-mini (as of 2024) in USD
+        # Keep cost model conservative; if the selected model isn't present, fall back to gpt-4o-mini.
         pricing = {
             'gpt-4o-mini': {
-                'input': 0.15 / 1_000_000,   # $0.15 per 1M input tokens
-                'output': 0.60 / 1_000_000   # $0.60 per 1M output tokens
+                'input': 0.15 / 1_000_000,
+                'output': 0.60 / 1_000_000
+            },
+            'gpt-4o': {
+                # Conservative placeholder; adjust if you want precise billing telemetry.
+                'input': 2.50 / 1_000_000,
+                'output': 10.00 / 1_000_000
+            },
+            'gpt-5-mini': {
+                # Placeholder: varies by account/pricing changes. Keep non-blocking.
+                'input': 2.50 / 1_000_000,
+                'output': 10.00 / 1_000_000
             },
             'vision': {
-                'input': 0.15 / 1_000_000    # Same as gpt-4o-mini input pricing
+                'input': 0.15 / 1_000_000
             }
         }
         
@@ -177,8 +195,9 @@ class Config:
         usd_to_inr = 87.5
         
         # Calculate costs
-        input_cost_usd = input_tokens * pricing['gpt-4o-mini']['input']
-        output_cost_usd = output_tokens * pricing['gpt-4o-mini']['output']
+        model_key = cls.LLM_MODEL if cls.LLM_MODEL in pricing else 'gpt-4o-mini'
+        input_cost_usd = input_tokens * pricing[model_key]['input']
+        output_cost_usd = output_tokens * pricing[model_key]['output']
         vision_cost_usd = vision_tokens * pricing['vision']['input']
         
         total_cost_usd = input_cost_usd + output_cost_usd + vision_cost_usd

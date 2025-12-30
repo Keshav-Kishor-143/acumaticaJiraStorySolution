@@ -36,6 +36,7 @@ from sklearn.metrics.pairwise import cosine_similarity  # Lightweight similarity
 from src.config.config import config
 from src.utils.logger_utils import get_logger
 from src.utils.local_manager import LocalManager
+from src.core.tech_extraction import TechnicalEntityExtractor
 
 def _get_huggingface_embedding(model_name: str, device: str = "cpu", logger=None):
     """Get HuggingFace embedding model with fallback support"""
@@ -216,6 +217,9 @@ class HybridRetriever:
             'strategy_performance': {},
             'accuracy_feedback': []
         }
+        
+        # Initialize Technical Entity Extractor for entity-anchored retrieval
+        self.entity_extractor = TechnicalEntityExtractor()
         
         self.logger.info("Hybrid Multi-Strategy Retriever initialized", extra={
             "strategies": len(self.strategy_weights)
@@ -478,9 +482,13 @@ class HybridRetriever:
                         page_num = entry.get('page_number', 0)
                         doc_name = entry.get('document_name') or entry.get('dll_name') or entry.get('pdf_name', 'unknown')
                         section_type = entry.get('section_type', 'page')
+                        section_id = entry.get('section_id')
                         
                         # Create appropriate page_id based on section type
-                        if section_type in ['dll_diagram', 'dll_text']:
+                        # IMPORTANT: keep chunk-level entries unique (text chunks, patterns, dll_text, etc.)
+                        if section_id and section_type != 'page':
+                            page_id = f"{doc_name}_{section_id}"
+                        elif section_type in ['dll_diagram', 'dll_text']:
                             section_id = entry.get('section_id', f'diagram_{page_num}')
                             page_id = f"{doc_name}_{section_id}"
                         else:
@@ -498,12 +506,20 @@ class HybridRetriever:
                             self.text_index[page_id] = {
                                 'pdf_name': doc_name,
                                 'page_number': page_num,
+                                'section_id': section_id,
                                 'raw_text': text_content,
                                 'structured_text': {'titles': [], 'content': text_content},
                                 'section_type': section_type,
                                 'image_type': entry.get('image_type'),
                                 'dll_name': entry.get('dll_name')
                             }
+                            # Build keyword index only if we have text.
+                            if text_content:
+                                self._build_keyword_index(
+                                    page_id=page_id,
+                                    text=text_content,
+                                    structured_text=self.text_index[page_id].get('structured_text', {})
+                                )
             
             self.logger.debug("Indexed metadata content", extra={
                 "pages_indexed": len(self.text_index)
@@ -618,43 +634,47 @@ class HybridRetriever:
             metadata_list = self.metadata_cache.get(document_id, [])
             
             for idx in top_indices:
-                # Find metadata entry with matching vector_index
-                matching_metadata = None
-                for page_metadata in metadata_list:
-                    for chunk in page_metadata.get('chunks', []):
+                # Find the exact metadata entry/chunk that owns this vector_index.
+                # NOTE: Older code matched by page_number which breaks when there are multiple chunks on a page.
+                owning_entry = None
+                owning_chunk = None
+                for entry in metadata_list:
+                    for chunk in entry.get('chunks', []):
                         if chunk.get('vector_index') == idx:
-                            matching_metadata = {
-                                'page_number': page_metadata.get('page_number', 0),
-                                'image_path': page_metadata.get('image_path', ''),
-                                'coordinates': chunk.get('coordinates', {}),
-                                'document_name': document_id
-                            }
+                            owning_entry = entry
+                            owning_chunk = chunk
                             break
-                    if matching_metadata:
+                    if owning_entry:
                         break
                 
-                if matching_metadata:
-                    # Find full metadata entry to get DLL-specific fields
-                    full_metadata_entry = None
-                    for page_metadata in metadata_list:
-                        if page_metadata.get('page_number') == matching_metadata['page_number']:
-                            full_metadata_entry = page_metadata
-                            break
+                if owning_entry:
+                    # Prefer embedded text_content from metadata (textual ingestion).
+                    # Fallbacks preserve backward compatibility with existing metadata formats.
+                    text_content = (
+                        owning_entry.get('text_content')
+                        or owning_entry.get('text')
+                        or owning_entry.get('raw_text')
+                        or ""
+                    )
                     
-                    # Use full metadata if available, otherwise use matching_metadata
-                    result_metadata = full_metadata_entry or matching_metadata
+                    # Build result metadata: include owning entry + the specific chunk coordinates.
+                    # Keep the full entry as-is, but ensure 'coordinates' exists for consumers.
+                    result_metadata = dict(owning_entry)
+                    if owning_chunk and owning_chunk.get('coordinates'):
+                        result_metadata['coordinates'] = owning_chunk.get('coordinates', {})
+                    result_metadata.setdefault('document_name', document_id)
                     
                     result = SearchResult(
                         pdf_name=document_id,
-                        page_number=matching_metadata['page_number'],
+                        page_number=owning_entry.get('page_number', 0),
                         score=float(similarities[idx]),
-                        text_content='',  # Will be filled by Vision API
+                        text_content=text_content,
                         metadata=result_metadata,
                         relevance_signals={'vector_similarity': float(similarities[idx])},
                         search_strategy='vector_semantic',
                         combined_score=float(similarities[idx]),
-                        content='',  # Will be filled by Vision API
-                        image_path=result_metadata.get('image_path', matching_metadata.get('image_path', '')),
+                        content=text_content,
+                        image_path=result_metadata.get('image_path', ''),
                         section_type=result_metadata.get('section_type', 'page'),
                         image_type=result_metadata.get('image_type', ''),
                         dll_name=result_metadata.get('dll_name', '')
@@ -883,6 +903,16 @@ Return ONLY the extracted technical information without commentary. Preserve all
                 # Skip if no image path or already has vision text
                 if not result.image_path:
                     return result
+
+                # COST / SPEED OPTIMIZATION:
+                # If we already have substantial text_content (e.g., from text_chunk ingestion),
+                # do not call Vision for this result.
+                try:
+                    existing_text = (getattr(result, 'text_content', '') or getattr(result, 'content', '') or '')
+                    if isinstance(existing_text, str) and len(existing_text.strip()) > 200:
+                        return result
+                except Exception:
+                    pass
                 
                 # Check if vision text already extracted (from hybrid retriever)
                 if hasattr(result, 'vision_extracted_text') and result.vision_extracted_text:
@@ -1033,6 +1063,16 @@ Return ONLY the extracted technical information without commentary. Preserve all
                     "page_number": result.page_number
                 })
                 continue
+
+            # COST / SPEED OPTIMIZATION:
+            # If we already have substantial text_content (e.g., from text_chunk ingestion),
+            # skip Vision for this result.
+            try:
+                existing_text = (getattr(result, 'text_content', '') or getattr(result, 'content', '') or '')
+                if isinstance(existing_text, str) and len(existing_text.strip()) > 200:
+                    continue
+            except Exception:
+                pass
                 
             # Use standardized image path
             try:
@@ -1195,7 +1235,14 @@ Return ONLY the extracted technical information without commentary. Preserve all
         
         return search_results
 
-    def search_all_documents(self, query: str, top_k: int = 5, include_strategies: List[str] = None, search_params: Optional[Dict[str, Any]] = None) -> List[SearchResult]:
+    def search_all_documents(
+        self, 
+        query: str, 
+        top_k: int = 5, 
+        include_strategies: List[str] = None, 
+        search_params: Optional[Dict[str, Any]] = None,
+        entities: Optional[Dict[str, List[str]]] = None
+    ) -> List[SearchResult]:
         """Search across all available documents using pre-computed vectors"""
         try:
             # Get list of all available documents from content index
@@ -1204,9 +1251,20 @@ Return ONLY the extracted technical information without commentary. Preserve all
                 self.logger.error("No documents available for search")
                 return []
             
-            # Apply intent-directed filtering if search_params provided
+            # Apply intent-directed filtering if search_params provided.
+            # Accept either:
+            # - ["DocA", "DocB"] (KB folder names), or
+            # - [{"path": ".../DocA"}, ...] (legacy shape).
             if search_params and search_params.get("target_directories"):
-                target_docs = [Path(d["path"]).name for d in search_params["target_directories"]]
+                raw_targets = search_params["target_directories"]
+                target_docs: List[str] = []
+                if isinstance(raw_targets, list):
+                    for t in raw_targets:
+                        if isinstance(t, str):
+                            target_docs.append(t)
+                        elif isinstance(t, dict) and t.get("path"):
+                            target_docs.append(Path(t["path"]).name)
+                target_docs = [d for d in target_docs if d]
                 
                 # Use fuzzy matching for document IDs to handle variations
                 filtered_ids = []
@@ -1314,6 +1372,23 @@ Return ONLY the extracted technical information without commentary. Preserve all
                 # Don't do keyword-based fallback - trust the semantic intelligence
                 # If scores are truly low, the issue is with semantic matching, not missing docs
             
+            # Entity-anchored search (if entities provided)
+            if entities:
+                entity_results = self._entity_anchored_search(entities, top_k=top_k)
+                if entity_results:
+                    # Merge entity results with existing results
+                    # Deduplicate by page_key
+                    existing_keys = {f"{r.pdf_name}_page_{r.page_number}" for r in top_results}
+                    for entity_result in entity_results:
+                        entity_key = f"{entity_result.pdf_name}_page_{entity_result.page_number}"
+                        if entity_key not in existing_keys:
+                            top_results.append(entity_result)
+                            existing_keys.add(entity_key)
+                    
+                    # Re-sort by score
+                    top_results.sort(key=lambda x: x.score, reverse=True)
+                    top_results = top_results[:top_k]
+            
             # Enhance with vision API if enabled (optional)
             if config.INCLUDE_VISION_ANALYSIS and top_results:
                 top_results = self._enhance_with_vision_sync(top_results, query)
@@ -1323,7 +1398,8 @@ Return ONLY the extracted technical information without commentary. Preserve all
                 "top_k_returned": len(top_results),
                 "documents_searched": len(document_ids),
                 "best_score": top_results[0].score if top_results else 0,
-                "confidence_check_applied": top_results and top_results[0].score < confidence_threshold if top_results else False
+                "confidence_check_applied": top_results and top_results[0].score < confidence_threshold if top_results else False,
+                "entity_anchored_used": bool(entities)
             })
              
             return top_results
@@ -1382,7 +1458,12 @@ Return ONLY the extracted technical information without commentary. Preserve all
                         filtered_docs.append(doc_name)
                 query_analysis['target_documents'] = filtered_docs
             
-            # Step 5: Execute multi-strategy search
+            # Step 5: Pre-extract entities from query for entity-anchored search
+            query_entities = self.entity_extractor.extract_from_text(query, source="query")
+            # Filter out empty entity lists
+            query_entities = {k: v for k, v in query_entities.items() if v}
+            
+            # Step 6: Execute multi-strategy search
             strategy_results = {}
             
             # Execute each strategy based on dynamic weights
@@ -1400,6 +1481,12 @@ Return ONLY the extracted technical information without commentary. Preserve all
             
             if self.strategy_weights.get('query_expanded', 0) > 0:
                 strategy_results['query_expanded'] = self._query_expansion_search(query, query_analysis, top_k)
+            
+            # Entity-anchored search (if entities found)
+            if query_entities:
+                entity_results = self._entity_anchored_search(query_entities, top_k=top_k)
+                if entity_results:
+                    strategy_results['entity_anchored'] = entity_results
             
             # Step 6: Merge and re-rank results using dynamic scoring
             final_results = self._merge_and_rerank(strategy_results, query_analysis, top_k)
@@ -1750,8 +1837,7 @@ Return ONLY the extracted technical information without commentary. Preserve all
             response = self.openai_client.chat.completions.create(
                 model=config.LLM_MODEL,
                 messages=[{"role": "user", "content": expansion_prompt}],
-                max_tokens=150,
-                temperature=0.3
+                max_completion_tokens=150
             )
             
             expanded_terms = response.choices[0].message.content.strip()
@@ -1898,6 +1984,113 @@ Return ONLY the extracted technical information without commentary. Preserve all
             self.logger.warning("Domain specific search failed", extra={"error": str(e)})
             return []
     
+    def _entity_anchored_search(
+        self,
+        entities: Dict[str, List[str]],
+        top_k: int = 5
+    ) -> List[SearchResult]:
+        """
+        Entity-anchored hard-keyword search for exact technical entity matching
+        
+        Args:
+            entities: Dictionary of entity types to lists of entity values
+                     e.g., {'forms': ['SO301000'], 'dacs': ['ARInvoice'], ...}
+            top_k: Number of results to return
+            
+        Returns:
+            List of SearchResult objects with high confidence scores for exact matches
+        """
+        try:
+            if not entities:
+                return []
+            
+            self.logger.info("Starting entity-anchored search", extra={
+                "entity_types": list(entities.keys()),
+                "total_entities": sum(len(v) for v in entities.values())
+            })
+            
+            results = []
+            entity_results = {}  # page_id -> SearchResult with entity match info
+            
+            # Search for each entity type
+            for entity_type, entity_values in entities.items():
+                if not entity_values:
+                    continue
+                
+                for entity_value in entity_values:
+                    if not entity_value:
+                        continue
+                    
+                    # Normalize entity value for search
+                    search_value = entity_value.strip()
+                    search_value_lower = search_value.lower()
+                    
+                    # Search in text_index (all indexed content)
+                    for page_id, text_data in self.text_index.items():
+                        page_text = text_data.get('raw_text', '')
+                        page_text_lower = page_text.lower()
+                        
+                        # Check for exact match with word boundaries
+                        import re
+                        pattern = r'\b' + re.escape(search_value) + r'\b'
+                        if re.search(pattern, page_text, re.IGNORECASE):
+                            # Found exact match - create high-confidence result
+                            # IMPORTANT: preserve chunk-level uniqueness if page_id represents a section/chunk
+                            page_key = page_id
+                            
+                            if page_key not in entity_results:
+                                result = SearchResult(
+                                    pdf_name=text_data['pdf_name'],
+                                    page_number=text_data['page_number'],
+                                    score=0.9,  # High base score for exact entity match
+                                    text_content=page_text,
+                                    metadata={
+                                        'entity_type': entity_type,
+                                        'entity_value': entity_value,
+                                        'match_type': 'exact',
+                                        'page_id': page_id,
+                                        'section_id': text_data.get('section_id')
+                                    },
+                                    relevance_signals={'entity_exact_match': 0.9},
+                                    search_strategy='entity_anchored',
+                                    combined_score=0.9
+                                )
+                                result.image_path = result.get_image_path()
+                                entity_results[page_key] = result
+                            else:
+                                # Update existing result - boost score for multiple entity matches
+                                entity_results[page_key].score = min(1.0, entity_results[page_key].score + 0.1)
+                                entity_results[page_key].combined_score = min(1.0, entity_results[page_key].combined_score + 0.1)
+                                
+                                # Track all matched entities
+                                if 'matched_entities' not in entity_results[page_key].metadata:
+                                    entity_results[page_key].metadata['matched_entities'] = []
+                                entity_results[page_key].metadata['matched_entities'].append({
+                                    'type': entity_type,
+                                    'value': entity_value
+                                })
+                                
+                                entity_results[page_key].relevance_signals['entity_exact_match'] = \
+                                    min(1.0, entity_results[page_key].relevance_signals.get('entity_exact_match', 0.9) + 0.1)
+            
+            # Convert to list and sort by score
+            results = list(entity_results.values())
+            results.sort(key=lambda x: x.combined_score, reverse=True)
+            
+            self.logger.info("Entity-anchored search complete", extra={
+                "results_found": len(results),
+                "entities_searched": sum(len(v) for v in entities.values())
+            })
+            
+            return results[:top_k]
+            
+        except Exception as e:
+            self.logger.error("Entity-anchored search failed", extra={
+                "error_message": str(e),
+                "error_type": type(e).__name__
+            })
+            return []
+    
     def _merge_and_rerank(self, strategy_results: Dict[str, List[SearchResult]], 
                          query_analysis: Dict, top_k: int) -> List[SearchResult]:
         """Merge results from multiple strategies and re-rank using ensemble scoring"""
@@ -1905,11 +2098,43 @@ Return ONLY the extracted technical information without commentary. Preserve all
             # Collect all unique results
             all_results = {}  # page_id -> SearchResult
             
+            # Entity-anchored weight override (if entity-anchored results exist)
+            has_entity_anchored = 'entity_anchored' in strategy_results
+            if has_entity_anchored:
+                # Override weights for entity-anchored retrieval
+                entity_weights = {
+                    'vector_semantic': 0.05,
+                    'enhanced_keyword': 0.20,
+                    'title_section_match': 0.05,
+                    'domain_specific': 0.10,
+                    'entity_anchored': 0.60,  # Highest weight for entity matches
+                    'query_expanded': 0.0
+                }
+            else:
+                entity_weights = None
+            
             for strategy, results in strategy_results.items():
-                weight = self.strategy_weights.get(strategy, 0.1)
+                # Use entity-anchored weights if available, otherwise use default weights
+                if entity_weights and strategy in entity_weights:
+                    weight = entity_weights[strategy]
+                else:
+                    weight = self.strategy_weights.get(strategy, 0.1)
                 
                 for result in results:
-                    page_key = f"{result.pdf_name}_page_{result.page_number}"
+                    # IMPORTANT: keep chunk-level results unique (avoid collapsing all chunks on the same page)
+                    section_id = ""
+                    try:
+                        if hasattr(result, 'metadata') and isinstance(result.metadata, dict):
+                            section_id = result.metadata.get('section_id') or ""
+                            if not section_id:
+                                # Sometimes we carry the stable key as page_id
+                                page_id = result.metadata.get('page_id') or ""
+                                if page_id and page_id.startswith(f"{result.pdf_name}_"):
+                                    section_id = page_id.replace(f"{result.pdf_name}_", "", 1)
+                    except Exception:
+                        section_id = ""
+                    
+                    page_key = f"{result.pdf_name}_{section_id}" if section_id else f"{result.pdf_name}_page_{result.page_number}"
                     
                     if page_key not in all_results:
                         # First time seeing this result

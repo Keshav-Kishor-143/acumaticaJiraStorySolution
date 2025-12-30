@@ -1,6 +1,7 @@
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import API_CONFIG from './config';
+import { normalizeStory, normalizedToLegacyFormat } from '../utils/storyNormalizer';
 
 // Create axios instance with default config
 const api = axios.create({
@@ -114,9 +115,11 @@ export const processStory = async (storyData, abortController = null) => {
     const response = await processApi.post(API_CONFIG.endpoints.solutions.process, {
       description: storyData.description,
       acceptance_criteria: storyData.acceptance_criteria,
+      requirements: storyData.requirements || [],
       story_id: storyData.story_id || null,
       title: storyData.title || null,
-      images: storyData.images || []
+      images: storyData.images || [],
+      normalized_story: storyData.normalized_story || null
     });
     return response.data;
   } catch (error) {
@@ -152,9 +155,11 @@ export const processStoryStream = async (
       body: JSON.stringify({
         description: storyData.description,
         acceptance_criteria: storyData.acceptance_criteria,
+        requirements: storyData.requirements || [],
         story_id: storyData.story_id || null,
         title: storyData.title || null,
-        images: storyData.images || []
+        images: storyData.images || [],
+        normalized_story: storyData.normalized_story || null
       }),
       signal: abortController?.signal
     });

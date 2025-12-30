@@ -1,0 +1,1170 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-12-30",
+  "objects": [
+    {
+      "concept": "Rental Return",
+      "aliases": ["Return Ticket", "Equipment Return", "Return Document", "Rental Return Ticket"],
+      "module": "NV.Rental360",
+      "type": "document",
+      "priority": 10,
+      "primary_dac": "NV.Rental360.NVRTReturnTicket",
+      "primary_graph": "NV.Rental360.NVRTReturnTicketEntry",
+      "primary_screen_id": "NV304000",
+      "line_dac": "NV.Rental360.NVRTReturnTicketTran",
+      "line_graph_extension": "NV.Rental360.NVRTReturnTicketEntryExt",
+      "line_screen_ids": ["NV304000"],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "customer": "CustomerID",
+        "date": "DocDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "condition_field": "UsrEquipmentCondition",
+        "damage_fee_field": "UsrDamageFee",
+        "job_site_field": "UsrJobSite",
+        "address_field": "UsrAddress",
+        "equipment_status": "EquipmentStatus",
+        "qty": "Qty"
+      },
+      "relationships": {
+        "header_to_line_relation": "NVRTReturnTicket.RefNbr = NVRTReturnTicketTran.RefNbr",
+        "extensions": ["NVRTReturnTicketExt", "NVRTReturnTicketTranExt"],
+        "child_records": ["NVRTReturnTicketTran"]
+      },
+      "patterns_applicable": [
+        "auto_line_creation",
+        "amount_calculation",
+        "persist_time_enforcement",
+        "validation_rule"
+      ],
+      "retrieval_tags": [
+        "rental",
+        "equipment",
+        "return",
+        "damage",
+        "fee",
+        "NV.Rental360"
+      ],
+      "notes": "Primary document where technicians mark equipment condition and where damage fees must be generated."
+    },
+    {
+      "concept": "EX Order",
+      "aliases": ["Event Order", "USS EX Order"],
+      "module": "NAWUnitedSiteServices",
+      "type": "document",
+      "priority": 9,
+      "primary_dac": "NAWUnitedSiteServices.NAWEXOrder",
+      "primary_graph": "NAWUnitedSiteServices.NAWEXOrderEntry",
+      "primary_screen_id": "NAW402000",
+      "line_dac": "NAWUnitedSiteServices.NAWEXOrderLine",
+      "line_graph_extension": "NAWUnitedSiteServices.NAWEXOrderEntryExt",
+      "line_screen_ids": ["NAW402000"],
+      "key_fields": {
+        "document_number": "OrderNbr",
+        "customer": "CustomerID",
+        "date": "OrderDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "event_start_date": "UsrEventStartDate",
+        "event_end_date": "UsrEventEndDate",
+        "scheduled_start": "UsrScheduledStartDate",
+        "scheduled_return": "UsrScheduledReturnDate"
+      },
+      "relationships": {
+        "header_to_line_relation": "NAWEXOrder.OrderNbr = NAWEXOrderLine.OrderNbr",
+        "extensions": ["NAWEXOrderExt", "NAWEXOrderLineExt"],
+        "child_records": ["NAWEXOrderLine"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "date_validation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "event",
+        "EX Order",
+        "United Site Services",
+        "date validation"
+      ],
+      "notes": "Used in Event Order to EX Quote logic; heavy date validation rules must apply."
+    },
+    {
+      "concept": "Email Quote",
+      "aliases": ["Send Quote", "Quote Email", "CRM Opportunity Email", "Opportunity Email"],
+      "module": "PX.Objects.CR",
+      "type": "template",
+      "priority": 5,
+      "primary_dac": "PX.Objects.CR.CROpportunity",
+      "primary_graph": "PX.Objects.CR.OpportunityMaint",
+      "primary_screen_id": "CR304000",
+      "line_dac": "",
+      "line_graph_extension": "",
+      "line_screen_ids": [],
+      "key_fields": {
+        "document_number": "OpportunityID",
+        "customer": "BAccountID",
+        "date": "DocumentDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "job_site_field": "UsrJobSite",
+        "address_field": "UsrAddress",
+        "attention_field": "CRBillingContact.Attention",
+        "customer_order_nbr": "CustomerOrderNbr",
+        "order_total": "CuryOrderTotal"
+      },
+      "relationships": {
+        "header_to_line_relation": "",
+        "extensions": ["CROpportunityExt"],
+        "child_records": []
+      },
+      "patterns_applicable": [
+        "email_template_mapping",
+        "placeholder_binding"
+      ],
+      "retrieval_tags": [
+        "email",
+        "template",
+        "CRM",
+        "opportunity",
+        "CROpportunity",
+        "quote"
+      ],
+      "notes": "Used in the Email Quote action; requires correct dynamic placeholder population."
+    },
+    {
+      "concept": "Sales Order",
+      "aliases": ["SO Order", "Sales Order Document"],
+      "module": "PX.Objects.SO",
+      "type": "document",
+      "priority": 8,
+      "primary_dac": "PX.Objects.SO.SOOrder",
+      "primary_graph": "PX.Objects.SO.SOOrderEntry",
+      "primary_screen_id": "SO301000",
+      "line_dac": "PX.Objects.SO.SOLine",
+      "line_graph_extension": "SOOrderEntryExt",
+      "line_screen_ids": ["SO301000"],
+      "key_fields": {
+        "document_number": "OrderNbr",
+        "customer": "CustomerID",
+        "date": "OrderDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "SOOrder.OrderNbr = SOLine.OrderNbr",
+        "extensions": ["SOOrderExt", "SOLineExt"],
+        "child_records": ["SOLine", "DropShipSOLine"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "amount_calculation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "sales",
+        "order",
+        "SO",
+        "customer",
+        "PX.Objects.SO"
+      ],
+      "notes": "Core Acumatica Sales Order document."
+    },
+    {
+      "concept": "Purchase Order",
+      "aliases": ["PO Order", "Purchase Order Document"],
+      "module": "PX.Objects.PO",
+      "type": "document",
+      "priority": 8,
+      "primary_dac": "PX.Objects.PO.POOrder",
+      "primary_graph": "PX.Objects.PO.POOrderEntry",
+      "primary_screen_id": "PO301000",
+      "line_dac": "PX.Objects.PO.POLine",
+      "line_graph_extension": "POOrderEntryExt",
+      "line_screen_ids": ["PO301000"],
+      "key_fields": {
+        "document_number": "OrderNbr",
+        "vendor": "VendorID",
+        "date": "OrderDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "POOrder.OrderNbr = POLine.OrderNbr",
+        "extensions": ["POOrderExt", "POLineExt"],
+        "child_records": ["POLine"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "amount_calculation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "purchase",
+        "order",
+        "PO",
+        "vendor",
+        "PX.Objects.PO"
+      ],
+      "notes": "Core Acumatica Purchase Order document."
+    },
+    {
+      "concept": "AR Invoice",
+      "aliases": ["Accounts Receivable Invoice", "Customer Invoice", "AR Document"],
+      "module": "PX.Objects.AR",
+      "type": "document",
+      "priority": 8,
+      "primary_dac": "PX.Objects.AR.ARInvoice",
+      "primary_graph": "PX.Objects.AR.ARInvoiceEntry",
+      "primary_screen_id": "AR301000",
+      "line_dac": "PX.Objects.AR.ARTran",
+      "line_graph_extension": "ARInvoiceEntryExt",
+      "line_screen_ids": ["AR301000"],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "customer": "CustomerID",
+        "date": "DocDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "ARInvoice.RefNbr = ARTran.RefNbr",
+        "extensions": ["ARInvoiceExt", "ARTranExt"],
+        "child_records": ["ARTran"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "amount_calculation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "AR",
+        "invoice",
+        "accounts receivable",
+        "customer",
+        "PX.Objects.AR"
+      ],
+      "notes": "Core Acumatica Accounts Receivable Invoice document."
+    },
+    {
+      "concept": "AP Invoice",
+      "aliases": ["Accounts Payable Invoice", "Vendor Invoice", "AP Document"],
+      "module": "PX.Objects.AP",
+      "type": "document",
+      "priority": 8,
+      "primary_dac": "PX.Objects.AP.APInvoice",
+      "primary_graph": "PX.Objects.AP.APInvoiceEntry",
+      "primary_screen_id": "AP301000",
+      "line_dac": "PX.Objects.AP.APTran",
+      "line_graph_extension": "APInvoiceEntryExt",
+      "line_screen_ids": ["AP301000"],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "vendor": "VendorID",
+        "date": "DocDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "APInvoice.RefNbr = APTran.RefNbr",
+        "extensions": ["APInvoiceExt", "APTranExt"],
+        "child_records": ["APTran"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "amount_calculation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "AP",
+        "invoice",
+        "accounts payable",
+        "vendor",
+        "PX.Objects.AP"
+      ],
+      "notes": "Core Acumatica Accounts Payable Invoice document."
+    },
+    {
+      "concept": "FS Appointment",
+      "aliases": ["Field Service Appointment", "Service Appointment"],
+      "module": "PX.Objects.FS",
+      "type": "document",
+      "priority": 7,
+      "primary_dac": "PX.Objects.FS.FSAppointment",
+      "primary_graph": "PX.Objects.FS.AppointmentEntry",
+      "primary_screen_id": "FS300200",
+      "line_dac": "",
+      "line_graph_extension": "",
+      "line_screen_ids": [],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "customer": "CustomerID",
+        "date": "ScheduledDateTimeBegin",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "",
+        "extensions": ["FSAppointmentExt"],
+        "child_records": []
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "date_validation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "field service",
+        "appointment",
+        "FS",
+        "service",
+        "PX.Objects.FS"
+      ],
+      "notes": "Core Acumatica Field Service Appointment document."
+    },
+    {
+      "concept": "Opportunity",
+      "aliases": ["CRM Opportunity", "Sales Opportunity"],
+      "module": "PX.Objects.CR",
+      "type": "document",
+      "priority": 7,
+      "primary_dac": "PX.Objects.CR.CROpportunity",
+      "primary_graph": "PX.Objects.CR.OpportunityMaint",
+      "primary_screen_id": "CR304000",
+      "line_dac": "",
+      "line_graph_extension": "",
+      "line_screen_ids": [],
+      "key_fields": {
+        "document_number": "OpportunityID",
+        "customer": "BAccountID",
+        "date": "DocumentDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "",
+        "extensions": ["CROpportunityExt"],
+        "child_records": []
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "email_template_mapping",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "CRM",
+        "opportunity",
+        "sales",
+        "CROpportunity",
+        "PX.Objects.CR"
+      ],
+      "notes": "Core Acumatica CRM Opportunity document."
+    },
+    {
+      "concept": "SO Shipment",
+      "aliases": ["Sales Shipment", "Shipment", "SO Shipment Document"],
+      "module": "PX.Objects.SO",
+      "type": "document",
+      "priority": 7,
+      "primary_dac": "PX.Objects.SO.SOShipment",
+      "primary_graph": "PX.Objects.SO.ShipmentEntry",
+      "primary_screen_id": "SO302000",
+      "line_dac": "PX.Objects.SO.SOLineSplit",
+      "line_graph_extension": "ShipmentEntryExt",
+      "line_screen_ids": ["SO302000"],
+      "key_fields": {
+        "document_number": "ShipmentNbr",
+        "customer": "CustomerID",
+        "date": "ShipDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "SOShipment.ShipmentNbr = SOLineSplit.ShipmentNbr",
+        "extensions": ["SOShipmentExt", "SOLineSplitExt"],
+        "child_records": ["SOLineSplit"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "shipment",
+        "sales",
+        "SO",
+        "shipping",
+        "PX.Objects.SO"
+      ],
+      "notes": "Core Acumatica Sales Order Shipment document."
+    },
+    {
+      "concept": "Purchase Receipt",
+      "aliases": ["PO Receipt", "Receipt", "Purchase Receipt Document"],
+      "module": "PX.Objects.PO",
+      "type": "document",
+      "priority": 7,
+      "primary_dac": "PX.Objects.PO.POReceipt",
+      "primary_graph": "PX.Objects.PO.POReceiptEntry",
+      "primary_screen_id": "PO302000",
+      "line_dac": "PX.Objects.PO.POReceiptLine",
+      "line_graph_extension": "POReceiptEntryExt",
+      "line_screen_ids": ["PO302000"],
+      "key_fields": {
+        "document_number": "ReceiptNbr",
+        "vendor": "VendorID",
+        "date": "ReceiptDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "POReceipt.ReceiptNbr = POReceiptLine.ReceiptNbr",
+        "extensions": ["POReceiptExt", "POReceiptLineExt"],
+        "child_records": ["POReceiptLine"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "receipt",
+        "purchase",
+        "PO",
+        "receiving",
+        "PX.Objects.PO"
+      ],
+      "notes": "Core Acumatica Purchase Receipt document."
+    },
+    {
+      "concept": "Inventory Item",
+      "aliases": ["Stock Item", "Item", "Inventory Stock Item"],
+      "module": "PX.Objects.IN",
+      "type": "master",
+      "priority": 8,
+      "primary_dac": "PX.Objects.IN.InventoryItem",
+      "primary_graph": "PX.Objects.IN.InventoryItemMaint",
+      "primary_screen_id": "IN202500",
+      "line_dac": "",
+      "line_graph_extension": "",
+      "line_screen_ids": [],
+      "key_fields": {
+        "document_number": "InventoryID",
+        "customer": "",
+        "date": "",
+        "status": "ItemStatus"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "",
+        "extensions": ["InventoryItemExt"],
+        "child_records": []
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "inventory",
+        "item",
+        "stock",
+        "IN",
+        "PX.Objects.IN"
+      ],
+      "notes": "Core Acumatica Inventory Item master record."
+    },
+    {
+      "concept": "Inventory Transfer",
+      "aliases": ["Transfer", "IN Transfer", "Inventory Transfer Document"],
+      "module": "PX.Objects.IN",
+      "type": "document",
+      "priority": 7,
+      "primary_dac": "PX.Objects.IN.INTransfer",
+      "primary_graph": "PX.Objects.IN.TransferEntry",
+      "primary_screen_id": "IN304000",
+      "line_dac": "PX.Objects.IN.INTransferLine",
+      "line_graph_extension": "TransferEntryExt",
+      "line_screen_ids": ["IN304000"],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "customer": "",
+        "date": "TransferDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "INTransfer.RefNbr = INTransferLine.RefNbr",
+        "extensions": ["INTransferExt", "INTransferLineExt"],
+        "child_records": ["INTransferLine"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "transfer",
+        "inventory",
+        "IN",
+        "warehouse",
+        "PX.Objects.IN"
+      ],
+      "notes": "Core Acumatica Inventory Transfer document."
+    },
+    {
+      "concept": "RQ Request",
+      "aliases": ["Request", "Requisition Request", "Purchase Request"],
+      "module": "PX.Objects.RQ",
+      "type": "document",
+      "priority": 6,
+      "primary_dac": "PX.Objects.RQ.RQRequest",
+      "primary_graph": "PX.Objects.RQ.RQRequestEntry",
+      "primary_screen_id": "RQ301000",
+      "line_dac": "PX.Objects.RQ.RQRequestLine",
+      "line_graph_extension": "RQRequestEntryExt",
+      "line_screen_ids": ["RQ301000"],
+      "key_fields": {
+        "document_number": "RequestNbr",
+        "customer": "",
+        "date": "RequestDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "RQRequest.RequestNbr = RQRequestLine.RequestNbr",
+        "extensions": ["RQRequestExt", "RQRequestLineExt"],
+        "child_records": ["RQRequestLine"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "request",
+        "requisition",
+        "RQ",
+        "purchase request",
+        "PX.Objects.RQ"
+      ],
+      "notes": "Core Acumatica Requisition Request document."
+    },
+    {
+      "concept": "RQ Requisition",
+      "aliases": ["Requisition", "Purchase Requisition"],
+      "module": "PX.Objects.RQ",
+      "type": "document",
+      "priority": 6,
+      "primary_dac": "PX.Objects.RQ.RQRequisition",
+      "primary_graph": "PX.Objects.RQ.RQRequisitionEntry",
+      "primary_screen_id": "RQ303000",
+      "line_dac": "PX.Objects.RQ.RQRequisitionLine",
+      "line_graph_extension": "RQRequisitionEntryExt",
+      "line_screen_ids": ["RQ303000"],
+      "key_fields": {
+        "document_number": "RequisitionNbr",
+        "customer": "",
+        "date": "RequisitionDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "RQRequisition.RequisitionNbr = RQRequisitionLine.RequisitionNbr",
+        "extensions": ["RQRequisitionExt", "RQRequisitionLineExt"],
+        "child_records": ["RQRequisitionLine"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "requisition",
+        "RQ",
+        "purchase requisition",
+        "PX.Objects.RQ"
+      ],
+      "notes": "Core Acumatica Requisition document."
+    },
+    {
+      "concept": "GL Batch",
+      "aliases": ["General Ledger Batch", "GL Journal Entry", "Journal Entry"],
+      "module": "PX.Objects.GL",
+      "type": "document",
+      "priority": 7,
+      "primary_dac": "PX.Objects.GL.Batch",
+      "primary_graph": "PX.Objects.GL.JournalEntry",
+      "primary_screen_id": "GL301000",
+      "line_dac": "PX.Objects.GL.GLTran",
+      "line_graph_extension": "JournalEntryExt",
+      "line_screen_ids": ["GL301000"],
+      "key_fields": {
+        "document_number": "BatchNbr",
+        "customer": "",
+        "date": "LedgerDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "Batch.BatchNbr = GLTran.BatchNbr",
+        "extensions": ["BatchExt", "GLTranExt"],
+        "child_records": ["GLTran"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "amount_calculation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "GL",
+        "general ledger",
+        "journal",
+        "batch",
+        "accounting",
+        "PX.Objects.GL"
+      ],
+      "notes": "Core Acumatica General Ledger Batch/Journal Entry document."
+    },
+    {
+      "concept": "PM Project",
+      "aliases": ["Project", "Project Management Project"],
+      "module": "PX.Objects.PM",
+      "type": "document",
+      "priority": 7,
+      "primary_dac": "PX.Objects.PM.PMProject",
+      "primary_graph": "PX.Objects.PM.ProjectEntry",
+      "primary_screen_id": "PM301000",
+      "line_dac": "PX.Objects.PM.PMTask",
+      "line_graph_extension": "ProjectEntryExt",
+      "line_screen_ids": ["PM301000"],
+      "key_fields": {
+        "document_number": "ContractID",
+        "customer": "CustomerID",
+        "date": "StartDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "PMProject.ContractID = PMTask.ProjectID",
+        "extensions": ["PMProjectExt", "PMTaskExt"],
+        "child_records": ["PMTask"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "date_validation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "project",
+        "PM",
+        "project management",
+        "task",
+        "PX.Objects.PM"
+      ],
+      "notes": "Core Acumatica Project Management Project document."
+    },
+    {
+      "concept": "CA Reconciliation",
+      "aliases": ["Bank Reconciliation", "Cash Reconciliation", "CA Recon"],
+      "module": "PX.Objects.CA",
+      "type": "document",
+      "priority": 6,
+      "primary_dac": "PX.Objects.CA.CARecon",
+      "primary_graph": "PX.Objects.CA.CAReconEntry",
+      "primary_screen_id": "CA305000",
+      "line_dac": "",
+      "line_graph_extension": "",
+      "line_screen_ids": [],
+      "key_fields": {
+        "document_number": "ReconNbr",
+        "customer": "",
+        "date": "ReconDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "",
+        "extensions": ["CAReconExt"],
+        "child_records": []
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "amount_calculation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "CA",
+        "cash management",
+        "reconciliation",
+        "bank",
+        "PX.Objects.CA"
+      ],
+      "notes": "Core Acumatica Cash Management Bank Reconciliation document."
+    },
+    {
+      "concept": "EP Time Entry",
+      "aliases": ["Time Card", "Employee Time Entry", "Time Sheet"],
+      "module": "PX.Objects.EP",
+      "type": "document",
+      "priority": 6,
+      "primary_dac": "PX.Objects.EP.EPTimeEntry",
+      "primary_graph": "PX.Objects.EP.TimeEntryMaint",
+      "primary_screen_id": "EP301000",
+      "line_dac": "PX.Objects.EP.EPTimeEntryDetail",
+      "line_graph_extension": "TimeEntryMaintExt",
+      "line_screen_ids": ["EP301000"],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "customer": "",
+        "date": "Date",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "EPTimeEntry.RefNbr = EPTimeEntryDetail.RefNbr",
+        "extensions": ["EPTimeEntryExt", "EPTimeEntryDetailExt"],
+        "child_records": ["EPTimeEntryDetail"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "date_validation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "EP",
+        "employee portal",
+        "time entry",
+        "time card",
+        "timesheet",
+        "PX.Objects.EP"
+      ],
+      "notes": "Core Acumatica Employee Portal Time Entry document."
+    },
+    {
+      "concept": "EP Expense Claim",
+      "aliases": ["Expense Report", "Employee Expense Claim"],
+      "module": "PX.Objects.EP",
+      "type": "document",
+      "priority": 6,
+      "primary_dac": "PX.Objects.EP.EPExpenseClaim",
+      "primary_graph": "PX.Objects.EP.ExpenseClaimEntry",
+      "primary_screen_id": "EP302000",
+      "line_dac": "PX.Objects.EP.EPExpenseClaimDetails",
+      "line_graph_extension": "ExpenseClaimEntryExt",
+      "line_screen_ids": ["EP302000"],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "customer": "",
+        "date": "Date",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "EPExpenseClaim.RefNbr = EPExpenseClaimDetails.RefNbr",
+        "extensions": ["EPExpenseClaimExt", "EPExpenseClaimDetailsExt"],
+        "child_records": ["EPExpenseClaimDetails"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "amount_calculation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "EP",
+        "employee portal",
+        "expense",
+        "expense claim",
+        "expense report",
+        "PX.Objects.EP"
+      ],
+      "notes": "Core Acumatica Employee Portal Expense Claim document."
+    },
+    {
+      "concept": "CS Case",
+      "aliases": ["Customer Service Case", "Support Case", "Case"],
+      "module": "PX.Objects.CR",
+      "type": "document",
+      "priority": 6,
+      "primary_dac": "PX.Objects.CR.CRCase",
+      "primary_graph": "PX.Objects.CR.CaseMaint",
+      "primary_screen_id": "CR306000",
+      "line_dac": "",
+      "line_graph_extension": "",
+      "line_screen_ids": [],
+      "key_fields": {
+        "document_number": "CaseID",
+        "customer": "CustomerID",
+        "date": "CreatedDateTime",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "",
+        "extensions": ["CRCaseExt"],
+        "child_records": []
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "date_validation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "CS",
+        "customer service",
+        "case",
+        "support",
+        "CRM",
+        "PX.Objects.CR"
+      ],
+      "notes": "Core Acumatica Customer Service Case document."
+    },
+    {
+      "concept": "AR Payment",
+      "aliases": ["Customer Payment", "AR Payment Document", "Payment"],
+      "module": "PX.Objects.AR",
+      "type": "document",
+      "priority": 7,
+      "primary_dac": "PX.Objects.AR.ARPayment",
+      "primary_graph": "PX.Objects.AR.PaymentEntry",
+      "primary_screen_id": "AR302000",
+      "line_dac": "PX.Objects.AR.ARPaymentDetail",
+      "line_graph_extension": "PaymentEntryExt",
+      "line_screen_ids": ["AR302000"],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "customer": "CustomerID",
+        "date": "DocDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "ARPayment.RefNbr = ARPaymentDetail.RefNbr",
+        "extensions": ["ARPaymentExt", "ARPaymentDetailExt"],
+        "child_records": ["ARPaymentDetail"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "amount_calculation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "AR",
+        "payment",
+        "customer payment",
+        "accounts receivable",
+        "PX.Objects.AR"
+      ],
+      "notes": "Core Acumatica Accounts Receivable Payment document."
+    },
+    {
+      "concept": "AP Payment",
+      "aliases": ["Vendor Payment", "AP Payment Document", "Check"],
+      "module": "PX.Objects.AP",
+      "type": "document",
+      "priority": 7,
+      "primary_dac": "PX.Objects.AP.APPayment",
+      "primary_graph": "PX.Objects.AP.PaymentEntry",
+      "primary_screen_id": "AP302000",
+      "line_dac": "PX.Objects.AP.APPaymentDetail",
+      "line_graph_extension": "PaymentEntryExt",
+      "line_screen_ids": ["AP302000"],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "vendor": "VendorID",
+        "date": "DocDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "APPayment.RefNbr = APPaymentDetail.RefNbr",
+        "extensions": ["APPaymentExt", "APPaymentDetailExt"],
+        "child_records": ["APPaymentDetail"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "amount_calculation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "AP",
+        "payment",
+        "vendor payment",
+        "check",
+        "accounts payable",
+        "PX.Objects.AP"
+      ],
+      "notes": "Core Acumatica Accounts Payable Payment document."
+    },
+    {
+      "concept": "IN Adjustment",
+      "aliases": ["Inventory Adjustment", "Stock Adjustment"],
+      "module": "PX.Objects.IN",
+      "type": "document",
+      "priority": 6,
+      "primary_dac": "PX.Objects.IN.INAdjustment",
+      "primary_graph": "PX.Objects.IN.AdjustmentEntry",
+      "primary_screen_id": "IN301000",
+      "line_dac": "PX.Objects.IN.INAdjustmentLine",
+      "line_graph_extension": "AdjustmentEntryExt",
+      "line_screen_ids": ["IN301000"],
+      "key_fields": {
+        "document_number": "AdjNbr",
+        "customer": "",
+        "date": "AdjDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "INAdjustment.AdjNbr = INAdjustmentLine.AdjNbr",
+        "extensions": ["INAdjustmentExt", "INAdjustmentLineExt"],
+        "child_records": ["INAdjustmentLine"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "adjustment",
+        "inventory",
+        "IN",
+        "stock adjustment",
+        "PX.Objects.IN"
+      ],
+      "notes": "Core Acumatica Inventory Adjustment document."
+    },
+    {
+      "concept": "IN Issue",
+      "aliases": ["Inventory Issue", "Stock Issue"],
+      "module": "PX.Objects.IN",
+      "type": "document",
+      "priority": 6,
+      "primary_dac": "PX.Objects.IN.INIssue",
+      "primary_graph": "PX.Objects.IN.IssueEntry",
+      "primary_screen_id": "IN302000",
+      "line_dac": "PX.Objects.IN.INIssueLine",
+      "line_graph_extension": "IssueEntryExt",
+      "line_screen_ids": ["IN302000"],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "customer": "",
+        "date": "TranDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "INIssue.RefNbr = INIssueLine.RefNbr",
+        "extensions": ["INIssueExt", "INIssueLineExt"],
+        "child_records": ["INIssueLine"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "issue",
+        "inventory",
+        "IN",
+        "stock issue",
+        "PX.Objects.IN"
+      ],
+      "notes": "Core Acumatica Inventory Issue document."
+    },
+    {
+      "concept": "IN Receipt",
+      "aliases": ["Inventory Receipt", "Stock Receipt"],
+      "module": "PX.Objects.IN",
+      "type": "document",
+      "priority": 6,
+      "primary_dac": "PX.Objects.IN.INReceipt",
+      "primary_graph": "PX.Objects.IN.ReceiptEntry",
+      "primary_screen_id": "IN303000",
+      "line_dac": "PX.Objects.IN.INReceiptLine",
+      "line_graph_extension": "ReceiptEntryExt",
+      "line_screen_ids": ["IN303000"],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "customer": "",
+        "date": "TranDate",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "INReceipt.RefNbr = INReceiptLine.RefNbr",
+        "extensions": ["INReceiptExt", "INReceiptLineExt"],
+        "child_records": ["INReceiptLine"]
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "auto_line_creation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "receipt",
+        "inventory",
+        "IN",
+        "stock receipt",
+        "PX.Objects.IN"
+      ],
+      "notes": "Core Acumatica Inventory Receipt document."
+    },
+    {
+      "concept": "FS Service Order",
+      "aliases": ["Service Order", "Field Service Order"],
+      "module": "PX.Objects.FS",
+      "type": "document",
+      "priority": 6,
+      "primary_dac": "PX.Objects.FS.FSServiceOrder",
+      "primary_graph": "PX.Objects.FS.ServiceOrderEntry",
+      "primary_screen_id": "FS300100",
+      "line_dac": "",
+      "line_graph_extension": "",
+      "line_screen_ids": [],
+      "key_fields": {
+        "document_number": "RefNbr",
+        "customer": "CustomerID",
+        "date": "Date",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "",
+        "extensions": ["FSServiceOrderExt"],
+        "child_records": []
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "date_validation",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "field service",
+        "service order",
+        "FS",
+        "service",
+        "PX.Objects.FS"
+      ],
+      "notes": "Core Acumatica Field Service Service Order document."
+    },
+    {
+      "concept": "CR Lead",
+      "aliases": ["Lead", "Sales Lead", "CRM Lead"],
+      "module": "PX.Objects.CR",
+      "type": "document",
+      "priority": 5,
+      "primary_dac": "PX.Objects.CR.CRLead",
+      "primary_graph": "PX.Objects.CR.LeadMaint",
+      "primary_screen_id": "CR307000",
+      "line_dac": "",
+      "line_graph_extension": "",
+      "line_screen_ids": [],
+      "key_fields": {
+        "document_number": "LeadID",
+        "customer": "BAccountID",
+        "date": "CreatedDateTime",
+        "status": "Status"
+      },
+      "custom_fields": {
+        "custom_1": "",
+        "custom_2": ""
+      },
+      "relationships": {
+        "header_to_line_relation": "",
+        "extensions": ["CRLeadExt"],
+        "child_records": []
+      },
+      "patterns_applicable": [
+        "validation_rule",
+        "persist_time_enforcement"
+      ],
+      "retrieval_tags": [
+        "CRM",
+        "lead",
+        "sales lead",
+        "CRLead",
+        "PX.Objects.CR"
+      ],
+      "notes": "Core Acumatica CRM Lead document."
+    }
+  ]
+}
+

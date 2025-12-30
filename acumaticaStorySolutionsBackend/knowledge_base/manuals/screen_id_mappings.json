@@ -1,0 +1,213 @@
+{
+  "version": "1.0",
+  "last_updated": "2025-12-30",
+  "mappings": {
+    "PX.Objects.SO.SOOrder": {
+      "primary_screen_id": "SO301000",
+      "line_screen_ids": ["SO301000"],
+      "related_screens": ["SO302000", "SO303000"]
+    },
+    "PX.Objects.SO.SOShipment": {
+      "primary_screen_id": "SO302000",
+      "line_screen_ids": ["SO302000"]
+    },
+    "PX.Objects.PO.POOrder": {
+      "primary_screen_id": "PO301000",
+      "line_screen_ids": ["PO301000"],
+      "related_screens": ["PO302000"]
+    },
+    "PX.Objects.PO.POReceipt": {
+      "primary_screen_id": "PO302000",
+      "line_screen_ids": ["PO302000"]
+    },
+    "PX.Objects.AR.ARInvoice": {
+      "primary_screen_id": "AR301000",
+      "line_screen_ids": ["AR301000"],
+      "related_screens": ["AR302000", "AR303000"]
+    },
+    "PX.Objects.AP.APInvoice": {
+      "primary_screen_id": "AP301000",
+      "line_screen_ids": ["AP301000"],
+      "related_screens": ["AP302000"]
+    },
+    "PX.Objects.CR.CROpportunity": {
+      "primary_screen_id": "CR304000",
+      "line_screen_ids": []
+    },
+    "PX.Objects.FS.FSAppointment": {
+      "primary_screen_id": "FS300200",
+      "line_screen_ids": []
+    },
+    "PX.Objects.IN.InventoryItem": {
+      "primary_screen_id": "IN202500",
+      "line_screen_ids": []
+    },
+    "PX.Objects.IN.INTransfer": {
+      "primary_screen_id": "IN304000",
+      "line_screen_ids": ["IN304000"]
+    },
+    "PX.Objects.RQ.RQRequest": {
+      "primary_screen_id": "RQ301000",
+      "line_screen_ids": ["RQ301000"]
+    },
+    "PX.Objects.RQ.RQRequisition": {
+      "primary_screen_id": "RQ303000",
+      "line_screen_ids": ["RQ303000"]
+    },
+    "NV.Rental360.NVRTReturnTicket": {
+      "primary_screen_id": "NV304000",
+      "line_screen_ids": ["NV304000"]
+    },
+    "NV.Rental360.NVRTRentalTicket": {
+      "primary_screen_id": "NV303000",
+      "line_screen_ids": ["NV303000"]
+    },
+    "NAWUnitedSiteServices.NAWEXOrder": {
+      "primary_screen_id": "NAW402000",
+      "line_screen_ids": ["NAW402000"]
+    },
+    "PX.Objects.GL.Batch": {
+      "primary_screen_id": "GL301000",
+      "line_screen_ids": ["GL301000"]
+    },
+    "PX.Objects.PM.PMProject": {
+      "primary_screen_id": "PM301000",
+      "line_screen_ids": ["PM301000"]
+    },
+    "PX.Objects.CA.CARecon": {
+      "primary_screen_id": "CA305000",
+      "line_screen_ids": []
+    },
+    "PX.Objects.EP.EPTimeEntry": {
+      "primary_screen_id": "EP301000",
+      "line_screen_ids": ["EP301000"]
+    },
+    "PX.Objects.EP.EPExpenseClaim": {
+      "primary_screen_id": "EP302000",
+      "line_screen_ids": ["EP302000"]
+    },
+    "PX.Objects.CR.CRCase": {
+      "primary_screen_id": "CR306000",
+      "line_screen_ids": []
+    },
+    "PX.Objects.AR.ARPayment": {
+      "primary_screen_id": "AR302000",
+      "line_screen_ids": ["AR302000"]
+    },
+    "PX.Objects.AP.APPayment": {
+      "primary_screen_id": "AP302000",
+      "line_screen_ids": ["AP302000"]
+    },
+    "PX.Objects.IN.INAdjustment": {
+      "primary_screen_id": "IN301000",
+      "line_screen_ids": ["IN301000"]
+    },
+    "PX.Objects.IN.INIssue": {
+      "primary_screen_id": "IN302000",
+      "line_screen_ids": ["IN302000"]
+    },
+    "PX.Objects.IN.INReceipt": {
+      "primary_screen_id": "IN303000",
+      "line_screen_ids": ["IN303000"]
+    },
+    "PX.Objects.FS.FSServiceOrder": {
+      "primary_screen_id": "FS300100",
+      "line_screen_ids": []
+    },
+    "PX.Objects.CR.CRLead": {
+      "primary_screen_id": "CR307000",
+      "line_screen_ids": []
+    }
+  },
+  "screen_id_patterns": {
+    "SO": {
+      "order": "SO301000",
+      "shipment": "SO302000",
+      "invoice": "SO303000"
+    },
+    "PO": {
+      "order": "PO301000",
+      "receipt": "PO302000",
+      "invoice": "PO303000"
+    },
+    "AR": {
+      "invoice": "AR301000",
+      "payment": "AR302000",
+      "credit_memo": "AR303000"
+    },
+    "GL": {
+      "batch": "GL301000",
+      "journal": "GL301000"
+    },
+    "PM": {
+      "project": "PM301000"
+    },
+    "CA": {
+      "reconciliation": "CA305000",
+      "recon": "CA305000"
+    },
+    "EP": {
+      "time_entry": "EP301000",
+      "expense_claim": "EP302000"
+    },
+    "CS": {
+      "case": "CR306000"
+    },
+    "AP": {
+      "invoice": "AP301000",
+      "payment": "AP302000",
+      "credit_memo": "AP303000"
+    },
+    "CR": {
+      "opportunity": "CR304000",
+      "case": "CR306000",
+      "lead": "CR307000"
+    },
+    "IN": {
+      "item": "IN202500",
+      "transfer": "IN304000",
+      "adjustment": "IN301000",
+      "issue": "IN302000",
+      "receipt": "IN303000"
+    },
+    "FS": {
+      "appointment": "FS300200",
+      "service_order": "FS300100"
+    },
+    "RQ": {
+      "request": "RQ301000",
+      "requisition": "RQ303000"
+    },
+    "NV": {
+      "rental_ticket": "NV303000",
+      "return_ticket": "NV304000"
+    },
+    "NAW": {
+      "ex_order": "NAW402000"
+    }
+  },
+  "form_to_screen_mappings": {
+    "SM201010": "Customization Projects",
+    "SM201020": "Customization Projects",
+    "SM201510": "Customization Projects",
+    "SM202550": "Customization Projects",
+    "SM203520": "Rental Return",
+    "SM203525": "Rental Return",
+    "SM204505": "Customization Projects",
+    "SM204570": "Opportunity",
+    "SM205020": "Customization Projects",
+    "SM205510": "Customization Projects",
+    "SM208000": "Generic Inquiry",
+    "SM300300": "System Configuration",
+    "SM503000": "System Configuration",
+    "PM301000": "Projects",
+    "GL001000": "Chart of Accounts",
+    "GL304000": "General Ledger",
+    "AR000000": "Accounts Receivable",
+    "CA301000": "Cash Management",
+    "CA304000": "Cash Management",
+    "CA305000": "Cash Management",
+    "CA306000": "Cash Management"
+  }
+}
+

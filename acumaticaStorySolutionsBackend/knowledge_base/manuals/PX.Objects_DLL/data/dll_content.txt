@@ -43259,103 +43259,103 @@ DLL: PX.Objects
 - `public virtual <>f__AnonymousType0`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType0`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType0`2.ToString()` → `System.String`
-- `public <>f__AnonymousType0`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType1`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType1`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType1`2.ToString()` → `System.String`
-- `public <>f__AnonymousType1`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType2`5.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType2`5.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType2`5.ToString()` → `System.String`
-- `public <>f__AnonymousType2`5.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType3`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType3`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType3`2.ToString()` → `System.String`
-- `public <>f__AnonymousType3`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType4`3.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType4`3.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType4`3.ToString()` → `System.String`
-- `public <>f__AnonymousType4`3.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType5`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType5`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType5`2.ToString()` → `System.String`
-- `public <>f__AnonymousType5`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType6`3.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType6`3.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType6`3.ToString()` → `System.String`
-- `public <>f__AnonymousType6`3.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType7`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType7`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType7`2.ToString()` → `System.String`
-- `public <>f__AnonymousType7`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType8`3.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType8`3.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType8`3.ToString()` → `System.String`
-- `public <>f__AnonymousType8`3.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType9`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType9`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType9`2.ToString()` → `System.String`
-- `public <>f__AnonymousType9`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType10`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType10`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType10`2.ToString()` → `System.String`
-- `public <>f__AnonymousType10`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType11`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType11`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType11`2.ToString()` → `System.String`
-- `public <>f__AnonymousType11`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType12`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType12`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType12`2.ToString()` → `System.String`
-- `public <>f__AnonymousType12`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType13`5.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType13`5.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType13`5.ToString()` → `System.String`
-- `public <>f__AnonymousType13`5.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType14`8.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType14`8.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType14`8.ToString()` → `System.String`
-- `public <>f__AnonymousType14`8.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType15`4.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType15`4.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType15`4.ToString()` → `System.String`
-- `public <>f__AnonymousType15`4.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType16`11.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType16`11.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType16`11.ToString()` → `System.String`
-- `public <>f__AnonymousType16`11.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType17`1.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType17`1.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType17`1.ToString()` → `System.String`
-- `public <>f__AnonymousType17`1.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType18`3.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType18`3.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType18`3.ToString()` → `System.String`
-- `public <>f__AnonymousType18`3.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType19`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType19`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType19`2.ToString()` → `System.String`
-- `public <>f__AnonymousType19`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType20`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType20`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType20`2.ToString()` → `System.String`
-- `public <>f__AnonymousType20`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType21`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType21`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType21`2.ToString()` → `System.String`
-- `public <>f__AnonymousType21`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType22`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType22`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType22`2.ToString()` → `System.String`
-- `public <>f__AnonymousType22`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType23`4.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType23`4.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType23`4.ToString()` → `System.String`
-- `public <>f__AnonymousType23`4.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType24`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType24`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType24`2.ToString()` → `System.String`
-- `public <>f__AnonymousType24`2.GetType()` → `System.Type`
+- `public virtual <>f__AnonymousType25`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType25`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType25`2.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType26`3.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType26`3.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType26`3.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType27`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType27`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType27`2.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType28`4.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType28`4.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType28`4.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType29`1.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType29`1.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType29`1.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType30`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType30`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType30`2.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType31`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType31`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType31`2.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType32`2.Equals(System.Object value)` → `System.Boolean`
+- `public virtual <>f__AnonymousType32`2.GetHashCode()` → `System.Int32`
+- `public virtual <>f__AnonymousType32`2.ToString()` → `System.String`
+- `public virtual <>f__AnonymousType33`1.Equals(System.Object value)` → `System.Boolean`
 ## Key Properties
 
 - `<>f__AnonymousType0`2.DocType`: `<DocType>j__TPar` (read-only)

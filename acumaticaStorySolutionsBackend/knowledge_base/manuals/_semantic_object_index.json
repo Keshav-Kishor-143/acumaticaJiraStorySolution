@@ -1,0 +1,3360 @@
+{
+  "generated_at": "2025-12-29T12:31:00.921927Z",
+  "objects": [
+    {
+      "concept": "USS Zip Code",
+      "module_tag": "NV.UnitedSiteServices",
+      "dac_full_name": "NV.UnitedSiteServices.NAWUSSZipCode",
+      "graph_full_name": "NV.UnitedSiteServices.NAWUSSZipCodeMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=USS Zip Code",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "Finance Project Code",
+      "module_tag": "NV.UnitedSiteServices",
+      "dac_full_name": "NV.UnitedSiteServices.UsrFinanceProjectCode",
+      "graph_full_name": "NAWUnitedSiteServices.USSFinanceProjectCodeMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Finance Project Code",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "RentalSetup",
+      "module_tag": "NV.Common",
+      "dac_full_name": "NV.Common.NVRTSetup",
+      "graph_full_name": "NV.Common.NVRTSetupMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=RentalSetup",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "Calendar",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTCalendar",
+      "graph_full_name": "NV.Rental360.NVRTCalendarMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Calendar",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "RentalAddOnType",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTRentalAddOnType",
+      "graph_full_name": "NV.Rental360.NVRTRentalAddOnTypeMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=RentalAddOnType",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "RentalClass",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTRentalClass",
+      "graph_full_name": "NV.Rental360.NVRTRentalClassMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=RentalClass",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "RentalGroup",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTRentalGroup",
+      "graph_full_name": "NV.Rental360.NVRTRentalGroupMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=RentalGroup",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTRentalItemStatusChangeLog",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTRentalItemStatusChangeLog",
+      "graph_full_name": "NV.Rental360.NVRTRentalItemStatusChangeLogMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTRentalItemStatusChangeLog",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTRentalOrderType",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTRentalOrderType",
+      "graph_full_name": "NV.Rental360.NVRTRentalOrderTypeMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTRentalOrderType",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTRentalStatus",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTRentalStatus",
+      "graph_full_name": "NV.Rental360.NVRTRentalStatusMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTRentalStatus",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTRentalStatusValidation",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTRentalStatusValidation",
+      "graph_full_name": "NV.Rental360.NVRTRentalStatusValidationMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTRentalStatusValidation",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "RentalUnit",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTRentalUnit",
+      "graph_full_name": "NV.Rental360.NVRTRentalUnitMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=RentalUnit",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Territory",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTTerritory",
+      "graph_full_name": "NV.Rental360.NVRTTerritoryMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Territory",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTUsageTypes",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTUsageTypes",
+      "graph_full_name": "NV.Rental360.NVRTUsageTypeMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTUsageTypes",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Equipment System Codes",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTEquipmentSystemCode",
+      "graph_full_name": "NV.Rental360.NVRTEquipmentSystemCodeMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Equipment System Codes",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "ExchangeTicket",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTExchangeTicket",
+      "graph_full_name": "NV.Rental360.NVRTExchangeTicketEntry",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=ExchangeTicket",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "RentalTicket",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTRentalTicket",
+      "graph_full_name": "NV.Rental360.NVRTRentalTicketEntry",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [
+        "rental ticket",
+        "rental order",
+        "rental document"
+      ],
+      "evidence": [
+        "dac.cache_name=RentalTicket",
+        "alias:rental_ticket->rental_order",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "ReturnTicket",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTReturnTicket",
+      "graph_full_name": "NV.Rental360.NVRTReturnTicketEntry",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [
+        "return ticket",
+        "rental return",
+        "rental return ticket",
+        "return document"
+      ],
+      "evidence": [
+        "dac.cache_name=ReturnTicket",
+        "alias:return_ticket->rental_return",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTSameBranchTransferTicket",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTSameBranchTransferTicket",
+      "graph_full_name": "NV.Rental360.NVRTSameBranchTransferTicketEntry",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTSameBranchTransferTicket",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "TransferTicket",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTTransferTicket",
+      "graph_full_name": "NV.Rental360.NVRTTransferTicketEntry",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=TransferTicket",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTTransferWorkFlowMapping",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.NVRTTransferWorkFlowMapping",
+      "graph_full_name": "NV.Rental360.NVRTTransferWorkFlowMappingMaint",
+      "line_dac_full_name": "NV.Rental360.NVRTFADetailsDacExtension",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTTransferWorkFlowMapping",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTWorkFlow",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.WorkFlow.NVRTWorkFlow",
+      "graph_full_name": "NV.Rental360.WorkFlow.NVRTWorkFlowMaint",
+      "line_dac_full_name": "NV.Rental360.WorkFlow.NVRTWorkFlowDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTWorkFlow",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "PMSchedule",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.PreventiveMaintenace.NVRTPMSchedule",
+      "graph_full_name": "NV.Rental360.PreventiveMaintenace.NVRTEquipmentScheduleMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=PMSchedule",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "PMScheduleLevel",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.PreventiveMaintenace.NVRTPMScheduleLevel",
+      "graph_full_name": "NV.Rental360.PreventiveMaintenace.NVRTEquipmentScheduleMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=PMScheduleLevel",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "NVRTScheduleTemplate",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.PreventiveMaintenace.NVRTScheduleTemplate",
+      "graph_full_name": "NV.Rental360.PreventiveMaintenace.NVRTScheduleTemplateMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTScheduleTemplate",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "NVRTMeterClass",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.Meter.NVRTMeterClass",
+      "graph_full_name": "NV.Rental360.Meter.NVRTMeterClassMaint",
+      "line_dac_full_name": "NV.Rental360.Meter.NVRTMeterClassDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTMeterClass",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTMeterTypes",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.Meter.NVRTMeterType",
+      "graph_full_name": "NV.Rental360.Meter.NVRTMeterTypesMaint",
+      "line_dac_full_name": "NV.Rental360.Meter.NVRTMeterClassDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTMeterTypes",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "EQAnalyticType",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.EQAnalytics.NVRTEQAnalyticType",
+      "graph_full_name": "NV.Rental360.EQAnalytics.NVRTEQAnalyticTypeMaint",
+      "line_dac_full_name": "NV.Rental360.EQAnalytics.NVRTEQAnalyticTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=EQAnalyticType",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "PricingRule",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.Pricing.NVRTPricingRule",
+      "graph_full_name": "NV.Rental360.Pricing.NVRTPricingRuleMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=PricingRule",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "NVRTCrew",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.WorkOrders.NVRTCrew",
+      "graph_full_name": "NV.Rental360.WorkOrders.NVRTCrewMaint",
+      "line_dac_full_name": "NV.Rental360.WorkOrders.NVRTWorkOrderDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTCrew",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTIncidentType",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.WorkOrders.NVRTIncidentType",
+      "graph_full_name": "NV.Rental360.WorkOrders.NVRTIncidentTypeMaint",
+      "line_dac_full_name": "NV.Rental360.WorkOrders.NVRTWorkOrderDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTIncidentType",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "JobSite",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.WorkOrders.NVRTJobSite",
+      "graph_full_name": "NV.Rental360.WorkOrders.NVRTJobSiteMaint",
+      "line_dac_full_name": "NV.Rental360.WorkOrders.NVRTWorkOrderDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=JobSite",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "WorkOrderType",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.WorkOrders.NVRTWorkOrderType",
+      "graph_full_name": "NV.Rental360.WorkOrders.NVRTWorkOrderTypeMaint",
+      "line_dac_full_name": "NV.Rental360.WorkOrders.NVRTWorkOrderDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=WorkOrderType",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "CycleRegister",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.RentalCycle.NVRTCycleRegister",
+      "graph_full_name": "NV.Rental360.RentalCycle.NVRTCycleMaint",
+      "line_dac_full_name": "NV.Rental360.RentalCycle.NVRTCycleDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=CycleRegister",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "CycleType",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.RentalCycle.NVRTCycleType",
+      "graph_full_name": "NV.Rental360.RentalCycle.NVRTCycleTypeMaint",
+      "line_dac_full_name": "NV.Rental360.RentalCycle.NVRTCycleDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=CycleType",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "NVRTChangeOrder",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.ChangeOrders.NVRTChangeOrder",
+      "graph_full_name": "NV.Rental360.ChangeOrders.NVRTChangeOrderEntry",
+      "line_dac_full_name": "NV.Rental360.ChangeOrders.NVRTChangeOrderTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=NVRTChangeOrder",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "ChangeOrderType",
+      "module_tag": "NV.Rental360",
+      "dac_full_name": "NV.Rental360.ChangeOrders.NVRTChangeOrderType",
+      "graph_full_name": "NV.Rental360.ChangeOrders.NVRTChangeOrderTypeMaint",
+      "line_dac_full_name": "NV.Rental360.ChangeOrders.NVRTChangeOrderDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=ChangeOrderType",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Login Type",
+      "module_tag": "PX.EP",
+      "dac_full_name": "PX.EP.EPLoginType",
+      "graph_full_name": "PX.EP.EPLoginTypeMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Login Type",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "Column Set",
+      "module_tag": "PX.CS",
+      "dac_full_name": "PX.CS.RMColumnSet",
+      "graph_full_name": "PX.CS.RMColumnSetMaint",
+      "line_dac_full_name": "PX.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Column Set",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Report",
+      "module_tag": "PX.CS",
+      "dac_full_name": "PX.CS.RMReport",
+      "graph_full_name": "PX.CS.RMReportMaint",
+      "line_dac_full_name": "PX.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Report",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Row Set",
+      "module_tag": "PX.CS",
+      "dac_full_name": "PX.CS.RMRowSet",
+      "graph_full_name": "PX.CS.RMRowSetMaint",
+      "line_dac_full_name": "PX.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Row Set",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Unit Set",
+      "module_tag": "PX.CS",
+      "dac_full_name": "PX.CS.RMUnitSet",
+      "graph_full_name": "PX.CS.RMUnitSetMaint",
+      "line_dac_full_name": "PX.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Unit Set",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Provider",
+      "module_tag": "PX.Api",
+      "dac_full_name": "PX.Api.SYProvider",
+      "graph_full_name": "PX.Api.SYProviderMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Provider",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "Relation Group",
+      "module_tag": "PX.SM",
+      "dac_full_name": "PX.SM.RelationGroup",
+      "graph_full_name": "PX.SM.RelationGroups",
+      "line_dac_full_name": "PX.SM.RelationDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Relation Group",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Role",
+      "module_tag": "PX.SM",
+      "dac_full_name": "PX.SM.Roles",
+      "graph_full_name": "PX.SM.RoleAccess",
+      "line_dac_full_name": "PX.SM.RelationDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Role",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Email Account",
+      "module_tag": "PX.SM",
+      "dac_full_name": "PX.SM.EMailAccount",
+      "graph_full_name": "PX.SM.EMailAccountMaint",
+      "line_dac_full_name": "PX.SM.RelationDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Email Account",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Locale",
+      "module_tag": "PX.SM",
+      "dac_full_name": "PX.SM.Locale",
+      "graph_full_name": "PX.SM.LocaleMaintenance",
+      "line_dac_full_name": "PX.SM.RelationDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Locale",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Notification",
+      "module_tag": "PX.SM",
+      "dac_full_name": "PX.SM.Notification",
+      "graph_full_name": "PX.SM.SMNotificationMaint",
+      "line_dac_full_name": "PX.SM.RelationDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Notification",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "General Preferences",
+      "module_tag": "PX.SM",
+      "dac_full_name": "PX.SM.PreferencesGeneral",
+      "graph_full_name": "PX.SM.PreferencesGeneralMaint",
+      "line_dac_full_name": "PX.SM.RelationDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=General Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Task Template",
+      "module_tag": "PX.SM",
+      "dac_full_name": "PX.SM.TaskTemplate",
+      "graph_full_name": "PX.SM.TaskTemplateMaint",
+      "line_dac_full_name": "PX.SM.RelationDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Task Template",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Tenant",
+      "module_tag": "PX.SM",
+      "dac_full_name": "PX.SM.UPCompany",
+      "graph_full_name": "PX.SM.CompanyMaint",
+      "line_dac_full_name": "PX.SM.RelationDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Tenant",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "File",
+      "module_tag": "PX.SM",
+      "dac_full_name": "PX.SM.UploadFileWithIDSelector",
+      "graph_full_name": "PX.SM.WikiFileMaintenance",
+      "line_dac_full_name": "PX.SM.RelationDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=File",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Filter Header",
+      "module_tag": "PX.Data",
+      "dac_full_name": "PX.Data.FilterHeader",
+      "graph_full_name": "PX.Objects.CS.CSFilterMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Filter Header",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "List as Entry Point",
+      "module_tag": "PX.Data",
+      "dac_full_name": "PX.Data.ListEntryPoint",
+      "graph_full_name": "PX.Data.LEPMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=List as Entry Point",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "Generic Inquiry",
+      "module_tag": "PX.Data",
+      "dac_full_name": "PX.Data.Maintenance.GI.GIDesign",
+      "graph_full_name": "PX.Data.Maintenance.GI.GenericInquiryDesigner",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Generic Inquiry",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "Wizard Scenario",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.WZ.WZScenario",
+      "graph_full_name": "PX.Objects.WZ.WZScenarioEntry",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Wizard Scenario",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "Sales Order",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.SO.SOOrder",
+      "graph_full_name": "PX.Objects.SO.SOOrderEntry",
+      "line_dac_full_name": "PX.Objects.SO.DropShipSOLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Sales Order",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Order Type",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.SO.SOOrderType",
+      "graph_full_name": "PX.Objects.SO.SOOrderTypeMaint",
+      "line_dac_full_name": "PX.Objects.SO.DropShipSOLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Order Type",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "SO Shipment Picking Worksheet",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.SO.SOPickingWorksheet",
+      "graph_full_name": "PX.Objects.SO.SOPickingWorksheetReview",
+      "line_dac_full_name": "PX.Objects.SO.DropShipSOLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=SO Shipment Picking Worksheet",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Sales Orders Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.SO.SOSetup",
+      "graph_full_name": "PX.Objects.SO.SOSetupMaint",
+      "line_dac_full_name": "PX.Objects.SO.DropShipSOLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Sales Orders Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Shipment",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.SO.SOShipment",
+      "graph_full_name": "PX.Objects.SO.SOShipmentEntry",
+      "line_dac_full_name": "PX.Objects.SO.DropShipSOLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Shipment",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Request",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.RQ.RQRequest",
+      "graph_full_name": "PX.Objects.RQ.RQRequestEntry",
+      "line_dac_full_name": "PX.Objects.RQ.RQBiddingRequisitionLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Request",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Request Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.RQ.RQRequestClass",
+      "graph_full_name": "PX.Objects.RQ.RQRequestClassMaint",
+      "line_dac_full_name": "PX.Objects.RQ.RQBiddingRequisitionLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Request Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Requisition",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.RQ.RQRequisition",
+      "graph_full_name": "PX.Objects.RQ.RQRequisitionEntry",
+      "line_dac_full_name": "PX.Objects.RQ.RQBiddingRequisitionLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Requisition",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Requisition Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.RQ.RQSetup",
+      "graph_full_name": "PX.Objects.RQ.RQSetupMaint",
+      "line_dac_full_name": "PX.Objects.RQ.RQBiddingRequisitionLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Requisition Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Landed Costs Document",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PO.POLandedCostDoc",
+      "graph_full_name": "PX.Objects.PO.POLandedCostDocEntry",
+      "line_dac_full_name": "PX.Objects.PO.POAccrualDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Landed Costs Document",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Purchase Receipt",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PO.POReceipt",
+      "graph_full_name": "PX.Objects.PO.POReceiptEntry",
+      "line_dac_full_name": "PX.Objects.PO.POAccrualDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Purchase Receipt",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Purchasing Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PO.POSetup",
+      "graph_full_name": "PX.Objects.PO.POSetupMaint",
+      "line_dac_full_name": "PX.Objects.PO.POAccrualDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Purchasing Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Account Group",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMAccountGroup",
+      "graph_full_name": "PX.Objects.PM.AccountGroupMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Account Group",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Allocation Rule",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMAllocation",
+      "graph_full_name": "PX.Objects.PM.AllocationMaint",
+      "line_dac_full_name": "PX.Objects.PM.PMAllocationAuditTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Allocation Rule",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Billing Rule",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMBilling",
+      "graph_full_name": "PX.Objects.PM.BillingMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Billing Rule",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Billing Rule Step",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMBillingRule",
+      "graph_full_name": "PX.Objects.PM.BillingMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Billing Rule Step",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Change Order",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMChangeOrder",
+      "graph_full_name": "PX.Objects.PM.ChangeOrderEntry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Change Order",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Change Order Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMChangeOrderClass",
+      "graph_full_name": "PX.Objects.PM.ChangeOrderClassMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Change Order Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Change Order Line",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMChangeOrderLine",
+      "graph_full_name": "PX.Objects.PM.ChangeOrderEntry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Change Order Line",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Commitment Record",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMCommitment",
+      "graph_full_name": "PX.Objects.PM.CommitmentInquiry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Commitment Record",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Cost Code",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMCostCode",
+      "graph_full_name": "PX.Objects.PM.CostCodeMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Cost Code",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Cost Projection",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMCostProjection",
+      "graph_full_name": "PX.Objects.CN.ProjectAccounting.CostProjectionEntry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Cost Projection",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Cost Projection By Date",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMCostProjectionByDate",
+      "graph_full_name": "PX.Objects.PM.ProjectCostProjectionByDateEntry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Cost Projection By Date",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Cost Projection By Date Line",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMCostProjectionByDateLine",
+      "graph_full_name": "PX.Objects.PM.ProjectCostProjectionByDateEntry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Cost Projection By Date Line",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Cost Projection Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMCostProjectionClass",
+      "graph_full_name": "PX.Objects.CN.ProjectAccounting.CostProjectionClassMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Cost Projection Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Cost Projection Line",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMCostProjectionLine",
+      "graph_full_name": "PX.Objects.CN.ProjectAccounting.CostProjectionEntry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Cost Projection Line",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Project Financial Vision Line",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMDateSensitiveDataRevisionLine",
+      "graph_full_name": "PX.Objects.PM.ProjectDateSensitiveCostsInquiry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Project Financial Vision Line",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Budget Forecast",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMForecast",
+      "graph_full_name": "PX.Objects.PM.ForecastMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Budget Forecast",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Budget Forecast Detail",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMForecastDetail",
+      "graph_full_name": "PX.Objects.PM.ForecastMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Budget Forecast Detail",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Budget Forecast History",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMForecastHistory",
+      "graph_full_name": "PX.Objects.PM.ForecastMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Budget Forecast History",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Pro Forma Invoice",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMProforma",
+      "graph_full_name": "PX.Objects.PM.ProformaEntry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Pro Forma Invoice",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Progress Worksheet",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMProgressWorksheet",
+      "graph_full_name": "PX.Objects.PM.ProgressWorksheetEntry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Progress Worksheet",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Project Group",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMProjectGroup",
+      "graph_full_name": "PX.Objects.PM.PMProjectGroupMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Project Group",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Project Quote",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMQuote",
+      "graph_full_name": "PX.Objects.PM.PMQuoteMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Project Quote",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Rate",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMRate",
+      "graph_full_name": "PX.Objects.PM.RateMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Rate",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Rate Lookup Rule",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMRateDefinition",
+      "graph_full_name": "PX.Objects.PM.RateMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Rate Lookup Rule",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Rate Table",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMRateTable",
+      "graph_full_name": "PX.Objects.PM.RateTableMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Rate Table",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Rate Type",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMRateType",
+      "graph_full_name": "PX.Objects.PM.RateTypeMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Rate Type",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Project Register",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMRegister",
+      "graph_full_name": "PX.Objects.PM.RegisterEntry",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Project Register",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Project Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMSetup",
+      "graph_full_name": "PX.Objects.PM.SetupMaint",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Project Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Recalculate Project Balances",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.PM.PMValidationFilter",
+      "graph_full_name": "PX.Objects.PM.ProjectBalanceValidation",
+      "line_dac_full_name": "PX.Objects.PM.AllocationPMTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Recalculate Project Balances",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Bonus",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FA.FABonus",
+      "graph_full_name": "PX.Objects.FA.BonusMaint",
+      "line_dac_full_name": "PX.Objects.FA.DsplFAATran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Bonus",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "FA Book",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FA.FABook",
+      "graph_full_name": "PX.Objects.FA.BookMaint",
+      "line_dac_full_name": "PX.Objects.FA.DsplFAATran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=FA Book",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Fixed Asset Transaction",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FA.FARegister",
+      "graph_full_name": "PX.Objects.FA.TransactionEntry",
+      "line_dac_full_name": "PX.Objects.FA.DsplFAATran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Fixed Asset Transaction",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "FA Service Schedule",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FA.FAServiceSchedule",
+      "graph_full_name": "PX.Objects.FA.ServiceScheduleMaint",
+      "line_dac_full_name": "PX.Objects.FA.DsplFAATran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=FA Service Schedule",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Fixed Assets Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FA.FASetup",
+      "graph_full_name": "PX.Objects.FA.SetupMaint",
+      "line_dac_full_name": "PX.Objects.FA.DsplFAATran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Fixed Assets Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "FA Type",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FA.FAType",
+      "graph_full_name": "PX.Objects.FA.AssetTypeMaint",
+      "line_dac_full_name": "PX.Objects.FA.DsplFAATran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=FA Type",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "FA Usage Schedule",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FA.FAUsageSchedule",
+      "graph_full_name": "PX.Objects.FA.UsageScheduleMaint",
+      "line_dac_full_name": "PX.Objects.FA.DsplFAATran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=FA Usage Schedule",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Deferral Code",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.DR.DRDeferredCode",
+      "graph_full_name": "PX.Objects.DR.DeferredCodeMaint",
+      "line_dac_full_name": "PX.Objects.DR.DRScheduleDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Deferral Code",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Deferral Schedule",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.DR.DRSchedule",
+      "graph_full_name": "PX.Objects.DR.DraftScheduleMaint",
+      "line_dac_full_name": "PX.Objects.DR.DRScheduleTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Deferral Schedule",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Deferred Revenue Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.DR.DRSetup",
+      "graph_full_name": "PX.Objects.DR.DRSetupMaint",
+      "line_dac_full_name": "PX.Objects.DR.DRScheduleDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Deferred Revenue Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Contract Billing Schedule",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CT.ContractBillingSchedule",
+      "graph_full_name": "PX.Objects.CT.ContractMaint",
+      "line_dac_full_name": "PX.Objects.CT.ContractDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Contract Billing Schedule",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Contract Item",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CT.ContractItem",
+      "graph_full_name": "PX.Objects.CT.ContractItemMaint",
+      "line_dac_full_name": "PX.Objects.CT.ContractDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Contract Item",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Contract SLA Mapping",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CT.ContractSLAMapping",
+      "graph_full_name": "PX.Objects.CT.ContractMaint",
+      "line_dac_full_name": "PX.Objects.CT.ContractDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Contract SLA Mapping",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Contract Template",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CT.ContractTemplate",
+      "graph_full_name": "PX.Objects.CT.TemplateMaint",
+      "line_dac_full_name": "PX.Objects.CT.ContractDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Contract Template",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Address Verification Service",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CS.AddressValidatorPlugin",
+      "graph_full_name": "PX.Objects.CS.AddressValidatorPluginMaint",
+      "line_dac_full_name": "PX.Objects.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Address Verification Service",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Attribute Group",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CS.CSAttributeGroup",
+      "graph_full_name": "PX.Objects.CS.CSAttributeMaint",
+      "line_dac_full_name": "PX.Objects.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Attribute Group",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Features Set",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CS.FeaturesSet",
+      "graph_full_name": "PX.Objects.CS.FeaturesMaint",
+      "line_dac_full_name": "PX.Objects.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Features Set",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "FOB Point",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CS.FOBPoint",
+      "graph_full_name": "PX.Objects.CS.FOBPointMaint",
+      "line_dac_full_name": "PX.Objects.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=FOB Point",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Numbering Sequence",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CS.Numbering",
+      "graph_full_name": "PX.Objects.CS.NumberingMaint",
+      "line_dac_full_name": "PX.Objects.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Numbering Sequence",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Reason Code",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CS.ReasonCode",
+      "graph_full_name": "PX.Objects.CS.ReasonCodeMaint",
+      "line_dac_full_name": "PX.Objects.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Reason Code",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Sales Territory",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CS.SalesTerritory",
+      "graph_full_name": "PX.Objects.CS.SalesTerritoryMaint",
+      "line_dac_full_name": "PX.Objects.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Sales Territory",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Segment",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CS.Segment",
+      "graph_full_name": "PX.Objects.CS.SegmentMaint",
+      "line_dac_full_name": "PX.Objects.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Segment",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Shipping Zone",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CS.ShippingZone",
+      "graph_full_name": "PX.Objects.CS.ShippingZoneMaint",
+      "line_dac_full_name": "PX.Objects.CS.CSAttributeDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Shipping Zone",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "IN ABC Code",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INABCCode",
+      "graph_full_name": "PX.Objects.IN.INABCCodeMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=IN ABC Code",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Availability Calculation Rule",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INAvailabilityScheme",
+      "graph_full_name": "PX.Objects.IN.INAvailabilitySchemeMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Availability Calculation Rule",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Item Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INItemClass",
+      "graph_full_name": "PX.Objects.IN.INItemClassMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Item Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Item/Warehouse Settings",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INItemSite",
+      "graph_full_name": "PX.Objects.IN.INItemSiteMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Item/Warehouse Settings",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Lot/Serial Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INLotSerClass",
+      "graph_full_name": "PX.Objects.IN.INLotSerClassMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Lot/Serial Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Auto-Incremental Value of a Lot/Serial Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INLotSerClassLotSerNumVal",
+      "graph_full_name": "PX.Objects.IN.INLotSerClassMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Auto-Incremental Value of a Lot/Serial Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "IN Movement Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INMovementClass",
+      "graph_full_name": "PX.Objects.IN.INMovementClassMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=IN Movement Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Physical Inventory Cycle",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INPICycle",
+      "graph_full_name": "PX.Objects.IN.INPICycleMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Physical Inventory Cycle",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Physical Inventory Review",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INPIHeader",
+      "graph_full_name": "PX.Objects.IN.INPIReview",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Physical Inventory Review",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Posting Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INPostClass",
+      "graph_full_name": "PX.Objects.IN.INPostClassMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Posting Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "IN Item Price Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INPriceClass",
+      "graph_full_name": "PX.Objects.IN.INPriceClassMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=IN Item Price Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Replenishment Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INReplenishmentClass",
+      "graph_full_name": "PX.Objects.IN.INReplenishmentClassMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Replenishment Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Replenishment Policy",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INReplenishmentPolicy",
+      "graph_full_name": "PX.Objects.IN.INReplenishmentPolicyMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Replenishment Policy",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "IN Setup",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INSetup",
+      "graph_full_name": "PX.Objects.IN.INSetupMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=IN Setup",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Transfer Line",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INTransitLine",
+      "graph_full_name": "PX.Objects.IN.INTransferEntry",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Transfer Line",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Inventory Unit Conversions",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INUnit",
+      "graph_full_name": "PX.Objects.IN.UnitOfMeasureMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Inventory Unit Conversions",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Auto-Incremental Value of a Stock Item",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.InventoryItemLotSerNumVal",
+      "graph_full_name": "PX.Objects.IN.InventoryItemMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Auto-Incremental Value of a Stock Item",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Unit of Measure",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.UnitOfMeasure",
+      "graph_full_name": "PX.Objects.IN.UnitOfMeasureMaint",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Unit of Measure",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "IN Kit",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.IN.INKitRegister",
+      "graph_full_name": "PX.Objects.IN.KitAssemblyEntry",
+      "line_dac_full_name": "PX.Objects.IN.INPIDetailUpdate",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=IN Kit",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Compliance Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CN.Compliance.CL.DAC.LienWaiverSetup",
+      "graph_full_name": "PX.Objects.CN.Compliance.CL.Graphs.ComplianceDocumentSetupMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Compliance Preferences",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "Currency Management Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CM.CMSetup",
+      "graph_full_name": "PX.Objects.CM.CMSetupMaint",
+      "line_dac_full_name": "PX.Objects.CM.TranslationHistoryDetails",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Currency Management Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Translation History",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CM.TranslationHistory",
+      "graph_full_name": "PX.Objects.CM.TranslationHistoryMaint",
+      "line_dac_full_name": "PX.Objects.CM.TranslationHistoryDetails",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Translation History",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Translation Definition",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CM.TranslDef",
+      "graph_full_name": "PX.Objects.CM.TranslationDefinitionMaint",
+      "line_dac_full_name": "PX.Objects.CM.TranslationHistoryDetails",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Translation Definition",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "GL Account",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.Account",
+      "graph_full_name": "PX.Objects.GL.AccountHistoryByYearEnq",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=GL Account",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "GL Account Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.AccountClass",
+      "graph_full_name": "PX.Objects.GL.AccountClassMaint",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=GL Account Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "GL Batch",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.Batch",
+      "graph_full_name": "PX.Objects.GL.JournalEntry",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=GL Batch",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Financial Year",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.FinYearSetup",
+      "graph_full_name": "PX.Objects.GL.FiscalYearSetupMaint",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Financial Year",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Allocation",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.GLAllocation",
+      "graph_full_name": "PX.Objects.GL.AllocationMaint",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Allocation",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Budget",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.GLBudget",
+      "graph_full_name": "PX.Objects.GL.GLBudgetEntry",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Budget",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Budget Article",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "graph_full_name": "PX.Objects.GL.GLBudgetEntry",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Budget Article",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "GL Budget Tree",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.GLBudgetTree",
+      "graph_full_name": "PX.Objects.GL.GLBudgetTreeMaint",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=GL Budget Tree",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "GL Document Batch",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.GLDocBatch",
+      "graph_full_name": "PX.Objects.GL.JournalWithSubEntry",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=GL Document Batch",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "General Ledger Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.GLSetup",
+      "graph_full_name": "PX.Objects.GL.GLSetupMaint",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=General Ledger Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "GL Transaction",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.GLTran",
+      "graph_full_name": "PX.Objects.GL.JournalEntry",
+      "line_dac_full_name": "PX.Objects.GL.GLTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=GL Transaction",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Trial Balance Import",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.GLTrialBalanceImportMap",
+      "graph_full_name": "PX.Objects.GL.JournalEntryImport",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Trial Balance Import",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Ledger",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.Ledger",
+      "graph_full_name": "PX.Objects.GL.GeneralLedgerMaint",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Ledger",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Subaccount",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.GL.Sub",
+      "graph_full_name": "PX.Objects.GL.SubAccountMaint",
+      "line_dac_full_name": "PX.Objects.GL.GLBudgetLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Subaccount",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Cash Transactions",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CAAdj",
+      "graph_full_name": "PX.Objects.CA.CATranEntry",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Cash Transactions",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Bank Feed",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CABankFeed",
+      "graph_full_name": "PX.Objects.CA.CABankFeedMaint",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Bank Feed",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "CA Bank Transactions Rule",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CABankTranRule",
+      "graph_full_name": "PX.Objects.CA.CABankTranRuleMaint",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=CA Bank Transactions Rule",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Corporate Card",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CACorpCard",
+      "graph_full_name": "PX.Objects.CA.CACorpCardsMaint",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Corporate Card",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "CA Daily Summary",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CADailySummary",
+      "graph_full_name": "PX.Objects.CA.CATranEnq",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=CA Daily Summary",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "CA Deposit",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CADeposit",
+      "graph_full_name": "PX.Objects.CA.CADepositEntry",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=CA Deposit",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "CA Entry Type",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CAEntryType",
+      "graph_full_name": "PX.Objects.CA.EntryTypeMaint",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=CA Entry Type",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Reconciliation Statement",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CARecon",
+      "graph_full_name": "PX.Objects.CA.CAReconEntry",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Reconciliation Statement",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Cash Management Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CASetup",
+      "graph_full_name": "PX.Objects.CA.CASetupMaint",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Cash Management Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Cash Transactions",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CashForecastTran",
+      "graph_full_name": "PX.Objects.CA.CashForecastEntry",
+      "line_dac_full_name": "PX.Objects.CA.CashForecastTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Cash Transactions",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Transfer",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.CATransfer",
+      "graph_full_name": "PX.Objects.CA.CashTransferEntry",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Transfer",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Payment Method",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CA.PaymentMethod",
+      "graph_full_name": "PX.Objects.CA.PaymentMethodMaint",
+      "line_dac_full_name": "PX.Objects.CA.CABankFeedDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Payment Method",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Campaign",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CRCampaign",
+      "graph_full_name": "PX.Objects.CR.CampaignMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Campaign",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Campaign Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CRCampaignType",
+      "graph_full_name": "PX.Objects.CR.CRCampaignClassMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Campaign Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Case",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CRCase",
+      "graph_full_name": "PX.Objects.CR.CRCaseMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Case",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Case Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CRCaseClass",
+      "graph_full_name": "PX.Objects.CR.CRCaseClassMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Case Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Contact Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CRContactClass",
+      "graph_full_name": "PX.Objects.CR.CRContactClassMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Contact Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Business Account Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CRCustomerClass",
+      "graph_full_name": "PX.Objects.CR.CRCustomerClassMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Business Account Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Lead Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CRLeadClass",
+      "graph_full_name": "PX.Objects.CR.CRLeadClassMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Lead Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Mass Emails",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CRMassMail",
+      "graph_full_name": "PX.Objects.CR.CRMassMailMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Mass Emails",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Opportunity",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CROpportunity",
+      "graph_full_name": "PX.Objects.CR.OpportunityMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Opportunity",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Opportunity Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CROpportunityClass",
+      "graph_full_name": "PX.Objects.CR.CROpportunityClassMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Opportunity Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Customer Management Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CR.CRSetup",
+      "graph_full_name": "PX.Objects.CR.CRSetupMaint",
+      "line_dac_full_name": "PX.Objects.CR.CROpportunityDiscountDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Customer Management Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Tax",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.TX.Tax",
+      "graph_full_name": "PX.Objects.TX.SalesTaxMaint",
+      "line_dac_full_name": "PX.Objects.TX.TaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Tax",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Tax Category",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.TX.TaxCategory",
+      "graph_full_name": "PX.Objects.TX.TaxCategoryMaint",
+      "line_dac_full_name": "PX.Objects.TX.TaxBucketLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Tax Category",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Tax Plug-in",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.TX.TaxPlugin",
+      "graph_full_name": "PX.Objects.TX.TaxPluginMaint",
+      "line_dac_full_name": "PX.Objects.TX.TaxBucketLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Tax Plug-in",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Tax Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.TX.TXSetup",
+      "graph_full_name": "PX.Objects.TX.TXSetupMaint",
+      "line_dac_full_name": "PX.Objects.TX.TaxBucketLine",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Tax Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Dunning Letter",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.ARDunningLetter",
+      "graph_full_name": "PX.Objects.AR.ARDunningLetterUpdate",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Dunning Letter",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "AR Financial Charge",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.ARFinCharge",
+      "graph_full_name": "PX.Objects.AR.ARFinChargesMaint",
+      "line_dac_full_name": "PX.Objects.AR.ARFinChargeTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=AR Financial Charge",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "AR Price Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.ARPriceClass",
+      "graph_full_name": "PX.Objects.AR.ARPriceClassMaint",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=AR Price Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "AR Price Worksheet",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.ARPriceWorksheet",
+      "graph_full_name": "PX.Objects.AR.ARPriceWorksheetMaint",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=AR Price Worksheet",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Account Receivable Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.ARSetup",
+      "graph_full_name": "PX.Objects.AR.ARSetupMaint",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Account Receivable Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "AR Statement",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.ARStatement",
+      "graph_full_name": "PX.Objects.AR.ARStatementUpdate",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=AR Statement",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Statement Cycle",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.ARStatementCycle",
+      "graph_full_name": "PX.Objects.AR.ARStatementMaint",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Statement Cycle",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Customer Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.CustomerClass",
+      "graph_full_name": "PX.Objects.AR.CustomerClassMaint",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Customer Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Customer Payment Method",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.CustomerPaymentMethod",
+      "graph_full_name": "PX.Objects.AR.CustomerPaymentMethodMaint",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Customer Payment Method",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Discount Sequence",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.DiscountSequence",
+      "graph_full_name": "PX.Objects.AR.ARDiscountSequenceMaint",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Discount Sequence",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Sales Person",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.SalesPerson",
+      "graph_full_name": "PX.Objects.AR.SalesPersonMaint",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Sales Person",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Cash Sale",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.Standalone.ARCashSale",
+      "graph_full_name": "PX.Objects.AR.ARCashSaleEntry",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Cash Sale",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "Activity Type",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPActivityType",
+      "graph_full_name": "PX.Objects.CR.CRActivitySetupMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Activity Type",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Approval",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPApproval",
+      "graph_full_name": "PX.Objects.EP.EPApprovalMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Approval",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Legacy Assignment Route",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPAssignmentRoute",
+      "graph_full_name": "PX.Objects.EP.EPAssignmentMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Legacy Assignment Route",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Department",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPDepartment",
+      "graph_full_name": "PX.Objects.EP.DepartmentMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Department",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Employee Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPEmployeeClass",
+      "graph_full_name": "PX.Objects.EP.EmployeeClassMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Employee Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Equipment",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPEquipment",
+      "graph_full_name": "PX.Objects.EP.EquipmentMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Equipment",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Equipment Time Card",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPEquipmentTimeCard",
+      "graph_full_name": "PX.Objects.EP.EquipmentTimeCardMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Equipment Time Card",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Expense Claim",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPExpenseClaim",
+      "graph_full_name": "PX.Objects.EP.ExpenseClaimEntry",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Expense Claim",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Expense Receipt",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPExpenseClaimDetails",
+      "graph_full_name": "PX.Objects.EP.ExpenseClaimDetailEntry",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Expense Receipt",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Position",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPPosition",
+      "graph_full_name": "PX.Objects.EP.PositionMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Position",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Assignment/Approval Rule",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPRule",
+      "graph_full_name": "PX.Objects.EP.EPAssignmentMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Assignment/Approval Rule",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Time & Expenses Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPSetup",
+      "graph_full_name": "PX.Objects.EP.EPSetupMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Time & Expenses Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Employee Time Card",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.EP.EPTimeCard",
+      "graph_full_name": "PX.Objects.EP.TimeCardMaint",
+      "line_dac_full_name": "PX.Objects.EP.EPEquipmentDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Employee Time Card",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "AP document",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AP.APInvoice",
+      "graph_full_name": "PX.Objects.AP.APInvoiceEntry",
+      "line_dac_full_name": "PX.Objects.AP.APHistoryTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=AP document",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "AP Price Worksheet",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AP.APPriceWorksheet",
+      "graph_full_name": "PX.Objects.AP.APPriceWorksheetMaint",
+      "line_dac_full_name": "PX.Objects.AP.APHistoryTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=AP Price Worksheet",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Accounts Payable Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AP.APSetup",
+      "graph_full_name": "PX.Objects.AP.APSetupMaint",
+      "line_dac_full_name": "PX.Objects.AP.APHistoryTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Accounts Payable Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Vendor Class",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AP.VendorClass",
+      "graph_full_name": "PX.Objects.AP.VendorClassMaint",
+      "line_dac_full_name": "PX.Objects.AP.APHistoryTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Vendor Class",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Subcontracts Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.CN.Subcontracts.SC.Views.SubcontractSetup+SubcontractsPreferences",
+      "graph_full_name": "PX.Objects.CN.Subcontracts.SC.Graphs.SubcontractSetupMaint",
+      "line_dac_full_name": "",
+      "confidence": 0.7,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Subcontracts Preferences",
+        "dac.primary_graphs[0]"
+      ]
+    },
+    {
+      "concept": "AR History for Report",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AR.ARDocumentEnq+ARHistoryForReport",
+      "graph_full_name": "PX.Objects.AR.ARDocumentEnq",
+      "line_dac_full_name": "PX.Objects.AR.ARDunningLetterDetail",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=AR History for Report",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "AP History for Report",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.AP.APDocumentEnq+APHistoryForReport",
+      "graph_full_name": "PX.Objects.AP.APDocumentEnq",
+      "line_dac_full_name": "PX.Objects.AP.APHistoryTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=AP History for Report",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Appointment",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSAppointment",
+      "graph_full_name": "PX.Objects.FS.AppointmentEntry",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Appointment",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Billing Cycle",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSBillingCycle",
+      "graph_full_name": "PX.Objects.FS.BillingCycleMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Billing Cycle",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Branch Location",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSBranchLocation",
+      "graph_full_name": "PX.Objects.FS.BranchLocationMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Branch Location",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Contract Generation History",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSContractGenerationHistory",
+      "graph_full_name": "PX.Objects.FS.ContractGenerationHistoryMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Contract Generation History",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Equipment",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSEquipment",
+      "graph_full_name": "PX.Objects.FS.SMEquipmentMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Equipment",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Equipment Management Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSEquipmentSetup",
+      "graph_full_name": "PX.Objects.FS.EquipmentSetupMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Equipment Management Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Equipment Type",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSEquipmentType",
+      "graph_full_name": "PX.Objects.FS.EquipmentTypeMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Equipment Type",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Service Area",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSGeoZone",
+      "graph_full_name": "PX.Objects.FS.GeoZoneMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Service Area",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "License",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSLicense",
+      "graph_full_name": "PX.Objects.FS.LicenseMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=License",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "License Type",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSLicenseType",
+      "graph_full_name": "PX.Objects.FS.LicenseTypeMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=License Type",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Manufacturer",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSManufacturer",
+      "graph_full_name": "PX.Objects.FS.ManufacturerMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Manufacturer",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Manufacturer Model",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSManufacturerModel",
+      "graph_full_name": "PX.Objects.FS.ManufacturerModelMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Manufacturer Model",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Problem",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSProblem",
+      "graph_full_name": "PX.Objects.FS.ProblemMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Problem",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Room",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSRoom",
+      "graph_full_name": "PX.Objects.FS.RoomMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Room",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Route",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSRoute",
+      "graph_full_name": "PX.Objects.FS.RouteMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Route",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Route Document",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSRouteDocument",
+      "graph_full_name": "PX.Objects.FS.RouteDocumentMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Route Document",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Route Management Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSRouteSetup",
+      "graph_full_name": "PX.Objects.FS.RouteSetupMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Route Management Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Service Order",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSServiceOrder",
+      "graph_full_name": "PX.Objects.FS.ServiceOrderEntry",
+      "line_dac_full_name": "PX.Objects.FS.FSServiceOrderTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Service Order",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Service Management Preferences",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSSetup",
+      "graph_full_name": "PX.Objects.FS.SetupMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Service Management Preferences",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Skill",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSSkill",
+      "graph_full_name": "PX.Objects.FS.SkillMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Skill",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Order Type",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSSrvOrdType",
+      "graph_full_name": "PX.Objects.FS.SvrOrdTypeMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Order Type",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Vehicle Type",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSVehicleType",
+      "graph_full_name": "PX.Objects.FS.VehicleTypeMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Vehicle Type",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Contracts/Routes calendar Week Code",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSWeekCodeDate",
+      "graph_full_name": "PX.Objects.FS.CalendarWeekCodeMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Contracts/Routes calendar Week Code",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    },
+    {
+      "concept": "Order Stage",
+      "module_tag": "PX.Objects",
+      "dac_full_name": "PX.Objects.FS.FSWFStage",
+      "graph_full_name": "PX.Objects.FS.WFStageMaint",
+      "line_dac_full_name": "PX.Objects.FS.FSAppointmentTaxTran",
+      "confidence": 0.75,
+      "phrases": [],
+      "evidence": [
+        "dac.cache_name=Order Stage",
+        "dac.primary_graphs[0]",
+        "line_dac heuristic"
+      ]
+    }
+  ]
+}

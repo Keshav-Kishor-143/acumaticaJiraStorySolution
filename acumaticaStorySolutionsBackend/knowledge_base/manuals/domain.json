@@ -175,10 +175,16 @@
             "key_operations": ["manage site services", "process service operations", "extend site services functionality", "customize site operations"]
         },
         "NAWUnitedSiteServices_DLL": {
-            "summary": "United Site Services module for Acumatica, providing site services management, service operations, and site-specific business logic.",
-            "core_topics": ["United Site Services", "NAWUnitedSiteServices", "site services", "service management", "site operations"],
+            "summary": "United Site Services module for Acumatica, providing site services management, service operations, event orders, rental orders, and site-specific business logic.",
+            "core_topics": ["United Site Services", "NAWUnitedSiteServices", "site services", "service management", "site operations", "Event Order", "Event Orders", "event orders", "EX Quote", "EX Order", "Scheduled Start Date", "Scheduled Return Date", "Event Start Date", "Event End Date", "date validation", "field validation", "FieldVerifying", "RowPersisting", "service dates", "extension dates", "billing accuracy"],
             "forms": [],
-            "key_operations": ["manage site services", "process service operations", "extend site services functionality", "customize site operations"]
+            "key_operations": ["manage site services", "process service operations", "extend site services functionality", "customize site operations", "validate event order dates", "validate service dates", "validate extension dates", "create event orders", "edit event orders", "validate date ranges", "handle date validation errors"]
+        },
+        "Event_Order_Management": {
+            "summary": "Event Order management system for Acumatica, providing event order creation, date validation, service date management, extension date handling, and cross-document consistency between Event Orders and EX Quotes/Orders.",
+            "core_topics": ["Event Order", "Event Orders", "event orders", "EX Quote", "EX Order", "Scheduled Start Date", "Scheduled Return Date", "Event Start Date", "Event End Date", "date validation", "field validation", "FieldVerifying", "RowPersisting", "service dates", "extension dates", "billing accuracy", "date errors", "invalid date entry", "date constraints", "date range validation"],
+            "forms": ["EventOrderEntry"],
+            "key_operations": ["create event orders", "edit event orders", "validate event start date", "validate event end date", "validate scheduled dates", "validate date ranges", "handle date validation errors", "prevent invalid date entries", "ensure billing accuracy", "maintain date consistency", "validate cross-document dates", "display date validation errors"]
         }
     }
 }

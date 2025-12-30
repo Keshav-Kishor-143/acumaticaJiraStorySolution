@@ -3570,5 +3570,2170 @@
     "section_type": "page",
     "timestamp": "",
     "id": "EU_Dashboard_and_Widget_Design_2025R1_page_76"
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p1_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 1,
+    "section_type": "text_chunk",
+    "section_id": "p1_c001",
+    "image_path": "images/page1.jpg",
+    "text_content": "End-User Course\nReporting\nDashboard and Widget Design\n2025 R1\nRevision: 5/27/2025",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 304,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p2_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 2,
+    "section_type": "text_chunk",
+    "section_id": "p2_c001",
+    "image_path": "images/page2.jpg",
+    "text_content": "Contents | 2\nContents\nCopyright...............................................................................................................................................3\nHow to Use This Course.......................................................................................................................... 4\nCompany Story.......................................................................................................................................6\nPart 1: Designing Dashboard Contents..................................................................................................... 8\nLesson 1.1: Designing a Dashboard..................................................................................................................8\nDashboard Design: General Information.................................................................................................8\nDashboard Design: Widget Arrangement..............................................................................................12\nDashboard Design: User Operations with Data.................................................................................... 14\nDashboard Design: To Modify a Dashboard..........................................................................................17\nLesson 1.2: Administering Dashboards.......................................................................................................... 21\nDashboards: General Information......................................................................................................... 21\nDashboards: Access Rights.....................................................................................................................24\nDashboards: Widget Location Within a Working Area..........................................................................25\nDashboards: To Add a Dashboard Form................................................................................................27\nPart 2: Configuring Widgets...................................................................................................................31\nLesson 2.1: Specifying General Widget Settings............................................................................................ 31\nWidget Settings: General Information...................................................................................................31\nWidget Settings: To Change a Widget's Title and Caching Settings.....................................................34\nLesson 2.2: Configuring Header, Table, Link, and Embedded Page Widgets................................................35\nWidgets: Header Widgets....................................................................................................................... 35\nWidgets: Table Widgets.......................................................................................................................... 36\nWidgets: Link Widgets............................................................................................................................ 39\nWidgets: Embedded Page Widgets........................................................................................................ 41\nWidgets: To Add Link, Table, and Embedded Page Widgets................................................................ 42\nLesson 2.3: Configuring KPI Widgets.............................................................................................................. 45\nWidgets: KPI Widgets..............................................................................................................................45\nWidgets: To Add KPI Widgets................................................................................................................. 53\nLesson 2.4: Configuring Chart Widgets...........................................................................................................56\nWidgets: Chart Widgets.......................................................................................................................... 56\nWidgets: To Add Chart Widgets..............................................................................................................66\nLesson 2.5: Filtering Widget Data................................................................................................................... 68\nWidgets: Data Filtering........................................................................................................................... 69\nWidgets: To Filter Widget Data...............................................................................................................72",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 305,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p3_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 3,
+    "section_type": "text_chunk",
+    "section_id": "p3_c001",
+    "image_path": "images/page3.jpg",
+    "text_content": "Copyright | 3\nCopyright\n\u00a9 2025 Acumatica, Inc.\nALL RIGHTS RESERVED.\nNo part of this document may be reproduced, copied, or transmitted without the express prior consent of\nAcumatica, Inc.\n3075 112th Avenue NE, Suite 200, Bellevue, WA 98004, USA\nRestricted Rights\nThe product is provided with restricted rights. Use, duplication, or disclosure by the United States Government is\nsubject to restrictions as set forth in the applicable License and Services Agreement and in subparagraph (c)(1)(ii)\nof the Rights in Technical Data and Computer So\ue000ware clause at DFARS 252.227-7013 or subparagraphs (c)(1) and\n(c)(2) of the Commercial Computer So\ue000ware-Restricted Rights at 48 CFR 52.227-19, as applicable.\nDisclaimer\nAcumatica, Inc. makes no representations or warranties with respect to the contents or use of this document, and\nspecifically disclaims any express or implied warranties of merchantability or fitness for any particular purpose.\nFurther, Acumatica, Inc. reserves the right to revise this document and make changes in its content at any time,\nwithout obligation to notify any person or entity of such revisions or changes.\nTrademarks\nAcumatica is a registered trademark of Acumatica, Inc. HubSpot is a registered trademark of HubSpot, Inc.\nMicroso\ue000 Exchange and Microso\ue000 Exchange Server are registered trademarks of Microso\ue000 Corporation. All other\nproduct names and services herein are trademarks or service marks of their respective companies.\nSo\ue000ware Version: 2025 R1\nLast Updated: 05/27/2025",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 306,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p4_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 4,
+    "section_type": "text_chunk",
+    "section_id": "p4_c001",
+    "image_path": "images/page4.jpg",
+    "text_content": "How to Use This Course | 4\nHow to Use This Course\nIn this course, you will learn how to create a dashboard and fill it with various widgets that use prepared generic\ninquiries. You will apply filters and dashboard parameters to the widget data. The course is intended for advanced\nAcumatica ERP users who are familiar with the user interface and the main principles of the system. Acumatica ERP\napplication specialists and engineers might find the course useful as well. On completing the course, you will have\nan understanding of how to use Acumatica ERP to design dashboards.\nWhat Is in This Guide\nThe guide includes the Company Story topic and process activities. The Company Story topic explains the\norganizational structure of the company that has been preconfigured in the U100 dataset, as well as the company's\nbusiness processes and requirements. Each of the process activities of the course is dedicated to a particular user\nscenario and consists of processing steps that you complete.\nWhich Training Environment You Should Use\nAll lessons of the course should be completed in an instance of Acumatica ERP 2025 R1 with the U100 training\ndataset preloaded; this dataset provides the predefined settings and entities you will need as you complete the\nactivities of this course.\nYou or your system administrator need to prepare an instance of Acumatica ERP 2025 R1, as described in the How to\nCreate a Tenant with the U100 Dataset section below.\nWhat Is in a Lesson\nEach lesson provides a story describing a particular user scenario and an overview of the relevant features that\nhave been enabled in the system; configuration settings that are related to the described scenario are also listed.\nThe lesson provides a brief overview of the process that should be performed to complete the described scenario,\nand instructions that guide you through the process in Acumatica ERP.\nThe completion of a lesson depends on the steps performed in the previous lessons. We recommend\nthat you complete the lessons in the listed order.\nWhat the Documentation Resources Are\nThe complete Acumatica ERP documentation is available on https://help.acumatica.com/ and is included in the\nAcumatica ERP instance. While viewing any form used in the course, you can click the Open Help button in the top\npane of the Acumatica ERP screen to bring up a form-specific Help menu; you can use the links on this menu to\nquickly access form-related information and activities and to open a reference topic with detailed descriptions of\nthe form elements.\nHow to Create a Tenant with the U100 Dataset\nBefore you complete this course, you need to add a tenant with the U100 dataset to an existing Acumatica ERP\ninstance. You will then prepare the tenant for completing the activities. To complete this preparation, perform the\nfollowing instructions:\n1. Go to Amazon Storage.\n2. Open the folder that corresponds to the version of your Acumatica ERP instance.\n3. In this folder, open the Snapshots folder and download the u100.zip file.\n4. Launch the Acumatica ERP instance and sign in.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 307,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p5_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 5,
+    "section_type": "text_chunk",
+    "section_id": "p5_c001",
+    "image_path": "images/page5.jpg",
+    "text_content": "How to Use This Course | 5\n5. Open the Tenants (SM203520) form and click Add New Record on the form toolbar.\n6. In the Login Name box, type the name to be used for the tenant.\n7. On the form toolbar, click Save.\nWhen you create a system tenant, you may be signed out a\ue000er its creation, depending on how\nmany non-System tenants your Acumatica ERP instance already had:\n\u2022\nIf you started with one non-System tenant (to which you are signed in) and you create a\nnew one, the system signs you out to switch from single-tenant mode to multitenant mode.\n\u2022\nIf the instance had multiple non-System tenants and you create another, it is already in\nmultitenant mode. Instead of being signed out, you wait until the system completes the\noperation and then proceed.\n8. On the Snapshots tab, click Import Snapshot.\n9. In the Upload Snapshot Package dialog box, select the u100.zip file, which you have downloaded, and\nclick Upload.\nThe system uploads the snapshot and lists it on the Snapshots tab of the Tenants form.\n10.Open the Apply Updates (SM203510) form and click Schedule Lockout.\n11.In the Schedule Lockout dialog box, click OK.\n12.Open the Tenants form again.\n13.On the form toolbar, click Restore Snapshot.\n14.If the Warning dialog box appears, click Yes.\n15.In the Restore Snapshot dialog box, make sure that the correct snapshot package is being uploaded and\nclick OK. The system will restore the snapshot and sign you out.\n16.Sign in to the tenant that you have just created.\n17.Open the Apply Updates form again.\n18.On the form toolbar, click Stop Lockout.\nWhich Credentials You Should Use\nTo complete the lessons, sign in as the following users:\n1. Lesson 1.1: chubb\n2. Lesson 1.2: gibbs and chubb\n3. Lesson 2.1: chubb\n4. Lesson 2.2: gibbs\n5. Lesson 2.3: gibbs\n6. Lesson 2.4: gibbs\n7. Lesson 2.5: gibbs\nThe password for each user is 123.\nWhich License You Should Use\nFor the educational purposes of this course, you use Acumatica ERP under the trial license, which does not require\nactivation and provides all available features. For the production use of this functionality, you have to activate the\nlicense your organization has purchased. Each particular feature may be subject to additional licensing; please\nconsult the Acumatica ERP licensing policy for details.",
+    "tags": {
+      "forms": [
+        "SM203510",
+        "SM203520"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM203510",
+        "SM203520"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 308,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p6_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 6,
+    "section_type": "text_chunk",
+    "section_id": "p6_c001",
+    "image_path": "images/page6.jpg",
+    "text_content": "Company Story | 6\nCompany Story\nThis topic explains the organizational structure and operational activity of the company you will work with during\nthis training.\nCompany Structure\nThe SweetLife Fruits & Jams company is a midsize company located in New York City. The company consists of the\nfollowing branches:\n\u2022\nSweetLife Head O\ufb00ice and Wholesale Center: This branch of the company consists of a jam factory and\na large warehouse where the company stores fruit (purchased from wholesale vendors) and the jam it\nproduces. Warehouse workers perform warehouse operations by using barcode scanners or mobile devices\nwith barcode scanning support.\n\u2022\nSweetLife Store: This branch has a retail shop with a small warehouse to which the goods to be sold are\ndistributed from the company's main warehouse. This branch is also planning on selling goods via a\nwebsite created on an e-commerce platform to accept orders online. The e-commerce integration project is\nunderway.\n\u2022\nSweetLife Service and Equipment Sales Center: This branch is a service center with a small warehouse\nwhere juicers are stored. This branch assembles, sells, installs, and services juicers, in addition to training\ncustomers' employees to operate juicers.\nOperational Activity\nThe company has been operating starting in the 01-2024 financial period. In November 2024, the company started\nusing Acumatica ERP as an ERP and CRM system and migrated all data of the main o\ufb00ice and retail store to\nAcumatica ERP. The equipment center began its operations in 01-2025 in response to the company's growth.\nThe base currency of the company and its subsidiaries is the US dollar (USD). All amounts in documents and\nreports are expressed in US dollars unless otherwise indicated.\nSweetLife Company Sales and Services\nEach SweetLife company's branch has its own business processes, as follows:\n\u2022\nSweetLife Head O\ufb00ice and Wholesale Center: In this branch, jams and fruit are sold to wholesale customers,\nsuch as restaurants and cafes. The company also conducts home canning training at the customer's location\nand webinars on the company's website.\n\u2022\nSweetLife Store: In the store, retail customers purchase fresh fruit, berries, and jams, or pick up the goods\nthey have ordered on the website. Some of the goods listed in the website catalog are not stored in the retail\nwarehouse, such as tropical fruits (which are purchased on demand) and tea (which is drop-shipped from a\nthird-party vendor).\n\u2022\nSweetLife Service and Equipment Sales Center: This branch assembles juicers, sells juicers, provides\ntraining on equipment use, and o\ufb00ers equipment installation, including site review and maintenance\nservices. The branch performs short-term service provision.\nThe company has local and international customers. The ordered items are delivered by drivers using the\ncompany's own vehicle. Customers can pay for orders by using various payment methods (cash, checks, or credit\ncards).\nCompany Purchases\nThe company purchases fruits and spices from large fruit vendors for sale and for jam production. For producing\njams and packing jams and fruits, the company purchases jars, labels, and paper bags from various vendors. For",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "CRM"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 309,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p7_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 7,
+    "section_type": "text_chunk",
+    "section_id": "p7_c001",
+    "image_path": "images/page7.jpg",
+    "text_content": "Company Story | 7\nthe internal needs of the main o\ufb00ice and store, the company purchases stationery (printing paper, pens, and\npencils), computers, and computer accessories from various vendors.\nThe company also purchases juicers and juicer parts from large juicer vendors, and it either purchases the\ninstallation service for the juicers or provides the installation service on its own, depending on the complexity of\nthe installation.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 310,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p8_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 8,
+    "section_type": "text_chunk",
+    "section_id": "p8_c001",
+    "image_path": "images/page8.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 8\nPart 1: Designing Dashboard Contents\nThe lessons of this part explain how you can modify an existing dashboard, create a new dashboard, and assign\naccess rights to a dashboard.\nLesson 1.1: Designing a Dashboard\nThis lesson explains the elements of a dashboard, types of widgets, and kinds of information that you can add to\nthe dashboard.\nDashboard Design: General Information\nAn Acumatica ERP dashboard is a type of form that an administrative user can design to present relevant data in\nengaging ways.\nWith dashboards, you can monitor current financial, operational, and organizational information of your company,\nand analyze real-time trends that relate to your job. On dashboards, di\ufb00erent types of information can be displayed\nin various presentation forms\u2014such as text, charts, graphs, and tables\u2014depending on your preferences and the\nspecific type of data you want to see.\nLearning Objectives\nIn this lesson, you will learn how to do the following:\n\u2022\nIdentify the basic elements of an Acumatica ERP dashboard and their functions\n\u2022\nBecome familiar with the basic steps of designing a dashboard\n\u2022\nModify your copy of a dashboard\n\u2022\nDefine a dashboard as your home page\n\u2022\nReset a dashboard\nApplicable Scenarios\nIf you are responsible for tailoring Acumatica ERP to meet users' needs in your company, you may need to design a\ndashboard from scratch or modify a copy of a predefined dashboard in the following cases:\n\u2022\nYour company\u2019s managers need to monitor the company's overall health. The best way to monitor all the\nkey performance indicators (KPIs) and data points is to have a dashboard with the relevant information.\n\u2022\nThe management of your company has set goals for each department, and the department managers need\nto track the progress toward these goals by monitoring key indicators and task completion.\n\u2022\nEmployees of your company are using dashboards as a home page for performing their duties.\nPreparation for Dashboard Design\nBefore you start designing a dashboard, you should decide what metrics users should be able to track by using the\ndashboard. When you decide on the metrics, you need to work on the data collection to gauge the metrics.\nIn Acumatica ERP, most types of widgets are based on data from generic inquiries. A generic inquiry is a user-\ndefinable tool\u2014generally created by a developer, customizer, or system administrator\u2014that collects data from\nthe system database and displays the query results on an Acumatica ERP form. The system provides a number of",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 311,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p9_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 9,
+    "section_type": "text_chunk",
+    "section_id": "p9_c001",
+    "image_path": "images/page9.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 9\npredefined generic inquiries to meet most needs. You can modify copies of these generic inquiries if needed or\nbuild your own generic inquiries from the ground up.\nTo create widgets based on a generic inquiry, you need to have at minimum View Only access rights to\nthe Generic Inquiry (SM208000) form.\nWith the data sources prepared, you need to plan how many widgets and which types you will add to the\ndashboard.\nDashboard Modes\nIn Acumatica ERP, a dashboard can be displayed in view or design mode. When you open a dashboard, it is\ndisplayed in view mode.\nTo modify a dashboard, you switch to design mode by clicking the Design button on the dashboard title bar. The\nbutton appears if your user account has the owner role for the dashboard on the Dashboards (SM208600) form (that\nis, the role selected in the Owner Role box on this form).\nIf your user account does not have the role assigned and the owner of the dashboard has allowed its\npersonalization, you can create a copy of it by clicking the Create User Copy button on the dashboard title bar.\n(This button is displayed if the Allow Users to Personalize check box is selected on the Dashboards form for the\ndashboard.) Once you have created your copy of the dashboard, the Design button is displayed on the dashboard\ntitle bar instead of Create User Copy. You click Design to switch on design mode for the dashboard.\nBasic Elements of a Dashboard in Design Mode\nWhen a dashboard is in design mode, it has the basic elements shown in the following screenshot.\nThe dashboard has the following elements, whose numbers correspond to those in the screenshot:\n1. The dashboard title bar, which you can use to click the needed actions and add the needed dashboard to\nyour favorites.\n2. A widget in design mode.\n3. A widget with unavailable data. You can view the data in the widget if you have access rights to view the\nform the widget is based on. This is true of both view mode and design mode.",
+    "tags": {
+      "forms": [
+        "SM208000",
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208000",
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 312,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p10_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 10,
+    "section_type": "text_chunk",
+    "section_id": "p10_c001",
+    "image_path": "images/page10.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 10\n4. A title bar of a widget, with buttons you can click to paste a copied widget by using the clipboard, edit the\nwidget, or delete it.\n5. A blank widget in design mode.\n6. A widget placeholder. You can add a new widget, copy and paste an existing widget from the clipboard (from\nthis dashboard or another dashboard), or replace this UI element with an existing widget by dragging the\nwidget.\n7. The Reset to Default button. This button is displayed if your copy of the dashboard di\ufb00ers from the original\ndashboard. You click the button to cancel all your changes to the dashboard and restore the default\ndashboard and settings.\n8. The Refresh All button. You click this button to update the information in all the widgets on the dashboard.\n9. The Design button. You click this button to switch between design and view modes for the dashboard.\n10.A working area, which is a major part of the dashboard. The number and placement of working areas\ndetermines the overall appearance of the dashboard and depends on the dashboard layout (for details, see\nDashboard Design: Widget Arrangement). The dashboard shown above has two working areas.\nThe Dashboard Title Bar for an Administrative User\nAn administrative user can view additional buttons on the dashboard title bar if their user account is assigned both\nof the following roles:\n\u2022\nA role with access to the Dashboards (SM208600) form\n\u2022\nThe dashboard owner role for the dashboard\nThe following screenshot shows an example of the dashboard title bar for an administrator.\nYou can see the following buttons (with the numbers corresponding to those in the screenshot), which are not\nshown for users:\n1. The Properties button. You click this button to open the Dashboards form for the current dashboard.\n2. The Edit Layout button. You click this button to select any of the predefined dashboard layout templates\nthat are available in the system. By using a template, you can find a layout that meets users' needs and\nquickly implement a dashboard that uses the layout.",
+    "tags": {
+      "forms": [
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 313,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p11_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 11,
+    "section_type": "text_chunk",
+    "section_id": "p11_c001",
+    "image_path": "images/page11.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 11\nIf you change the layout of the dashboard, this change will be applied to all user copies of the\ndashboard. For details, see Dashboards: Access Rights.\nTypes of Widgets\nA widget is a dashboard component that provides a particular type of information, such as a real-time data view or\nwiki article.\nYou can add to a dashboard various types of widgets. In the Add Widget dialog box, you can click one of the\nfollowing widget types:\n\u2022\nChart: A graphical representation of data from an Acumatica ERP form. You can use charts of various types,\nsuch as bar charts and line charts.\n\u2022\nData Table: A systematic display of data from an Acumatica ERP form, with data arranged into rows and\ncolumns.\n\u2022\nEmbedded Page: A document or an image that is stored on an external resource, such as cloud storage.\n\u2022\nHeader: A title that can be added to the widget section.\n\u2022\nKey Performance Indicator (KPI): A statistical record that measures progress or achievement toward a\nset performance indicator by showing parameters that are important to the business processes of your\norganization and should be monitored daily. The following visualization types are available for the widget:\n\u2022\nScorecard: Data is presented in the form of a card with a single parameter.\n\u2022\nMeter: Data is presented in the form of a gauge with normal, warning, and alarm levels.\n\u2022\nLink: A link to an Acumatica ERP form, report, or dashboard.\n\u2022\nPivot Table: A data table organized to filter, sort, count, total, or give the average of data from an Acumatica\nERP inquiry, displaying the summarized results in a separate table.\n\u2022\nPower BI Tile: A chart, scorecard, or other analytical information that is represented on a Power BI\ndashboard designed by your organization.\n\u2022\nTrend Card KPI: A statistical record showing parameters whose dynamic change is important to the\nbusiness processes of your organization.\n\u2022\nWiki Page: A reference topic, procedure, business plan, or other content that is frequently consulted by\nAcumatica ERP users.\nActions with Widgets on Dashboards\nIn design mode of a dashboard, a user designing the dashboard can perform the following actions:\n\u2022\nAdd a new widget: The user clicks Add a New Widget in a widget placeholder.\n\u2022\nMove an existing widget to a new position on the dashboard: The user drags the widget by its title bar from\nits current position to a widget placeholder on the dashboard.\n\u2022\nCopy and paste an existing widget: The user copies an existing widget by clicking the Copy button on the\nwidget title bar and then clicks Paste from Clipboard in a widget placeholder. The user can copy and paste\nwidgets within one dashboard or from one dashboard to another. The clipboard clears when the user\nsession ends.\n\u2022\nChange widget properties: The user can change the properties of the widget by clicking the Edit button on\nthe title bar of the widget.\n\u2022\nDelete a widget: The user deletes a widget by clicking the Delete button on the title bar of the widget.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 314,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p12_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 12,
+    "section_type": "text_chunk",
+    "section_id": "p12_c001",
+    "image_path": "images/page12.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 12\nDashboard Design: Widget Arrangement\nBest practices in dashboard design involve more than just good metrics and well-thought-out charts. The next step\nis the placement of charts on a dashboard. If your dashboard is well organized, users will easily find the information\nthey need. Poor layout forces users to think more before they grasp the key points. The general rule is that key\ninformation should be displayed first\u2014at the top of the screen, in the upper le\ue000 corner.\nYou should also group the charts by theme with comparable metrics placed next to each other. This way, users do\nnot have to change gears while looking at the dashboard by, for example, jumping from sales data to marketing\ndata, and then back to sales data.\nIn most situations, we recommend using no more than 10 widgets, so that users can understand the data quickly\nand easily. On some dashboards, however, you may want to use more widgets so that users have immediate access\nto a variety of di\ufb00erent information.\nLayout Selection\nAcumatica ERP o\ufb00ers four options for dashboard layout to help you organize your widgets. These options di\ufb00er\nin the size and shape of their working areas, which are major parts of the dashboard that determine its overall\nappearance. You can modify dashboard layout by clicking the Edit Layout button on the title bar of the dashboard,\nwhich opens the Dashboard Layouts dialog box.\nThis button appears for only a user with the dashboard owner role\u2014that is, the user role selected in\nthe Owner Role box on the Dashboards (SM208600) form for the dashboard. If a user with this role\nchanges the layout of the dashboard, this change will be applied to all user copies of the dashboard.\nFor details, see Dashboards: Access Rights.\nThe first option (see Item 1 in the following screenshot) is a single working area in which you can arrange and resize\nwidgets. The other three options (Items 2, 3, and 4) consist of two independent working areas of di\ufb00erent sizes with\nsome white space between them. You can move widgets between the working areas, but you can resize a widget\nonly within a particular working area a\ue000er you placed it in the area.\nFigure: Selection of a dashboard layout\nWidget Arrangement\nOnce you have selected a layout, you can add widgets to a working area of the dashboard. Widgets can be\norganized in rows or columns within the working area. The system does not allow an empty space between widgets\nin a row or a column within a working area. You add widgets one at a time from le\ue000 to right or from top to bottom.\nYou can select a layout option that has two working areas and leave empty space between the working areas (see\nthe following screenshot).",
+    "tags": {
+      "forms": [
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 315,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p13_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 13,
+    "section_type": "text_chunk",
+    "section_id": "p13_c001",
+    "image_path": "images/page13.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 13\nFigure: A dashboard with empty space between working areas\nA row height is defined by the tallest widget in the row. By making some widgets shorter than the tallest widget in\na row, you can visually separate the shorter widgets in the row from the widgets in the next row (see the widgets on\nthe le\ue000 of the following screenshot).\nFigure: A dashboard with two rows\nAlternatively, to visually separate groups of widgets, you can use specific widgets, such as header widgets and\nembedded page widgets.\nA header widget can help you to group the widgets by theme. This also gives you the ability to simplify chart titles.\nAn embedded page widget can be used to display a white rectangle or square of the needed size. You can place\nit between other widgets in a row or between rows to add more white space to your dashboard. To create such\na widget, you type about:blank instead of a URL in the widget settings and the system displays it as a white\nrectangle or square (see the following screenshot).",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 316,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p14_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 14,
+    "section_type": "text_chunk",
+    "section_id": "p14_c001",
+    "image_path": "images/page14.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 14\nFigure: An embedded page widget to add space\nDashboard Design: User Operations with Data\nAcumatica ERP dashboards support various types of widgets, which have drill-down capabilities. By using the drill-\ndown capabilities, a user can navigate directly from a dashboard widget to the source of the data they are viewing,\nso that the user can learn more about and take actions based on the data that is highlighted on the dashboard.\nFor better dashboard design, you should understand how users can work with data on a dashboard.\nDrilling Down to the Source Data\nTo drill down to the source data of a widget, a user simply clicks the widget or the widget title (see the following\nscreenshot), and the system opens in a new browser tab the generic inquiry form that is specified as the source of\nthe widget data.\nFigure: Clicking of the widget title to drill down\nIn a chart widget, the user can click a particular data point in the chart area, and the system opens the generic\ninquiry form with its results filtered according to the selected value. For example, suppose that in a doughnut\nchart that shows the number of opportunities generated by a source, the user clicks the sector that represents the",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 317,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p15_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 15,
+    "section_type": "text_chunk",
+    "section_id": "p15_c001",
+    "image_path": "images/page15.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 15\nnumber of opportunities generated by campaigns. In a new tab, the system opens the list of opportunities that\nhave a campaign specified as the source.\nUpdating Information on Widgets\nA user can refresh the information on a particular widget by clicking Update, which is displayed on the widget title\nbar when the user hovers over the widget.\nZooming In on a Chart Region\nTo zoom in on a chart region, a user drags the pointer to create a selection around the area where the user wants\nto zoom in (see the following screenshot). The system zooms in on the selected area when the user releases the\npointer.\nFigure: A chart with an area selected for zooming in\nTo zoom out, the user clicks Update right of the chart title.\nViewing Details on a Chart\nIn a chart widget, a user can point to the desired legend item to view its details on the chart (see the following\nscreenshot). If the legend of the chart is visible, the system duplicates the values of the selected point in the legend.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 318,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p16_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 16,
+    "section_type": "text_chunk",
+    "section_id": "p16_c001",
+    "image_path": "images/page16.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 16\nFigure: A chart with the details displayed for a data point\nViewing the Legend of a Chart\nIf a chart legend has multiple entries or if entry names are quite long, the user will find the layout less distracting\nif you display the legend on demand in a pop-up box. If the legend is configured in this way for a chart, the system\ndisplays a legend icon in the right bottom corner of the chart (see the following screenshot).\nFigure: A chart with the legend icon shown\nThe user can click the icon to view the legend.\nExcluding Data from a Chart\nIn the legend, a user can click a legend item to exclude the associated series from the chart (see the following\nscreenshot).",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 319,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p17_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 17,
+    "section_type": "text_chunk",
+    "section_id": "p17_c001",
+    "image_path": "images/page17.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 17\nFigure: A chart with data excluded\nFor the doughnut and funnel widget types, the system proportionally distributes the share of the excluded sector\namong the remaining sectors on the chart.\nSorting Data in a Table\nIn a table widget, a user can sort data by a column in ascending or descending order. The user clicks the header of a\ncolumn by which data in the table should be sorted. The system displays the sorting direction in the column header\n(see the following screenshot). To change the direction, the user clicks the header again. When the user clicks the\nheader for the third time, the system clears the applied sorting and does not display the sorting direction.\nFigure: Table data sorted by the Open Order Total column in ascending order\nDashboard Design: To Modify a Dashboard\nThe following activity will show you how to modify your copy of an Acumatica ERP dashboard.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 320,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p18_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 18,
+    "section_type": "text_chunk",
+    "section_id": "p18_c001",
+    "image_path": "images/page18.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 18\nStory\nSuppose that you are David Chubb, a new sales manager of the SweetLife Fruits & Jams company. You have been\nusing a predefined dashboard to stay informed about customers with overdue accounts. You need to create your\nown copy of the dashboard in order to monitor the balances of these customers.\nProcess Overview\nIn this activity, you will do the following:\n1. Switch on design mode for the predefined dashboard\n2. Remove widgets from the dashboard\n3. Rearrange widgets on the dashboard\n4. Resize widgets\n5. Specify the dashboard as your Acumatica ERP home page\nSystem Preparation\nBefore you start modifying the dashboard, launch the Acumatica ERP website, and sign in to a tenant with the U100\ndataset preloaded as sales manager David Chubb with the chubb username and the 123 password.\nStep 1: Switching On Design Mode for the Predefined Dashboard\nSuppose that you need to save a copy of the dashboard and switch to design mode so that you can modify it for\nyour personal use.\nTo switch on design mode for the dashboard, do the following:\n1. Open the Dashboards workspace.\nIf the Dashboards menu item is not on the main menu, click the More Items menu item and\nthen click the Dashboards tile.\n2. In the Dashboard: Finance category, click Controller. The Controller dashboard opens.\n3. On the dashboard title bar, click the Create User Copy button. The system creates your personal copy of the\ndashboard. Notice that the Design button has appeared on the dashboard title bar.\nYou can see the Create User Copy button on the dashboard title bar before you switch on\ndesign mode for a dashboard for the first time. Once you have created your copy of the\ndashboard, the Design button is displayed on the dashboard title bar.\n4. Click the Design button. You have switched the dashboard to design mode.\n5. Click the Design button again to switch to view mode for the dashboard.\nStep 2: Removing Widgets from the Dashboard\nSuppose that in your copy of the Controller dashboard, you do not need the following widgets, which are related to\ncash: Cash Position, Cash On-Hand, Cash Required: 30 Days, Cash Required: 60 Days, Cash Expected 30 days, and all\nblank widgets.\nTo remove these widgets from the dashboard, do the following:",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 321,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p19_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 19,
+    "section_type": "text_chunk",
+    "section_id": "p19_c001",
+    "image_path": "images/page19.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 19\n1. While you are still viewing the Controller dashboard in view mode, click the Design button on the dashboard\ntitle bar to switch on design mode for the dashboard.\n2. On the widget title bar of the Cash Position widget, click the Remove button (\n) which is located at the right\nof the dashboard.\n3. In the warning dialog box that opens click OK. The widget is removed from the dashboard, and the\nremaining widgets are automatically rearranged.\n4. By performing similar actions to those in the previous two instructions, delete the following widgets from\nyour dashboard:\n\u2022\nCash On-Hand\n\u2022\nCash Required: 30 Days\n\u2022\nCash Required: 60 Days\n\u2022\nCash Expected 30 days\n\u2022\nAny blank widgets (those in which you see only a white background and the widget toolbar)\nYou can see the modified dashboard in the following screenshot.\nFigure: The dashboard without the cash-related widgets\n5. On the dashboard title bar, click the Design button to switch to view mode for the dashboard.\nStep 3: Rearranging Widgets on the Dashboard\nSuppose that you want to move the Top Overdue Balances widget to the lower-le\ue000 part of the dashboard. Also,\nyou want to move the Overdue Payments and Overdue 90+ widgets to the right working area, place the Overdue\nCustomers widget next to the Customer Details one, and place Vendor Payment Hold next to the On Credit Hold.\nTo rearrange the widgets on the dashboard, do the following:\n1. While you are still viewing the Controller dashboard in view mode, click the Design button on the dashboard\ntitle bar to switch on design mode.\n2. Drag the Top Overdue Balances widget by its title bar to the lower-le\ue000 part of the dashboard.\n3. Drag the Overdue Payments and Overdue 90+ widgets, one by one, by their title bar to the right working area.\n4. Drag the Overdue Customers widget by its title bar to the widget placeholder next to the Customer Details\nwidget.\n5. Drag the Vendor Payment Hold widget by its title bar to the widget placeholder next to the On Credit Hold\nwidget.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 322,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p20_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 20,
+    "section_type": "text_chunk",
+    "section_id": "p20_c001",
+    "image_path": "images/page20.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 20\nYou can see the modified dashboard in the following screenshot.\nFigure: The dashboard with the relocated widgets\nStep 4: Resizing Widgets\nSuppose that you want to resize widgets in the le\ue000 working area. You want to make the Top Overdue Balances\nwidget larger and make the following widgets wider: Customer Details and On Credit Hold.\nTo resize these widgets, do the following:\n1. While you are still viewing the Controller dashboard in design mode, in the le\ue000 working area, drag the\nbottom right corner of the Top Overdue Balances widget to the right and down to make it taller and wider.\n2. Drag the right border of the Customer Details to the right until it takes up half of the le\ue000 working area.\n3. Drag the right border of the On Credit Hold to the right until it takes up half of the le\ue000 working area.\nYou can see the modified dashboard in the following screenshot.\nThe width of the widgets and number of available widget placeholders depend on the size\nof your browser window. You may need to resize other widgets as well to get the same\narrangement.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 323,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p21_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 21,
+    "section_type": "text_chunk",
+    "section_id": "p21_c001",
+    "image_path": "images/page21.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 21\nFigure: The dashboard with the resized widgets\n4. On the dashboard title bar, click the Design button to switch to view mode for the dashboard.\nStep 5: Defining the Dashboard as Your Acumatica ERP Home Page\nTo make your modified Controller dashboard your home page in Acumatica ERP, do the following:\n1. In the top pane, click the User menu button (where your username appears), and on the User menu, click\nMy Profile. The User Profile (SM203010) form opens.\n2. On the General Info tab (Personal Settings section), in the Home Page box, click the magnifier button to\nopen the lookup table.\n3. In the Search box of the lookup table, type controller to search for the Controller dashboard.\n4. In the Title column, double-click the Controller entry, which has DB000015 in the Screen ID column. This\nselects the value, closes the lookup table, and fills in the Home Page box.\n5. On the form toolbar, click Save to save your changes.\n6. In the upper le\ue000 corner of the Acumatica ERP screen, click the Home button to make sure that the Controller\ndashboard, which you have defined as your home page, opens.\nLesson 1.2: Administering Dashboards\nThis lesson explains how you can create a dashboard from scratch and assign access rights to it.\nDashboards: General Information\nIn Acumatica ERP, a dashboard is a collection of widgets\u2014small components you configure to display a particular\ntype of information\u2014that are displayed on a single form and are designed to give you needed information at a\nglance.\nWhen you create a dashboard, which is also an Acumatica ERP form, you can click buttons to perform dashboard-\nspecific actions. You can share a dashboard with other users as you can other forms. That is, you can place any\ndashboard in a workspace by adding it to the Acumatica ERP site map and specifying di\ufb00erent access levels to the\ndashboard form for the user roles available in the system.",
+    "tags": {
+      "forms": [
+        "DB000015",
+        "SM203010"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM203010"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 324,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p22_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 22,
+    "section_type": "text_chunk",
+    "section_id": "p22_c001",
+    "image_path": "images/page22.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 22\nLearning Objectives\nIn this lesson, you will learn how to do the following:\n\u2022\nCreate a dashboard form\n\u2022\nManage access rights for the viewing and configuration of dashboard forms\nApplicable Scenario\nYou administer dashboard forms if you are responsible for system administration or for the customization of\nAcumatica ERP in your company.\nCreation of a New Dashboard Form\nOn the Dashboards (SM208600) form, you add the new dashboard form and enter its internal identifier in the Name\nbox.\nIn the Owner Role box, you select a user role. All users that have the selected role assigned are the owners of the\ndashboard. That is, the Design button on the dashboard title bar is available to these users. If they click the button,\nthe dashboard switches to design mode. In this mode, an owner of the dashboard can populate the dashboard with\nwidgets, modify the dashboard layout, and edit widget properties.\nPublication of a Dashboard\nYou publish a dashboard to make it available to users. To do this, on the form toolbar of the Dashboards (SM208600)\nform, you click the Publish to the UI button. The system opens the Publish to the UI dialog box.\nIn this dialog box, you make the needed changes to the default values in the Site Map Title (in which the system\ninserts the value you have specified as the name), Workspace, and Category boxes.\nAlso, the system assigns the dashboard an automatically generated ID in a format similar to the format of screen\nIDs of other dashboards, with DB as the two-letter module code: DB000000. When the ID is assigned, the system\nadds the dashboard to the site map on the Site Map (SM200520) form and shows its ID in the Screen ID box. This\nmeans that the dashboard is the dashboard is published on the Acumatica ERP site.\nIf you publish a customization project that has a dashboard with the same ID as a dashboard that\nalready exists in the system, the existing dashboard will be replaced with the custom one. To avoid\nthis issue, add the first custom dashboard with some ID whose number you do not expect to reach\n(such as DB1000000). You then assign subsequent custom dashboard IDs with progressively lower\nnumerical values (such as DB999999, DB999998, and so on).\nIn the Access Rights section of the dialog box, you select one of the following option buttons to indicate which\naccess rights should be specified for the newly added dashboard:\n\u2022\nSet to Granted for All Roles: The system will set the access rights for this dashboard to Granted for all user\nroles in the system.\n\u2022\nSet to Revoked for All Roles: The system will set the access rights for this dashboard to Revoked for all user\nroles in the system.\n\u2022\nCopy Access Rights from Screen (default): The system will copy the set of the access rights from the\nspecified dashboard.\nA\ue000er you specify the needed settings and click Publish in the dialog box, the dashboard is published. That is, it is\nassigned a screen identifier and becomes available in the specified workspace. Also, the system adds the new site\nmap node for this form to the site map and applies the appropriate access rights to this site map node.",
+    "tags": {
+      "forms": [
+        "DB000000",
+        "DB999998",
+        "DB999999",
+        "SM200520",
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM200520",
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 325,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p23_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 23,
+    "section_type": "text_chunk",
+    "section_id": "p23_c001",
+    "image_path": "images/page23.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 23\nA\ue000er the dashboard has been published, you can adjust access to the dashboard on the Visible To tab of the\nDashboards form.\nConfiguration of Dashboard Visibility\nOn the Visible To tab of the Dashboards (SM208600) form, you specify the access levels for the roles defined in the\nsystem. To give the access, you select the Granted access level for the roles for which the dashboard should be\navailable. Users that do not have a role for which the Granted access level is specified will not be able to view the\ndashboard.\nAbility to Personalize a Dashboard\nYou can also control whether these users who can view a dashboard can personalize the dashboard\u2014that is,\ncreate a personal copy of the dashboard and configure and modify the copied widgets. To provide users with this\ncapability, you need to select the Allow Users to Personalize check box on the Dashboards (SM208600) form for\nthe particular dashboard. With this check box selected, the Create User Copy button will be displayed on the title\nbar of the dashboard. A user clicks the button to create a personal copy of the dashboard.\nIf a user has created a personal copy of the dashboard and made modifications to it, this user can reset the copy to\nthe original dashboard by clicking the Reset to Default button on the title bar of the dashboard.\nA user who manages a particular dashboard can reset all user copies of the dashboard at once by clicking Reset All\nUser Copies on the More menu of the Dashboards form.\nAbility to Deactivate Widgets\nIn Acumatica ERP, you can deactivate a widget that consumes a lot of memory, malfunctions, or currently is not\nneeded. On the Widgets tab of the Dashboards (SM208600) form, the list of widgets of the selected dashboard\nis shown. By default, the Active check box is selected for each widget, meaning that the widget is shown on the\ndashboard. You can deactivate a widget on the dashboard by clearing the Active check box for the widget. If you\nclear the check box, the widget is no longer shown on the dashboard in either view mode or design mode.\nA user with the dashboard owner role or a user who has created a personalized copy of a dashboard\ncan drag a widget to the place of an inactive widget. If the inactive widget is activated again, it may\nnot reappear on the dashboard. In this case, you may need to know the hidden widget's coordinates\nso that you can quickly locate it and rearrange the widgets on the dashboard. Widget coordinates\nare shown in the Row and Column table columns on the Widgets tab of the Dashboards form for the\ndashboard. For details, see Dashboards: Widget Location Within a Working Area.\nAbility to Delete Widgets\nOn the Widgets tab of the Dashboards (SM208600) form, you can delete a widget from a dashboard by selecting the\nrow of the needed widget and clicking the Delete Row button on the form toolbar.\nExposure to the Acumatica Mobile App\nIf a dashboard should be displayed in the Acumatica mobile app connected to your Acumatica ERP site, you select\nthe Expose to the Mobile Application check box on the Dashboards (SM208600) form for the particular dashboard.\nExport of a Dashboard\nOn the Dashboards (SM208600) form, you can prepare a dashboard as an XML file to export it to another tenant\nof your Acumatica ERP site. You can do this by opening the needed dashboard and clicking the Export as XML\ncommand on the Clipboard menu of the form toolbar. For details, see To Export Data to XML. Then in the other",
+    "tags": {
+      "forms": [
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 326,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p24_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 24,
+    "section_type": "text_chunk",
+    "section_id": "p24_c001",
+    "image_path": "images/page24.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 24\ntenant, you open the Dashboards form and click the Import from XML command on the Clipboard menu of the\nform toolbar, as described in To Import Data from XML.\nIf a dashboard contains a widget that is a wiki page or a widget based on a generic inquiry (such as a table widget\nor a KPI widget), you need to make sure that this wiki page or generic inquiry exists in the tenant to which you\nare exporting the dashboard. If it does not, you need first to create the wiki page or generic inquiry in the tenant.\nYou can also import the wiki page or generic inquiry from the tenant where it is stored along with the dashboard\nand then export the wiki page or generic inquiry to the same tenant where you are exporting the dashboard. A\ue000er\nimporting a dashboard, you need to reselect the wiki page or generic inquiry in the imported dashboard on the\nDashboards form. For details, see Widgets: Table Widgets, Specific Widgets: Wiki Page Widgets, and Widgets: KPI\nWidgets.\nDashboards: Access Rights\nIn Acumatica ERP, you can allow users to manage dashboards, to view a dashboard, and to modify widgets on a\ndashboard. In this topic, you will read about access rights to dashboards.\nAccess Rights for Administering Dashboard Forms\nWhen you want to allow users to administer dashboards, you need to assign them a user role with full access rights\nto the Dashboards (SM208600) form. Users with such a role can do the following:\n\u2022\nAdd and remove dashboard forms\n\u2022\nSelect the user role whose users are allowed to design a particular dashboard\n\u2022\nSpecify the levels of access rights that each user role has to a specific dashboard\n\u2022\nChange the location of a particular dashboard in the site map\n\u2022\nAllow other users to personalize their copy of a specific dashboard\nIf you want a user who can administer a dashboard to also be able to design the dashboard (that is, make changes\nthat are visible to all users who can view the dashboard), you should assign the dashboard owner role to this user.\nYou can't delete system dashboards.\nAccess Rights for Designing Dashboards\nA dashboard can be designed by only a user with the role specified as the owner role of the particular dashboard\nin the Owner Role box on the Dashboards (SM208600) form. A user with a dashboard owner role can design the\ncontents of the dashboard from scratch or modify them: modify the dashboard layout, add and delete widgets,\narrange widgets, and modify widget properties.\nFor predefined dashboards and dashboards created in previous versions of Acumatica ERP, the\ndefault owner role is the predefined role DashboardDesigner.\nSuppose that your company has multiple departments and each department has a person or two people who\nare responsible for designing dashboards for their team. We recommend creating a separate user role for every\ndepartment and then specifying that role as the owner role for the department dashboards. For example, you\ncopy the predefined DashboardDesigner role and name it Sales_Dashboards, and you assign this role to a person\nfrom the sales department who is responsible for dashboard design. Then every time a manager from the sales\ndepartment requests a new dashboard, you select this role in the Owner Role box on the Dashboards form for the\ndashboard.",
+    "tags": {
+      "forms": [
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 327,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p25_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 25,
+    "section_type": "text_chunk",
+    "section_id": "p25_c001",
+    "image_path": "images/page25.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 25\nAccess Rights for Viewing Widget Data\nThe set of widgets that are displayed to the users who can view the dashboard depends on their access rights to the\nforms from which the widgets' source data is taken. If access to a form underlying a widget is denied for particular\nusers, they see a placeholder with a grey lock icon instead of this widget on the dashboard. For example, suppose\nthat you have added the following widgets to the dashboard you have defined as the home page in the system:\n\u2022\nBills to Approve, which uses data from the Approve Bills for Payment (AP502000) form\n\u2022\nAccounts Receivable Balances, which is based on data from the Vendor Summary (AR401000) form\nWhen users who do not have access to the Approve Bills for Payment form sign in to the system, they can view only\nthe Accounts Receivable Balances widget; they cannot view the Bills to Approve widget on the dashboard. If the\nparticular dashboard can be personalized, any of these users can delete the hidden widget or change its properties\nin their personal copy of the dashboard.\nDashboards: Widget Location Within a Working Area\nYou can use widget coordinates to locate a widget on a dashboard.\nWidget Coordinates\nWidgets are organized in rows and columns (or both) within a working area. A widget's coordinates represent its\nexact location: the number of its row and the number of its column. For example, the widget in the top le\ue000 corner\nhas a location of 0, 0: the 0 row and the 0 column.\nWidget coordinates are shown in the Row and Column table columns on the Widgets tab of the Dashboards\n(SM208600) form for a dashboard (see the following screenshot).\nFigure: The widget coordinates on the Widgets tab\nSuppose that a dashboard has one working area and six widgets, three in the first row and three in the second row\n(see the following screenshot).",
+    "tags": {
+      "forms": [
+        "AP502000",
+        "AR401000",
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "AP502000",
+        "AR401000",
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 328,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p26_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 26,
+    "section_type": "text_chunk",
+    "section_id": "p26_c001",
+    "image_path": "images/page26.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 26\nFigure: A dashboard with one working area and six widgets\nThe widgets in the first row have the following coordinates:\n\u2022\nWidget 1: 0, 0 (row 0 and column 0)\n\u2022\nWidget 2: 0, 1 (row 0 and column 1)\n\u2022\nWidget 3: 0, 2 (row 0 and column 2)\nThe widgets in the second row have the following coordinates:\n\u2022\nWidget 4: 1, 0 (row 1 and column 0)\n\u2022\nWidget 5: 1, 1 (row 1 and column 1)\n\u2022\nWidget 6: 1, 2 (row 1 and column 2)\nIf a dashboard layout has two independent working areas, the location of a widget is defined independently in each\nof the two working areas. Suppose that a dashboard has two working areas and eight widgets, four widgets in each\nworking area. Each working area has two rows, and each row has two widgets (see the following screenshot).\nFigure: A dashboard with two working areas and eight widgets\nThe widgets in the first row of each working area have the following coordinates:",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 329,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p27_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 27,
+    "section_type": "text_chunk",
+    "section_id": "p27_c001",
+    "image_path": "images/page27.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 27\n\u2022\nWidgets 1 and 5: 0, 0\n\u2022\nWidgets 2 and 6: 0, 1\nThe widgets in the second row of each working area have the following coordinates:\n\u2022\nWidgets 3 and 7: 1, 0\n\u2022\nWidgets 4 and 8: 1, 1\nFinding of Deactivated Widgets\nA widget that has the Active check box cleared on the Widgets tab of the Dashboards (SM208600) form is not shown\non the dashboard in either view mode or design mode. A user with the dashboard owner role or a user that has\ncreated a personalized copy of the dashboard can drag another widget into the location of the inactive widget.\nIf you then select the Active check box for this inactive widget, it may remain hidden on the dashboard. You can\nquickly locate the hidden widget by using its coordinates in the Row and Column table columns on the Widgets\ntab.\nIf you do not use a widget anymore, you can remove it from the selected dashboard. To do this, click the row with\nthis widget, and then click Delete Row on the table toolbar.\nDashboards: To Add a Dashboard Form\nThe following activity will show you how to create a dashboard and share it with other users.\nStory\nSuppose that you are Kimberly Gibbs, a technical specialist in your company who is working on simple\ncustomizations. A sales manager of your company has requested a dashboard named Sales Mgr Dashboard. Every\nsales manager would like to have the capability to create a personal copy of the dashboard and populate it with\nwidgets on their own. The dashboard should be visible to sales managers only and made available through a link in\nthe Opportunities workspace under the Dashboards category.\nProcess Overview\nIn this activity, you will do the following:\n1. Create a record for the dashboard on the Dashboards (SM208600) form and specify the requested settings.\nYou will specify your role (Administrator) as the owner role of this dashboard so that you can design the\ndashboard later if this is requested.\n2. Review how the access rights assigned to the dashboard are working. You will try to view the created\ndashboard as a technical specialist (with the Administrator role) and then as a sales manager (with the Sales\nManager role).\n3. Change access rights to the dashboard so that users with the Administrator role can open the dashboard in\norder to begin adding widgets to it.\nSystem Preparation\nLaunch the Acumatica ERP website, and sign in to a tenant with the U100 dataset preloaded as system\nadministrator Kimberly Gibbs. You should sign in by using the gibbs username and the 123 password.\nThe gibbs user is assigned the Administrator role, which has su\ufb00icient access rights to manage the\nsystem configuration and to modify generic inquiries, advanced filters, pivot tables, and dashboards.",
+    "tags": {
+      "forms": [
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 330,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p28_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 28,
+    "section_type": "text_chunk",
+    "section_id": "p28_c001",
+    "image_path": "images/page28.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 28\nStep 1: Creating a Dashboard\nTo create the dashboard that the sales managers need, do the following:\n1. Open the Dashboards (SM208600) form.\n2. In the Summary area, in the Name box, type the name for the dashboard: SalesMgrDashboard.\n3. In the Owner Role box, select Administrator.\n4. Make sure that the Allow Users to Personalize check box is selected.\n5. On the form toolbar, click Save.\n6. On the form toolbar, click Publish to the UI. In the dialog box that opens, do the following:\na. In the Site Map Title box, change the system-specified value, which was copied from the Name box, to\nSales Mgr Dashboard.\nb. In the Workspace box, select Opportunities.\nc. In the Category box, leave the default value, Dashboards.\nd. In the Screen ID, leave the automatically assigned identifier.\ne. In the Access Rights section, select the Set to Revoked for All Roles option button.\nf.\nClick Publish to publish the dashboard and close the dialog box.\n7. On the Visible To tab, do the following:\na. Locate the row with Sales Manager in the Role column.\nYou can use the search box in the le\ue000 corner of the table footer.\nb. In the Access Rights column of this row, select Granted to assign this level of access rights to the role.\n8. On the form toolbar, click Save.\nYou have created an empty dashboard, which will later be designed and populated with widgets. Because a\nworkspace and category have been specified, a user with the Sales Manager role can access the dashboard through\nthe workspace.\nStep 2: Accessing the Dashboard\nTo review how the access rights you have specified for the dashboard are working, do the following:\n1. While you are still signed in as gibbs (to which the Administrator role is assigned), navigate to the\nOpportunities workspace.\nIf the Opportunities menu item is not on the main menu, click the More Items menu item and\nthen click the Opportunities tile.\n2. On the workspace footer, click the Show All button to expand the workspace menu, and look for the Sales\nMgr Dashboard link under the Dashboards category.\nThe system does not display a link to the dashboard you have created because you have limited the access\nto the dashboard to only those who have the Sales Manager role. The Administrator role does not have\naccess to the dashboard.",
+    "tags": {
+      "forms": [
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 331,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p29_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 29,
+    "section_type": "text_chunk",
+    "section_id": "p29_c001",
+    "image_path": "images/page29.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 29\nIn Step 1, you specified the Administrator role as the Owner Role of the dashboard, indicating\nthat a user with this role assigned can design the dashboard and edit its settings. This setting\ndoes not control, however, whether the Administrator role can access the dashboard. The\nrights of all roles to the dashboard are specified on the Visible To tab of the Dashboards\n(SM208600) form.\n3. Sign out, and then sign in by using the chubb username and the 123 password. These are the credentials of\nDavid Chubb, whose user account has the Sales Manager role.\n4. Navigate to the Opportunities workspace, and click the Sales Mgr Dashboard link.\nThe system opens the dashboard, indicating that users with the Sales Manager role can access the\ndashboard. On the dashboard title toolbar, notice that the Create User Copy button is available (as shown\nin the following screenshot). This illustrates that users with the Sales Manager role can create a personal\ncopy of the dashboard.\nFigure: Sales Mgr Dashboard viewed by a sales manager\nStep 3: Changing the Assess Rights to the Dashboard\nNow you need to change the access rights of the dashboard so that users with the Administrator role can open the\ndashboard in order to begin adding widgets. To change the access rights to the dashboard, do the following:\n1. Sign out, and sign in by using the gibbs username and the 123 password. These are the credentials of the\ntechnical specialist with the Administrator role (which you used earlier).\n2. Open the Dashboards (SM208600) form.\n3. In the Summary area, in the Name box, select SalesMgrDashboard.\n4. On the Visible To tab, do the following:\na. Locate the row with Administrator selected in the Role column.\nb. In the Access Rights column of this row, select Granted to assign this level of access rights to the role.\n5. On the form toolbar, click Save.\n6. Open the Opportunities workspace, and click the Sales Mgr Dashboard link.\nIf the dashboard link is not displayed in the workspace right away, refresh your browser\nwindow.\nThe system opens the dashboard, indicating that you have the needed access rights to view the dashboard.\nOn the dashboard title toolbar, notice that the Design button is displayed (as shown in the following\nscreenshot). This means that as an owner of the dashboard, you can populate it with widgets.",
+    "tags": {
+      "forms": [
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 332,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p30_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 30,
+    "section_type": "text_chunk",
+    "section_id": "p30_c001",
+    "image_path": "images/page30.jpg",
+    "text_content": "Part 1: Designing Dashboard Contents | 30\nFigure: Sales Mgr Dashboard viewed by the owner of the dashboard",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 333,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p31_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 31,
+    "section_type": "text_chunk",
+    "section_id": "p31_c001",
+    "image_path": "images/page31.jpg",
+    "text_content": "Part 2: Configuring Widgets | 31\nPart 2: Configuring Widgets\nThe lessons of this part explain how you can add various types of widgets to a dashboard and filter widget data.\nLesson 2.1: Specifying General Widget Settings\nThis lesson explains how you can configure widgets and change their caching settings.\nWidget Settings: General Information\nAcumatica ERP dashboards support various types of widgets, which have drill-down capabilities. By using the drill-\ndown capabilities, you can navigate directly from a dashboard widget to the source of the data you are viewing, so\nthat you can learn more about the data that is highlighted on the dashboard and take actions on it. This data might\nbe, for example, key customers\u2019 details for the past 12 months or the number of projects that will be closed within\n30 days.\nLearning Objectives\nIn this lesson, you will learn how to do the following:\n\u2022\nRecognize the types of widgets and their main features\n\u2022\nConfigure di\ufb00erent types of widgets\n\u2022\nFilter the data that is used for a widget\nApplicable Scenario\nYou need to configure widgets when you are designing a new dashboard or modifying an existing one that requires\nchanged or added widgets. Every widget type has a di\ufb00erent appearance and serves a specific purpose.\nWidget Type Selection\nWhen you click Add a New Widget in a widget placeholder, the system opens the Add Widget dialog box. You select\na widget type and click Next (see the following screenshot). The system opens the Widget Properties dialog box,\nwhose elements you use to configure the settings of the widget.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 334,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p32_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 32,
+    "section_type": "text_chunk",
+    "section_id": "p32_c001",
+    "image_path": "images/page32.jpg",
+    "text_content": "Part 2: Configuring Widgets | 32\nFigure: The Add Widget dialog box with the Data Table widget type selected\nCaption\nFor all widget types, the Caption box, in which you specify the widget title, appears in the Widget Properties\ndialog box. The system displays the title in all capital letters in the widget, regardless of the capitalization you used\nwhile typing the title.\nCaching of Dashboard Widgets\nWhen a dashboard with many widgets is refreshed or opened, it may take a lot of time to load data for all widgets.\nDashboard widgets can display information that is updated very frequently (such as every five minutes) or very\nrarely (such as once a week). When you design the dashboard, you can manage the interval at which the system\nrefreshes data for each widget.\nYou can specify the interval at which the system refreshes data (see the following screenshot) or you can switch o\ufb00\ncaching by using the Refresh Data box of the Widget Properties dialog box for any type of widget.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 335,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p33_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 33,
+    "section_type": "text_chunk",
+    "section_id": "p33_c001",
+    "image_path": "images/page33.jpg",
+    "text_content": "Part 2: Configuring Widgets | 33\nFigure: Caching settings of a widget\nA\ue000er you specify the refresh interval for a widget, the system loads the widget data from the database and caches\nthe data when a user opens the dashboard with the widget for the first time. When the dashboard is reopened or\nthe dashboard page is refreshed by the user, the system displays the data in the widget from the cache (that is, it\ndoes not load the data from the database) if the data was updated a shorter time ago than the interval specified in\nthe Refresh Data box.\nTo switch o\ufb00 caching for a particular widget and make the system update the widget's data each time a dashboard\nis opened or refreshed, the dashboard designer should select On Page Reload in the Refresh Data box for the\nwidget.\nA user can view information about how much time has passed since the last update of a widget\u2019s data in the pop-\nup toolbar that appears when the user points to the widget (as shown in the following screenshot). The user can\nmanually update the widget data by clicking Update on this toolbar.\nFigure: The elapsed time since the last update of the widget's data",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 336,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p34_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 34,
+    "section_type": "text_chunk",
+    "section_id": "p34_c001",
+    "image_path": "images/page34.jpg",
+    "text_content": "Part 2: Configuring Widgets | 34\nWidget Settings: To Change a Widget's Title and Caching Settings\nThe following activity will show you how to change a widget's title (caption) and its caching settings.\nStory\nSuppose that you are David Chubb, a sales manager of the SweetLife Fruits & Jams company. You have created\nyour own copy of the predefined Controller dashboard in order to monitor the balances of customers. Also, you\nhave defined this dashboard as your home page.\nYou would like to change the predefined title for the Overdue Customers widget to Overdue Customer Accounts. Also,\nyou would like the list of the top overdue balances to be updated every day, instead of using the default setting\n(which is On Page Reload).\nProcess Overview\nIn this activity, you will do the following:\n1. Switch on design mode for the dashboard\n2. Change the caption of a widget\n3. Change the caching settings of a widget\nSystem Preparation\nBefore you start adding the widgets, launch the Acumatica ERP website, and sign in to a tenant with the U100\ndataset preloaded as sales manager David Chubb with the chubb username and the 123 password.\nStep: Changing the Widget's Title and Caching Settings\nTo modify the settings of the widget, do the following:\n1. Open the Controller dashboard.\nThe system displays the dashboard a\ue000er you sign in, because you defined it as your home\npage. If you have opened some other form a\ue000er signing in, click Home in the top le\ue000 corner of\nthe screen (usually a company logo is displayed there).\n2. On the dashboard title bar, click the Design button.\n3. On the title bar of the Overdue Customers widget, click Edit (the pencil icon).\n4. In the Widget Properties dialog box, in the Caption box, change the title of the widget to overdue\ncustomer accounts.\n5. Click Finish to save your changes and close the dialog box.\n6. On the title bar of the Top Overdue Balances widget, which is located at the bottom of the Controller\ndashboard, click Edit.\n7. In the Widget Properties dialog box, in the Refresh Data box, select the Every Day option.\n8. Click Finish to save your changes and close the dialog box.\n9. On the dashboard title bar, click the Design button.\n10.Wait for a minute and refresh the browser page. Point to each widget with a mouse. Notice that the system\nhas updated the information for all the widgets on the dashboard, except for the Top Overdue Balances table",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 337,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p35_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 35,
+    "section_type": "text_chunk",
+    "section_id": "p35_c001",
+    "image_path": "images/page35.jpg",
+    "text_content": "Part 2: Configuring Widgets | 35\nwidget and the Customer Details link widget. The Top Overdue Balances table widget was updated a minute\nago (see the following screenshot).\nFigure: The information about the widget's last data update\nYou have modified the title and caching settings of a widget.\nLesson 2.2: Configuring Header, Table, Link, and Embedded Page Widgets\nThis lesson explains how you can add a header, table, link, and embedded page widgets to the dashboard and\nconfigure their settings.\nWidgets: Header Widgets\nWe recommend that you place widgets on a dashboard in ways that help users to grasp the information. During the\ndesign of a dashboard, you may want to organize widgets into sections and add a header to each section.\nApplicable Scenario\nYou use a header widget to group multiple widgets under a caption (that is, a header), so that users can find the\ninformation they need more quickly.\nHeader Widgets\nA header widget is a box with a fixed height, white background, and gray bottom border. For an example of header\nwidgets, see the CASH KPIS and OVERDUE KPIS header widgets in the following screenshot.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 338,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p36_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 36,
+    "section_type": "text_chunk",
+    "section_id": "p36_c001",
+    "image_path": "images/page36.jpg",
+    "text_content": "Part 2: Configuring Widgets | 36\nFigure: Widgets grouped in sections under two header widgets\nTo add a header widget, you select the Header widget type in the Add Widget dialog box, which opens when you\nclick Add a New Widget in a widget placeholder. In the Widget Properties dialog box, you enter the caption you\nwould like to use in the Caption box (see the following screenshot). The system displays it in all capital letters on\nthe dashboard.\nFigure: Properties of a header widget\nWidgets: Table Widgets\nYou can use tables as widgets on dashboards. Although tables are not as eye-catching as charts, they are o\ue000en the\nbest way to help the viewer grasp key ideas about the data. Acumatica ERP gives you the ability to add data tables\nand pivot tables to a dashboard as widgets.\nApplicable Scenario\nYou use a data table widget when you want to show multiple types (columns) of data for each data record (row). To\nshow summarized data of a more extensive table, you use a pivot table widget.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 339,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p37_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 37,
+    "section_type": "text_chunk",
+    "section_id": "p37_c001",
+    "image_path": "images/page37.jpg",
+    "text_content": "Part 2: Configuring Widgets | 37\nData Source for Table Widgets\nTable widgets show the data collected by a generic inquiry from the system database. You can use a predefined\ngeneric inquiry or develop one that suits your needs.\nAlso, you can compose a pivot table based on a generic inquiry on the Pivot Tables (SM208010) form and then use\nthe table as a source for a pivot table widget.\nData Table Widgets\nA table is an arrangement of numerical data in rows and columns. It is designed to show a set of related facts in a\ncompact yet comprehensive form. For an example of a data table widget, see the following screenshot.\nFigure: Data table widget\nTo add a data table widget, you select the Data Table widget type in the Add Widget dialog box, which opens when\nyou click Add a New Widget in a widget placeholder. You select the generic inquiry to use as a source in the Inquiry\nScreen box of the Widget Properties dialog box.\nBy clicking the Column Settings button, you open the standard Column Settings dialog box, where you can\nspecify which columns to show and in what order. You can select the columns for display from only the set of\ncolumns defined for the generic inquiry on the Generic Inquiry (SM208000) form.\nAlso, you can limit the number of records to show by selecting the Automatically Adjust Height check box and\nspecifying the number in the Record Limit box. In this case, you will not be able to adjust the widget height\nmanually. The system locks the widget height to accommodate the specified number of rows.\nThe following screenshot shows an example of the configuration settings of a table widget that lists customer\nrecords.",
+    "tags": {
+      "forms": [
+        "SM208000",
+        "SM208010"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208000",
+        "SM208010"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 340,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p38_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 38,
+    "section_type": "text_chunk",
+    "section_id": "p38_c001",
+    "image_path": "images/page38.jpg",
+    "text_content": "Part 2: Configuring Widgets | 38\nFigure: Properties of a table widget\nPivot Table Widgets\nA pivot table is an arrangement of numerical data in rows and columns. It is designed to show a set of data based\non a generic inquiry. The following screenshot shows an example of a pivot table widget.\nFigure: Pivot table widget\nTo add a pivot table widget, you select the Pivot Table widget type in the Add Widget dialog box, which opens\nwhen you click Add a New Widget in a widget placeholder. In the Widget Properties dialog box, you select the\ninquiry to use as a source in the Inquiry Screen box. Multiple pivot tables can be based on a single inquiry, so in\nthe Pivot Table box, you select the table to be displayed. You also specify the name of the pivot table widget in the\nCaption box.\nThe following screenshot shows an example of the configuration settings of a pivot table widget that summarizes\ncase information.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 341,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p39_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 39,
+    "section_type": "text_chunk",
+    "section_id": "p39_c001",
+    "image_path": "images/page39.jpg",
+    "text_content": "Part 2: Configuring Widgets | 39\nFigure: Properties of a pivot table widget\nWidgets: Link Widgets\nYou can add a link to an Acumatica ERP form as a widget on a dashboard. When a user clicks the link, the system\nopens the corresponding form in a new tab, in the same tab or in the pop-up window (depending on the setting you\nspecify).\nApplicable Scenarios\nYou use a link widget to give users the ability to easily navigate to the needed form right from the dashboard. You\nmay need this in either or both of the following cases:\n\u2022\nYou are using a dashboard as a starting point of your day-to-day operations and want to have your most-\nused forms on one page.\n\u2022\nYou track metrics that require immediate action, so you want to place a link to a form next to the widget that\ntracks the metrics. For example, if a dashboard has a scorecard that displays the current quantity of some\nstock item, you can place next to the scorecard a link to the Purchase Orders (PO301000) form.\nLink Widget\nA link widget is a rectangle with the name of a form in blue type on the white background. Optionally, it may display\nan icon of your choice in the upper le\ue000 corner and a form description you provide under the form name. The\nfollowing screenshot shows an example of a link widget.",
+    "tags": {
+      "forms": [
+        "PO301000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "PO301000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 342,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p40_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 40,
+    "section_type": "text_chunk",
+    "section_id": "p40_c001",
+    "image_path": "images/page40.jpg",
+    "text_content": "Part 2: Configuring Widgets | 40\nFigure: Link widget\nTo add a link widget, you select the Link widget type in the Add Widget dialog box, which opens when you click\nAdd a New Widget in a widget placeholder.\nIn the Widget Properties dialog box, you select the Acumatica ERP form in the Form box. In the Window Mode\nbox, you select New Tab, Same Tab, or Pop-Up Window to define how the system should open the form. You can use\nthe default form title or use the Caption setting to specify another title for the form link on a dashboard. To provide\nmore information about the form, you can also add a description for the form link in the Description box. In the\nIcon box, you can select any of the predefined icons to be displayed in the widget.\nAdding Parameters to a Link\nIf the employees of your organization frequently create an entity with a particular set of settings, you can make this\noperation faster by adding a link that includes the needed settings. For example, a link could be added that a user\ncan click to open the Vendor Details (AP402000) form with a particular vendor selected in the Vendor box.\nTo indicate the elements and values that need to be provided to the system when a user clicks the link, you specify\nfields and their values as URL parameters in the Widget Parameters dialog box for the link (which is opened when\nyou select a widget type in the Add Widget dialog box or click Edit on a title bar of an existing widget). You can add\nmultiple parameters separated by &.\nTo determine the URL parameters, for some boxes located in the Summary or Selection area of a form, you\ncan open the form, select the box value in the area, and look at the form URL. The system adds to the URL the\nparameter that corresponds to the box on a form with the selected value, as shown in the following screenshot.\nFigure: The correspondence of form boxes with URL parameters\nAlternatively, to determine the URL parameters for the boxes that the system does not add as URL parameters,\nyou can inspect each form element and find out what data field corresponds to the element. On the form that the\nlink will open, you press Ctrl+Alt and click the needed element. The Element Properties dialog box opens. In the\ndialog box, you copy the value specified in the Data Field box, as the following screenshot shows for the Vendor\nbox of the Bills and Adjustments (AP301000) form. In the URL shown in the screenshot, notice that the system has",
+    "tags": {
+      "forms": [
+        "AP301000",
+        "AP402000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "AP301000",
+        "AP402000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 343,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p41_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 41,
+    "section_type": "text_chunk",
+    "section_id": "p41_c001",
+    "image_path": "images/page41.jpg",
+    "text_content": "Part 2: Configuring Widgets | 41\nadded to the URL only the document type and its reference number, because these two values explicitly identify\nthe document, so adding other parameters to the URL is not needed.\nFigure: The inspection of a form element\nA\ue000er you find out which data fields correspond to all the elements whose settings you want to provide to the\nsystem when a user clicks the link, you add the parameters for the link widget. You open the Widget Properties\ndialog box for the needed link widget and specify the parameters in the Parameters box. The following screenshot\nshows an example of the configuration settings of a link widget.\nFigure: Properties of a link widget\nWidgets: Embedded Page Widgets\nYou can embed a page from an external website as a widget on a dashboard.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 344,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p42_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 42,
+    "section_type": "text_chunk",
+    "section_id": "p42_c001",
+    "image_path": "images/page42.jpg",
+    "text_content": "Part 2: Configuring Widgets | 42\nApplicable Scenario\nYou use an embedded page widget to display important information from external systems in Acumatica ERP to\nprovide dashboard users with consolidated information on one dashboard. An embedded page may display, for\nexample, a currency rate, a weather forecast, or a document from an external cloud storage.\nEmbedded Page Widgets\nAn embedded page widget is a widget that displays a webpage, as shown in the following screenshot.\nFigure: Embedded page widget\nTo add an embedded page widget, you select the Embedded Page widget type in the Add Widget dialog box,\nwhich opens when you click Add a New Widget in a widget placeholder. In the Widget Properties dialog box, you\nspecify the URL of the webpage to be displayed on the dashboard in the Source box and its caption in the Caption\nbox.\nThe following screenshot shows an example of the configuration settings of an embedded page widget.\nFigure: Properties of an embedded page widget\nWidgets: To Add Link, Table, and Embedded Page Widgets\nThe following activity will show you how to add and configure link, table, and embedded page widgets.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 345,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p43_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 43,
+    "section_type": "text_chunk",
+    "section_id": "p43_c001",
+    "image_path": "images/page43.jpg",
+    "text_content": "Part 2: Configuring Widgets | 43\nStory\nSuppose that you are Kimberly Gibbs, a technical specialist in your company who is working on simple\ncustomizations. A sales manager of your company had previously requested a dashboard named Sales Mgr\nDashboard, and you created the requested dashboard form. The sales manager has now requested that you add\nthe following widgets to the dashboard:\n\u2022\nA link to the Customer Details (AR402000) form\n\u2022\nA table that lists customer accounts and has the following columns: Customer ID, Customer Name,\nCountry, City, Terms, and Customer Status\n\u2022\nAn embedded page that displays the Acumatica website or the website of your company\nProcess Overview\nIn this activity, you will add and configure widgets of the following types: link, table, and embedded page.\nSystem Preparation\nLaunch the Acumatica ERP website, and sign in to a tenant with the U100 dataset preloaded as system\nadministrator Kimberly Gibbs. You should sign in by using the gibbs username and the 123 password.\nThe gibbs user is assigned the Administrator role, which has su\ufb00icient access rights to manage the\nsystem configuration and to modify generic inquiries, advanced filters, pivot tables, and dashboards.\nStep 1: Adding a Link Widget\nTo add a link widget, do the following:\n1. On the main menu, click the Opportunities menu item to open the Opportunities workspace, and click the\nSales Mgr Dashboard link.\nIf the Opportunities menu item is not on the main menu, click the More Items menu item and\nthen click the Opportunities tile.\n2. On the dashboard title bar, click Design.\n3. In the widget placeholder, click Add a new widget.\n4. In the Add Widget dialog box, select Link and click Next.\n5. In the Widget Properties dialog box, specify the following settings:\n\u2022\nIcon: account details\n\u2022\nForm: Customer Details (AR402000)\n\u2022\nWindow Mode: New Tab\n\u2022\nDescription: You use this form to track outstanding balances for a specific\ncustomer.\n6. Click Finish to save your changes and close the dialog box.\nStep 2: Adding a Table Widget\nTo add a table widget, do the following:",
+    "tags": {
+      "forms": [
+        "AR402000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "AR402000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 346,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p44_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 44,
+    "section_type": "text_chunk",
+    "section_id": "p44_c001",
+    "image_path": "images/page44.jpg",
+    "text_content": "Part 2: Configuring Widgets | 44\n1. While you are still in design mode of the Sales Mgr Dashboard dashboard, in the widget placeholder below\nthe link widget, click Add a new widget.\n2. In the Add Widget dialog box, select Data Table and click Next.\n3. In the Widget Properties dialog box, in the Inquiry Screen box, select Customers (AR3030PL).\n4. Click Column Settings.\n5. In the Column Settings dialog box, move the following columns from the Selected Columns list to the\nAvailable Columns list:\n\u2022\nCustomer Class\n\u2022\nCurrency ID\n\u2022\nCustomer Status\n\u2022\nState\n6. Click OK to save your changes and close the dialog box.\n7. In the Caption box, type customer accounts.\n8. Click Finish to save your changes and close the dialog box.\nStep 3: Adding an Embedded Page Widget\nTo add an embedded page widget, do the following:\n1. While you are still in design mode of the Sales Mgr Dashboard dashboard, in the widget placeholder next to\nthe link widget, click Add a new widget.\n2. In the Add Widget dialog box, which opens, select Embedded Page and click Next.\n3. In the Widget Properties dialog box, specify the following settings:\n\u2022\nSource: address of your company website or https://acumatica.com\n\u2022\nCaption: <company name> website or acumatica website\n4. Click Finish to save your changes and close the dialog box.\n5. Drag the bottom border of the widget to change its height until you are satisfied with the information\ndisplayed.\n6. On the dashboard title bar, click the Design button.\nYou have added widgets of the following types to the dashboard: link, table, and embedded page (see the following\nscreenshot).",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "AR3030PL"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 347,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p45_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 45,
+    "section_type": "text_chunk",
+    "section_id": "p45_c001",
+    "image_path": "images/page45.jpg",
+    "text_content": "Part 2: Configuring Widgets | 45\nFigure:  Sales Mgr Dashboard with the link, table, and embedded page widgets\nLesson 2.3: Configuring KPI Widgets\nThis lesson explains how you can add KPI widgets to the dashboard and configure their settings.\nWidgets: KPI Widgets\nA KPI widget is a ticker that will give you an immediate overview of a particular key performance indicator (KPI). In\nAcumatica ERP, you can configure a scorecard, meter, or trend card widget to track KPI.\nApplicable Scenarios\nYou use KPI widgets to show any of the following:\n\u2022\nSingle parameters that are critical for particular business processes in your organization, such the number\nof new support cases from customers\n\u2022\nProgress against a key business indicator, such as the current number of deals against the goal number\n\u2022\nA trend of metrics that change over time, such as the total sum of closed deals in the current month in\ncomparison to the sum in the previous month, so you can see if it is increasing or decreasing\nData Source for KPI Widgets\nThe source of the calculation of a KPI is data collected by an inquiry from the system database. You select a\nsource inquiry in the Inquiry Screen box of the Widget Properties dialog box for a KPI widget (see Item 1 in the\nscreenshot below). You can use a predefined inquiry or develop one that suits your needs by using the Generic\nInquiry (SM208000) form.\nEach column of a generic inquiry is a data field configured in the inquiry settings. It can be a data field from an\nexisting database table or a custom data field whose value is calculated by the system based on the formula\nspecified for this field in the generic inquiry.",
+    "tags": {
+      "forms": [
+        "SM208000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 348,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p46_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 46,
+    "section_type": "text_chunk",
+    "section_id": "p46_c001",
+    "image_path": "images/page46.jpg",
+    "text_content": "Part 2: Configuring Widgets | 46\nBy using data fields from the generic inquiry specified as a source for the widget you are configuring, you define\nthe metric to track with the widget in the Field to Aggregate box (Item 2). Also, you can use data fields to define\nthresholds of KPI if you select the Inquiry Field option in the Normal Level Type or Alarm Level Type box (Item 3).\nFigure: The settings of a KPI widget where a user can use data fields of a source inquiry\nOperations Used to Calculate a KPI\nA KPI is a measurement that evaluates the performance of a business activity. To measure the business activity, you\nneed to define the data field and the operation to perform upon the values provided by the field.\nIn the Widget Properties dialog box for a KPI widget, you specify a data field by selecting a column from the source\ngeneric inquiry in the Field to Aggregate box. In the Aggregate Function box, you select one of the following\noperations:\n\u2022\nAverage: Calculates the average value in the column.\n\u2022\nCount All (default value): Determines the number of unique items in the column.\n\u2022\nMax: Determines the highest individual value in the column. For text data, the highest value is the last\nalphabetic value. This function ignores null values.\n\u2022\nMin: Determines the lowest individual value in the column. For text data, the lowest value is the first\nalphabetic value. This function ignores null values.\n\u2022\nSum: Calculates the sum of the items in the column.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 349,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p47_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 47,
+    "section_type": "text_chunk",
+    "section_id": "p47_c001",
+    "image_path": "images/page47.jpg",
+    "text_content": "Part 2: Configuring Widgets | 47\nThe system performs the selected operation on the data from the specified column and displays the result on the\nKPI widget.\nThreshold Values of KPI Widgets\nTo measure the performance of a business activity, you need to define thresholds that help you gauge success\nand failure (that is, what number is considered to be successful performance and what number is considered\nunsuccessful).\nIn Acumatica ERP, a KPI value can be placed in any of the following ranges: normal, warning, and alarm. In the\nWidget Properties dialog box for a KPI widget, you can define the upper bound of the normal range (the Normal\nLevel or Normal Level Field box) and the lower bound of the alarm range (the Alarm Level or Alarm Level Field\nbox). The system calculates the warning range as the di\ufb00erence between these two values. You can identify the\nranges on a widget by the colors assigned to each range.\nTo define the upper bound of the normal range or the lower bound of the alarm range, you should first select a\nsource type for the thresholds and then specify the values that will indicate bounds. The following source types are\navailable:\n\u2022\nFixed Value: The value to be specified for the level is any positive or negative integer or decimal number.\n\u2022\nInquiry Field: The value to be specified for the level is any inquiry field (that is, any field represented by a\ncolumn in the results grid of the inquiry form selected in the Inquiry Screen box) that contains numeric\nvalues. The system adds up the values in the column of the specified field. That is, it uses the SUM operation\nfor the returned results.\n\u2022\nPercent Value: The value to be specified for the level is any positive or negative integer or fractional number\nthat represents the percent value (without %). If the percent value is specified for the normal level, the\nsystem calculates it as the percentage of the value specified for alarm level. If the percent value is specified\nfor the alarm level, the system calculates it as the percentage of the value specified for the normal level.\nThus, you can select this option as a source either for the normal level or for the alarm level.\nYou select a source type for both the normal level (success) and the alarm level (failure) and then specify the exact\nvalues. You can select di\ufb00erent source types for both levels if it works for your KPI.\nBackground Colors of KPI Widgets\nThe background color of the KPI widgets is used to convey the trend of the KPI. The color helps viewers to instantly\nunderstand whether immediate action is needed or the KPI is under control.\nIn Acumatica ERP, you can specify colors for the normal, warning, or alarm levels for the scorecard and meter\nwidgets. Similarly, for a trend card, you can specify the colors that indicate whether a trend is rising, flat, or falling.\nIf a number you are tracking is for informational purposes only and its change does not require any action, you can\nspecify the same color for all three KPI positions.\nVisual Representation of Ranges\nWhen you have specified the source and the values for the upper bound of the normal range and the lower bound\nof the alarm range and you have assigned colors to each range, the system calculates the bounds for each range\nand shows them in the widget.\nSuppose that in the Widget Properties dialog box, you have assigned the colors to the ranges as follows:\n\u2022\nNormal Color: Green\n\u2022\nWarning Color: Yellow\n\u2022\nAlarm Color: Red\nIf the Normal Level value specified in the Widget Properties dialog box is a positive number and less than the\nAlarm Level value, then the system defines the bounds for each range as follows:",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 350,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p48_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 48,
+    "section_type": "text_chunk",
+    "section_id": "p48_c001",
+    "image_path": "images/page48.jpg",
+    "text_content": "Part 2: Configuring Widgets | 48\n\u2022\nNormal range: From zero to the Normal Level value\n\u2022\nWarning range: From the Normal Level value to the Alarm Level value\n\u2022\nAlarm range: From the Alarm Level value to the Alarm Level value plus 20 percent of the sum of the Normal\nLevel value and the Alarm Level value\nSuppose that the Normal Level value is 25 and the Alarm Level value is 50. The system will calculate the ranges as\nshown in the following screenshot.\nFigure: Range placement if the Normal Level value is positive and less than the Alarm Level value\nIf the Normal Level value is a negative number and less than the Alarm Level value, the system defines the bounds\nfor each range as follows:\n\u2022\nNormal range: From the Normal Level value plus 20 percent of the range between the Normal Level value\nand the Alarm Level value to the Normal Level value\n\u2022\nWarning range: From the Normal Level value to the Alarm Level value\n\u2022\nAlarm range: From the Alarm Level value to the Alarm Level value plus 20 percent of the range between the\nNormal Level value and the Alarm Level value\nSuppose that the Normal Level value is minus 25 and the Alarm Level value is 50. The system will calculate the\nranges as shown in the following screenshot.\nFigure: Range placement if the Normal Level value is negative and less than the Alarm Level value\nIf the Normal Level value is a positive number and larger than the Alarm Level value, the system defines the\nbounds for each range as follows:",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 351,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p49_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 49,
+    "section_type": "text_chunk",
+    "section_id": "p49_c001",
+    "image_path": "images/page49.jpg",
+    "text_content": "Part 2: Configuring Widgets | 49\n\u2022\nNormal range: From the Normal Level value to the Normal Level value minus 20 percent of the sum of the\nNormal Level value and the Alarm Level value\n\u2022\nWarning range: From the Alarm Level value to the Normal Level value\n\u2022\nAlarm range: From zero to the Alarm Level value\nSuppose that the Normal Level value is 75 and the Alarm Level value is 35. The system will calculate the ranges as\nshown in the following screenshot.\nFigure: Range placement if the Alarm Level value is less than the Normal Level value\nScorecard Widget\nA scorecard is a rectangle with a number and title in the upper right corner. Optionally, it can display an icon of your\nchoice in the upper le\ue000 corner and a di\ufb00erent background color to indicate a change in the value it is showing.\nA scorecard widget is useful when you need to monitor single parameters that are critical for particular business\nprocesses in your organization. For example, a scorecard can display the number of new support cases from\ncustomers. For an example of a scorecard KPI widget, see the following screenshot.\nFigure: Scorecard KPI widget\nTo add a scorecard widget, you select the Key Performance Indicator (KPI) widget type in the Add Widget dialog\nbox, which opens when you click Add a New Widget in a widget placeholder. You specify the following information\nin the Widget Properties dialog box:\n\u2022\nThe inquiry to provide data for the widget\n\u2022\nThe column from the inquiry to be used for calculation\n\u2022\nThe operation to perform with the column values\n\u2022\nThe normal and alarm level types\n\u2022\nThe threshold values for normal and alarm levels\n\u2022\nThe colors for the widget background based on the level",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 352,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p50_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 50,
+    "section_type": "text_chunk",
+    "section_id": "p50_c001",
+    "image_path": "images/page50.jpg",
+    "text_content": "Part 2: Configuring Widgets | 50\nThe following screenshot shows an example of the configuration of a scorecard that displays the current number of\nopen opportunities in the system.\nFigure: Properties of a scorecard widget\nMeter Widget\nA meter widget uses a needle and colors to show data similarly to a reading on a speedometer. Meters are useful\nwhen you need to monitor all levels of the data (normal, warning, and alarm), with the colors and values that the\nuser designing the widget has assigned to each level. For an example of a meter KPI widget, see the following\nscreenshot.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 353,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p51_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 51,
+    "section_type": "text_chunk",
+    "section_id": "p51_c001",
+    "image_path": "images/page51.jpg",
+    "text_content": "Part 2: Configuring Widgets | 51\nFigure: Meter KPI widget\nThe system builds the view of each widget automatically, based on the properties specified for the widget in the\nWidget Properties dialog box. If the numbers defining the ranges of the normal, warning, and alarm levels (for the\nselected field of the specified form) are positive, then the starting point of the meter is 0; if any number defining the\nlevels is negative, then the starting point of the gauge is a negative number.\nYou configure the widget in the same way as you configure a scorecard widget, except that you select the Meter\noption in the Visualization Type box of the Widget Properties dialog box.\nTrend Card Widget\nThe KPI values to be displayed on the trend card KPI widget are calculated based on the selected period, the\naggregate function, and the current business date.\nThe source inquiry should include a date parameter to be used by the system for the calculation of a\ntrend.\nFor example, suppose that you want to display the number of support cases and compare it with the number in\nthe previous month on the trend card KPI widget. The inquiry should include the date when a case was created. By\nusing this date, the system will calculate the number of cases created during a particular period of time. Further\nsuppose that the current business date is July 14, 2025. To find the current KPI value, the system counts the\nnumber of cases from July 1, 2025, to July 14, 2025. To find the di\ufb00erence, the system counts the number of cases\nin the previous calendar month\u2014from June 1, 2025, to June 14, 2025\u2014and calculates the di\ufb00erence between the\ncurrent value and the previous one. Then the absolute di\ufb00erence, the di\ufb00erence expressed as a percent, and the\ncurrent number of cases are displayed in the widget.\nThe following screenshot shows an example of a trend card KPI widget and its elements.\nFigure: Trend card widget\nThe trend card widget consists of the following parts:\n1. An arrow that shows whether the trend is rising or falling",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 354,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p52_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 52,
+    "section_type": "text_chunk",
+    "section_id": "p52_c001",
+    "image_path": "images/page52.jpg",
+    "text_content": "Part 2: Configuring Widgets | 52\n2. The di\ufb00erence in the percent between the current KPI value and the previous one\n3. The current KPI value\n4. The di\ufb00erence between the current KPI value and the previous one\n5. The trend card title (caption)\nThe color of the background indicates whether a trend is rising, falling, or flat.\nTo add a trend card widget, you select the Trend Card KPI widget type in the Add Widget dialog box, which\nopens when you click Add a New Widget in a widget placeholder. You specify the following settings in the Widget\nProperties dialog box:\n\u2022\nThe inquiry form to provide data for the dashboard\n\u2022\nThe column from the inquiry to be used for calculation\n\u2022\nThe operation to perform with the column values to calculate the KPI\n\u2022\nThe timeline field from the inquiry to provide data about dates\n\u2022\nThe period for comparison\n\u2022\nThe trend name, which is displayed in all capital letters on the card\n\u2022\nThe colors for the widget background based on the trend direction\nThe following screenshot shows an example of the configuration of the trend card widget to calculate the number\nof created cases in a month in comparison to the previous month.\nFigure: Properties of a trend card widget",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 355,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p53_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 53,
+    "section_type": "text_chunk",
+    "section_id": "p53_c001",
+    "image_path": "images/page53.jpg",
+    "text_content": "Part 2: Configuring Widgets | 53\nWidgets: To Add KPI Widgets\nThe following activity will show you how to add and configure scorecard, meter, and trend card widgets.\nStory\nSuppose that you are Kimberly Gibbs, a technical specialist in your company who is working on simple\ncustomizations. A sales manager of your company had previously requested a dashboard named Sales Mgr\nDashboard. You had created the requested dashboard form. The sales manager has now requested that you add\nthe following widgets to the dashboard to track the described KPIs:\n\u2022\nProfitability Trend: The trend for the cumulative margin percentage in comparison to the previous week\n\u2022\nNumber of Customers: The current number of customers (which is 33 at the moment) in comparison with the\ndepartment goal to have at least 50 customers by the end of the next quarter\n\u2022\nOrders to Ship: The current number of sales orders ready to ship, which should not exceed 50 percent of the\nnumber the department defines as a high load (40 open orders at a time)\nAlso, the new KPI widgets should be located in the upper le\ue000 corner of the dashboard, and the Orders to Ship widget\nshould be separated from the upper widgets, which have the Sales Orders header.\nProcess Overview\nIn this activity, you will change the dashboard layout and rearrange the existing widgets to accommodate more\nwidgets. Then you will add and configure widgets of the following types: trend card, meter, header, and scorecard.\nSystem Preparation\nIn the info area, in the upper-right corner of the top pane of the Acumatica ERP screen, make sure that the business\ndate in your system is set to 1/30/2025. If a di\ufb00erent date is displayed, click the Business Date menu button, and\nselect 1/30/2025 on the calendar.\nStep 1: Modifying the Dashboard Layout\nYou previously added three widgets to the Sales Mgr Dashboard dashboard. You need to rearrange the existing\nwidgets to free up the upper le\ue000 corner for KPIs. To change the layout, do the following:\n1. On the main menu, click the Opportunities menu item to open the Opportunities workspace, and click the\nSales Mgr Dashboard link.\nIf the Opportunities menu item is not on the main menu, click the More Items menu item and\nthen click the Opportunities tile.\n2. On the dashboard title bar, click the Design button.\n3. On the dashboard title bar, click the Edit Layout button.\n4. In the Dashboard Layouts dialog box, which opens, do the following:\na. Select the layout template where both working areas have the same width.\nb. Click OK. The dialog box is closed, and the dashboard widgets are arranged within the selected layout.\n5. Move the Customer Details, Customer Accounts, and Acumatica Website widgets to the right working\narea, and modify their widths and heights to accommodate the information they display. The modified\ndashboard should be similar to the dashboard in the following screenshot.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 356,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p54_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 54,
+    "section_type": "text_chunk",
+    "section_id": "p54_c001",
+    "image_path": "images/page54.jpg",
+    "text_content": "Part 2: Configuring Widgets | 54\nFigure: The dashboard with the changed layout and rearranged widgets\nStep 2: Adding a Trend Card Widget\nTo add a trend card widget, do the following:\n1. While you are still in design mode of the Sales Mgr Dashboard dashboard, in the widget placeholder in the\nupper le\ue000 corner, click Add a new widget.\n2. In the Add Widget dialog box, which opens, select Trend Card KPI and click Next.\n3. In the Widget Properties dialog box, which opens, specify the following settings:\n\u2022\nInquiry Screen: Sales Profitability Analysis (AR409000)\n\u2022\nField to Aggregate: Margin %\n\u2022\nAggregate Function: Average\n\u2022\nTimeline Field: Date\n\u2022\nPeriod: Last Week\n\u2022\nRising Trend Color: Teal\n\u2022\nFlat Trend Color: Yellow\n\u2022\nFalling Trend Color: Pink\n\u2022\nCaption: Profitability trend\n4. Click Finish to save your changes and close the dialog box.\nStep 3: Adding a Meter Widget\nTo add a meter widget, do the following:",
+    "tags": {
+      "forms": [
+        "AR409000"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "AR409000"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 357,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p55_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 55,
+    "section_type": "text_chunk",
+    "section_id": "p55_c001",
+    "image_path": "images/page55.jpg",
+    "text_content": "Part 2: Configuring Widgets | 55\n1. While you are still in design mode of the Sales Mgr Dashboard dashboard, in the widget placeholder next to\nthe Profitability Trend widget, click Add a new widget.\n2. In the Add Widget dialog box, which opens, select Key Performance Indicator (KPI) and click Next.\n3. In the Widget Properties dialog box, which opens, specify the following settings:\n\u2022\nInquiry Screen: Customers (AR3030PL)\n\u2022\nField to Aggregate: Customer ID\n\u2022\nAggregate Function: Count All\n\u2022\nNormal Level Type: Fixed Value\n\u2022\nNormal Level: 33\n\u2022\nAlarm Level Type: Fixed Value\n\u2022\nAlarm Level: 50\n\u2022\nNormal Color: Pink\n\u2022\nWarning Color: Yellow\n\u2022\nAlarm Color: Teal\n\u2022\nVisualization Type: Meter\n\u2022\nCaption: Number of customers\n4. Click Finish to save your changes and close the dialog box.\nStep 4: Adding a Header Widget\nTo add a header widget, do the following:\n1. While you are still in design mode of the Sales Mgr Dashboard dashboard, in the widget placeholder below\nthe Profitability Trend widget, click Add a new widget.\n2. In the Add Widget dialog box, which opens, select Header and click Next.\n3. In the Widget Properties dialog box, which opens, type sales orders in the Caption box.\n4. Click Finish to save your changes and close the dialog box.\n5. Drag the right widget border to the right until it aligns with the right border of the working area.\nStep 5: Adding a Scorecard Widget\nTo add a scorecard widget, do the following:\n1. While you are still in design mode of the Sales Mgr Dashboard dashboard, in the widget placeholder below\nthe Sales Orders widget, click Add a new widget.\n2. In the Add Widget dialog box, select Key Performance Indicator (KPI) and click Next.\n3. In the Widget Properties dialog box, specify the following settings:\n\u2022\nInquiry Screen: Sales Orders (SO3010PL)\n\u2022\nField to Aggregate: Order Nbr.\n\u2022\nAggregate Function: Count All\n\u2022\nNormal Level Type: Percent Value\n\u2022\nNormal Level: 50\n\u2022\nAlarm Level Type: Fixed Value\n\u2022\nAlarm Level: 40\n\u2022\nNormal Color: Teal\n\u2022\nWarning Color: Yellow",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "AR3030PL",
+        "SO3010PL"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 358,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p56_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 56,
+    "section_type": "text_chunk",
+    "section_id": "p56_c001",
+    "image_path": "images/page56.jpg",
+    "text_content": "Part 2: Configuring Widgets | 56\n\u2022\nAlarm Color: Pink\n\u2022\nVisualization Type: Scorecard\n\u2022\nCaption: Orders to ship\n4. Click Finish to save your changes and close the dialog box.\n5. Drag the right widget border to the right until it aligns with the right border of the working area.\n6. On the dashboard title bar, click the Design button.\nYou have changed the dashboard layout and arranged the previously added widgets in the right working area. Then\nyou have added widgets of the following types to the dashboard: trend card, meter, header, and scorecard (see the\nfollowing screenshot).\nThe width of the widgets and number of available widget placeholders depend on the size of your\nbrowser window. You may need to resize other widgets as well to get the same arrangement.\nFigure: The Sales Mgr Dashboard with the changed layout and additional widgets\nLesson 2.4: Configuring Chart Widgets\nThis lesson explains how you can add chart widgets to the dashboard and configure their settings.\nWidgets: Chart Widgets\nYou can use various types of charts, which are graphical representations of data, as widgets on dashboards. If a\nchart is well designed, it can convey ideas, such as trends or comparisons, that might not be apparent if the data\nwere shown in a table or presented as text.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 359,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p57_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 57,
+    "section_type": "text_chunk",
+    "section_id": "p57_c001",
+    "image_path": "images/page57.jpg",
+    "text_content": "Part 2: Configuring Widgets | 57\nYou can easily change the type of a particular chart without changing its properties, such as chart axis values or sort\norder, as long as the properties are applicable to both chart types. For example, you can create a line chart widget\nand later convert this widget to another chart type with a couple clicks.\nApplicable Scenarios\nYou may need to work with chart widgets when you want to show any of the following:\n\u2022\nComparison of multiple items (comparative ranking)\n\u2022\nComparison of items over time (trends, accelerations or decelerations, and volatility)\n\u2022\nProportional composition (part-to-whole relationship) of a particular variable over a static time frame\n\u2022\nChanges in composition over time\nData Source for Chart Widgets\nThe source of the information shown in a chart widget is data collected by a generic inquiry from the system\ndatabase. You can use a predefined generic inquiry or develop one that suits your needs.\nEach column of a generic inquiry is a data field configured in the inquiry settings. Data field can be a data field from\nan existing database table or a custom data field whose value is calculated by the system based on the formula\nspecified for this field in the inquiry.\nBy using data fields from the generic inquiry specified as a source for a widget, you define the metrics to track with\nthe widget.\nChart Widget Configuration\nTo add a chart widget, you select the Chart widget type in the Add Widget dialog box, which opens when you click\nAdd a New Widget in a widget placeholder. In the Widget Properties dialog box, you specify the inquiry to provide\ndata for the widget in the Inquiry Screen box, as well as any other needed settings, and click Configure (see the\nfollowing screenshot).\nFigure: Specification of a data source for a chart widget\nIn the Chart Settings dialog box, which opens a\ue000er you click Configure, you select the chart type in the Chart\nType box (see the following screenshot).",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 360,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p58_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 58,
+    "section_type": "text_chunk",
+    "section_id": "p58_c001",
+    "image_path": "images/page58.jpg",
+    "text_content": "Part 2: Configuring Widgets | 58\nFigure: Selection of a chart type\nIn the Categories section of the dialog box, you specify the data field to be the source of the categories into which\nthe data from each series is sorted (see Item 1 in the screenshot below). In most charts, the x axis displays category\nnames.\nOptionally, in the Series section, you specify the data field to be the source of the series (Item 2), which is a set of\nrelated data. A chart can have no series or one series. Each chart type displays series di\ufb00erently. The values of the\ndata field specified as the source of the series compose the chart legend.\nFinally, in the Values section of the dialog box, you specify the data field to be the source of the business metric\ncalculation and the operation to perform with the value provided by the field (Item 3). The following operations are\navailable for metric calculation:\n\u2022\nAverage: Calculates the average value in the column.\n\u2022\nCount All (default): Determines the number of items in the column.\n\u2022\nCount Distinct: Determines the number of unique items in the column.\n\u2022\nMax: Determines the item with the highest value in the column. For text data, the highest value is the last\nalphabetic value. This function ignores null values.\n\u2022\nMin: Determines the item with the lowest value in the column. For text data, the lowest value is the first\nalphabetic value. This function ignores null values.\n\u2022\nSum: Calculates the sum of the items in the column.\n\u2022\nMedian: Finds the middle value among all the values in the column.\nThe following screenshot shows an example of the configuration settings of the column chart type.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 361,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p59_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 59,
+    "section_type": "text_chunk",
+    "section_id": "p59_c001",
+    "image_path": "images/page59.jpg",
+    "text_content": "Part 2: Configuring Widgets | 59\nFigure: Sample configuration of column chart widget\nThe following screenshot shows the resulting chart on a dashboard.\nFigure: A column chart with series\nLegend Position\nIf you use a doughnut or funnel chart type or your chart has at least one series defined, the Legend Position box\nappears in the Chart Settings dialog box. The value in this box defines the location of the legend in the widget. The\nfollowing options are available:\n\u2022\nNone: The legend is not displayed in the widget.\n\u2022\nLe\ue000: The legend is located to the le\ue000 of the chart.\n\u2022\nRight: The legend is located to the right of the chart.\n\u2022\nTop: The legend is located above the chart.\n\u2022\nBottom: The legend is located below the chart.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 362,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p60_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 60,
+    "section_type": "text_chunk",
+    "section_id": "p60_c001",
+    "image_path": "images/page60.jpg",
+    "text_content": "Part 2: Configuring Widgets | 60\n\u2022\nPopup: The user can open the legend as a pop-up box by clicking the icon in the bottom le\ue000 corner of the\nwidget. This is the default value.\nSorting Order of Categories and Series\nIn the Chart Settings dialog box for a widget, to define the data source for the categories and series of a chart, you\nspecify a data field from the source inquiry in the Legend box of the Categories and Series sections, respectively.\nYou can define the value by which the values of the data field specified in the Legend box are sorted and the sort\norder. The Sort By box defines the sequence to be sorted as follows:\n\u2022\nLegend: The legend data is sorted by the values returned by the data field you select in the Legend box.\n\u2022\nLegend Values: The legend data is sorted by the value you select in the Value box.\n\u2022\nField: The legend data is sorted by a data field you select in the Field to Sort By box, which appears when\nyou select this option.\n\u2022\nField Value: The legend data is sorted by the value of the field you select in the Field to Sort By box, which\nappears when you select this option.\n\u2022\nDate (Ascending): The legend data is sorted in the ascending order. The option is available if a data field that\nrepresents a date is selected in the Legend box.\nThe box next to Sort By defines the sort order\u2014ascending or descending. The way the values are sorted depends\non the chart type as well as this selection. The box is not available if the Date (Ascending) option is selected.\nLimitation of Displayed Values of Categories and Series\nIn some cases, you would like to limit the number of values displayed in a widget to get a clearer picture. The\nelements that control this setting are available in the Categories and Series sections.\nIn the Maximum Number of Values Shown box, you specify the number of values to be individually shown on\nthe chart. The system always selects the values starting from the largest ones. The default value is 10; that is, the\nsystem will display values for only the 10 largest categories. The maximum allowed value is 150. If you want the\nsystem to individually display all values, set the value of this box to 0.\nYou can make the system add up the values that are not among the largest values (those to be displayed based on\nthe Maximum Number of Values Shown setting) and show the sum on the chart as a single element. To do this,\nyou select the Show Sum of Other Entries check box.\nColor Configuration for Chart Widgets\nIf you configure di\ufb00erent charts based on the same inquiry or on inquires that have matching data fields, you\nshould use the same color for matching items across all charts of a dashboard. Doing so will minimize the mental\ne\ufb00ort required from a users\u2019 perspective, making dashboards more comprehensible.\nYou can specify custom colors for series in chart widgets. Series can be displayed on the following types of chart\nwidgets: line, column, stacked column, bar, and stacked bar. You may need to change the default colors of series,\nfor example, to make the dashboard correspond to your corporate style.\nTo specify the colors depending on the series values, you should use expressions in the Color box of the Chart\nSettings dialog box. For example, to make a chart element red if the series value is USD and blue if the series value\nis EUR, you would specify the following expression: =Switch(Value = 'USD', '#FF0000', Value =\n'EUR', '#0A26FF'). For details on expressions, see Variables and Expressions: General Information.\nLine Chart\nA line chart is a type of chart that displays information as a series of data points connected by straight line\nsegments. The purpose of a line chart is to show trends, accelerations (or decelerations), and volatility. Line charts\ndisplay how data changes over a period of time.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 363,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p61_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 61,
+    "section_type": "text_chunk",
+    "section_id": "p61_c001",
+    "image_path": "images/page61.jpg",
+    "text_content": "Part 2: Configuring Widgets | 61\nThe following line chart shows sales values by financial period. The x axis entity is the quarter, and the y axis entity\nis the sales amount. Each line on the chart corresponds to a salesperson.\nFigure: Line chart with multiple lines\nColumn Chart\nA column chart is a chart with bars whose lengths are proportional to the values they represent. Column charts are\nused for plotting data that has discrete values. They are the standard chart for showing chronological data, such as\ngrowth over specific periods, and for comparing data across categories.\nThe following chart represents sales values calculated by financial period. The x axis entity is the month, and the y\naxis entity is the sales amount.\nFigure: Column chart\nYou should generally use column charts instead of doughnut charts when you want to show how parts compare\nto one another, because it is easier for the viewer to estimate the relative column height than to assess the size of\ndoughnut chart sectors.\nThe column chart in the following screenshot shows sales amounts for salespeople divided by financial period. The\nsales amount for each salesperson is displayed as a separate column within each financial period.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 364,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p62_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 62,
+    "section_type": "text_chunk",
+    "section_id": "p62_c001",
+    "image_path": "images/page62.jpg",
+    "text_content": "Part 2: Configuring Widgets | 62\nFigure: Column chart with series\nBar Chart\nA bar chart is a chart with rectangular bars that are plotted horizontally and have lengths proportional to the values\nthat they represent. Bar charts are used for clearly showing data that has discrete values. Horizontal bar charts are\nperfect for comparative ranking, as with a top-five list. They are also useful if your data labels are lengthy.\nThe following bar chart displays sales values calculated for a financial period. The x axis entity is the total amount\nof period-to-date sales, and the y axis entity is the financial period.\nFigure: Bar chart\nAnother example of a bar chart, which you can see below, represents sales amounts, divided by salesperson, for\neach financial period. The sales amount for each salesperson is displayed as a separate bar within a financial\nperiod.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 365,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p63_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 63,
+    "section_type": "text_chunk",
+    "section_id": "p63_c001",
+    "image_path": "images/page63.jpg",
+    "text_content": "Part 2: Configuring Widgets | 63\nFigure: Bar chart with series\nStacked Column Chart\nA stacked column chart illustrates the relationship of the parts to the whole. The columns in a stacked column chart\nare divided into legend categories, and each column represents a total.\nThe following chart shows the contribution of individual salespeople to the monthly sales totals over time. The x\naxis defines the financial periods within the specified time range, and the y axis defines the measurable entity\u2014\nperiod-to-date sales totals in the base currency.\nFigure: Stacked column chart\nStacked Bar Chart\nA stacked bar chart is an inverted stacked column chart in which the horizontal and vertical axes are reversed. A\nstacked bar chart also illustrates the relationship of the parts to the whole, and its bars are divided into legend\ncategories, with each bar representing a total.\nThe following chart shows the contribution of salespeople to the monthly sales totals over time. The y axis\ndefines a series of financial periods within the specified time range, and the x axis defines the measurable entity\u2014\nperiod-to-date sales totals. Each stacked bar represents the monthly sales total, with the parts of di\ufb00erent colors\nindicating the di\ufb00erent salespeople that contribute to the monthly total.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 366,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p64_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 64,
+    "section_type": "text_chunk",
+    "section_id": "p64_c001",
+    "image_path": "images/page64.jpg",
+    "text_content": "Part 2: Configuring Widgets | 64\nFigure: Stacked bar chart\nDoughnut Chart\nA doughnut chart is a circular chart (with a hole extracted from the middle) divided into sectors or parts that\nillustrate proportions. This type of chart works well when you want to show how the parts relate to the whole at a\nfixed point in time.\nThis type of chart is particularly e\ufb00ective when the following criteria are met:\n\u2022\nThe parts add up to 100%.\n\u2022\nYou do not need to make precise comparisons.\n\u2022\nYou have a small number of sectors (three to five) and smaller sectors are either combined or not shown at\nall.\nA doughnut chart helps its viewers to answer questions like Who are our two largest vendors? or What is the biggest\nsales driver?\nThe following doughnut chart displays the time spent on processing support cases for all employees by period-to-\ndate. Each section represents a portion of the total number of support cases.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 367,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p65_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 65,
+    "section_type": "text_chunk",
+    "section_id": "p65_c001",
+    "image_path": "images/page65.jpg",
+    "text_content": "Part 2: Configuring Widgets | 65\nFigure: Doughnut chart\nThe system displays legend captions around the chart if the legend position is set to None or Popup in the widget\nsettings.\nFunnel Chart\nA funnel chart is a chart with no axes that shows sectors or slices of data in a funnel shape. Each slice represents a\nportion of the whole, or the slices may represent a process flow, with each slice (or part of the process) having data\nfiltered out from the previous slice. For example, with a sales process, you could use a funnel chart, with each slice\ncorresponding to a stage in the process and showing the amount of potential revenue.\nThe following funnel chart shows the salespeople by period-to-date sales. Each slice represents a portion of the\ntotal amount of sales by a salesperson.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 368,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p66_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 66,
+    "section_type": "text_chunk",
+    "section_id": "p66_c001",
+    "image_path": "images/page66.jpg",
+    "text_content": "Part 2: Configuring Widgets | 66\nFigure: Funnel chart\nWidgets: To Add Chart Widgets\nThe following activity will show you how to add and configure chart widgets.\nStory\nSuppose that you are Kimberly Gibbs, a technical specialist in your company who is working on simple\ncustomizations. A sales manager of your company had previously requested a dashboard named Sales Mgr\nDashboard, and you created the requested dashboard form. The sales manager has now requested that you add\nthe following widgets to present the listed data:\n\u2022\nSales Order Trend by Month: The total amount of the sales orders by month\n\u2022\nTop 5 Customers: The top five customers by invoiced amount\n\u2022\nOther Customers' Share: The share of the total invoiced amount held by customers that are not among the\ntop five customers by invoiced amount\nProcess Overview\nIn this activity, you will add and configure widgets of the following types: line chart, horizontal bar chart, and\ndoughnut chart.\nSystem Preparation\nIn the info area, in the upper-right corner of the top pane of the Acumatica ERP screen, make sure that the business\ndate in your system is set to 1/30/2025. If a di\ufb00erent date is displayed, click the Business Date menu button, and\nselect 1/30/2025 on the calendar.\nStep 1: Adding a Line Chart Widget\nTo add a line chart widget, do the following:",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 369,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p67_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 67,
+    "section_type": "text_chunk",
+    "section_id": "p67_c001",
+    "image_path": "images/page67.jpg",
+    "text_content": "Part 2: Configuring Widgets | 67\n1. On the main menu, click the Opportunities menu item to open the Opportunities workspace, and click the\nSales Mgr Dashboard link.\n2. On the dashboard title bar, click the Design button.\n3. In the widget placeholder under the Orders to Ship widget, click Add a new widget.\n4. In the Add Widget dialog box, which opens, select Chart and click Next.\n5. In the Widget Properties dialog box, which opens, specify the following settings:\n\u2022\nInquiry Screen: Sales Orders (SO3010PL)\n\u2022\nCaption: Sales Order Trend by Month\n6. Click Configure\n7. In the Chart Settings dialog box, which opens, in the Chart Type box, select Line.\n8. In the Categories section, specify the following settings:\n\u2022\nLegend: Date\n\u2022\nMaximum Number of Values Shown: 12\n\u2022\nDate Rounding: Months\n9. In the Series section, in the Legend box, select Order Type.\n10.In the Values section, in the Value boxes, select Order Total  and Sum.\n11.Click OK to save your changes and close the Chart Settings dialog box.\n12.Click Finish to save your changes and close the Widget Properties dialog box.\n13.Drag the right border of the widget to the right until it aligns with the right border of the working area.\nStep 2: Adding a Bar Chart Widget\nTo add a bar chart widget, do the following:\n1. While you are still in design mode of the Sales Mgr Dashboard dashboard, in the widget placeholder under\nthe Sales Orders Trend by Month widget, click Add a new widget.\n2. In the Add Widget dialog box, which opens, select Chart and click Next.\n3. In the Widget Properties dialog box, which opens, specify the following settings:\n\u2022\nInquiry Screen: Customer Summary (AR0008DB)\n\u2022\nCaption: Top 5 Customers\n4. Click Configure\n5. In the Chart Settings dialog box, which opens, in the Chart Type box, select Bar.\n6. In the Categories section, specify the following settings:\n\u2022\nLegend: Customer Name\n\u2022\nMaximum Number of Values Shown: 5\n7. In the Values section, in the Value boxes, select Amount and Max.\n8. Click OK to save your changes and close the Chart Settings dialog box.\n9. Click Finish to save your changes and close the Widget Properties dialog box.\n10.Drag the right border of the widget to the right until it aligns with the right border of the working area.\nStep 3: Adding a Doughnut Chart Widget by Copying the Bar Chart Widget\nTo add a doughnut chart widget, do the following:",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "AR0008DB",
+        "SO3010PL"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 370,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p68_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 68,
+    "section_type": "text_chunk",
+    "section_id": "p68_c001",
+    "image_path": "images/page68.jpg",
+    "text_content": "Part 2: Configuring Widgets | 68\n1. While you are still in design mode of the Sales Mgr Dashboard dashboard, on the title bar of the Top 5\nCustomers widget, click the Copy button. Notice that Paste from clipboard becomes available in the widget\nplaceholders.\n2. In the widget placeholder under the Top 5 Customers widget, click Paste from clipboard.\n3. On the title bar of the pasted widget, click Edit.\n4. In the Widget Properties dialog box, which opens, click Configure\n5. In the Chart Settings dialog box, which opens, in the Chart Type box, select Doughnut.\n6. In the Categories section, select the Show Sum of Other Entries check box.\n7. Click OK to save your changes and close the Chart Settings dialog box.\n8. In the Widget Properties dialog box, to which you return, in the Caption box, type Other Customers'\nShare.\n9. Click Finish to save your changes and close the Widget Properties dialog box.\n10.On the dashboard title bar, click the Design button.\nYou have added to the dashboard chart widgets of the following types: line, bar, and doughnut (see the following\nscreenshot).\nFigure: The Sales Mgr Dashboard with the three chart widgets\nLesson 2.5: Filtering Widget Data\nThis lesson explains how you can apply filters to widget data.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 371,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p69_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 69,
+    "section_type": "text_chunk",
+    "section_id": "p69_c001",
+    "image_path": "images/page69.jpg",
+    "text_content": "Part 2: Configuring Widgets | 69\nWidgets: Data Filtering\nData filtering can be used for the following types of widgets:\n\u2022\nChart\n\u2022\nData table\n\u2022\nPivot table\n\u2022\nKey performance indicator (KPI)\n\u2022\nTrend card KPI\nInquiry Parameters\nAn inquiry that you are using as a data source for a widget may have multiple parameters configured. These\nparameters are displayed as optional or required UI elements in the Selection area of the inquiry form and are used\nto narrow the inquiry results.\nIn the Widget Properties dialog box, the Inquiry Parameters button becomes available if the inquiry selected in\nthe Inquiry Screen box has parameters. You click the button to open the Inquiry Parameters dialog box (see the\nfollowing screenshot). In the dialog box, you can enter specific values for these parameters in the Value column.\nInitially, the system displays any default values that have been specified for the parameters in the inquiry settings.\nWhen you modify a value in the Value column, the system clears the corresponding check box in the Use Default\nValue column to indicate that the custom value will be used instead.\nFigure: Modification of values for the source inquiry parameters\nThe system filters the inquiry data by using the values specified for the parameters before it applies any widget-\nspecific filters.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 372,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p70_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 70,
+    "section_type": "text_chunk",
+    "section_id": "p70_c001",
+    "image_path": "images/page70.jpg",
+    "text_content": "Part 2: Configuring Widgets | 70\nShared Filters of the Source Inquiry\nShared filters can be created for a generic inquiry form. If this generic inquiry form is used as the data source for a\nwidget, you can select any of these shared filters in the Shared Filter to Apply box in the Widget Properties dialog\nbox (see the following screenshot). This will filter the data in the widget.\nFigure: Selection of a shared filter for a widget\nThe system will display the name of the selected shared filter in the Shared Filter to Apply box.\nBy using the Filter Settings dialog box of the widget, you can further modify the filtering conditions that are copied\nfrom the selected shared filter.\nWidget-Specific Filters\nWhile configuring a widget by using the Acumatica ERP standard Filter Settings dialog box, you can specify\nfiltering conditions that apply to only this widget. You open this dialog box by clicking Filter Settings in the Widget\nProperties dialog box (see the following screenshot).",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 373,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p71_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 71,
+    "section_type": "text_chunk",
+    "section_id": "p71_c001",
+    "image_path": "images/page71.jpg",
+    "text_content": "Part 2: Configuring Widgets | 71\nFigure: Filtering conditions that are specific to the widget\nIf you specify filtering conditions for the widget, the system will insert the (Custom) value in the Shared Filter to\nApply box.\nDashboard Parameters\nIf you want to provide dashboard users with the ability to filter widget data on the fly, you can add parameters to\nthe Selection area of a dashboard. The functionality of these parameters is similar to that of the parameters in the\nSelection area of inquiry forms. When a user selects values in the corresponding UI elements, the system filters the\ndata on all applicable widgets by these values.\nWidget data can be filtered by a parameter value only if the inquiry on which the widget is based\ncontains the data field that is used by the parameter.\nTo add parameters to a dashboard, you select the dashboard on the Dashboards (SM208600) form, and on the\nParameters tab, you add parameters that will be displayed in the Selection area of the dashboard.\nFor each widget whose data should be filtered by the values of the added parameter or parameters, in the Filter\nSettings dialog box, you add a corresponding filtering condition with the Use Parameter check box selected and\nthe parameter name specified as a value in the Value 1 column (see the following screenshot).",
+    "tags": {
+      "forms": [
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 374,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p72_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 72,
+    "section_type": "text_chunk",
+    "section_id": "p72_c001",
+    "image_path": "images/page72.jpg",
+    "text_content": "Part 2: Configuring Widgets | 72\nFigure: A dashboard parameter in a widget-specific filter\nWidgets: To Filter Widget Data\nThe following activity will show you how to filter widget data.\nStory\nSuppose that you are Kimberly Gibbs, a technical specialist in your company who is working on simple\ncustomizations. A sales manager of your company had previously requested a dashboard named Sales Mgr\nDashboard, and you created the requested dashboard form. A\ue000er that, the sales manager requested that you add\nmultiple widgets that track di\ufb00erent KPIs and trends, and you added the needed widgets.\nThe sales manager has assessed the data displayed by the widgets and found the following issues:\n\u2022\nThe Orders to Ship widget currently counts all orders, regardless of their status, but should count only orders\nwith the Open status.\n\u2022\nThe Top 5 Customers and Other Customers' Share widgets include The Equity Group Investors account, which\nis tracked by another department and should be excluded.\nAlso, the sales manager has asked you to add one more scorecard with the number of orders whose requested date\nis earlier than today\u2014Late Orders. Finally, the manager has requested that you add a dashboard parameter to make\nit possible for the data of the Orders to Ship and Late Orders widgets to be filtered by customer (that is, showing\nonly the data of the selected customer if the user makes a selection).\nProcess Overview\nIn this activity, you will do the following:\n1. On the Dashboards (SM208600) form, add the Customer ID parameter for the SalesMgrDashboard\ndashboard.",
+    "tags": {
+      "forms": [
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 375,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p73_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 73,
+    "section_type": "text_chunk",
+    "section_id": "p73_c001",
+    "image_path": "images/page73.jpg",
+    "text_content": "Part 2: Configuring Widgets | 73\n2. On the Customer Summary (AR0008DB) generic inquiry form, you will add a shared filter to exclude The\nEquity Group Investors from the list of customers.\n3. On the Sales Mgr Dashboard, you will do the following:\na. Configure the requested filtering conditions.\nb. Add the Late Orders scorecard by copying the similar widget.\nc. Apply the shared filter to the widget data.\nSystem Preparation\nIn the info area, in the upper-right corner of the top pane of the Acumatica ERP screen, make sure that the business\ndate in your system is set to 1/30/2025. If a di\ufb00erent date is displayed, click the Business Date menu button, and\nselect 1/30/2025 on the calendar.\nStep 1: Adding the Dashboard Parameter\nTo add the dashboard parameter for the customer ID to be selected, do the following:\n1. Open the Dashboards (SM208600) form.\n2. In the Name box, select SalesMgrDashboard.\n3. On the Parameters tab, add a new row with the following settings:\n\u2022\nActive: Selected\n\u2022\nIs Required: Cleared\n\u2022\nName: CustomerID\n\u2022\nSchema Object: PX.Objects.AR.Customer\n\u2022\nSchema Field: AcctCD\n\u2022\nDisplay Name: Customer ID\n4. On the form toolbar, click Save.\nStep 2: Adding a Shared Filter\nTo add a shared filter, do the following:\n1. Open the Customer Summary (AR0008DB) form.\n2. On the table toolbar, click Filter Settings.\n3. In the bottom le\ue000 of the Filter Settings dialog box, which opens, click New.\n4. Add a row to the table with the following settings:\n\u2022\nProperty: Customer ID\n\u2022\nCondition: Does Not Equal\n\u2022\nValue: EQUGRP\n5. In the bottom le\ue000 of the dialog box, click Save. In the dialog box that opens, type Local Customers, and\nclick OK.\n6. In the upper part of the Filter Settings dialog box, to which you return, select the Shared check box.\n7. At the bottom of the dialog box, click Save.\n8. Click Apply to apply the filter settings to the table and close the dialog box.\n9. On the generic inquiry form, notice that the Local Customers tab has been added.",
+    "tags": {
+      "forms": [
+        "SM208600"
+      ],
+      "graphs": [],
+      "events": [],
+      "dacs": [
+        "AR0008DB",
+        "SM208600"
+      ]
+    },
+    "chunks": [
+      {
+        "vector_index": 376,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p74_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 74,
+    "section_type": "text_chunk",
+    "section_id": "p74_c001",
+    "image_path": "images/page74.jpg",
+    "text_content": "Part 2: Configuring Widgets | 74\nStep 3: Configuring the Widget Filter and Using the Dashboard Parameter\nTo configure filtering conditions for the Sales Orders widget and use the dashboard parameter to filter its data, do\nthe following:\n1. On the main menu, click the Opportunities menu item to open the Opportunities workspace, and click the\nSales Mgr Dashboard link. Notice that the Customer ID parameter is displayed under the dashboard name.\n2. On the dashboard title bar, click the Design button.\n3. On the title bar of the Orders to Ship widget, click Edit.\n4. In the Widget Properties dialog box, click Filter Settings.\n5. In the Filter Settings dialog box, which opens, add a row with the following settings:\n\u2022\nData Field: Status\n\u2022\nCondition: Equals\n\u2022\nValue 1: Open\n\u2022\nOperator: And\n6. Add another row with the following settings:\n\u2022\nData Field: Customer\n\u2022\nCondition: Equals\n\u2022\nUse Parameter: Selected\n\u2022\nValue 1: Customer ID\nWith this condition, if a user selects a customer in the Customer ID box, the widget will show the data for\nthe selected customer.\n7. Click OK to save your changes and close the dialog box.\n8. In the Widget Properties dialog box, to which you return, click Finish.\nStep 4: Adding a Widget by Copying the Similar Widget\nTo add a widget, do the following:\n1. While you are still in design mode of the Sales Mgr Dashboard dashboard, drag the right border of the Orders\nto Ship widget to the le\ue000 until the system displays a widget placeholder next to it.\n2. On the title bar of the Orders to Ship widget, click the Copy button. Notice that Paste from clipboard\nbecomes available in the widget placeholders.\n3. In the widget placeholder next to the Orders to Ship widget, click Paste from clipboard.\n4. On the title bar of the pasted widget, click Edit.\n5. In the Widget Properties dialog box, which opens, click Filter Settings.\n6. In the Filter Settings dialog box, which opens, add a row with the following settings:\n\u2022\nData Field: Requested On\n\u2022\nCondition: Is Less Than\n\u2022\nValue 1: @Today\n7. Click OK to save your changes and close the dialog box.\n8. In the Widget Properties dialog box, to which you return, type Late orders in the Caption box.\n9. Click Finish to save your changes and close the Widget Properties dialog box.",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 377,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p75_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 75,
+    "section_type": "text_chunk",
+    "section_id": "p75_c001",
+    "image_path": "images/page75.jpg",
+    "text_content": "Part 2: Configuring Widgets | 75\nStep 5: Applying the Shared Filter to the Widget Data\nTo apply the shared filter you created for the source inquiry to the widget data, do the following:\n1. While you are still in design mode of the Sales Mgr Dashboard dashboard, on the title bar of the Top 5\nCustomers widget, click Edit.\n2. In the Widget Properties dialog box, which opens, in the Shared Filter to Apply box, select Local\nCustomers.\n3. Click Finish to close the dialog box.\n4. Apply the shared filter to the Other Customers' Share widget data.\n5. On the dashboard title bar, click the Design button.\nYou have added the requested dashboard parameter, configured filter settings for the widgets and added one\nmore scorecard widget. Now you can select a customer account in the Customer ID box and notice that the system\nchanges the numbers on the Orders to Ship and Late Orders scorecards. (See the following screenshot.)",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 378,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
+  },
+  {
+    "id": "EU_Dashboard_and_Widget_Design_2025R1_p76_c001",
+    "pdf_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "document_name": "EU_Dashboard_and_Widget_Design_2025R1",
+    "page_number": 76,
+    "section_type": "text_chunk",
+    "section_id": "p76_c001",
+    "image_path": "images/page76.jpg",
+    "text_content": "Part 2: Configuring Widgets | 76\nFigure: The Sales Mgr Dashboard with the widget data filtered",
+    "tags": {
+      "forms": [],
+      "graphs": [],
+      "events": [],
+      "dacs": []
+    },
+    "chunks": [
+      {
+        "vector_index": 379,
+        "coordinates": {
+          "x1": 0,
+          "y1": 0,
+          "x2": 1,
+          "y2": 1
+        }
+      }
+    ]
   }
 ]

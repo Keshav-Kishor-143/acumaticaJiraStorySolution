@@ -992,103 +992,103 @@ DLL: PX.Objects.FS
 - `public virtual <>f__AnonymousType0`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType0`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType0`2.ToString()` → `System.String`
-- `public <>f__AnonymousType0`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType1`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType1`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType1`2.ToString()` → `System.String`
-- `public <>f__AnonymousType1`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType2`1.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType2`1.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType2`1.ToString()` → `System.String`
-- `public <>f__AnonymousType2`1.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType3`3.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType3`3.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType3`3.ToString()` → `System.String`
-- `public <>f__AnonymousType3`3.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType4`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType4`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType4`2.ToString()` → `System.String`
-- `public <>f__AnonymousType4`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType5`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType5`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType5`2.ToString()` → `System.String`
-- `public <>f__AnonymousType5`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType6`3.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType6`3.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType6`3.ToString()` → `System.String`
-- `public <>f__AnonymousType6`3.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType7`6.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType7`6.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType7`6.ToString()` → `System.String`
-- `public <>f__AnonymousType7`6.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType8`10.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType8`10.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType8`10.ToString()` → `System.String`
-- `public <>f__AnonymousType8`10.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType9`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType9`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType9`2.ToString()` → `System.String`
-- `public <>f__AnonymousType9`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType10`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType10`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType10`2.ToString()` → `System.String`
-- `public <>f__AnonymousType10`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType11`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType11`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType11`2.ToString()` → `System.String`
-- `public <>f__AnonymousType11`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType12`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType12`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType12`2.ToString()` → `System.String`
-- `public <>f__AnonymousType12`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType13`5.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType13`5.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType13`5.ToString()` → `System.String`
-- `public <>f__AnonymousType13`5.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType14`16.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType14`16.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType14`16.ToString()` → `System.String`
-- `public <>f__AnonymousType14`16.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType15`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType15`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType15`2.ToString()` → `System.String`
-- `public <>f__AnonymousType15`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType16`9.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType16`9.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType16`9.ToString()` → `System.String`
-- `public <>f__AnonymousType16`9.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType17`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType17`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType17`2.ToString()` → `System.String`
-- `public <>f__AnonymousType17`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType18`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType18`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType18`2.ToString()` → `System.String`
-- `public <>f__AnonymousType18`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType19`1.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType19`1.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType19`1.ToString()` → `System.String`
-- `public <>f__AnonymousType19`1.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType20`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType20`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType20`2.ToString()` → `System.String`
-- `public <>f__AnonymousType20`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType21`2.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType21`2.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType21`2.ToString()` → `System.String`
-- `public <>f__AnonymousType21`2.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType22`42.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType22`42.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType22`42.ToString()` → `System.String`
-- `public <>f__AnonymousType22`42.GetType()` → `System.Type`
 - `public virtual <>f__AnonymousType23`27.Equals(System.Object value)` → `System.Boolean`
 - `public virtual <>f__AnonymousType23`27.GetHashCode()` → `System.Int32`
 - `public virtual <>f__AnonymousType23`27.ToString()` → `System.String`
-- `public <>f__AnonymousType23`27.GetType()` → `System.Type`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.GetHashCode()` → `System.Int32`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.IsDefaultAttribute()` → `System.Boolean`
+- `public PX.Data.GoogleMapLatLongRedirector.ShowAddressByLocation(System.Nullable`1[System.Decimal] latitude, System.Nullable`1[System.Decimal] longitude)` → `System.Void`
+- `public static PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSAppointmentItemAvailabilityProjectExtension.IsActive()` → `System.Boolean`
+- `virtual PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSAppointmentItemAvailabilityProjectExtension.GetStatusProject(PX.Objects.FS.FSAppointmentDet line)` → `System.String`
+- `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSAppointmentItemAvailabilityProjectExtension.FormatStatusProject(PX.Objects.IN.IStatus availability, PX.Objects.IN.IStatus availabilityProject, System.String uom)` → `System.String`
+- `public static PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSServiceOrderItemAvailabilityProjectExtension.IsActive()` → `System.Boolean`
+- `virtual PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSServiceOrderItemAvailabilityProjectExtension.GetStatusProject(PX.Objects.FS.FSSODet line)` → `System.String`
+- `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.FSServiceOrderItemAvailabilityProjectExtension.FormatStatusProject(PX.Objects.IN.IStatus availability, PX.Objects.IN.IStatus availabilityProject, System.String uom)` → `System.String`
+- `public static PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated.FSServiceOrderItemAvailabilityAllocatedProjectExtension.IsActive()` → `System.Boolean`
+- `virtual PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated.FSServiceOrderItemAvailabilityAllocatedProjectExtension.GetStatusWithAllocatedProject(PX.Objects.FS.FSSODet line)` → `System.String`
+- `PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated.FSServiceOrderItemAvailabilityAllocatedProjectExtension.FormatStatusAllocatedProject(PX.Objects.IN.IStatus availability, PX.Objects.IN.IStatus availabilityProject, System.Nullable`1[System.Decimal] allocated...)` → `System.String`
+- `virtual PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated.FSServiceOrderItemAvailabilityAllocatedProjectExtension.GetAllocatedQty(PX.Objects.FS.FSSODet line)` → `System.Decimal`
+- `virtual PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated.FSServiceOrderItemAvailabilityAllocatedProjectExtension.Check(PX.Objects.IN.ILSMaster row, PX.Objects.IN.IStatus availability)` → `System.Void`
+- `virtual PX.Objects.PM.MaterialManagement.GraphExtensions.ItemAvailability.Allocated.FSServiceOrderItemAvailabilityAllocatedProjectExtension.FormatQty(System.Nullable`1[System.Decimal] value)` → `System.String`
+- `public static PX.Objects.PM.TaxZoneExtension.AppointmentEntryExt.IsActive()` → `System.Boolean`
+- `virtual PX.Objects.PM.TaxZoneExtension.AppointmentEntryExt.GetDocumentMapping()` → `PX.Objects.PM.TaxZoneExtension.DocumentMapping`
+- `virtual PX.Objects.PM.TaxZoneExtension.AppointmentEntryExt.SetDefaultShipToAddress(PX.Data.PXCache sender, PX.Objects.PM.TaxZoneExtension.Document row)` → `System.Void`
+- `public virtual PX.Objects.PM.TaxZoneExtension.AppointmentEntryExt.GetDefaultTaxZone(PX.Objects.FS.FSAppointment row, System.Func`2[PX.Objects.FS.FSAppointment,System.String] baseMethod)` → `System.String`
+- `public virtual PX.Objects.PM.TaxZoneExtension.AppointmentEntryExt.GetDefaultTaxZone(System.Nullable`1[System.Int32] billCustomerID, System.Nullable`1[System.Int32] billLocationID, System.Nullable`1[System.Int32] branchID...)` → `System.String`
+- `public static PX.Objects.PM.TaxZoneExtension.ServiceOrderEntryExt.IsActive()` → `System.Boolean`
+- `virtual PX.Objects.PM.TaxZoneExtension.ServiceOrderEntryExt.GetDocumentMapping()` → `PX.Objects.PM.TaxZoneExtension.DocumentMapping`
+- `virtual PX.Objects.PM.TaxZoneExtension.ServiceOrderEntryExt.SetDefaultShipToAddress(PX.Data.PXCache sender, PX.Objects.PM.TaxZoneExtension.Document row)` → `System.Void`
+- `public virtual PX.Objects.PM.TaxZoneExtension.ServiceOrderEntryExt.GetDefaultTaxZone(PX.Objects.FS.FSServiceOrder row, System.Func`2[PX.Objects.FS.FSServiceOrder,System.String] baseMethod)` → `System.String`
+- `public virtual PX.Objects.PM.TaxZoneExtension.ServiceOrderEntryExt.GetDefaultTaxZone(System.Nullable`1[System.Int32] billCustomerID, System.Nullable`1[System.Int32] billLocationID, System.Nullable`1[System.Int32] branchID...)` → `System.String`
+- `public virtual PX.Objects.FS.ActivateContractPeriodProcess.ProcessContractPeriod(PX.Objects.FS.ActivateContractPeriodProcess graphActivateContractPeriodProcess, PX.Objects.FS.FSServiceContract fsServiceContractRow)` → `System.Void`
+- `public virtual PX.Objects.FS.AppointmentClosingMaint.AreServicesDBActionsAllowed(PX.Objects.FS.FSAppointment fsAppointmentRow)` → `System.Boolean`
+- `public virtual PX.Objects.FS.AppointmentClosingMaint.AllowOrForbidDetailsDBactions(PX.Objects.FS.FSAppointment fsAppointmentRow)` → `System.Void`
+- `virtual PX.Objects.FS.AppointmentClosingMaint._(PX.Data.Events+RowSelected`1[PX.Objects.FS.FSAppointment] e)` → `System.Void`
+- `virtual PX.Objects.FS.AppointmentEntry._(PX.Data.Events+FieldUpdated`2[PX.Objects.FS.FSAppointmentDet,PX.Objects.FS.FSAppointmentDet+contractRelated] e)` → `System.Void`
 ## Key Properties
 
 - `<>f__AnonymousType0`2.ApptDet`: `<ApptDet>j__TPar` (read-only)

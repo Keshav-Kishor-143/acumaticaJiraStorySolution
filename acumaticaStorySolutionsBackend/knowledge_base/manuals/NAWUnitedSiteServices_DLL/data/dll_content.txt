@@ -587,106 +587,14 @@ DLL: NAWUnitedSiteServices
 
 ## Key Methods
 
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.GetHashCode()` → `System.Int32`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public Microsoft.CodeAnalysis.EmbeddedAttribute.GetType()` → `System.Type`
-- `public virtual Microsoft.CodeAnalysis.EmbeddedAttribute.ToString()` → `System.String`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.GetHashCode()` → `System.Int32`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.Match(System.Object obj)` → `System.Boolean`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.IsDefaultAttribute()` → `System.Boolean`
-- `public System.Runtime.CompilerServices.NullableAttribute.GetType()` → `System.Type`
-- `public virtual System.Runtime.CompilerServices.NullableAttribute.ToString()` → `System.String`
-- `public virtual NV.UnitedSiteServices.NVBOMStatus.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVBOMStatus.GetHashCode()` → `System.Int32`
-- `public NV.UnitedSiteServices.NVBOMStatus.GetType()` → `System.Type`
-- `public virtual NV.UnitedSiteServices.NVBOMStatus.ToString()` → `System.String`
-- `public virtual NV.UnitedSiteServices.NVInvoiceType.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceType.GetHashCode()` → `System.Int32`
-- `public NV.UnitedSiteServices.NVInvoiceType.GetType()` → `System.Type`
-- `public virtual NV.UnitedSiteServices.NVInvoiceType.ToString()` → `System.String`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.Persist()` → `System.Void`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.Persist(System.Type cacheType, PX.Data.PXDBOperation operation)` → `System.Int32`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.AllowSelect(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.AllowUpdate(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.UpdateRights(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.AllowInsert(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.AllowDelete(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.GetUpdatable(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.GetKeyNames(System.String viewName)` → `System.String[]`
-- `public NV.UnitedSiteServices.NVInvoiceTypeMaint.HasException()` → `System.Boolean`
-- `public NV.UnitedSiteServices.NVInvoiceTypeMaint.GetParameterNames(System.String viewName)` → `System.String[]`
-- `public NV.UnitedSiteServices.NVInvoiceTypeMaint.SetDataConsistencyIssue(System.String name, System.String diagnosticDetails, System.Boolean dumpAllCaches)` → `System.Void`
-- `public NV.UnitedSiteServices.NVInvoiceTypeMaint.GetDacDescriptor(PX.Data.IBqlTable dac, PX.Data.DacDescriptorGeneration.DacDescriptorCreationOptions customDescriptorCreationOptions)` → `PX.Data.DacDescriptorGeneration.DacDescriptor`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderSelect(PX.Data.BqlCommand command, System.Int32 topCount, PX.Data.PXDataValue[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderSelectSingle(PX.Data.PXDataField[] pars)` → `PX.Data.PXDataRecord`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderSelectMulti(PX.Data.PXDataField[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderInsert(PX.Data.PXDataFieldAssign[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderUpdate(PX.Data.PXDataFieldParam[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderDelete(PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderArchive(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderExtract(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderSelectSingle(System.Type table, PX.Data.PXDataField[] pars)` → `PX.Data.PXDataRecord`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderSelectMulti(System.Type table, PX.Data.PXDataField[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderInsert(System.Type table, PX.Data.PXDataFieldAssign[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderUpdate(System.Type table, PX.Data.PXDataFieldParam[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderDelete(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.ProviderEnsure(System.Type table, PX.Data.PXDataFieldAssign[] values, PX.Data.PXDataField[] pars)` → `System.Boolean`
-- `public NV.UnitedSiteServices.NVInvoiceTypeMaint.RaisePXGraphViewChanged(System.String viewName)` → `System.Void`
-- `public virtual NV.UnitedSiteServices.NVInvoiceTypeMaint.CanClipboardCopyPaste()` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCode.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCode.GetHashCode()` → `System.Int32`
-- `public NV.UnitedSiteServices.NAWUSSZipCode.GetType()` → `System.Type`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCode.ToString()` → `System.String`
-- `public virtual NV.UnitedSiteServices.UsrFinanceProjectCode.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.UsrFinanceProjectCode.GetHashCode()` → `System.Int32`
-- `public NV.UnitedSiteServices.UsrFinanceProjectCode.GetType()` → `System.Type`
-- `public virtual NV.UnitedSiteServices.UsrFinanceProjectCode.ToString()` → `System.String`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.Persist()` → `System.Void`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.Persist(System.Type cacheType, PX.Data.PXDBOperation operation)` → `System.Int32`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.AllowSelect(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.AllowUpdate(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.UpdateRights(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.AllowInsert(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.AllowDelete(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.GetUpdatable(System.String viewName)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.GetKeyNames(System.String viewName)` → `System.String[]`
-- `public NV.UnitedSiteServices.NAWUSSZipCodeMaint.HasException()` → `System.Boolean`
-- `public NV.UnitedSiteServices.NAWUSSZipCodeMaint.GetParameterNames(System.String viewName)` → `System.String[]`
-- `public NV.UnitedSiteServices.NAWUSSZipCodeMaint.SetDataConsistencyIssue(System.String name, System.String diagnosticDetails, System.Boolean dumpAllCaches)` → `System.Void`
-- `public NV.UnitedSiteServices.NAWUSSZipCodeMaint.GetDacDescriptor(PX.Data.IBqlTable dac, PX.Data.DacDescriptorGeneration.DacDescriptorCreationOptions customDescriptorCreationOptions)` → `PX.Data.DacDescriptorGeneration.DacDescriptor`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderSelect(PX.Data.BqlCommand command, System.Int32 topCount, PX.Data.PXDataValue[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderSelectSingle(PX.Data.PXDataField[] pars)` → `PX.Data.PXDataRecord`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderSelectMulti(PX.Data.PXDataField[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderInsert(PX.Data.PXDataFieldAssign[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderUpdate(PX.Data.PXDataFieldParam[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderDelete(PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderArchive(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderExtract(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderSelectSingle(System.Type table, PX.Data.PXDataField[] pars)` → `PX.Data.PXDataRecord`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderSelectMulti(System.Type table, PX.Data.PXDataField[] pars)` → `System.Collections.Generic.IEnumerable`1[PX.Data.PXDataRecord]`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderInsert(System.Type table, PX.Data.PXDataFieldAssign[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderUpdate(System.Type table, PX.Data.PXDataFieldParam[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderDelete(System.Type table, PX.Data.PXDataFieldRestrict[] pars)` → `System.Boolean`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.ProviderEnsure(System.Type table, PX.Data.PXDataFieldAssign[] values, PX.Data.PXDataField[] pars)` → `System.Boolean`
-- `public NV.UnitedSiteServices.NAWUSSZipCodeMaint.RaisePXGraphViewChanged(System.String viewName)` → `System.Void`
-- `public virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint.CanClipboardCopyPaste()` → `System.Boolean`
-- `public virtual NAWUnitedSiteServices.NAWAutoPay.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual NAWUnitedSiteServices.NAWAutoPay.GetHashCode()` → `System.Int32`
-- `public NAWUnitedSiteServices.NAWAutoPay.GetType()` → `System.Type`
-- `public virtual NAWUnitedSiteServices.NAWAutoPay.ToString()` → `System.String`
+- `virtual NV.UnitedSiteServices.NAWUSSZipCodeMaint._(PX.Data.Events+RowInserting`1[NV.UnitedSiteServices.NAWUSSZipCode] e)` → `System.Void`
 - `public static NAWUnitedSiteServices.USSFinanceProjectCodeMaint.IsActive()` → `System.Boolean`
-- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.Persist()` → `System.Void`
-- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.Persist(System.Type cacheType, PX.Data.PXDBOperation operation)` → `System.Int32`
-- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.AllowSelect(System.String viewName)` → `System.Boolean`
-- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.AllowUpdate(System.String viewName)` → `System.Boolean`
-- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.UpdateRights(System.String viewName)` → `System.Boolean`
-- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.AllowInsert(System.String viewName)` → `System.Boolean`
-- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.AllowDelete(System.String viewName)` → `System.Boolean`
-- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.GetUpdatable(System.String viewName)` → `System.Boolean`
-- `public virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint.GetKeyNames(System.String viewName)` → `System.String[]`
+- `virtual NAWUnitedSiteServices.USSFinanceProjectCodeMaint._(PX.Data.Events+RowInserting`1[NV.UnitedSiteServices.UsrFinanceProjectCode] e)` → `System.Void`
+- `virtual NAWUnitedSiteServices.Prototype.Graph.NAWUSSCreateExtensionContractProcessing._(PX.Data.Events+CacheAttached`1[NAWUnitedSiteServices.Prototype.Graph.NAWUSSContractFilter+onRentDate] e)` → `System.Void`
+- `public static NV.UnitedSiteServices.NVBOMStatus+PK.Find(PX.Data.PXGraph graph, System.Nullable`1[System.Int32] bOMStatusID)` → `NV.UnitedSiteServices.NVBOMStatus`
+- `public static NV.UnitedSiteServices.NVInvoiceType+PK.Find(PX.Data.PXGraph graph, System.Nullable`1[System.Int32] invoiceTypeID)` → `NV.UnitedSiteServices.NVInvoiceType`
+- `public static NV.UnitedSiteServices.NAWUSSZipCode+PK.Find(PX.Data.PXGraph graph, System.String zipCodeCD)` → `NV.UnitedSiteServices.NAWUSSZipCode`
+- `public static NV.UnitedSiteServices.UsrFinanceProjectCode+PK.Find(PX.Data.PXGraph graph, System.String projectCode)` → `NV.UnitedSiteServices.UsrFinanceProjectCode`
 ## Key Properties
 
 - `Microsoft.CodeAnalysis.EmbeddedAttribute.TypeId`: `System.Object` (read-only)

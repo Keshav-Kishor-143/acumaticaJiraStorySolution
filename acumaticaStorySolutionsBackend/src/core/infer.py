@@ -43,6 +43,7 @@ from sklearn.metrics.pairwise import cosine_similarity  # Lightweight similarity
 from src.config.config import config
 from src.utils.logger_utils import get_logger, TimedOperation
 from src.core.hybrid_retriever import HybridRetriever, SearchResult
+from src.core.tech_extraction import TechnicalEntityExtractor
 import numpy as np # Added for lightweight similarity search
 
 # Ultra-concise Vision System Prompt for maximum cost efficiency
@@ -142,6 +143,9 @@ class VDRInferencer:
             self.use_hybrid_search = True
             from src.core.hybrid_retriever import HybridRetriever
             self.hybrid_retriever = HybridRetriever()  # Remove embedding_model parameter
+            
+            # Initialize Technical Entity Extractor
+            self.entity_extractor = TechnicalEntityExtractor()
             
             self.temp_dir = None
             
@@ -273,48 +277,16 @@ class VDRInferencer:
     
     def _should_use_section_extraction(self, question: str) -> bool:
         """
-        Determine if a query is focused enough to warrant section extraction (Vision API cost)
+        Always return True - Vision extraction is now always-on for metadata extraction
         
         Args:
-            question: User's question
+            question: User's question (kept for backward compatibility)
             
         Returns:
-            True if query is highly focused and worth the Vision API cost
+            Always True - Vision API is always used for technical metadata extraction
         """
-        question_lower = question.lower()
-        
-        # HIGHLY FOCUSED queries that justify Vision API cost
-        focused_indicators = [
-            # Specific technical terms
-            'flowchart', 'diagram', 'chart', 'table', 'graph', 'workflow', 'process flow',
-            'specific step', 'exact procedure', 'detailed process', 'step by step',
-            # Specific UI elements  
-            'button', 'field', 'screen', 'interface', 'menu', 'option', 'setting',
-            # Specific data/configuration
-            'configuration', 'parameter', 'value', 'setting', 'option', 'field name',
-            # Complex analysis requests
-            'analyze', 'compare', 'difference', 'relationship', 'connection'
-        ]
-        
-        # BROAD/GENERAL queries that don't justify Vision API cost
-        general_indicators = [
-            'what is', 'tell me about', 'explain', 'describe', 'overview', 'summary',
-            'general', 'basic', 'simple', 'introduction', 'help', 'understand'
-        ]
-        
-        # Check for focused indicators
-        focused_score = sum(1 for indicator in focused_indicators if indicator in question_lower)
-        general_score = sum(1 for indicator in general_indicators if indicator in question_lower)
-        
-        # Decision logic
-        if focused_score >= 2:  # Multiple focused terms
-            return True
-        elif focused_score >= 1 and general_score == 0:  # Focused term without general terms
-            return True
-        elif focused_score >= 1 and len(question.split()) >= 8:  # Focused + detailed question
-            return True
-        else:
-            return False  # General question - no Vision API cost
+        # Always use Vision for metadata extraction
+        return True
     
     def _select_best_section(self, question: str, pdf_name: str, page_num: int) -> Optional[Dict[str, Any]]:
         """
@@ -626,10 +598,27 @@ Focus on accuracy and clarity for customer support."""
                 analysis_result["error"] = "Could not encode image for vision analysis"
                 return analysis_result
             
-            # Step 3: Create cost-efficient vision prompt
+            # Step 3: Create metadata extraction prompt (always-on for technical entities)
+            # This is a lightweight prompt specifically for extracting UI metadata
+            metadata_prompt = """Extract all visible metadata from this Acumatica UI image:
+
+- Form ID (usually in top right corner, format: XX######)
+- Field names (visible in the form)
+- Navigation breadcrumbs (menu paths)
+- Table names (if visible)
+- Button labels (action buttons)
+- Graph names (if visible in UI)
+- Any other technical identifiers
+
+Return ONLY the extracted metadata, one item per line. Be precise and exact."""
+            
+            # Also create enhanced vision prompt for question-specific analysis
             vision_msg = self.create_enhanced_vision_prompt(
                 question, context
             )
+            
+            # Combine both prompts - metadata extraction first, then question-specific analysis
+            combined_prompt = f"{metadata_prompt}\n\n---\n\n{vision_msg}"
             
             # Step 4: Cost-optimized async vision analysis with system prompt
             image_format = self.get_image_format(image_path)
@@ -643,7 +632,7 @@ Focus on accuracy and clarity for customer support."""
                         {
                             "role": "user",
                             "content": [
-                                {"type": "text", "text": vision_msg},
+                                {"type": "text", "text": combined_prompt},
                                 {
                                     "type": "image_url",
                                     "image_url": {
@@ -1066,10 +1055,12 @@ Focus on accuracy and clarity for customer support."""
                         "model": mdl,
                         "max_tokens": max_response_tokens
                     })
+                    # Use max_completion_tokens for gpt-5-mini, max_tokens for other models
+                    completion_param = "max_completion_tokens" if mdl == config.LLM_MODEL else "max_tokens"
                     response = self.openai_client.chat.completions.create(
                         model=mdl,
                         messages=[{"role": "user", "content": synthesis_prompt}],
-                        max_tokens=max_response_tokens,
+                        **{completion_param: max_response_tokens},
                         temperature=config.TEMPERATURE
                     )
                     # If call succeeded, also update runtime model in case of fallback
@@ -1742,9 +1733,48 @@ Let me help you with that:
                     vision_tokens=total_vision_tokens
                 )
                 
+                # Step 4: Extract technical entities from retrieved content and vision analysis
+                # Reset extractor for this query
+                self.entity_extractor.reset()
+                
+                # Extract from all document analyses (text + vision)
+                all_texts = []
+                for analysis in document_analyses:
+                    vision_content = analysis.get('vision_content', '')
+                    if vision_content:
+                        all_texts.append(vision_content)
+                        # Extract from vision content
+                        source_id = f"{analysis.get('pdf_name', 'unknown')}_page_{analysis.get('metadata', {}).get('page_number', 0)}"
+                        self.entity_extractor.extract_from_vision_metadata(vision_content, source=source_id)
+                
+                # Also extract from similar_docs text content
+                for doc in similar_docs:
+                    text_content = doc.get('text_content', '') or doc.get('content', '')
+                    vision_text = doc.get('vision_extracted_text', '')
+                    if text_content:
+                        all_texts.append(text_content)
+                        source_id = f"{doc.get('pdf_name', 'unknown')}_page_{doc.get('page_number', 0)}"
+                        score = doc.get('combined_score', 0.0) or doc.get('score', 0.0)
+                        self.entity_extractor.extract_from_text(text_content, source=source_id, retriever_score=score)
+                    if vision_text:
+                        all_texts.append(vision_text)
+                        source_id = f"{doc.get('pdf_name', 'unknown')}_page_{doc.get('page_number', 0)}"
+                        self.entity_extractor.extract_from_vision_metadata(vision_text, source=source_id)
+                
+                # Validate entities against retrieved content (negative retrieval)
+                # This updates confidence scores for entities that aren't found
+                _ = self.entity_extractor.validate_all_entities(all_texts)
+                
+                # Get all extracted entities with confidence scores
+                technical_entities = self.entity_extractor.get_all_entities()
+                
                 result = {
                     "answer": final_answer,
                     "sources": self._prepare_sources(similar_docs, document_analyses),
+                    "retrieved_chunks": similar_docs,  # NEW: Include retrieved chunks
+                    "vision_analysis": document_analyses,  # NEW: Include vision analysis
+                    "technical_entities": technical_entities,  # NEW: Include technical entities
+                    "raw_answer": final_answer,  # NEW: Alias for backward compatibility
                     "total_documents_analyzed": successful_analyses,
                     "total_documents_processed": len(docs_to_process),
                     "total_documents_found": len(similar_docs),

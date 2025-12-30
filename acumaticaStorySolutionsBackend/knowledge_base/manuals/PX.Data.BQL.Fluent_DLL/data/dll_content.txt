@@ -211,104 +211,36 @@ DLL: PX.Data.BQL.Fluent
 
 - `public static PX.Data.BQL.Fluent.FbqlCommand.UnwrapCommandType(System.Type bqlCommandType)` → `System.Type`
 - `public virtual PX.Data.BQL.Fluent.FbqlCommand.GetWhere()` → `PX.Data.IBqlWhere`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.Verify(PX.Data.PXCache cache, System.Object item, System.Collections.Generic.List`1[System.Object] pars...)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.AppendExpression(PX.Data.SQLTree.SQLExpression& exp, PX.Data.PXGraph graph, PX.Data.BqlCommandInfo info...)` → `System.Boolean`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.GetQueryInternal(PX.Data.PXGraph graph, PX.Data.BqlCommandInfo info, PX.Data.BqlCommand+Selection selection)` → `PX.Data.SQLTree.Query`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.GetFirstTable()` → `System.Type`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.GetSelectType()` → `System.Type`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereNew()` → `PX.Data.BqlCommand`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereNew(System.Type newWhere)` → `PX.Data.BqlCommand`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereAnd()` → `PX.Data.BqlCommand`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereAnd(System.Type where)` → `PX.Data.BqlCommand`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereOr()` → `PX.Data.BqlCommand`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereOr(System.Type where)` → `PX.Data.BqlCommand`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.WhereNot()` → `PX.Data.BqlCommand`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.OrderByNew()` → `PX.Data.BqlCommand`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.OrderByNew(System.Type newOrderBy)` → `PX.Data.BqlCommand`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.AggregateNew()` → `PX.Data.BqlCommand`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.AggregateNew(System.Type newAggregate)` → `PX.Data.BqlCommand`
-- `public PX.Data.BQL.Fluent.FbqlCommand.GetOriginalType()` → `System.Type`
-- `public PX.Data.BQL.Fluent.FbqlCommand.Unwrap()` → `PX.Data.BqlCommand`
-- `public PX.Data.BQL.Fluent.FbqlCommand.Meet(PX.Data.PXCache cache, System.Object item, System.Object[] parameters)` → `System.Boolean`
-- `public PX.Data.BQL.Fluent.FbqlCommand.GetQuery(PX.Data.PXGraph graph, PX.Data.PXView view)` → `PX.Data.SQLTree.Query`
-- `public PX.Data.BQL.Fluent.FbqlCommand.GetTables()` → `System.Type[]`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.ToString()` → `System.String`
-- `public PX.Data.BQL.Fluent.FbqlCommand.GetParameters()` → `PX.Data.IBqlParameter[]`
-- `public PX.Data.BQL.Fluent.FbqlCommand.GetParameterPairs()` → `System.Collections.Generic.List`1[System.Collections.Generic.KeyValuePair`2[System.Type,System.Type]]`
-- `public PX.Data.BQL.Fluent.FbqlCommand.GetParameterPairs(System.Type command)` → `System.Collections.Generic.List`1[System.Collections.Generic.KeyValuePair`2[System.Type,System.Type]]`
-- `public PX.Data.BQL.Fluent.FbqlCommand.GetReferencedFields(System.Boolean strictEquality)` → `System.Type[]`
-- `public PX.Data.BQL.Fluent.FbqlCommand.GetSortColumns()` → `PX.Data.IBqlSortColumn[]`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommand.GetHashCode()` → `System.Int32`
-- `public PX.Data.BQL.Fluent.FbqlCommand.GetType()` → `System.Type`
 - `public static PX.Data.BQL.Fluent.FbqlCommandParser.ConvertSelectToSearch(System.Type bqlSelectType)` → `PX.Data.BqlCommand`
 - `public static PX.Data.BQL.Fluent.FbqlCommandParser.CreateBqlCommand(System.Type queryPattern, System.Type table, System.Type joinArray...)` → `PX.Data.BQL.Fluent.FbqlParseResult`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommandParser.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommandParser.GetHashCode()` → `System.Int32`
-- `public PX.Data.BQL.Fluent.FbqlCommandParser.GetType()` → `System.Type`
-- `public virtual PX.Data.BQL.Fluent.FbqlCommandParser.ToString()` → `System.String`
-- `public virtual PX.Data.BQL.Fluent.FbqlParseResult.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual PX.Data.BQL.Fluent.FbqlParseResult.ToString()` → `System.String`
-- `public virtual PX.Data.BQL.Fluent.FbqlParseResult.GetHashCode()` → `System.Int32`
-- `public PX.Data.BQL.Fluent.FbqlParseResult.GetType()` → `System.Type`
-- `public virtual PX.Data.BQL.Fluent.FbqlJoins.Equals(System.Object obj)` → `System.Boolean`
-- `public virtual PX.Data.BQL.Fluent.FbqlJoins.GetHashCode()` → `System.Int32`
-- `public PX.Data.BQL.Fluent.FbqlJoins.GetType()` → `System.Type`
-- `public virtual PX.Data.BQL.Fluent.FbqlJoins.ToString()` → `System.String`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.TrySetRefIdGetter(System.Func`3[PX.Data.PXCache,System.Object,System.Nullable`1[System.Guid]] getter, System.String refIdBqlField)` → `System.Boolean`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessCaption(System.String caption)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessTooltip(System.String tooltip)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllCaption(System.String caption)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllTooltip(System.String tooltip)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessEnabled(System.Boolean enabled)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllEnabled(System.Boolean enabled)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessVisible(System.Boolean visible)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllVisible(System.Boolean visible)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDisplayOnMainToolbar(System.Boolean displayOnMainToolbar)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllDisplayOnMainToolbar(System.Boolean displayOnMainToolbar)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessIsLockedOnToolbar(System.Boolean isLockedOnToolbar)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessAllIsLockedOnToolbar(System.Boolean isLockedOnToolbar)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetAdditionalFilters(PX.Data.PXFilterRow[] addFilters)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetAutoPersist(System.Boolean autoPersist)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetSelected()` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetParametersDelegate(PX.Data.PXProcessingBase`1+ParametersDelegate[TTable] handler)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.OrderByNew()` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.Join()` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessTarget(System.String graphType, System.String stepID, System.String action...)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessTarget(System.String graphType, System.String stepID, System.String action...)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessWorkflowAction(System.String action)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessWorkflowAction(System.String action, System.Object[] parameters)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessWorkflowAction(System.String action, System.Collections.Generic.Dictionary`2[System.String,System.Object] parameters)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessWorkflowAction(System.String actionName)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessWorkflowAction(System.Linq.Expressions.Expression`1[System.Func`2[TGraph,PX.Data.PXAction]] actionSelector)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(System.Action`2[System.Collections.Generic.List`1[TTable],System.Threading.CancellationToken] handler)` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetAsyncProcessDelegate(System.Func`3[System.Collections.Generic.List`1[TTable],System.Threading.CancellationToken,System.Threading.Tasks.Task] handler)` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(PX.Data.PXProcessingBase`1+ProcessListDelegate[TTable] handler)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(System.Action`2[TTable,System.Threading.CancellationToken] handler)` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetAsyncProcessDelegate(System.Func`3[TTable,System.Threading.CancellationToken,System.Threading.Tasks.Task] handler)` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(PX.Data.PXProcessingBase`1+ProcessItemDelegate[TTable] handler)` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(System.Action`3[Graph,TTable,System.Threading.CancellationToken] handler)` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(PX.Data.PXProcessingBase`1+ProcessItemDelegate`1[TTable,Graph] handler)` → `System.Void`
-- `public virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(System.Action`3[Graph,TTable,System.Threading.CancellationToken] handler, System.Action`2[Graph,System.Threading.CancellationToken] handlerFinally)` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetAsyncProcessDelegate(System.Func`4[Graph,TTable,System.Threading.CancellationToken,System.Threading.Tasks.Task] handler, System.Func`3[Graph,System.Threading.CancellationToken,System.Threading.Tasks.Task] handlerFinally)` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.SetProcessDelegate(PX.Data.PXProcessingBase`1+ProcessItemDelegate`1[TTable,Graph] handler, PX.Data.PXProcessingBase`1+FinallyProcessDelegate`1[TTable,Graph] handlerFinally)` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.ClearDialog()` → `System.Void`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String header, System.String message, PX.Data.MessageButtons buttons...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String header, System.String message, PX.Data.MessageButtons buttons)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String message, PX.Data.MessageButtons buttons)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, TTable row, System.String header...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, TTable row, System.String header...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(TTable row, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(TTable row, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String header, System.String message, PX.Data.MessageButtons buttons...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String header, System.String message, PX.Data.MessageButtons buttons...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, TTable row, System.String header...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(System.String key, TTable row, System.String header...)` → `PX.Data.WebDialogResult`
-- `public PX.Data.BQL.Fluent.PXProcessingViewOf`1.Ask(TTable row, System.String header, System.String message...)` → `PX.Data.WebDialogResult`
+- `static PX.Data.BQL.Fluent.FbqlCommandParser.CreateBqlCommand(PX.Data.BQL.Fluent.FbqlCommandParser+FbqlKey key)` → `PX.Data.BQL.Fluent.FbqlParseResult`
+- `static PX.Data.BQL.Fluent.FbqlCommandParser.EnflatSorts(System.Type[] sorts)` → `System.Type[]`
+- `static PX.Data.BQL.Fluent.FbqlCommandParser.ComposeOrderBy(System.Type[] sorts)` → `System.Type`
+- `static PX.Data.BQL.Fluent.FbqlCommandParser.EnflatAggregates(System.Type[] aggregates)` → `System.Type[]`
+- `static PX.Data.BQL.Fluent.FbqlCommandParser.ComposeAggregate(System.Type[] aggregates, System.Type groupCondition)` → `System.Type`
+- `static PX.Data.BQL.Fluent.FbqlCommandParser.ComposeJoin(System.Type[] fbqlJoins)` → `System.Type`
+- `static PX.Data.BQL.Fluent.FbqlCommandParser.ComposeOn(System.Type binaryArray)` → `System.Type`
+- `static PX.Data.BQL.Fluent.FbqlCommandParser.ComposeWhere(System.Type condition)` → `System.Type`
+- `static PX.Data.BQL.Fluent.FbqlCommandParser.<ComposeJoin>g__MakeSimpleJoin|14_0(PX.Data.BQL.Fluent.IFbqlJoin join)` → `System.Type`
+- `public virtual PX.Data.BQL.Fluent.FbqlSearch`1.GetField()` → `System.Type`
+- `public virtual PX.Data.BQL.Fluent.FbqlSearch`1.GetFieldName(PX.Data.PXGraph graph)` → `System.String`
+- `public virtual PX.Data.BQL.Fluent.FbqlSearch`1.GetFieldExpression(PX.Data.PXGraph graph)` → `PX.Data.SQLTree.SQLExpression`
+- `public virtual PX.Data.BQL.Fluent.FbqlSearch`1.GetWhereExpression(PX.Data.PXGraph graph)` → `PX.Data.SQLTree.SQLExpression`
+- `static PX.Data.BQL.Fluent.SearchFor`1.ConvertSelectToSearch()` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlSelect`2.AddNewJoin(System.Type newJoin)` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.FbqlSelect`2.GetOrderBy()` → `PX.Data.IBqlOrderBy`
+- `static PX.Data.BQL.Fluent.FbqlSelect`7.ParseSelf()` → `PX.Data.BQL.Fluent.FbqlParseResult`
+- `public static PX.Data.BQL.Fluent.FbqlUpdateBase`6.Update(PX.Data.PXGraph graph, System.Object[] parameters)` → `System.Int32`
+- `public static PX.Data.BQL.Fluent.FbqlUpdateBase`6.GetCommand()` → `PX.Data.IBqlUpdate`
+- `PX.Data.BQL.Fluent.FbqlCommandParser+<>c.<ComposeAggregate>b__13_0(System.Type a)` → `System.Boolean`
+- `PX.Data.BQL.Fluent.FbqlCommandParser+<>c__DisplayClass13_0.<ComposeAggregate>b__1(System.Type a)` → `System.Boolean`
+- `virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1.GetCommand()` → `PX.Data.BqlCommand`
+- `PX.Data.BQL.Fluent.FbqlSelect`7+<>c.<ParseSelf>b__1_0(System.Type t)` → `PX.Data.BQL.Fluent.FbqlParseResult`
+- `public virtual PX.Data.BQL.Fluent.FbqlUpdateBase`6+ChainedSet`1.AppendExpression(PX.Data.PXGraph graph, PX.Data.BqlCommandInfo info, System.Collections.Generic.List`1[System.Collections.Generic.KeyValuePair`2[PX.Data.SQLTree.SQLExpression,PX.Data.SQLTree.SQLExpression]] assignments)` → `System.Boolean`
+- `virtual PX.Data.BQL.Fluent.PXProcessingViewOf`1+BasedOn`1+FilteredBy`1.GetCommand()` → `PX.Data.BqlCommand`
+- `public virtual PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1+Config.GetCommand()` → `PX.Data.BqlCommand`
+- `virtual PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1+WithDragAndDrop`2+WithOwnActions.AddActions(PX.Data.PXGraph graph)` → `System.Void`
+- `public virtual PX.Data.BQL.Fluent.PXViewOf`1+BasedOn`1+ReadOnly+Config.GetCommand()` → `PX.Data.BqlCommand`
 ## Key Properties
 
 - `PX.Data.BQL.Fluent.FbqlParseResult.BqlCommand`: `System.Type` (read-only)
